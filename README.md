@@ -5,7 +5,9 @@
 ## Stack
 
 Deploy -> now -> Build assets -> Publish assets to S3
+
 Prismic.io -> Hook -> now -> Empty cache (Redis)
+
 www -> now -> Write/Read from cache (Redis)
 
 ## TODO
