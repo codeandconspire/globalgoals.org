@@ -10,7 +10,7 @@ const app = new Koa();
  * TODO: Either implement HTTP/2 Push or check for dev environment
  */
 
-app.use(static('public'));
+app.use(static('assets'));
 
 /**
  * Wrap up anything that has been gathered and determin proper data type
@@ -36,7 +36,7 @@ app.use(async (ctx, next) => {
       <html lang="en">
       <head>
         <title>The Global Goals</title>
-        <link rel="stylesheet" href="/index.css" />
+        <link rel="stylesheet" href="/css/index.css" />
       </head>
       <body>
         ${ ctx.body }
