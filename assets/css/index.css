@@ -1,0 +1,87 @@
+/**
+ * Colors
+ */
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray-light: #f1f1f1;
+
+  --blue: #0a97d9;
+  --bright-blue: #26bde2;
+  --burgundy-red: #a21942;
+  --dark-green: #3f7e44;
+  --dark-mustard: #bf8b2e;
+  --dark-red: #c5192d;
+  --golden-yellow: #fd9d24;
+  --kelly-green: #4c9f38;
+  --lime-green: #56c02b;
+  --magenta: #dd1367;
+  --mustard: #dda63a;
+  --navy-blue: #19486a;
+  --orange: #fd6925;
+  --red-orange: #ff3a21;
+  --red: #e5243b;
+  --royal-blue: #00689d;
+  --yellow: #fcc30b;
+
+  --goal-01: var(--red);
+  --goal-02: var(--mustard);
+  --goal-03: var(--kelly-green);
+  --goal-04: var(--dark-red);
+  --goal-05: var(--red-orange);
+  --goal-06: var(--bright-blue);
+  --goal-07: var(--yellow);
+  --goal-08: var(--burgundy-red);
+  --goal-09: var(--orange);
+  --goal-10: var(--magenta);
+  --goal-11: var(--golden-yellow);
+  --goal-12: var(--dark-mustard);
+  --goal-13: var(--dark-green);
+  --goal-14: var(--blue);
+  --goal-15: var(--lime-green);
+  --goal-16: var(--royal-blue);
+  --goal-17: var(--navy-blue);
+}
+
+/**
+ * Typography
+ */
+
+@font-face {
+  font-family: "Giorgio Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("giorgio-sans-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Giorgio Sans Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("giorgio-sans-bold.woff") format("woff");
+}
+
+:root {
+  --giorgio-sans-bold: "Giorgio Sans Bold", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+    sans-serif;
+  --system-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+  --font-family-heading: var(--giorgio-sans-bold);
+  --font-family-body: var(--system-sans);
+}
+
+html {
+  font-family: var(--font-body);
+}
+
+/**
+ * KitchenSink component for WYSIWYG output
+ */
+
+.KitchenSink :matches(h1, h2, h3) {
+  font-family: var(--font-heading);
+  font-weight: bold;
+}
