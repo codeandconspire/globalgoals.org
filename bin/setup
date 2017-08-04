@@ -1,0 +1,48 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+const dedent = require('dedent');
+const { promisify } = require('util');
+const selfsigned = require('selfsigned');
+
+const writeFile = promisify(fs.writeFile);
+
+const attrs = [{ name: 'commonName', value: 'localhost' }];
+const options = {
+  days: 365,
+  extensions: [{
+    name: 'subjectAltName',
+    altNames: [{
+      type: 2, // DNS
+      value: 'localhost'
+    }]
+  }]
+};
+const { private, cert } = selfsigned.generate(attrs, options);
+const dotenv = dedent`
+  # General
+  PORT=3000
+  NODE_ENV=development
+
+  # SSL Certificates
+  GLOBALGOALS_KEY=server.key
+  GLOBALGOALS_CERT=server.crt
+`;
+
+Promise.all([
+  writeFile(path.resolve(process.cwd(), 'server.key'), private),
+  writeFile(path.resolve(process.cwd(), 'server.crt'), cert),
+  writeFile(path.resolve(process.cwd(), '.env'), dotenv)
+]).then(
+  // eslint-disable-next-line no-console
+  () => console.log(dedent`
+    > Certificates and environment file was generated successfully
+  `),
+  // eslint-disable-next-line no-console
+  err => console.error(dedent`
+    > An error occured in generating files, see error:
+
+    ${ err }
+  `)
+);

@@ -1,0 +1,38 @@
+{
+  "name": "globalgoals.org",
+  "version": "0.1.0",
+  "description": "Public website for the Global Goals initiative",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ./",
+    "setup": "./bin/setup",
+    "start": "node index.js",
+    "restart": "nodemon -r dotenv/config --inspect index.js",
+    "postinstall": "echo \"> Don't forget to setup your environment: npm run setup\\n\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeandconspire/globalgoals.org.git"
+  },
+  "author": "code&conspire",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/codeandconspire/globalgoals.org/issues"
+  },
+  "homepage": "https://github.com/codeandconspire/globalgoals.org#readme",
+  "devDependencies": {
+    "dedent": "^0.7.0",
+    "dotenv": "^4.0.0",
+    "eslint": "^4.3.0",
+    "nodemon": "^1.11.0",
+    "now": "^7.3.0",
+    "selfsigned": "^1.9.1"
+  },
+  "dependencies": {
+    "friendly-url": "^1.0.3",
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "koa-static": "^4.0.1",
+    "path-to-regexp": "^1.7.0"
+  }
+}
