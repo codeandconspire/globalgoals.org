@@ -29,10 +29,12 @@
     "selfsigned": "^1.9.1"
   },
   "dependencies": {
+    "choo": "^6.0.0-4",
     "friendly-url": "^1.0.3",
     "koa": "^2.3.0",
     "koa-router": "^7.2.1",
     "koa-static": "^4.0.1",
+    "nanohref": "^3.0.0",
     "path-to-regexp": "^1.7.0"
   }
 }

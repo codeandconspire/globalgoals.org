@@ -1,22 +1,46 @@
 const Koa = require('koa');
 const static = require('koa-static');
-const dedent = require('dedent');
 const router = require('./lib/router');
+const document = require('./lib/document');
+const app = require('./lib/app');
 
-const app = new Koa();
+const server = new Koa();
 
 /**
  * Serve static files
  * TODO: Either implement HTTP/2 Push or check for dev environment
  */
 
-app.use(static('assets'));
+server.use(static('assets'));
+
+/**
+ * Expose a render function on context object
+ */
+
+server.use((ctx, next) => {
+  // TODO: Guess language from header/path/subdomain whatevs
+  ctx.state.lang = 'en';
+  ctx.render = function render(href) {
+    if (ctx.accepts('html')) {
+      // Render href to string
+      const html = app.toString(href, ctx.state);
+
+      // Snatch up changes that were made to state in the process of rendering
+      Object.assign(ctx.state, app.state);
+
+      return html;
+    }
+
+    return null;
+  };
+  return next();
+});
 
 /**
  * Wrap up anything that has been gathered and determin proper data type
  */
 
-app.use(async (ctx, next) => {
+server.use(async (ctx, next) => {
 
   /**
    * Let all other middleware have a go at the request before acting on it
@@ -31,22 +55,7 @@ app.use(async (ctx, next) => {
      */
 
     ctx.type = 'text/html';
-    ctx.body = dedent`
-      <!doctype html>
-      <html lang="en">
-      <head>
-        <title>The Global Goals</title>
-        <link rel="stylesheet" href="/css/index.css" />
-      </head>
-      <body>
-        ${ ctx.body }
-        ${ ctx.params.referrer ? `
-          <br />
-          Referer id: ${ ctx.params.referrer }
-        ` : '' }
-      </body>
-      </html>
-    `;
+    ctx.body = document(ctx.body, ctx.state);
   } else if (ctx.accepts('json')) {
 
     /**
@@ -69,14 +78,14 @@ app.use(async (ctx, next) => {
  * Hook up all em' routes
  */
 
-app.use(router.routes());
-app.use(router.allowedMethods());
+server.use(router.routes());
+server.use(router.allowedMethods());
 
 /**
  * Lift off
  */
 
-app.listen(process.env.PORT, () => {
+server.listen(process.env.PORT, () => {
   // eslint-disable-next-line no-console
   console.info(`🚀  Server listening at localhost:${ process.env.PORT }`);
 });
