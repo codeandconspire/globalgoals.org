@@ -42,7 +42,7 @@ app.use(async (ctx, next) => {
         ${ ctx.body }
         ${ ctx.params.referrer ? `
           <br />
-          Referer id: ${ ctx.params.referrer.split(/^ref-/)[1] }
+          Referer id: ${ ctx.params.referrer }
         ` : '' }
       </body>
       </html>
