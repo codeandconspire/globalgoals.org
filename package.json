@@ -4,7 +4,7 @@
   "description": "Public website for the Global Goals initiative",
   "main": "index.js",
   "scripts": {
-    "test": "eslint ./",
+    "test": "eslint --ignore-path node_modules ./",
     "setup": "./bin/setup",
     "start": "node index.js",
     "restart": "nodemon -r dotenv/config --inspect index.js",
@@ -21,12 +21,21 @@
   },
   "homepage": "https://github.com/codeandconspire/globalgoals.org#readme",
   "devDependencies": {
+    "browserify": "^14.4.0",
+    "chokidar": "^1.7.0",
     "dedent": "^0.7.0",
     "dotenv": "^4.0.0",
     "eslint": "^4.3.0",
+    "koa-send": "^4.1.0",
+    "localenvify": "^1.0.1",
     "nodemon": "^1.11.0",
     "now": "^7.3.0",
-    "selfsigned": "^1.9.1"
+    "postcss": "^6.0.8",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-import": "^10.0.0",
+    "postcss-url": "^7.1.1",
+    "selfsigned": "^1.9.1",
+    "watchify-middleware": "^1.6.0"
   },
   "dependencies": {
     "choo": "^6.0.0-4",

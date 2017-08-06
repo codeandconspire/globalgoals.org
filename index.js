@@ -6,6 +6,10 @@ const app = require('./lib/app');
 
 const server = new Koa();
 
+if (process.env.NODE_ENV === 'development') {
+  server.use(require('./lib/assets'));
+}
+
 /**
  * Serve static files
  * TODO: Either implement HTTP/2 Push or check for dev environment

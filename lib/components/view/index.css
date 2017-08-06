@@ -1,0 +1,7 @@
+/* @define View */
+
+@import "./base";
+
+.View {
+  font-family: var(--font-family-body);
+}
