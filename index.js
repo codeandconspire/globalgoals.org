@@ -6,6 +6,10 @@ const app = require('./lib/app');
 
 const server = new Koa();
 
+/**
+ * Compile and serve assets on demand during development
+ */
+
 if (process.env.NODE_ENV === 'development') {
   server.use(require('./lib/assets'));
 }
