@@ -1,7 +1,18 @@
 /* @define View */
 
-@import "./base";
+@import "./../base";
 
 .View {
-  font-family: var(--font-family-body);
+  width: 80%;
+  max-width: 500px;
+  margin: 5% auto;
+  padding: 5% 5%;
+  background: var(--color-gray-light);
+}
+
+.View-title {
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3em;
 }

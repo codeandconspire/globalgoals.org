@@ -1,0 +1,23 @@
+/**
+ * Map colors to goals
+ */
+
+:root {
+  --color-goal-01: var(--color-red);
+  --color-goal-02: var(--color-mustard);
+  --color-goal-03: var(--color-kelly-green);
+  --color-goal-04: var(--color-dark-red);
+  --color-goal-05: var(--color-red-orange);
+  --color-goal-06: var(--color-bright-blue);
+  --color-goal-07: var(--color-yellow);
+  --color-goal-08: var(--color-burgundy-red);
+  --color-goal-09: var(--color-orange);
+  --color-goal-10: var(--color-magenta);
+  --color-goal-11: var(--color-golden-yellow);
+  --color-goal-12: var(--color-dark-mustard);
+  --color-goal-13: var(--color-dark-green);
+  --color-goal-14: var(--color-blue);
+  --color-goal-15: var(--color-lime-green);
+  --color-goal-16: var(--color-royal-blue);
+  --color-goal-17: var(--color-navy-blue);
+}

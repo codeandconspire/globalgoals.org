@@ -1,0 +1,26 @@
+/**
+ * Colors
+ */
+
+:root {
+  --color-gray-light: #f1f1f1;
+  --color-gray-light: #f1f1f1;
+
+  --color-blue: #0a97d9;
+  --color-bright-blue: #26bde2;
+  --color-burgundy-red: #a21942;
+  --color-dark-green: #3f7e44;
+  --color-dark-mustard: #bf8b2e;
+  --color-dark-red: #c5192d;
+  --color-golden-yellow: #fd9d24;
+  --color-kelly-green: #4c9f38;
+  --color-lime-green: #56c02b;
+  --color-magenta: #dd1367;
+  --color-mustard: #dda63a;
+  --color-navy-blue: #19486a;
+  --color-orange: #fd6925;
+  --color-red-orange: #ff3a21;
+  --color-red: #e5243b;
+  --color-royal-blue: #00689d;
+  --color-yellow: #fcc30b;
+}
