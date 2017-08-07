@@ -32,6 +32,7 @@
     "now": "^7.3.0",
     "postcss": "^6.0.8",
     "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^6.1.0",
     "postcss-import": "^10.0.0",
     "postcss-url": "^7.1.1",
     "selfsigned": "^1.9.1",
