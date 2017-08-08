@@ -4,5 +4,81 @@
 @import "./color-map";
 
 .Goal {
+  width: 150px;
+  background: #fff;
+}
+
+.Goal-background {
 
 }
+
+.Goal-label {
+
+}
+
+.Goal-number {
+
+}
+
+.Goal-text {
+
+}
+
+.Goal-icon {
+
+}
+
+/**
+ * Map colors
+ */
+
+.Goal--01 { background: var(--color-goal-01); color: #fff; }
+.Goal--01--inverted { color: var(--color-goal-01); }
+
+.Goal--02 { background: var(--color-goal-02); color: #fff; }
+.Goal--02--inverted { color: var(--color-goal-02); }
+
+.Goal--03 { background: var(--color-goal-03); color: #fff; }
+.Goal--03--inverted { color: var(--color-goal-03); }
+
+.Goal--04 { background: var(--color-goal-04); color: #fff; }
+.Goal--04--inverted { color: var(--color-goal-04); }
+
+.Goal--05 { background: var(--color-goal-05); color: #fff; }
+.Goal--05--inverted { color: var(--color-goal-05); }
+
+.Goal--06 { background: var(--color-goal-06); color: #fff; }
+.Goal--06--inverted { color: var(--color-goal-06); }
+
+.Goal--07 { background: var(--color-goal-07); color: #fff; }
+.Goal--07--inverted { color: var(--color-goal-07); }
+
+.Goal--08 { background: var(--color-goal-08); color: #fff; }
+.Goal--08--inverted { color: var(--color-goal-08); }
+
+.Goal--09 { background: var(--color-goal-09); color: #fff; }
+.Goal--09--inverted { color: var(--color-goal-09); }
+
+.Goal--10 { background: var(--color-goal-10); color: #fff; }
+.Goal--10--inverted { color: var(--color-goal-10); }
+
+.Goal--11 { background: var(--color-goal-11); color: #fff; }
+.Goal--11--inverted { color: var(--color-goal-11); }
+
+.Goal--12 { background: var(--color-goal-12); color: #fff; }
+.Goal--12--inverted { color: var(--color-goal-12); }
+
+.Goal--13 { background: var(--color-goal-13); color: #fff; }
+.Goal--13--inverted { color: var(--color-goal-13); }
+
+.Goal--14 { background: var(--color-goal-14); color: #fff; }
+.Goal--14--inverted { color: var(--color-goal-14); }
+
+.Goal--15 { background: var(--color-goal-15); color: #fff; }
+.Goal--15--inverted { color: var(--color-goal-15); }
+
+.Goal--16 { background: var(--color-goal-16); color: #fff; }
+.Goal--16--inverted { color: var(--color-goal-16); }
+
+.Goal--17 { background: var(--color-goal-17); color: #fff; }
+.Goal--17--inverted { color: var(--color-goal-17); }
