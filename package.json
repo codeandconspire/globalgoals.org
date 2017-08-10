@@ -36,6 +36,7 @@
     "postcss-import": "^10.0.0",
     "postcss-url": "^7.1.1",
     "selfsigned": "^1.9.1",
+    "suitcss-utils-text": "^1.0.0",
     "watchify-middleware": "^1.6.0"
   },
   "dependencies": {
