@@ -1,7 +1,7 @@
 const Koa = require('koa');
 const static = require('koa-static');
 const router = require('./lib/router');
-const document = require('./lib/document');
+const render = require('./lib/middleware/render');
 const app = require('./lib/app');
 
 const server = new Koa();
@@ -11,7 +11,7 @@ const server = new Koa();
  */
 
 if (process.env.NODE_ENV === 'development') {
-  server.use(require('./lib/assets'));
+  server.use(require('./lib/middleware/assets'));
 }
 
 /**
@@ -22,65 +22,10 @@ if (process.env.NODE_ENV === 'development') {
 server.use(static('assets'));
 
 /**
- * Expose a render function on context object
+ * Handle rendering response
  */
 
-server.use((ctx, next) => {
-  // TODO: Guess language from header/path/subdomain whatevs
-  ctx.state.lang = 'en';
-  ctx.render = function render(href) {
-    if (ctx.accepts('html')) {
-      // Render href to string
-      const html = app.toString(href, ctx.state);
-
-      // Snatch up changes that were made to state in the process of rendering
-      Object.assign(ctx.state, app.state);
-
-      return html;
-    }
-
-    return null;
-  };
-  return next();
-});
-
-/**
- * Wrap up anything that has been gathered and determin proper data type
- */
-
-server.use(async (ctx, next) => {
-
-  /**
-   * Let all other middleware have a go at the request before acting on it
-   */
-
-  await next();
-
-  if (ctx.accepts('html')) {
-
-    /**
-     * Wrap up HTML response in a document
-     */
-
-    ctx.type = 'text/html';
-    ctx.body = document(ctx.body, ctx.state);
-  } else if (ctx.accepts('json')) {
-
-    /**
-     * Send the raw state, whateever that may be
-     */
-
-    ctx.type = 'application/json';
-    ctx.body = JSON.stringify(ctx.state);
-  } else {
-
-    /**
-     * We only support HTML and JSON
-     */
-
-    ctx.status = 406;
-  }
-});
+server.use(render(app));
 
 /**
  * Hook up all em' routes
