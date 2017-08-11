@@ -25,6 +25,9 @@ const dotenv = dedent`
   PORT=3000
   NODE_ENV=development
 
+  # Services
+  PRISMIC_API=<INSERT_PRISMIC_ENDPOINT_HERE>
+
   # SSL Certificates
   GLOBALGOALS_KEY=server.key
   GLOBALGOALS_CERT=server.crt

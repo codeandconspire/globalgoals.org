@@ -29,6 +29,7 @@
     "koa-send": "^4.1.0",
     "localenvify": "^1.0.1",
     "nodemon": "^1.11.0",
+    "normalize.css": "^7.0.0",
     "now": "^7.3.0",
     "postcss": "^6.0.8",
     "postcss-custom-media": "^6.0.0",
@@ -41,12 +42,13 @@
   },
   "dependencies": {
     "choo": "^6.0.0-4",
-    "friendly-url": "^1.0.3",
     "koa": "^2.3.0",
     "koa-router": "^7.2.1",
     "koa-static": "^4.0.1",
     "nanohref": "^3.0.0",
-    "normalize.css": "^7.0.0",
-    "path-to-regexp": "^1.7.0"
+    "path-to-regexp": "^1.7.0",
+    "prismic-element": "^0.3.0",
+    "prismic-javascript": "^1.1.6",
+    "prismic-richtext": "^0.2.2"
   }
 }

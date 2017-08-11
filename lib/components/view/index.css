@@ -4,7 +4,7 @@
 
 .View {
   width: 80%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 5% auto;
   padding: 5% 5%;
   background: var(--color-gray-light);

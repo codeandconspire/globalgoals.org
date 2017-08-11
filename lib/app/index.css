@@ -1,6 +1,6 @@
 @import "normalize.css";
 
 @import "../components/view";
-@import "../components/goals";
+@import "../components/goal";
 
 @import "suitcss-utils-text";
