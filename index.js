@@ -1,5 +1,6 @@
 const Koa = require('koa');
 const static = require('koa-static');
+const body = require('koa-body');
 const router = require('./lib/router');
 const render = require('./lib/middleware/render');
 const prismic = require('./lib/middleware/prismic');
@@ -21,6 +22,12 @@ if (process.env.NODE_ENV === 'development') {
  */
 
 server.use(static('assets'));
+
+/**
+ * Parse request body
+ */
+
+server.use(body());
 
 /**
  * Hook up the Prismic api

@@ -27,6 +27,7 @@ const dotenv = dedent`
 
   # Services
   PRISMIC_API=<INSERT_PRISMIC_ENDPOINT_HERE>
+  PRISMIC_SECRET=<INSERT_PRISMIC_WEB_HOOK_SECRET>
 
   # SSL Certificates
   GLOBALGOALS_KEY=server.key
