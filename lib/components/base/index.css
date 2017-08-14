@@ -1,17 +1,34 @@
 @import "./colors";
-@import "./typography";
+@import "./fonts";
+
+/**
+ * Custom media queries
+ */
+
+@custom-media --viewport-sm (min-width: 480px);
+@custom-media --viewport-md (min-width: 768px);
+@custom-media --viewport-lg (min-width: 1024px);
+@custom-media --viewport-xl (min-width: 1280px);
 
 /**
  * Document styles
  */
 
 html {
+  box-sizing: border-box;
   height: 100%;
   font-family: var(--font-family-body);
   cursor: default;
-  background: #fff;
-  font-size: var(--font-size-body);
-  line-height: var(--line-height-body);
+  background: var(--color-document);
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 /**
@@ -20,9 +37,27 @@ html {
  */
 
 a {
+  color: var(--color-link);
 	background-color: transparent; /* 1 */
 	-webkit-text-decoration-skip: objects; /* 2 */
   text-decoration: none;
+}
+
+a:matches(:hover, :active, :focus) {
+  color: var(--color-link-enter);
+}
+
+a:matches(:active) {
+  color: var(--color-link-active);
+}
+
+strong {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+svg {
+  vertical-align: bottom;
 }
 
 /*
@@ -52,5 +87,27 @@ button {
   background: none;
   border: 0;
   font: inherit;
+  padding: 0;
+}
+
+/**
+ * Reset a few styles
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote,
+iframe {
+  font: inherit;
+  margin: 0;
+  border: 0;
+  list-style: none;
   padding: 0;
 }

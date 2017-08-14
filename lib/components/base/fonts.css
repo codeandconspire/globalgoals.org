@@ -1,12 +1,10 @@
 :root {
   --giorgio-sans-bold: "Giorgio Sans Bold";
-  --system-sans: "Apex New", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --apex-new: "Apex New", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
   --font-family-heading: var(--giorgio-sans-bold);
   --font-family-body: var(--apex-new);
-  --font-size-body: 17px;
-  --line-height-body: 1.4;
 }
 
 @font-face {

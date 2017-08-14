@@ -4,7 +4,7 @@
 
 :root {
   --color-gray-light: #f1f1f1;
-  --color-gray-light: #f1f1f1;
+  --color-gray: #aaaaaa;
 
   --color-blue: #0a97d9;
   --color-bright-blue: #26bde2;
@@ -23,4 +23,10 @@
   --color-red: #e5243b;
   --color-royal-blue: #00689d;
   --color-yellow: #fcc30b;
+
+  --color-text: #1a1a1a;
+  --color-document: #fff;
+  --color-link: #26bde2;
+  --color-link-enter: #10a2c6;
+  --color-link-active: #5cd1ee;
 }

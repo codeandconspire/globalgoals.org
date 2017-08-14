@@ -35,8 +35,10 @@
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^6.1.0",
     "postcss-import": "^10.0.0",
+    "postcss-selector-matches": "^3.0.1",
     "postcss-url": "^7.1.2",
     "selfsigned": "^1.10.1",
+    "suitcss-utils-display": "^1.0.2",
     "suitcss-utils-text": "^1.0.0",
     "watchify-middleware": "^1.6.0"
   },

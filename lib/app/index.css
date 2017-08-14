@@ -2,5 +2,7 @@
 
 @import "../components/view";
 @import "../components/goal";
+@import "../components/text";
 
 @import "suitcss-utils-text";
+@import "suitcss-utils-display";

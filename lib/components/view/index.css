@@ -3,16 +3,42 @@
 @import "./../base";
 
 .View {
-  width: 80%;
-  max-width: 600px;
-  margin: 5% auto;
-  padding: 5% 5%;
-  background: var(--color-gray-light);
+  min-width: 320px;
 }
 
-.View-title {
-  font-family: var(--font-family-heading);
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 3em;
+/**
+ * View sections
+ */
+
+.View-section {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0 24px;
+}
+
+.View-section--full {
+  max-width: none;
+}
+
+@media (--viewport-lg) {
+  .View-section {
+    padding: 0 32px;
+  }
+}
+
+@media (--viewport-xl) {
+  .View-section {
+    padding: 0 48px;
+    max-width: calc(1280px + (48px * 2));
+  }
+}
+
+/**
+ * View intro
+ */
+
+.View-intro {
+  max-width: 635px;
 }
