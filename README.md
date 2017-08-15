@@ -19,5 +19,5 @@ www -> now -> Write/Read from cache (Redis)
 - [x] Configure web hook endpoint
 - [ ] Set up S3
 - [ ] Create deploy scripts (npm script + publish to S3)
-- [ ] Investigate DNS (hosting, email addresses etc.)
+- [x] Investigate DNS (hosting, email addresses etc.)
 - [ ] Add license and open repo
