@@ -4,7 +4,9 @@
 
 :root {
   --color-gray-light: #f1f1f1;
+  --color-gray-light-alpha: rgba(0, 0, 0, 0.05);
   --color-gray: #aaaaaa;
+  --color-gray-alpha: rgba(0, 0, 0, 0.34);
 
   --color-blue: #0a97d9;
   --color-bright-blue: #26bde2;

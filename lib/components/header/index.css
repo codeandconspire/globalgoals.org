@@ -2,11 +2,28 @@
 
 @import "./../base";
 
+:root {
+  --Header-height: 136px;
+}
+
 .Header {
-  overflow: hidden;
+  height: var(--Header-height);
+}
+
+.Header-bar {
   user-select: none;
-  height: 136px;
+  box-shadow: 0 1px 0 var(--color-gray-light-alpha);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #fff;
+}
+
+.Header-content {
   display: flex;
+  height: var(--Header-height);
   align-items: center;
 }
 
@@ -42,8 +59,14 @@
   font-size: 27px;
   white-space: nowrap;
   font-family: var(--font-family-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .Header-action:matches(:hover, :focus, :active) {
   color: inherit;
+}
+
+.Header-action.is-active {
+  color: var(--color-link);
 }

@@ -9,6 +9,14 @@
   font-size: 16px;
 }
 
+.Text > :first-child {
+  margin-top: 0;
+}
+
+.Text > :last-child {
+  margin-bottom: 0;
+}
+
 /**
  * Headings
  */
@@ -22,7 +30,7 @@
   font-family: var(--font-family-heading);
   line-height: 1.1;
   text-transform: uppercase;
-  margin: 1em 0;
+  margin: 8px 0;
 }
 
 .Text h1 {
@@ -48,7 +56,7 @@
   font-weight: bold;
   font-size: inherit;
   line-height: inherit;
-  margin: 1em 0;
+  margin: 8px 0;
 }
 
 /**
@@ -56,7 +64,7 @@
  */
 
 .Text p {
-  margin: 1em 0;
+  margin: 8px 0;
 }
 
 /**
