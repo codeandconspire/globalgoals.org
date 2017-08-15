@@ -13,10 +13,10 @@ www -> now -> Write/Read from cache (Redis)
 ## TODO
 
 - [ ] Fix Now (org)
-- [ ] Configure routes (redirects)
+- [x] Configure routes (redirects)
 - [ ] Set up static file serving
-- [ ] Set up Prismic.io
-- [ ] Configure web hook endpoint
+- [x] Set up Prismic.io
+- [x] Configure web hook endpoint
 - [ ] Set up S3
 - [ ] Create deploy scripts (npm script + publish to S3)
 - [ ] Investigate DNS (hosting, email addresses etc.)
