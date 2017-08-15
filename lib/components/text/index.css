@@ -79,8 +79,16 @@
  * Custom visual elements
  */
 
-.Text-preamble {
+.Text-large {
   font-size: 20px;
+}
+
+.Text-large > :first-child {
+  margin-top: 0;
+}
+
+.Text-large > :last-child {
+  margin-bottom: 0;
 }
 
 .Text-label {
@@ -123,7 +131,7 @@
     font-size: 32px;
   }
 
-  .Text-preamble {
+  .Text-large {
     font-size: 24px;
   }
 }
