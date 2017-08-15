@@ -1,8 +1,10 @@
 @import "normalize.css";
 
-@import "../components/view";
+@import "../components/footer";
 @import "../components/goal";
+@import "../components/header";
 @import "../components/text";
+@import "../components/view";
 
-@import "suitcss-utils-text";
 @import "suitcss-utils-display";
+@import "suitcss-utils-text";

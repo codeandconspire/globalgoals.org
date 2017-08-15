@@ -1,0 +1,49 @@
+/* @define Goal */
+
+@import "./../base";
+
+.Header {
+  overflow: hidden;
+  user-select: none;
+  height: 136px;
+  display: flex;
+  align-items: center;
+}
+
+.Header-logo {
+  flex-grow: 0;
+}
+
+.Header-img {
+  display: block;
+  width: 266px;
+  height: auto;
+}
+
+.Header-nav {
+  flex-grow: 1;
+}
+
+.Header-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Header-item {
+  margin-left: 45px;
+}
+
+.Header-action {
+  display: block;
+  padding: 5px;
+  margin: -5px;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 27px;
+  white-space: nowrap;
+  font-family: var(--font-family-heading);
+}
+
+.Header-action:matches(:hover, :focus, :active) {
+  color: inherit;
+}

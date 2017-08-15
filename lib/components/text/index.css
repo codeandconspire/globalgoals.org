@@ -60,6 +60,14 @@
 }
 
 /**
+ * Misc inline elements
+ */
+
+.Text a {
+  font-weight: bold;
+}
+
+/**
  * Custom visual elements
  */
 

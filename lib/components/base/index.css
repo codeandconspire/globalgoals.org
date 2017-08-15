@@ -22,7 +22,7 @@ html {
   background: var(--color-document);
   color: var(--color-text);
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
 }
 
 *,

@@ -1,0 +1,12 @@
+/* @define Goal */
+
+@import "./../base";
+
+.Footer {
+  border-top: 1px solid var(--color-gray-light);
+  text-align: center;
+  padding: 60px 0;
+  margin: 60px 0 0;
+  overflow: hidden;
+  color: var(--color-gray);
+}
