@@ -1,0 +1,17 @@
+/* @define GoalGrid */
+
+@import "./../base";
+
+.GoalGrid {
+  margin: -5px;
+}
+
+.GoalGrid-item {
+  width: calc(100% / 6);
+  float: left;
+  padding: 5px;
+}
+
+.GoalGrid-icon {
+  width: 100%;
+}

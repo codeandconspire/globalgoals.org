@@ -2,6 +2,7 @@
 
 @import "../components/footer";
 @import "../components/goal";
+@import "../components/goal-grid";
 @import "../components/header";
 @import "../components/text";
 @import "../components/view";
