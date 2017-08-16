@@ -27,6 +27,11 @@
   }
 }
 
+.View-article {
+  margin: 70px 0 50px;
+  max-width: 700px;
+}
+
 @media (--viewport-xl) {
   .View-section {
     padding: 0 48px;

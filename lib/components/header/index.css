@@ -83,5 +83,5 @@
 }
 
 .Header-item.is-active .Header-action {
-  color: var(--color-link);
+  color: var(--color-active);
 }

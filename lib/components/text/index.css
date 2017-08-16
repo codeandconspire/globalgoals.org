@@ -70,13 +70,59 @@
  */
 
 .Text p {
-  margin: 8px 0;
+  margin: 26px 0;
 }
 
 .Text img {
   max-width: 100%;
   height: auto;
+  margin: 26px 0;
+}
+
+.Text ul,
+.Text ol {
+  list-style: none;
+  padding-left: 21px;
+  margin: 26px 0;
+}
+
+.Text ol {
+  counter-reset: ol;
+  padding-left: 0
+}
+
+.Text li {
+  position: relative;
   margin: 8px 0;
+  counter-increment: ol;
+}
+
+.Text li::before {
+  content: "";
+  background: var(--color-active);
+  position: absolute;
+  top: 0.5em;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.Text ol li::before {
+  content: counters(ol, ".") ".";
+  color: var(--color-link);
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: none;
+  width: auto;
+  position: static;
+  margin-right: 0.5em;
+}
+
+.Text ol ol {
+  padding-left: 1.4em;
+  margin: 0;
 }
 
 /**
