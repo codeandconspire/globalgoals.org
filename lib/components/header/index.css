@@ -1,6 +1,7 @@
 /* @define Goal */
 
 @import "./../base";
+@import "./../goal";
 
 :root {
   --Header-height: 136px;
@@ -85,3 +86,39 @@
 .Header-item.is-active .Header-action {
   color: var(--color-active);
 }
+
+/**
+ * Adaptive for use on background colors
+ */
+
+.Header--adaptive .Header-bar {
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+}
+
+.Header--adaptive .Header-logo {
+  filter: brightness(0) invert(100);
+}
+
+.Header--adaptive .Header-item.is-active .Header-action {
+  color: #fff;
+}
+
+.Header--1 { background: var(--color-goal-1); }
+.Header--2 { background: var(--color-goal-2); }
+.Header--3 { background: var(--color-goal-3); }
+.Header--4 { background: var(--color-goal-4); }
+.Header--5 { background: var(--color-goal-5); }
+.Header--6 { background: var(--color-goal-6); }
+.Header--7 { background: var(--color-goal-7); }
+.Header--8 { background: var(--color-goal-8); }
+.Header--9 { background: var(--color-goal-9); }
+.Header--10 { background: var(--color-goal-10); }
+.Header--11 { background: var(--color-goal-11); }
+.Header--12 { background: var(--color-goal-12); }
+.Header--13 { background: var(--color-goal-13); }
+.Header--14 { background: var(--color-goal-14); }
+.Header--15 { background: var(--color-goal-15); }
+.Header--16 { background: var(--color-goal-16); }
+.Header--17 { background: var(--color-goal-17); }

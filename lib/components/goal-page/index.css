@@ -2,24 +2,23 @@
 
 @import "./../base";
 @import "./../goal";
+@import "./../header";
 
 .GoalPage-intro {
   padding: 100px 0;
   text-align: center;
   color: #fff;
   position: relative;
-}
-
-.GoalPage-introContent {
-  margin: 0 auto;
-  max-width: 700px;
+  min-height: calc(100vh - var(--Header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .GoalPage-icon {
   position: absolute;
   top: 15px;
-  left: calc(50% - 40px);
-  width: 80px;
+  left: calc(50% - 75px);
 }
 
 /**
