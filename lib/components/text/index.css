@@ -41,7 +41,7 @@
 
 .Text :matches(h1, .Text-h1) {
   font-size: 62px;
-  line-height: 1;
+  line-height: 0.95;
 }
 
 .Text :matches(h2, .Text-h2) {
@@ -131,6 +131,8 @@
 
 .Text a {
   font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /**
