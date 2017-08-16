@@ -68,6 +68,12 @@
   margin: 8px 0;
 }
 
+.Text img {
+  max-width: 100%;
+  height: auto;
+  margin: 8px 0;
+}
+
 /**
  * Misc inline elements
  */

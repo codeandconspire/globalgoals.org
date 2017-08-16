@@ -12,6 +12,25 @@
   padding: 5px;
 }
 
+.GoalGrid-action {
+  position: relative;
+  padding-top: 100%;
+  display: block;
+  height: 0;
+  background: var(--color-gray-light);
+}
+
 .GoalGrid-icon {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/**
+ * Loading / missing state
+ */
+
+.GoalGrid-item:matches(.is-missing, .is-loading) {
+
 }
