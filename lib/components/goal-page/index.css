@@ -9,7 +9,7 @@
   text-align: center;
   color: #fff;
   position: relative;
-  min-height: calc(100vh - var(--Header-height));
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
