@@ -60,6 +60,7 @@
   text-transform: uppercase;
   font-size: 27px;
   white-space: nowrap;
+  word-spacing: 0.03em;
   font-family: var(--font-family-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
