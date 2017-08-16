@@ -33,7 +33,7 @@
 }
 
 /**
- * Color map
+ * Theme modifiers
  */
 
 .GoalGrid-item--1 .GoalGrid-action { background: var(--color-goal-1); }

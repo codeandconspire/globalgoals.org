@@ -9,6 +9,10 @@
   font-size: 16px;
 }
 
+.Text--adaptive {
+  color: inherit;
+}
+
 .Text > :first-child {
   margin-top: 0;
 }
@@ -21,12 +25,13 @@
  * Headings
  */
 
-.Text :matches(h1, h2, h3, h4, h5, h6) {
+.Text :matches(h1, h2, h3, h4, h5, h6,
+  .Text-h1, .Text-h2, .Text-h3, .Text-h4, .Text-h5, .Text-h6) {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.Text :matches(h1, h2, h3, h4) {
+.Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) {
   font-family: var(--font-family-heading);
   line-height: 1.1;
   text-transform: uppercase;
@@ -34,21 +39,21 @@
   word-spacing: 0.04em;
 }
 
-.Text h1 {
+.Text :matches(h1, .Text-h1) {
   font-size: 62px;
   line-height: 1;
 }
 
-.Text h2 {
+.Text :matches(h2, .Text-h2) {
   font-size: 48px;
   line-height: 1;
 }
 
-.Text h3 {
+.Text :matches(h3, .Text-h3) {
   font-size: 32px;
 }
 
-.Text h4 {
+.Text :matches(h4, .Text-h4) {
   font-size: 24px;
   line-height: 1.15;
 }
@@ -122,19 +127,19 @@
     font-size: 18px;
   }
 
-  .Text h1 {
+  .Text :matches(h1, .Text-h1) {
     font-size: 96px;
   }
 
-  .Text h2 {
+  .Text :matches(h2, .Text-h2) {
     font-size: 72px;
   }
 
-  .Text h3 {
+  .Text :matches(h3, .Text-h3) {
     font-size: 48px;
   }
 
-  .Text h4 {
+  .Text :matches(h4, .Text-h4) {
     font-size: 32px;
   }
 
