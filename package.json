@@ -53,6 +53,7 @@
     "path-to-regexp": "^1.7.0",
     "prismic-element": "^0.3.0",
     "prismic-javascript": "^1.1.6",
-    "prismic-richtext": "^0.2.2"
+    "prismic-richtext": "^0.2.2",
+    "y18n": "^3.2.1"
   }
 }
