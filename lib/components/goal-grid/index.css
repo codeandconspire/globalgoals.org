@@ -1,15 +1,20 @@
 /* @define GoalGrid */
 
 @import "./../base";
+@import "./../goal";
+
+:root {
+  --GoalGrid-gutter: 5px;
+}
 
 .GoalGrid {
-  margin: -5px;
+  margin: calc(var(--GoalGrid-gutter) * -1);
 }
 
 .GoalGrid-item {
   width: calc(100% / 6);
   float: left;
-  padding: 5px;
+  padding: var(--GoalGrid-gutter);
 }
 
 .GoalGrid-action {
@@ -28,9 +33,47 @@
 }
 
 /**
+ * Color map
+ */
+
+.GoalGrid-item--1 .GoalGrid-action { background: var(--color-goal-1); }
+.GoalGrid-item--2 .GoalGrid-action { background: var(--color-goal-2); }
+.GoalGrid-item--3 .GoalGrid-action { background: var(--color-goal-3); }
+.GoalGrid-item--4 .GoalGrid-action { background: var(--color-goal-4); }
+.GoalGrid-item--5 .GoalGrid-action { background: var(--color-goal-5); }
+.GoalGrid-item--6 .GoalGrid-action { background: var(--color-goal-6); }
+.GoalGrid-item--7 .GoalGrid-action { background: var(--color-goal-7); }
+.GoalGrid-item--8 .GoalGrid-action { background: var(--color-goal-8); }
+.GoalGrid-item--9 .GoalGrid-action { background: var(--color-goal-9); }
+.GoalGrid-item--10 .GoalGrid-action { background: var(--color-goal-10); }
+.GoalGrid-item--11 .GoalGrid-action { background: var(--color-goal-11); }
+.GoalGrid-item--12 .GoalGrid-action { background: var(--color-goal-12); }
+.GoalGrid-item--13 .GoalGrid-action { background: var(--color-goal-13); }
+.GoalGrid-item--14 .GoalGrid-action { background: var(--color-goal-14); }
+.GoalGrid-item--15 .GoalGrid-action { background: var(--color-goal-15); }
+.GoalGrid-item--16 .GoalGrid-action { background: var(--color-goal-16); }
+.GoalGrid-item--17 .GoalGrid-action { background: var(--color-goal-17); }
+
+/**
  * Loading / missing state
  */
 
 .GoalGrid-item:matches(.is-missing, .is-loading) {
 
+}
+
+/**
+ * Test
+ */
+
+.GoalGrid-item--1 {
+  width: calc(100% / 2);
+}
+
+.GoalGrid-item--1 .GoalGrid-action {
+  padding-top: calc(((100% - var(--GoalGrid-gutter)) / 3) * 2);
+}
+
+.GoalGrid-item--1 .GoalGrid-icon {
+  width: calc(100% / 3);
 }
