@@ -12,5 +12,7 @@
   "Tags": "Tags",
   "Read more": "Read more",
   "There is no goal %s": "There is no goal %s",
-  "Targets": "Targets"
+  "Targets": "Targets",
+  "Something went catastrophically wrong": "Something went catastrophically wrong",
+  "An error occured": "An error occured"
 }
