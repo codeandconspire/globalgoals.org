@@ -7,6 +7,8 @@
   --color-gray-light-alpha: rgba(0, 0, 0, 0.05);
   --color-gray: #aaaaaa;
   --color-gray-alpha: rgba(0, 0, 0, 0.34);
+  --color-gray-dark: #1a1a1a;
+  --color-gray-dark-alpha: rgba(0, 0, 0, 0.9);
 
   --color-blue: #0a97d9;
   --color-bright-blue: #26bde2;
@@ -26,7 +28,7 @@
   --color-royal-blue: #00689d;
   --color-yellow: #fcc30b;
 
-  --color-text: #1a1a1a;
+  --color-text: var(--color-gray-dark);
   --color-document: #fff;
   --color-active: #26bde2;
   --color-link: #26bde2;

@@ -4,25 +4,36 @@
 @import "./../goal";
 
 :root {
-  --GoalGrid-gutter: 5px;
+  --GoalGrid-gap: 10px;
 }
 
+/**
+ * Fallback float grid
+ */
+
 .GoalGrid {
-  margin: calc(var(--GoalGrid-gutter) * -1);
+  margin: calc((var(--GoalGrid-gap) / 2) * -1);
 }
 
 .GoalGrid-item {
-  width: calc(100% / 6);
-  float: left;
-  padding: var(--GoalGrid-gutter);
+  border: calc(var(--GoalGrid-gap) / 2) solid var(--color-document);
 }
 
-.GoalGrid-action {
+.GoalGrid-item {
+  width: 50%;
+  float: left;
+  background: var(--color-gray-light);
+}
+
+.GoalGrid-item.is-loading {
+
+}
+
+.GoalGrid-content {
   position: relative;
   padding-top: 100%;
   display: block;
   height: 0;
-  background: var(--color-gray-light);
 }
 
 .GoalGrid-icon {
@@ -32,48 +43,201 @@
   left: 0;
 }
 
+.GoalGrid-logo {
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.GoalGrid-item--cta {
+  display: none;
+}
+
+.GoalGrid-item--banner {
+  display: none;
+}
+
+.GoalGrid-item--logo {
+  display: block;
+}
+
+@media (--viewport-sm) {
+  .GoalGrid-item {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 710px) {
+  .GoalGrid-item {
+    width: calc(100% / 4);
+  }
+
+  /**
+   * Fill three empty cells with the banner instead of the logo
+   *
+   * 1. Magic number. Gutter rounds incorrect..
+   */
+
+  .GoalGrid-item--logo {
+    display: none;
+  }
+
+  .GoalGrid-item--banner {
+    display: block;
+    width: 75%;
+  }
+
+  .GoalGrid-item--banner .GoalGrid-content {
+    padding-top: calc((100% / 3) - 6px); /* 1 */
+  }
+}
+
+@media (--viewport-lg) {
+  .GoalGrid-item {
+    width: calc(100% / 6);
+  }
+
+  .GoalGrid-item--logo {
+    display: block;
+  }
+
+  .GoalGrid-item--banner {
+    display: none;
+  }
+}
+
+/**
+ * CSS Grid Layout
+ */
+
+@media (--viewport-lg) {
+  @supports (display: grid) {
+    .GoalGrid {
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-gap: var(--GoalGrid-gap);
+    }
+
+    /**
+     * Move the padding hack to the grid insted, making it square, so we can
+     * work peacefully with the items (utilizing the Grid fractions instead).
+     */
+
+    .GoalGrid::after {
+      content: "";
+      width: 0;
+      height: 0;
+      padding-top: 100%;
+    }
+
+    .GoalGrid-item {
+      display: flex;
+      width: auto;
+      float: none;
+      border: 0;
+    }
+
+    .GoalGrid-content {
+      padding: 0;
+      height: auto;
+      flex-grow: 1;
+    }
+
+    .GoalGrid-icon {
+      position: static;
+    }
+
+    .GoalGrid-item--cta {
+      display: block;
+    }
+
+    .GoalGrid-item--banner {
+      display: block;
+    }
+
+    .GoalGrid-item--logo {
+      display: none;
+    }
+  }
+}
+
 /**
  * Theme modifiers
  */
 
-.GoalGrid-item--1 .GoalGrid-action { background: var(--color-goal-1); }
-.GoalGrid-item--2 .GoalGrid-action { background: var(--color-goal-2); }
-.GoalGrid-item--3 .GoalGrid-action { background: var(--color-goal-3); }
-.GoalGrid-item--4 .GoalGrid-action { background: var(--color-goal-4); }
-.GoalGrid-item--5 .GoalGrid-action { background: var(--color-goal-5); }
-.GoalGrid-item--6 .GoalGrid-action { background: var(--color-goal-6); }
-.GoalGrid-item--7 .GoalGrid-action { background: var(--color-goal-7); }
-.GoalGrid-item--8 .GoalGrid-action { background: var(--color-goal-8); }
-.GoalGrid-item--9 .GoalGrid-action { background: var(--color-goal-9); }
-.GoalGrid-item--10 .GoalGrid-action { background: var(--color-goal-10); }
-.GoalGrid-item--11 .GoalGrid-action { background: var(--color-goal-11); }
-.GoalGrid-item--12 .GoalGrid-action { background: var(--color-goal-12); }
-.GoalGrid-item--13 .GoalGrid-action { background: var(--color-goal-13); }
-.GoalGrid-item--14 .GoalGrid-action { background: var(--color-goal-14); }
-.GoalGrid-item--15 .GoalGrid-action { background: var(--color-goal-15); }
-.GoalGrid-item--16 .GoalGrid-action { background: var(--color-goal-16); }
-.GoalGrid-item--17 .GoalGrid-action { background: var(--color-goal-17); }
+.GoalGrid-item--1 { background: var(--color-goal-1); }
+.GoalGrid-item--2 { background: var(--color-goal-2); }
+.GoalGrid-item--3 { background: var(--color-goal-3); }
+.GoalGrid-item--4 { background: var(--color-goal-4); }
+.GoalGrid-item--5 { background: var(--color-goal-5); }
+.GoalGrid-item--6 { background: var(--color-goal-6); }
+.GoalGrid-item--7 { background: var(--color-goal-7); }
+.GoalGrid-item--8 { background: var(--color-goal-8); }
+.GoalGrid-item--9 { background: var(--color-goal-9); }
+.GoalGrid-item--10 { background: var(--color-goal-10); }
+.GoalGrid-item--11 { background: var(--color-goal-11); }
+.GoalGrid-item--12 { background: var(--color-goal-12); }
+.GoalGrid-item--13 { background: var(--color-goal-13); }
+.GoalGrid-item--14 { background: var(--color-goal-14); }
+.GoalGrid-item--15 { background: var(--color-goal-15); }
+.GoalGrid-item--16 { background: var(--color-goal-16); }
+.GoalGrid-item--17 { background: var(--color-goal-17); }
+
+.GoalGrid-item--cta { background: var(--color-gray-light); }
+.GoalGrid-item--banner { background: var(--color-gray-dark); }
+.GoalGrid-item--logo { background: var(--color-gray-light); }
 
 /**
- * Loading / missing state
+ * Sets
  */
 
-.GoalGrid-item:matches(.is-missing, .is-loading) {
-
+/* 1. default */
+@media (--viewport-lg) {
+  @supports (display: grid) {
+    .GoalGrid-item--1 { grid-area: 1 / 1 / 3 / 4; }
+    .GoalGrid-item--1 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+    .GoalGrid-item--6 { grid-area: 2 / 5 / 5 / 7; }
+    .GoalGrid-item--6 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+    .GoalGrid-item--banner { grid-area: 6 / 4 / 7 / 7; }
+    .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
+  }
 }
 
-/**
- * Test
- */
+/* 2. */
 
-.GoalGrid-item--1 {
-  width: calc(100% / 2);
-}
+.GoalGrid--set2 .GoalGrid-item--10 { grid-area: 1 / 1 / 3 / 4; }
+.GoalGrid--set2 .GoalGrid-item--10 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set2 .GoalGrid-item--13 { grid-area: 2 / 5 / 5 / 7; }
+.GoalGrid--set2 .GoalGrid-item--13 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set2 .GoalGrid-item--banner { grid-area: 6 / 4 / 7 / 7; }
+.GoalGrid--set2 .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
 
-.GoalGrid-item--1 .GoalGrid-action {
-  padding-top: calc(((100% - var(--GoalGrid-gutter)) / 3) * 2);
-}
+/* 3. */
 
-.GoalGrid-item--1 .GoalGrid-icon {
-  width: calc(100% / 3);
-}
+.GoalGrid--set3 .GoalGrid-item--2 { grid-area: 1 / 1 / 3 / 4; }
+.GoalGrid--set3 .GoalGrid-item--2 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set3 .GoalGrid-item--14 { grid-area: 2 / 5 / 5 / 7; }
+.GoalGrid--set3 .GoalGrid-item--14 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set3 .GoalGrid-item--banner { grid-area: 6 / 4 / 7 / 7; }
+.GoalGrid--set3 .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
+
+/* 4. */
+
+.GoalGrid--set4 .GoalGrid-item--7 { grid-area: 1 / 1 / 3 / 4; }
+.GoalGrid--set4 .GoalGrid-item--7 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set4 .GoalGrid-item--17 { grid-area: 2 / 5 / 5 / 7; }
+.GoalGrid--set4 .GoalGrid-item--17 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set4 .GoalGrid-item--banner { grid-area: 6 / 4 / 7 / 7; }
+.GoalGrid--set4 .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
+
+/* 5. */
+
+.GoalGrid--set5 .GoalGrid-item--3 { grid-area: 1 / 1 / 3 / 4; }
+.GoalGrid--set5 .GoalGrid-item--3 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set5 .GoalGrid-item--8 { grid-area: 2 / 5 / 5 / 7; }
+.GoalGrid--set5 .GoalGrid-item--8 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set5 .GoalGrid-item--banner { grid-area: 6 / 4 / 7 / 7; }
+.GoalGrid--set5 .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
