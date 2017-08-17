@@ -1,0 +1,13 @@
+/* @define Logo */
+
+@import "./../base";
+
+.Logo {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.Logo--adaptive * {
+  fill: currentColor;
+}

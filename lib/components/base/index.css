@@ -11,6 +11,16 @@
 @custom-media --viewport-xl (min-width: 1250px);
 
 /**
+ * Our easing curves
+ */
+
+:root {
+  --ease-in: cubic-bezier(0.4, 0.0, 1, 1);
+  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/**
  * Document styles
  */
 

@@ -1,10 +1,11 @@
 @import "normalize.css";
 
 @import "../components/footer";
-@import "../components/goal";
 @import "../components/goal-grid";
 @import "../components/goal-page";
+@import "../components/goal";
 @import "../components/header";
+@import "../components/logo";
 @import "../components/text";
 @import "../components/view";
 
