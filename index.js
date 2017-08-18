@@ -4,6 +4,7 @@ const body = require('koa-body');
 const router = require('./lib/router');
 const render = require('./lib/middleware/render');
 const prismic = require('./lib/middleware/prismic');
+const catchall = require('./lib/middleware/catchall');
 const app = require('./lib/app');
 
 const server = new Koa();
@@ -42,7 +43,13 @@ server.use(prismic);
 server.use(render(app));
 
 /**
- * Hook up all em' routes
+ * Guard against any downstream errors
+ */
+
+server.use(catchall);
+
+/**
+ * Hook up em' routes
  */
 
 server.use(router.routes());

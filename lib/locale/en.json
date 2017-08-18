@@ -14,5 +14,8 @@
   "There is no goal %s": "There is no goal %s",
   "Targets": "Targets",
   "Something went catastrophically wrong": "Something went catastrophically wrong",
-  "An error occured": "An error occured"
+  "An error occured": "An error occured",
+  "This page does not exist": "This page does not exist",
+  "Something went wrong": "Something went wrong",
+  "Not found": "Not found"
 }
