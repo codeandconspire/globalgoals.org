@@ -121,18 +121,6 @@
       grid-gap: var(--GoalGrid-gap);
     }
 
-    /**
-     * Move the padding hack to the grid insted, making it square, so we can
-     * work peacefully with the items (utilizing the Grid fractions instead).
-     */
-
-    .GoalGrid::after {
-      content: "";
-      width: 0;
-      height: 0;
-      padding-top: 100%;
-    }
-
     .GoalGrid-item {
       display: flex;
       width: auto;
@@ -151,14 +139,23 @@
     }
 
     .GoalGrid-item--cta {
-      display: block;
+      display: none;
     }
-
     .GoalGrid-item--banner {
+      display: none;
+    }
+    .GoalGrid-item--logo {
       display: block;
+      padding-top: 10%;
     }
 
-    .GoalGrid-item--logo {
+    .GoalGrid--setInitialized .GoalGrid-item--cta {
+      display: block;
+    }
+    .GoalGrid--setInitialized .GoalGrid-item--banner {
+      display: block;
+    }
+    .GoalGrid--setInitialized .GoalGrid-item--logo {
       display: none;
     }
   }
@@ -194,17 +191,14 @@
  * Sets
  */
 
-/* 1. default */
-@media (--viewport-lg) {
-  @supports (display: grid) {
-    .GoalGrid-item--1 { grid-area: 1 / 1 / 3 / 4; }
-    .GoalGrid-item--1 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
-    .GoalGrid-item--6 { grid-area: 2 / 5 / 5 / 7; }
-    .GoalGrid-item--6 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
-    .GoalGrid-item--banner { grid-area: 6 / 4 / 7 / 7; }
-    .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
-  }
-}
+/* 1. */
+
+.GoalGrid--set1 .GoalGrid-item--1 { grid-area: 1 / 1 / 3 / 4; }
+.GoalGrid--set1 .GoalGrid-item--1 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set1 .GoalGrid-item--6 { grid-area: 2 / 5 / 5 / 7; }
+.GoalGrid--set1 .GoalGrid-item--6 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set1 .GoalGrid-item--banner { grid-area: 6 / 4 / 7 / 7; }
+.GoalGrid--set1 .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
 
 /* 2. */
 
