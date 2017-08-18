@@ -202,36 +202,54 @@
 
 /* 2. */
 
-.GoalGrid--set2 .GoalGrid-item--10 { grid-area: 1 / 1 / 3 / 4; }
-.GoalGrid--set2 .GoalGrid-item--10 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
-.GoalGrid--set2 .GoalGrid-item--13 { grid-area: 2 / 5 / 5 / 7; }
-.GoalGrid--set2 .GoalGrid-item--13 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set2 .GoalGrid-item--3 { grid-area: 1 / 3 / 3 / 6; }
+.GoalGrid--set2 .GoalGrid-item--3 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set2 .GoalGrid-item--8 { grid-area: 3 / 1 / 6 / 3; }
+.GoalGrid--set2 .GoalGrid-item--8 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
 .GoalGrid--set2 .GoalGrid-item--banner { grid-area: 6 / 4 / 7 / 7; }
-.GoalGrid--set2 .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
+.GoalGrid--set2 .GoalGrid-item--cta { grid-area: 3 / 4 / 5 / 7; }
 
 /* 3. */
 
-.GoalGrid--set3 .GoalGrid-item--2 { grid-area: 1 / 1 / 3 / 4; }
-.GoalGrid--set3 .GoalGrid-item--2 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
-.GoalGrid--set3 .GoalGrid-item--14 { grid-area: 2 / 5 / 5 / 7; }
-.GoalGrid--set3 .GoalGrid-item--14 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
-.GoalGrid--set3 .GoalGrid-item--banner { grid-area: 6 / 4 / 7 / 7; }
-.GoalGrid--set3 .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
+.GoalGrid--set3 .GoalGrid-item--17 { grid-area: 5 / 4 / 7 / 7; }
+.GoalGrid--set3 .GoalGrid-item--17 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set3 .GoalGrid-item--7 { grid-area: 2 / 1 / 5 / 3; }
+.GoalGrid--set3 .GoalGrid-item--7 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set3 .GoalGrid-item--banner { grid-area: 6 / 1 / 6 / 4; }
+.GoalGrid--set3 .GoalGrid-item--cta { grid-area: 2 / 4 / 4 / 7; }
 
 /* 4. */
 
-.GoalGrid--set4 .GoalGrid-item--7 { grid-area: 1 / 1 / 3 / 4; }
-.GoalGrid--set4 .GoalGrid-item--7 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
-.GoalGrid--set4 .GoalGrid-item--17 { grid-area: 2 / 5 / 5 / 7; }
-.GoalGrid--set4 .GoalGrid-item--17 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
-.GoalGrid--set4 .GoalGrid-item--banner { grid-area: 6 / 4 / 7 / 7; }
-.GoalGrid--set4 .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
+.GoalGrid--set4 .GoalGrid-item--13 { grid-area: 7 / 3 / 5 / 6; }
+.GoalGrid--set4 .GoalGrid-item--13 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set4 .GoalGrid-item--2 { grid-area: 1 / 2 / 4 / 4; }
+.GoalGrid--set4 .GoalGrid-item--2 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set4 .GoalGrid-item--banner { grid-area: 4 / 4 / 5 / 7; }
+.GoalGrid--set4 .GoalGrid-item--cta { grid-area: 1 / 4 / 3 / 7; }
 
 /* 5. */
 
-.GoalGrid--set5 .GoalGrid-item--3 { grid-area: 1 / 1 / 3 / 4; }
-.GoalGrid--set5 .GoalGrid-item--3 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
-.GoalGrid--set5 .GoalGrid-item--8 { grid-area: 2 / 5 / 5 / 7; }
-.GoalGrid--set5 .GoalGrid-item--8 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
-.GoalGrid--set5 .GoalGrid-item--banner { grid-area: 6 / 4 / 7 / 7; }
+.GoalGrid--set5 .GoalGrid-item--9 { grid-area: 2 / 3 / 4 / 6; }
+.GoalGrid--set5 .GoalGrid-item--9 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set5 .GoalGrid-item--16 { grid-area: 4 / 5 / 7 / 7; }
+.GoalGrid--set5 .GoalGrid-item--16 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set5 .GoalGrid-item--banner { grid-area: 6 / 1 / 6 / 4; }
 .GoalGrid--set5 .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
+
+/* 6. */
+
+.GoalGrid--set6 .GoalGrid-item--10 { grid-area: 2 / 4 / 4 / 7; }
+.GoalGrid--set6 .GoalGrid-item--10 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set6 .GoalGrid-item--11 { grid-area: 3 / 1 / 6 / 3; }
+.GoalGrid--set6 .GoalGrid-item--11 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set6 .GoalGrid-item--banner { grid-area: 6 / 1 / 7 / 4; }
+.GoalGrid--set6 .GoalGrid-item--cta { grid-area: 4 / 4 / 6 / 7; }
+
+/* 7. */
+
+.GoalGrid--set7 .GoalGrid-item--1 { grid-area: 1 / 1 / 3 / 4; }
+.GoalGrid--set7 .GoalGrid-item--1 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set7 .GoalGrid-item--12 { grid-area: 3 / 5 / 6 / 7; }
+.GoalGrid--set7 .GoalGrid-item--12 .GoalGrid-content { display: grid; grid: 0 / 1fr 1fr var(--GoalGrid-gap); }
+.GoalGrid--set7 .GoalGrid-item--banner { grid-area: 6 / 1 / 6 / 4; }
+.GoalGrid--set7 .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
