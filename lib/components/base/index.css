@@ -84,6 +84,7 @@ textarea,
 [tabindex] {
 	-ms-touch-action: manipulation; /* 1 */
 	touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /**
@@ -96,6 +97,7 @@ button {
   border: 0;
   font: inherit;
   padding: 0;
+  border-radius: 0;
 }
 
 /**
