@@ -34,4 +34,26 @@
   --color-link: #26bde2;
   --color-link-enter: #10a2c6;
   --color-link-active: #5cd1ee;
+
+  /**
+   * Map colors to goals
+   */
+
+  --color-goal-1: var(--color-red);
+  --color-goal-2: var(--color-mustard);
+  --color-goal-3: var(--color-kelly-green);
+  --color-goal-4: var(--color-dark-red);
+  --color-goal-5: var(--color-red-orange);
+  --color-goal-6: var(--color-bright-blue);
+  --color-goal-7: var(--color-yellow);
+  --color-goal-8: var(--color-burgundy-red);
+  --color-goal-9: var(--color-orange);
+  --color-goal-10: var(--color-magenta);
+  --color-goal-11: var(--color-golden-yellow);
+  --color-goal-12: var(--color-dark-mustard);
+  --color-goal-13: var(--color-dark-green);
+  --color-goal-14: var(--color-blue);
+  --color-goal-15: var(--color-lime-green);
+  --color-goal-16: var(--color-royal-blue);
+  --color-goal-17: var(--color-navy-blue);
 }

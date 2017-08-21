@@ -1,7 +1,6 @@
 /* @define Header */
 
-@import "./../base";
-@import "./../goal";
+@import "../base";
 
 :root {
   --Header-svg-clipping-fix: 14px;
@@ -174,7 +173,7 @@
   }
 }
 
-@media (--viewport-xl) {
+@media (--viewport-lg) {
   .Header {
     height: 136px;
   }

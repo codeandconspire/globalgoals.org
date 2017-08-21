@@ -1,6 +1,6 @@
 /* @define Text */
 
-@import "./../base";
+@import "../base";
 
 .Text {
   color: var(--color-text);
@@ -123,6 +123,10 @@
 .Text ol ol {
   padding-left: 1.4em;
   margin: 0;
+}
+
+.Text pre {
+  font-size: 12px;
 }
 
 /**
