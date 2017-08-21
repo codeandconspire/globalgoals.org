@@ -125,6 +125,10 @@
   margin: 0;
 }
 
+.Text pre {
+  font-size: 12px;
+}
+
 /**
  * Misc inline elements
  */

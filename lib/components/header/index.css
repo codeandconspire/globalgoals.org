@@ -174,7 +174,7 @@
   }
 }
 
-@media (--viewport-xl) {
+@media (--viewport-lg) {
   .Header {
     height: 136px;
   }
