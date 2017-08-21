@@ -4,44 +4,37 @@
 @import "./color-map";
 
 .Goal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   width: 150px;
+  padding-top: 8%;
   background: #fff;
-}
-
-.Goal-icon {
-  fill: currentColor;
 }
 
 .Goal-label {
   fill: currentColor;
 }
 
-.Goal-number {
+.Goal-glyph {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   fill: currentColor;
 }
 
-.Goal-text {
-  fill: currentColor;
+.Goal--fill {
+  width: 100%;
 }
 
-/**
- * Icon only
- */
-
-.Goal--iconOnly .Goal-icon {
-  transform: translate(0, -27%);
-}
-
-.Goal--iconOnly .Goal-label {
-  display: none;
-}
-
-.Goal--iconOnly.Goal--16 .Goal-icon {
-  transform: translateY(-23%);
-}
-
-.Goal--iconOnly.Goal--13 .Goal-icon {
-  transform: translateY(-34%);
+.Goal--cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Todo: Tweak bad positioning of all icons
