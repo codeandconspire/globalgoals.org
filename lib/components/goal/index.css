@@ -23,6 +23,9 @@
   flex-direction: column;
   justify-content: center;
   fill: currentColor;
+  width: 84%;
+  margin-left: 8%;
+  margin-top: -2%;
 }
 
 .Goal--fill {
