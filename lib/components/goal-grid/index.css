@@ -41,6 +41,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.GoalGrid-icon {
+  position: absolute;
+  height: 92%;
+  top: 8%;
+  left: 0;
+  width: 100%;
+}
+
 .GoalGrid-logo {
   width: 80%;
   position: absolute;
@@ -158,7 +166,9 @@
 
     .GoalGrid-icon {
       position: relative;
-      height: 100%;
+      height: 92%;
+      margin-top: 8%;
+      top: 0;
     }
 
     .GoalGrid-item--cta,
