@@ -1,0 +1,73 @@
+/* @define Hero */
+
+@import "../base";
+
+.Hero {
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hero.no-transition {
+  visibility: hidden;
+  transition: none;
+}
+
+.Hero-container {
+  flex: 1 1 720px;
+  max-width: 720px;
+}
+
+.Hero-title {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.Hero-intro {
+  margin: 0 6vw;
+  animation-name: Hero-intro--appear;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  animation-duration: 350ms;
+}
+
+@keyframes Hero-intro--appear {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/**
+ * Takeover
+ */
+
+.Hero--takeover {
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.Hero--takeover .Hero-title:not(.is-clone) {
+  visibility: hidden;
+}
+
+.Hero--takeover .Hero-title.is-clone {
+  position: fixed;
+  transition: all 350ms cubic-bezier(0.85, 0.085, 0.795, 0.035);
+}
+
+.Hero--takeover .Hero-intro {
+  visibility: hidden;
+}
