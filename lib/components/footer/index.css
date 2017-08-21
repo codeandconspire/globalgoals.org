@@ -1,6 +1,6 @@
 /* @define Footer */
 
-@import "./../base";
+@import "../base";
 
 .Footer {
   border-top: 1px solid var(--color-gray-light);

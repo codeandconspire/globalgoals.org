@@ -1,7 +1,6 @@
 /* @define Header */
 
-@import "./../base";
-@import "./../goal";
+@import "../base";
 
 :root {
   --Header-svg-clipping-fix: 14px;

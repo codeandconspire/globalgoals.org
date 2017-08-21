@@ -1,7 +1,6 @@
 /* @define Goal */
 
-@import "./../base";
-@import "./color-map";
+@import "../base";
 
 .Goal {
   display: flex;
@@ -9,7 +8,7 @@
   justify-content: flex-start;
   align-items: stretch;
   width: 150px;
-  padding-top: 8%;
+  /* padding-top: 8%; */
   background: #fff;
 }
 
@@ -22,6 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 8% 0;
   fill: currentColor;
   width: 84%;
   margin-left: 8%;
@@ -96,3 +96,37 @@
 
 .Goal--17 { background: var(--color-goal-17); color: #fff; }
 .Goal--17.Goal--inverted { color: var(--color-goal-17); background: #fff; }
+
+/**
+ * Icon only
+ */
+
+ .Goal--noLabel .Goal-icon {
+  transform: translate(0, -27%);
+}
+
+.Goal--noLabel.Goal--16 .Goal-icon {
+  transform: translateY(-23%);
+}
+
+.Goal--noLabel.Goal--13 .Goal-icon {
+  transform: translateY(-34%);
+}
+
+/**
+ * Tinted numbers
+ */
+
+.Goal--tint .Goal-number {
+  color: #000;
+  fill-opacity: 0.5;
+}
+
+
+/**
+ * Transparent background
+ */
+
+.Goal--noBackground {
+  background: transparent;
+}

@@ -1,6 +1,6 @@
 /* @define Text */
 
-@import "./../base";
+@import "../base";
 
 .Text {
   color: var(--color-text);
