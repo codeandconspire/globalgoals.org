@@ -20,12 +20,13 @@
 .Footer-title {
   font-family: var(--font-family-heading);
   line-height: 1.1;
-  font-size: 24px;
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
-  margin-bottom: 30px;
+  font-size-adjust: var(--font-size-adjust-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 .Footer-list {

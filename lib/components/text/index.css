@@ -9,6 +9,10 @@
   font-size: 16px;
 }
 
+.Text--growing {
+  font-size: 18px;
+}
+
 .Text--adaptive {
   color: inherit;
 }
@@ -137,6 +141,7 @@
   text-transform: uppercase;
   margin: 0;
   word-spacing: var(--word-spacing-heading);
+  font-size-adjust: var(--font-size-adjust-heading);
 }
 
 .Text :matches(h1, .Text-h1) {
@@ -171,6 +176,7 @@
   color: #fff;
   white-space: nowrap;
   padding: 0.15em 0.18em 0.08em;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -196,6 +202,9 @@
   color: var(--color-gray);
   font-family: var(--font-family-heading);
   line-height: 1.1;
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  font-size-adjust: var(--font-size-adjust-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -211,8 +220,8 @@
  */
 
 @media (--viewport-md) {
-  .Text {
-    font-size: 18px;
+  .Text--growing {
+    font-size: 20px;
   }
 
   .Text :matches(h1, .Text-h1) {

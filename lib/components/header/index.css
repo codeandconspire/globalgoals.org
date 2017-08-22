@@ -147,8 +147,10 @@
     text-transform: uppercase;
     font-size: 23.6px;
     white-space: nowrap;
-    word-spacing: 0.03em;
     font-family: var(--font-family-heading);
+    text-transform: uppercase;
+    word-spacing: var(--word-spacing-heading);
+    font-size-adjust: var(--font-size-adjust-heading);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

@@ -16,6 +16,7 @@
   position: relative;
   overflow: hidden;
   background-color: var(--color-gray-light);
+  user-select: none;
 }
 
 .Card-image {
@@ -59,6 +60,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   word-spacing: var(--word-spacing-heading);
+  font-size-adjust: var(--font-size-adjust-heading);
+  user-select: none;
 }
 
 .Card:hover .Card-link,
@@ -126,6 +129,12 @@
   font-size: 48px;
   color: #fff;
   font-family: var(--font-family-heading);
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  font-size-adjust: var(--font-size-adjust-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
 }
 
 /**
