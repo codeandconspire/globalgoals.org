@@ -11,6 +11,7 @@
 .Card-figure {
   position: relative;
   overflow: hidden;
+  background-color: var(--color-gray-light);
 }
 
 .Card-image {
@@ -47,6 +48,55 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   word-spacing: var(--word-spacing-heading);
+}
+
+.Card-tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "first third sixth"
+    "forth second fifth";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Card-tag:nth-child(1) {
+  grid-area: first;
+}
+
+.Card-tag:nth-child(2) {
+  grid-area: second;
+}
+
+.Card-tag:nth-child(3) {
+  grid-area: third;
+}
+
+.Card-tag:nth-child(4) {
+  grid-area: forth;
+}
+
+.Card-tag:nth-child(5) {
+  grid-area: fifth;
+}
+
+.Card-tag:nth-child(6) {
+  grid-area: sixth;
+}
+
+.Card-tag {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 48px;
+  color: #fff;
+  font-family: var(--font-family-heading);
 }
 
 .Card-link::after {
