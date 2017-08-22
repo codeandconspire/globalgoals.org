@@ -44,6 +44,9 @@
   color: var(--color-link);
   text-transform: uppercase;
   font-family: var(--font-family-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-spacing: var(--word-spacing-heading);
 }
 
 .Card-link::after {

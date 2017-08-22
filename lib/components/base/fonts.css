@@ -5,6 +5,7 @@
 
   --font-family-heading: var(--giorgio-sans-bold);
   --font-family-body: var(--apex-new);
+  --word-spacing-heading: 0.04em;
 }
 
 @font-face {
@@ -14,17 +15,6 @@
   src: url("./fonts/giorgio-sans-bold.woff2") format("woff2"),
        url("./fonts/giorgio-sans-bold.woff") format("woff");
   font-display: block;
-
-}
-
-@font-face {
-  font-family: "Giorgio Sans Bold";
-  font-style: normal;
-  font-weight: bold;
-  src: url("./fonts/giorgio-sans-bold.woff2") format("woff2"),
-       url("./fonts/giorgio-sans-bold.woff") format("woff");
-  font-display: block;
-
 }
 
 @font-face {
@@ -34,7 +24,6 @@
   src: url("./fonts/apex-new-book.woff2") format("woff2"),
        url("./fonts/apex-new-book.woff") format("woff");
   font-display: block;
-
 }
 
 @font-face {
@@ -44,5 +33,4 @@
   src: url("./fonts/apex-new-bold.woff2") format("woff2"),
        url("./fonts/apex-new-bold.woff") format("woff");
   font-display: block;
-
 }

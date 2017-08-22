@@ -115,7 +115,7 @@
   line-height: 1.1;
   text-transform: uppercase;
   margin: 0;
-  word-spacing: 0.04em;
+  word-spacing: var(--word-spacing-heading);
 }
 
 .Text :matches(h1, .Text-h1) {
