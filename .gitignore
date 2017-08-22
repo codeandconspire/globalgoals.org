@@ -8,4 +8,4 @@ server.crt
 node_modules
 
 # Build
-public/
+public

@@ -8,7 +8,14 @@
     "setup": "./bin/setup",
     "start": "node index.js",
     "restart": "nodemon -r dotenv/config --inspect index.js -i lib/components",
-    "postinstall": "echo \"> Don't forget to setup your environment: npm run setup\\n\""
+    "postinstall": "echo \"> Don't forget to setup your environment: npm run setup\\n\"",
+    "postbuild": "npm run compress",
+    "compress:js": "gzip -9 -f -c public/index-$npm_package_version.js > public/index-$npm_package_version.js.gz",
+    "compress:css": "gzip -9 -f -c public/index-$npm_package_version.css > public/index-$npm_package_version.css.gz",
+    "compress": "npm run compress:css && npm run compress:js",
+    "build:js": "browserify lib/app/index.js -t localenvify -t yo-yoify -t [ babelify --presets [ es2015 ] ] -g unassertify -g yo-yoify -g uglifyify | uglifyjs -o public/index-$npm_package_version.js",
+    "build:css": "postcss lib/app/index.css --no-map -c postcss.config.js -o public/index-$npm_package_version.css",
+    "build": "npm run build:css && npm run build:js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +28,9 @@
   },
   "homepage": "https://github.com/codeandconspire/globalgoals.org#readme",
   "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
     "browserify": "^14.4.0",
     "chokidar": "^1.7.0",
     "dedent": "^0.7.0",
@@ -32,6 +42,8 @@
     "normalize.css": "^7.0.0",
     "now": "^7.3.0",
     "postcss": "^6.0.9",
+    "postcss-cli": "^4.1.0",
+    "postcss-csso": "^2.0.0",
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^6.1.0",
     "postcss-import": "^10.0.0",
@@ -40,7 +52,11 @@
     "selfsigned": "^1.10.1",
     "suitcss-utils-display": "^1.0.2",
     "suitcss-utils-text": "^1.0.0",
-    "watchify-middleware": "^1.6.0"
+    "uglify-js": "^3.0.28",
+    "uglifyify": "^4.0.3",
+    "unassertify": "^2.0.4",
+    "watchify-middleware": "^1.6.0",
+    "yo-yoify": "^3.7.3"
   },
   "dependencies": {
     "choo": "^6.0.0",

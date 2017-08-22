@@ -2,6 +2,7 @@ const Koa = require('koa');
 const static = require('koa-static');
 const body = require('koa-body');
 const router = require('./lib/router');
+const assets = require('./lib/middleware/assets');
 const render = require('./lib/middleware/render');
 const prismic = require('./lib/middleware/prismic');
 const catchall = require('./lib/middleware/catchall');
@@ -14,15 +15,15 @@ const server = new Koa();
  */
 
 if (process.env.NODE_ENV === 'development') {
-  server.use(require('./lib/middleware/assets'));
+  server.use(require('./lib/middleware/dev'));
 }
 
 /**
  * Serve static files
- * TODO: Either implement HTTP/2 Push or check for dev environment
  */
 
-server.use(static('assets'));
+server.use(assets);
+server.use(static('public', { maxage: 1000 * 60 * 60 * 24 * 365 }));
 
 /**
  * Parse request body

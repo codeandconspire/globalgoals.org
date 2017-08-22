@@ -33,7 +33,6 @@
 
 .Header-content {
   display: flex;
-  height: var(--Header-height);
   align-items: center;
   position: relative;
   z-index: 1;
