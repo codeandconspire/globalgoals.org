@@ -6,7 +6,6 @@
   "Show Navigation": "Show Navigation",
   "Related goals": "Related goals",
   "The Global Goals": "The Global Goals",
-  "The Global Goals are only going to work if we fight for them and you can’t fight for your rights if you don’t know what they are.": "The Global Goals are only going to work if we fight for them and you can’t fight for your rights if you don’t know what they are.",
   "Inspiring text about The Global Goals initiatives, projects and organisations.": "Inspiring text about The Global Goals initiatives, projects and organisations.",
   "View initiative": "View initiative",
   "Inspiring text about our news related to the The Global Goals.": "Inspiring text about our news related to the The Global Goals.",
@@ -18,5 +17,7 @@
   "An error occured": "An error occured",
   "This page does not exist": "This page does not exist",
   "Something went wrong": "Something went wrong",
-  "Not found": "Not found"
+  "Not found": "Not found",
+  "Loading": "Loading",
+  "Page not found": "Page not found"
 }
