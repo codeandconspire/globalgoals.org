@@ -13,56 +13,27 @@
   color: inherit;
 }
 
-.Text > :first-child {
+.Text :first-child {
   margin-top: 0;
 }
 
-.Text > :last-child {
+.Text :last-child {
   margin-bottom: 0;
 }
 
+.Text-muted {
+  color: #ddd;
+}
+
 /**
- * Headings
+ * Misc inline elements
  */
 
-.Text :matches(h1, h2, h3, h4, h5, h6,
-  .Text-h1, .Text-h2, .Text-h3, .Text-h4, .Text-h5, .Text-h6) {
+.Text a {
+  font-weight: bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) {
-  font-family: var(--font-family-heading);
-  line-height: 1.1;
-  text-transform: uppercase;
-  margin: 8px 0;
-  word-spacing: 0.04em;
-}
-
-.Text :matches(h1, .Text-h1) {
-  font-size: 62px;
-  line-height: 0.95;
-}
-
-.Text :matches(h2, .Text-h2) {
-  font-size: 48px;
-  line-height: 1;
-}
-
-.Text :matches(h3, .Text-h3) {
-  font-size: 32px;
-}
-
-.Text :matches(h4, .Text-h4) {
-  font-size: 24px;
-  line-height: 1.15;
-}
-
-.Text :matches(h5, h6) {
-  font-weight: bold;
-  font-size: inherit;
-  line-height: inherit;
-  margin: 8px 0;
+  color: var(--color-link);
 }
 
 /**
@@ -130,11 +101,55 @@
 }
 
 /**
- * Misc inline elements
+ * Headings
  */
 
-.Text a {
+.Text :matches(h1, h2, h3, h4, h5, h6,
+  .Text-h1, .Text-h2, .Text-h3, .Text-h4, .Text-h5, .Text-h6) {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) {
+  font-family: var(--font-family-heading);
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0;
+  word-spacing: 0.04em;
+}
+
+.Text :matches(h1, .Text-h1) {
+  font-size: 62px;
+  line-height: 0.95;
+}
+
+.Text :matches(h2, .Text-h2) {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.Text :matches(h3, .Text-h3) {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.Text :matches(h4, .Text-h4) {
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.Text :matches(h5, h6) {
   font-weight: bold;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) a {
+  background: var(--color-link);
+  color: #fff;
+  white-space: nowrap;
+  padding: 0.15em 0.18em 0.08em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

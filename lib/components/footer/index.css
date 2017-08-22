@@ -3,12 +3,13 @@
 @import "../base";
 
 .Footer {
-  margin: 100px 0 0;
+  margin: 70px 0 0;
   overflow: hidden;
   color: var(--color-gray);
   line-height: 1.5;
   width: 100%;
   position: relative;
+  user-select: none;
 }
 
 .Footer-column {
@@ -35,6 +36,12 @@
 
 .Footer-link {
 
+}
+
+@media (--viewport-md) {
+  .Footer {
+    margin: 140px 0 0;
+  }
 }
 
 /**
