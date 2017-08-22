@@ -24,6 +24,11 @@ const dotenv = dedent`
   # General
   PORT=3000
   NODE_ENV=development
+  AUTH=false
+
+  # Authentication
+  AUTH_NAME=<NAME_HERE>
+  AUTH_PASS=<PASSWORD_HERE>
 
   # Services
   PRISMIC_API=<INSERT_PRISMIC_ENDPOINT_HERE>

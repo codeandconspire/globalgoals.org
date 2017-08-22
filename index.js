@@ -2,6 +2,7 @@ const Koa = require('koa');
 const static = require('koa-static');
 const body = require('koa-body');
 const router = require('./lib/router');
+const { auth, unauthorized } = require('./lib/middleware/auth');
 const assets = require('./lib/middleware/assets');
 const render = require('./lib/middleware/render');
 const prismic = require('./lib/middleware/prismic');
@@ -9,6 +10,15 @@ const catchall = require('./lib/middleware/catchall');
 const app = require('./lib/app');
 
 const server = new Koa();
+
+/**
+ * Basic authentication
+ */
+
+if (process.env.AUTH === 'true') {
+  server.use(unauthorized);
+  server.use(auth);
+}
 
 /**
  * Compile and serve assets on demand during development
