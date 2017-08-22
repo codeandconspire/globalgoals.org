@@ -265,6 +265,6 @@
   }
 }
 
-.GoalGrid-item--cta { background: var(--color-gray-light); }
-.GoalGrid-item--banner { background: var(--color-gray-dark); }
+.GoalGrid-item--cta { background: var(--color-gray-dark); }
+.GoalGrid-item--banner { background: var(--color-gray-light); }
 .GoalGrid-item--logo { background: var(--color-gray-light); }

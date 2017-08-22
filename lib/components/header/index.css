@@ -7,7 +7,7 @@
 }
 
 .Header {
-  height: 110px;
+  height: 109px;
 }
 
 .Header-bar {
@@ -113,6 +113,10 @@
 }
 
 @media (min-width: 860px) {
+  .Header {
+    height: 122px;
+  }
+
   .Header-logo {
     height: 54px;
   }
@@ -168,17 +172,13 @@
   }
 }
 
-@media (min-width: 860px) and (max-width: 1023px) {
+@media (min-width: 860px) and (--viewport-lg-max) {
   .Header-list {
     transform: none !important;
   }
 }
 
 @media (--viewport-lg) {
-  .Header {
-    height: 136px;
-  }
-
   .Header-list {
     transform: scale(1.313);
   }

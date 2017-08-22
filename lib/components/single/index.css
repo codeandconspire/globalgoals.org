@@ -1,0 +1,44 @@
+/* @define Single */
+
+@import "../base";
+
+.Single {
+
+}
+
+.Single-body {
+  max-width: 500px;
+}
+
+@media (--viewport-md) {
+  .Single-body {
+    max-width: 760px;
+  }
+}
+
+/**
+ * Banner
+ */
+
+.Single-banner {
+  width: 100%;
+  height: 73vh;
+  overflow: hidden;
+}
+
+.Single-bannerFigure {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background: var(--color-gray-light);
+}
+
+/**
+ * Date
+ */
+
+.Single-date {
+  display: block;
+  margin: 1.5rem 0 1rem;
+  color: var(--color-gray);
+}
