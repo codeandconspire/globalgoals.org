@@ -9,6 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .Hero.no-transition {
@@ -66,6 +68,7 @@
 .Hero--takeover .Hero-title.is-clone {
   position: fixed;
   transition: all 350ms cubic-bezier(0.85, 0.085, 0.795, 0.035);
+  will-change: transform;
 }
 
 .Hero--takeover .Hero-intro {

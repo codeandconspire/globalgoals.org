@@ -3,7 +3,7 @@
 @import "../base";
 
 .Footer {
-  margin: 60px 0 0;
+  margin: 100px 0 0;
   overflow: hidden;
   color: var(--color-gray);
   line-height: 1.5;
