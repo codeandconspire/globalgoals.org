@@ -11,7 +11,8 @@
   font-family: "Giorgio Sans Bold";
   font-style: normal;
   font-weight: normal;
-  src: url("./fonts/giorgio-sans-bold.woff") format("woff");
+  src: url("./fonts/giorgio-sans-bold.woff2") format("woff2"),
+       url("./fonts/giorgio-sans-bold.woff") format("woff");
   font-display: block;
 
 }
@@ -20,7 +21,8 @@
   font-family: "Giorgio Sans Bold";
   font-style: normal;
   font-weight: bold;
-  src: url("./fonts/giorgio-sans-bold.woff") format("woff");
+  src: url("./fonts/giorgio-sans-bold.woff2") format("woff2"),
+       url("./fonts/giorgio-sans-bold.woff") format("woff");
   font-display: block;
 
 }
@@ -29,7 +31,8 @@
   font-family: "Apex New";
   font-style: normal;
   font-weight: normal;
-  src: url("./fonts/apex-new-book.woff") format("woff");
+  src: url("./fonts/apex-new-book.woff2") format("woff2"),
+       url("./fonts/apex-new-book.woff") format("woff");
   font-display: block;
 
 }
@@ -38,7 +41,8 @@
   font-family: "Apex New";
   font-style: normal;
   font-weight: bold;
-  src: url("./fonts/apex-new-bold.woff") format("woff");
+  src: url("./fonts/apex-new-bold.woff2") format("woff2"),
+       url("./fonts/apex-new-bold.woff") format("woff");
   font-display: block;
 
 }

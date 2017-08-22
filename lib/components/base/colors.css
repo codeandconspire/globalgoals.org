@@ -31,7 +31,7 @@
   --color-text: var(--color-gray-dark);
   --color-document: #fff;
   --color-active: #26bde2;
-  --color-link: #26bde2;
+  --color-link: #26bde2; /* UN Blue-ish for later: #00aaed */
   --color-link-enter: #10a2c6;
   --color-link-active: #5cd1ee;
 
