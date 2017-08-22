@@ -8,7 +8,6 @@
   "The Global Goals": "The Global Goals",
   "Inspiring text about The Global Goals initiatives, projects and organisations.": "Inspiring text about The Global Goals initiatives, projects and organisations.",
   "View initiative": "View initiative",
-  "Inspiring text about our news related to the The Global Goals.": "Inspiring text about our news related to the The Global Goals.",
   "Tags": "Tags",
   "Read more": "Read more",
   "Something went catastrophically wrong": "Something went catastrophically wrong",
@@ -19,5 +18,19 @@
   "Something went wrong": "Something went wrong",
   "Not found": "Not found",
   "Loading": "Loading",
-  "Page not found": "Page not found"
+  "Page not found": "Page not found",
+  "MONTH_0": "January",
+  "MONTH_1": "February",
+  "MONTH_2": "Mars",
+  "MONTH_3": "April",
+  "MONTH_4": "May",
+  "MONTH_5": "June",
+  "MONTH_6": "July",
+  "MONTH_7": "August",
+  "MONTH_8": "September",
+  "MONTH_9": "October",
+  "MONTH_10": "November",
+  "MONTH_11": "December",
+  "Published on %s %s, %s": "Published on %s %s, %s",
+  "Read the full article": "Read the full article"
 }

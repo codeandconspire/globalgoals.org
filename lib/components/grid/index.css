@@ -1,0 +1,30 @@
+/* @define Grid */
+
+:root {
+  --Grid-gutter: 40px;
+}
+
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 calc(var(--Grid-gutter) * -0.5);
+}
+
+.Grid-cell {
+  display: flex;
+  flex-basis: 100%;
+  min-width: 0;
+  padding: 0 calc(var(--Grid-gutter) * 0.5);
+}
+
+@media (--viewport-md) {
+  .Grid-cell--1of2 {
+    flex-basis: auto;
+    width: 50%;
+  }
+
+  .Grid-cell--1of3 {
+    flex-basis: auto;
+    width: calc(100% / 3);
+  }
+}

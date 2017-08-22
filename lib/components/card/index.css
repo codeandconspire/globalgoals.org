@@ -1,0 +1,81 @@
+/* @define Card */
+
+@import "../text";
+
+.Card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Card-figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.Card-image {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.Card-meta {
+  display: block;
+  margin: 1.5rem 0 1rem;
+  color: var(--color-gray);
+  font-size: 14px;
+  font-style: normal;
+}
+
+.Card-meta--caption {
+  margin-top: 0.5rem;
+}
+
+.Card-link {
+  display: flex;
+  float: left;
+  margin: 1.5rem 0;
+  padding-right: 18px;
+
+  position: relative;
+
+  font-size: 24px;
+  color: var(--color-link);
+  text-transform: uppercase;
+  font-family: var(--font-family-heading);
+}
+
+.Card-link::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border: solid currentColor;
+  border-width: 1px 1px 0 0;
+  top: 4px;
+  right: 0;
+  transform: rotate(45deg);
+  transition: transform 200ms linear;
+}
+
+.Card:hover .Card-link,
+.Card-link:focus {
+  color: var(--color-link-enter);
+}
+
+/**
+ * 1. 16:9 aspect ratio
+ */
+
+ .Card--constrain .Card-figure {
+  height: 0;
+  padding-bottom: 56.25%; /* 1 */
+}
+
+.Card--constrain .Card-image {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
