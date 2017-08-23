@@ -38,6 +38,7 @@ html {
   color: var(--color-text);
   font-size: 16px;
   line-height: 1;
+  font-size-adjust: var(--font-size-adjust-body);;
 }
 
 *,

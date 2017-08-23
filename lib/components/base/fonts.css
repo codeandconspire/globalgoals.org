@@ -5,6 +5,7 @@
 
   --font-family-heading: var(--giorgio-sans-bold);
   --font-family-body: var(--apex-new);
+  --font-size-adjust-body: 0.499;
   --word-spacing-heading: 0.04em;
   --font-size-adjust-heading: 0.567;
 }
