@@ -50,9 +50,12 @@
 }
 
 @media (--viewport-md) {
-  .View-section,
-  .View-section--fullOnSmall {
+  .View-section {
     padding: 0 24px;
+  }
+
+  .View-section--fullOnSmall {
+    padding: 0;
   }
 }
 
