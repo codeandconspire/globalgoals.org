@@ -17,7 +17,7 @@ const server = new Koa();
 
 if (process.env.AUTH === 'true') {
   server.use(unauthorized);
-  server.use(auth);
+  server.use(auth({ name: process.env.AUTH_NAME, pass: process.env.AUTH_PASS }));
 }
 
 /**
