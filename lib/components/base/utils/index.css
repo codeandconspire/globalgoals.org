@@ -1,11 +1,12 @@
 @import "./colors";
 @import "./display";
 
-.u-textLoading {
+.u-textLoading,
+.u-descendantsTextLoading > * {
   position: relative !important;
   background: var(--color-gray-light) !important;
   display: inline !important;
   box-shadow: inset 0 -0.09em #fff !important;
-  color: var(--color-gray-light) !important;
+  color: transparent !important;
   user-select: none !important;
 }

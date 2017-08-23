@@ -8,12 +8,35 @@
 
 .Single-body {
   max-width: 500px;
+  padding: 40px 0 0;
+}
+
+.Single-body::before {
+  content: "";
+  height: 8vh;
+  display: block;
+  max-height: 50px;
 }
 
 @media (--viewport-md) {
   .Single-body {
+    padding: 40px 0 0;
     max-width: 760px;
   }
+}
+
+@media (--viewport-lg) {
+  .Single-body {
+    padding: 70px 0 0;
+  }
+}
+
+.Single-body--pullUp {
+  padding-top: 25px;
+}
+
+.Single-body--pullUp::before {
+  content: none;
 }
 
 /**

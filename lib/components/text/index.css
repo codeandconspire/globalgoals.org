@@ -133,15 +133,16 @@
   .Text-h1, .Text-h2, .Text-h3, .Text-h4, .Text-h5, .Text-h6) {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
 
 .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) {
   font-family: var(--font-family-heading);
   line-height: 1.1;
   text-transform: uppercase;
-  margin: 0;
   word-spacing: var(--word-spacing-heading);
   font-size-adjust: var(--font-size-adjust-heading);
+  margin: 0 0 6px;
 }
 
 .Text :matches(h1, .Text-h1) {
@@ -168,7 +169,6 @@
   font-weight: bold;
   font-size: inherit;
   line-height: inherit;
-  margin: 0;
 }
 
 .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) a {
@@ -222,6 +222,10 @@
 @media (--viewport-md) {
   .Text--growing {
     font-size: 20px;
+  }
+
+  .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) {
+    margin: 0 0 12px;
   }
 
   .Text :matches(h1, .Text-h1) {

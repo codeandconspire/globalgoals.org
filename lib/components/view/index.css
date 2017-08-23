@@ -86,7 +86,26 @@
 
 .View-intro {
   max-width: 635px;
-  margin: 135px 0 55px;
+  padding: 40px 0 30px;
+}
+
+.View-intro::before {
+  content: "";
+  height: 8vh;
+  display: block;
+  max-height: 50px;
+}
+
+@media (--viewport-md) {
+  .View-intro {
+    padding: 40px 0;
+  }
+}
+
+@media (--viewport-lg) {
+  .View-intro {
+    padding: 70px 0 58px;
+  }
 }
 
 /**
