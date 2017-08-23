@@ -8,7 +8,8 @@
   justify-content: flex-start;
   align-items: stretch;
   width: 150px;
-  background: #fff;
+  background: var(--color-gray-dark);
+  color: #fff;
 }
 
 .Goal-label {
@@ -20,7 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 8% 0;
+  margin: 2% 0;
   fill: currentColor;
   width: 84%;
   margin-left: 8%;
@@ -39,78 +40,27 @@
   left: 0;
 }
 
-/* Todo: Tweak bad positioning of all icons
-
 /**
- * Map colors
+ * Themes
  */
 
-.Goal--1 { background: var(--color-goal-1); color: #fff; }
-.Goal--1.Goal--inverted { color: var(--color-goal-1); background: #fff; }
-
-.Goal--2 { background: var(--color-goal-2); color: #fff; }
-.Goal--2.Goal--inverted { color: var(--color-goal-2); background: #fff; }
-
-.Goal--3 { background: var(--color-goal-3); color: #fff; }
-.Goal--3.Goal--inverted { color: var(--color-goal-3); background: #fff; }
-
-.Goal--4 { background: var(--color-goal-4); color: #fff; }
-.Goal--4.Goal--inverted { color: var(--color-goal-4); background: #fff; }
-
-.Goal--5 { background: var(--color-goal-5); color: #fff; }
-.Goal--5.Goal--inverted { color: var(--color-goal-5); background: #fff; }
-
-.Goal--6 { background: var(--color-goal-6); color: #fff; }
-.Goal--6.Goal--inverted { color: var(--color-goal-6); background: #fff; }
-
-.Goal--7 { background: var(--color-goal-7); color: #fff; }
-.Goal--7.Goal--inverted { color: var(--color-goal-7); background: #fff; }
-
-.Goal--8 { background: var(--color-goal-8); color: #fff; }
-.Goal--8.Goal--inverted { color: var(--color-goal-8); background: #fff; }
-
-.Goal--9 { background: var(--color-goal-9); color: #fff; }
-.Goal--9.Goal--inverted { color: var(--color-goal-9); background: #fff; }
-
-.Goal--10 { background: var(--color-goal-10); color: #fff; }
-.Goal--10.Goal--inverted { color: var(--color-goal-10); background: #fff; }
-
-.Goal--11 { background: var(--color-goal-11); color: #fff; }
-.Goal--11.Goal--inverted { color: var(--color-goal-11); background: #fff; }
-
-.Goal--12 { background: var(--color-goal-12); color: #fff; }
-.Goal--12.Goal--inverted { color: var(--color-goal-12); background: #fff; }
-
-.Goal--13 { background: var(--color-goal-13); color: #fff; }
-.Goal--13.Goal--inverted { color: var(--color-goal-13); background: #fff; }
-
-.Goal--14 { background: var(--color-goal-14); color: #fff; }
-.Goal--14.Goal--inverted { color: var(--color-goal-14); background: #fff; }
-
-.Goal--15 { background: var(--color-goal-15); color: #fff; }
-.Goal--15.Goal--inverted { color: var(--color-goal-15); background: #fff; }
-
-.Goal--16 { background: var(--color-goal-16); color: #fff; }
-.Goal--16.Goal--inverted { color: var(--color-goal-16); background: #fff; }
-
-.Goal--17 { background: var(--color-goal-17); color: #fff; }
-.Goal--17.Goal--inverted { color: var(--color-goal-17); background: #fff; }
-
-/**
- * Icon only
- */
-
- .Goal--noLabel .Goal-icon {
-  transform: translate(0, -27%);
-}
-
-.Goal--noLabel.Goal--16 .Goal-icon {
-  transform: translateY(-23%);
-}
-
-.Goal--noLabel.Goal--13 .Goal-icon {
-  transform: translateY(-34%);
-}
+.Goal--1 { background: var(--color-goal-1); }
+.Goal--2 { background: var(--color-goal-2); }
+.Goal--3 { background: var(--color-goal-3); }
+.Goal--4 { background: var(--color-goal-4); }
+.Goal--5 { background: var(--color-goal-5); }
+.Goal--6 { background: var(--color-goal-6); }
+.Goal--7 { background: var(--color-goal-7); }
+.Goal--8 { background: var(--color-goal-8); }
+.Goal--9 { background: var(--color-goal-9); }
+.Goal--10 { background: var(--color-goal-10); }
+.Goal--11 { background: var(--color-goal-11); }
+.Goal--12 { background: var(--color-goal-12); }
+.Goal--13 { background: var(--color-goal-13); }
+.Goal--14 { background: var(--color-goal-14); }
+.Goal--15 { background: var(--color-goal-15); }
+.Goal--16 { background: var(--color-goal-16); }
+.Goal--17 { background: var(--color-goal-17); }
 
 /**
  * Tinted numbers
@@ -120,7 +70,6 @@
   color: #000;
   fill-opacity: 0.5;
 }
-
 
 /**
  * Transparent background

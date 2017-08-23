@@ -27,18 +27,22 @@
   transform: scale(0.95);
 }
 
-.GoalGrid-item.is-loading {
-
-}
-
 .GoalGrid-content {
   position: relative;
   padding-top: 100%;
   display: block;
   height: 0;
   color: #fff;
+  transition: 100ms var(--ease-out);
+  transition-property: opacity, transform;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.GoalGrid-item.is-loading .GoalGrid-content {
+  opacity: 0;
+  transform: scale(0.92);
+  will-change: transform;
 }
 
 .GoalGrid-icon {
