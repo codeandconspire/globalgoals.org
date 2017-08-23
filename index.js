@@ -12,6 +12,12 @@ const app = require('./lib/app');
 const server = new Koa();
 
 /**
+ * Hook up the Prismic api
+ */
+
+server.use(prismic);
+
+/**
  * Basic authentication
  */
 
@@ -40,12 +46,6 @@ server.use(static('public', { maxage: 1000 * 60 * 60 * 24 * 365 }));
  */
 
 server.use(body());
-
-/**
- * Hook up the Prismic api
- */
-
-server.use(prismic);
 
 /**
  * Handle rendering response
