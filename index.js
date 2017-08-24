@@ -3,6 +3,7 @@ const static = require('koa-static');
 const body = require('koa-body');
 const router = require('./lib/router');
 const { auth, unauthorized } = require('./lib/middleware/auth');
+const cache = require('./lib/middleware/cache');
 const assets = require('./lib/middleware/assets');
 const render = require('./lib/middleware/render');
 const prismic = require('./lib/middleware/prismic');
@@ -40,6 +41,12 @@ if (process.env.NODE_ENV === 'development') {
 
 server.use(assets);
 server.use(static('public', { maxage: 1000 * 60 * 60 * 24 * 365 }));
+
+/**
+ * Set up request cache mechanism
+ */
+
+server.use(cache);
 
 /**
  * Parse request body
