@@ -1,5 +1,6 @@
 @import "normalize.css";
 
+@import "../components/call-to-action";
 @import "../components/card";
 @import "../components/footer";
 @import "../components/goal-grid";
