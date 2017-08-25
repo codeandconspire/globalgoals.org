@@ -1,0 +1,229 @@
+/* @define CallToAction */
+
+.CallToAction-tablist {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  position: relative;
+}
+
+@media (--viewport-md) {
+  .CallToAction-tablist {
+    width: 80%;
+  }
+
+  .CallToAction-tablist.is-expanded {
+    width: 100%;
+  }
+}
+
+.CallToAction-tablist--temp {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.CallToAction-tablist.is-expanded::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--color-gray-light);
+}
+
+/**
+ * Close button
+ */
+
+.CallToAction-close {
+  display: block;
+  width: 1em;
+  height: 1em;
+
+  position: absolute;
+  right: 0;
+  bottom: -0.25em;
+
+  outline: none;
+  font-size: 2.5em;
+  color: transparent;
+  text-indent: -99em;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.CallToAction-close::after,
+.CallToAction-close::before {
+  content: "";
+  width: 1px;
+  height: 0.6em;
+
+  position: absolute;
+  top: 50%;
+  right: 50%;
+
+  background-color: var(--color-red);
+  transform: translate(-50%, -50%);
+}
+
+.CallToAction-close::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/**
+ * Large button
+ */
+
+.CallToAction-button {
+  float: left;
+  padding: 0.225em 0.4em 0.15em;
+  margin: 0 0.5em 0.5em 0;
+
+  position: relative;
+  overflow: hidden;
+
+  font-size: 36px;
+  color: #fff;
+  font-family: var(--font-family-heading);
+  background-color: var(--color-red);
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  transform-origin: 0 0;
+  transition:
+    opacity 400ms linear,
+    transform 400ms linear;
+}
+
+.CallToAction-button:hover,
+.CallToAction-button:focus {
+  background-color: var(--color-dark-red);
+}
+
+/**
+ * Large button with +
+ */
+
+.CallToAction-button--expandable {
+  padding-right: 1.5em;
+}
+
+.CallToAction-button--expandable::after,
+.CallToAction-button--expandable::before {
+  content: "";
+  width: 1px;
+  height: 0.6em;
+
+  position: absolute;
+  top: 50%;
+  right: 0.75em;
+
+  background-color: #fff;
+  transform: translateY(-50%);
+
+  transition: opacity 400ms linear;
+}
+
+.CallToAction-button--expandable::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/**
+ * Align button with tab bottom border
+ */
+
+.CallToAction-button.in-transition {
+  /* height: 5px;
+  padding: 0;
+  margin-top: 0; */
+  color: var(--color-red);
+  background-color: var(--color-red);
+  transform: translateY(-5px);
+  transition: all 400ms linear;
+}
+
+.CallToAction-button.in-transition::after,
+.CallToAction-button.in-transition::before {
+  opacity: 0;
+}
+
+/**
+ * All buttons but the one in transition disappear
+ */
+
+.CallToAction-tablist.in-transition .CallToAction-button:not(.in-transition) {
+  opacity: 0;
+  transform: translateY(200%);
+}
+
+@media (--viewport-lg) {
+  .CallToAction-button {
+    font-size: 48px;
+  }
+}
+
+@media (--viewport-ld) {
+  .CallToAction-button {
+    font-size: 72px
+  }
+}
+
+/**
+ * Tab
+ */
+
+.CallToAction-tab {
+  padding: 0.225em 0 0.5em;
+  margin-right: 1.5em;
+
+  position: relative;
+
+  font-size: 24px;
+  color: var(--color-gray-alpha);
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.CallToAction-tablist.in-transition .CallToAction-tab {
+  animation-name: CallToAction-tab--appear;
+  animation-fill-mode: forwards;
+  animation-duration: 400ms;
+  animation-timing-function: linear;
+}
+
+@keyframes CallToAction-tab--appear {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.CallToAction-tab.is-active {
+  border-bottom: 5px solid currentColor;
+  color: var(--color-red);
+}
+
+.CallToAction-tab.is-first {
+  order: -1;
+}
+
+:root.has-js .CallToAction-panel {
+  display: none;
+}
+
+:root.has-js .CallToAction-panel.is-expanded {
+  display: block;
+}

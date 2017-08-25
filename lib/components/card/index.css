@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-html.has-js .Card {
+:root.has-js .Card {
   cursor: pointer;
 }
 
