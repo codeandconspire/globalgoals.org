@@ -49,6 +49,7 @@
   transform: scale(1.28) translateY(15px);
   position: relative;
   z-index: 1;
+  outline: 0;
 }
 
 .Header-toggle {
@@ -93,6 +94,34 @@
   transform-origin: center right;
 }
 
+.Header-action {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 48px;
+  padding: 16px 50px 0 0;
+  white-space: nowrap;
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  font-size-adjust: var(--font-size-adjust-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Header-action::after {
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  top: 30px;
+  right: 18px;
+  transform: rotate(45deg);
+}
+
 @media (--viewport-md-max) {
   .Header-nav,
   .Header-list {
@@ -106,10 +135,6 @@
 
 .Header-action:matches(:hover, :focus, :active) {
   color: inherit;
-}
-
-.Header-item.is-active .Header-action {
-  color: var(--color-active);
 }
 
 @media (--viewport-md) {
@@ -132,35 +157,25 @@
 
   .Header-item + .Header-item {
     margin-left: 30px;
+    display: block;
   }
 
   .Header-action {
-    position: relative;
-    display: block;
     padding: 5px 19px 5px 5px;
     margin: -2px 2px -5px -5px;
-    color: inherit;
-    text-transform: uppercase;
     font-size: 23.6px;
-    white-space: nowrap;
-    font-family: var(--font-family-heading);
-    text-transform: uppercase;
-    word-spacing: var(--word-spacing-heading);
-    font-size-adjust: var(--font-size-adjust-heading);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .Header-item.is-active .Header-action {
+    color: var(--color-active);
   }
 
   .Header-action::after {
-    content: "";
     width: 12px;
     height: 12px;
-    position: absolute;
-    border-style: solid;
     border-width: 1px 1px 0 0;
     top: 9px;
     right: 0;
-    transform: rotate(45deg);
   }
 }
 
@@ -213,4 +228,44 @@
 .Header--adaptive .Header-logo,
 .Header--adaptive .Header-item.is-active .Header-action {
   color: #fff;
+}
+
+/**
+ * Mobile menu
+ */
+
+@media (--viewport-md-max) {
+  .Header.is-open .Header-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-gray-dark);
+    color: #fff;
+  }
+
+  .Header.is-open .Header-logo path {
+    fill: #fff;
+  }
+
+  .Header.is-open .Header-toggle:matches(::before, ::after) {
+    background: #fff;
+  }
+
+  .Header.is-open .Header-toggle::after {
+    box-shadow: 0 -7px 0 #fff;
+  }
+
+  .Header.is-open .Header-list {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    padding-left: 32px;
+  }
+
+  .Header.is-open {
+
+  }
 }
