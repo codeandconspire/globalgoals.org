@@ -70,7 +70,7 @@
 }
 
 .Header-toggleText {
-  font-size: 22px;
+  font-size: 24px;
   text-transform: uppercase;
   white-space: nowrap;
   font-family: var(--font-family-heading);
@@ -91,10 +91,9 @@
   height: 14px;
   top: 50%;
   left: 0;
-  transform: translateY(-6.5px);
+  transform: translateY(-5px);
   transition: transform 250ms var(--ease-out);
 }
-
 
 .Header-lines:matches(::before, ::after),
 .Header-line {
@@ -125,7 +124,7 @@
 
 .Header.is-open .Header-lines {
   color: #fff;
-  transform: translate(-5px, -6.5px);
+  transform: translate(-5px, -5px);
 }
 
 .Header.is-open .Header-toggleText {
@@ -169,11 +168,11 @@
   }
 
   .Header-lines {
-    transform: translate(0, -6.5px) !important;
+    transform: translate(0, -5px) !important;
   }
 
   .Header.is-open .Header-lines {
-    transform: translate(-1.5px, -6.5px) !important;
+    transform: translate(-1.5px, -5px) !important;
   }
 }
 
