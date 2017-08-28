@@ -121,6 +121,8 @@
   flex-wrap: wrap;
   margin: 2rem 0;
   position: relative;
+  -webkit-touch-callout: none;
+  user-select: none;
 }
 
 @media (min-width: 600px) {

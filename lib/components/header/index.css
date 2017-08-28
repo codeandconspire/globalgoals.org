@@ -67,6 +67,8 @@
   outline: 0;
   text-align: right;
   transform: translateY(40%);
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .Header-toggleText {
@@ -78,6 +80,7 @@
   font-size-adjust: var(--font-size-adjust-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
 }
 
 .Header-toggleText--close {
