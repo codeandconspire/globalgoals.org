@@ -1,15 +1,132 @@
 /* @define CallToAction */
 
+/**
+ * Large button
+ */
+
+.CallToAction-button {
+  float: left;
+  padding: 0.225em 0.4em 0.15em;
+  margin: 0 0.5em 0.5em 0;
+
+  position: relative;
+  overflow: hidden;
+
+  font-size: 28px;
+  color: #fff;
+  font-family: var(--font-family-heading);
+  background-color: var(--color-red);
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  transform-origin: 0 0;
+}
+
+.CallToAction-button:hover,
+.CallToAction-button:focus {
+  background-color: var(--color-dark-red);
+}
+
+@media (--viewport-md) {
+  .CallToAction-button {
+    font-size: 36px;
+  }
+}
+
+@media (--viewport-lg) {
+  .CallToAction-button {
+    font-size: 58px
+  }
+}
+
+@media (--viewport-xl) {
+  .CallToAction-button {
+    font-size: 72px
+  }
+}
+
+/**
+ * Large button with +
+ */
+
+.CallToAction-button--expandable {
+  padding-right: 1.5em;
+}
+
+.CallToAction-button--expandable::after,
+.CallToAction-button--expandable::before {
+  content: "";
+  width: 1px;
+  height: 0.6em;
+
+  position: absolute;
+  top: 50%;
+  right: 0.75em;
+
+  background-color: #fff;
+  transform: translateY(-50%);
+
+  transition: opacity 400ms linear;
+}
+
+.CallToAction-button--expandable::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/**
+ * Wide
+ */
+
+.CallToAction-button--wide {
+  display: block;
+  float: none;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .CallToAction-button--wide {
+    display: none;
+  }
+}
+
+/**
+ * Align button with tab bottom border
+ */
+
+.CallToAction-button.is-flat {
+  color: var(--color-red);
+  background-color: var(--color-red);
+}
+
+.CallToAction-button.is-flat::after,
+.CallToAction-button.is-flat::before {
+  opacity: 0;
+}
+
+.CallToAction-button.in-transition {
+  transition:
+    color 200ms linear,
+    background-color 250ms linear,
+    transform 400ms linear;
+}
+
+/**
+ * Tablist
+ */
+
 .CallToAction-tablist {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   margin: 2rem 0;
   position: relative;
 }
 
-@media (--viewport-md) {
+@media (min-width: 600px) {
   .CallToAction-tablist {
-    width: 80%;
+    display: flex;
+    /* width: 80%; */
   }
 
   .CallToAction-tablist.is-expanded {
@@ -74,104 +191,19 @@
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
-/**
- * Large button
- */
-
-.CallToAction-button {
-  float: left;
-  padding: 0.225em 0.4em 0.15em;
-  margin: 0 0.5em 0.5em 0;
-
-  position: relative;
-  overflow: hidden;
-
-  font-size: 36px;
-  color: #fff;
-  font-family: var(--font-family-heading);
-  background-color: var(--color-red);
-  text-transform: uppercase;
-  white-space: nowrap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  transform-origin: 0 0;
+.CallToAction-tablist.in-transition .CallToAction-button {
   transition:
     opacity 400ms linear,
     transform 400ms linear;
-}
-
-.CallToAction-button:hover,
-.CallToAction-button:focus {
-  background-color: var(--color-dark-red);
-}
-
-/**
- * Large button with +
- */
-
-.CallToAction-button--expandable {
-  padding-right: 1.5em;
-}
-
-.CallToAction-button--expandable::after,
-.CallToAction-button--expandable::before {
-  content: "";
-  width: 1px;
-  height: 0.6em;
-
-  position: absolute;
-  top: 50%;
-  right: 0.75em;
-
-  background-color: #fff;
-  transform: translateY(-50%);
-
-  transition: opacity 400ms linear;
-}
-
-.CallToAction-button--expandable::after {
-  transform: translateY(-50%) rotate(90deg);
-}
-
-/**
- * Align button with tab bottom border
- */
-
-.CallToAction-button.in-transition {
-  /* height: 5px;
-  padding: 0;
-  margin-top: 0; */
-  color: var(--color-red);
-  background-color: var(--color-red);
-  transform: translateY(-5px);
-  transition: all 400ms linear;
-}
-
-.CallToAction-button.in-transition::after,
-.CallToAction-button.in-transition::before {
-  opacity: 0;
 }
 
 /**
  * All buttons but the one in transition disappear
  */
 
-.CallToAction-tablist.in-transition .CallToAction-button:not(.in-transition) {
+.CallToAction-tablist.is-hidden > .CallToAction-button:not(.in-transition) {
   opacity: 0;
   transform: translateY(200%);
-}
-
-@media (--viewport-lg) {
-  .CallToAction-button {
-    font-size: 48px;
-  }
-}
-
-@media (--viewport-ld) {
-  .CallToAction-button {
-    font-size: 72px
-  }
 }
 
 /**
@@ -184,7 +216,7 @@
 
   position: relative;
 
-  font-size: 24px;
+  font-size: 20px;
   color: var(--color-gray-alpha);
   font-family: var(--font-family-heading);
   text-transform: uppercase;
@@ -193,22 +225,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.CallToAction-tablist.in-transition .CallToAction-tab {
-  animation-name: CallToAction-tab--appear;
-  animation-fill-mode: forwards;
-  animation-duration: 400ms;
-  animation-timing-function: linear;
+@media (--viewport-md) {
+  .CallToAction-tab {
+    font-size: 24px;
+  }
 }
 
-@keyframes CallToAction-tab--appear {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
+.CallToAction-tablist.in-transition > .CallToAction-tab {
+  transition:
+    opacity 400ms linear,
+    transform 400ms linear;
+}
+
+.CallToAction-tablist.is-hidden > .CallToAction-tab {
+  opacity: 0;
+  transform: translateX(100%);
 }
 
 .CallToAction-tab.is-active {
