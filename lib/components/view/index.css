@@ -21,6 +21,21 @@
 }
 
 /**
+ * Animation: pushed down content
+ */
+
+.View-main,
+.View-footer {
+  transition: transform 300ms var(--ease-out), opacity 300ms var(--ease-out);
+}
+
+.View.is-pushedDown :matches(.View-main, .View-footer) {
+  transition: none;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/**
  * View sections
  */
 
