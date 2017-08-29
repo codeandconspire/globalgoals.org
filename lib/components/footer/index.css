@@ -186,6 +186,7 @@
   margin-right: 25px;
   margin-top: 7px;
   padding: 0;
+  white-space: nowrap;
 }
 
 .Footer-column--horizontal .Footer-link {
@@ -228,9 +229,7 @@
   height: 32px;
   margin: 0;
   padding: 0;
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-position: center center;
+  position: relative;
 }
 
 @media (--viewport-md) {
@@ -240,6 +239,18 @@
     right: -8px;
     top: 7px;
   }
+}
+
+.Footer-social {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: relative;
+  top: 8px;
+  left: 8px;
 }
 
 /**
