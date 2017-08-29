@@ -13,6 +13,7 @@
 .GoalGrid {
   margin: calc((var(--GoalGrid-gap) / 2) * -1);
   user-select: none;
+  contain: style layout paint;
 }
 
 .GoalGrid-item {

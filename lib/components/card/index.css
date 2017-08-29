@@ -7,6 +7,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  contain: style layout paint;
 }
 
 :root.has-js .Card {

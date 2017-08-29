@@ -10,6 +10,7 @@
   position: relative;
   user-select: none;
   font-size: 16px;
+  contain: style layout paint;
 }
 
 .Footer-content {

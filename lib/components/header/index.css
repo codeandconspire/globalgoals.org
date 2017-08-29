@@ -8,6 +8,7 @@
 
 .Header {
   height: 109px;
+  contain: size layout style;
 }
 
 .Header-bar {

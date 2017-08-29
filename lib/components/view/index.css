@@ -104,6 +104,7 @@
 .View-intro {
   max-width: 635px;
   padding: 40px 0 30px;
+  contain: style layout paint;
 }
 
 .View-intro::before {
