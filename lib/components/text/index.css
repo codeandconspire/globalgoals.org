@@ -7,10 +7,15 @@
   font-family: var(--font-family-body);
   line-height: 1.5;
   font-size: 16px;
+  max-width: 37em;
 }
 
 .Text--growing {
-  font-size: 18px;
+
+}
+
+.Text--growingTitles {
+
 }
 
 .Text--adaptive {
@@ -45,7 +50,7 @@
  */
 
 .Text p {
-  margin: 1em 0;
+  margin: 10px 0;
 }
 
 .Text img {
@@ -142,7 +147,7 @@
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
   font-size-adjust: var(--font-size-adjust-heading);
-  margin: 0 0 6px;
+  margin: 0 0 10px;
 }
 
 .Text :matches(h1, .Text-h1) {
@@ -179,6 +184,14 @@
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * Guard for bold text in heading
+ */
+
+.Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) strong {
+  font-weight: inherit;
 }
 
 /**
@@ -219,17 +232,18 @@
  * Wider viewports
  */
 
-@media (--viewport-md) {
-  .Text--growing {
-    font-size: 20px;
+@media (--viewport-lg) {
+  .Text-large {
+    font-size: 24px;
   }
 
   .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) {
-    margin: 0 0 12px;
+    margin: 0 0 10px;
   }
 
   .Text :matches(h1, .Text-h1) {
     font-size: 96px;
+    margin: 0 0 14px;
   }
 
   .Text :matches(h2, .Text-h2) {
@@ -244,7 +258,25 @@
     font-size: 32px;
   }
 
-  .Text-large {
-    font-size: 24px;
+  /**
+   * Growing text and titles
+   * - Base text bumps up
+   * - h2 becomes h1, etc.
+   */
+
+  .Text--growing {
+    font-size: 20px;
+  }
+
+  .Text--growingTitles :matches(h2, .Text-h2) {
+    font-size: 96px;
+  }
+
+  .Text--growingTitles :matches(h3, .Text-h3) {
+    font-size: 72px;
+  }
+
+  .Text--growingTitles :matches(h4, .Text-h4) {
+    font-size: 48px;
   }
 }

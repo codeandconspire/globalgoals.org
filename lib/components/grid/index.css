@@ -1,21 +1,45 @@
 /* @define Grid */
 
 :root {
-  --Grid-gutter: 40px;
+  --Grid-gutter-sm: 24px;
+  --Grid-gutter-md: 32px;
+  --Grid-gutter-lg: 48px;
 }
 
 .Grid {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 calc(var(--Grid-gutter) * -0.5);
+  margin: 0 calc(var(--Grid-gutter-sm) * -0.5);
 }
 
 .Grid-cell {
   display: flex;
   flex-basis: 100%;
   min-width: 0;
-  padding: 0 calc(var(--Grid-gutter) * 0.5);
-  margin-bottom: var(--Grid-gutter);
+  padding: 0 calc(var(--Grid-gutter-sm) * 0.5);
+  margin-bottom: var(--Grid-gutter-sm);
+}
+
+@media (--viewport-lg) {
+  .Grid {
+    margin: 0 calc(var(--Grid-gutter-md) * -0.5);
+  }
+
+  .Grid-cell {
+    padding: 0 calc(var(--Grid-gutter-md) * 0.5);
+    margin-bottom: var(--Grid-gutter-md);
+  }
+}
+
+@media (--viewport-xl) {
+  .Grid {
+    margin: 0 calc(var(--Grid-gutter-lg) * -0.5);
+  }
+
+  .Grid-cell {
+    padding: 0 calc(var(--Grid-gutter-lg) * 0.5);
+    margin-bottom: var(--Grid-gutter-lg);
+  }
 }
 
 .Grid-cell--1of2 {
@@ -50,6 +74,10 @@
     flex-basis: auto;
     width: calc(100% / 3);
   }
+
+  .Grid-cell--divideDown {
+    padding-bottom: var(--Grid-gutter-lg);
+  }
 }
 
 @media (--viewport-lg) {
@@ -61,5 +89,9 @@
   .Grid-cell--lg1of3 {
     flex-basis: auto;
     width: calc(100% / 3);
+  }
+
+  .Grid-cell--divideDown {
+    padding-bottom: var(--Grid-gutter-lg);
   }
 }

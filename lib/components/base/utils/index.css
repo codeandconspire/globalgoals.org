@@ -1,7 +1,8 @@
 @import "./colors";
 @import "./display";
 
-.u-loading {
+.u-loading,
+.u-loadingAdaptive {
   background: var(--color-gray-light) !important;
   display: inline !important;
   box-shadow: inset 0 -0.09em #fff !important;
@@ -9,6 +10,6 @@
   user-select: none !important;
 }
 
-.u-removePseudo:matches(::before, ::after) {
-  content: none !important;
+.u-loadingAdaptive {
+  box-shadow:  inset 0 -0.0em #e4e4e4 !important;
 }

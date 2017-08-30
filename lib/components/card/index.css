@@ -7,6 +7,8 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   contain: style layout paint;
 }
 
@@ -15,33 +17,62 @@
 }
 
 .Card-figure {
-  height: 0;
-  padding-bottom: 320px;
   position: relative;
   overflow: hidden;
   background-color: var(--color-gray-light);
   user-select: none;
+  max-height: 420px;
+}
+
+.Card-figure::before {
+  content: "";
+  display: block;
+  padding-top: 81%;
+  height: 0;
 }
 
 .Card-image {
-  object-fit: cover;
-  display: block;
-  width: 100%;
-  height: 100%;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: 50%;
+  max-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+@supports (object-fit: cover) {
+  .Card-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
 }
 
 .Card-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-bottom: 20px;
+  flex-grow: 1;
+}
+
+@media (--viewport-lg) {
+  .Card-content {
+    padding-bottom: 17px;
+  }
+}
+
+@media (--viewport-xl) {
+  .Card-content {
+    padding-bottom: 10px;
+  }
 }
 
 .Card-meta {
   display: block;
-  margin: 1.5rem 0 1rem;
+  margin: 19px 0 14px;
   color: var(--color-gray);
   font-size: 14px;
   font-style: normal;
@@ -53,7 +84,8 @@
 
 .Card-link {
   float: left;
-  padding: 1.5rem 18px 0 0;
+  padding-right: 30px;
+  margin-top: 17px;
 
   position: relative;
 
@@ -73,15 +105,20 @@
   color: var(--color-link-enter);
 }
 
-.Card-link::after {
+.Card-linkText {
+  position: relative;
+  display: inline-block;
+}
+
+.Card-linkText::after {
   content: "";
   width: 12px;
   height: 12px;
   position: absolute;
   border: solid currentColor;
   border-width: 1px 1px 0 0;
-  bottom: 8px;
-  right: 0;
+  top: 5px;
+  right: -23px;
   transform: rotate(45deg);
   transition: transform 200ms linear;
 }
@@ -128,8 +165,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.5em;
-  height: 1.5em;
+  width: 72px;
+  height: 72px;
   font-size: 48px;
   color: #fff;
   font-family: var(--font-family-heading);
@@ -141,6 +178,12 @@
   user-select: none;
 }
 
+.Card-tag:only-child {
+  font-size: 64px;
+  width: 96px;
+  height: 96px;
+}
+
 /**
  * Horizontal
  */
@@ -148,49 +191,78 @@
 @media (--viewport-md) {
   .Card--horizontal {
     display: flex;
+    flex-direction: row;
     align-items: stretch;
   }
 
-  /**
-   * 1. Whatever happens to look good
-   */
-
   .Card--horizontal .Card-figure {
     flex-grow: 1;
-    padding-bottom: 40%; /* 1 */
+  }
+
+  .Card--horizontal .Card-content {
+    flex-grow: 0;
   }
 }
 
 @media (--viewport-md) {
   .Card--horizontal .Card-content {
-    width: 50%;
+    width: calc(50% - 12px);
   }
 }
 
 @media (--viewport-lg) {
   .Card--horizontal .Card-content {
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 21px);
+  }
+}
+
+@media (--viewport-xl) {
+  .Card--horizontal .Card-content {
+    width: calc((100% / 3) - 32px);
   }
 }
 
 /**
  * Fill
+ *
+ * 1. Fade in from loading state
  */
 
 .Card--fill .Card-content {
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 28px 32px 32px;
   color: #fff;
-  background-color: var(--color-blue);
+  min-height: 275px;
+  background-color: var(--color-active);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .Card--fill .Card-link {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 1.5rem;
+  margin: 35px 0 -13px;
+  padding-top: 20px;
+  width: 100%;
 }
 
 .Card--fill .Card-link,
 .Card--fill:hover .Card-link,
 .Card--fill .Card-link:focus {
   color: #fff;
+}
+
+/**
+ * Loading state
+ */
+
+.Card.is-loading .Card-linkText::after {
+  content: none;
+}
+
+.Card--fill.is-loading .Card-content {
+  background: #e4e4e4;
+}
+
+.Card--fill.is-loading .Card-link {
+  border-color: var(--color-gray-light);
 }
