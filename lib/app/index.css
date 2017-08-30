@@ -2,6 +2,7 @@
 
 @import "../components/call-to-action";
 @import "../components/card";
+@import "../components/edit";
 @import "../components/footer";
 @import "../components/goal-grid";
 @import "../components/goal";
