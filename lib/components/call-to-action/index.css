@@ -82,7 +82,7 @@
   background-color: #fff;
   transform: translateY(-50%);
 
-  transition: opacity 400ms linear;
+  transition: opacity 200ms linear;
 }
 
 .CallToAction-button--expandable::after {
@@ -100,7 +100,7 @@
 .CallToAction-button--row {
   float: none;
   margin: 0;
-  transition: flex-grow 400ms linear;
+  transition: flex-grow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .CallToAction.is-expanded .CallToAction-button--row {
@@ -125,13 +125,6 @@
 .CallToAction-button.is-flat::after,
 .CallToAction-button.is-flat::before {
   opacity: 0;
-}
-
-.CallToAction-button.in-transition {
-  transition:
-    color 200ms linear,
-    background-color 250ms linear,
-    transform 400ms linear;
 }
 
 /**
@@ -217,8 +210,8 @@
 
 .CallToAction-tablist.in-transition .CallToAction-button {
   transition:
-    opacity 400ms linear,
-    transform 400ms linear;
+    opacity 150ms linear,
+    transform 300ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 /**
@@ -228,6 +221,13 @@
 .CallToAction-tablist.is-hidden > .CallToAction-button:not(.in-transition) {
   opacity: 0;
   transform: translateY(200%);
+}
+
+.CallToAction-tablist.is-hidden .CallToAction-button.in-transition {
+  transition:
+    color 200ms linear,
+    background-color 200ms linear,
+    transform 340ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 /**
@@ -257,8 +257,8 @@
 
 .CallToAction-tablist.in-transition > .CallToAction-tab {
   transition:
-    opacity 400ms linear,
-    transform 400ms linear;
+    opacity 200ms linear,
+    transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .CallToAction-tablist.is-hidden > .CallToAction-tab {
@@ -269,6 +269,10 @@
 .CallToAction-tab.is-active {
   border-bottom: 5px solid currentColor;
   color: var(--color-red);
+}
+
+.CallToAction-tablist.in-transition .CallToAction-tab.is-active {
+  border-bottom-color: transparent;
 }
 
 .CallToAction-tab.is-first {
@@ -305,7 +309,7 @@
 }
 
 .CallToAction-panel.in-transition {
-  transition: height 400ms linear;
+  transition: height 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 :root.has-js .CallToAction-panel.is-expanded {
