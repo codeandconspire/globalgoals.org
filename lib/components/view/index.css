@@ -149,22 +149,6 @@
 }
 
 /**
- * View article
- */
-
-.View-article {
-  margin: 70px 0 0;
-  max-width: 500px;
-}
-
-@media (--viewport-md) {
-  .View-article {
-    margin: 140px 0 0;
-    max-width: 700px;
-  }
-}
-
-/**
  * Takeover
  */
 

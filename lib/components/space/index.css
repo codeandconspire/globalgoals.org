@@ -1,0 +1,94 @@
+/* @define Space */
+
+:root {
+  --Space-default: 50px;
+  --Space-multiplier: 2;
+  --Space-multiplier-tall: 1.4;
+  --Space-multiplier-short: 0.6;
+}
+
+.Space {
+  display: block;
+  width: 100%;
+}
+
+/**
+ * Contain floats
+ *
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of the
+ *    element.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.Space::before,
+.Space::after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.Space::after {
+  clear: both;
+}
+
+.Space--start {
+  margin-top: var(--Space-default);
+}
+
+.Space--end {
+  margin-bottom: var(--Space-default);
+}
+
+.Space--startTall {
+  margin-top: calc(var(--Space-default) * var(--Space-multiplier-tall));
+}
+
+.Space--endTall {
+  margin-bottom: calc(var(--Space-default) * var(--Space-multiplier-tall));
+}
+
+.Space--startShort {
+  margin-top: calc(var(--Space-default) * var(--Space-multiplier-short));
+}
+
+.Space--endShort {
+  margin-bottom: calc(var(--Space-default) * var(--Space-multiplier-short));
+}
+
+@media (--viewport-md) {
+  .Space--start {
+    margin-top: calc(var(--Space-default) * var(--Space-multiplier));
+  }
+
+  .Space--end {
+    margin-bottom: calc(var(--Space-default) * var(--Space-multiplier));
+  }
+
+  .Space--startTall {
+    margin-top: calc((var(--Space-default) * var(--Space-multiplier)) * var(--Space-multiplier-tall));
+  }
+
+  .Space--endTall {
+    margin-bottom: calc((var(--Space-default) * var(--Space-multiplier)) * var(--Space-multiplier-tall));
+  }
+
+  .Space--startShort {
+    margin-top: calc((var(--Space-default) * var(--Space-multiplier)) * var(--Space-multiplier-short));
+  }
+
+  .Space--endShort {
+    margin-bottom: calc((var(--Space-default) * var(--Space-multiplier)) * var(--Space-multiplier-short));
+  }
+}
+
+.Space--contain {
+  max-width: 500px;
+}
+
+@media (--viewport-md) {
+  .Space--contain {
+    max-width: 700px;
+  }
+}

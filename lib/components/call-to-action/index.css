@@ -141,7 +141,7 @@
 .CallToAction-tablist {
   display: none;
   flex-wrap: wrap;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   position: relative;
   -webkit-touch-callout: none;
   user-select: none;
