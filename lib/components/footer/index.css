@@ -84,8 +84,8 @@
 }
 
 .Footer-link {
-  padding: 7px;
-  margin: -7px;
+  padding: 6px 7px;
+  margin: -6px -7px;
 }
 
 /**
@@ -137,8 +137,6 @@
 
 .Footer-blockLink {
   display: block;
-  padding: 9px 7px 7px;
-  margin: -9px -7px -7px;
   display: inline-block;
   min-width: 80%;
 }
@@ -305,9 +303,25 @@
  * Interaction states
  */
 
-.Footer-link:hover,
-.Footer-blockLink:hover {
-  background-color: var(--color-gray-light-alpha);
-  border-radius: 3px;
-  z-index: 10;
+.Footer-link {
+  position: relative;
+}
+
+.Footer-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-hover-dark);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 1px;
+  transition: opacity 180ms var(--ease-out);
+}
+
+.Footer-link:hover::before,
+.Footer-blockLink:hover::before {
+  opacity: 1;
 }
