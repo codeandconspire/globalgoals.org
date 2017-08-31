@@ -141,7 +141,6 @@
 .CallToAction-tablist {
   display: none;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
   position: relative;
   -webkit-touch-callout: none;
   user-select: none;
@@ -322,6 +321,7 @@
 
 .CallToAction-panel {
   flex-basis: 100%;
+  padding: 2rem 0;
 }
 
 :root.has-js .CallToAction-panel {
