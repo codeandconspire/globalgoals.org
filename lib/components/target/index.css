@@ -1,0 +1,95 @@
+/* @define Target */
+
+:root {
+  --Target-pictogram-small: 96px;
+  --Target-pictogram-large: 128px;
+}
+
+.Target {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.Target-pictogram {
+  flex: 0 0 var(--Target-pictogram-small);
+  float: left;
+  width: var(--Target-pictogram-small);
+  margin-right: 32px;
+}
+
+@media (--viewport-lg) {
+  .Target-pictogram {
+    flex: 0 0 var(--Target-pictogram-large);
+    float: left;
+    width: var(--Target-pictogram-large);
+    margin-right: 40px;
+  }
+}
+
+.Target-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.Target-id {
+  display: block;
+  padding: 0.3em 0 0.25em;
+  margin-top: 4px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+}
+
+.Target-body {
+  flex: 1 0 0;
+  overflow: hidden;
+}
+
+@supports (display: flex) {
+  .Target-body {
+    overflow: initial;
+  }
+}
+
+.Target-link {
+  display: inline-block;
+  padding: 0.17em 1.75em 0.18em 0.5em;
+  margin-top: 0.3em;
+  position: relative;
+  font-size: 14px;
+  color: var(--color-text-light);
+  background-color: var(--color-gray-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Target-link:hover,
+.Target-link:focus {
+  outline: none;
+  background-color: #e0e0e0;
+  color: var(--color-text);
+}
+
+.Target-link::after,
+.Target-link::before {
+  content: "";
+  width: 1px;
+  height: 0.65em;
+
+  position: absolute;
+  top: 50%;
+  right: 0.9em;
+  background-color: currentColor;
+
+  transform: translateY(-50%);
+  transition: transform 200ms ease-out;
+}
+
+.Target-link::after {
+  transform: translateY(-50%) rotate(90deg);
+}
