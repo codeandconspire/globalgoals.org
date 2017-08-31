@@ -356,6 +356,26 @@
  * Adaptive for use on background colors
  */
 
+.Header--adaptive {
+  height: 0;
+}
+
+.Header--adaptive.is-adapting:not(.is-open) .Header-bar {
+  position: absolute;
+  color: #fff;
+}
+
+.Header--adaptive.is-adapting:not(.is-open) .Header-fill {
+  display: none;
+}
+
+.Header--adaptive.is-adapting .Header-action::before {
+  background: var(--color-hover-light);
+}
+
+.Header--adaptive.is-adapting:not(.is-open) .Header-logo path {
+  fill: #fff;
+}
 
 /**
  * Vertical menu
