@@ -28,6 +28,8 @@
   --color-royal-blue: #00689d;
   --color-yellow: #fcc30b;
 
+  --color-text-light: rgba(0, 0, 0, 0.54);
+  --color-text-light-large: rgba(0, 0, 0, 0.42);
   --color-text: var(--color-gray-dark);
   --color-document: #fff;
   --color-active: #26bde2;

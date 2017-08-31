@@ -73,7 +73,7 @@
 .Card-meta {
   display: block;
   margin: 19px 0 14px;
-  color: var(--color-gray);
+  color: var(--color-text-light);
   font-size: 14px;
   font-style: normal;
 }
