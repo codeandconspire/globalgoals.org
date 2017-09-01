@@ -6,6 +6,8 @@
  * Custom media queries
  */
 
+@custom-media --viewport-xs (min-width: 375px);
+@custom-media --viewport-xs-max (max-width: 374px);
 @custom-media --viewport-sm (min-width: 480px);
 @custom-media --viewport-sm-max (max-width: 479px);
 @custom-media --viewport-md (min-width: 768px);
