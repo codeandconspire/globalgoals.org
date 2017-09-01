@@ -70,8 +70,7 @@ server.use(catchall);
  * Hook up em' routes
  */
 
-server.use(router.routes());
-server.use(router.allowedMethods());
+server.use(router);
 
 /**
  * Lift off
