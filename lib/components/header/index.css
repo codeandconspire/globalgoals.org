@@ -2,8 +2,14 @@
 
 @import "../base";
 
+:root {
+  --Header-height: 117px;
+  --Header-height-lg: 128px;
+  --Header-height-nano: 77px;
+}
+
 .Header {
-  height: 117px;
+  height: var(--Header-height);
   contain: size layout style;
 }
 
@@ -303,7 +309,7 @@
 
 @media (--viewport-lg) {
   .Header {
-    height: 128px;
+    height: var(--Header-height-lg);
   }
 
   .Header-fill {
@@ -347,9 +353,9 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (--viewport-nano-max) {
   .Header {
-    height: 77px;
+    height: var(--Header-height-nano);
   }
 
   .Header-fill {

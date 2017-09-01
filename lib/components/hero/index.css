@@ -1,16 +1,54 @@
 /* @define Hero */
 
 @import "../base";
+@import "../header";
+
+:root {
+  --Hero-padding: var(--Header-height);
+  --Hero-padding-lg: var(--Header-height-lg);
+  --Hero-padding-nano: var(--Header-height-nano);
+}
 
 .Hero {
   color: #fff;
   position: relative;
+  padding-top: var(--Hero-padding);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (--viewport-lg) {
+  .Hero {
+    padding-top: var(--Hero-padding-lg);
+  }
+}
+
+@media (--viewport-nano-max) {
+  .Hero {
+    padding-top: var(--Hero-padding-nano);
+  }
+}
+
+@media (max-height: 600px) {
+  .Hero {
+    padding-bottom: var(--Hero-padding);
+  }
+}
+
+@media (max-height: 600px) and (--viewport-lg) {
+  .Hero {
+    padding-bottom: var(--Hero-padding-lg);
+  }
+}
+
+@media (max-height: 600px) and (--viewport-nano-max) {
+  .Hero {
+    padding-bottom: var(--Hero-padding-nano);
+  }
 }
 
 .Hero.no-transition {
