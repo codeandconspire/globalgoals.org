@@ -18,6 +18,11 @@
 
 .View-main {
   flex-grow: 1;
+  background: var(--color-document);
+}
+
+.View-footer {
+  background: var(--color-document);
 }
 
 /**

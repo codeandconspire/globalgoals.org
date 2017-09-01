@@ -210,7 +210,7 @@
   transform-origin: center right;
 }
 
-.Header-action {
+.Header-link {
   position: relative;
   display: inline-block;
   color: inherit;
@@ -226,7 +226,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.Header-action::before {
+.Header-link::before {
   content: "";
   position: absolute;
   top: 0;
@@ -240,7 +240,7 @@
   transition: opacity 180ms var(--ease-out);
 }
 
-.Header-action::after {
+.Header-link::after {
   content: "";
   width: 18px;
   height: 18px;
@@ -253,11 +253,11 @@
   transition: transform 180ms var(--ease-out);
 }
 
-.Header-action:hover::before {
+.Header-link:hover::before {
   opacity: 1;
 }
 
-.Header-action:hover::after {
+.Header-link:hover::after {
   transform: rotate(45deg) translate(-4px, 4px);
 }
 
@@ -265,7 +265,7 @@
   transform-origin: center right;
 }
 
-.Header-action:matches(:hover, :focus, :active) {
+.Header-link:matches(:hover, :focus, :active) {
   color: inherit;
 }
 
@@ -294,20 +294,20 @@
     margin-left: 24px;
   }
 
-  .Header-action {
+  .Header-link {
     padding: 13px 29px 11px 16px;
     font-size: 24px;
   }
 
-  .Header-item.is-active .Header-action {
+  .Header-item.is-active .Header-link {
     color: var(--color-active);
   }
 
-  .Header-action::before {
+  .Header-link::before {
     background: var(--color-hover-dark);
   }
 
-  .Header-action::after {
+  .Header-link::after {
     width: 10px;
     height: 10px;
     border-width: 1px 1px 0 0;
@@ -315,11 +315,11 @@
     right: 11px;
   }
 
-  .Header-action:hover::after {
+  .Header-link:hover::after {
     transform: rotate(45deg) translate(-2.5px, 2.5px);
   }
 
-  .Header-item.is-active:hover .Header-action {
+  .Header-item.is-active:hover .Header-link {
     color: var(--color-active-dark);
   }
 }
@@ -369,7 +369,7 @@
   display: none;
 }
 
-.Header--adaptive.is-adapting .Header-action::before {
+.Header--adaptive.is-adapting .Header-link::before {
   background: var(--color-hover-light);
 }
 
