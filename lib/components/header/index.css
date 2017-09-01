@@ -15,11 +15,15 @@
 
 .Header-bar {
   user-select: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
+}
+
+:root.has-js .Header-bar {
+  position: fixed;
 }
 
 .Header-fill {
@@ -36,7 +40,7 @@
 
 @supports (-webkit-backdrop-filter: blur(1px)) {
   .Header-fill {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.94);
     -webkit-backdrop-filter: blur(10px);
   }
 }
@@ -90,7 +94,12 @@
   transition: opacity 180ms var(--ease-out);
 }
 
-.Header.is-open .Header-toggle::before {
+.Header-toggle--closeFallback {
+  display: none;
+  color: transparent;
+}
+
+.Header:matches(.is-open, :target) .Header-toggle::before {
   background: var(--color-hover-light);
 }
 
@@ -153,28 +162,32 @@
   transform-origin: center center;
 }
 
-.Header.is-open .Header-lines {
+.Header:matches(.is-open, :target) .Header-lines {
   color: #fff;
   transform: translateX(-5px);
 }
 
-.Header.is-open .Header-toggleText {
-  display: none;
-}
-
-.Header.is-open .Header-toggleText--close {
+.Header:target .Header-toggle--closeFallback {
   display: block;
 }
 
-.Header.is-open .Header-lines::before {
+.Header:matches(.is-open, :target) .Header-toggleText {
+  display: none;
+}
+
+.Header:matches(.is-open, :target) .Header-toggleText--close {
+  display: block;
+}
+
+.Header:matches(.is-open, :target) .Header-lines::before {
   transform: rotate(-45deg) translate(1px, -1px) scaleX(1.49);
 }
 
-.Header.is-open .Header-lines::after {
+.Header:matches(.is-open, :target) .Header-lines::after {
   transform: rotate(45deg) translate(2px, 0px) scaleX(1.74);
 }
 
-.Header.is-open .Header-line {
+.Header:matches(.is-open, :target) .Header-line {
   transform: scaleX(0);
   opacity: 0;
 }
@@ -384,7 +397,7 @@
     display: none !important;
   }
 
-  .Header.is-open .Header-lines {
+  .Header:matches(.is-open, :target) .Header-lines {
     transform: translateX(-2px);
   }
 
@@ -406,12 +419,14 @@
   will-change: unset;
 }
 
-.Header--adaptive.is-adapting:not(.is-open) .Header-bar {
+:root.has-js .Header--adaptive.is-adapting:not(.is-open) .Header-bar,
+.Header--adaptive.is-adapting:not(:target) .Header-bar {
   position: absolute;
   color: #fff;
 }
 
-.Header--adaptive.is-adapting:not(.is-open) .Header-fill {
+:root.has-js .Header--adaptive.is-adapting:not(.is-open) .Header-fill,
+.Header--adaptive.is-adapting:not(:target) .Header-fill {
   display: none;
 }
 
@@ -419,7 +434,12 @@
   background: var(--color-hover-light);
 }
 
-.Header--adaptive.is-adapting:not(.is-open) .Header-logo path {
+.Header--adaptive.is-adapting .Header-toggle::before {
+  background: var(--color-hover-light);
+}
+
+:root.has-js .Header--adaptive.is-adapting:not(.is-open) .Header-logo path,
+.Header--adaptive.is-adapting:not(:target) .Header-logo path {
   fill: #fff;
 }
 
@@ -432,7 +452,7 @@
     transform: none !important;
   }
 
-  .Header.is-open {
+  .Header:matches(.is-open, :target) {
     overflow: hidden;
   }
 
@@ -451,7 +471,7 @@
     transform: translateY(40px);
   }
 
-  .Header.is-open .Header-fill {
+  .Header:matches(.is-open, :target) .Header-fill {
     position: fixed;
     top: 0;
     left: 0;
@@ -462,7 +482,7 @@
     margin: 0;
   }
 
-  .Header.is-open .Header-nav {
+  .Header:matches(.is-open, :target) .Header-nav {
     visibility: visible;
     width: 100%;
     height: 100vh;
@@ -474,12 +494,12 @@
     left: 4px;
   }
 
-  .Header.is-open .Header-nav {
+  .Header:matches(.is-open, :target) .Header-nav {
     opacity: 1;
     transform: translateY(0) !important;
   }
 
-  .Header.is-open .Header-logo :matches([fill="#161616"], [fill="#000105"]) {
+  .Header:matches(.is-open, :target) .Header-logo :matches([fill="#161616"], [fill="#000105"]) {
     fill: #fff;
   }
 }

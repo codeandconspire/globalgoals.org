@@ -361,6 +361,11 @@
 .CallToAction-panel {
   flex-basis: 100%;
   padding: 2rem 0;
+  display: none;
+}
+
+.CallToAction-panel:target {
+  display: block;
 }
 
 :root.has-js .CallToAction-panel {
