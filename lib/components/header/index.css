@@ -329,7 +329,7 @@
  * Default to expanded header (but now on very narrow viewports)
  */
 
-@media (min-width: 300px) {
+@media (min-width: 310px) {
   .Header-fill {
     transform: translateY(40px);
     will-change: transform;
@@ -428,7 +428,6 @@
  */
 
 @media (--viewport-md-max) {
-  .Header-nav,
   .Header-list {
     transform: none !important;
   }
@@ -442,7 +441,14 @@
     height: 0;
     overflow: hidden;
     visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
     color: #fff;
+    opacity: 0;
+    transition: 300ms 100ms var(--ease-out);
+    transition-property: transform, opacity;
+    transform: translateY(40px);
   }
 
   .Header.is-open .Header-fill {
@@ -460,21 +466,15 @@
     visibility: visible;
     width: 100%;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   .Header .Header-list {
-    opacity: 0;
     position: absolute;
     top: 25%;
     left: 4px;
-    transition: 300ms 100ms var(--ease-out);
-    transition-property: transform, opacity;
   }
 
-  .Header.is-open .Header-list {
+  .Header.is-open .Header-nav {
     opacity: 1;
     transform: translateY(0) !important;
   }

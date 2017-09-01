@@ -68,7 +68,7 @@
   }
 
   .Grid-cell {
-    padding: 0 calc(var(--Grid-gutter-md) * 0.5 * var(--Grid-multiplier-wide));
+    padding: 0 calc(var(--Grid-gutter-md) * 0.5);
     margin-bottom: var(--Grid-gutter-md);
   }
 

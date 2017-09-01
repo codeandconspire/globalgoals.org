@@ -3,7 +3,7 @@
 @import "../base";
 
 .Footer {
-  margin: 70px 0 0;
+  margin: 64px 0 0;
   overflow: hidden;
   line-height: 1.5;
   width: 100%;
@@ -36,6 +36,10 @@
 }
 
 @media (--viewport-lg) {
+  .Footer {
+    margin-top: 114px;
+  }
+
   .Footer-column {
     width: calc(100% / 6);
   }
@@ -177,13 +181,19 @@
 @media (--viewport-md) {
   .Footer-column--horizontal .Footer-list {
     max-width: none;
+    top: 4px;
+    position: relative;
   }
+}
+
+.Footer-column--horizontal .Footer-list {
+  margin-left: -25px;
 }
 
 .Footer-column--horizontal .Footer-item {
   display: inline-block;
-  margin-right: 25px;
-  margin-top: 7px;
+  margin-left: 25px;
+  margin-top: 4px;
   padding: 0;
   white-space: nowrap;
 }
@@ -203,7 +213,7 @@
  * Social icons
  */
 
-.Footer-list--social {
+.Footer-list--social.Footer-list--social  {
   color: transparent;
   font-size: 0;
   position: relative;
@@ -242,14 +252,14 @@
 
 .Footer-social {
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
   background-position: center center;
-  width: 16px;
+  width: 26px;
   height: 16px;
   display: block;
   position: relative;
   top: 8px;
-  left: 8px;
+  left: 3px;
 }
 
 /**

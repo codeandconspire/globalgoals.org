@@ -2,9 +2,16 @@
 
 :root {
   --Space-default: 50px;
-  --Space-multiplier: 2;
-  --Space-multiplier-tall: 1.4;
-  --Space-multiplier-short: 0.6;
+  --Space-default-lg: 50px;
+
+  --Space-tall: 132px;
+  --Space-tall-lg: 182px;
+
+  --Space-short: 30px;
+  --Space-short-lg: 30px;
+
+  --Space-contain: 500px;
+  --Space-contain-lg: 700px;
 }
 
 .Space {
@@ -42,53 +49,53 @@
 }
 
 .Space--startTall {
-  margin-top: calc(var(--Space-default) * var(--Space-multiplier-tall));
+  margin-top: var(--Space-tall);
 }
 
 .Space--endTall {
-  margin-bottom: calc(var(--Space-default) * var(--Space-multiplier-tall));
+  margin-bottom: var(--Space-tall);
 }
 
 .Space--startShort {
-  margin-top: calc(var(--Space-default) * var(--Space-multiplier-short));
+  margin-top: var(--Space-short);
 }
 
 .Space--endShort {
-  margin-bottom: calc(var(--Space-default) * var(--Space-multiplier-short));
+  margin-bottom: var(--Space-short);
 }
 
-@media (--viewport-md) {
+@media (--viewport-lg) {
   .Space--start {
-    margin-top: calc(var(--Space-default) * var(--Space-multiplier));
+    margin-top: var(--Space-default-lg);
   }
 
   .Space--end {
-    margin-bottom: calc(var(--Space-default) * var(--Space-multiplier));
+    margin-bottom: var(--Space-default-lg);
   }
 
   .Space--startTall {
-    margin-top: calc((var(--Space-default) * var(--Space-multiplier)) * var(--Space-multiplier-tall));
+    margin-top: var(--Space-tall-lg);
   }
 
   .Space--endTall {
-    margin-bottom: calc((var(--Space-default) * var(--Space-multiplier)) * var(--Space-multiplier-tall));
+    margin-bottom: var(--Space-tall-lg);
   }
 
   .Space--startShort {
-    margin-top: calc((var(--Space-default) * var(--Space-multiplier)) * var(--Space-multiplier-short));
+    margin-top: var(--Space-short-lg);
   }
 
   .Space--endShort {
-    margin-bottom: calc((var(--Space-default) * var(--Space-multiplier)) * var(--Space-multiplier-short));
+    margin-bottom: var(--Space-short-lg);
   }
 }
 
 .Space--contain {
-  max-width: 500px;
+  max-width: var(--Space-contain);
 }
 
-@media (--viewport-md) {
+@media (--viewport-lg) {
   .Space--contain {
-    max-width: 700px;
+    max-width: var(--Space-contain-lg);
   }
 }
