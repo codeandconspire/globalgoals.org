@@ -14,20 +14,44 @@
   margin: 0 calc(var(--Grid-gutter-sm) * -0.5);
 }
 
-/**
- * Wide – add extra horizontal spacing
- */
-
-.Grid--wide {
-  margin: 0 calc(var(--Grid-gutter-sm) * -0.5 * var(--Grid-multiplier-wide));
-}
-
 .Grid-cell {
   display: flex;
   flex-basis: 100%;
   min-width: 0;
   padding: 0 calc(var(--Grid-gutter-sm) * 0.5);
   margin-bottom: var(--Grid-gutter-sm);
+}
+
+.Grid-cell--center {
+  margin: 0 auto;
+}
+
+.Grid-cell--appear {
+  opacity: 0;
+  animation-name: Grid-cell--appear;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-duration: 600ms;
+}
+
+@keyframes Grid-cell--appear {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/**
+ * Wide – add extra horizontal spacing
+ */
+
+.Grid--wide {
+  margin: 0 calc(var(--Grid-gutter-sm) * -0.5 * var(--Grid-multiplier-wide));
 }
 
 .Grid--wide > .Grid-cell {
