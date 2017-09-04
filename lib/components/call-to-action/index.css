@@ -322,8 +322,12 @@
   transform: translateX(200px);
 }
 
+/**
+ * 1. Hardcoded in JavaScript, see tablist.js
+ */
+
 .CallToAction-tab.is-active {
-  border-bottom: 5px solid currentColor;
+  border-bottom: 5px solid currentColor; /* 1 */
   color: var(--color-red);
 }
 

@@ -41,8 +41,12 @@
   opacity: 1;
 }
 
-.GoalGrid-item:active {
-  transform: scale(0.97);
+/**
+ * 1. Hardcoded in JavaScript, see link.js
+ */
+
+.GoalGrid-item.is-pressed {
+  transform: scale(0.97); /* 1 */
 }
 
 .GoalGrid-content {
