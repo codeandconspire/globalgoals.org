@@ -13,6 +13,7 @@
 .Hero {
   color: #fff;
   position: relative;
+  margin-top: calc(var(--Hero-padding) * -1);
   padding-top: var(--Hero-padding);
   min-height: 100vh;
   z-index: 1;
@@ -25,12 +26,14 @@
 
 @media (--viewport-lg) {
   .Hero {
+    margin-top: calc(var(--Hero-padding-lg) * -1);
     padding-top: var(--Hero-padding-lg);
   }
 }
 
 @media (--viewport-nano-max) {
   .Hero {
+    margin-top: calc(var(--Hero-padding-nano) * -1);
     padding-top: var(--Hero-padding-nano);
   }
 }

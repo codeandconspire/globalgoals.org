@@ -11,6 +11,8 @@
 .Header {
   height: var(--Header-height);
   contain: size layout style;
+  position: relative;
+  z-index: 100;
 }
 
 .Header-bar {
@@ -366,27 +368,6 @@
   }
 }
 
-@media (--viewport-nano-max) {
-  .Header {
-    height: var(--Header-height-nano);
-  }
-
-  .Header-fill {
-    transform: none !important;
-    will-change: unset;
-  }
-
-  .Header-logo {
-    transform: none !important;
-    will-change: unset;
-  }
-
-  .Header-content {
-    transform: none !important;
-    will-change: unset;
-  }
-}
-
 /**
  * Hide toggle text on narrow viewports
  */
@@ -404,43 +385,6 @@
   .Header-toggle {
     width: 48px;
   }
-}
-
-
-/**
- * Adaptive for use on background colors
- */
-
-.Header--adaptive {
-  height: 0;
-}
-
-.Header--adaptive.is-adapting :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
-  will-change: unset;
-}
-
-:root.has-js .Header--adaptive.is-adapting:not(.is-open) .Header-bar,
-.Header--adaptive.is-adapting:not(:target) .Header-bar {
-  position: absolute;
-  color: #fff;
-}
-
-:root.has-js .Header--adaptive.is-adapting:not(.is-open) .Header-fill,
-.Header--adaptive.is-adapting:not(:target) .Header-fill {
-  display: none;
-}
-
-.Header--adaptive.is-adapting .Header-link::before {
-  background: var(--color-hover-light);
-}
-
-.Header--adaptive.is-adapting .Header-toggle::before {
-  background: var(--color-hover-light);
-}
-
-:root.has-js .Header--adaptive.is-adapting:not(.is-open) .Header-logo path,
-.Header--adaptive.is-adapting:not(:target) .Header-logo path {
-  fill: #fff;
 }
 
 /**
@@ -502,4 +446,84 @@
   .Header:matches(.is-open, :target) .Header-logo :matches([fill="#161616"], [fill="#000105"]) {
     fill: #fff;
   }
+}
+
+/**
+ * Adaptive for use on background colors
+ */
+
+.Header--adaptive {
+  will-change: opacity;
+}
+
+.Header--adaptive:not(.is-following) {
+  opacity: 1 !important;
+}
+
+:root.has-js .Header--adaptive:not(.is-following):not(.is-open) .Header-fill,
+.Header--adaptive:not(:target):not(.is-following) .Header-fill {
+  display: none;
+}
+
+.Header--adaptive:not(.is-following):not(.is-open) .Header-link::before {
+  background: var(--color-hover-light);
+}
+
+.Header--adaptive:not(.is-following):not(.is-open) .Header-toggle::before {
+  background: var(--color-hover-light);
+}
+
+:root.has-js .Header--adaptive:not(.is-following):not(.is-open) .Header-bar,
+.Header--adaptive:not(.is-open):not(.is-following):not(:target) .Header-bar {
+  position: absolute;
+  color: #fff;
+}
+
+:root.has-js .Header--adaptive:not(.is-following):not(.is-open) .Header-logo path,
+.Header--adaptive:not(.is-open):not(.is-following):not(:target) .Header-logo path {
+  fill: #fff;
+}
+
+.Header--adaptive:not(.is-following):not(.is-open) :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
+  will-change: unset;
+}
+
+/**
+ * Disable initial expansion in some cases
+ */
+
+@media (--viewport-nano-max) {
+  .Header {
+    height: var(--Header-height-nano);
+  }
+
+  .Header-fill {
+    transform: none !important;
+    will-change: unset;
+  }
+
+  .Header-logo {
+    transform: none !important;
+    will-change: unset;
+  }
+
+  .Header-content {
+    transform: none !important;
+    will-change: unset;
+  }
+}
+
+.Header--adaptive.is-following .Header-fill {
+  transform: none !important;
+  will-change: unset;
+}
+
+.Header--adaptive.is-following .Header-logo {
+  transform: none !important;
+  will-change: unset;
+}
+
+.Header--adaptive.is-following .Header-content {
+  transform: none !important;
+  will-change: unset;
 }
