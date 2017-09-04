@@ -4,21 +4,37 @@
 
 .Edit,
 .Edit:hover,
-.Edit:focus {
+.Edit:focus {;
   position: fixed;
-  bottom: 10px;
-  right: 0;
+  bottom: 20px;
+  right: 45px;
   z-index: 1000;
-  padding: 6px 25px 5px 8px;
-  background: var(--color-gray-dark);
-  font-size: 12px;
+  padding: 5px 13px 4px 12px;
+  font-size: 18px;
   color: #fff;
+  font-family: var(--font-family-heading);
   text-transform: uppercase;
-  transition: transform 200ms ease-out;
-  transform: translateX(10px);
+  background-color: var(--color-gray-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 3px 0 0 3px;
 }
 
-.Edit:hover,
-.Edit:focus {
-  transform: translateX(0px);
+.Edit::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  padding: 22px;
+
+  position: absolute;
+  left: calc(100% - 10px);
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: inherit;
+  background-image: url('./prismic-logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
 }
