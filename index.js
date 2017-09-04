@@ -1,6 +1,7 @@
 const Koa = require('koa');
 const static = require('koa-static');
 const body = require('koa-body');
+const helmet = require('koa-helmet');
 const router = require('./lib/router');
 const { auth, unauthorized } = require('./lib/middleware/auth');
 const cache = require('./lib/middleware/cache');
@@ -33,6 +34,14 @@ if (process.env.AUTH === 'true') {
 
 if (process.env.NODE_ENV === 'development') {
   server.use(require('./lib/middleware/dev'));
+}
+
+/**
+ * Take extra care to clean up em' headers in production
+ */
+
+if (process.env.NODE_ENV !== 'development') {
+  server.use(helmet());
 }
 
 /**
