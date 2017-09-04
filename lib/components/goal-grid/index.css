@@ -17,10 +17,9 @@
 }
 
 .GoalGrid-item {
-  border: calc(var(--GoalGrid-gap) / 2) solid var(--color-document);
+  padding: calc(var(--GoalGrid-gap) / 2);
   width: 50%;
   float: left;
-  background: var(--color-gray-light);
   transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
   outline: 0;
@@ -30,10 +29,10 @@
   content: "";
   background: rgba(0, 0, 0, 0.08);
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: calc(var(--GoalGrid-gap) / 2);
+  left: calc(var(--GoalGrid-gap) / 2);
+  width: calc(100% - var(--GoalGrid-gap));
+  height: calc(100% - var(--GoalGrid-gap));
   opacity: 0;
 }
 
@@ -47,6 +46,16 @@
 
 .GoalGrid-item.is-pressed {
   transform: scale(0.97); /* 1 */
+}
+
+.GoalGrid-item.is-pressed::before {
+  opacity: 0;
+  transition: opacity 100ms var(--ease-out);
+}
+
+.GoalGrid-bg {
+  width: 100%;
+  height: 100%;
 }
 
 .GoalGrid-content {
@@ -210,7 +219,18 @@
       display: flex;
       width: auto;
       float: none;
-      border: 0;
+      padding: 0;
+    }
+
+    .GoalGrid-item::before {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .GoalGrid-bg {
+      display: flex;
     }
 
     .GoalGrid-content {
@@ -323,13 +343,9 @@
  * Item themes
  */
 
-.GoalGrid-item--cta { background: var(--color-gray-light); }
-.GoalGrid-item--banner { background: var(--color-gray-dark); }
-.GoalGrid-item--logo { background: var(--color-gray-light); }
-
-/*.GoalGrid-item--7 .GoalGrid-content {
-  color: var(--color-gray-dark-alpha);
-}*/
+.GoalGrid-item--cta .GoalGrid-bg { background: var(--color-gray-light); }
+.GoalGrid-item--banner .GoalGrid-bg { background: var(--color-gray-dark); }
+.GoalGrid-item--logo .GoalGrid-bg { background: var(--color-gray-light); }
 
 .GoalGrid-item--1 .GoalGrid-button { color: var(--color-goal-1); }
 .GoalGrid-item--2 .GoalGrid-button { color: var(--color-goal-2); }

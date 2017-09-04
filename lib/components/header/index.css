@@ -396,10 +396,6 @@
     transform: none !important;
   }
 
-  .Header:matches(.is-open, :target) {
-    overflow: hidden;
-  }
-
   .Header-nav {
     width: 0;
     height: 0;
@@ -413,6 +409,10 @@
     transition: 300ms 100ms var(--ease-out);
     transition-property: transform, opacity;
     transform: translateY(40px);
+  }
+
+  .Header:matches(.is-open, :target) .Header-bar {
+    position: fixed;
   }
 
   .Header:matches(.is-open, :target) .Header-fill {
@@ -456,12 +456,13 @@
   will-change: opacity;
 }
 
-.Header--adaptive:not(.is-following) {
+.Header--adaptive:not(.is-following),
+.Header:not(.Header--adaptive) {
   opacity: 1 !important;
 }
 
 :root.has-js .Header--adaptive:not(.is-following):not(.is-open) .Header-fill,
-.Header--adaptive:not(:target):not(.is-following) .Header-fill {
+.Header--adaptive:not(:target):not(.is-following):not(.is-open) .Header-fill {
   display: none;
 }
 
