@@ -4,7 +4,7 @@
 
 .Edit,
 .Edit:hover,
-.Edit:focus {;
+.Edit:focus {
   position: fixed;
   bottom: 20px;
   right: 45px;
