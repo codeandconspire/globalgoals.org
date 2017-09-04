@@ -12,7 +12,12 @@
   color: #fff;
 }
 
+/**
+ * 1. Help IE 11 hold its' shit together
+ */
+
 .Goal-label {
+  flex: 0 0 20%; /* 1 */
   fill: currentColor;
   width: 97%;
 }

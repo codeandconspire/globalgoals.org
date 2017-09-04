@@ -5,14 +5,16 @@
   --Target-pictogram-large: 128px;
 }
 
+/**
+ * 1. Internet Explorer be like "YOLO!"
+ */
+
 .Target {
-  display: flex;
-  align-items: flex-start;
   position: relative;
+  max-width: 100%; /* 1 */
 }
 
 .Target-pictogram {
-  flex: 0 0 var(--Target-pictogram-small);
   float: left;
   width: var(--Target-pictogram-small);
   margin-right: 32px;
@@ -20,7 +22,6 @@
 
 @media (--viewport-lg) {
   .Target-pictogram {
-    flex: 0 0 var(--Target-pictogram-large);
     float: left;
     width: var(--Target-pictogram-large);
     margin-right: 40px;
@@ -48,12 +49,6 @@
 .Target-body {
   flex: 1 0 0;
   overflow: hidden;
-}
-
-@supports (display: flex) {
-  .Target-body {
-    overflow: initial;
-  }
 }
 
 .Target-link {

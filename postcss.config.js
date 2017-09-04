@@ -6,6 +6,7 @@ module.exports = (ctx) => ({
     require('postcss-selector-matches')(),
     require('postcss-custom-properties')(),
     require('postcss-url')({ url: 'copy', useHash: true }),
+    require('postcss-flexbugs-fixes')(),
     require('autoprefixer')(),
     require('postcss-csso')()
   ]

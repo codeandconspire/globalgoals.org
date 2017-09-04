@@ -52,8 +52,15 @@
 .Single-bannerFigure {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   background: var(--color-gray-light);
+}
+
+@supports (object-fit: cover) {
+  .Single-bannerFigure {
+    height: 100%;
+  }
 }
 
 /**

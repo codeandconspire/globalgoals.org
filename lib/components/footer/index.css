@@ -103,9 +103,13 @@
   color: var(--color-gray-alpha);
 }
 
+/**
+ * 1. Compensate browser inconsistencies in pixel rounding
+ */
+
 @media (--viewport-lg) {
   .Footer-column--credits {
-    width: 50%;
+    width: calc(50% - 1px); /* 1 */
   }
 }
 
