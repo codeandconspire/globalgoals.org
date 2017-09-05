@@ -1,8 +1,8 @@
 /* @define Space */
 
 :root {
-  --Space-default: 50px;
-  --Space-default-lg: 50px;
+  --Space-default: 74px;
+  --Space-default-lg: 110px;
 
   --Space-tall: 132px;
   --Space-tall-lg: 182px;

@@ -1,8 +1,9 @@
 /* @define Target */
 
 :root {
-  --Target-pictogram-small: 96px;
-  --Target-pictogram-large: 128px;
+  --Target-pictogram-sm: 72px;
+  --Target-pictogram-md: 96px;
+  --Target-pictogram-lg: 128px;
 }
 
 /**
@@ -16,15 +17,22 @@
 
 .Target-pictogram {
   float: left;
-  width: var(--Target-pictogram-small);
-  margin-right: 32px;
+  width: var(--Target-pictogram-sm);
+  margin-right: 24px;
+}
+
+
+@media (--viewport-sm) {
+  .Target-pictogram {
+    width: var(--Target-pictogram-md);
+  }
 }
 
 @media (--viewport-lg) {
   .Target-pictogram {
     float: left;
-    width: var(--Target-pictogram-large);
-    margin-right: 40px;
+    width: var(--Target-pictogram-lg);
+    margin-right: 32px;
   }
 }
 
@@ -36,31 +44,34 @@
 
 .Target-id {
   display: block;
-  padding: 0.3em 0 0.25em;
+  padding: 7px 0 6px;
   margin-top: 4px;
   color: #fff;
   text-align: center;
   font-size: 18px;
-  font-weight: bold;
   font-family: var(--font-family-heading);
+  line-height: 1.1;
   text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  font-size-adjust: var(--font-size-adjust-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .Target-body {
   flex: 1 0 0;
   overflow: hidden;
+  margin: -4px 0 0;
 }
 
 .Target-link {
   display: inline-block;
-  padding: 0.17em 1.75em 0.18em 0.5em;
-  margin-top: 0.3em;
+  padding: 3px 24px 2px 8px;
+  margin-top: 7px;
   position: relative;
   font-size: 14px;
   color: var(--color-text-light);
   background-color: var(--color-gray-light);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .Target-link:hover {

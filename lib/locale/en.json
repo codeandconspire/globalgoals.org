@@ -1,4 +1,21 @@
 {
+  "GOAL_TITLE_1": "No|Poverty",
+  "GOAL_TITLE_2": "Zero|Hunger",
+  "GOAL_TITLE_3": "Good Health|and Well-being",
+  "GOAL_TITLE_4": "Quality|Education",
+  "GOAL_TITLE_5": "Gender|Equality",
+  "GOAL_TITLE_6": "Clean Water|and Sanitation",
+  "GOAL_TITLE_7": "Affordable and|Clean Energy",
+  "GOAL_TITLE_8": "Decent Work and|Economic Growth",
+  "GOAL_TITLE_9": "Industry, Innovation|and Infastructure",
+  "GOAL_TITLE_10": "Reduced|Inequalities",
+  "GOAL_TITLE_11": "Substainable Cities|and Communities",
+  "GOAL_TITLE_12": "Responsible|Consumption|and Production",
+  "GOAL_TITLE_13": "Climate|Action",
+  "GOAL_TITLE_14": "Life Below|Water",
+  "GOAL_TITLE_15": "Life|on Land",
+  "GOAL_TITLE_16": "Peace, Justice|and Strong|Instututions",
+  "GOAL_TITLE_17": "Partnerships|for the Goals",
   "The Goals": "The Goals",
   "Initiatives": "Initiatives",
   "News": "News",
@@ -46,5 +63,8 @@
   "Tips & Tricks": "Tips & Tricks",
   "Submit": "Submit",
   "Target": "Target",
-  "Show more": "Show more"
+  "Show more": "Show more",
+  "GOAL_TITLE_undefined": "GOAL_TITLE_undefined",
+  "GOAL_TITLE_NaN": "GOAL_TITLE_NaN",
+  "GOAL_TITLE_0": "GOAL_TITLE_0"
 }
