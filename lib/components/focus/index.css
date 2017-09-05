@@ -7,7 +7,7 @@
 }
 
 :root:not(.has-js) :focus:not(:hover):not(:active),
-[data-focus-source="key"] :focus {
+:root[data-focus-source="key"] :focus {
   box-shadow: inset 0px 0px 0 4px var(--color-gray-dark-alpha);
   z-index: 1000;
   border-radius: 2px;
