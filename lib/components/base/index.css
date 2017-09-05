@@ -1,3 +1,4 @@
+@import "../focus";
 @import "./colors";
 @import "./fonts";
 @import "./utils";
@@ -61,7 +62,7 @@ a {
   cursor: pointer;
 }
 
-a:matches(:hover, :active, :focus) {
+a:matches(:hover, :active) {
 	background-color: transparent; /* 1 */
   text-decoration: none;
 }

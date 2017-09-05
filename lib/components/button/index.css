@@ -14,8 +14,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.Button:hover,
-.Button:focus {
+.Button:hover {
   background-color: var(--color-hover-dark);
 }
 

@@ -3,21 +3,24 @@
 @import "../base";
 
 .Edit,
-.Edit:hover,
-.Edit:focus {
+.Edit:hover {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 45px;
   z-index: 1000;
-  padding: 5px 13px 4px 12px;
-  font-size: 18px;
   color: #fff;
   font-family: var(--font-family-heading);
   text-transform: uppercase;
-  background-color: var(--color-gray-dark);
+  background-color: var(--color-gray);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   border-radius: 3px 0 0 3px;
+  font-size: 0;
+  outline: none;
+}
+
+.Edit:hover {
+  background: var(--color-gray-dark);
 }
 
 .Edit::after {

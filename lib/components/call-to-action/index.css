@@ -46,10 +46,6 @@
   }
 }
 
-.CallToAction-button:focus {
-  background-color: var(--color-red);
-}
-
 .CallToAction-button:hover {
   background-color: var(--color-dark-red);
 }

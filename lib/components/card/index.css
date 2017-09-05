@@ -283,8 +283,8 @@
 
 .Card--fill .Card-link {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 35px 0 -13px;
-  padding: 20px 0 0 0;
+  margin: 35px 0 -23px;
+  padding: 20px 0 10px 0;
   width: 100%;
 }
 

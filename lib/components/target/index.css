@@ -63,8 +63,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.Target-link:hover,
-.Target-link:focus {
+.Target-link:hover {
   outline: none;
   background-color: #e0e0e0;
   color: var(--color-text);
