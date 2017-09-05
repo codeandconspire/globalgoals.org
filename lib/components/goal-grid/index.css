@@ -48,6 +48,11 @@
   transform: scale(0.97); /* 1 */
 }
 
+:root[data-focus-source="key"] .GoalGrid-item:focus {
+  outline: 4px solid var(--color-gray-dark-alpha);
+  outline-offset: -4px;
+}
+
 .GoalGrid-item.is-pressed::before {
   opacity: 0;
   transition: opacity 100ms var(--ease-out);

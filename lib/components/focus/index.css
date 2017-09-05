@@ -10,5 +10,4 @@
 :root[data-focus-source="key"] :focus {
   box-shadow: inset 0px 0px 0 4px var(--color-gray-dark-alpha);
   z-index: 1000;
-  border-radius: 2px;
 }
