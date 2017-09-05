@@ -1,0 +1,151 @@
+/* @define Hero */
+
+.Hero-background--14 {
+
+}
+
+/**
+ * Jellyfish
+ */
+
+.Hero-jellyfish {
+  display: inline;
+  width: 50px;
+  height: auto;
+
+  position: absolute;
+  top: 100%;
+}
+
+.Hero-jellyfish.in-transition {
+  transition: transform 15000ms linear;
+  transform: translateY(calc(-100vh - 100%));
+}
+
+/**
+ * Fish
+ */
+
+.Hero-fish {
+  display: inline;
+  width: 87px;
+  height: auto;
+
+  position: absolute;
+  right: 100%;
+
+  color: #fff;
+}
+
+.Hero-fish.in-transition {
+  transition: transform 15000ms linear;
+  transform: translateX(calc(100vw + 100%));
+}
+
+.Hero-fish--small.in-transition {
+  transition-duration: 45000ms;
+}
+
+.Hero-fish--medium.in-transition {
+  transition-duration: 35000ms;
+}
+
+.Hero-fish--large.in-transition {
+  transition-duration: 25000ms;
+}
+
+.Hero-fish--small {
+  width: 57px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.Hero-fish--medium {
+  width: 87px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.Hero-fish--large {
+  width: 123px;
+  color: #fff;
+}
+
+/**
+ * Bubble
+ */
+
+.Hero-bubble {
+  display: inline;
+  width: 50px;
+  height: auto;
+
+  position: absolute;
+  top: 100%;
+
+  color: #fff;
+}
+
+.Hero-bubble.in-transition {
+  transition: transform 9000ms linear;
+  transform: translateY(calc(-100vh - 100%));
+}
+
+.Hero-bubble--small.in-transition {
+  width: 20px;
+  transition-duration: 15000ms;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.Hero-bubble--large {
+  width: 32px;
+  color: #fff;
+}
+
+/**
+ * Seafloor
+ */
+
+.Hero-seafloor {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Hero-seaweed {
+  height: auto;
+
+  transform: translateY(100%);
+  animation-name: Hero-seaweed--appear;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes Hero-seaweed--appear {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.Hero-seaweed--squiggly {
+  width: 28px;
+  position: absolute;
+  left: 45%;
+  bottom: -10px;
+}
+
+.Hero-seaweed--light {
+  color: #fff;
+}
+
+.Hero-seaweed--dim {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.Hero-seaweed--dark {
+  color: rgba(0, 0, 0, 0.6);
+}

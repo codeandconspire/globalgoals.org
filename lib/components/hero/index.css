@@ -3,6 +3,7 @@
 @import "../base";
 @import "../header";
 @import "./backgrounds/1";
+@import "./backgrounds/14";
 
 :root {
   --Hero-padding: var(--Header-height);
