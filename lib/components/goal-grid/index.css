@@ -34,6 +34,7 @@
   width: calc(100% - var(--GoalGrid-gap));
   height: calc(100% - var(--GoalGrid-gap));
   opacity: 0;
+  transition: opacity 180ms var(--ease-out);
 }
 
 .GoalGrid-item:hover::before {

@@ -6,10 +6,8 @@
   display: block;
   width: 100%;
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  contain: style layout paint;
 }
 
 :root.has-js .Card {
@@ -82,10 +80,14 @@
   margin-top: 0.5rem;
 }
 
+/**
+ * Read more link
+ */
+
 .Card-link {
   float: left;
-  padding-right: 30px;
-  margin-top: 17px;
+  margin: 17px 0 0 -16px;
+  padding: 13px 29px 11px 16px;
 
   position: relative;
 
@@ -98,11 +100,20 @@
   word-spacing: var(--word-spacing-heading);
   font-size-adjust: var(--font-size-adjust-heading);
   user-select: none;
+  transition: color 180ms var(--ease-out);
 }
 
-.Card:hover .Card-link,
-.Card-link:focus {
-  color: var(--color-link-enter);
+.Card-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-hover-dark);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 1px;
+  transition: opacity 180ms var(--ease-out);
 }
 
 .Card-linkText {
@@ -112,16 +123,35 @@
 
 .Card-linkText::after {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   position: absolute;
   border: solid currentColor;
   border-width: 1px 1px 0 0;
-  top: 5px;
-  right: -23px;
+  top: 6px;
+  right: -18px;
   transform: rotate(45deg);
-  transition: transform 200ms linear;
+  transition: transform 180ms var(--ease-out);
 }
+
+.Card-link:hover::before,
+:root.has-js .Card:hover .Card-link::before {
+  opacity: 1;
+}
+
+.Card-link:hover,
+:root.has-js .Card:hover .Card-link {
+  color: var(--color-link-enter);
+}
+
+.Card-link:hover .Card-linkText::after,
+:root.has-js .Card:hover .Card-linkText::after {
+  transform: rotate(45deg) translate(-2.5px, 2.5px);
+}
+
+/**
+ * Tags
+ */
 
 .Card-tags {
   display: grid;
@@ -238,17 +268,38 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.Card--fill .Card-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-hover-dark);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 1px;
+  transition: opacity 180ms var(--ease-out);
+}
+
 .Card--fill .Card-link {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin: 35px 0 -13px;
-  padding-top: 20px;
+  padding: 20px 0 0 0;
   width: 100%;
 }
 
+.Card--fill .Card-link::before {
+  content: none;
+}
+
 .Card--fill .Card-link,
-.Card--fill:hover .Card-link,
-.Card--fill .Card-link:focus {
+.Card--fill .Card-link:hover,
+:root.has-js .Card--fill:hover .Card-link {
   color: #fff;
+}
+
+:root.has-js .Card--fill:hover .Card-content::before {
+  opacity: 1;
 }
 
 /**
