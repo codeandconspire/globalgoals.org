@@ -1,0 +1,86 @@
+/* @define Hero */
+
+.Hero-background--3 {
+
+}
+
+.Hero-heart {
+  position: absolute;
+  opacity: 0;
+}
+
+.Hero-heart.is-visible {
+  animation-name: Hero-heart--pop;
+  animation-duration: 700ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes Hero-heart--pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  35% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+
+  45% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.Hero-lifeline {
+  width: calc(100% + 4px);
+  margin: 0 -2px;
+
+  position: absolute;
+  left: 0;
+  bottom: 8vh;
+}
+
+:root.has-js .Hero-lifepath {
+  display: none;
+}
+
+:root.has-js .Hero-lifepath.in-transition {
+  display: block;
+}
+
+.Hero-lifepath.in-transition {
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
+  animation-name: Hero-lifepath--draw;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.Hero-lifepath.in-reverse {
+  stroke-dashoffset: 3600;
+  animation-name: Hero-lifepath--undraw;
+}
+
+@keyframes Hero-lifepath--undraw {
+  to {
+    stroke-dashoffset: 1800;
+  }
+}
+
+@keyframes Hero-lifepath--draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
