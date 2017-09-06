@@ -201,7 +201,7 @@
  */
 
 .Header.is-open .Header-back,
-.Header:not(.is-open) .Header-back + .Header-logo {
+.Header:not(.is-open).is-inHistory .Header-logo {
   display: none;
 }
 
@@ -507,11 +507,11 @@
  * Adaptive for use on background colors
  */
 
-.Header--adaptive {
+.Header--adaptive.is-inHistory {
   will-change: opacity;
 }
 
-.Header--adaptive {
+.Header--adaptive.is-inHistory {
   animation: Header-in 500ms var(--ease-out);
   animation-iteration-count: 1;
 }

@@ -11,16 +11,17 @@
   color: #fff;
   font-family: var(--font-family-heading);
   text-transform: uppercase;
-  background-color: var(--color-gray);
+  background-color: rgba(0, 0, 0, 0.25);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   border-radius: 3px 0 0 3px;
   font-size: 0;
   outline: none;
+  transition: background 180ms var(--ease-out);
 }
 
 .Edit:hover {
-  background: var(--color-gray-dark);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .Edit::after {
