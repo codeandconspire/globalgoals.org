@@ -7,8 +7,8 @@
  * Custom media queries
  */
 
-@custom-media --viewport-nano (min-width: 300px);
-@custom-media --viewport-nano-max (max-width: 299px);
+@custom-media --viewport-nano (min-width: 320px);
+@custom-media --viewport-nano-max (max-width: 319px);
 @custom-media --viewport-xs (min-width: 375px);
 @custom-media --viewport-xs-max (max-width: 374px);
 @custom-media --viewport-sm (min-width: 480px);

@@ -55,8 +55,8 @@
 .Header-logo {
   display: inline-block;
   vertical-align: top;
-  height: 45px;
-  margin-left: -7px;
+  height: 46px;
+  margin-left: -11px;
   padding: 16px 10px;
   box-sizing: content-box;
   transform-origin: center left;
@@ -68,20 +68,30 @@
  * Button for opening and closing navigation
  */
 
-.Header-toggle {
+.Header-toggle,
+.Header-back {
   width: 93px;
   height: 48px;
   padding: 13px;
   position: absolute;
-  right: -13px;
+  right: -8px;
   top: 15px;
   z-index: 1;
   text-align: right;
   user-select: none;
   -webkit-touch-callout: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: var(--font-family-heading);
+  word-spacing: var(--word-spacing-heading);
+  font-size-adjust: var(--font-size-adjust-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.Header-toggle::before {
+.Header-toggle::before,
+.Header-back::before {
   content: "";
   position: absolute;
   top: 0;
@@ -104,20 +114,13 @@
   background: var(--color-hover-light);
 }
 
-.Header-toggle:hover::before {
+.Header-toggle:hover::before,
+.Header-back:hover::before {
   opacity: 1;
 }
 
 .Header-toggleText {
-  font-size: 24px;
-  text-transform: uppercase;
-  white-space: nowrap;
-  font-family: var(--font-family-heading);
-  word-spacing: var(--word-spacing-heading);
-  font-size-adjust: var(--font-size-adjust-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  user-select: none;
+
 }
 
 .Header-toggleText--close {
@@ -191,6 +194,54 @@
 .Header:matches(.is-open, :target) .Header-line {
   transform: scaleX(0);
   opacity: 0;
+}
+
+/**
+ * Back button
+ */
+
+.Header.is-open .Header-back,
+.Header:not(.is-open) .Header-back + .Header-logo {
+  display: none;
+}
+
+.Header-back,
+.Header-back:hover {
+  left: 0;
+  right: auto;
+  width: auto;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 1px;
+  padding: 13px 16px 11px 31px;
+  transform-origin: top left;
+}
+
+@media (--viewport-md) {
+  .Header-back,
+  .Header-back:hover {
+    top: 14px;
+  }
+}
+
+.Header-back::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 10px;
+  height: 10px;
+  border-width: 1px 1px 0 0;
+  top: 19px;
+  left: 14px;
+  transform: rotate(-135deg);
+  transition: transform 180ms var(--ease-out);
+}
+
+.Header-back:hover::before {
+  opacity: 1;
+}
+
+.Header-back:hover::after {
+  transform: rotate(-135deg) translate(-2px, 2px);
 }
 
 /**
@@ -273,11 +324,13 @@
     position: absolute;
     top: 14px;
     right: 0;
+    width: 100%;
   }
 
   .Header-list {
     margin-right: -9px;
     overflow: hidden;
+    float: right;
   }
 
   .Header-item {
@@ -317,7 +370,8 @@
 }
 
 @media (--viewport-md) and (--viewport-lg-max) {
-  .Header-list {
+  .Header-list,
+  .Header-back {
     transform: none !important;
   }
 }
@@ -362,7 +416,8 @@
 }
 
 @media (--viewport-lg) {
-  .Header-list {
+  .Header-list,
+  .Header-back {
     transform: scale(1.2);
     will-change: transform;
   }
@@ -372,7 +427,7 @@
  * Hide toggle text on narrow viewports
  */
 
-@media (max-width: 350px) {
+@media (--viewport-xs-max) {
   .Header-toggleText,
   .Header-toggleText--close {
     display: none !important;
@@ -392,7 +447,8 @@
  */
 
 @media (--viewport-md-max) {
-  .Header-list {
+  .Header-list,
+  .Header-back {
     transform: none !important;
   }
 
@@ -518,6 +574,23 @@
   }
 
   .Header-content {
+    transform: none !important;
+    will-change: unset;
+  }
+}
+
+@media (--viewport-md-max) {
+  .Header--adaptive .Header-fill {
+    transform: none !important;
+    will-change: unset;
+  }
+
+  .Header--adaptive .Header-logo {
+    transform: none !important;
+    will-change: unset;
+  }
+
+  .Header--adaptive .Header-content {
     transform: none !important;
     will-change: unset;
   }
