@@ -8,22 +8,7 @@
 
 :root:not(.has-js) :focus:not(:hover):not(:active),
 :root[data-focus-source="key"] :focus {
-  box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 0 2px #000;
   z-index: 1000;
-  animation: Focus-pulse 1200ms infinite;
-}
-
-@keyframes Focus-pulse {
-  0% {
-    box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 1);
-    outline-color: rgba(0, 0, 0, 1);
-  }
-  50% {
-    box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.2);
-    outline-color: rgba(0, 0, 0, 0.2);
-  }
-  90% {
-    box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 1);
-    outline-color: rgba(0, 0, 0, 1);
-  }
+  border-radius: 2px;
 }

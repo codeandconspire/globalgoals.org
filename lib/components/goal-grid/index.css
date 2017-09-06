@@ -22,6 +22,7 @@
   float: left;
   transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
+  transform: scale(1.0001);
 }
 
 .GoalGrid-item::before {
@@ -40,6 +41,19 @@
   opacity: 1;
 }
 
+.Goal-glyph {
+  transition: transform 180ms var(--ease-out);
+  transform: scale(1.0001);
+}
+
+.GoalGrid-item:hover .Goal-glyph {
+  transform: scale(1.08);
+}
+
+.GoalGrid-item:active .Goal-glyph {
+  transform: scale(1.0001);
+}
+
 /**
  * 1. Hardcoded in JavaScript, see link.js
  */
@@ -49,8 +63,9 @@
 }
 
 :root[data-focus-source="key"] .GoalGrid-item:focus {
-  outline: 4px solid var(--color-gray-dark-alpha);
-  outline-offset: -4px;
+  box-shadow: none;
+  outline: 2px solid #000;
+  outline-offset: -2px;
 }
 
 .GoalGrid-item.is-pressed::before {
@@ -123,6 +138,7 @@
 .GoalGrid-desc {
   flex-grow: 1;
   margin-left: 32px;
+  margin-right: 44px;
 }
 
 .GoalGrid-button {
@@ -199,10 +215,29 @@
 
   .GoalGrid-desc {
     margin-left: 24px;
+    margin-right: 64px;
   }
 
   .GoalGrid-button {
     margin: 30px 0 0 24px;
+  }
+}
+
+@media (--viewport-xl) {
+  .GoalGrid-details {
+    padding: 0 32px 32px 0;
+  }
+
+  .GoalGrid-title {
+    margin-left: 32px;
+  }
+
+  .GoalGrid-desc {
+    margin-left: 32px;
+  }
+
+  .GoalGrid-button {
+    margin: 30px 0 0 32px;
   }
 }
 

@@ -455,6 +455,20 @@
   will-change: opacity;
 }
 
+.Header--adaptive {
+  animation: Header-in 500ms var(--ease-out);
+  animation-iteration-count: 1;
+}
+
+@keyframes Header-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .Header--adaptive:not(.is-following),
 .Header:not(.Header--adaptive) {
   opacity: 1 !important;
@@ -463,14 +477,6 @@
 :root.has-js .Header--adaptive:not(.is-following):not(.is-open) .Header-fill,
 .Header--adaptive:not(:target):not(.is-following):not(.is-open) .Header-fill {
   display: none;
-}
-
-.Header--adaptive:not(.is-following):not(.is-open) .Header-link::before {
-  background: var(--color-hover-light);
-}
-
-.Header--adaptive:not(.is-following):not(.is-open) .Header-toggle::before {
-  background: var(--color-hover-light);
 }
 
 :root.has-js .Header--adaptive:not(.is-following):not(.is-open) .Header-bar,
@@ -486,6 +492,10 @@
 
 .Header--adaptive:not(.is-following):not(.is-open) :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
   will-change: unset;
+}
+
+.Header--adaptive:not(.is-following):not(.is-open) .Header-link {
+  transition: none;
 }
 
 /**
@@ -526,4 +536,16 @@
 .Header--adaptive.is-following .Header-content {
   transform: none !important;
   will-change: unset;
+}
+
+/**
+ * Focus states
+ */
+
+:root[data-focus-source="key"] :matches(.Header-toggle, .Header-link, .Header-logo):focus {
+  box-shadow: inset 0 0 0 2px #000;
+}
+
+:root[data-focus-source="key"] .Header.is-open :matches(.Header-toggle, .Header-link, .Header-logo):focus {
+  box-shadow: inset 0 0 0 2px #fff;
 }

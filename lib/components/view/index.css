@@ -165,7 +165,7 @@
   opacity: 0;
 
   transform-origin: 0 0;
-  transition: transform 500ms cubic-bezier(0.56, 0, 0.07, 1);
+  transition: transform 300ms var(--ease-in);
   will-change: transform;
 
   animation-name: View-takeover--appear;

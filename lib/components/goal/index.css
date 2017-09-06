@@ -26,6 +26,10 @@
   text-transform: uppercase;
 }
 
+.Goal-label--darken .Goal-number {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .Goal-glyph {
   flex: 1 1 auto;
   display: flex;
