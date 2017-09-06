@@ -38,7 +38,7 @@
 }
 
 .Hero-fish.in-transition {
-  transition: transform 15000ms linear;
+  transition: transform 45000ms linear;
   transform: translateX(calc(100vw + 100%));
 }
 
@@ -116,7 +116,7 @@
 
   transform: translateY(100%);
   animation-name: Hero-seaweed--appear;
-  animation-duration: 300ms;
+  animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
