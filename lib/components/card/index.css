@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 
-:root.has-js .Card {
+:root.has-js .Card:not(.is-loading) {
   cursor: pointer;
 }
 
@@ -134,18 +134,18 @@
   transition: transform 180ms var(--ease-out);
 }
 
-.Card-link:hover::before,
-:root.has-js .Card:hover .Card-link::before {
+.Card:not(.is-loading) .Card-link:hover::before,
+:root.has-js .Card:not(.is-loading):hover .Card-link::before {
   opacity: 1;
 }
 
-.Card-link:hover,
-:root.has-js .Card:hover .Card-link {
+.Card:not(.is-loading) .Card-link:hover,
+:root.has-js .Card:not(.is-loading):hover .Card-link {
   color: var(--color-link-enter);
 }
 
-.Card-link:hover .Card-linkText::after,
-:root.has-js .Card:hover .Card-linkText::after {
+.Card:not(.is-loading) .Card-link:hover .Card-linkText::after,
+:root.has-js .Card:not(.is-loading):hover .Card-linkText::after {
   transform: rotate(45deg) translate(-2.5px, 2.5px);
 }
 
@@ -254,8 +254,6 @@
 
 /**
  * Fill
- *
- * 1. Fade in from loading state
  */
 
 .Card--fill .Card-content {
@@ -298,7 +296,7 @@
   color: #fff;
 }
 
-:root.has-js .Card--fill:hover .Card-content::before {
+:root.has-js .Card--fill:not(.is-loading):hover .Card-content::before {
   opacity: 1;
 }
 
@@ -311,9 +309,9 @@
 }
 
 .Card--fill.is-loading .Card-content {
-  background: #e4e4e4;
+  background: #f8f8f8;
 }
 
 .Card--fill.is-loading .Card-link {
-  border-color: var(--color-gray-light);
+  border-color: transparent;
 }
