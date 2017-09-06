@@ -50,7 +50,7 @@
   transform: scale(1.08);
 }
 
-.GoalGrid-item:active .Goal-glyph {
+.GoalGrid-item.is-pressed .Goal-glyph {
   transform: scale(1.0001);
 }
 

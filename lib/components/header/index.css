@@ -405,7 +405,7 @@
   }
 
   .Header-logo {
-    transform: scale(1.3);
+    transform: scale(1.25);
     will-change: transform;
   }
 
@@ -522,6 +522,7 @@
   }
   100% {
     opacity: 1;
+    will-change: unset;
   }
 }
 
@@ -546,12 +547,20 @@
   fill: #fff;
 }
 
-.Header--adaptive:not(.is-following):not(.is-open) :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
+.Header--adaptive:not(.is-following):not(.is-open) :matches(.Header-fill, .Header-logo, .Header-content, .Header-list, .Header-back) {
   will-change: unset;
 }
 
 .Header--adaptive:not(.is-following):not(.is-open) .Header-link {
   transition: none;
+}
+
+.Header--adaptive.is-following .Header-back {
+  display: none;
+}
+
+.Header--adaptive.is-following .Header-logo {
+  display: block !important;
 }
 
 /**
