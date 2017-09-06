@@ -241,7 +241,7 @@
 }
 
 .Header-back:hover::after {
-  transform: rotate(-135deg) translate(-2px, 2px);
+  transform: rotate(-135deg) translate(-2.5px, 2.5px);
 }
 
 /**
