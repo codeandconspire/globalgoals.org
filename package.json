@@ -1,6 +1,6 @@
 {
   "name": "globalgoals.org",
-  "version": "0.1.0",
+  "version": "0.1.100",
   "description": "Public website for the Global Goals initiative",
   "main": "index.js",
   "scripts": {
@@ -44,6 +44,7 @@
     "now": "^7.4.0",
     "postcss": "^6.0.10",
     "postcss-cli": "^4.1.0",
+    "postcss-color-function": "^4.0.0",
     "postcss-csso": "^2.0.0",
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^6.1.0",
