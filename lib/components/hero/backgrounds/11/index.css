@@ -99,14 +99,14 @@
   animation-iteration-count: 1;
 }
 
-:root.has-js .Hero-spray.is-running {
-  animation-name: Hero-spray--running;
-}
-
 @keyframes Hero-spray--starting {
   to {
     stroke-dashoffset: 198; /* 1 */
   }
+}
+
+:root.has-js .Hero-spray.is-running {
+  animation-name: Hero-spray--running;
 }
 
 @keyframes Hero-spray--running {
