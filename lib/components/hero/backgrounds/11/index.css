@@ -1,0 +1,195 @@
+/* @define Hero */
+
+.Hero-background--11 {
+
+}
+
+.Hero-city {
+  max-width: 100%;
+  max-height: 15vh;
+  padding: 0 5vw;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+/**
+ * Bus
+ */
+
+.Hero-bus {
+  max-width: 10vw;
+  max-height: 3.5vh;
+
+  position: absolute;
+  right: calc(100% + 1px);
+  bottom: 0;
+
+  animation-name: Hero-bus--drive;
+  animation-duration: 8000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1000ms;
+}
+
+:root.has-js .Hero-bus {
+  animation-play-state: paused;
+}
+
+:root.has-js .Hero-bus.in-transition {
+  animation-play-state: running;
+}
+
+@keyframes Hero-bus--drive {
+  to {
+    transform: translateX(calc(100vw + 100%));
+  }
+}
+
+/**
+ * Fountain
+ */
+
+.Hero-spray {
+  stroke-dashoffset: 80;
+  animation-name: Hero-spray--running;
+  animation-duration: 2500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+:root.has-js .Hero-spray {
+  animation-name: none;
+}
+
+/**
+ * 1. I dunno, it just works 😎
+ */
+
+:root.has-js .Hero-spray.is-starting {
+  stroke-dasharray: 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 107; /* 1 */
+  stroke-dashoffset: 302; /* 1 */
+  animation-duration: 2500ms;
+  animation-delay: 250ms;
+  animation-name: Hero-spray--starting;
+  animation-iteration-count: 1;
+}
+
+:root.has-js .Hero-spray.is-running {
+  animation-name: Hero-spray--running;
+}
+
+@keyframes Hero-spray--starting {
+  to {
+    stroke-dashoffset: 198; /* 1 */
+  }
+}
+
+@keyframes Hero-spray--running {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/**
+ * Sky
+ */
+
+.Hero-sky {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  animation: Hero-sky--rise 1650ms ease-out forwards;
+}
+
+@keyframes Hero-sky--rise {
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.Hero-sun {
+  width: 86px;
+  max-width: 10vw;
+  position: absolute;
+  left: 6vw;
+  bottom: 40%;
+
+  animation: Hero-sun--spin 8000ms linear infinite;
+}
+
+@keyframes Hero-sun--spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Hero-cloud {
+  position: absolute;
+  color: #fff;
+  opacity: 0.2;
+  animation: Hero-cloud--appear 1800ms ease-out forwards;
+}
+
+@keyframes Hero-cloud--appear {
+  from {
+    transform: translateY(200%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.Hero-cloud--small {
+  width: 3%;
+}
+
+.Hero-cloud--medium {
+  width: 5%;
+}
+
+.Hero-cloud--large {
+  width: 8%;
+}
+
+.Hero-cloud--dark {
+  opacity: 0.4;
+  color: #000;
+}
+
+.Hero-cloud:nth-child(1) {
+  top: 60%;
+  left: -2.5%;
+}
+
+.Hero-cloud:nth-child(2) {
+  top: 49%;
+  left: 5.55%;
+}
+
+.Hero-cloud:nth-child(3) {
+  top: 28%;
+  right: 15%;
+}
+
+.Hero-cloud:nth-child(4) {
+  top: 33%;
+  right: 14%;
+}
+
+.Hero-cloud:nth-child(5) {
+  top: 50%;
+  right: -3%;
+}
