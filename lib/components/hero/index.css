@@ -84,7 +84,6 @@
 }
 
 .Hero-title {
-  color: #fff;
   margin-bottom: 3rem;
 }
 
@@ -138,4 +137,12 @@
 
 .Hero--takeover .Hero-intro {
   visibility: hidden;
+}
+
+.Hero--7 {
+  color: #000;
+}
+
+.Hero .Goal-number {
+  color: #fff;
 }
