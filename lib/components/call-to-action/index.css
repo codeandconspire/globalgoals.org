@@ -228,6 +228,12 @@
     transform 340ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+.CallToAction-tablist.in-transition .CallToAction-button {
+  transition:
+    opacity 175ms linear,
+    transform 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
 .CallToAction-tablist.is-slow .CallToAction-button.in-transition {
   transition:
     color 275ms linear,
