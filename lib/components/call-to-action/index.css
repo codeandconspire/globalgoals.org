@@ -19,7 +19,7 @@
 
 .CallToAction-button {
   float: left;
-  padding: 17px 24px 15px;
+  padding: 17px 74px 15px 24px;
   margin: 0 16px 16px 0;
 
   position: relative;
@@ -46,10 +46,6 @@
   }
 }
 
-.CallToAction-button:hover {
-  background-color: var(--color-dark-red);
-}
-
 @media (--viewport-lg) {
   .CallToAction-button {
     font-size: 48px;
@@ -67,15 +63,11 @@
 }
 
 /**
- * Large button with +
+ * The "+"
  */
 
-.CallToAction-button--expandable {
-  padding-right: 74px;
-}
-
-.CallToAction-button--expandable::after,
-.CallToAction-button--expandable::before {
+.CallToAction-button::after,
+.CallToAction-button::before {
   content: "";
   width: 2px;
   height: 26px;
@@ -87,36 +79,48 @@
   background-color: #fff;
   transform: translateY(-50%);
 
-  transition: opacity 150ms var(--ease-in);
+  transition: transform 180ms var(--ease-out), opacity 150ms var(--ease-in);
 }
 
-.CallToAction-tablist.is-slow .CallToAction-button--expandable::after,
-.CallToAction-tablist.is-slow .CallToAction-button--expandable::before {
-  transition: opacity 200ms var(--ease-in);
+.CallToAction-tablist.is-slow .CallToAction-button::after,
+.CallToAction-tablist.is-slow .CallToAction-button::before {
+  transition: transform 180ms var(--ease-out), opacity 200ms var(--ease-in);
 }
 
-.CallToAction-button--expandable::after {
+.CallToAction-button::after {
   transform: translateY(-50%) rotate(90deg);
 }
 
-.CallToAction-button--expandable.is-expanded::before {
+.CallToAction-button.is-expanded::before {
   opacity: 0;
 }
 
+.CallToAction-button:hover {
+  background-color: var(--color-dark-red);
+}
+
+.CallToAction-button:hover::before {
+  transform: translate(-4px, -50%);
+}
+
+.CallToAction-button:hover::after {
+  transform: translate(-4px, -50%) rotate(90deg);
+}
+
 @media (--viewport-lg) {
-  .CallToAction-button--expandable::after,
-  .CallToAction-button--expandable::before {
+  .CallToAction-button::after,
+  .CallToAction-button::before {
     height: 30px;
   }
 }
 
 @media (--viewport-xl) {
-  .CallToAction-button--expandable {
+  .CallToAction-button {
     padding-right: 100px;
   }
 
-  .CallToAction-button--expandable::after,
-  .CallToAction-button--expandable::before {
+  .CallToAction-button::after,
+  .CallToAction-button::before {
     height: 38px;
     right: 50px;
   }
@@ -209,50 +213,6 @@
 }
 
 /**
- * Close button
- */
-
-.CallToAction-close {
-  display: block;
-  width: 1em;
-  height: 1em;
-
-  position: absolute;
-  right: 0;
-  bottom: -0.25em;
-
-  outline: none;
-  font-size: 2.5em;
-  color: transparent;
-  text-indent: -99em;
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.CallToAction-close::after,
-.CallToAction-close::before {
-  content: "";
-  width: 1px;
-  height: 0.6em;
-
-  position: absolute;
-  top: 50%;
-  right: 50%;
-
-  background-color: var(--color-red);
-  transform: translate(-50%, -50%);
-}
-
-.CallToAction-close::after {
-  transform: translate(-50%, -50%) rotate(90deg);
-}
-
-.CallToAction-tablist.in-transition .CallToAction-button {
-  transition:
-    opacity 175ms linear,
-    transform 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
-}
-
-/**
  * All buttons but the one in transition disappear
  */
 
@@ -288,11 +248,23 @@
   font-size: 20px;
   color: var(--color-gray-alpha);
   font-family: var(--font-family-heading);
+  word-spacing: var(--word-spacing-heading);
+
   text-transform: uppercase;
   white-space: nowrap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   will-change: transform;
+
+  transition: color 120ms var(--ease-out);
+}
+
+.CallToAction-tab.is-active {
+  transition: none;
+}
+
+.CallToAction-tab:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media (--viewport-md) {
@@ -360,7 +332,7 @@
 
 .CallToAction-panel {
   flex-basis: 100%;
-  padding: 2rem 0;
+  padding: 3rem 0;
   display: none;
 }
 
