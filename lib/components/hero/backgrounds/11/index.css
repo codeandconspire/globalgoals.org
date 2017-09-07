@@ -17,6 +17,28 @@
 }
 
 /**
+ * 1. Initial transform applied to <g> has no effect
+ */
+
+.Hero-cityThing {
+  visibility: hidden; /* 1 */
+  transform: translateY(100%);
+  animation: Hero-cityThing--appear 400ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes Hero-cityThing--appear {
+  from {
+    visibility: visible;
+    transform: translateY(100%);
+  }
+
+  to {
+    visibility: visible;
+    transform: translateY(0%);
+  }
+}
+
+/**
  * Bus
  */
 
@@ -73,7 +95,6 @@
   stroke-dasharray: 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 107; /* 1 */
   stroke-dashoffset: 302; /* 1 */
   animation-duration: 2500ms;
-  animation-delay: 250ms;
   animation-name: Hero-spray--starting;
   animation-iteration-count: 1;
 }
@@ -106,7 +127,7 @@
   left: 0;
   top: 100%;
 
-  animation: Hero-sky--rise 1650ms ease-out forwards;
+  animation: Hero-sky--rise 900ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
 
 @keyframes Hero-sky--rise {
@@ -139,7 +160,7 @@
   position: absolute;
   color: #fff;
   opacity: 0.2;
-  animation: Hero-cloud--appear 1800ms ease-out forwards;
+  animation: Hero-cloud--appear 1200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes Hero-cloud--appear {
