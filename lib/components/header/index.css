@@ -207,7 +207,7 @@
 
 .Header-back,
 .Header-back:hover {
-  left: 0;
+  left: -12px;
   right: auto;
   width: auto;
   background: rgba(0, 0, 0, 0.15);
@@ -555,12 +555,16 @@
   transition: none;
 }
 
+.Header--adaptive.is-following .Header-list {
+  transform: none !important;
+}
+
 .Header--adaptive.is-following .Header-back {
   display: none;
 }
 
 .Header--adaptive.is-following .Header-logo {
-  display: block !important;
+  display: inline-block !important;
 }
 
 /**
