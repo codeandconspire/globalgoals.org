@@ -507,7 +507,7 @@
  * Adaptive for use on background colors
  */
 
-.Header--adaptive {
+.Header--adaptive:not(.is-following) {
   color: #fff;
 }
 
@@ -566,14 +566,14 @@
 .Header--adaptive.is-following .Header-list {
   transform: none !important;
 }
-/*
+
 .Header--adaptive.is-following .Header-back {
   display: none;
 }
 
 .Header--adaptive.is-following .Header-logo {
   display: inline-block !important;
-}*/
+}
 
 /**
  * Disable initial expansion in some cases
