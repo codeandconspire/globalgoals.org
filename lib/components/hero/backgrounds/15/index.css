@@ -52,13 +52,210 @@
   }
 }
 
+/**
+ * Inhabitants of the savannah (animals, trees etc.)
+ */
+
 .Hero-savannahThing {
   transform: translateY(100%);
-  animation: Hero-savannahThing--appear 800ms ease-out forwards;
+  animation: Hero-savannahThing--appear 600ms ease-out forwards;
 }
 
 @keyframes Hero-savannahThing--appear {
   to {
     transform: translateY(0%);
+  }
+}
+
+/**
+ * Sky
+ */
+
+.Hero-savannahSky {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  animation: Hero-savannahSky--rise 900ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+@keyframes Hero-savannahSky--rise {
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.Hero-savannahCloud {
+  position: absolute;
+  color: #fff;
+  opacity: 0.2;
+  animation: Hero-savannahCloud--appear 1500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes Hero-savannahCloud--appear {
+  0% {
+    transform: translateY(calc(200% + 50px));
+  }
+
+  25% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.Hero-savannahCloud--sm {
+  width: 2%;
+}
+
+.Hero-savannahCloud--md {
+  width: 5%;
+}
+
+.Hero-savannahCloud--lg {
+  width: 8%;
+}
+
+.Hero-savannahCloud--xl {
+  width: 10%;
+}
+
+.Hero-savannahCloud--dark {
+  opacity: 0.4;
+  color: #000;
+}
+
+.Hero-savannahCloud--light {
+  opacity: 0.6;
+  color: #fff;
+}
+
+.Hero-savannahCloud--dim {
+  opacity: 0.1;
+  color: #000;
+}
+
+.Hero-savannahCloud:nth-child(1) {
+  top: 55%;
+  left: 4%;
+}
+
+.Hero-savannahCloud:nth-child(2) {
+  top: 60%;
+  left: 10%;
+}
+
+.Hero-savannahCloud:nth-child(3) {
+  top: 37%;
+  left: 60%;
+}
+
+.Hero-savannahCloud:nth-child(4) {
+  top: 25%;
+  right: 12%;
+}
+
+.Hero-savannahCloud:nth-child(5) {
+  top: 30%;
+  right: 7%;
+}
+
+.Hero-savannahCloud:nth-child(6) {
+  top: 55%;
+  right: 5%;
+}
+
+/**
+ * Bee
+ */
+
+.Hero-bee {
+  width: 3%;
+  position: absolute;
+}
+
+.Hero-bee:nth-child(1) {
+  left: 10%;
+  top: 25%;
+  transform: rotate(-5deg);
+}
+
+.Hero-bee:nth-child(2) {
+  left: 31%;
+  top: 12%;
+  transform: rotate(30deg);
+}
+
+/**
+ * Bird
+ */
+
+.Hero-bird {
+  position: absolute;
+}
+
+.Hero-bird:nth-child(1) {
+  width: 4%;
+  top: 15%;
+  right: 36%;
+  color: rgba(0, 0, 0, 0.4);
+  transform: rotate(-8deg);
+}
+
+.Hero-bird:nth-child(2) {
+  width: 3%;
+  top: 19%;
+  right: 17%;
+  color: rgba(0, 0, 0, 0.4);
+  transform: rotate(12deg);
+}
+
+.Hero-bird:nth-child(3) {
+  width: 4%;
+  top: 23%;
+  right: 27%;
+  transform: rotate(-4deg);
+}
+
+.Hero-bird:nth-child(4) {
+  width: 6%;
+  top: 32%;
+  right: 21%;
+}
+
+/**
+ * Giraffe
+ */
+
+.Hero-giraffeNeck {
+  transform-origin: 88% 65%;
+  animation: Hero-giraffeNeck--nibble 3000ms cubic-bezier(0.77, 0, 0.175, 1) infinite forwards;
+  animation-play-state: paused;
+}
+
+.Hero-giraffeNeck.in-transition {
+  animation-play-state: running;
+}
+
+@keyframes Hero-giraffeNeck--nibble {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  45% {
+    transform: rotate(-12deg) translate(-5px, -5px);
+  }
+
+  55% {
+    transform: rotate(-12deg) translate(-5px -5px);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 }

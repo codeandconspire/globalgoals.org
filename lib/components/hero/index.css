@@ -108,6 +108,10 @@
   }
 }
 
+.Hero-symbols {
+  display: none;
+}
+
 /**
  * Takeover
  */
