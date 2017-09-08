@@ -182,7 +182,6 @@
 
 .Footer-column--horizontal .Footer-list {
   max-width: 370px;
-  display: inline-block;
 }
 
 @media (--viewport-md) {
@@ -190,6 +189,7 @@
     max-width: none;
     top: 4px;
     position: relative;
+    display: inline-block;
   }
 }
 

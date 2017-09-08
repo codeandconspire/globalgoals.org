@@ -293,7 +293,7 @@
 .Card--fill .Card-link,
 .Card--fill .Card-link:hover,
 :root.has-js .Card--fill:hover .Card-link {
-  color: #fff;
+  color: #fff !important;
 }
 
 :root.has-js .Card--fill:not(.is-loading):hover .Card-content::before {

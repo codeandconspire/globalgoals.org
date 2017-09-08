@@ -144,10 +144,14 @@
   visibility: hidden;
 }
 
+.Hero-iconNumber {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .Hero--7 {
   color: #000;
 }
 
-.Hero .Goal-number {
+.Hero--7 .Hero-iconNumber {
   color: #fff;
 }

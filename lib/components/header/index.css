@@ -5,38 +5,58 @@
 :root {
   --Header-height: 117px;
   --Header-height-lg: 128px;
-  --Header-height-nano: 77px;
+  --Header-height-nano: 78px;
+
+  --Header-fill-y: 40px;
+  --Header-content-y: 20px;
+  --Header-logo-z: 1.25;
+  --Header-list-z: 1.2;
 }
+
+/**
+ * 1. Root element is left at top of page to fill upp space
+ */
 
 .Header {
+  position: relative /* 1 */;
+  z-index: 100;
   height: var(--Header-height);
   contain: size layout style;
-  position: relative;
-  z-index: 100;
 }
 
+/**
+ * The sticky positioned element
+ */
+
 .Header-bar {
-  user-select: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 100;
+  width: 100%;
+  user-select: none;
 }
 
 :root.has-js .Header-bar {
   position: fixed;
 }
 
+/**
+ * The background that shrink/expand
+ * 1. It's actually not shrinking instead it's moved outside of the viewport
+ */
+
 .Header-fill {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
-  background: rgba(255, 255, 255, 0.99);
-  width: 100%;
-  height: calc(77px + 50px);
-  margin-top: -50px;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: calc(78px + 50px); /* 1 */
+  width: 100%;
+  margin-top: -50px; /* 1 */
+
+  background: rgba(255, 255, 255, 0.99);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
   transform-origin: top center;
 }
 
@@ -47,334 +67,44 @@
   }
 }
 
+/**
+ * Just some wrappers
+ */
+
 .Header-content {
   position: relative;
   z-index: 1;
-}
-
-.Header-logo {
-  display: inline-block;
-  vertical-align: top;
-  height: 46px;
-  margin-left: -11px;
-  padding: 16px 10px;
-  box-sizing: content-box;
-  transform-origin: center left;
-  position: relative;
-  z-index: 1;
-}
-
-/**
- * Button for opening and closing navigation
- */
-
-.Header-toggle,
-.Header-back {
-  width: 93px;
-  height: 48px;
-  padding: 13px;
-  position: absolute;
-  right: -8px;
-  top: 15px;
-  z-index: 1;
-  text-align: right;
-  user-select: none;
-  -webkit-touch-callout: none;
-  font-size: 24px;
-  text-transform: uppercase;
-  white-space: nowrap;
-  font-family: var(--font-family-heading);
-  word-spacing: var(--word-spacing-heading);
-  font-size-adjust: var(--font-size-adjust-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.Header-toggle::before,
-.Header-back::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--color-hover-dark);
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0;
-  border-radius: 1px;
-  transition: opacity 180ms var(--ease-out);
-}
-
-.Header-toggle--closeFallback {
-  display: none;
-  color: transparent;
-}
-
-.Header:matches(.is-open, :target) .Header-toggle::before {
-  background: var(--color-hover-light);
-}
-
-.Header-toggle:hover::before,
-.Header-back:hover::before {
-  opacity: 1;
-}
-
-.Header-toggleText {
-
-}
-
-.Header-toggleText--close {
-  display: none;
-  color: #fff;
-}
-
-.Header-lines {
-  position: absolute;
-  width: 18px;
-  height: 14px;
-  top: 17px;
-  left: 15px;
-  transition: transform 250ms var(--ease-out);
-  will-change: transform;
-}
-
-.Header-lines:matches(::before, ::after),
-.Header-line {
-  content: "";
-  background: currentColor;
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  right: 0;
-  transform-origin: top right;
-  transition: transform 250ms var(--ease-out), opacity 250ms var(--ease-out);
-  will-change: transform;
-}
-
-.Header-lines::before {
-  top: 0;
-  width: 14px;
-}
-
-.Header-lines::after {
-  bottom: 0;
-  width: 12px;
-}
-
-.Header-line {
-  top: 6px;
-  transform-origin: center center;
-}
-
-.Header:matches(.is-open, :target) .Header-lines {
-  color: #fff;
-  transform: translateX(-5px);
-}
-
-.Header:target .Header-toggle--closeFallback {
-  display: block;
-}
-
-.Header:matches(.is-open, :target) .Header-toggleText {
-  display: none;
-}
-
-.Header:matches(.is-open, :target) .Header-toggleText--close {
-  display: block;
-}
-
-.Header:matches(.is-open, :target) .Header-lines::before {
-  transform: rotate(-45deg) translate(1px, -1px) scaleX(1.49);
-}
-
-.Header:matches(.is-open, :target) .Header-lines::after {
-  transform: rotate(45deg) translate(2px, 0px) scaleX(1.74);
-}
-
-.Header:matches(.is-open, :target) .Header-line {
-  transform: scaleX(0);
-  opacity: 0;
-}
-
-/**
- * Back button
- */
-
-.Header.is-open .Header-back,
-.Header:not(.is-open).is-inHistory .Header-logo {
-  display: none;
-}
-
-.Header-back,
-.Header-back:hover {
-  left: -12px;
-  right: auto;
-  width: auto;
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 1px;
-  padding: 13px 16px 11px 31px;
-  transform-origin: top left;
-}
-
-@media (--viewport-md) {
-  .Header-back,
-  .Header-back:hover {
-    top: 14px;
-  }
-}
-
-.Header-back::after {
-  content: "";
-  position: absolute;
-  border-style: solid;
-  width: 10px;
-  height: 10px;
-  border-width: 1px 1px 0 0;
-  top: 19px;
-  left: 14px;
-  transform: rotate(-135deg);
-  transition: transform 180ms var(--ease-out);
-}
-
-.Header-back:hover::before {
-  opacity: 1;
-}
-
-.Header-back:hover::after {
-  transform: rotate(-135deg) translate(-2.5px, 2.5px);
-}
-
-/**
- * Navigation (shared horizontal & vertical)
- */
-
-.Header-nav {
-  transform-origin: center right;
-}
-
-.Header-link {
-  position: relative;
-  display: inline-block;
-  color: inherit;
-  text-transform: uppercase;
-  font-size: 48px;
-  padding: 14px 48px 11px 16px;
-  margin: 0 0 0 -10px;
-  white-space: nowrap;
-  font-family: var(--font-family-heading);
-  word-spacing: var(--word-spacing-heading);
-  font-size-adjust: var(--font-size-adjust-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.Header-link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--color-hover-light);
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0;
-  border-radius: 1px;
-  transition: opacity 180ms var(--ease-out);
-}
-
-.Header-link::after {
-  content: "";
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  border-style: solid;
-  border-width: 1px 1px 0 0;
-  top: 28px;
-  right: 16px;
-  transform: rotate(45deg);
-  transition: transform 180ms var(--ease-out);
-}
-
-.Header-link:hover::before {
-  opacity: 1;
-}
-
-.Header-link:hover::after {
-  transform: rotate(45deg) translate(-4px, 4px);
+  margin: 15px 0 0;
 }
 
 .Header-list {
   transform-origin: center right;
 }
 
-.Header-link:matches(:hover, :active) {
-  color: inherit;
+/**
+ * El logotipo
+ */
+
+.Header-logo {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  vertical-align: top;
+  height: 45px;
+  padding: 16px 10px;
+  margin-left: -11px;
+  margin-top: -15px;
+  box-sizing: content-box;
+  transform-origin: center left;
+}
+
+.Header:matches(.is-open, :target) .Header-logoText {
+  fill: currentColor;
 }
 
 /**
- * Horizontal navigation
+ * On wider viewports
  */
-
-@media (--viewport-md) {
-  .Header-toggle {
-    display: none;
-  }
-
-  .Header-nav {
-    position: absolute;
-    top: 14px;
-    right: 0;
-    width: 100%;
-  }
-
-  .Header-list {
-    margin-right: -9px;
-    overflow: hidden;
-    float: right;
-  }
-
-  .Header-item {
-    float: left;
-    margin-left: 24px;
-  }
-
-  .Header-link {
-    padding: 13px 29px 11px 16px;
-    font-size: 24px;
-    transition: color 180ms var(--ease-out);
-  }
-
-  .Header-item.is-active .Header-link {
-    color: var(--color-active);
-  }
-
-  .Header-link::before {
-    background: var(--color-hover-dark);
-  }
-
-  .Header-link::after {
-    width: 10px;
-    height: 10px;
-    border-width: 1px 1px 0 0;
-    top: 19px;
-    right: 11px;
-  }
-
-  .Header-link:hover::after {
-    transform: rotate(45deg) translate(-2.5px, 2.5px);
-  }
-
-  .Header-item.is-active:hover .Header-link {
-    color: var(--color-active-dark);
-  }
-}
-
-@media (--viewport-md) and (--viewport-lg-max) {
-  .Header-list,
-  .Header-back {
-    transform: none !important;
-  }
-}
 
 @media (--viewport-lg) {
   .Header {
@@ -389,38 +119,137 @@
     height: 54px;
   }
 
-  .Header-nav {
-    top: 20px;
+  .Header-list,
+  .Header-back {
+    margin-top: 5px;
   }
 }
 
 /**
- * Default to expanded header (but now on very narrow viewports)
+ * Button. Used for:
+ * - The toggle that opens the vertical navigation
+ * - The links
+ * - The back button
  */
 
-@media (min-width: 310px) {
-  .Header-fill {
-    transform: translateY(40px);
-    will-change: transform;
-  }
+.Header-button {
+  position: relative;
+  height: 48px;
+  padding: 13px 16px 11px;
+  z-index: 1;
+  display: inline-block;
+  border-radius: 1px;
 
-  .Header-logo {
-    transform: scale(1.25);
-    will-change: transform;
-  }
+  font-family: var(--font-family-heading);
+  word-spacing: var(--word-spacing-heading);
+  font-size-adjust: var(--font-size-adjust-heading);
+  font-size: 24px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-  .Header-content {
-    transform: translateY(20px);
-    will-change: transform;
-  }
+  -webkit-touch-callout: none;
+  transition: background 180ms var(--ease-out), color 140ms var(--ease-out);
 }
 
-@media (--viewport-lg) {
-  .Header-list,
-  .Header-back {
-    transform: scale(1.2);
-    will-change: transform;
-  }
+.Header-button:hover {
+  background: var(--color-hover-dark);
+}
+
+.Header:matches(.is-open, :target) .Header-button:hover {
+  background: var(--color-hover-light);
+}
+
+.Header-button.is-current {
+  color: var(--color-active);
+}
+
+.Header-button:hover.is-current {
+  color: var(--color-active-dark);
+}
+
+/**
+ * Navigation toggle and our sweet vegan burger
+ */
+
+.Header-button--toggle {
+  position: absolute;
+  right: -14px;
+  padding-right: 13px;
+  top: 0;
+  width: 92px;
+  text-align: right;
+}
+
+.Header-button--close {
+  display: none;
+  width: 94px;
+}
+
+.Header-burger {
+  position: absolute;
+  top: 17px;
+  right: 46px;
+  width: 18px;
+  height: 14px;
+  transition: transform 250ms var(--ease-out);
+  will-change: transform;
+}
+
+.Header-burger:matches(::before, ::after),
+.Header-beanPatty {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform-origin: top right;
+  transition: transform 250ms var(--ease-out), opacity 250ms var(--ease-out);
+  will-change: transform;
+}
+
+.Header-burger::before {
+  top: 0;
+  width: 14px;
+}
+
+.Header-burger::after {
+  bottom: 0;
+  width: 12px;
+}
+
+.Header-beanPatty {
+  top: 6px;
+  transform-origin: center center;
+}
+
+/* Still things related to the toggle... */
+
+.Header:matches(.is-open, :target) .Header-button--toggle {
+  display: none;
+}
+
+.Header:matches(.is-open, :target) .Header-button--close {
+  display: block;
+}
+
+.Header:matches(.is-open, :target) .Header-burger {
+  transform: translateX(-5px);
+}
+
+.Header:matches(.is-open, :target) .Header-burger::before {
+  transform: rotate(-45deg) translate(1px, -1px) scaleX(1.49);
+}
+
+.Header:matches(.is-open, :target) .Header-burger::after {
+  transform: rotate(45deg) translate(2px, 0px) scaleX(1.74);
+}
+
+.Header:matches(.is-open, :target) .Header-beanPatty {
+  transform: scaleX(0);
+  opacity: 0;
 }
 
 /**
@@ -428,46 +257,149 @@
  */
 
 @media (--viewport-xs-max) {
-  .Header-toggleText,
-  .Header-toggleText--close {
-    display: none !important;
+  .Header-button--toggle {
+    width: 60px;
+    font-size: 0;
+    right: -24px;
   }
 
-  .Header:matches(.is-open, :target) .Header-lines {
+  .Header-burger {
+    right: 0;
+  }
+
+  .Header:matches(.is-open, :target) .Header-burger {
     transform: translateX(-2px);
-  }
-
-  .Header-toggle {
-    width: 48px;
   }
 }
 
 /**
- * Vertical menu
+ * Back button
+ * 1. Replaces the logo when the header is marked as within history
+ */
+
+.Header-button--back {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -12px;
+  background: rgba(0, 0, 0, 0.15);
+  transform-origin: top left;
+}
+
+.Header-button--back:hover {
+  background: rgba(0, 0, 0, 0.19);
+}
+
+.Header:matches(.is-open, :target) .Header-button--back,
+.Header.is-inHistory:not(.is-open):not(:target) .Header-logo {
+  display: none; /* 1 */
+}
+
+/**
+ * The arrows for the links and back button
+ */
+
+.Header-button--back {
+  padding-left: 31px;
+}
+
+.Header-button--link {
+  padding-right: 29px;
+}
+
+.Header-button--back::after,
+.Header-button--link::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 10px;
+  height: 10px;
+  border-width: 1px 1px 0 0;
+  top: 19px;
+  left: 14px;
+  transform: rotate(-135deg);
+  transition: transform 180ms var(--ease-out);
+}
+
+.Header-button--link::after {
+  transform: rotate(45deg);
+  left: auto;
+  right: 11px;
+}
+
+.Header-button--back:hover::after {
+  transform: rotate(-135deg) translate(-2.5px, 2.5px);
+}
+
+.Header-button--link:hover::after {
+  transform: rotate(45deg) translate(-4px, 4px);
+}
+
+/**
+ * Tweak the global focus states a little bit
+ */
+
+:root[data-focus-source="key"] :matches(.Header-logo, .Header-button):focus {
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Narrow viewports with vertical navigation
  */
 
 @media (--viewport-md-max) {
   .Header-list,
-  .Header-back {
+  .Header-button--back {
     transform: none !important;
   }
 
   .Header-nav {
-    width: 0;
-    height: 0;
-    visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    color: #fff;
+    width: 0;
+    height: 0;
+    visibility: hidden;
     opacity: 0;
     transition: 300ms 100ms var(--ease-out);
     transition-property: transform, opacity;
     transform: translateY(40px);
   }
 
+  .Header-button--link {
+    height: auto;
+    padding: 14px 48px 11px 16px;
+    margin: 0 0 0 -10px;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 48px;
+  }
+
+  .Header-button--link::after {
+    width: 18px;
+    height: 18px;
+    top: 28px;
+    right: 16px;
+  }
+
+  /**
+   * Let's not mark selected page in vertical nav, it's mostly confusing
+   */
+
+  .Header-button--link.is-current,
+  .Header-button--link.is-current:hover {
+    color: inherit;
+  }
+
+  /**
+   * The fill is used as background for the full page navigation
+   */
+
   .Header:matches(.is-open, :target) .Header-bar {
     position: fixed;
+    color: #fff;
   }
 
   .Header:matches(.is-open, :target) .Header-fill {
@@ -476,51 +408,86 @@
     left: 0;
     width: 100%;
     height: 100%;
+    margin: 0;
     background: var(--color-gray-dark);
     transform: none !important;
-    margin: 0;
   }
 
   .Header:matches(.is-open, :target) .Header-nav {
     visibility: visible;
     width: 100%;
     height: 100vh;
-  }
-
-  .Header .Header-list {
-    position: absolute;
-    top: 25%;
-    left: 4px;
-  }
-
-  .Header:matches(.is-open, :target) .Header-nav {
     opacity: 1;
-    transform: translateY(0) !important;
+    transform: translateY(0);
   }
 
-  .Header:matches(.is-open, :target) .Header-logo :matches([fill="#161616"], [fill="#000105"]) {
-    fill: #fff;
+  .Header:matches(.is-open, :target) .Header-list {
+    position: absolute;
+    top: 22%;
+    left: 4px;
   }
 }
 
+/* -------------------------------------------------------------------------- */
+
 /**
- * Adaptive for use on background colors
+ * Horizontal navigation
  */
 
-.Header--adaptive:not(.is-following) {
+@media (--viewport-md) {
+  .Header-button--toggle,
+  .Header-burger {
+    display: none;
+  }
+
+  .Header-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .Header-list {
+    margin-right: -9px;
+    overflow: hidden;
+    float: right;
+  }
+
+  .Header-item {
+    float: left;
+    margin-left: 13px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * On goal page
+ */
+
+.Header:not(.is-following) {
+  opacity: 1 !important;
+}
+
+.Header--white:not(.is-following) {
   color: #fff;
 }
 
-.Header--adaptiveDarken {
+.Header--black:not(.is-following) {
   color: #000;
 }
 
-.Header--adaptive.is-inHistory {
-  will-change: opacity;
+.Header--goalPage:not(.is-following):not(.is-open):not(:target) :matches(.Header-logoGoal, .Header-logoText) {
+  fill: currentColor;
 }
 
-.Header--adaptive.is-inHistory {
-  animation: Header-in 500ms var(--ease-out);
+/**
+ * Fade in on goal pages
+ */
+
+.Header.is-fromGoalGrid:not(.is-following) {
+  will-change: opacity;
+  animation: Header-in 800ms var(--ease-out);
   animation-iteration-count: 1;
 }
 
@@ -534,112 +501,87 @@
   }
 }
 
-.Header--adaptive:not(.is-following),
-.Header:not(.Header--adaptive) {
-  opacity: 1 !important;
+/**
+ * 1. Hide the white fill background
+ * 2. Prevent it from following along scroll before it getts the `.is-following` state class
+ * 3. We are not animating shrink/expand on goal pages
+ */
+
+.Header--goalPage:not(.is-following):not(.is-open):not(:target) .Header-fill {
+  display: none; /* 1 */
 }
 
-:root.has-js .Header--adaptive:not(.is-following):not(.is-open) .Header-fill,
-.Header--adaptive:not(:target):not(.is-following):not(.is-open) .Header-fill {
-  display: none;
-}
-
-:root.has-js .Header--adaptive:not(.is-following):not(.is-open) .Header-bar,
-.Header--adaptive:not(.is-open):not(.is-following):not(:target) .Header-bar {
-  position: absolute;
+.Header--goalPage:not(.is-following):not(.is-open):not(:target) .Header-bar {
+  position: absolute; /* 2 */
   color: currentColor;
 }
 
-:root.has-js .Header--adaptive:not(.is-following):not(.is-open) .Header-logo path,
-.Header--adaptive:not(.is-open):not(.is-following):not(:target) .Header-logo path {
-  fill: currentColor;
+.Header--goalPage:not(.is-following) :matches(.Header-fill, .Header-logo, .Header-content, .Header-list, .Header-button--back) {
+  will-change: unset; /* 3 */
 }
 
-.Header--adaptive:not(.is-following):not(.is-open) :matches(.Header-fill, .Header-logo, .Header-content, .Header-list, .Header-back) {
-  will-change: unset;
+.Header.is-fromGoalGrid:not(.is-following) .Header-button--back {
+  display: block;
 }
 
-.Header--adaptive:not(.is-following):not(.is-open) .Header-link {
-  transition: none;
-}
-
-.Header--adaptive.is-following .Header-list {
-  transform: none !important;
-}
-
-.Header--adaptive.is-following .Header-back {
+.Header.is-fromGoalGrid:not(.is-following) .Header-logo {
   display: none;
 }
 
-.Header--adaptive.is-following .Header-logo {
-  display: inline-block !important;
+.Header.is-fromGoalGrid:not(.is-following) .Header-logo {
+  display: none;
 }
 
+/* -------------------------------------------------------------------------- */
+
 /**
- * Disable initial expansion in some cases
+ * Default to expanded header (but not on very narrow viewports)
  */
 
-@media (--viewport-nano-max) {
-  .Header {
-    height: var(--Header-height-nano);
-  }
-
+@media (min-width: 310px) {
   .Header-fill {
-    transform: none !important;
-    will-change: unset;
+    transform: translateY(var(--Header-fill-y));
+    will-change: transform;
   }
 
   .Header-logo {
-    transform: none !important;
-    will-change: unset;
+    transform: scale(var(--Header-logo-z));
+    will-change: transform;
   }
 
   .Header-content {
+    transform: translateY(var(--Header-content-y));
+    will-change: transform;
+  }
+}
+
+@media (--viewport-lg) {
+  .Header-list,
+  .Header-button--back {
+    transform: scale(var(--Header-list-z));
+    will-change: transform;
+  }
+}
+
+/**
+ * Disable expansion in some cases
+ */
+
+@media (--viewport-nano-max) {
+  .Header :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
     transform: none !important;
     will-change: unset;
   }
 }
 
 @media (--viewport-md-max) {
-  .Header--adaptive .Header-fill {
-    transform: none !important;
-    will-change: unset;
-  }
-
-  .Header--adaptive .Header-logo {
-    transform: none !important;
-    will-change: unset;
-  }
-
-  .Header--adaptive .Header-content {
+  .Header--goalPage :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
     transform: none !important;
     will-change: unset;
   }
 }
 
-.Header--adaptive.is-following .Header-fill {
+.Header--goalPage.is-following :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
   transform: none !important;
   will-change: unset;
-}
-
-.Header--adaptive.is-following .Header-logo {
-  transform: none !important;
-  will-change: unset;
-}
-
-.Header--adaptive.is-following .Header-content {
-  transform: none !important;
-  will-change: unset;
-}
-
-/**
- * Focus states
- */
-
-:root[data-focus-source="key"] :matches(.Header-toggle, .Header-link, .Header-logo):focus {
-  box-shadow: inset 0 0 0 2px #000;
-}
-
-:root[data-focus-source="key"] .Header.is-open :matches(.Header-toggle, .Header-link, .Header-logo):focus {
-  box-shadow: inset 0 0 0 2px #fff;
 }
