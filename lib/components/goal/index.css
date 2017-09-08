@@ -20,7 +20,7 @@
 .Goal-label {
   flex: 0 0 20%; /* 1 */
   width: 100%;
-  color: #fff;
+  color: currentColor;
   font-family: "Giorgio Sans Bold", impact, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

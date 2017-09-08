@@ -6,6 +6,7 @@
 @import "./backgrounds/3";
 @import "./backgrounds/11";
 @import "./backgrounds/14";
+@import "./backgrounds/15";
 @import "./backgrounds/17";
 
 :root {
@@ -84,7 +85,6 @@
 }
 
 .Hero-title {
-  color: #fff;
   margin-bottom: 3rem;
 }
 
@@ -106,6 +106,10 @@
     opacity: 1;
     transform: translateY(0%);
   }
+}
+
+.Hero-symbols {
+  display: none;
 }
 
 /**
@@ -138,4 +142,12 @@
 
 .Hero--takeover .Hero-intro {
   visibility: hidden;
+}
+
+.Hero--7 {
+  color: #000;
+}
+
+.Hero .Goal-number {
+  color: #fff;
 }

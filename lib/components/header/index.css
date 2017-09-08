@@ -507,6 +507,14 @@
  * Adaptive for use on background colors
  */
 
+.Header--adaptive:not(.is-following) {
+  color: #fff;
+}
+
+.Header--adaptiveDarken {
+  color: #000;
+}
+
 .Header--adaptive.is-inHistory {
   will-change: opacity;
 }
@@ -539,12 +547,12 @@
 :root.has-js .Header--adaptive:not(.is-following):not(.is-open) .Header-bar,
 .Header--adaptive:not(.is-open):not(.is-following):not(:target) .Header-bar {
   position: absolute;
-  color: #fff;
+  color: currentColor;
 }
 
 :root.has-js .Header--adaptive:not(.is-following):not(.is-open) .Header-logo path,
 .Header--adaptive:not(.is-open):not(.is-following):not(:target) .Header-logo path {
-  fill: #fff;
+  fill: currentColor;
 }
 
 .Header--adaptive:not(.is-following):not(.is-open) :matches(.Header-fill, .Header-logo, .Header-content, .Header-list, .Header-back) {
