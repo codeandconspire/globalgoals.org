@@ -20,6 +20,11 @@
 
 }
 
+.Text--center {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .Text--growingTitles {
 
 }
