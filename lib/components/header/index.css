@@ -574,6 +574,13 @@
   }
 }
 
+@media (--viewport-lg-max) {
+  .Header-list {
+    transform: none !important;
+    will-change: unset;
+  }
+}
+
 @media (--viewport-md-max) {
   .Header--goalPage :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
     transform: none !important;
