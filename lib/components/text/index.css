@@ -74,10 +74,17 @@
  */
 
 .Text a {
+  margin: -5px;
+  padding: 5px;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-link);
+  transition: color 90ms var(--ease-out);
+}
+
+.Text a:hover {
+  color: var(--color-link-enter);
 }
 
 /**
@@ -124,6 +131,9 @@
 .Text pre {
   font-size: 12px;
   overflow: auto;
+  background: var(--color-gray-light);
+  padding: 1em;
+  text-align: left;
 }
 
 /**
