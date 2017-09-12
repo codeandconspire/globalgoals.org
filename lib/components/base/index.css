@@ -26,7 +26,6 @@
   --font-family-heading: var(--giorgio-sans-bold);
   --font-family-body: var(--system-font);
   --word-spacing-heading: 0.04em;
-  --font-size-adjust-heading: 0.567;
 
   /**
    * Our easing curves

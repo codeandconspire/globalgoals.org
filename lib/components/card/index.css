@@ -98,7 +98,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   word-spacing: var(--word-spacing-heading);
-  font-size-adjust: var(--font-size-adjust-heading);
   user-select: none;
   transition: color 180ms var(--ease-out);
 }
@@ -202,7 +201,6 @@
   font-family: var(--font-family-heading);
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
-  font-size-adjust: var(--font-size-adjust-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
