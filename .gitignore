@@ -1,5 +1,5 @@
 # Development files
-.env*
+*.env*
 server.key
 server.crt
 .vscode
