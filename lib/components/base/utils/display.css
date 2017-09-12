@@ -1,5 +1,9 @@
 /* @define utilities */
 
+.u-hidden {
+  display: none !important;
+}
+
 .u-hiddenVisually {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;

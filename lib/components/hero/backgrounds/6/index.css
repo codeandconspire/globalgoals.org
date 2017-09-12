@@ -1,0 +1,48 @@
+/* @define Hero */
+
+.Hero-background--6 {
+
+}
+
+.Hero-drop {
+  position: absolute;
+  bottom: 100%;
+  animation: Hero-drop--falling 1600ms linear infinite;
+}
+
+@keyframes Hero-drop--falling {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+:root.has-js .Hero-drop {
+  animation: none;
+}
+
+.Hero-drop.in-transition {
+  visibility: visible;
+  transition: transform 2000ms linear;
+}
+
+.Hero-drop--sm {
+  width: 18px;
+  opacity: 0.6;
+}
+
+.Hero-drop--sm.in-transition {
+  transition-duration: 2400ms;
+}
+
+.Hero-drop--md {
+  width: 24px;
+}
+
+.Hero-drop--lg {
+  width: 30px;
+  color: #0D7189;
+}
+
+.Hero-drop--lg.in-transition {
+  transition-duration: 1600ms;
+}
