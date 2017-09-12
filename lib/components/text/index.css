@@ -173,7 +173,6 @@
   line-height: 1.1;
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
-  font-size-adjust: var(--font-size-adjust-heading);
   margin: 53px 0 -9px;
 }
 
@@ -208,6 +207,7 @@
   color: #fff;
   white-space: nowrap;
   padding: 0.15em 0.18em 0.08em;
+  margin: 0;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -241,7 +241,6 @@
   line-height: 1.1;
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
-  font-size-adjust: var(--font-size-adjust-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
