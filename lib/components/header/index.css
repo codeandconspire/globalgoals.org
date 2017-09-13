@@ -135,10 +135,11 @@
 .Header-button {
   position: relative;
   height: 48px;
-  padding: 13px 16px 11px;
+  padding: 0 16px;
   z-index: 1;
   display: inline-block;
   border-radius: 1px;
+  line-height: 49px;
 
   font-family: var(--font-family-heading);
   word-spacing: var(--word-spacing-heading);
@@ -306,11 +307,10 @@
   padding-right: 29px;
 }
 
-.Header-button--back::after,
-.Header-button--link::after {
-  content: "";
+.Header-arrow {
   position: absolute;
   border-style: solid;
+  border-color: currentColor;
   width: 10px;
   height: 10px;
   border-width: 1px 1px 0 0;
@@ -318,19 +318,20 @@
   left: 14px;
   transform: rotate(-135deg);
   transition: transform 180ms var(--ease-out);
+  will-change: transform;
 }
 
-.Header-button--link::after {
+.Header-button--link .Header-arrow {
   transform: rotate(45deg);
   left: auto;
   right: 11px;
 }
 
-.Header-button--back:hover::after {
+.Header-button--back:hover .Header-arrow {
   transform: rotate(-135deg) translate(-2.5px, 2.5px);
 }
 
-.Header-button--link:hover::after {
+.Header-button--link:hover .Header-arrow {
   transform: rotate(45deg) translate(-2.5px, 2.5px);
 }
 
@@ -369,14 +370,15 @@
 
   .Header-button--link {
     height: auto;
-    padding: 14px 48px 11px 16px;
+    padding: 0 48px 0 16px;
     margin: 0 0 0 -10px;
     color: inherit;
-    text-transform: uppercase;
     font-size: 48px;
+    line-height: 76px;
+    height: 74px;
   }
 
-  .Header-button--link::after {
+  .Header-button--link .Header-arrow {
     width: 18px;
     height: 18px;
     top: 28px;
@@ -436,7 +438,7 @@
 @media (--viewport-md) {
   .Header-button--toggle,
   .Header-burger {
-    display: none;
+    display: none !important;
   }
 
   .Header-nav {

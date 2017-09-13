@@ -194,8 +194,18 @@
 }
 
 @media (--viewport-lg) {
+  /**
+   * 1. Fix for incorrect pixel rounding (Edge)
+   */
+
   .GoalGrid-item {
     width: calc(100% / 6);
+  }
+
+  .GoalGrid-item--6,
+  .GoalGrid-item--12,
+  .GoalGrid-item--logo {
+    margin-right: -1px; /* 1 */
   }
 
   .GoalGrid-item--logo {
@@ -239,7 +249,7 @@
  * CSS Grid Layout
  */
 
-@supports (display: grid) {
+@supports (display: gr2id) {
   @media (--viewport-lg) {
     .GoalGrid {
       margin: 0;

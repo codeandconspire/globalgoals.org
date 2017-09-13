@@ -87,7 +87,8 @@
 .Card-link {
   float: left;
   margin: 17px 0 0 -16px;
-  padding: 13px 29px 11px 16px;
+  padding: 0 29px 0 16px;
+  line-height: 49px;
 
   position: relative;
 
@@ -99,43 +100,30 @@
   -moz-osx-font-smoothing: grayscale;
   word-spacing: var(--word-spacing-heading);
   user-select: none;
-  transition: color 180ms var(--ease-out);
-}
-
-.Card-link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--color-hover-dark);
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  border-radius: 1px;
-  transition: opacity 180ms var(--ease-out);
+  transition: color 140ms var(--ease-out), background 140ms var(--ease-out);
 }
 
 .Card-linkText {
-  position: relative;
   display: inline-block;
+  position: relative;
 }
 
-.Card-linkText::after {
-  content: "";
+.Card-arrow {
+  position: absolute;
+  border-style: solid;
   width: 10px;
   height: 10px;
-  position: absolute;
-  border: solid currentColor;
   border-width: 1px 1px 0 0;
-  top: 6px;
+  top: 19px;
   right: -18px;
   transform: rotate(45deg);
-  transition: transform 180ms var(--ease-out);
+  transition: transform 180ms cubic-bezier(0,0,.2,1);
+  will-change: transform;
 }
 
-.Card:not(.is-loading) .Card-link:hover::before,
-:root.has-js .Card:not(.is-loading):hover .Card-link::before {
-  opacity: 1;
+.Card:not(.is-loading) .Card-link:hover,
+:root.has-js .Card:not(.is-loading):hover .Card-link {
+  background: var(--color-hover-dark);
 }
 
 .Card:not(.is-loading) .Card-link:hover,
@@ -143,8 +131,8 @@
   color: var(--color-link-enter);
 }
 
-.Card:not(.is-loading) .Card-link:hover .Card-linkText::after,
-:root.has-js .Card:not(.is-loading):hover .Card-linkText::after {
+.Card:not(.is-loading) .Card-link:hover .Card-arrow,
+:root.has-js .Card:not(.is-loading):hover .Card-arrow {
   transform: rotate(45deg) translate(-2.5px, 2.5px);
 }
 
@@ -280,12 +268,12 @@
 .Card--fill .Card-link {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin: 35px 0 -23px;
-  padding: 20px 0 10px 0;
+  padding: 9px 0 0 0;
   width: 100%;
 }
 
-.Card--fill .Card-link::before {
-  content: none;
+.Card--fill .Card-link {
+  background: none !important;
 }
 
 .Card--fill .Card-link,
@@ -302,8 +290,8 @@
  * Loading state
  */
 
-.Card.is-loading .Card-linkText::after {
-  content: none;
+.Card.is-loading .Card-arrow {
+  display: none;
 }
 
 .Card--fill.is-loading .Card-content {

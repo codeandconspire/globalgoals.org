@@ -58,9 +58,9 @@
 }
 
 .Target-body {
-  flex: 1 0 0;
   overflow: hidden;
-  margin: -4px 0 0;
+  position: relative;
+  top: -4px;
 }
 
 .Target-link {
