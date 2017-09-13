@@ -318,7 +318,6 @@
   left: 14px;
   transform: rotate(-135deg);
   transition: transform 180ms var(--ease-out);
-  will-change: transform;
 }
 
 .Header-button--link .Header-arrow {

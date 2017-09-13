@@ -167,6 +167,22 @@
   max-width: 95%;
 }
 
+@media (--viewport-sm-max) {
+  .Footer-figure {
+    display: none;
+  }
+
+  .Footer-name {
+    color: var(--color-text);
+  }
+
+  .Footer-column--credits .Footer-item,
+  .Footer-column--credits {
+    margin-bottom: 17px;
+  }
+}
+
+
 /**
  * Horizontal list
  */
