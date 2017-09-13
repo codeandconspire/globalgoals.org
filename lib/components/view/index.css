@@ -3,18 +3,11 @@
 @import "../base";
 
 .View {
-  overflow-x: hidden;
-  background: var(--color-document);
-}
-
-/**
- * View layout (vertical)
- */
-
-.View-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--color-document);
 }
 
 .View-main {

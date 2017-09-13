@@ -19,7 +19,7 @@
   fill: #fff;
   visibility: hidden;
   transform: translateY(100%);
-  animation: Hero-person--appear 1400ms 100ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero-person--appear 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes Hero-person--appear {
