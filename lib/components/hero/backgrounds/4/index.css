@@ -1,0 +1,302 @@
+/* @define Hero */
+
+.Hero-background.Hero-background--4 {
+
+}
+
+.Hero-diagram {
+  width: 20%;
+  position: absolute;
+  right: 0;
+  top: 48%;
+}
+
+@media (max-width: 920px) {
+  .Hero-diagram {
+    visibility: hidden;
+  }
+}
+
+.Hero-plotLine {
+  stroke-dashoffset: -255;
+  stroke-dasharray: 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 4 8 255;
+  animation: Hero-plotLine--draw 800ms linear forwards;
+}
+
+.Hero-plotLine:nth-child(1) {
+  animation-delay: 2800ms;
+}
+
+.Hero-plotLine:nth-child(2) {
+  animation-delay: 3600ms;
+}
+
+.Hero-plotLine:nth-child(3) {
+  animation-delay: 4200ms;
+}
+
+@keyframes Hero-plotLine--draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.Hero-letters {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  border: solid transparent;
+  border-width: 0 24px;
+
+  position: absolute;
+  left: 50%;
+  top: 0;
+
+  transform: translateX(-50%);
+}
+
+@media (--viewport-lg) {
+  .Hero-letters {
+    border-width: 0 32px;
+  }
+}
+
+@media (--viewport-xl) {
+  .Hero-letters {
+    border-width: 0 48px;
+  }
+}
+
+.Hero-letter {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  visibility: hidden;
+  font-weight: bold;
+  color: var(--color-goal-4);
+  background-color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Hero-letter.in-transition {
+  visibility: visible;
+  transition: transform 800ms linear;
+}
+
+.Hero-letter.is-falling {
+  transform: rotate(8deg);
+}
+
+.Hero-letter.is-bouncing {
+  animation: Hero-letter--bounce 400ms ease-out forwards;
+}
+
+@keyframes Hero-letter--bounce {
+  0% {
+    transform: rotate(8deg);
+  }
+
+  50% {
+    transform: translateY(-20%) rotate(-6deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
+
+.Hero-letter--d.is-bouncing,
+.Hero-letter--s.is-bouncing {
+  animation: Hero-letter--tilt 400ms ease-out forwards;
+}
+
+@keyframes Hero-letter--tilt {
+  0% {
+    transform: rotate(16deg);
+  }
+
+  50% {
+    transform: translateY(-27%) rotate(-16deg);
+  }
+
+  100% {
+    transform: translateY(-6px) rotate(-36deg);
+  }
+}
+
+.Hero-letter--dark {
+  color: #fff;
+  background-color: #5B0104;
+}
+
+/**
+ * Level 1
+ */
+
+.Hero-letter--a {
+  left: 0;
+}
+
+.Hero-letter--b {
+  left: 34px;
+}
+
+.Hero-letter--d {
+  left: 72px;
+}
+
+.Hero-letter--e {
+  left: 160px;
+}
+
+.Hero-letter--f {
+  left: 296px;
+}
+
+.Hero-letter--g {
+  left: 348px;
+}
+
+.Hero-letter--h {
+  left: 382px;
+}
+
+.Hero-letter--i {
+  left: 416px;
+}
+
+.Hero-letter--m {
+  left: 625px;
+}
+
+.Hero-letter--p {
+  left: 750px;
+}
+
+.Hero-letter--q {
+  left: 830px;
+}
+
+.Hero-letter--r {
+  left: 864px;
+}
+
+.Hero-letter--s {
+  left: 904px;
+}
+
+.Hero-letter--u {
+  left: 1000px;
+}
+
+.Hero-letter--v {
+  left: 1034px;
+}
+
+.Hero-letter--w {
+  left: 1068px;
+}
+
+.Hero-letter--z {
+  left: 1140px;
+}
+
+/**
+ * Level 2
+ */
+
+.Hero-letter--c {
+  left: 16px;
+  bottom: 34px;
+}
+
+.Hero-letter--j {
+  left: 390px;
+  bottom: 34px;
+}
+
+.Hero-letter--k {
+  left: 424px;
+  bottom: 34px;
+}
+
+.Hero-letter--n {
+  left: 632px;
+  bottom: 34px;
+}
+
+.Hero-letter--t {
+  left: 848px;
+  bottom: 34px;
+}
+
+.Hero-letter--x {
+  left: 990px;
+  bottom: 34px;
+}
+
+.Hero-letter--y {
+  left: 1024px;
+  bottom: 34px;
+}
+
+/**
+ * Level 3
+ */
+
+.Hero-letter--l {
+  left: 380px;
+  bottom: 68px;
+}
+.Hero-letter--o {
+  left: 620px;
+  bottom: 67px;
+}
+
+@media (max-width: 1280px) {
+  .Hero-letter:nth-child(25) ~ .Hero-letter {
+    display: none;
+  }
+}
+
+@media (max-width: 1175px) {
+  .Hero-letter:nth-child(20) ~ .Hero-letter {
+    display: none;
+  }
+}
+
+@media (max-width: 1020px) {
+  .Hero-letter:nth-child(16) ~ .Hero-letter {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .Hero-letter:nth-child(15) ~ .Hero-letter {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .Hero-letter:nth-child(12) ~ .Hero-letter {
+    display: none;
+  }
+}
+
+@media (max-width: 490px) {
+  .Hero-letter:nth-child(6) ~ .Hero-letter {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .Hero-letter:nth-child(5) ~ .Hero-letter {
+    display: none;
+  }
+}
