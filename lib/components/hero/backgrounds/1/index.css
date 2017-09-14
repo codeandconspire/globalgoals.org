@@ -7,6 +7,7 @@
 .Hero-people {
   width: 100%;
   max-width: 680px;
+  max-height: 20vh;
 
   position: absolute;
   bottom: 0;
@@ -15,11 +16,11 @@
   transform: translateX(-50%);
 }
 
-.Hero-person {
+.Hero-background--1 .Hero-person {
   fill: #fff;
   visibility: hidden;
   transform: translateY(100%);
-  animation: Hero-person--appear 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero-person--appear 1400ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes Hero-person--appear {
@@ -34,11 +35,21 @@
   }
 }
 
-.Hero-person--striped {
+.Hero-background--1 .Hero-person--striped {
   fill: rgba(0, 0, 0, 0.5);
 }
 
-.Hero-person--double {
+.Hero-stripes {
+  animation: Hero-stripes--pan 20s linear infinite;
+}
+
+@keyframes Hero-stripes--pan {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.Hero-background--1 .Hero-person--double {
   fill-opacity: 0;
   visibility: visible;
   animation: Hero-person--fill 600ms linear forwards;
@@ -74,16 +85,6 @@
   animation-delay: 1.5s;
 }
 
-.Hero-stripes {
-  animation: Hero-stripes--pan 20s linear infinite;
-}
-
-@keyframes Hero-stripes--pan {
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.Hero-stripe {
+.Hero-background--1 .Hero-stripe {
   fill: var(--color-goal-1);
 }
