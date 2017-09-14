@@ -1,0 +1,74 @@
+/* @define Hero */
+
+.Hero-background--8 {
+
+}
+
+.Hero-bars {
+  width: 300px;
+  position: absolute;
+  left: 48px;
+  bottom: 0;
+}
+
+@media (max-width: 1150px) {
+  .Hero-bars {
+    display: none;
+  }
+}
+
+.Hero-bar {
+  visibility: hidden;
+  transform: translateY(100%);
+  animation: Hero-bar--appear 325ms 200ms ease-out forwards;
+}
+
+@keyframes Hero-bar--appear {
+  from {
+    visibility: visible;
+    transform: translateY(100%);
+  }
+  to {
+    visibility: visible;
+    transform: translateY(0%);
+  }
+}
+
+.Hero-bar--light:nth-child(1) { animation-delay: 200ms; }
+.Hero-bar--light:nth-child(2) { animation-delay: 275ms; }
+.Hero-bar--light:nth-child(3) { animation-delay: 350ms; }
+.Hero-bar--light:nth-child(4) { animation-delay: 425ms; }
+.Hero-bar--light:nth-child(5) { animation-delay: 500ms; }
+.Hero-bar--light:nth-child(6) { animation-delay: 575ms; }
+
+.Hero-bar--dark:nth-child(1) { animation-delay: 500ms; }
+.Hero-bar--dark:nth-child(2) { animation-delay: 575ms; }
+.Hero-bar--dark:nth-child(3) { animation-delay: 650ms; }
+.Hero-bar--dark:nth-child(4) { animation-delay: 725ms; }
+.Hero-bar--dark:nth-child(5) { animation-delay: 800ms; }
+
+.Hero-curves {
+  width: 100%;
+  max-width: 627px;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.Hero-curve {
+  transform: scaleY(0);
+  transform-origin: 0 100%;
+  animation: Hero-curve--appear 450ms 200ms ease-out forwards;
+}
+
+@keyframes Hero-curve--appear {
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.Hero-curve:nth-child(1) { animation-delay: 300ms; }
+.Hero-curve:nth-child(2) { animation-delay: 500ms; }
+.Hero-curve:nth-child(3) { animation-delay: 1200ms; }
+.Hero-curve:nth-child(4) { animation-delay: 650ms; animation-duration: 600ms; }
