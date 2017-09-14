@@ -249,7 +249,7 @@
  * CSS Grid Layout
  */
 
-@supports (display: gr2id) {
+@supports (display: grid) {
   @media (--viewport-lg) {
     .GoalGrid {
       margin: 0;
