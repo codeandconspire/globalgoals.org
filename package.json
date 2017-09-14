@@ -1,7 +1,7 @@
 {
   "name": "globalgoals.org",
-  "version": "0.2.0",
-  "description": "Public website for the Global Goals initiative",
+  "version": "1.0.2",
+  "description": "Public Website for The Global Goals",
   "main": "index.js",
   "scripts": {
     "test": "eslint --ignore-path node_modules ./",
