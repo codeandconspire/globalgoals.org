@@ -136,17 +136,17 @@
   }
 }
 
-.Hero-sun {
+.Hero-citySun {
   width: 86px;
   max-width: 10vw;
   position: absolute;
   left: 6vw;
   bottom: 40%;
 
-  animation: Hero-sun--spin 8000ms linear infinite;
+  animation: Hero-citySun--spin 8000ms linear infinite;
 }
 
-@keyframes Hero-sun--spin {
+@keyframes Hero-citySun--spin {
   from {
     transform: rotate(0deg);
   }
