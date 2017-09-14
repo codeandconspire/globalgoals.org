@@ -143,6 +143,21 @@
   padding-bottom: 6px;
 }
 
+/**
+ * Full width column
+ */
+
+.Footer-column--full {
+  width: 100%;
+  margin-bottom: 33px;
+}
+
+@media (--viewport-md) {
+  .Footer-column--full .Footer-item {
+    width: calc(100% / 6);
+  }
+}
+
 .Footer-blockLink {
   display: block;
   display: inline-block;
