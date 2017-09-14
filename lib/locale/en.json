@@ -9,7 +9,7 @@
   "GOAL_TITLE_8": "Decent Work and|Economic Growth",
   "GOAL_TITLE_9": "Industry, Innovation|and Infastructure",
   "GOAL_TITLE_10": "Reduced|Inequalities",
-  "GOAL_TITLE_11": "Substainable Cities|and Communities",
+  "GOAL_TITLE_11": "Sustainable Cities|and Communities",
   "GOAL_TITLE_12": "Responsible|Consumption|and Production",
   "GOAL_TITLE_13": "Climate|Action",
   "GOAL_TITLE_14": "Life Below|Water",
@@ -68,6 +68,8 @@
   "The Global Goals are only going to be completed if we fight for them. All we need you to do is to pick an option.": "The Global Goals are only going to be completed if we fight for them. All we need you to do is to pick an option.",
   "DEFAULT_DESCRIPTION": "In September 2015, 193 world leaders agreed to 17 Global Goals for Sustainable Development. If these Goals are completed, it would mean an end to extreme poverty, inequality and climate change by 2030.",
   "Explore the Targets": "Explore the Targets",
-  "Home": "Home",
-  "About": "About"
+  "The Goals & Targets": "The Goals & Targets",
+  "About": "About",
+  "Pictogram for target %s": "Pictogram for target %s",
+  "Target %s": "Target %s"
 }
