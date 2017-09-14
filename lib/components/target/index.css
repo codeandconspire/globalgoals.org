@@ -2,8 +2,8 @@
 
 :root {
   --Target-pictogram-sm: 72px;
-  --Target-pictogram-md: 96px;
   --Target-pictogram-lg: 128px;
+  --Target-id-height: 36px;
 }
 
 /**
@@ -16,45 +16,78 @@
 }
 
 .Target-pictogram {
+  position: relative;
   float: left;
   width: var(--Target-pictogram-sm);
-  margin-right: 24px;
+  height: var(--Target-pictogram-sm);
+  padding-bottom: var(--Target-id-height);
+  margin-right: 16px;
+  box-sizing: content-box;
 }
-
 
 @media (--viewport-sm) {
   .Target-pictogram {
-    width: var(--Target-pictogram-md);
+    width: var(--Target-pictogram-lg);
+    height: var(--Target-pictogram-lg);
+    margin-right: 24px;
   }
 }
 
 @media (--viewport-lg) {
   .Target-pictogram {
     float: left;
-    width: var(--Target-pictogram-lg);
     margin-right: 32px;
   }
 }
 
 .Target-image {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: auto;
+  color: transparent;
+  height: calc(100% - var(--Target-id-height));
 }
 
 .Target-id {
-  display: block;
-  padding: 7px 0 6px;
-  margin-top: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
   color: #fff;
   text-align: center;
   font-size: 18px;
   font-family: var(--font-family-heading);
-  line-height: 1.1;
+  line-height: 32px;
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.Target-pictogram--fallback .Target-id {
+  bottom: 50%;
+  height: auto;
+  line-height: normal;
+  transform: translateY(50%);
+}
+
+.Target-pictogram--fallback .Target-idStrong {
+  display: block;
+  font-size: 42px;
+  margin: 7px 0 -2px;
+}
+
+@media (--viewport-sm) {
+  .Target-pictogram--fallback .Target-id {
+    font-size: 22px;
+  }
+  .Target-pictogram--fallback .Target-idStrong {
+    font-size: 68px;
+    margin: 12px 0 -4px;
+  }
 }
 
 .Target-body {
@@ -65,12 +98,15 @@
 
 .Target-link {
   display: inline-block;
-  padding: 3px 24px 2px 8px;
+  padding: 0 24px 0 8px;
   margin-top: 7px;
   position: relative;
   font-size: 14px;
+  line-height: 28px;
   color: var(--color-text-light);
   background-color: var(--color-gray-light);
+  border-radius: 1px;
+  transition: background 100ms var(--ease-out), color 100ms var(--ease-out);
 }
 
 .Target-link:hover {
@@ -83,11 +119,11 @@
 .Target-link::before {
   content: "";
   width: 1px;
-  height: 0.65em;
+  height: 9px;
 
   position: absolute;
   top: 50%;
-  right: 0.9em;
+  right: 12px;
   background-color: currentColor;
 
   transform: translateY(-50%);
