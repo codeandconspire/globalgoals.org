@@ -99,6 +99,10 @@
   animation-duration: 500ms;
 }
 
+.Hero-link {
+  margin-top: 8px;
+}
+
 @keyframes Hero-intro--appear {
   0% {
     opacity: 0;

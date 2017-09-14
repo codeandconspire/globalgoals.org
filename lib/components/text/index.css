@@ -73,7 +73,7 @@
  * Misc inline elements
  */
 
-.Text a {
+.Text:not(.Text--adaptive) a {
   margin: -5px;
   padding: 5px;
   font-weight: bold;
@@ -83,8 +83,30 @@
   transition: color 90ms var(--ease-out);
 }
 
-.Text a:hover {
+.Text:not(.Text--adaptive) a:hover {
   color: var(--color-link-enter);
+}
+
+.Text--adaptive a {
+  display: inline-block;
+  height: 2.6em;
+  padding: 0 0.8em;
+  margin: 0 -0.8em;
+  line-height: 2.5em;
+  -webkit-touch-callout: none;
+  border-radius: 1px;
+  transition: background 140ms var(--ease-out);
+}
+
+.Text--adaptive a:hover {
+  background: var(--color-hover-dark);
+}
+
+.Text-icon {
+  vertical-align: middle;
+  margin-left: 0.7em;
+  position: relative;
+  top: -0.05em;
 }
 
 /**
@@ -216,6 +238,7 @@
 
 .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) a:hover {
   background: var(--color-link-enter);
+  color: #fff;
 }
 
 /**
