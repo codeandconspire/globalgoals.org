@@ -27,6 +27,10 @@
 }
 
 .Hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
   position: relative;
   z-index: 1;
   min-height: 100vh;
@@ -51,27 +55,8 @@
   }
 }
 
-@media (max-height: 600px) {
-  .Hero {
-    /*padding-bottom: var(--Hero-padding);*/
-  }
-}
-
-@media (max-height: 600px) and (--viewport-lg) {
-  .Hero {
-    /*padding-bottom: var(--Hero-padding-lg);*/
-  }
-}
-
-@media (max-height: 600px) and (--viewport-nano-max) {
-  .Hero {
-    /*padding-bottom: var(--Hero-padding-nano);*/
-  }
-}
-
 .Hero-container {
-  max-width: 860px;
-  margin: 0 auto;
+  margin-top: calc(var(--Hero-padding) * -1);
 }
 
 .Hero-title {
@@ -81,28 +66,120 @@
 }
 
 .Hero-intro {
-  margin: 0 auto;
-  max-width: 570px;
-  animation-name: Hero-intro--appear;
-  animation-fill-mode: forwards;
-  animation-timing-function: var(--ease-out);
-  animation-duration: 500ms;
-}
-
-.Hero-link {
-  margin-top: 8px;
+  margin: 0 10%;
+  position: relative;
+  opacity: 0;
+  animation: Hero-intro--appear 500ms 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 @keyframes Hero-intro--appear {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(50px);
   }
 
   100% {
     opacity: 1;
     transform: translateY(0%);
   }
+}
+
+/**
+ * 1. Max title width
+ */
+
+@media (min-width: 860px /* 1 */) {
+  .Hero-intro {
+    margin: 0 auto;
+    max-width: 570px;
+  }
+
+  .Hero--1 .Hero-intro {
+    left: 53px;
+    max-width: 500px;
+  }
+
+  .Hero--2 .Hero-intro {
+    left: 38px;
+    max-width: 470px;
+  }
+
+  .Hero--3 .Hero-intro {
+    left: 85px;
+  }
+
+  .Hero--4 .Hero-intro {
+    left: 68px;
+    max-width: 530px;
+  }
+
+  .Hero--5 .Hero-intro {
+    left: 28px;
+    max-width: 450px;
+  }
+
+  .Hero--6 .Hero-intro {
+    max-width: 480px;
+    left: 40px;
+  }
+
+  .Hero--7 .Hero-intro {
+    max-width: 470px;
+    left: 38px;
+  }
+
+  .Hero--8 .Hero-intro {
+    max-width: 500px;
+    left: 36px;
+  }
+
+  .Hero--9 .Hero-intro {
+    max-width: 580px;
+    left: 52px;
+  }
+
+  .Hero--10 .Hero-intro {
+    left: 108px;
+  }
+
+  .Hero--11 .Hero-intro {
+    max-width: 550px;
+    left: 56px;
+  }
+
+  .Hero--12 .Hero-intro {
+    max-width: 420px;
+    left: 90px;
+  }
+
+  .Hero--13 .Hero-intro {
+    max-width: 460px;
+    left: 53px;
+  }
+
+  .Hero--14 .Hero-intro {
+    max-width: 480px;
+    left: 63px;
+  }
+
+  .Hero--15 .Hero-intro {
+    max-width: 510px;
+    left: 78px;
+  }
+
+  .Hero--16 .Hero-intro {
+    max-width: 540px;
+    left: 17px;
+  }
+
+  .Hero--17 .Hero-intro {
+    max-width: 520px;
+    left: 82px;
+  }
+}
+
+.Hero-link {
+  margin-top: 8px;
 }
 
 /**
