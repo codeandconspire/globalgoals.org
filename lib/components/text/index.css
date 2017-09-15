@@ -10,6 +10,10 @@
   max-width: 37em;
 }
 
+.Text--full {
+  max-width: none;
+}
+
 @media (--viewport-lg) {
   .Text--wide {
     max-width: none;
@@ -162,7 +166,7 @@
  * Let's pretend all embeds are 16:9
  */
 
-.Text [data-oembed] {
+.Text :matches(.Text-embed, [data-oembed]) {
   background: var(--color-gray-light);
   width: 100%;
   height: 0;
@@ -171,7 +175,7 @@
   margin: 32px 0;
 }
 
-.Text [data-oembed] iframe {
+.Text :matches(.Text-embed, [data-oembed]) iframe {
   position: absolute;
   top: 0;
   left: 0;
