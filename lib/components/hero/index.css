@@ -26,6 +26,8 @@
   --Hero-padding-nano: var(--Header-height-nano);
 }
 
+@custom-media --Hero-wide (min-width: 860px);
+
 .Hero {
   display: flex;
   flex-direction: column;
@@ -59,10 +61,12 @@
   margin-top: calc(var(--Hero-padding) * -1);
 }
 
-.Hero-title {
-  height: 100vh;
-  max-height: 205px;
-  margin: 0 auto;
+@media (--Hero-wide) {
+  .Hero-title {
+    height: 100vh;
+    max-height: 205px;
+    margin: 0 auto;
+  }
 }
 
 .Hero-intro {
@@ -70,6 +74,66 @@
   position: relative;
   opacity: 0;
   animation: Hero-intro--appear 500ms 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.Hero--1 .Hero-intro {
+  margin: 0 11%;
+}
+
+.Hero--3 .Hero-intro {
+  margin: 0 9%;
+}
+
+.Hero--4 .Hero-intro {
+  margin: 0 9%;
+}
+
+.Hero--5 .Hero-intro {
+  margin: 0 9%;
+}
+
+.Hero--6 .Hero-intro {
+  margin: 0 9.5%;
+}
+
+.Hero--8 .Hero-intro {
+  margin: 0 9%;
+}
+
+.Hero--9 .Hero-intro {
+  margin: 0 7.5%;
+}
+
+.Hero--10 .Hero-intro {
+  margin: 0 7.5%;
+}
+
+.Hero--11 .Hero-intro {
+  margin: 0 7.75%;
+}
+
+.Hero--12 .Hero-intro {
+  margin: 0 7.5%;
+}
+
+.Hero--13 .Hero-intro {
+  margin: 0 8.5%;
+}
+
+.Hero--14 .Hero-intro {
+  margin: 0 7.75%;
+}
+
+.Hero--15 .Hero-intro {
+  margin: 0 7.75%;
+}
+
+.Hero--16 .Hero-intro {
+  margin: 0 8%;
+}
+
+.Hero--17 .Hero-intro {
+  margin: 0 8.5%;
 }
 
 @keyframes Hero-intro--appear {
@@ -84,12 +148,8 @@
   }
 }
 
-/**
- * 1. Max title width
- */
-
-@media (min-width: 860px /* 1 */) {
-  .Hero-intro {
+@media (--Hero-wide) {
+  .Hero .Hero-intro {
     margin: 0 auto;
     max-width: 570px;
   }
