@@ -15,22 +15,6 @@
 }
 
 /**
- * Animation: Hidden while "mobile" navigation is visible
- */
-
-@media (--viewport-md-max) {
-  .View-animationFriendly {
-    transition: transform 300ms var(--ease-out), opacity 300ms var(--ease-out);
-  }
-
-  .View.is-hiddenForNavigation .View-animationFriendly {
-    transition: none;
-    opacity: 0;
-    transform: translateY(40px);
-  }
-}
-
-/**
  * View sections
  */
 
