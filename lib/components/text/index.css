@@ -210,7 +210,7 @@
 
 .Text :matches(h3, .Text-h3) {
   font-size: 32px;
-  line-height: 1;
+  line-height: 1.05;
 }
 
 .Text :matches(h4, .Text-h4) {
@@ -254,7 +254,7 @@
  */
 
 .Text-large {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .Text-label {
@@ -309,6 +309,7 @@
 
   .Text :matches(h4, .Text-h4) {
     font-size: 32px;
+    line-height: 1.05;
   }
 
   /**
@@ -318,7 +319,7 @@
    */
 
   .Text--growing {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .Text--growing .Text-large {
