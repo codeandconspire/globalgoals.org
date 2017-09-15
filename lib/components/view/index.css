@@ -172,7 +172,7 @@
   }
 
   100% {
-    opacity: 100;
+    opacity: 1;
   }
 }
 
@@ -206,6 +206,7 @@
   opacity: 0;
   background-color: color(var(--color-goal-7) shade(25%));
   animation: View-takeover--start7 400ms ease-out forwards;
+  will-change: opacity;
 }
 
 @keyframes View-takeover--start7 {

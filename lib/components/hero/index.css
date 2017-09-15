@@ -21,15 +21,12 @@
 }
 
 .Hero {
-  color: #fff;
   position: relative;
-  margin-top: calc(var(--Hero-padding) * -1);
-  padding-top: var(--Hero-padding);
-  min-height: 100vh;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  padding-top: var(--Hero-padding);
+  margin-top: calc(var(--Hero-padding) * -1);
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -50,51 +47,36 @@
 
 @media (max-height: 600px) {
   .Hero {
-    padding-bottom: var(--Hero-padding);
+    /*padding-bottom: var(--Hero-padding);*/
   }
 }
 
 @media (max-height: 600px) and (--viewport-lg) {
   .Hero {
-    padding-bottom: var(--Hero-padding-lg);
+    /*padding-bottom: var(--Hero-padding-lg);*/
   }
 }
 
 @media (max-height: 600px) and (--viewport-nano-max) {
   .Hero {
-    padding-bottom: var(--Hero-padding-nano);
+    /*padding-bottom: var(--Hero-padding-nano);*/
   }
 }
 
-.Hero-background {
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.Hero.no-transition {
-  visibility: hidden;
-  transition: none;
-}
-
 .Hero-container {
-  flex: 1 1 720px;
-  max-width: 720px;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .Hero-title {
-  margin-bottom: 3rem;
+  height: 100vh;
+  max-height: 205px;
+  margin: 0 auto;
 }
 
 .Hero-intro {
-  margin: 0 6vw;
+  margin: 0 auto;
+  max-width: 570px;
   animation-name: Hero-intro--appear;
   animation-fill-mode: forwards;
   animation-timing-function: var(--ease-out);
@@ -117,6 +99,40 @@
   }
 }
 
+/**
+ * Themes
+ */
+
+.Hero-iconNumber {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.Hero--7 {
+  color: #000;
+}
+
+.Hero--7 .Hero-iconNumber {
+  color: #fff;
+}
+
+/**
+ * Background
+ */
+
+.Hero-background {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
 .Hero-symbols {
   display: none;
 }
@@ -124,6 +140,11 @@
 /**
  * Takeover
  */
+
+.Hero.no-transition {
+  visibility: hidden;
+  transition: none;
+}
 
 .Hero--takeover {
   width: 100%;
@@ -151,16 +172,4 @@
 
 .Hero--takeover .Hero-intro {
   visibility: hidden;
-}
-
-.Hero-iconNumber {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.Hero--7 {
-  color: #000;
-}
-
-.Hero--7 .Hero-iconNumber {
-  color: #fff;
 }
