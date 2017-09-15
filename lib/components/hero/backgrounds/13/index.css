@@ -1,0 +1,16 @@
+/* @define Hero */
+
+.Hero-background--13 {
+
+}
+
+.Hero-background--13 svg {
+  max-width: 489px;
+  max-height: 489px;
+  margin: 0 auto;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
