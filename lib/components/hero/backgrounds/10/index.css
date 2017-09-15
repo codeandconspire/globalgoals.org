@@ -1,0 +1,14 @@
+/* @define Hero */
+
+.Hero-background--10 {
+
+}
+
+.Hero-background--10 svg {
+  width: 184px;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
