@@ -1,0 +1,14 @@
+/* @define Hero */
+
+.Hero-background--16 {
+
+}
+
+.Hero-background--16 svg {
+  width: 100%;
+  max-height: 100%;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
