@@ -14,12 +14,6 @@ const app = require('./lib/app');
 const server = new Koa();
 
 /**
- * Hook up the Prismic api
- */
-
-server.use(prismic);
-
-/**
  * Basic authentication
  */
 
@@ -64,16 +58,22 @@ server.use(cache);
 server.use(body());
 
 /**
+ * Guard against any downstream errors
+ */
+
+server.use(catchall);
+
+/**
  * Handle rendering response
  */
 
 server.use(render(app));
 
 /**
- * Guard against any downstream errors
+ * Hook up the Prismic api
  */
 
-server.use(catchall);
+server.use(prismic);
 
 /**
  * Hook up em' routes
