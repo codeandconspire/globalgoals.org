@@ -101,6 +101,7 @@
   word-spacing: var(--word-spacing-heading);
   user-select: none;
   transition: color 140ms var(--ease-out), background 140ms var(--ease-out);
+  user-select: none;
 }
 
 .Card-linkText {

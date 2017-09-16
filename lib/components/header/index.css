@@ -103,6 +103,10 @@
   fill: currentColor;
 }
 
+.Header:matches(.is-open, :target) .Header-logoMask {
+  fill: #000;
+}
+
 /**
  * On wider viewports
  */
@@ -486,8 +490,12 @@
   fill: currentColor;
 }
 
-.Header--goalPage:not(.is-following) .Header-logoMask {
-  fill: black;
+.Header--white:not(.is-following) .Header-logoMask {
+  fill: #000;
+}
+
+.Header--black:not(.is-following) .Header-logoMask {
+  fill: #fff;
 }
 
 /**
@@ -525,7 +533,7 @@
   color: currentColor;
 }
 
-.Header--goalPage:not(.is-following) :matches(.Header-fill, .Header-logo, .Header-content, .Header-list, .Header-button--back) {
+.Header--goalPage:not(.is-following) :matches(.Header-fill, .Header-logo, .Header-content) {
   will-change: unset; /* 3 */
 }
 
