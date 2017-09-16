@@ -335,6 +335,10 @@
       height: 56px;
     }
 
+    .GoalGrid-item--cta .GoalGrid-paragraph {
+      display: block;
+    }
+
     /**
      * Layouts
      */
@@ -434,10 +438,6 @@
   @media (--viewport-xl) {
     .GoalGrid-item--cta .GoalGrid-details {
       margin-top: 52px;
-    }
-
-    .GoalGrid-item--cta .GoalGrid-paragraph {
-      display: block;
     }
 
     .GoalGrid-item--cta .GoalGrid-button {

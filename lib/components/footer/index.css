@@ -115,6 +115,11 @@
 
 .Footer-column--credits .Footer-list {
   margin: 0 -7px;
+  display: none;
+}
+
+.Footer-column--credits .Footer-title {
+  display: none;
 }
 
 .Footer-column--credits .Footer-item {

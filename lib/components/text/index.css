@@ -24,6 +24,10 @@
 
 }
 
+.Text--growingLate {
+
+}
+
 .Text--center {
   margin: 0 auto;
   text-align: center;
@@ -117,21 +121,23 @@
  * Misc block elements
  */
 
-.Text p {
-  margin: 24px 0;
+.Text :matches(p, ul, ol) {
+  margin: 1.3em 0;
+}
+
+.Text :matches(img, pre, .Text-embed, [data-oembed]) {
+  margin: 1.5em 0;
 }
 
 .Text img {
   max-width: 100%;
   height: auto;
-  margin: 32px 0;
   background: var(--color-gray-light);
 }
 
 .Text ul,
 .Text ol {
   padding-left: 32px;
-  margin: 24px 0;
 }
 
 .Text ul {
@@ -199,7 +205,7 @@
   line-height: 1.1;
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
-  margin: 53px 0 -9px;
+  margin: 53px 0 -8px;
 }
 
 .Text :matches(h1, .Text-h1) {
@@ -220,6 +226,7 @@
 .Text :matches(h4, .Text-h4) {
   font-size: 24px;
   line-height: 1.15;
+  margin-bottom: -10px;
 }
 
 .Text :matches(h5, h6) {
@@ -288,15 +295,7 @@
   }
 
   .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) {
-    margin: 72px 0 -9px;
-  }
-
-  .Text :matches(p, ul, ol) {
-    margin: 30px 0;
-  }
-
-  .Text :matches(img, [data-oembed]) {
-    margin: 45px 0;
+    margin-top: 72px;
   }
 
   .Text :matches(h1, .Text-h1) {
@@ -340,5 +339,15 @@
 
   .Text--growingTitles :matches(h4, .Text-h4) {
     font-size: 48px;
+  }
+}
+
+@media (--viewport-xl) {
+  .Text--growingLate {
+    font-size: 19px;
+  }
+
+  .Text--growingLate .Text-large {
+    font-size: 24px;
   }
 }
