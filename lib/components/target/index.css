@@ -109,8 +109,21 @@
   transition: background 100ms var(--ease-out), color 100ms var(--ease-out);
 }
 
+:root[data-focus-source="key"] .Target-link:focus {
+  box-shadow: inset 0 0 0 2px #000;
+}
+
+:root:not(.has-js) .Target-link {
+  display: none;
+}
+
+.Target-link:hover,
+.Target:hover .Target-link {
+  background-color: #e0e0e0;
+  color: var(--color-text);
+}
+
 .Target-link:hover {
-  outline: none;
   background-color: #e0e0e0;
   color: var(--color-text);
 }
