@@ -371,7 +371,7 @@
   top: 19px;
   left: 14px;
   transform: rotate(-135deg);
-  transition: transform 180ms var(--ease-out);
+  transition: left 140ms var(--ease-out), right 140ms var(--ease-out);
 }
 
 .Header-button--link .Header-arrow {
@@ -381,11 +381,11 @@
 }
 
 .Header-button--back:hover .Header-arrow {
-  transform: rotate(-135deg) translate(-2.5px, 2.5px);
+  left: 11px;
 }
 
 .Header-button--link:hover .Header-arrow {
-  transform: rotate(45deg) translate(-2.5px, 2.5px);
+  right: 14px;
 }
 
 /**
