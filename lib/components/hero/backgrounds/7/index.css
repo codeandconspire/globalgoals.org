@@ -12,12 +12,13 @@
   left: 0;
   top: 0;
 
-  background-color: color(var(--color-goal-7) shade(25%));
+  background-color: var(--color-goal-7-shaded);
+  opacity: 0.6;
   animation: Hero-dimmer--up 800ms 1500ms linear forwards;
 }
 
 @keyframes Hero-dimmer--up {
-  to{
+  to {
     opacity: 0;
   }
 }
