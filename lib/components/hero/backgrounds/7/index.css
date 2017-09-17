@@ -58,7 +58,7 @@
   bottom: 0;
 
   transform: translateY(100%);
-  animation: Hero-windTurbine--appear 600ms 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero-energyTurbine--appear 600ms 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes Hero-building--appear {
@@ -67,36 +67,36 @@
   }
 }
 
-.Hero-windTurbine {
+.Hero-energyTurbine {
   position: absolute;
   bottom: 0;
 
   transform: translateY(100%);
-  animation: Hero-windTurbine--appear 600ms 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero-energyTurbine--appear 600ms 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@keyframes Hero-windTurbine--appear {
+@keyframes Hero-energyTurbine--appear {
   to {
     transform: translateY(0%);
   }
 }
 
-.Hero-windTurbine:nth-child(1) {
+.Hero-energyTurbine:nth-child(1) {
   height: 250px;
   right: 0%;
 }
 
-.Hero-windTurbine:nth-child(2) {
+.Hero-energyTurbine:nth-child(2) {
   height: 130px;
   right: 12%;
 }
 
-.Hero-turbineBlades {
+.Hero-energyBlades {
   transform-origin: 49.9% 65.3%;
-  animation: Hero-turbinBlades--spin 3000ms 1750ms linear infinite;
+  animation: Hero-energyBlades--spin 3000ms 1750ms linear infinite;
 }
 
-@keyframes Hero-turbinBlades--spin {
+@keyframes Hero-energyBlades--spin {
   from {
     transform: rotate(0deg);
   }
