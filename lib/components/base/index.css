@@ -61,6 +61,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  overflow-x: hidden;
   font-family: var(--font-family-body);
   cursor: default;
   background: var(--color-document);
@@ -138,7 +139,7 @@ button {
  * Javascript and stay on the same page, etc.
  */
 
-:root.has-js :matches([role="button"], [role="tab"], [href^="#"]) {
+:root.has-js :matches([role="button"], [role="tab"], a[href^="#"]) {
   cursor: default !important;
 }
 
