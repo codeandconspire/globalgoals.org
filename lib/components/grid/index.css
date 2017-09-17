@@ -73,6 +73,15 @@
     padding: 0 calc(var(--Grid-gutter-xl) * 0.5);
     margin-bottom: var(--Grid-gutter-xl);
   }
+
+  .Grid--loose {
+    margin: 0 calc(var(--Grid-loose-gutter-lg) * -0.5);
+  }
+
+  .Grid--loose > .Grid-cell {
+    padding: 0 calc(var(--Grid-loose-gutter-lg) * 0.5);
+    margin-bottom: var(--Grid-loose-gutter-lg);
+  }
 }
 
 .Grid-cell--center {
