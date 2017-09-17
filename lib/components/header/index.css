@@ -167,12 +167,12 @@
 }
 
 .Header-button.is-current {
-  color: var(--color-active);
+  color: var(--color-interactive);
   transition: background 180ms var(--ease-out), color 140ms var(--ease-out);
 }
 
 .Header-button:hover.is-current {
-  color: var(--color-active-dark);
+  color: var(--color-interactive-dark);
 }
 
 /**

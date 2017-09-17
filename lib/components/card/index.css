@@ -247,7 +247,7 @@
   padding: 28px 32px 32px;
   color: #fff;
   min-height: 275px;
-  background-color: var(--color-active);
+  background-color: var(--color-interactive);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
