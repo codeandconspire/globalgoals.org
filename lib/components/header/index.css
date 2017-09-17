@@ -155,7 +155,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   -webkit-touch-callout: none;
-  transition: background 180ms var(--ease-out), color 140ms var(--ease-out);
+  transition: background 180ms var(--ease-out);
 }
 
 .Header-button:hover {
@@ -168,6 +168,7 @@
 
 .Header-button.is-current {
   color: var(--color-active);
+  transition: background 180ms var(--ease-out), color 140ms var(--ease-out);
 }
 
 .Header-button:hover.is-current {
@@ -585,6 +586,9 @@
  */
 
 @media (--viewport-nano-max) {
+  .Header {
+    height: var(--Header-height-nano);
+  }
   .Header :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
     transform: none !important;
     will-change: unset;
