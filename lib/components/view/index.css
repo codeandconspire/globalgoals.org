@@ -160,24 +160,6 @@
   }
 }
 
-.View-takeover--1 { background-color: var(--color-goal-1); }
-.View-takeover--2 { background-color: var(--color-goal-2); }
-.View-takeover--3 { background-color: var(--color-goal-3); }
-.View-takeover--4 { background-color: var(--color-goal-4); }
-.View-takeover--5 { background-color: var(--color-goal-5); }
-.View-takeover--6 { background-color: var(--color-goal-6); }
-.View-takeover--7 { background-color: var(--color-goal-7); }
-.View-takeover--8 { background-color: var(--color-goal-8); }
-.View-takeover--9 { background-color: var(--color-goal-9); }
-.View-takeover--10 { background-color: var(--color-goal-10); }
-.View-takeover--11 { background-color: var(--color-goal-11); }
-.View-takeover--12 { background-color: var(--color-goal-12); }
-.View-takeover--13 { background-color: var(--color-goal-13); }
-.View-takeover--14 { background-color: var(--color-goal-14); }
-.View-takeover--15 { background-color: var(--color-goal-15); }
-.View-takeover--16 { background-color: var(--color-goal-16); }
-.View-takeover--17 { background-color: var(--color-goal-17); }
-
 .View-takeover--7::before {
   content: "";
   width: 100%;
