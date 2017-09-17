@@ -1,44 +1,10 @@
-@import "../focus";
-@import "./colors";
+@import "./fonts";
+@import "./color-map";
 @import "./utils";
+@import "../focus";
 
 /**
- * Fontsquirrel settings
- * Custom Subsetting: ABCDEFGHIJKLMNOPQRSTUVWXYZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßŒŸ0123456789* !"#$₤€%&'()*+,-./:;<=>?@[\]^_`{|}~¡§©«®°·»¿–—‘’‚“”„•…™
- * Truetype Hinting: Font Squirrel
- * Vertical Metrics: No Adjustment
- * X-height Matching: None
- */
-
-@font-face {
-  font-family: "Giorgio Sans Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./fonts/giorgio-sans-bold.woff") format("woff");
-  font-display: block;
-}
-
-:root {
-  --giorgio-sans-bold: "Giorgio Sans Bold", impact, sans-serif;
-  --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-
-  --font-family-heading: var(--giorgio-sans-bold);
-  --font-family-body: var(--system-font);
-  --word-spacing-heading: 0.04em;
-
-  /**
-   * Our easing curves
-   */
-
-  --ease-in: cubic-bezier(0.4, 0.0, 1, 1);
-  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
-  --ease-in-out: cubic-bezier(0.4, 0.0, 0.2, 1);
-  --ease: var(--ease-in-out);
-}
-
-/**
- * Custom media queries
+ * Media queries
  */
 
 @custom-media --viewport-nano (min-width: 320px);
@@ -55,10 +21,21 @@
 @custom-media --viewport-xl-max (max-width: 1249px);
 
 /**
+ * Easing curves
+ */
+
+:root {
+  --ease-in: cubic-bezier(0.4, 0.0, 1, 1);
+  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --ease: var(--ease-in-out);
+}
+
+/**
  * Document styles
  */
 
-html {
+:root {
   box-sizing: border-box;
   height: 100%;
   overflow-x: hidden;

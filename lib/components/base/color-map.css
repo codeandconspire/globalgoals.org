@@ -1,14 +1,21 @@
-/**
- * Colors
- */
-
 :root {
+
+  /**
+   * Grays
+   */
+
   --color-gray-light: #f1f1f1;
   --color-gray-light-alpha: rgba(0, 0, 0, 0.05);
+
   --color-gray: #aaaaaa;
   --color-gray-alpha: rgba(0, 0, 0, 0.34);
+
   --color-gray-dark: #1a1a1a;
   --color-gray-dark-alpha: rgba(0, 0, 0, 0.9);
+
+  /**
+   * Brand colors
+   */
 
   --color-blue: #0a97d9;
   --color-bright-blue: #26bde2;
@@ -28,15 +35,21 @@
   --color-royal-blue: #00689d;
   --color-yellow: #fcc30b;
 
+  /**
+   * Somewhat semantic
+   */
+
+  --color-document: #fff;
+
   --color-text-light: rgba(0, 0, 0, 0.54);
   --color-text-light-large: rgba(0, 0, 0, 0.42);
   --color-text: var(--color-gray-dark);
-  --color-document: #fff;
-  --color-active: #26bde2;
-  --color-active-dark: #10a2c6;
-  --color-link: #26bde2;
-  --color-link-enter: #10a2c6;
-  --color-link-active: #5cd1ee;
+
+  --color-interactive: #26bde2;
+  --color-interactive-dark: #10a2c6;
+
+  --color-link: var(--color-interactive);
+  --color-link-enter: var(--color-interactive-dark);
 
   --color-hover-dark: rgba(0, 0, 0, 0.04);
   --color-hover-light: rgba(255, 255, 255, 0.04);
