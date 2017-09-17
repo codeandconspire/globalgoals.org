@@ -1,14 +1,173 @@
 /* @define Hero */
 
 .Hero-background--9 {
-
+  transform: translateY(100%);
+  animation: Hero-industry--appear 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-.Hero-background--9 svg {
-  width: 100%;
-  height: 100%;
+@keyframes Hero-industry--appear {
+  to {
+    transform: translateY(0%);
+  }
+}
 
+.Hero-industrySun {
+  display: none;
+  width: 7%;
+  min-width: 75px;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 11%;
+  bottom: 30%;
+
+  animation: Hero-industrySun--spin 8000ms linear infinite;
+}
+
+@keyframes Hero-industrySun--spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (--Hero-wide) {
+  .Hero-industrySun {
+    display: block;
+  }
+}
+
+.Hero-industryCloud {
+  position: absolute;
+  color: #fff;
+  opacity: 0.2;
+  animation: Hero-industryCloud--appear 1800ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes Hero-industryCloud--appear {
+  0% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.Hero-industryCloud--sm {
+  width: 2%;
+  min-width: 25px;
+}
+
+.Hero-industryCloud--md {
+  width: 5%;
+  min-width: 40px;
+}
+
+.Hero-industryCloud--lg {
+  width: 8%;
+  min-width: 60px;
+}
+
+.Hero-industryCloud--xl {
+  width: 10%;
+  min-width: 150px;
+}
+
+.Hero-industryCloud--dark {
+  opacity: 0.4;
+  color: #000;
+}
+
+.Hero-industryCloud--light {
+  opacity: 0.6;
+  color: #fff;
+}
+
+.Hero-industryCloud--dim {
+  opacity: 0.1;
+  color: #000;
+}
+
+.Hero-industryCloud:nth-child(1) {
+  bottom: 10%;
+  left: 2%;
+}
+
+.Hero-industryCloud:nth-child(2) {
+  bottom: 28%;
+  left: 8%;
+}
+
+.Hero-industryCloud:nth-child(3) {
+  bottom: 36%;
+  left: 14%;
+}
+
+.Hero-industryCloud:nth-child(4) {
+  top: 43%;
+  left: 25%;
+}
+
+.Hero-industryCloud:nth-child(5) {
+  top: 20%;
+  right: 25%;
+}
+
+.Hero-industryCloud:nth-child(6) {
+  top: 50%;
+  right: 14%;
+}
+
+.Hero-industryCloud:nth-child(7) {
+  top: 36%;
+  right: 6%;
+}
+
+.Hero-industryCloud:nth-child(8) {
+  top: 48%;
+  right: 2%;
+}
+
+.Hero-industryTurbine {
+  position: absolute;
+  bottom: 0;
+}
+
+.Hero-industryTurbine:nth-child(1) {
+  height: 150px;
+  right: 14%;
+}
+
+.Hero-industryTurbine:nth-child(2) {
+  height: 100px;
+  right: -30px;
+}
+
+@media (--Hero-wide) {
+  .Hero-industryTurbine:nth-child(1) {
+    height: 200px;
+    right: 14%;
+  }
+
+  .Hero-industryTurbine:nth-child(2) {
+    height: 120px;
+    right: 5%;
+  }
+}
+
+.Hero-industryBlades {
+  transform-origin: 49.9% 65.3%;
+  animation: Hero-industryBlades--spin 3000ms linear infinite;
+}
+
+@keyframes Hero-industryBlades--spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
