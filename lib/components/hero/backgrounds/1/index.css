@@ -1,6 +1,6 @@
 /* @define Hero */
 
-.Hero-background--1 {
+.Hero-bg--1 {
 
 }
 
@@ -16,7 +16,7 @@
   transform: translateX(-50%);
 }
 
-.Hero-background--1 .Hero-person {
+.Hero-bg--1 .Hero-person {
   fill: #fff;
   visibility: hidden;
   transform: translateY(100%);
@@ -35,7 +35,7 @@
   }
 }
 
-.Hero-background--1 .Hero-person--striped {
+.Hero-bg--1 .Hero-person--striped {
   fill: rgba(0, 0, 0, 0.5);
 }
 
@@ -49,7 +49,7 @@
   }
 }
 
-.Hero-background--1 .Hero-person--double {
+.Hero-bg--1 .Hero-person--double {
   fill-opacity: 0;
   visibility: visible;
   animation: Hero-person--fill 600ms linear forwards;
@@ -85,6 +85,6 @@
   animation-delay: 1.5s;
 }
 
-.Hero-background--1 .Hero-stripe {
+.Hero-bg--1 .Hero-stripe {
   fill: var(--color-goal-1);
 }

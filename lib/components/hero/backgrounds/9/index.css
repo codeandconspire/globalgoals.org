@@ -1,6 +1,6 @@
 /* @define Hero */
 
-.Hero-background--9 {
+.Hero-bg--9 {
   transform: translateY(100%);
   animation: Hero-industry--appear 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }

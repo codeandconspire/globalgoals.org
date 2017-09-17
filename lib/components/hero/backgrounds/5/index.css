@@ -1,10 +1,10 @@
 /* @define Hero */
 
-.Hero-background--5 {
+.Hero-bg--5 {
 
 }
 
-.Hero-people {
+.Hero-bg--5 .Hero-people {
   width: 100%;
   max-width: 523px;
   max-height: 20vh;
@@ -16,7 +16,7 @@
   transform: translateX(-50%);
 }
 
-.Hero-background--5 .Hero-person {
+.Hero-bg--5 .Hero-person {
   fill: #fff;
   visibility: hidden;
   transform: translateY(100%);
@@ -35,7 +35,7 @@
   }
 }
 
-.Hero-background--5 .Hero-person--striped {
+.Hero-bg--5 .Hero-person--striped {
   fill: rgba(0, 0, 0, 0.5);
 }
 
@@ -49,7 +49,7 @@
   }
 }
 
-.Hero-background--5 .Hero-stripe {
+.Hero-bg--5 .Hero-stripe {
   fill: var(--color-goal-5);
 }
 
