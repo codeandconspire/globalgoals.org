@@ -8,16 +8,24 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
+}
+
+@media (--viewport-md-max) {
+  .Hero-field {
+    width: 200vw;
+    padding: 0;
+    right: 0;
+  }
 }
 
 .Hero-crop {
   color: #fff;
   visibility: hidden;
-  animation: Hero-crop--appear 600ms 200ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: Hero--2-appear 600ms 200ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
-@keyframes Hero-crop--appear {
+@keyframes Hero--2-appear {
   from {
     visibility: visible;
     transform: translateY(100%);
@@ -32,8 +40,8 @@
 .Hero-crop--grow {
   transform-origin: center bottom;
   animation:
-    Hero-crop--appear 600ms 200ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards,
-    Hero-crop--growing 1000ms 1000ms cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+    Hero--2-appear 600ms 200ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards,
+    Hero--2-growing 1000ms 1000ms cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
 }
 
 .Hero-crop--grow:nth-child(1) {
@@ -60,7 +68,7 @@
   animation-delay: 200ms, 2600ms;
 }
 
-@keyframes Hero-crop--growing {
+@keyframes Hero--2-growing {
   to {
     transform: translateY(-30px);
   }
