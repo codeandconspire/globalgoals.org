@@ -158,9 +158,24 @@
   transition: background 180ms var(--ease-out);
 }
 
-.Header-button:hover {
-  background: var(--color-hover-dark);
-}
+.Header-button:hover { background: var(--color-hover-dark); }
+.Header--1 .Header-button:hover { background: color(var(--color-goal-1-shaded) alpha(10%)); }
+.Header--2 .Header-button:hover { background: color(var(--color-goal-2-shaded) alpha(10%)); }
+.Header--3 .Header-button:hover { background: color(var(--color-goal-3-shaded) alpha(10%)); }
+.Header--4 .Header-button:hover { background: color(var(--color-goal-4-shaded) alpha(10%)); }
+.Header--5 .Header-button:hover { background: color(var(--color-goal-5-shaded) alpha(10%)); }
+.Header--6 .Header-button:hover { background: color(var(--color-goal-6-shaded) alpha(10%)); }
+.Header--7 .Header-button:hover { background: color(var(--color-goal-7-shaded) alpha(10%)); }
+.Header--8 .Header-button:hover { background: color(var(--color-goal-8-shaded) alpha(10%)); }
+.Header--9 .Header-button:hover { background: color(var(--color-goal-9-shaded) alpha(10%)); }
+.Header--10 .Header-button:hover { background: color(var(--color-goal-10-shaded) alpha(10%)); }
+.Header--11 .Header-button:hover { background: color(var(--color-goal-11-shaded) alpha(10%)); }
+.Header--12 .Header-button:hover { background: color(var(--color-goal-12-shaded) alpha(10%)); }
+.Header--13 .Header-button:hover { background: color(var(--color-goal-13-shaded) alpha(10%)); }
+.Header--14 .Header-button:hover { background: color(var(--color-goal-14-shaded) alpha(10%)); }
+.Header--15 .Header-button:hover { background: color(var(--color-goal-15-shaded) alpha(10%)); }
+.Header--16 .Header-button:hover { background: color(var(--color-goal-16-shaded) alpha(10%)); }
+.Header--17 .Header-button:hover { background: color(var(--color-goal-17-shaded) alpha(10%)); }
 
 .Header:matches(.is-open, :target) .Header-button:hover {
   background: var(--color-hover-light);
@@ -288,13 +303,46 @@
   position: absolute;
   top: 0;
   left: -12px;
-  background: rgba(0, 0, 0, 0.15);
   transform-origin: top left;
 }
 
-.Header-button--back:hover {
-  background: rgba(0, 0, 0, 0.19);
-}
+.Header-button--back { background: rgba(0, 0, 0, 0.15); }
+.Header--1 .Header-button--back { background: color(var(--color-goal-1-shaded) alpha(35%)); }
+.Header--2 .Header-button--back { background: color(var(--color-goal-2-shaded) alpha(35%)); }
+.Header--3 .Header-button--back { background: color(var(--color-goal-3-shaded) alpha(35%)); }
+.Header--4 .Header-button--back { background: color(var(--color-goal-4-shaded) alpha(35%)); }
+.Header--5 .Header-button--back { background: color(var(--color-goal-5-shaded) alpha(35%)); }
+.Header--6 .Header-button--back { background: color(var(--color-goal-6-shaded) alpha(35%)); }
+.Header--7 .Header-button--back { background: color(var(--color-goal-7-shaded) alpha(35%)); }
+.Header--8 .Header-button--back { background: color(var(--color-goal-8-shaded) alpha(35%)); }
+.Header--9 .Header-button--back { background: color(var(--color-goal-9-shaded) alpha(35%)); }
+.Header--10 .Header-button--back { background: color(var(--color-goal-10-shaded) alpha(35%)); }
+.Header--11 .Header-button--back { background: color(var(--color-goal-11-shaded) alpha(35%)); }
+.Header--12 .Header-button--back { background: color(var(--color-goal-12-shaded) alpha(35%)); }
+.Header--13 .Header-button--back { background: color(var(--color-goal-13-shaded) alpha(35%)); }
+.Header--14 .Header-button--back { background: color(var(--color-goal-14-shaded) alpha(35%)); }
+.Header--15 .Header-button--back { background: color(var(--color-goal-15-shaded) alpha(35%)); }
+.Header--16 .Header-button--back { background: color(var(--color-goal-16-shaded) alpha(35%)); }
+.Header--17 .Header-button--back { background: color(var(--color-goal-17-shaded) alpha(35%)); }
+
+.Header-button--back:hover { background: rgba(0, 0, 0, 0.19); }
+.Header--1 .Header-button--back:hover { background: color(var(--color-goal-1-shaded) alpha(50%)); }
+.Header--2 .Header-button--back:hover { background: color(var(--color-goal-2-shaded) alpha(50%)); }
+.Header--3 .Header-button--back:hover { background: color(var(--color-goal-3-shaded) alpha(50%)); }
+.Header--4 .Header-button--back:hover { background: color(var(--color-goal-4-shaded) alpha(50%)); }
+.Header--5 .Header-button--back:hover { background: color(var(--color-goal-5-shaded) alpha(50%)); }
+.Header--6 .Header-button--back:hover { background: color(var(--color-goal-6-shaded) alpha(50%)); }
+.Header--7 .Header-button--back:hover { background: color(var(--color-goal-7-shaded) alpha(50%)); }
+.Header--8 .Header-button--back:hover { background: color(var(--color-goal-8-shaded) alpha(50%)); }
+.Header--9 .Header-button--back:hover { background: color(var(--color-goal-9-shaded) alpha(50%)); }
+.Header--10 .Header-button--back:hover { background: color(var(--color-goal-10-shaded) alpha(50%)); }
+.Header--11 .Header-button--back:hover { background: color(var(--color-goal-11-shaded) alpha(50%)); }
+.Header--12 .Header-button--back:hover { background: color(var(--color-goal-12-shaded) alpha(50%)); }
+.Header--13 .Header-button--back:hover { background: color(var(--color-goal-13-shaded) alpha(50%)); }
+.Header--14 .Header-button--back:hover { background: color(var(--color-goal-14-shaded) alpha(50%)); }
+.Header--15 .Header-button--back:hover { background: color(var(--color-goal-15-shaded) alpha(50%)); }
+.Header--16 .Header-button--back:hover { background: color(var(--color-goal-16-shaded) alpha(50%)); }
+.Header--17 .Header-button--back:hover { background: color(var(--color-goal-17-shaded) alpha(50%)); }
 
 .Header:matches(.is-open, :target) .Header-button--back,
 .Header.is-inHistory:not(.is-open):not(:target) .Header-logo {
@@ -534,7 +582,7 @@
   color: currentColor;
 }
 
-.Header--goalPage:not(.is-following) :matches(.Header-fill, .Header-logo, .Header-content) {
+.Header--goalPage:not(.is-following) :matches(.Header-fill, .Header-logo, .Header-content, .Header-list, .Header-button--back) {
   will-change: unset; /* 3 */
 }
 

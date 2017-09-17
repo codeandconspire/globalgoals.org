@@ -249,17 +249,27 @@
  * Themes
  */
 
-.Hero-iconNumber {
-  color: rgba(0, 0, 0, 0.5);
-}
-
 .Hero--7 {
   color: #000;
 }
 
-.Hero--7 .Hero-iconNumber {
-  color: #fff;
-}
+.Hero--1 .Hero-iconNumber { color: var(--color-goal-1-shaded); }
+.Hero--2 .Hero-iconNumber { color: var(--color-goal-2-shaded); }
+.Hero--3 .Hero-iconNumber { color: var(--color-goal-3-shaded); }
+.Hero--4 .Hero-iconNumber { color: var(--color-goal-4-shaded); }
+.Hero--5 .Hero-iconNumber { color: var(--color-goal-5-shaded); }
+.Hero--6 .Hero-iconNumber { color: var(--color-goal-6-shaded); }
+.Hero--7 .Hero-iconNumber { color: #fff; }
+.Hero--8 .Hero-iconNumber { color: var(--color-goal-8-shaded); }
+.Hero--9 .Hero-iconNumber { color: var(--color-goal-9-shaded); }
+.Hero--10 .Hero-iconNumber { color: var(--color-goal-10-shaded); }
+.Hero--11 .Hero-iconNumber { color: var(--color-goal-11-shaded); }
+.Hero--12 .Hero-iconNumber { color: var(--color-goal-12-shaded); }
+.Hero--13 .Hero-iconNumber { color: var(--color-goal-13-shaded); }
+.Hero--14 .Hero-iconNumber { color: var(--color-goal-14-shaded); }
+.Hero--15 .Hero-iconNumber { color: var(--color-goal-15-shaded); }
+.Hero--16 .Hero-iconNumber { color: var(--color-goal-16-shaded); }
+.Hero--17 .Hero-iconNumber { color: var(--color-goal-17-shaded); }
 
 /**
  * Background

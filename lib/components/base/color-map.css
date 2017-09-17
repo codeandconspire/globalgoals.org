@@ -18,22 +18,39 @@
    */
 
   --color-blue: #0a97d9;
+  --color-blue-shaded: #003570;
   --color-bright-blue: #26bde2;
+  --color-bright-blue-shaded: #015379;
   --color-burgundy-red: #a21942;
+  --color-burgundy-red-shaded: #40002a;
   --color-dark-green: #3f7e44;
+  --color-dark-green-shaded: #00301f;
   --color-dark-mustard: #bf8b2e;
+  --color-dark-mustard-shaded: #5b3203;
   --color-dark-red: #c5192d;
+  --color-dark-red-shaded: #5b0104;
   --color-golden-yellow: #fd9d24;
+  --color-golden-yellow-shaded: #da4c00;
   --color-kelly-green: #4c9f38;
+  --color-kelly-green-shaded: #0d3b06;
   --color-lime-green: #56c02b;
+  --color-lime-green-shaded: #105702;
   --color-magenta: #dd1367;
+  --color-magenta-shaded: #6e0035;
   --color-mustard: #dda63a;
+  --color-mustard-shaded: #774804;
   --color-navy-blue: #19486a;
+  --color-navy-blue-shaded: #00183a;
   --color-orange: #fd6925;
+  --color-orange-shaded: #b13100;
   --color-red-orange: #ff3a21;
+  --color-red-orange-shaded: #9b0701;
   --color-red: #e5243b;
+  --color-red-shaded: #75001f;
   --color-royal-blue: #00689d;
+  --color-royal-blue-shaded: #001b3c;
   --color-yellow: #fcc30b;
+  --color-yellow-shaded: #b56b00;
 
   /**
    * Somewhat semantic
@@ -59,20 +76,37 @@
    */
 
   --color-goal-1: var(--color-red);
+  --color-goal-1-shaded: var(--color-red-shaded);
   --color-goal-2: var(--color-mustard);
+  --color-goal-2-shaded: var(--color-mustard-shaded);
   --color-goal-3: var(--color-kelly-green);
+  --color-goal-3-shaded: var(--color-kelly-green-shaded);
   --color-goal-4: var(--color-dark-red);
+  --color-goal-4-shaded: var(--color-dark-red-shaded);
   --color-goal-5: var(--color-red-orange);
+  --color-goal-5-shaded: var(--color-red-orange-shaded);
   --color-goal-6: var(--color-bright-blue);
+  --color-goal-6-shaded: var(--color-bright-blue-shaded);
   --color-goal-7: var(--color-yellow);
+  --color-goal-7-shaded: var(--color-yellow-shaded);
   --color-goal-8: var(--color-burgundy-red);
+  --color-goal-8-shaded: var(--color-burgundy-red-shaded);
   --color-goal-9: var(--color-orange);
+  --color-goal-9-shaded: var(--color-orange-shaded);
   --color-goal-10: var(--color-magenta);
+  --color-goal-10-shaded: var(--color-magenta-shaded);
   --color-goal-11: var(--color-golden-yellow);
+  --color-goal-11-shaded: var(--color-golden-yellow-shaded);
   --color-goal-12: var(--color-dark-mustard);
+  --color-goal-12-shaded: var(--color-dark-mustard-shaded);
   --color-goal-13: var(--color-dark-green);
+  --color-goal-13-shaded: var(--color-dark-green-shaded);
   --color-goal-14: var(--color-blue);
+  --color-goal-14-shaded: var(--color-blue-shaded);
   --color-goal-15: var(--color-lime-green);
+  --color-goal-15-shaded: var(--color-lime-green-shaded);
   --color-goal-16: var(--color-royal-blue);
+  --color-goal-16-shaded: var(--color-royal-blue-shaded);
   --color-goal-17: var(--color-navy-blue);
+  --color-goal-17-shaded: var(--color-navy-blue-shaded);
 }
