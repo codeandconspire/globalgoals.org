@@ -6,9 +6,10 @@
 
 .Hero-people {
   width: 100%;
-  max-width: 680px;
-  max-height: 20vh;
+  max-width: 840px;
+  max-height: 18vh;
 
+  padding: 0 30px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -16,14 +17,22 @@
   transform: translateX(-50%);
 }
 
+@media (--viewport-sm-max) {
+  .Hero-people {
+    width: 200vw;
+    padding: 0;
+    left: 110%;
+  }
+}
+
 .Hero-bg--1 .Hero-person {
   fill: #fff;
   visibility: hidden;
   transform: translateY(100%);
-  animation: Hero-person--appear 1400ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero--1-appear 1400ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@keyframes Hero-person--appear {
+@keyframes Hero--1-appear {
   from {
     visibility: visible;
     transform: translateY(100%);
@@ -40,22 +49,23 @@
 }
 
 .Hero-stripes {
-  animation: Hero-stripes--pan 20s linear infinite;
+  animation: Hero--1-pan 5s linear;
 }
 
-@keyframes Hero-stripes--pan {
+@keyframes Hero--1-pan {
   to {
-    transform: translateX(-100%);
+    transform: translateX(-25%);
   }
 }
 
 .Hero-bg--1 .Hero-person--double {
   fill-opacity: 0;
   visibility: visible;
-  animation: Hero-person--fill 600ms linear forwards;
+  transform: translateY(0);
+  animation: Hero--1-fill 600ms linear forwards;
 }
 
-@keyframes Hero-person--fill {
+@keyframes Hero--1-fill {
   to {
     fill-opacity: 1;
   }
