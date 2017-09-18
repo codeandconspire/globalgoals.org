@@ -1,14 +1,55 @@
 /* @define Hero */
 
 .Hero-bg--12 {
-
+    opacity: 0;
+    animation: Hero-bg--12appear 1400ms 300ms ease-out forwards;
 }
 
-.Hero-bg--12 svg {
+@keyframes Hero-bg--12appear {
+  to {
+    opacity: 1;
+  }
+}
+
+.Hero-circleBox {
   width: 100%;
   height: 100%;
-
   position: absolute;
   left: 0;
   top: 0;
+  transform: scale(0.8);
+  animation: Hero-circle--appear 1600ms 300ms ease-out forwards;
+}
+
+@keyframes Hero-circle--appear {
+  to {
+    transform: scale(1);
+  }
+}
+
+.Hero-circle {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  opacity: 0.6;
+  transform: translate(-50%, -50%);
+  animation: Hero-circle--spin 8000ms linear infinite;
+}
+
+@keyframes Hero-circle--spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (--Hero-wide) {
+  .Hero-circle {
+    height: auto;
+    width: 80%;
+  }
 }
