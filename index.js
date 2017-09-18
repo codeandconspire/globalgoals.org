@@ -39,6 +39,14 @@ if (process.env.NODE_ENV !== 'development') {
 }
 
 /**
+ * Prevent indexing everything but production
+ */
+
+if (process.env.NODE_ENV !== 'production') {
+  server.use(require('./lib/middleware/robots'));
+}
+
+/**
  * Serve static files
  */
 
