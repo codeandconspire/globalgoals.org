@@ -64,6 +64,7 @@
 .Hero-container {
   width: 100%;
   margin-top: calc(var(--Hero-padding) * -1);
+  will-change: transform;
 }
 
 @media (--Hero-wide) {
@@ -328,6 +329,10 @@
   position: fixed;
   transform-origin: 0 0;
   will-change: transform;
+}
+
+.Hero--takeover .Hero-container {
+  will-change: unset;
 }
 
 .Hero-title.is-clone.in-transition {
