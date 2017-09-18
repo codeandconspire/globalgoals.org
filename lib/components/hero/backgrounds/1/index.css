@@ -1,10 +1,10 @@
-/* @define Hero */
+/* @define Hero1 */
 
-.Hero-bg--1 {
+.Hero1 {
 
 }
 
-.Hero-people {
+.Hero1-people {
   width: 100%;
   max-width: 840px;
   max-height: 18vh;
@@ -18,83 +18,81 @@
 }
 
 @media (--viewport-sm-max) {
-  .Hero-people {
+  .Hero1-people {
     width: 200vw;
     padding: 0;
     left: 110%;
   }
 }
 
-.Hero-bg--1 .Hero-person {
+.Hero1-person {
   fill: #fff;
-  visibility: hidden;
+  opacity: 0;
   transform: translateY(100%);
-  animation: Hero--1-appear 1400ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero1-person--appear 1400ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@keyframes Hero--1-appear {
+@keyframes Hero1-person--appear {
   from {
-    visibility: visible;
+    opacity: 1;
     transform: translateY(100%);
   }
 
   to {
-    visibility: visible;
+    opacity: 1;
     transform: translateY(0%);
   }
 }
 
-.Hero-bg--1 .Hero-person--striped {
-  fill: rgba(0, 0, 0, 0.5);
+.Hero1-person--striped {
+  fill: var(--color-goal-1-shaded);
 }
 
-.Hero-stripes {
-  animation: Hero--1-pan 5s linear;
+.Hero1-stripes {
+  animation: Hero1-stripes--pan 5s linear;
 }
 
-@keyframes Hero--1-pan {
+@keyframes Hero1-stripes--pan {
   to {
     transform: translateX(-25%);
   }
 }
 
-.Hero-bg--1 .Hero-person--double {
-  fill-opacity: 0;
-  visibility: visible;
+.Hero1-person--double {
   transform: translateY(0);
-  animation: Hero--1-fill 600ms linear forwards;
+  animation: Hero1-person--show 600ms linear forwards;
 }
 
-@keyframes Hero--1-fill {
+@keyframes Hero1-person--show {
   to {
-    fill-opacity: 1;
+    opacity: 1;
   }
 }
 
-.Hero-person--double:nth-child(1) {
+.Hero1-person--double:nth-child(1) {
   animation-delay: 4s;
 }
 
-.Hero-person--double:nth-child(2) {
+.Hero1-person--double:nth-child(2) {
   animation-delay: 2.25s;
 }
 
-.Hero-person--double:nth-child(3) {
+.Hero1-person--double:nth-child(3) {
   animation-delay: 3.75s;
 }
 
-.Hero-person--double:nth-child(4) {
+.Hero1-person--double:nth-child(4) {
   animation-delay: 3.5s;
 }
 
-.Hero-person--double:nth-child(5) {
+.Hero1-person--double:nth-child(5) {
   animation-delay: 3s;
 }
 
-.Hero-person--double:nth-child(6) {
+.Hero1-person--double:nth-child(6) {
   animation-delay: 1.5s;
 }
 
-.Hero-bg--1 .Hero-stripe {
+.Hero1-stripe {
   fill: var(--color-goal-1);
 }
