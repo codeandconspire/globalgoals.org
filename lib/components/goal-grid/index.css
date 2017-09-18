@@ -64,8 +64,12 @@
 
 :root[data-focus-source="key"] .GoalGrid-item:focus {
   box-shadow: none;
-  outline: 2px solid #000;
-  outline-offset: -2px;
+}
+
+:root[data-focus-source="key"] .GoalGrid-item:focus .GoalGrid-bg {
+  box-shadow: none;
+  outline: 3px solid #000;
+  outline-offset: -3px;
 }
 
 .GoalGrid-item.is-pressed::before {

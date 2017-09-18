@@ -6,9 +6,10 @@
 
 .Hero-bg--5 .Hero-people {
   width: 100%;
-  max-width: 523px;
-  max-height: 20vh;
+  max-width: 580px;
+  max-height: 22vh;
 
+  padding: 0 30px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -16,14 +17,20 @@
   transform: translateX(-50%);
 }
 
+@media (--viewport-sm-max) {
+  .Hero-bg--5 .Hero-people {
+    width: 130%;
+  }
+}
+
 .Hero-bg--5 .Hero-person {
   fill: #fff;
   visibility: hidden;
   transform: translateY(100%);
-  animation: Hero-person--appear 1400ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero--5-appear 1400ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@keyframes Hero-person--appear {
+@keyframes Hero--5-appear {
   from {
     visibility: visible;
     transform: translateY(100%);
@@ -40,10 +47,10 @@
 }
 
 .Hero-stripes {
-  animation: Hero-stripes--pan 20s linear infinite;
+  animation: Hero--5-pan 20s linear infinite;
 }
 
-@keyframes Hero-stripes--pan {
+@keyframes Hero--5-pan {
   to {
     transform: translateX(-100%);
   }
@@ -56,10 +63,10 @@
 .Hero-grower {
   transform-origin: 100% 100%;
   transform: scale(0.6);
-  animation: Hero-grower--growing 1000ms 1000ms ease-out forwards;
+  animation: Hero--5-growing 1000ms 1000ms ease-out forwards;
 }
 
-@keyframes Hero-grower--growing {
+@keyframes Hero--5-growing {
   to {
     transform: scale(1);
   }
@@ -83,4 +90,13 @@
 
 .Hero-person:nth-child(5) .Hero-grower {
   animation-delay: 4500ms;
+}
+
+@media (--viewport-sm-max) {
+  .Hero-person:not(.Hero-person--striped):nth-child(1),
+  .Hero-person:not(.Hero-person--striped):nth-child(5),
+  .Hero-person--striped:nth-child(4),
+  .Hero-person--striped:nth-child(5) {
+    display: none;
+  }
 }

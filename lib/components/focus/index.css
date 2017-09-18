@@ -7,7 +7,7 @@
 }
 
 :root[data-focus-source="key"] :matches(a, area, button, input, label, select, summary, textarea, [tabindex]):focus {
-  box-shadow: 0 0 0 2px #000;
+  box-shadow: 0 0 0 2px currentColor;
   z-index: 1000;
   border-radius: 2px;
 }
