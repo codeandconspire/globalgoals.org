@@ -35,7 +35,8 @@
   align-items: center;
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 430px;
   padding-top: var(--Hero-padding);
   margin-top: calc(var(--Hero-padding) * -1);
   overflow: hidden;
@@ -64,6 +65,10 @@
 }
 
 @media (--Hero-wide) {
+  .Hero {
+    min-height: 580px;
+  }
+
   .Hero-title {
     height: 100vh;
     max-height: 205px;
