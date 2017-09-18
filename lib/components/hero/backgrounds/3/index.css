@@ -53,6 +53,7 @@
 
 @media (--Hero-wide) {
   .Hero-lifeline {
+    max-height: none;
     width: calc(100% + 4px);
     margin: 0 -2px;
   }
