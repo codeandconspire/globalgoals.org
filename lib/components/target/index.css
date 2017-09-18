@@ -3,7 +3,8 @@
 :root {
   --Target-pictogram-sm: 72px;
   --Target-pictogram-lg: 128px;
-  --Target-id-height: 36px;
+  --Target-id-height: 28px;
+  --Target-id-margin: 4px;
 }
 
 /**
@@ -20,7 +21,7 @@
   float: left;
   width: var(--Target-pictogram-sm);
   height: var(--Target-pictogram-sm);
-  padding-bottom: var(--Target-id-height);
+  padding-bottom: calc(var(--Target-id-height) + var(--Target-id-margin));
   margin-right: 16px;
   box-sizing: content-box;
   user-select: none;
@@ -46,7 +47,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 32px;
+  height: var(--Target-id-height);
 }
 
 .Target-id,
@@ -55,7 +56,7 @@
   text-align: center;
   font-size: 18px;
   font-family: var(--font-family-heading);
-  line-height: 33px;
+  line-height: calc(var(--Target-id-height) + 1px);
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
   -webkit-font-smoothing: antialiased;
@@ -70,36 +71,38 @@
   width: 100%;
   height: auto;
   color: transparent;
-  height: calc(100% - var(--Target-id-height));
+  height: calc(100% - (var(--Target-id-height) + var(--Target-id-margin)));
 }
 
 .Target-fallbackText {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .Target-fallbackText {
   position: absolute;
   top: 50%;
-  left: 0;
-  width: 100%;
+  left: 10%;
+  width: 80%;
   transform: translateY(-50%);
 }
 
 .Target-body {
   overflow: hidden;
   position: relative;
-  top: 3px;
+  top: 1px;
 }
 
 
-@media (--viewport-lg) {
+@media (--viewport-sm) {
   .Target-fallbackText {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 30px;
+    line-height: 30px;
   }
+}
 
+@media (--viewport-lg) {
   .Target-body {
-    top: 1px;
+    top: -1px;
   }
 }
