@@ -54,6 +54,7 @@
   position: absolute;
   right: calc(100% + 1px);
   bottom: 0;
+  will-change: transform;
 
   animation-name: Hero-bus--drive;
   animation-duration: 8000ms;
