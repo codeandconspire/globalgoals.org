@@ -33,13 +33,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 1;
   height: 100vh;
   min-height: 430px;
   padding-top: var(--Hero-padding);
   margin-top: calc(var(--Hero-padding) * -1);
+
+  z-index: 1;
   overflow: hidden;
+  position: relative;
+
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
