@@ -18,6 +18,12 @@
   transform: translateX(-50%);
 }
 
+@media (--viewport-sm-max) {
+  .Hero-scale {
+    width: 130px;
+  }
+}
+
 .Hero-scaleArm {
   transform-origin: 50% 0%;
   transition: transform 1000ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -58,7 +64,7 @@
   background: var(--color-goal-10);
   border-radius: 100%;
 
-  animation: Hero-bend--disappear 1600ms 600ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero-bend--disappear 1500ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes Hero-bend--disappear {
@@ -89,9 +95,9 @@
 }
 
 .Hero-board--light {
-  background-color: color(var(--color-goal-10) lightness(+10));
+  background-color: color(var(--color-goal-10-shaded) lightness(+25));
 }
 
 .Hero-board--dark {
-  background-color: color(var(--color-goal-10) blackness(+10));
+  background-color: color(var(--color-goal-10-shaded) lightness(+15));
 }
