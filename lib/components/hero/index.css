@@ -38,6 +38,7 @@
   min-height: 100vh;
   padding-top: var(--Hero-padding);
   margin-top: calc(var(--Hero-padding) * -1);
+  overflow: hidden;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
