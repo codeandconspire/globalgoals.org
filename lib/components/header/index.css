@@ -159,23 +159,23 @@
 }
 
 .Header-button:hover { background: var(--color-hover-dark); }
-.Header--1 .Header-button:hover { background: color(var(--color-goal-1-shaded) alpha(10%)); }
-.Header--2 .Header-button:hover { background: color(var(--color-goal-2-shaded) alpha(10%)); }
-.Header--3 .Header-button:hover { background: color(var(--color-goal-3-shaded) alpha(10%)); }
-.Header--4 .Header-button:hover { background: color(var(--color-goal-4-shaded) alpha(10%)); }
-.Header--5 .Header-button:hover { background: color(var(--color-goal-5-shaded) alpha(10%)); }
-.Header--6 .Header-button:hover { background: color(var(--color-goal-6-shaded) alpha(10%)); }
-.Header--7 .Header-button:hover { background: color(var(--color-goal-7-shaded) alpha(10%)); }
-.Header--8 .Header-button:hover { background: color(var(--color-goal-8-shaded) alpha(10%)); }
-.Header--9 .Header-button:hover { background: color(var(--color-goal-9-shaded) alpha(10%)); }
-.Header--10 .Header-button:hover { background: color(var(--color-goal-10-shaded) alpha(10%)); }
-.Header--11 .Header-button:hover { background: color(var(--color-goal-11-shaded) alpha(10%)); }
-.Header--12 .Header-button:hover { background: color(var(--color-goal-12-shaded) alpha(10%)); }
-.Header--13 .Header-button:hover { background: color(var(--color-goal-13-shaded) alpha(10%)); }
-.Header--14 .Header-button:hover { background: color(var(--color-goal-14-shaded) alpha(10%)); }
-.Header--15 .Header-button:hover { background: color(var(--color-goal-15-shaded) alpha(10%)); }
-.Header--16 .Header-button:hover { background: color(var(--color-goal-16-shaded) alpha(10%)); }
-.Header--17 .Header-button:hover { background: color(var(--color-goal-17-shaded) alpha(10%)); }
+.Header--1:not(.is-following) .Header-button:hover { background: color(var(--color-goal-1-shaded) alpha(10%)); }
+.Header--2:not(.is-following) .Header-button:hover { background: color(var(--color-goal-2-shaded) alpha(10%)); }
+.Header--3:not(.is-following) .Header-button:hover { background: color(var(--color-goal-3-shaded) alpha(10%)); }
+.Header--4:not(.is-following) .Header-button:hover { background: color(var(--color-goal-4-shaded) alpha(10%)); }
+.Header--5:not(.is-following) .Header-button:hover { background: color(var(--color-goal-5-shaded) alpha(10%)); }
+.Header--6:not(.is-following) .Header-button:hover { background: color(var(--color-goal-6-shaded) alpha(10%)); }
+.Header--7:not(.is-following) .Header-button:hover { background: color(var(--color-goal-7-shaded) alpha(10%)); }
+.Header--8:not(.is-following) .Header-button:hover { background: color(var(--color-goal-8-shaded) alpha(10%)); }
+.Header--9:not(.is-following) .Header-button:hover { background: color(var(--color-goal-9-shaded) alpha(10%)); }
+.Header--10:not(.is-following) .Header-button:hover { background: color(var(--color-goal-10-shaded) alpha(10%)); }
+.Header--11:not(.is-following) .Header-button:hover { background: color(var(--color-goal-11-shaded) alpha(10%)); }
+.Header--12:not(.is-following) .Header-button:hover { background: color(var(--color-goal-12-shaded) alpha(10%)); }
+.Header--13:not(.is-following) .Header-button:hover { background: color(var(--color-goal-13-shaded) alpha(10%)); }
+.Header--14:not(.is-following) .Header-button:hover { background: color(var(--color-goal-14-shaded) alpha(10%)); }
+.Header--15:not(.is-following) .Header-button:hover { background: color(var(--color-goal-15-shaded) alpha(10%)); }
+.Header--16:not(.is-following) .Header-button:hover { background: color(var(--color-goal-16-shaded) alpha(10%)); }
+.Header--17:not(.is-following) .Header-button:hover { background: color(var(--color-goal-17-shaded) alpha(10%)); }
 
 .Header:matches(.is-open, :target) .Header-button:hover {
   background: var(--color-hover-light);
@@ -326,23 +326,23 @@
 .Header--17 .Header-button--back { background: color(var(--color-goal-17-shaded) alpha(35%)); }
 
 .Header-button--back:hover { background: rgba(0, 0, 0, 0.19); }
-.Header--1 .Header-button--back:hover { background: color(var(--color-goal-1-shaded) alpha(50%)); }
-.Header--2 .Header-button--back:hover { background: color(var(--color-goal-2-shaded) alpha(50%)); }
-.Header--3 .Header-button--back:hover { background: color(var(--color-goal-3-shaded) alpha(50%)); }
-.Header--4 .Header-button--back:hover { background: color(var(--color-goal-4-shaded) alpha(50%)); }
-.Header--5 .Header-button--back:hover { background: color(var(--color-goal-5-shaded) alpha(50%)); }
-.Header--6 .Header-button--back:hover { background: color(var(--color-goal-6-shaded) alpha(50%)); }
-.Header--7 .Header-button--back:hover { background: color(var(--color-goal-7-shaded) alpha(50%)); }
-.Header--8 .Header-button--back:hover { background: color(var(--color-goal-8-shaded) alpha(50%)); }
-.Header--9 .Header-button--back:hover { background: color(var(--color-goal-9-shaded) alpha(50%)); }
-.Header--10 .Header-button--back:hover { background: color(var(--color-goal-10-shaded) alpha(50%)); }
-.Header--11 .Header-button--back:hover { background: color(var(--color-goal-11-shaded) alpha(50%)); }
-.Header--12 .Header-button--back:hover { background: color(var(--color-goal-12-shaded) alpha(50%)); }
-.Header--13 .Header-button--back:hover { background: color(var(--color-goal-13-shaded) alpha(50%)); }
-.Header--14 .Header-button--back:hover { background: color(var(--color-goal-14-shaded) alpha(50%)); }
-.Header--15 .Header-button--back:hover { background: color(var(--color-goal-15-shaded) alpha(50%)); }
-.Header--16 .Header-button--back:hover { background: color(var(--color-goal-16-shaded) alpha(50%)); }
-.Header--17 .Header-button--back:hover { background: color(var(--color-goal-17-shaded) alpha(50%)); }
+.Header--1:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-1-shaded) alpha(50%)); }
+.Header--2:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-2-shaded) alpha(50%)); }
+.Header--3:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-3-shaded) alpha(50%)); }
+.Header--4:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-4-shaded) alpha(50%)); }
+.Header--5:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-5-shaded) alpha(50%)); }
+.Header--6:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-6-shaded) alpha(50%)); }
+.Header--7:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-7-shaded) alpha(50%)); }
+.Header--8:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-8-shaded) alpha(50%)); }
+.Header--9:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-9-shaded) alpha(50%)); }
+.Header--10:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-10-shaded) alpha(50%)); }
+.Header--11:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-11-shaded) alpha(50%)); }
+.Header--12:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-12-shaded) alpha(50%)); }
+.Header--13:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-13-shaded) alpha(50%)); }
+.Header--14:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-14-shaded) alpha(50%)); }
+.Header--15:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-15-shaded) alpha(50%)); }
+.Header--16:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-16-shaded) alpha(50%)); }
+.Header--17:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-17-shaded) alpha(50%)); }
 
 .Header:matches(.is-open, :target) .Header-button--back,
 .Header.is-inHistory:not(.is-open):not(:target) .Header-logo {
@@ -381,7 +381,7 @@
 }
 
 .Header-button--back:hover .Header-arrow {
-  left: 11px;
+  left: 17px;
 }
 
 .Header-button--link:hover .Header-arrow {
@@ -590,12 +590,20 @@
   display: block;
 }
 
+.Header.is-fromGoalGrid:matches(.is-open, :target) .Header-button--back {
+  display: none;
+}
+
 .Header.is-fromGoalGrid:not(.is-following) .Header-logo {
   display: none;
 }
 
 .Header.is-fromGoalGrid:not(.is-following) .Header-logo {
   display: none;
+}
+
+.Header.is-fromGoalGrid:not(.is-following):matches(.is-open, :target) .Header-logo {
+  display: inline-block;
 }
 
 /* -------------------------------------------------------------------------- */
