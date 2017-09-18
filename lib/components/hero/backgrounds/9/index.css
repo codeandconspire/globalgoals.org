@@ -17,7 +17,7 @@
   min-width: 75px;
   position: absolute;
   left: 11%;
-  bottom: 30%;
+  bottom: 30vh;
 
   animation: Hero-industrySun--spin 8000ms linear infinite;
 }
@@ -91,43 +91,52 @@
 }
 
 .Hero-industryCloud:nth-child(1) {
-  bottom: 10%;
+  visibility: hidden;
+  bottom: 10vh;
   left: 2%;
 }
 
 .Hero-industryCloud:nth-child(2) {
-  bottom: 28%;
+  bottom: 28vh;
   left: 8%;
 }
 
 .Hero-industryCloud:nth-child(3) {
-  bottom: 36%;
+  bottom: 36vh;
   left: 14%;
 }
 
 .Hero-industryCloud:nth-child(4) {
-  top: 43%;
+  top: 43vh;
   left: 25%;
 }
 
 .Hero-industryCloud:nth-child(5) {
-  top: 20%;
+  top: 20vh;
   right: 25%;
 }
 
 .Hero-industryCloud:nth-child(6) {
-  top: 50%;
+  top: 50vh;
   right: 14%;
 }
 
 .Hero-industryCloud:nth-child(7) {
-  top: 36%;
+  visibility: hidden;
+  top: 36vh;
   right: 6%;
 }
 
 .Hero-industryCloud:nth-child(8) {
-  top: 48%;
+  top: 48vh;
   right: 2%;
+}
+
+@media (--Hero-wide) {
+  .Hero-industryCloud:nth-child(1),
+  .Hero-industryCloud:nth-child(7) {
+    visibility: visible;
+  }
 }
 
 .Hero-industryTurbine {

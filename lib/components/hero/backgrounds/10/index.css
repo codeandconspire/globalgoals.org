@@ -79,7 +79,7 @@
 
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 50vh;
 
   transform: translateX(-50%);
   transform-origin: 50% 0;

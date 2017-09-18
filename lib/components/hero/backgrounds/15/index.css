@@ -117,19 +117,38 @@
 }
 
 .Hero-savannahCloud--sm {
-  width: 2%;
+  width: 6%;
 }
 
 .Hero-savannahCloud--md {
-  width: 5%;
+  width: 12%;
 }
 
 .Hero-savannahCloud--lg {
-  width: 8%;
+  visibility: hidden;
 }
 
 .Hero-savannahCloud--xl {
-  width: 10%;
+  width: 35%;
+}
+
+@media (--Hero-wide) {
+  .Hero-savannahCloud--sm {
+    width: 2%;
+  }
+
+  .Hero-savannahCloud--md {
+    width: 5%;
+  }
+
+  .Hero-savannahCloud--lg {
+    visibility: visible;
+    width: 8%;
+  }
+
+  .Hero-savannahCloud--xl {
+    width: 10%;
+  }
 }
 
 .Hero-savannahCloud--dark {
@@ -183,7 +202,14 @@
 
 .Hero-bee {
   width: 3%;
+  visibility: hidden;
   position: absolute;
+}
+
+@media (--Hero-wide) {
+  .Hero-bee {
+    visibility: visible;
+  }
 }
 
 .Hero-bee:nth-child(1) {
@@ -207,32 +233,54 @@
 }
 
 .Hero-bird:nth-child(1) {
-  width: 4%;
-  top: 15%;
+  width: 8%;
+  top: 5%;
   right: 36%;
   color: rgba(0, 0, 0, 0.4);
   transform: rotate(-8deg);
 }
 
 .Hero-bird:nth-child(2) {
-  width: 3%;
-  top: 19%;
+  width: 6%;
+  top: 9%;
   right: 17%;
   color: rgba(0, 0, 0, 0.4);
   transform: rotate(12deg);
 }
 
 .Hero-bird:nth-child(3) {
-  width: 4%;
-  top: 23%;
+  width: 8%;
+  top: 13%;
   right: 27%;
   transform: rotate(-4deg);
 }
 
 .Hero-bird:nth-child(4) {
-  width: 6%;
-  top: 32%;
+  width: 12%;
+  top: 22%;
   right: 21%;
+}
+
+@media (--Hero-wide) {
+  .Hero-bird:nth-child(1) {
+    width: 4%;
+    top: 15%;
+  }
+
+  .Hero-bird:nth-child(2) {
+    width: 3%;
+    top: 19%;
+  }
+
+  .Hero-bird:nth-child(3) {
+    width: 4%;
+    top: 23%;
+  }
+
+  .Hero-bird:nth-child(4) {
+    width: 6%;
+    top: 32%;
+  }
 }
 
 /**

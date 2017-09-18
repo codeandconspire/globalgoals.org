@@ -43,12 +43,19 @@
 }
 
 .Hero-lifeline {
-  width: calc(100% + 4px);
-  margin: 0 -2px;
+  max-height: 20%;
+  width: 200%;
 
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 8vh;
+}
+
+@media (--Hero-wide) {
+  .Hero-lifeline {
+    width: calc(100% + 4px);
+    margin: 0 -2px;
+  }
 }
 
 :root.has-js .Hero-lifepath {

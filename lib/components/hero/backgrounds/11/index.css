@@ -5,8 +5,7 @@
 }
 
 .Hero-city {
-  max-width: 100%;
-  max-height: 15vh;
+  height: 20%;
   padding: 0 5vw;
 
   position: absolute;
@@ -14,6 +13,13 @@
   left: 50%;
 
   transform: translateX(-50%);
+}
+
+@media (--Hero-wide) {
+  .Hero-city {
+    width: auto;
+    max-height: 23vh;
+  }
 }
 
 /**
@@ -43,8 +49,7 @@
  */
 
 .Hero-bus {
-  max-width: 10vw;
-  max-height: 3.5vh;
+  height: 4%;
 
   position: absolute;
   right: calc(100% + 1px);
@@ -55,6 +60,13 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 1000ms;
+}
+
+@media (--Hero-wide) {
+  .Hero-bus {
+    max-width: 10vw;
+    max-height: 3.5vh;
+  }
 }
 
 :root.has-js .Hero-bus {
@@ -141,9 +153,16 @@
   max-width: 10vw;
   position: absolute;
   left: 6vw;
-  bottom: 40%;
+  top: 48vh;
 
+  visibility: hidden;
   animation: Hero-citySun--spin 8000ms linear infinite;
+}
+
+@media (--Hero-wide) {
+  .Hero-citySun {
+    visibility: visible;
+  }
 }
 
 @keyframes Hero-citySun--spin {
@@ -178,15 +197,29 @@
 }
 
 .Hero-cityCloud--small {
-  width: 3%;
+  width: 9%;
 }
 
 .Hero-cityCloud--medium {
-  width: 5%;
+  width: 15%;
 }
 
 .Hero-cityCloud--large {
-  width: 8%;
+  width: 24%;
+}
+
+@media (--Hero-wide) {
+  .Hero-cityCloud--small {
+    width: 3%;
+  }
+
+  .Hero-cityCloud--medium {
+    width: 5%;
+  }
+
+  .Hero-cityCloud--large {
+    width: 8%;
+  }
 }
 
 .Hero-cityCloud--dark {
@@ -195,26 +228,26 @@
 }
 
 .Hero-cityCloud:nth-child(1) {
-  top: 60%;
+  top: 60vh;
   left: -2.5%;
 }
 
 .Hero-cityCloud:nth-child(2) {
-  top: 49%;
+  top: 49vh;
   left: 5.55%;
 }
 
 .Hero-cityCloud:nth-child(3) {
-  top: 28%;
+  top: 28vh;
   right: 15%;
 }
 
 .Hero-cityCloud:nth-child(4) {
-  top: 33%;
+  top: 33vh;
   right: 14%;
 }
 
 .Hero-cityCloud:nth-child(5) {
-  top: 50%;
+  top: 50vh;
   right: -3%;
 }
