@@ -1,102 +1,94 @@
-/* @define Hero */
+/* @define Hero5 */
 
-.Hero-bg--5 {
+.Hero5 {
 
 }
 
-.Hero-bg--5 .Hero-people {
+.Hero5-people {
   width: 100%;
-  max-width: 580px;
+  height: 100%;
+  max-width: 610px;
   max-height: 22vh;
-
   padding: 0 30px;
   position: absolute;
   bottom: 0;
   left: 50%;
-
   transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
-@media (--viewport-sm-max) {
-  .Hero-bg--5 .Hero-people {
-    width: 130%;
-  }
-}
-
-.Hero-bg--5 .Hero-person {
+.Hero5-person {
+  height: 100%;
   fill: #fff;
-  visibility: hidden;
+  opacity: 0;
   transform: translateY(100%);
-  animation: Hero--5-appear 1400ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero5-person--appear 450ms 300ms var(--ease-out) forwards;
 }
 
-@keyframes Hero--5-appear {
+.Hero5-person:nth-child(1) { animation-delay: 400ms; }
+.Hero5-person:nth-child(2) { animation-delay: 280ms; }
+.Hero5-person:nth-child(3) { animation-delay: 380ms; }
+.Hero5-person:nth-child(4) { animation-delay: 300ms; }
+.Hero5-person:nth-child(5) { animation-delay: 420ms; }
+
+@keyframes Hero5-person--appear {
   from {
-    visibility: visible;
+    opacity: 1;
     transform: translateY(100%);
   }
 
   to {
-    visibility: visible;
+    opacity: 1;
     transform: translateY(0%);
   }
 }
 
-.Hero-bg--5 .Hero-person--striped {
-  fill: rgba(0, 0, 0, 0.5);
+.Hero5-person:nth-child(1),
+.Hero5-person:nth-child(5) {
+  display: none;
+  height: 55%;
 }
 
-.Hero-stripes {
-  animation: Hero--5-pan 20s linear infinite;
+.Hero5-person:nth-child(2),
+.Hero5-person:nth-child(4) {
+  height: 74%;
 }
 
-@keyframes Hero--5-pan {
-  to {
-    transform: translateX(-100%);
+@media (--viewport-sm) {
+  .Hero5-person:nth-child(1),
+  .Hero5-person:nth-child(5) {
+    display: block;
   }
 }
 
-.Hero-bg--5 .Hero-stripe {
-  fill: var(--color-goal-5);
+.Hero5-figure {
+  fill: var(--color-goal-5-shaded);
 }
 
-.Hero-grower {
-  transform-origin: 100% 100%;
+.Hero5-grower {
+  fill: #fff;
   transform: scale(0.6);
-  animation: Hero--5-growing 1000ms 1000ms ease-out forwards;
+  animation:
+    Hero5-grower--growing 700ms 1000ms var(--ease) forwards,
+    Hero5-grower--renderFix 10ms 100ms var(--ease) forwards;
 }
 
-@keyframes Hero--5-growing {
+@keyframes Hero5-grower--renderFix {
+  to {
+    transform-origin: bottom center;
+  }
+}
+
+@keyframes Hero5-grower--growing {
   to {
     transform: scale(1);
   }
 }
 
-.Hero-person:nth-child(1) .Hero-grower {
-  animation-delay: 1500ms;
-}
-
-.Hero-person:nth-child(2) .Hero-grower {
-  animation-delay: 4000ms;
-}
-
-.Hero-person:nth-child(3) .Hero-grower {
-  animation-delay: 3500ms;
-}
-
-.Hero-person:nth-child(4) .Hero-grower {
-  animation-delay: 2500ms;
-}
-
-.Hero-person:nth-child(5) .Hero-grower {
-  animation-delay: 4500ms;
-}
-
-@media (--viewport-sm-max) {
-  .Hero-person:not(.Hero-person--striped):nth-child(1),
-  .Hero-person:not(.Hero-person--striped):nth-child(5),
-  .Hero-person--striped:nth-child(4),
-  .Hero-person--striped:nth-child(5) {
-    display: none;
-  }
-}
+.Hero5-person:nth-child(1) .Hero5-grower { animation-delay: 1200ms, 100ms; }
+.Hero5-person:nth-child(2) .Hero5-grower { animation-delay: 2700ms, 100ms; }
+.Hero5-person:nth-child(3) .Hero5-grower { animation-delay: 2400ms, 100ms; }
+.Hero5-person:nth-child(4) .Hero5-grower { animation-delay: 1800ms, 100ms; }
+.Hero5-person:nth-child(5) .Hero5-grower { animation-delay: 3000ms, 100ms; }

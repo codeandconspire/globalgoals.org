@@ -338,7 +338,7 @@
 }
 
 .Hero-title.is-clone.in-transition {
-  transition: transform 350ms 150ms var(--ease-in-out);
+  transition: transform 350ms 150ms var(--ease);
 }
 
 .Hero--takeover .Hero-intro {
