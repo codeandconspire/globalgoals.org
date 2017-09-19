@@ -1,10 +1,10 @@
-/* @define Hero */
+/* @define Hero8 */
 
-.Hero-bg--8 {
+.Hero8 {
 
 }
 
-.Hero-bars {
+.Hero8-bars {
   width: 300px;
   position: absolute;
   left: 48px;
@@ -12,18 +12,23 @@
 }
 
 @media (max-width: 1150px) {
-  .Hero-bars {
+  .Hero8-bars {
     display: none;
   }
 }
 
-.Hero-bar {
+.Hero8-bar {
   visibility: hidden;
   transform: translateY(100%);
-  animation: Hero-bar--appear 325ms 200ms ease-out forwards;
+  animation: Hero8-bar--appear 325ms 200ms ease-out forwards;
+  fill: #fff;
 }
 
-@keyframes Hero-bar--appear {
+.Hero8-bar--dark {
+  fill: var(--color-goal-8-shaded);
+}
+
+@keyframes Hero8-bar--appear {
   from {
     visibility: visible;
     transform: translateY(100%);
@@ -34,20 +39,20 @@
   }
 }
 
-.Hero-bar--light:nth-child(1) { animation-delay: 200ms; }
-.Hero-bar--light:nth-child(2) { animation-delay: 275ms; }
-.Hero-bar--light:nth-child(3) { animation-delay: 350ms; }
-.Hero-bar--light:nth-child(4) { animation-delay: 425ms; }
-.Hero-bar--light:nth-child(5) { animation-delay: 500ms; }
-.Hero-bar--light:nth-child(6) { animation-delay: 575ms; }
+.Hero8-bar--light:nth-child(1) { animation-delay: 200ms; }
+.Hero8-bar--light:nth-child(2) { animation-delay: 275ms; }
+.Hero8-bar--light:nth-child(3) { animation-delay: 350ms; }
+.Hero8-bar--light:nth-child(4) { animation-delay: 425ms; }
+.Hero8-bar--light:nth-child(5) { animation-delay: 500ms; }
+.Hero8-bar--light:nth-child(6) { animation-delay: 575ms; }
 
-.Hero-bar--dark:nth-child(1) { animation-delay: 500ms; }
-.Hero-bar--dark:nth-child(2) { animation-delay: 575ms; }
-.Hero-bar--dark:nth-child(3) { animation-delay: 650ms; }
-.Hero-bar--dark:nth-child(4) { animation-delay: 725ms; }
-.Hero-bar--dark:nth-child(5) { animation-delay: 800ms; }
+.Hero8-bar--dark:nth-child(1) { animation-delay: 500ms; }
+.Hero8-bar--dark:nth-child(2) { animation-delay: 575ms; }
+.Hero8-bar--dark:nth-child(3) { animation-delay: 650ms; }
+.Hero8-bar--dark:nth-child(4) { animation-delay: 725ms; }
+.Hero8-bar--dark:nth-child(5) { animation-delay: 800ms; }
 
-.Hero-curves {
+.Hero8-curves {
   width: 100%;
   max-width: 627px;
 
@@ -56,19 +61,24 @@
   bottom: 0;
 }
 
-.Hero-curve {
+.Hero8-curve {
+  fill: #fff;
   transform: scaleY(0);
   transform-origin: 0 100%;
-  animation: Hero-curve--appear 450ms 200ms ease-out forwards;
+  animation: Hero8-curve--appear 450ms 200ms ease-out forwards;
 }
 
-@keyframes Hero-curve--appear {
+.Hero8-curve--dark {
+  fill: var(--color-goal-8-shaded)
+}
+
+@keyframes Hero8-curve--appear {
   to {
     transform: scaleY(1);
   }
 }
 
-.Hero-curve:nth-child(1) { animation-delay: 300ms; }
-.Hero-curve:nth-child(2) { animation-delay: 500ms; }
-.Hero-curve:nth-child(3) { animation-delay: 1200ms; }
-.Hero-curve:nth-child(4) { animation-delay: 650ms; animation-duration: 600ms; }
+.Hero8-curve:nth-child(1) { animation-delay: 300ms; }
+.Hero8-curve:nth-child(2) { animation-delay: 500ms; }
+.Hero8-curve:nth-child(3) { animation-delay: 1200ms; }
+.Hero8-curve:nth-child(4) { animation-delay: 650ms; animation-duration: 600ms; }

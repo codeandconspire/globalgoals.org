@@ -1,10 +1,10 @@
-/* @define Hero */
+/* @define Hero7 */
 
-.Hero-bg--7 {
+.Hero7 {
 
 }
 
-.Hero-dimmer {
+.Hero7-dimmer {
   width: 100%;
   height: 100%;
 
@@ -14,16 +14,16 @@
 
   background-color: var(--color-goal-7-shaded);
   opacity: 0.6;
-  animation: Hero-dimmer--up 800ms 1500ms linear forwards;
+  animation: Hero7-dimmer--up 800ms 1500ms linear forwards;
 }
 
-@keyframes Hero-dimmer--up {
+@keyframes Hero7-dimmer--up {
   to {
     opacity: 0;
   }
 }
 
-.Hero-energySun {
+.Hero7-energySun {
   width: 70px;
   position: absolute;
   bottom: 15vh;
@@ -32,23 +32,23 @@
   visibility: hidden;
   transform: translateY(100vh);
   animation:
-    Hero-energySun--appear 600ms 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards,
-    Hero-energySun--spin 8000ms 1750ms linear infinite;
+    Hero7-energySun--appear 600ms 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards,
+    Hero7-energySun--spin 8000ms 1750ms linear infinite;
 }
 
 @media (--Hero-wide) {
-  .Hero-energySun {
+  .Hero7-energySun {
     visibility: visible;
   }
 }
 
-@keyframes Hero-energySun--appear {
+@keyframes Hero7-energySun--appear {
   to {
     transform: translateY(0vh);
   }
 }
 
-@keyframes Hero-energySun--spin {
+@keyframes Hero7-energySun--spin {
   from {
     transform: rotate(0deg);
   }
@@ -58,7 +58,7 @@
   }
 }
 
-.Hero-building {
+.Hero7-building {
   height: 150px;
   max-height: 20vh;
   position: absolute;
@@ -67,63 +67,63 @@
 
   visibility: hidden;
   transform: translateY(100%);
-  animation: Hero-energyTurbine--appear 600ms 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero7-energyTurbine--appear 600ms 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @media (--Hero-wide) {
-  .Hero-building {
+  .Hero7-building {
     visibility: visible;
   }
 }
 
-@keyframes Hero-building--appear {
+@keyframes Hero7-building--appear {
   to {
     transform: translateY(0%);
   }
 }
 
-.Hero-energyTurbine {
+.Hero7-energyTurbine {
   position: absolute;
   bottom: 0;
 
   transform: translateY(100%);
-  animation: Hero-energyTurbine--appear 600ms 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero7-energyTurbine--appear 600ms 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@keyframes Hero-energyTurbine--appear {
+@keyframes Hero7-energyTurbine--appear {
   to {
     transform: translateY(0%);
   }
 }
 
-.Hero-energyTurbine:nth-child(1) {
+.Hero7-energyTurbine:nth-child(1) {
   height: 180px;
   right: -20%;
 }
 
-.Hero-energyTurbine:nth-child(2) {
+.Hero7-energyTurbine:nth-child(2) {
   height: 100px;
   right: 5%;
 }
 
 @media (--Hero-wide) {
-  .Hero-energyTurbine:nth-child(1) {
+  .Hero7-energyTurbine:nth-child(1) {
     height: 250px;
     right: 0%;
   }
 
-  .Hero-energyTurbine:nth-child(2) {
+  .Hero7-energyTurbine:nth-child(2) {
     height: 130px;
     right: 12%;
   }
 }
 
-.Hero-energyBlades {
+.Hero7-energyBlades {
   transform-origin: 49.9% 65.3%;
-  animation: Hero-energyBlades--spin 3000ms 1750ms linear infinite;
+  animation: Hero7-energyBlades--spin 3000ms 1750ms linear infinite;
 }
 
-@keyframes Hero-energyBlades--spin {
+@keyframes Hero7-energyBlades--spin {
   from {
     transform: rotate(0deg);
   }
@@ -133,70 +133,70 @@
   }
 }
 
-.Hero-lightbulb {
+.Hero7-lightbulb {
   height: 50%;
   position: absolute;
   top: 0;
 
   transform: translateY(-100%);
-  animation: Hero-lightBulb--appear 450ms 1100ms forwards;
+  animation: Hero7-lightBulb--appear 450ms 1100ms forwards;
 }
 
-@keyframes Hero-lightBulb--appear {
+@keyframes Hero7-lightBulb--appear {
   to {
     transform: translateY(0%);
   }
 }
 
-.Hero-lightbulb:nth-child(1) {
+.Hero7-lightbulb:nth-child(1) {
   display: none;
 }
 
-.Hero-lightbulb:nth-child(2) {
+.Hero7-lightbulb:nth-child(2) {
   right: -10%;
   top: -30vh;
 }
 
-.Hero-lightbulb:nth-child(3) {
+.Hero7-lightbulb:nth-child(3) {
   right: -25%;
   top: -20vh;
 }
 
 @media (--Hero-wide) {
-  .Hero-lightbulb:nth-child(1) {
+  .Hero7-lightbulb:nth-child(1) {
     display: block;
     left: 0%;
     top: -20vh;
   }
 
-  .Hero-lightbulb:nth-child(2) {
+  .Hero7-lightbulb:nth-child(2) {
     right: 10%;
     top: -15vh;
   }
 
-  .Hero-lightbulb:nth-child(3) {
+  .Hero7-lightbulb:nth-child(3) {
     right: 0;
   }
 }
 
-.Hero-lightRay {
+.Hero7-lightRay {
   stroke-dasharray: 10;
   stroke-dashoffset: 10;
-  animation: Hero-lightRay--appear 300ms forwards;
+  animation: Hero7-lightRay--appear 300ms forwards;
 }
 
-@keyframes Hero-lightRay--appear {
+@keyframes Hero7-lightRay--appear {
   to {
     stroke-dashoffset: 0;
   }
 }
 
-.Hero-lightRay:nth-child(1) { animation-delay: 1500ms; }
-.Hero-lightRay:nth-child(2) { animation-delay: 1650ms; }
-.Hero-lightRay:nth-child(3) { animation-delay: 1800ms; }
-.Hero-lightRay:nth-child(4) { animation-delay: 1950ms; }
-.Hero-lightRay:nth-child(5) { animation-delay: 2100ms; }
-.Hero-lightRay:nth-child(6) { animation-delay: 2250ms; }
-.Hero-lightRay:nth-child(7) { animation-delay: 2400ms; }
-.Hero-lightRay:nth-child(8) { animation-delay: 2550ms; }
-.Hero-lightRay:nth-child(9) { animation-delay: 2700ms; }
+.Hero7-lightRay:nth-child(1) { animation-delay: 1500ms; }
+.Hero7-lightRay:nth-child(2) { animation-delay: 1650ms; }
+.Hero7-lightRay:nth-child(3) { animation-delay: 1800ms; }
+.Hero7-lightRay:nth-child(4) { animation-delay: 1950ms; }
+.Hero7-lightRay:nth-child(5) { animation-delay: 2100ms; }
+.Hero7-lightRay:nth-child(6) { animation-delay: 2250ms; }
+.Hero7-lightRay:nth-child(7) { animation-delay: 2400ms; }
+.Hero7-lightRay:nth-child(8) { animation-delay: 2550ms; }
+.Hero7-lightRay:nth-child(9) { animation-delay: 2700ms; }

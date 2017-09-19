@@ -1,15 +1,15 @@
-/* @define Hero */
+/* @define Hero10 */
 
-.Hero-bg--10 {
+.Hero10 {
   transform: translateY(100%);
   transition: transform 1200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.Hero-bg--10.is-visible {
+.Hero10.is-visible {
   transform: translateY(0);
 }
 
-.Hero-scale {
+.Hero10-scale {
   width: 184px;
 
   position: absolute;
@@ -19,40 +19,40 @@
 }
 
 @media (--viewport-sm-max) {
-  .Hero-scale {
+  .Hero10-scale {
     width: 130px;
   }
 }
 
-.Hero-scaleArm {
+.Hero10-scaleArm {
   transform-origin: 50% 0%;
   transition: transform 1000ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-.Hero-scaleArm.is-rightTilted {
+.Hero10-scaleArm.is-rightTilted {
   transform: rotate(8deg);
 }
 
-.Hero-scaleArm.is-leftTilted {
+.Hero10-scaleArm.is-leftTilted {
   transform: rotate(-8deg);
 }
 
-.Hero-scaleWeight {
+.Hero10-scaleWeight {
   transform-origin: 50% 0%;
   transition: transform 1000ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-.Hero-scaleWeight--right.is-rightTilted,
-.Hero-scaleWeight--left.is-rightTilted {
+.Hero10-scaleWeight--right.is-rightTilted,
+.Hero10-scaleWeight--left.is-rightTilted {
   transform: rotate(-8deg);
 }
 
-.Hero-scaleWeight--left.is-leftTilted,
-.Hero-scaleWeight--right.is-leftTilted {
+.Hero10-scaleWeight--left.is-leftTilted,
+.Hero10-scaleWeight--right.is-leftTilted {
   transform: rotate(8deg);
 }
 
-.Hero-bend {
+.Hero10-bend {
   width: 200%;
   height: 100%;
 
@@ -64,16 +64,16 @@
   background: var(--color-goal-10);
   border-radius: 100%;
 
-  animation: Hero-bend--disappear 1500ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero10-bend--disappear 1500ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@keyframes Hero-bend--disappear {
+@keyframes Hero10-bend--disappear {
   to {
     transform: translateX(-50%) scaleY(0);
   }
 }
 
-.Hero-board {
+.Hero10-board {
   width: 200%;
   height: 100%;
 
@@ -86,18 +86,18 @@
   transition: transform 1000ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-.Hero-board.is-rightTilted {
+.Hero10-board.is-rightTilted {
   transform: translateX(-50%) rotate(8deg);
 }
 
-.Hero-board.is-leftTilted {
+.Hero10-board.is-leftTilted {
   transform: translateX(-50%) rotate(-8deg);
 }
 
-.Hero-board--light {
+.Hero10-board--light {
   background-color: color(var(--color-goal-10-shaded) lightness(+25));
 }
 
-.Hero-board--dark {
+.Hero10-board--dark {
   background-color: color(var(--color-goal-10-shaded) lightness(+15));
 }

@@ -1,53 +1,54 @@
-/* @define Hero */
+/* @define Hero15 */
 
-.Hero-bg--15 {
+.Hero15 {
+
 }
 
-.Hero-savannah {
+.Hero15-savannah {
   padding: 0 6vw;
   position: absolute;
   bottom: 0;
 }
 
-.Hero-savannah--left {
+.Hero15-savannah--left {
   width: 35%;
   max-width: calc(600px * 0.35);
   left: 0;
 }
 
-.Hero-savannah--right {
+.Hero15-savannah--right {
   width: 65%;
   max-width: calc(600px * 0.65);
   right: 0;
 }
 
 @media (--viewport-md) {
-  .Hero-savannah {
+  .Hero15-savannah {
     margin: 0 48px;
     padding: 0;
   }
 }
 
 @media (--viewport-lg) {
-  .Hero-savannah {
+  .Hero15-savannah {
     padding: 0;
   }
 
-  .Hero-savannah--left {
+  .Hero15-savannah--left {
     left: calc(50vw - ((1024px - (48px * 2)) / 2));
   }
 
-  .Hero-savannah--right {
+  .Hero15-savannah--right {
     right: calc(50vw - ((1024px - (48px * 2)) / 2));
   }
 }
 
 @media (--viewport-xl) {
-  .Hero-savannah--left {
+  .Hero15-savannah--left {
     left: calc(50vw - ((1280px - (48px * 2)) / 2));
   }
 
-  .Hero-savannah--right {
+  .Hero15-savannah--right {
     right: calc(50vw - ((1280px - (48px * 2)) / 2));
   }
 }
@@ -56,13 +57,13 @@
  * Inhabitants of the savannah (animals, trees etc.)
  */
 
-.Hero-savannahThing {
+.Hero15-savannahThing {
   visibility: hidden;
   transform: translateY(100%);
-  animation: Hero-savannahThing--appear 600ms 200ms ease-out forwards;
+  animation: Hero15-savannahThing--appear 600ms 200ms ease-out forwards;
 }
 
-@keyframes Hero-savannahThing--appear {
+@keyframes Hero15-savannahThing--appear {
   from {
     visibility: visible;
     transform: translateY(100%);
@@ -78,7 +79,7 @@
  * Sky
  */
 
-.Hero-savannahSky {
+.Hero15-savannahSky {
   width: 100%;
   height: 100%;
 
@@ -86,23 +87,23 @@
   left: 0;
   top: 100%;
 
-  animation: Hero-savannahSky--rise 900ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  animation: Hero15-savannahSky--rise 900ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
 
-@keyframes Hero-savannahSky--rise {
+@keyframes Hero15-savannahSky--rise {
   to {
     transform: translateY(-100%);
   }
 }
 
-.Hero-savannahCloud {
+.Hero15-savannahCloud {
   position: absolute;
   color: #fff;
   opacity: 0.2;
-  animation: Hero-savannahCloud--appear 1500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero15-savannahCloud--appear 1500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@keyframes Hero-savannahCloud--appear {
+@keyframes Hero15-savannahCloud--appear {
   0% {
     transform: translateY(calc(200% + 50px));
   }
@@ -116,82 +117,82 @@
   }
 }
 
-.Hero-savannahCloud--sm {
+.Hero15-savannahCloud--sm {
   width: 6%;
 }
 
-.Hero-savannahCloud--md {
+.Hero15-savannahCloud--md {
   width: 12%;
 }
 
-.Hero-savannahCloud--lg {
+.Hero15-savannahCloud--lg {
   visibility: hidden;
 }
 
-.Hero-savannahCloud--xl {
+.Hero15-savannahCloud--xl {
   width: 35%;
 }
 
 @media (--Hero-wide) {
-  .Hero-savannahCloud--sm {
+  .Hero15-savannahCloud--sm {
     width: 2%;
   }
 
-  .Hero-savannahCloud--md {
+  .Hero15-savannahCloud--md {
     width: 5%;
   }
 
-  .Hero-savannahCloud--lg {
+  .Hero15-savannahCloud--lg {
     visibility: visible;
     width: 8%;
   }
 
-  .Hero-savannahCloud--xl {
+  .Hero15-savannahCloud--xl {
     width: 10%;
   }
 }
 
-.Hero-savannahCloud--dark {
-  opacity: 0.4;
-  color: #000;
+.Hero15-savannahCloud--dark {
+  opacity: 0.5;
+  color: var(--color-goal-15-shaded);
 }
 
-.Hero-savannahCloud--light {
+.Hero15-savannahCloud--light {
   opacity: 0.6;
   color: #fff;
 }
 
-.Hero-savannahCloud--dim {
-  opacity: 0.1;
-  color: #000;
+.Hero15-savannahCloud--dim {
+  opacity: 0.2;
+  color: var(--color-goal-15-shaded);
 }
 
-.Hero-savannahCloud:nth-child(1) {
+.Hero15-savannahCloud:nth-child(1) {
   top: 55%;
   left: 4%;
 }
 
-.Hero-savannahCloud:nth-child(2) {
+.Hero15-savannahCloud:nth-child(2) {
   top: 60%;
   left: 10%;
 }
 
-.Hero-savannahCloud:nth-child(3) {
+.Hero15-savannahCloud:nth-child(3) {
   top: 37%;
   left: 60%;
 }
 
-.Hero-savannahCloud:nth-child(4) {
+.Hero15-savannahCloud:nth-child(4) {
   top: 25%;
   right: 12%;
 }
 
-.Hero-savannahCloud:nth-child(5) {
+.Hero15-savannahCloud:nth-child(5) {
   top: 30%;
   right: 7%;
 }
 
-.Hero-savannahCloud:nth-child(6) {
+.Hero15-savannahCloud:nth-child(6) {
   top: 55%;
   right: 5%;
 }
@@ -200,25 +201,25 @@
  * Bee
  */
 
-.Hero-bee {
+.Hero15-bee {
   width: 3%;
   visibility: hidden;
   position: absolute;
 }
 
 @media (--Hero-wide) {
-  .Hero-bee {
+  .Hero15-bee {
     visibility: visible;
   }
 }
 
-.Hero-bee:nth-child(1) {
+.Hero15-bee:nth-child(1) {
   left: 10%;
   top: 25%;
   transform: rotate(-5deg);
 }
 
-.Hero-bee:nth-child(2) {
+.Hero15-bee:nth-child(2) {
   left: 31%;
   top: 12%;
   transform: rotate(30deg);
@@ -228,56 +229,58 @@
  * Bird
  */
 
-.Hero-bird {
+.Hero15-bird {
   position: absolute;
 }
 
-.Hero-bird:nth-child(1) {
+.Hero15-bird:nth-child(1) {
   width: 8%;
   top: 5%;
   right: 36%;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--color-goal-15-shaded);
+  opacity: 0.6;
   transform: rotate(-8deg);
 }
 
-.Hero-bird:nth-child(2) {
+.Hero15-bird:nth-child(2) {
   width: 6%;
   top: 9%;
   right: 17%;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--color-goal-15-shaded);
+  opacity: 0.6;
   transform: rotate(12deg);
 }
 
-.Hero-bird:nth-child(3) {
+.Hero15-bird:nth-child(3) {
   width: 8%;
   top: 13%;
   right: 27%;
   transform: rotate(-4deg);
 }
 
-.Hero-bird:nth-child(4) {
+.Hero15-bird:nth-child(4) {
   width: 12%;
   top: 22%;
   right: 21%;
 }
 
 @media (--Hero-wide) {
-  .Hero-bird:nth-child(1) {
+  .Hero15-bird:nth-child(1) {
     width: 4%;
     top: 15%;
   }
 
-  .Hero-bird:nth-child(2) {
+  .Hero15-bird:nth-child(2) {
     width: 3%;
     top: 19%;
   }
 
-  .Hero-bird:nth-child(3) {
+  .Hero15-bird:nth-child(3) {
     width: 4%;
     top: 23%;
   }
 
-  .Hero-bird:nth-child(4) {
+  .Hero15-bird:nth-child(4) {
     width: 6%;
     top: 32%;
   }
@@ -287,17 +290,17 @@
  * Giraffe
  */
 
-.Hero-giraffeNeck {
+.Hero15-giraffeNeck {
   transform-origin: 88% 65%;
-  animation: Hero-giraffeNeck--nibble 3000ms cubic-bezier(0.77, 0, 0.175, 1) infinite forwards;
+  animation: Hero15-giraffeNeck--nibble 3000ms cubic-bezier(0.77, 0, 0.175, 1) infinite forwards;
   animation-play-state: paused;
 }
 
-.Hero-giraffeNeck.in-transition {
+.Hero15-giraffeNeck.in-transition {
   animation-play-state: running;
 }
 
-@keyframes Hero-giraffeNeck--nibble {
+@keyframes Hero15-giraffeNeck--nibble {
   0% {
     transform: rotate(0deg);
   }

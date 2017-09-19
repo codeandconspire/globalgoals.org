@@ -1,10 +1,10 @@
-/* @define Hero */
+/* @define Hero17 */
 
-.Hero-bg--17 {
+.Hero17 {
 
 }
 
-.Hero-web {
+.Hero17-web {
   width: 100%;
   height: 100%;
 
@@ -13,73 +13,76 @@
   top: 0;
 }
 
-.Hero-thread {
+.Hero17-thread {
+  stroke: var(--color-goal-17-shaded);
   stroke-dashoffset: 1440;
   stroke-dasharray: 1440;
-  animation: Hero-thread--draw 1200ms linear forwards;
+  stroke-width: 2px;
+  animation: Hero17-thread--draw 1200ms linear forwards;
 }
 
-.Hero-thread--reverse {
+.Hero17-thread--reverse {
   stroke-dashoffset: -1440;
 }
 
-.Hero-thread:nth-child(1) {
+.Hero17-thread:nth-child(1) {
   animation-delay: 0ms;
 }
 
-.Hero-thread:nth-child(2) {
+.Hero17-thread:nth-child(2) {
   animation-delay: 1000ms;
 }
 
-.Hero-thread:nth-child(3) {
+.Hero17-thread:nth-child(3) {
   animation-delay: 2000ms;
 }
 
-.Hero-thread:nth-child(4) {
+.Hero17-thread:nth-child(4) {
   animation-delay: 3000ms;
 }
 
-.Hero-thread:nth-child(5) {
+.Hero17-thread:nth-child(5) {
   animation-delay: 4000ms;
 }
 
-.Hero-thread:nth-child(6) {
+.Hero17-thread:nth-child(6) {
   animation-delay: 5000ms;
 }
 
-.Hero-thread:nth-child(7) {
+.Hero17-thread:nth-child(7) {
   animation-delay: 6000ms;
 }
 
-@keyframes Hero-thread--draw {
+@keyframes Hero17-thread--draw {
   to {
     stroke-dashoffset: 0;
   }
 }
 
-.Hero-node {
+.Hero17-node {
+  fill: var(--color-goal-17-shaded);
   transform: scale(0);
   transform-origin: center;
-  animation: Hero-node--appear 200ms cubic-bezier(0.175, 0.885, 0.32, 1.475) forwards;
+  animation: Hero17-node--appear 200ms cubic-bezier(0.175, 0.885, 0.32, 1.475) forwards;
 }
 
-.Hero-node:nth-child(1) {
+.Hero17-node:nth-child(1) {
   animation-delay: 2450ms;
 }
 
-.Hero-node:nth-child(2) {
+.Hero17-node:nth-child(2) {
   animation-delay: 3875ms;
 }
 
-.Hero-node:nth-child(3) {
+.Hero17-node:nth-child(3) {
   animation-delay: 4100ms;
 }
 
-.Hero-node:nth-child(4) {
+.Hero17-node:nth-child(4) {
   animation-delay: 5200ms;
 }
 
-@keyframes Hero-node--appear {
+@keyframes Hero17-node--appear {
   to {
     transform: scale(1);
   }

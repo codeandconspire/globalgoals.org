@@ -1,10 +1,10 @@
-/* @define Hero */
+/* @define Hero14 */
 
-.Hero-bg--14 {
+.Hero14 {
 
 }
 
-.Hero-sea {
+.Hero14-sea {
   width: 100%;
   height: 100%;
 
@@ -16,11 +16,11 @@
   transform: scale(1.2);
 }
 
-.Hero-sea.is-visible {
-  animation: Hero-sea--appear 1800ms 200ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+.Hero14-sea.is-visible {
+  animation: Hero14-sea--appear 1800ms 200ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
 
-@keyframes Hero-sea--appear {
+@keyframes Hero14-sea--appear {
   to {
     opacity: 1;
     transform: scale(1);
@@ -31,7 +31,7 @@
  * Jellyfish
  */
 
-.Hero-jellyfish {
+.Hero14-jellyfish {
   display: none;
   width: 50px;
   height: auto;
@@ -40,13 +40,13 @@
   top: 100%;
 }
 
-.Hero-jellyfish.in-transition {
+.Hero14-jellyfish.in-transition {
   transition: transform 15000ms linear;
   transform: translateY(calc(-100vh - 100%));
 }
 
 @media (--Hero-wide) {
-  .Hero-jellyfish {
+  .Hero14-jellyfish {
     display: inline;
   }
 }
@@ -55,7 +55,7 @@
  * Fish
  */
 
-.Hero-fish {
+.Hero14-fish {
   display: inline;
   width: 87px;
   height: auto;
@@ -66,34 +66,35 @@
   color: #fff;
 }
 
-.Hero-fish.in-transition {
+.Hero14-fish.in-transition {
   transition: transform 45000ms linear;
   transform: translateX(calc(100vw + 100%));
 }
 
-.Hero-fish--small.in-transition {
+.Hero14-fish--small.in-transition {
   transition-duration: 45000ms;
 }
 
-.Hero-fish--medium.in-transition {
+.Hero14-fish--medium.in-transition {
   transition-duration: 35000ms;
 }
 
-.Hero-fish--large.in-transition {
+.Hero14-fish--large.in-transition {
   transition-duration: 25000ms;
 }
 
-.Hero-fish--small {
+.Hero14-fish--small {
   width: 57px;
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--color-goal-14-shaded);
+  opacity: 0.7;
 }
 
-.Hero-fish--medium {
+.Hero14-fish--medium {
   width: 87px;
   color: rgba(255, 255, 255, 0.2);
 }
 
-.Hero-fish--large {
+.Hero14-fish--large {
   width: 123px;
   color: #fff;
 }
@@ -102,7 +103,7 @@
  * Bubble
  */
 
-.Hero-bubble {
+.Hero14-bubble {
   display: inline;
   width: 50px;
   height: auto;
@@ -113,18 +114,18 @@
   color: #fff;
 }
 
-.Hero-bubble.in-transition {
+.Hero14-bubble.in-transition {
   transition: transform 9000ms linear;
   transform: translateY(calc(-100vh - 100%));
 }
 
-.Hero-bubble--small.in-transition {
+.Hero14-bubble--small.in-transition {
   width: 20px;
   transition-duration: 15000ms;
   color: rgba(255, 255, 255, 0.2);
 }
 
-.Hero-bubble--large {
+.Hero14-bubble--large {
   width: 32px;
   color: #fff;
 }
