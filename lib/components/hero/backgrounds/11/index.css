@@ -1,10 +1,10 @@
-/* @define Hero */
+/* @define Hero11 */
 
-.Hero-bg--11 {
+.Hero11 {
 
 }
 
-.Hero-city {
+.Hero11-city {
   height: 20%;
   padding: 0 5vw;
 
@@ -16,7 +16,7 @@
 }
 
 @media (--Hero-wide) {
-  .Hero-city {
+  .Hero11-city {
     width: auto;
     max-height: 23vh;
   }
@@ -26,13 +26,17 @@
  * 1. Initial transform applied to <g> has no effect
  */
 
-.Hero-cityThing {
+.Hero11-cityThing {
   visibility: hidden; /* 1 */
   transform: translateY(100%);
-  animation: Hero-cityThing--appear 400ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero11-cityThing--appear 400ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@keyframes Hero-cityThing--appear {
+.Hero11-cityThing--shaded {
+  fill: var(--color-goal-11-shaded);
+}
+
+@keyframes Hero11-cityThing--appear {
   from {
     visibility: visible;
     transform: translateY(100%);
@@ -48,7 +52,7 @@
  * Bus
  */
 
-.Hero-bus {
+.Hero11-bus {
   height: 4%;
 
   position: absolute;
@@ -56,7 +60,7 @@
   bottom: 0;
   will-change: transform;
 
-  animation-name: Hero-bus--drive;
+  animation-name: Hero11-bus--drive;
   animation-duration: 8000ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -64,21 +68,21 @@
 }
 
 @media (--Hero-wide) {
-  .Hero-bus {
+  .Hero11-bus {
     max-width: 10vw;
     max-height: 3.5vh;
   }
 }
 
-:root.has-js .Hero-bus {
+:root.has-js .Hero11-bus {
   animation-play-state: paused;
 }
 
-:root.has-js .Hero-bus.in-transition {
+:root.has-js .Hero11-bus.in-transition {
   animation-play-state: running;
 }
 
-@keyframes Hero-bus--drive {
+@keyframes Hero11-bus--drive {
   to {
     transform: translateX(calc(100vw + 100%));
   }
@@ -88,15 +92,15 @@
  * Fountain
  */
 
-.Hero-spray {
+.Hero11-spray {
   stroke-dashoffset: 80;
-  animation-name: Hero-spray--running;
+  animation-name: Hero11-spray--running;
   animation-duration: 2500ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
-:root.has-js .Hero-spray {
+:root.has-js .Hero11-spray {
   animation-name: none;
 }
 
@@ -104,25 +108,25 @@
  * 1. I dunno, it just works 😎
  */
 
-:root.has-js .Hero-spray.is-starting {
+:root.has-js .Hero11-spray.is-starting {
   stroke-dasharray: 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 107; /* 1 */
   stroke-dashoffset: 302; /* 1 */
   animation-duration: 2500ms;
-  animation-name: Hero-spray--starting;
+  animation-name: Hero11-spray--starting;
   animation-iteration-count: 1;
 }
 
-@keyframes Hero-spray--starting {
+@keyframes Hero11-spray--starting {
   to {
     stroke-dashoffset: 198; /* 1 */
   }
 }
 
-:root.has-js .Hero-spray.is-running {
-  animation-name: Hero-spray--running;
+:root.has-js .Hero11-spray.is-running {
+  animation-name: Hero11-spray--running;
 }
 
-@keyframes Hero-spray--running {
+@keyframes Hero11-spray--running {
   to {
     stroke-dashoffset: 0;
   }
@@ -132,7 +136,7 @@
  * Sky
  */
 
-.Hero-citySky {
+.Hero11-citySky {
   width: 100%;
   height: 100%;
 
@@ -140,16 +144,16 @@
   left: 0;
   top: 100%;
 
-  animation: Hero-citySky--rise 900ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  animation: Hero11-citySky--rise 900ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
 
-@keyframes Hero-citySky--rise {
+@keyframes Hero11-citySky--rise {
   to {
     transform: translateY(-100%);
   }
 }
 
-.Hero-citySun {
+.Hero11-citySun {
   width: 86px;
   max-width: 10vw;
   position: absolute;
@@ -157,16 +161,16 @@
   top: 48vh;
 
   visibility: hidden;
-  animation: Hero-citySun--spin 8000ms linear infinite;
+  animation: Hero11-citySun--spin 8000ms linear infinite;
 }
 
 @media (--Hero-wide) {
-  .Hero-citySun {
+  .Hero11-citySun {
     visibility: visible;
   }
 }
 
-@keyframes Hero-citySun--spin {
+@keyframes Hero11-citySun--spin {
   from {
     transform: rotate(0deg);
   }
@@ -176,14 +180,14 @@
   }
 }
 
-.Hero-cityCloud {
+.Hero11-cityCloud {
   position: absolute;
   color: #fff;
   opacity: 0.2;
-  animation: Hero-cityCloud--appear 1200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero11-cityCloud--appear 1200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@keyframes Hero-cityCloud--appear {
+@keyframes Hero11-cityCloud--appear {
   0% {
     transform: translateY(calc(200% + 50px));
   }
@@ -197,58 +201,58 @@
   }
 }
 
-.Hero-cityCloud--small {
+.Hero11-cityCloud--small {
   width: 9%;
 }
 
-.Hero-cityCloud--medium {
+.Hero11-cityCloud--medium {
   width: 15%;
 }
 
-.Hero-cityCloud--large {
+.Hero11-cityCloud--large {
   width: 24%;
 }
 
 @media (--Hero-wide) {
-  .Hero-cityCloud--small {
+  .Hero11-cityCloud--small {
     width: 3%;
   }
 
-  .Hero-cityCloud--medium {
+  .Hero11-cityCloud--medium {
     width: 5%;
   }
 
-  .Hero-cityCloud--large {
+  .Hero11-cityCloud--large {
     width: 8%;
   }
 }
 
-.Hero-cityCloud--dark {
+.Hero11-cityCloud--dark {
   opacity: 0.4;
-  color: #000;
+  color: var(--color-goal-11-shaded);
 }
 
-.Hero-cityCloud:nth-child(1) {
+.Hero11-cityCloud:nth-child(1) {
   top: 60vh;
   left: -2.5%;
 }
 
-.Hero-cityCloud:nth-child(2) {
+.Hero11-cityCloud:nth-child(2) {
   top: 49vh;
   left: 5.55%;
 }
 
-.Hero-cityCloud:nth-child(3) {
+.Hero11-cityCloud:nth-child(3) {
   top: 28vh;
   right: 15%;
 }
 
-.Hero-cityCloud:nth-child(4) {
+.Hero11-cityCloud:nth-child(4) {
   top: 33vh;
   right: 14%;
 }
 
-.Hero-cityCloud:nth-child(5) {
+.Hero11-cityCloud:nth-child(5) {
   top: 50vh;
   right: -3%;
 }

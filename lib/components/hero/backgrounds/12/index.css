@@ -1,33 +1,35 @@
-/* @define Hero */
+/* @define Hero12 */
 
-.Hero-bg--12 {
-    opacity: 0;
-    animation: Hero-bg--12appear 1400ms 300ms ease-out forwards;
+.Hero12 {
+  opacity: 0;
+  color: var(--color-goal-12-shaded);
+  animation: Hero12-bg--12appear 1000ms 300ms var(--ease-out) forwards;
 }
 
-@keyframes Hero-bg--12appear {
+@keyframes Hero12-bg--12appear {
   to {
     opacity: 1;
   }
 }
 
-.Hero-circleBox {
+.Hero12-circleBox {
+  opacity: 0.4;
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   transform: scale(0.8);
-  animation: Hero-circle--appear 1600ms 300ms ease-out forwards;
+  animation: Hero12-circle--appear 1000ms 300ms var(--ease-out) forwards;
 }
 
-@keyframes Hero-circle--appear {
+@keyframes Hero12-circle--appear {
   to {
     transform: scale(1);
   }
 }
 
-.Hero-circle {
+.Hero12-circle {
   height: 100%;
   position: absolute;
   left: 50%;
@@ -35,10 +37,10 @@
 
   opacity: 0.6;
   transform: translate(-50%, -50%);
-  animation: Hero-circle--spin 8000ms linear infinite;
+  animation: Hero12-circle--spin 8000ms linear infinite;
 }
 
-@keyframes Hero-circle--spin {
+@keyframes Hero12-circle--spin {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
@@ -48,7 +50,7 @@
 }
 
 @media (--Hero-wide) {
-  .Hero-circle {
+  .Hero12-circle {
     height: auto;
     width: 80%;
   }
