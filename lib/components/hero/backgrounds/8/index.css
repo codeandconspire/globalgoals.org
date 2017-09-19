@@ -66,6 +66,7 @@
   transform: scaleY(0);
   transform-origin: 0 100%;
   animation: Hero8-curve--appear 450ms 200ms ease-out forwards;
+  will-change: transform;
 }
 
 .Hero8-curve--dark {
@@ -80,5 +81,5 @@
 
 .Hero8-curve:nth-child(1) { animation-delay: 300ms; }
 .Hero8-curve:nth-child(2) { animation-delay: 500ms; }
-.Hero8-curve:nth-child(3) { animation-delay: 1200ms; }
+.Hero8-curve:nth-child(3) { animation-delay: 1050ms; }
 .Hero8-curve:nth-child(4) { animation-delay: 650ms; animation-duration: 600ms; }

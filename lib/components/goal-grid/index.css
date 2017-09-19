@@ -43,7 +43,7 @@
 
 .GoalGrid-iconGlyph {
   transition: transform 180ms var(--ease-out);
-  transform: scale(1.0001);
+  will-change: transform;
 }
 
 .GoalGrid-item:hover .GoalGrid-iconGlyph {
