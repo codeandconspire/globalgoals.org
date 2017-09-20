@@ -519,7 +519,7 @@
  * On goal page
  */
 
-.Header:not(.is-following) {
+.Header:not(.is-fromGoalGrid):not(.is-following) {
   opacity: 1 !important;
 }
 
@@ -552,9 +552,9 @@
  */
 
 .Header.is-fromGoalGrid:not(.is-following) {
+  opacity: 0;
   will-change: opacity;
-  animation: Header-in 800ms var(--ease-out);
-  animation-iteration-count: 1;
+  animation: Header-in 600ms 200ms var(--ease) forwards;
 }
 
 @keyframes Header-in {

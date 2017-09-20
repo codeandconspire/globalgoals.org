@@ -86,7 +86,7 @@
   margin: 0 10%;
   position: relative;
   opacity: 0;
-  animation: Hero-intro--appear 500ms 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: Hero-intro--appear 600ms 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 .Hero--1 .Hero-intro {
@@ -305,7 +305,7 @@
  */
 
 .Hero.no-transition {
-  visibility: hidden;
+  opacity: 0;
   transition: none;
 }
 
@@ -326,11 +326,6 @@
 .Hero--takeover .Hero-title.is-clone {
   position: fixed;
   transform-origin: 0 0;
-  will-change: transform;
-}
-
-.Hero--takeover .Hero-container {
-  will-change: unset;
 }
 
 .Hero-title.is-clone.in-transition {
