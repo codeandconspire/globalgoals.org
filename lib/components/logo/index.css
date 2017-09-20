@@ -1,0 +1,11 @@
+/* @define Logo */
+
+@import "../base";
+
+.Logo {
+  display: block;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  contain: strict;
+}

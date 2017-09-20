@@ -1,0 +1,353 @@
+/* @define Text */
+
+@import "../base";
+
+.Text {
+  color: var(--color-text);
+  font-family: var(--font-family-body);
+  line-height: 1.5;
+  font-size: 16px;
+  max-width: 37em;
+}
+
+.Text--full {
+  max-width: none;
+}
+
+@media (--viewport-lg) {
+  .Text--wide {
+    max-width: none;
+  }
+}
+
+.Text--growing {
+
+}
+
+.Text--growingLate {
+
+}
+
+.Text--center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Text--growingTitles {
+
+}
+
+.Text--adaptive {
+  color: inherit;
+}
+
+.Text > :first-child {
+  margin-top: 0 !important;
+}
+
+.Text > :last-child {
+  margin-bottom: 0 !important;
+}
+
+.Text-marginTopNone {
+  margin-top: 0 !important;
+}
+
+.Text-marginBottomNone {
+  margin-bottom: 0 !important;
+}
+
+.Text-lastMarginNone > :last-child {
+  margin-bottom: 0 !important;
+}
+
+.Text-firstMarginNone > :first-child {
+  margin-top: 0 !important;
+}
+
+.Text-muted {
+  color: var(--color-text-light);
+}
+
+.Text-muted:matchs(h1, h2, h3, h4, h5, h6) {
+  color: var(--color-text-light-large);
+}
+
+.Text-decorative {
+  color: #ddd;
+}
+
+/**
+ * Misc inline elements
+ */
+
+.Text:not(.Text--adaptive) a {
+  margin: -5px;
+  padding: 5px;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-link);
+  transition: color 90ms var(--ease-out);
+}
+
+.Text:not(.Text--adaptive) a:hover {
+  color: var(--color-link-enter);
+}
+
+.Text--adaptive a {
+  display: inline-block;
+  height: 2.6em;
+  padding: 0 0.8em;
+  margin: 0 -0.8em;
+  line-height: 2.5em;
+  -webkit-touch-callout: none;
+  border-radius: 1px;
+  transition: background 140ms var(--ease-out);
+}
+
+.Text--adaptive a:hover {
+  background: var(--color-hover-dark);
+}
+
+.Text-icon {
+  vertical-align: middle;
+  margin-left: 0.7em;
+  position: relative;
+  top: -0.05em;
+}
+
+/**
+ * Misc block elements
+ */
+
+.Text :matches(p, ul, ol) {
+  margin: 1.3em 0;
+}
+
+.Text :matches(img, pre, .Text-embed, [data-oembed]) {
+  margin: 1.5em 0;
+}
+
+.Text img {
+  max-width: 100%;
+  height: auto;
+  background: var(--color-gray-light);
+}
+
+.Text ul,
+.Text ol {
+  padding-left: 32px;
+}
+
+.Text ul {
+  list-style-type: disc;
+}
+
+.Text ol {
+  list-style-type: decimal;
+}
+
+.Text li {
+  padding-left: 23px;
+}
+
+.Text ul li {
+  padding-left: 8px;
+}
+
+.Text li + li {
+  padding-top: 16px;
+}
+
+.Text pre {
+  font-size: 12px;
+  overflow: auto;
+  background: var(--color-gray-light);
+  padding: 1em;
+  text-align: left;
+}
+
+/**
+ * Let's pretend all embeds are 16:9
+ */
+
+.Text :matches(.Text-embed, [data-oembed]) {
+  background: var(--color-gray-light);
+  width: 100%;
+  height: 0;
+  padding-top: calc(720 / 1280 * 100%);
+  position: relative;
+  margin: 32px 0;
+}
+
+.Text :matches(.Text-embed, [data-oembed]) iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * Headings
+ */
+
+.Text :matches(h1, h2, h3, h4, h5, h6,
+  .Text-h1, .Text-h2, .Text-h3, .Text-h4, .Text-h5, .Text-h6) {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+.Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) {
+  font-family: var(--font-family-heading);
+  line-height: 1.1;
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  margin: 53px 0 -8px;
+}
+
+.Text :matches(h1, .Text-h1) {
+  font-size: 64px;
+  line-height: 0.95;
+}
+
+.Text :matches(h2, .Text-h2) {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.Text :matches(h3, .Text-h3) {
+  font-size: 32px;
+  line-height: 1.05;
+}
+
+.Text :matches(h4, .Text-h4) {
+  font-size: 24px;
+  line-height: 1.15;
+  margin-bottom: -10px;
+}
+
+.Text :matches(h5, h6) {
+  font-weight: bold;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) a {
+  background: var(--color-link);
+  color: #fff;
+  white-space: nowrap;
+  padding: 0.15em 0.18em 0.08em;
+  margin: 0;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 140ms var(--ease-out);
+}
+
+.Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) a:hover {
+  background: var(--color-link-enter);
+  color: #fff;
+}
+
+/**
+ * Guard for bold text in heading
+ */
+
+.Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) strong {
+  font-weight: inherit;
+}
+
+/**
+ * Custom visual elements
+ */
+
+.Text-large {
+  font-size: 19px;
+}
+
+.Text-label {
+  font-size: 24px;
+  color: var(--color-gray);
+  font-family: var(--font-family-heading);
+  line-height: 1.1;
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Text-small,
+.Text small {
+  font-size: 14px;
+  line-height: inherit;
+}
+
+/**
+ * Wider viewports
+ */
+
+@media (--viewport-lg) {
+  .Text-large {
+    font-size: 24px;
+  }
+
+  .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) {
+    margin-top: 72px;
+  }
+
+  .Text :matches(h1, .Text-h1) {
+    font-size: 96px;
+  }
+
+  .Text :matches(h2, .Text-h2) {
+    font-size: 72px;
+  }
+
+  .Text :matches(h3, .Text-h3) {
+    font-size: 48px;
+  }
+
+  .Text :matches(h4, .Text-h4) {
+    font-size: 32px;
+    line-height: 1.05;
+  }
+
+  /**
+   * Growing text and titles
+   * - Base text bumps up
+   * - h2 becomes h1, etc.
+   */
+
+  .Text--growing {
+    font-size: 19px;
+  }
+
+  .Text--growing .Text-large {
+    font-size: 24px;
+  }
+
+  .Text--growingTitles :matches(h2, .Text-h2) {
+    font-size: 96px;
+  }
+
+  .Text--growingTitles :matches(h3, .Text-h3) {
+    font-size: 72px;
+  }
+
+  .Text--growingTitles :matches(h4, .Text-h4) {
+    font-size: 48px;
+  }
+}
+
+@media (--viewport-xl) {
+  .Text--growingLate {
+    font-size: 19px;
+  }
+
+  .Text--growingLate .Text-large {
+    font-size: 24px;
+  }
+}

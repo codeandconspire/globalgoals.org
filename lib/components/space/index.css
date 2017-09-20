@@ -1,0 +1,101 @@
+/* @define Space */
+
+:root {
+  --Space-default: 74px;
+  --Space-default-lg: 110px;
+
+  --Space-tall: 132px;
+  --Space-tall-lg: 182px;
+
+  --Space-short: 30px;
+  --Space-short-lg: 30px;
+
+  --Space-contain: 500px;
+  --Space-contain-lg: 700px;
+}
+
+.Space {
+  display: block;
+  width: 100%;
+}
+
+/**
+ * Contain floats
+ *
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of the
+ *    element.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.Space::before,
+.Space::after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.Space::after {
+  clear: both;
+}
+
+.Space--start {
+  margin-top: var(--Space-default);
+}
+
+.Space--end {
+  margin-bottom: var(--Space-default);
+}
+
+.Space--startTall {
+  margin-top: var(--Space-tall);
+}
+
+.Space--endTall {
+  margin-bottom: var(--Space-tall);
+}
+
+.Space--startShort {
+  margin-top: var(--Space-short);
+}
+
+.Space--endShort {
+  margin-bottom: var(--Space-short);
+}
+
+@media (--viewport-lg) {
+  .Space--start {
+    margin-top: var(--Space-default-lg);
+  }
+
+  .Space--end {
+    margin-bottom: var(--Space-default-lg);
+  }
+
+  .Space--startTall {
+    margin-top: var(--Space-tall-lg);
+  }
+
+  .Space--endTall {
+    margin-bottom: var(--Space-tall-lg);
+  }
+
+  .Space--startShort {
+    margin-top: var(--Space-short-lg);
+  }
+
+  .Space--endShort {
+    margin-bottom: var(--Space-short-lg);
+  }
+}
+
+.Space--contain {
+  max-width: var(--Space-contain);
+}
+
+@media (--viewport-lg) {
+  .Space--contain {
+    max-width: var(--Space-contain-lg);
+  }
+}

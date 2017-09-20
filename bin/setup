@@ -1,0 +1,71 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+const dedent = require('dedent');
+const { promisify } = require('util');
+const selfsigned = require('selfsigned');
+
+const writeFile = promisify(fs.writeFile);
+
+const attrs = [{ name: 'commonName', value: 'localhost' }];
+const options = {
+  days: 365,
+  extensions: [{
+    name: 'subjectAltName',
+    altNames: [{
+      type: 2, // DNS
+      value: 'localhost'
+    }]
+  }]
+};
+const { private, cert } = selfsigned.generate(attrs, options);
+const dotenv = dedent`
+  # General
+  PORT=3000
+  NODE_ENV=development
+  AUTH=false
+
+  # Authentication
+  AUTH_NAME=<NAME_HERE>
+  AUTH_PASS=<PASSWORD_HERE>
+
+  # Services
+  PRISMIC_REPOSITORY=<INSERT_PRISMIC_REPOSITORY_HERE>
+  PRISMIC_API=<INSERT_PRISMIC_ENDPOINT_HERE>
+  PRISMIC_SECRET=<INSERT_PRISMIC_WEB_HOOK_SECRET>
+  PRISMIC_HOOK=/prismic-hook
+  PRISMIC_PREVIEW=/prismic-preview
+  # PRISMIC_REF=<OPTIONALLY_INSERT_PRISMIC_REF>
+  # GOOGLE_ANALYTICS_ID=<INSERT_ANALYTICS_ID_HERE>
+
+  # Settings
+  GLOBALGOALS_NAME=The Global Goals
+  GLOBALGOALS_URL=http://localhost:3000
+  # GLOBALGOALS_FACEBOOK_ID=<INSERT_FACEBOOK_ID_HERE>
+  # GLOBALGOALS_TWITTER_ID=<INSERT_TWITTER_ID_HERE>
+  GLOBALGOALS_LANG=en
+  GLOBALGOALS_NUMBER_OF_GRID_LAYOUT=7
+  GLOBALGOALS_GRID_LAYOUT_COOKIE_NAME=GLOBALGOALS:grid_layout
+
+  # SSL Certificates
+  GLOBALGOALS_KEY=server.key
+  GLOBALGOALS_CERT=server.crt
+`;
+
+Promise.all([
+  writeFile(path.resolve(process.cwd(), 'server.key'), private),
+  writeFile(path.resolve(process.cwd(), 'server.crt'), cert),
+  writeFile(path.resolve(process.cwd(), '.env'), dotenv)
+]).then(
+  // eslint-disable-next-line no-console
+  () => console.log(dedent`
+    > Certificates and environment file was generated successfully
+  `),
+  // eslint-disable-next-line no-console
+  err => console.error(dedent`
+    > An error occured in generating files, see error:
+
+    ${ err }
+  `)
+);

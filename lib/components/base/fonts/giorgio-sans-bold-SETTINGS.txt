@@ -1,0 +1,7 @@
+Giorgio Sans Bold
+Export settings for the Font Squirrel web tool (giorgio-sans-bold-SOURCE.woff)
+
+- Truetype Hinting: Font Squirrel
+- Vertical Metrics: No Adjustment
+- X-height Matching: None
+- Custom Subsetting: ABCDEFGHIJKLMNOPQRSTUVWXYZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßŒŸ0123456789* !"#$₤€%&'()*+,-./:;<=>?@[\]^_`{|}~¡§©«®°·»¿–—‘’‚“”„•…™

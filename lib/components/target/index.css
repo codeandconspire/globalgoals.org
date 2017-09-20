@@ -1,0 +1,108 @@
+/* @define Target */
+
+:root {
+  --Target-pictogram-sm: 72px;
+  --Target-pictogram-lg: 128px;
+  --Target-id-height: 28px;
+  --Target-id-margin: 4px;
+}
+
+/**
+ * 1. Internet Explorer be like "YOLO!"
+ */
+
+.Target {
+  position: relative;
+  max-width: 100%; /* 1 */
+}
+
+.Target-pictogram {
+  position: relative;
+  float: left;
+  width: var(--Target-pictogram-sm);
+  height: var(--Target-pictogram-sm);
+  padding-bottom: calc(var(--Target-id-height) + var(--Target-id-margin));
+  margin-right: 16px;
+  box-sizing: content-box;
+  user-select: none;
+}
+
+@media (--viewport-sm) {
+  .Target-pictogram {
+    width: var(--Target-pictogram-lg);
+    height: var(--Target-pictogram-lg);
+    margin-right: 24px;
+  }
+}
+
+@media (--viewport-lg) {
+  .Target-pictogram {
+    float: left;
+    margin-right: 32px;
+  }
+}
+
+.Target-id {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--Target-id-height);
+}
+
+.Target-id,
+.Target-fallbackText {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: var(--font-family-heading);
+  line-height: calc(var(--Target-id-height) + 1px);
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Target-image,
+.Target-fallback {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  color: transparent;
+  height: calc(100% - (var(--Target-id-height) + var(--Target-id-margin)));
+}
+
+.Target-fallbackText {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.Target-fallbackText {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  transform: translateY(-50%);
+}
+
+.Target-body {
+  overflow: hidden;
+  position: relative;
+  top: 1px;
+}
+
+
+@media (--viewport-sm) {
+  .Target-fallbackText {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (--viewport-lg) {
+  .Target-body {
+    top: -1px;
+  }
+}

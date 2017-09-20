@@ -1,0 +1,89 @@
+/* @define Hero17 */
+
+.Hero17 {
+
+}
+
+.Hero17-web {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Hero17-thread {
+  stroke: var(--color-goal-17-shaded);
+  stroke-dashoffset: 1440;
+  stroke-dasharray: 1440;
+  stroke-width: 2px;
+  animation: Hero17-thread--draw 1200ms linear forwards;
+}
+
+.Hero17-thread--reverse {
+  stroke-dashoffset: -1440;
+}
+
+.Hero17-thread:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.Hero17-thread:nth-child(2) {
+  animation-delay: 1000ms;
+}
+
+.Hero17-thread:nth-child(3) {
+  animation-delay: 2000ms;
+}
+
+.Hero17-thread:nth-child(4) {
+  animation-delay: 3000ms;
+}
+
+.Hero17-thread:nth-child(5) {
+  animation-delay: 4000ms;
+}
+
+.Hero17-thread:nth-child(6) {
+  animation-delay: 5000ms;
+}
+
+.Hero17-thread:nth-child(7) {
+  animation-delay: 6000ms;
+}
+
+@keyframes Hero17-thread--draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.Hero17-node {
+  fill: var(--color-goal-17-shaded);
+  transform: scale(0);
+  transform-origin: center;
+  animation: Hero17-node--appear 200ms cubic-bezier(0.175, 0.885, 0.32, 1.475) forwards;
+}
+
+.Hero17-node:nth-child(1) {
+  animation-delay: 2450ms;
+}
+
+.Hero17-node:nth-child(2) {
+  animation-delay: 3875ms;
+}
+
+.Hero17-node:nth-child(3) {
+  animation-delay: 4100ms;
+}
+
+.Hero17-node:nth-child(4) {
+  animation-delay: 5200ms;
+}
+
+@keyframes Hero17-node--appear {
+  to {
+    transform: scale(1);
+  }
+}

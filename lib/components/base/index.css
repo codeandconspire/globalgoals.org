@@ -1,0 +1,144 @@
+@import "./fonts";
+@import "./color-map";
+@import "./utils";
+@import "../focus";
+
+/**
+ * Media queries
+ */
+
+@custom-media --viewport-nano (min-width: 320px);
+@custom-media --viewport-nano-max (max-width: 319px);
+@custom-media --viewport-xs (min-width: 375px);
+@custom-media --viewport-xs-max (max-width: 374px);
+@custom-media --viewport-sm (min-width: 480px);
+@custom-media --viewport-sm-max (max-width: 479px);
+@custom-media --viewport-md (min-width: 768px);
+@custom-media --viewport-md-max (max-width: 767px);
+@custom-media --viewport-lg (min-width: 1024px);
+@custom-media --viewport-lg-max (max-width: 1023px);
+@custom-media --viewport-xl (min-width: 1250px);
+@custom-media --viewport-xl-max (max-width: 1249px);
+
+/**
+ * Easing curves
+ */
+
+:root {
+  --ease-in: cubic-bezier(0.4, 0.0, 1, 1);
+  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --ease: var(--ease-in-out);
+}
+
+/**
+ * Document styles
+ */
+
+:root {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-family-body);
+  cursor: default;
+  background: var(--color-document);
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ */
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:matches(:hover, :active) {
+	background-color: transparent; /* 1 */
+  text-decoration: none;
+}
+
+strong {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+svg {
+  vertical-align: bottom;
+}
+
+/*
+ * Remove the tapping delay on clickable elements (opinionated).
+ * 1. Remove the tapping delay in IE 10.
+ */
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+	-ms-touch-action: manipulation; /* 1 */
+	touch-action: manipulation;
+}
+
+/**
+ * Clean out browser button styles
+ */
+
+button {
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  font: inherit;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+  cursor: default;
+}
+
+/**
+ * Pointer is for links only. But not when we prevent default behaviour with
+ * Javascript and stay on the same page, etc.
+ */
+
+:root.has-js :matches([role="button"], [role="tab"], a[href^="#"]) {
+  cursor: default !important;
+}
+
+/**
+ * Reset a few styles
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote,
+iframe,
+figure {
+  font: inherit;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  padding: 0;
+}

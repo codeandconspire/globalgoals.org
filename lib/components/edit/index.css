@@ -1,0 +1,44 @@
+/* @define Edit */
+
+@import "../base";
+
+.Edit,
+.Edit:hover {
+  position: fixed;
+  bottom: 30px;
+  right: 45px;
+  z-index: 1000;
+  color: #fff;
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 3px 0 0 3px;
+  font-size: 0;
+  outline: none;
+  transition: background 180ms var(--ease-out);
+}
+
+.Edit:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.Edit::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  padding: 22px;
+
+  position: absolute;
+  left: calc(100% - 10px);
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: inherit;
+  background-image: url('./prismic-logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}

@@ -1,0 +1,49 @@
+/* @define Hero6 */
+
+.Hero6 {
+
+}
+
+.Hero6-drop {
+  position: absolute;
+  bottom: 100%;
+  animation: Hero6-drop--falling 1600ms linear infinite;
+}
+
+@keyframes Hero6-drop--falling {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+:root.has-js .Hero6-drop {
+  animation: none;
+}
+
+.Hero6-drop.in-transition {
+  visibility: visible;
+  transition: transform 2000ms linear;
+}
+
+.Hero6-drop--sm {
+  width: 18px;
+  opacity: 0.6;
+}
+
+.Hero6-drop--sm.in-transition {
+  transition-duration: 2400ms;
+}
+
+.Hero6-drop--md {
+  width: 24px;
+}
+
+.Hero6-drop--lg {
+  width: 30px;
+  color: var(--color-goal-6-shaded);
+  opacity: 0.6;
+}
+
+.Hero6-drop--lg.in-transition {
+  transition-duration: 1600ms;
+}

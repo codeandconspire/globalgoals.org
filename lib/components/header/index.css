@@ -1,0 +1,671 @@
+/* @define Header */
+
+@import "../base";
+@import "./utils";
+
+:root {
+  --Header-height: 117px;
+  --Header-height-lg: 128px;
+  --Header-height-nano: 78px;
+
+  --Header-fill-y: 40px;
+  --Header-content-y: 20px;
+  --Header-logo-z: 1.25;
+  --Header-list-z: 1.2;
+}
+
+/**
+ * 1. Root element is left at top of page to fill upp space
+ */
+
+.Header {
+  position: relative /* 1 */;
+  z-index: 100;
+  height: var(--Header-height);
+  contain: size layout style;
+}
+
+/**
+ * The sticky positioned element
+ */
+
+.Header-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  user-select: none;
+}
+
+:root.has-js .Header-bar {
+  position: fixed;
+}
+
+/**
+ * The background that shrink/expand
+ * 1. It's actually not shrinking instead it's moved outside of the viewport
+ */
+
+.Header-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(78px + 50px); /* 1 */
+  width: 100%;
+  margin-top: -50px; /* 1 */
+
+  background: rgba(255, 255, 255, 0.99);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
+  transform-origin: top center;
+}
+
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  .Header-fill {
+    background: rgba(255, 255, 255, 0.94);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+/**
+ * Just some wrappers
+ */
+
+.Header-content {
+  position: relative;
+  z-index: 1;
+  margin: 15px 0 0;
+}
+
+.Header-list {
+  transform-origin: center right;
+}
+
+/**
+ * El logotipo
+ */
+
+.Header-logo {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  vertical-align: top;
+  height: 45px;
+  padding: 16px 10px;
+  margin-left: -11px;
+  margin-top: -15px;
+  box-sizing: content-box;
+  transform-origin: center left;
+}
+
+.Header:matches(.is-open, :target) .Header-logoText {
+  fill: currentColor;
+}
+
+.Header:matches(.is-open, :target) .Header-logoMask {
+  fill: #000;
+}
+
+/**
+ * On wider viewports
+ */
+
+@media (--viewport-lg) {
+  .Header {
+    height: var(--Header-height-lg);
+  }
+
+  .Header-fill {
+    height: calc(88px + 50px);
+  }
+
+  .Header-logo {
+    height: 54px;
+  }
+
+  .Header-list,
+  .Header-back {
+    margin-top: 5px;
+  }
+}
+
+/**
+ * Button. Used for:
+ * - The toggle that opens the vertical navigation
+ * - The links
+ * - The back button
+ */
+
+.Header-button {
+  position: relative;
+  height: 48px;
+  padding: 0 16px;
+  z-index: 1;
+  display: inline-block;
+  border-radius: 1px;
+  line-height: 49px;
+
+  font-family: var(--font-family-heading);
+  word-spacing: var(--word-spacing-heading);
+  font-size: 24px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -webkit-touch-callout: none;
+  transition: background 180ms var(--ease-out);
+}
+
+.Header-button:hover { background: var(--color-hover-dark); }
+.Header--1:not(.is-following) .Header-button:hover { background: color(var(--color-goal-1-shaded) alpha(10%)); }
+.Header--2:not(.is-following) .Header-button:hover { background: color(var(--color-goal-2-shaded) alpha(10%)); }
+.Header--3:not(.is-following) .Header-button:hover { background: color(var(--color-goal-3-shaded) alpha(10%)); }
+.Header--4:not(.is-following) .Header-button:hover { background: color(var(--color-goal-4-shaded) alpha(10%)); }
+.Header--5:not(.is-following) .Header-button:hover { background: color(var(--color-goal-5-shaded) alpha(10%)); }
+.Header--6:not(.is-following) .Header-button:hover { background: color(var(--color-goal-6-shaded) alpha(10%)); }
+.Header--7:not(.is-following) .Header-button:hover { background: color(var(--color-goal-7-shaded) alpha(10%)); }
+.Header--8:not(.is-following) .Header-button:hover { background: color(var(--color-goal-8-shaded) alpha(10%)); }
+.Header--9:not(.is-following) .Header-button:hover { background: color(var(--color-goal-9-shaded) alpha(10%)); }
+.Header--10:not(.is-following) .Header-button:hover { background: color(var(--color-goal-10-shaded) alpha(10%)); }
+.Header--11:not(.is-following) .Header-button:hover { background: color(var(--color-goal-11-shaded) alpha(10%)); }
+.Header--12:not(.is-following) .Header-button:hover { background: color(var(--color-goal-12-shaded) alpha(10%)); }
+.Header--13:not(.is-following) .Header-button:hover { background: color(var(--color-goal-13-shaded) alpha(10%)); }
+.Header--14:not(.is-following) .Header-button:hover { background: color(var(--color-goal-14-shaded) alpha(10%)); }
+.Header--15:not(.is-following) .Header-button:hover { background: color(var(--color-goal-15-shaded) alpha(10%)); }
+.Header--16:not(.is-following) .Header-button:hover { background: color(var(--color-goal-16-shaded) alpha(10%)); }
+.Header--17:not(.is-following) .Header-button:hover { background: color(var(--color-goal-17-shaded) alpha(10%)); }
+
+.Header:matches(.is-open, :target) .Header-button:hover {
+  background: var(--color-hover-light);
+}
+
+.Header-button.is-current {
+  color: var(--color-interactive);
+  transition: background 180ms var(--ease-out), color 140ms var(--ease-out);
+}
+
+.Header-button:hover.is-current {
+  color: var(--color-interactive-dark);
+}
+
+/**
+ * Navigation toggle and our sweet vegan burger
+ */
+
+.Header-button--toggle {
+  position: absolute;
+  right: -14px;
+  padding-right: 13px;
+  top: 0;
+  width: 92px;
+  text-align: right;
+}
+
+.Header-button--close {
+  display: none;
+  width: 94px;
+}
+
+.Header-burger {
+  position: absolute;
+  top: 17px;
+  right: 46px;
+  width: 18px;
+  height: 14px;
+  transition: transform 250ms var(--ease-out);
+  will-change: transform;
+}
+
+.Header-burger:matches(::before, ::after),
+.Header-beanPatty {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform-origin: top right;
+  transition: transform 250ms var(--ease-out), opacity 250ms var(--ease-out);
+  will-change: transform;
+}
+
+.Header-burger::before {
+  top: 0;
+  width: 14px;
+}
+
+.Header-burger::after {
+  bottom: 0;
+  width: 12px;
+}
+
+.Header-beanPatty {
+  top: 6px;
+  transform-origin: center center;
+}
+
+/* Still things related to the toggle... */
+
+.Header:matches(.is-open, :target) .Header-button--toggle {
+  display: none;
+}
+
+.Header:matches(.is-open, :target) .Header-button--close {
+  display: block;
+}
+
+.Header:matches(.is-open, :target) .Header-burger {
+  transform: translateX(-5px);
+}
+
+.Header:matches(.is-open, :target) .Header-burger::before {
+  transform: rotate(-45deg) translate(1px, -1px) scaleX(1.49);
+}
+
+.Header:matches(.is-open, :target) .Header-burger::after {
+  transform: rotate(45deg) translate(2px, 0px) scaleX(1.74);
+}
+
+.Header:matches(.is-open, :target) .Header-beanPatty {
+  transform: scaleX(0);
+  opacity: 0;
+}
+
+/**
+ * Hide toggle text on narrow viewports
+ */
+
+@media (--viewport-xs-max) {
+  .Header-button--toggle {
+    width: 60px;
+    font-size: 0;
+    right: -24px;
+  }
+
+  .Header-burger {
+    right: 0;
+  }
+
+  .Header:matches(.is-open, :target) .Header-burger {
+    transform: translateX(-2px);
+  }
+}
+
+/**
+ * Back button
+ * 1. Replaces the logo when the header is marked as within history
+ */
+
+.Header-button--back {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -12px;
+  transform-origin: top left;
+}
+
+.Header-button--back { background: rgba(0, 0, 0, 0.15); }
+.Header--1 .Header-button--back { background: color(var(--color-goal-1-shaded) alpha(35%)); }
+.Header--2 .Header-button--back { background: color(var(--color-goal-2-shaded) alpha(35%)); }
+.Header--3 .Header-button--back { background: color(var(--color-goal-3-shaded) alpha(35%)); }
+.Header--4 .Header-button--back { background: color(var(--color-goal-4-shaded) alpha(35%)); }
+.Header--5 .Header-button--back { background: color(var(--color-goal-5-shaded) alpha(35%)); }
+.Header--6 .Header-button--back { background: color(var(--color-goal-6-shaded) alpha(35%)); }
+.Header--7 .Header-button--back { background: color(var(--color-goal-7-shaded) alpha(35%)); }
+.Header--8 .Header-button--back { background: color(var(--color-goal-8-shaded) alpha(35%)); }
+.Header--9 .Header-button--back { background: color(var(--color-goal-9-shaded) alpha(35%)); }
+.Header--10 .Header-button--back { background: color(var(--color-goal-10-shaded) alpha(35%)); }
+.Header--11 .Header-button--back { background: color(var(--color-goal-11-shaded) alpha(35%)); }
+.Header--12 .Header-button--back { background: color(var(--color-goal-12-shaded) alpha(35%)); }
+.Header--13 .Header-button--back { background: color(var(--color-goal-13-shaded) alpha(35%)); }
+.Header--14 .Header-button--back { background: color(var(--color-goal-14-shaded) alpha(35%)); }
+.Header--15 .Header-button--back { background: color(var(--color-goal-15-shaded) alpha(35%)); }
+.Header--16 .Header-button--back { background: color(var(--color-goal-16-shaded) alpha(35%)); }
+.Header--17 .Header-button--back { background: color(var(--color-goal-17-shaded) alpha(35%)); }
+
+.Header-button--back:hover { background: rgba(0, 0, 0, 0.19); }
+.Header--1:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-1-shaded) alpha(50%)); }
+.Header--2:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-2-shaded) alpha(50%)); }
+.Header--3:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-3-shaded) alpha(50%)); }
+.Header--4:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-4-shaded) alpha(50%)); }
+.Header--5:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-5-shaded) alpha(50%)); }
+.Header--6:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-6-shaded) alpha(50%)); }
+.Header--7:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-7-shaded) alpha(50%)); }
+.Header--8:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-8-shaded) alpha(50%)); }
+.Header--9:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-9-shaded) alpha(50%)); }
+.Header--10:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-10-shaded) alpha(50%)); }
+.Header--11:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-11-shaded) alpha(50%)); }
+.Header--12:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-12-shaded) alpha(50%)); }
+.Header--13:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-13-shaded) alpha(50%)); }
+.Header--14:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-14-shaded) alpha(50%)); }
+.Header--15:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-15-shaded) alpha(50%)); }
+.Header--16:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-16-shaded) alpha(50%)); }
+.Header--17:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-17-shaded) alpha(50%)); }
+
+.Header:matches(.is-open, :target) .Header-button--back,
+.Header.is-inHistory:not(.is-open):not(:target) .Header-logo {
+  display: none; /* 1 */
+}
+
+/**
+ * The arrows for the links and back button
+ */
+
+.Header-button--back {
+  padding-left: 31px;
+}
+
+.Header-button--link {
+  padding-right: 29px;
+}
+
+.Header-arrow {
+  position: absolute;
+  border-style: solid;
+  border-color: currentColor;
+  width: 10px;
+  height: 10px;
+  border-width: 1px 1px 0 0;
+  top: 19px;
+  left: 14px;
+  transform: rotate(-135deg);
+  transition: left 140ms var(--ease-out), right 140ms var(--ease-out);
+}
+
+.Header-button--link .Header-arrow {
+  transform: rotate(45deg);
+  left: auto;
+  right: 11px;
+}
+
+.Header-button--back:hover .Header-arrow {
+  left: 17px;
+}
+
+.Header-button--link:hover .Header-arrow {
+  right: 14px;
+}
+
+/**
+ * Tweak the global focus states a little bit
+ */
+
+:root[data-focus-source="key"] :matches(.Header-logo, .Header-button):focus {
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Narrow viewports with vertical navigation
+ */
+
+@media (--viewport-md-max) {
+  .Header-list,
+  .Header-button--back {
+    transform: none !important;
+  }
+
+  .Header-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 300ms 100ms var(--ease-out);
+    transition-property: transform, opacity;
+    transform: translateY(40px);
+  }
+
+  .Header-button--link {
+    height: auto;
+    padding: 0 48px 0 16px;
+    margin: 0 0 0 -10px;
+    color: inherit;
+    font-size: 48px;
+    line-height: 76px;
+    height: 74px;
+  }
+
+  .Header-button--link .Header-arrow {
+    width: 18px;
+    height: 18px;
+    top: 28px;
+    right: 16px;
+  }
+
+  /**
+   * Let's not mark selected page in vertical nav, it's mostly confusing
+   */
+
+  .Header-button--link.is-current,
+  .Header-button--link.is-current:hover {
+    color: inherit;
+  }
+
+  /**
+   * The fill is used as background for the full page navigation
+   */
+
+  .Header:matches(.is-open, :target) .Header-bar {
+    position: fixed;
+    color: #fff;
+  }
+
+  .Header:matches(.is-open, :target) .Header-fill {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: var(--color-gray-dark);
+    transform: none !important;
+  }
+
+  .Header:matches(.is-open, :target) .Header-nav {
+    visibility: visible;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .Header:matches(.is-open, :target) .Header-list {
+    position: absolute;
+    top: 22%;
+    left: 4px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Horizontal navigation
+ */
+
+@media (--viewport-md) {
+  .Header-button--toggle,
+  .Header-burger {
+    display: none !important;
+  }
+
+  .Header-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .Header-list {
+    margin-right: -9px;
+    overflow: hidden;
+    float: right;
+  }
+
+  .Header-item {
+    float: left;
+    margin-left: 13px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * On goal page
+ */
+
+.Header:not(.is-fromGoalGrid):not(.is-following) {
+  opacity: 1 !important;
+}
+
+.Header--white .Header-button--link.is-current,
+.Header--white .Header-button--link.is-current:hover,
+.Header--white:not(.is-following) {
+  color: #fff;
+}
+
+.Header--black .Header-button--link.is-current,
+.Header--black .Header-button--link.is-current:hover,
+.Header--black:not(.is-following) {
+  color: #000;
+}
+
+.Header--goalPage:not(.is-following):not(.is-open):not(:target) :matches(.Header-logoGoal, .Header-logoText) {
+  fill: currentColor;
+}
+
+.Header--white:not(.is-following) .Header-logoMask {
+  fill: #000;
+}
+
+.Header--black:not(.is-following) .Header-logoMask {
+  fill: #fff;
+}
+
+/**
+ * Fade in on goal pages
+ */
+
+.Header.is-fromGoalGrid:not(.is-following) {
+  opacity: 0;
+  will-change: opacity;
+  animation: Header-in 600ms 200ms var(--ease) forwards;
+}
+
+@keyframes Header-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    will-change: unset;
+  }
+}
+
+/**
+ * 1. Hide the white fill background
+ * 2. Prevent it from following along scroll before it getts the `.is-following` state class
+ * 3. We are not animating shrink/expand on goal pages
+ */
+
+.Header--goalPage:not(.is-following):not(.is-open):not(:target) .Header-fill {
+  display: none; /* 1 */
+}
+
+.Header--goalPage:not(.is-following):not(.is-open):not(:target) .Header-bar {
+  position: absolute; /* 2 */
+  color: currentColor;
+}
+
+.Header--goalPage:not(.is-following) :matches(.Header-fill, .Header-logo, .Header-content, .Header-list, .Header-button--back) {
+  will-change: unset; /* 3 */
+}
+
+.Header.is-fromGoalGrid:not(.is-following) .Header-button--back {
+  display: block;
+}
+
+.Header.is-fromGoalGrid:matches(.is-open, :target) .Header-button--back {
+  display: none;
+}
+
+.Header.is-fromGoalGrid:not(.is-following) .Header-logo {
+  display: none;
+}
+
+.Header.is-fromGoalGrid:not(.is-following) .Header-logo {
+  display: none;
+}
+
+.Header.is-fromGoalGrid:not(.is-following):matches(.is-open, :target) .Header-logo {
+  display: inline-block;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Default to expanded header (but not on very narrow viewports)
+ */
+
+@media (min-width: 310px) {
+  .Header-fill {
+    transform: translateY(var(--Header-fill-y));
+    will-change: transform;
+  }
+
+  .Header-logo {
+    transform: scale(var(--Header-logo-z));
+    will-change: transform;
+  }
+
+  .Header-content {
+    transform: translateY(var(--Header-content-y));
+    will-change: transform;
+  }
+}
+
+@media (--viewport-lg) {
+  .Header-list,
+  .Header-button--back {
+    transform: scale(var(--Header-list-z));
+    will-change: transform;
+  }
+}
+
+/**
+ * Disable expansion in some cases
+ */
+
+@media (--viewport-nano-max) {
+  .Header {
+    height: var(--Header-height-nano);
+  }
+  .Header :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
+    transform: none !important;
+    will-change: unset;
+  }
+}
+
+@media (--viewport-lg-max) {
+  .Header-list {
+    transform: none !important;
+    will-change: unset;
+  }
+}
+
+@media (--viewport-md-max) {
+  .Header--goalPage :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
+    transform: none !important;
+    will-change: unset;
+  }
+}
+
+.Header--goalPage.is-following :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
+  transform: none !important;
+  will-change: unset;
+}

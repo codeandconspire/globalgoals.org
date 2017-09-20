@@ -1,0 +1,79 @@
+/* @define Hero2 */
+
+.Hero2 {
+
+}
+
+.Hero2-field {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (--viewport-md-max) {
+  .Hero2-field {
+    width: 200vw;
+    padding: 0;
+    right: 0;
+  }
+}
+
+.Hero2-crop {
+  color: #fff;
+  visibility: hidden;
+  animation: Hero2-crop--appear 600ms 300ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes Hero2-crop--appear {
+  from {
+    visibility: visible;
+    transform: translateY(100%);
+  }
+
+  to {
+    visibility: visible;
+    transform: translateY(0%);
+  }
+}
+
+.Hero2-crop--grow {
+  transform-origin: center bottom;
+  animation:
+    Hero2-crop--appear 600ms 200ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards,
+    Hero2-crop--growing 1000ms 1000ms cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+
+.Hero2-crop--grow:nth-child(1) {
+  animation-delay: 200ms, 1000ms;
+}
+
+.Hero2-crop--grow:nth-child(2) {
+  animation-delay: 200ms, 1800ms;
+}
+
+.Hero2-crop--grow:nth-child(3) {
+  animation-delay: 200ms, 1600ms;
+}
+
+.Hero2-crop--grow:nth-child(4) {
+  animation-delay: 200ms, 2200ms;
+}
+
+.Hero2-crop--grow:nth-child(5) {
+  animation-delay: 200ms, 1800ms;
+}
+
+.Hero2-crop--grow:nth-child(6) {
+  animation-delay: 200ms, 2600ms;
+}
+
+@keyframes Hero2-crop--growing {
+  to {
+    transform: translateY(-30px);
+  }
+}
+
+.Hero2-crop--dark {
+  color: var(--color-goal-2-shaded);
+}

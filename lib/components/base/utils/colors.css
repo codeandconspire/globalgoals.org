@@ -1,0 +1,89 @@
+/* @define utilities */
+
+.u-bgWhite { background-color: #fff !important; }
+.u-colorWhite { color: #fff !important; }
+
+.u-bg1 { background-color: var(--color-goal-1) !important; }
+.u-bg1shaded { background-color: var(--color-goal-1-shaded) !important; }
+.u-color1s { color: var(--color-goal-1) !important; }
+.u-color1shaded { color: var(--color-goal-1-shaded) !important; }
+
+.u-bg2 { background-color: var(--color-goal-2) !important; }
+.u-bg2shaded { background-color: var(--color-goal-2-shaded) !important; }
+.u-color2s { color: var(--color-goal-2) !important; }
+.u-color2shaded { color: var(--color-goal-2-shaded) !important; }
+
+.u-bg3 { background-color: var(--color-goal-3) !important; }
+.u-bg3shaded { background-color: var(--color-goal-3-shaded) !important; }
+.u-color3s { color: var(--color-goal-3) !important; }
+.u-color3shaded { color: var(--color-goal-3-shaded) !important; }
+
+.u-bg4 { background-color: var(--color-goal-4) !important; }
+.u-bg4shaded { background-color: var(--color-goal-4-shaded) !important; }
+.u-color4s { color: var(--color-goal-4) !important; }
+.u-color4shaded { color: var(--color-goal-4-shaded) !important; }
+
+.u-bg5 { background-color: var(--color-goal-5) !important; }
+.u-bg5shaded { background-color: var(--color-goal-5-shaded) !important; }
+.u-color5s { color: var(--color-goal-5) !important; }
+.u-color5shaded { color: var(--color-goal-5-shaded) !important; }
+
+.u-bg6 { background-color: var(--color-goal-6) !important; }
+.u-bg6shaded { background-color: var(--color-goal-6-shaded) !important; }
+.u-color6s { color: var(--color-goal-6) !important; }
+.u-color6shaded { color: var(--color-goal-6-shaded) !important; }
+
+.u-bg7 { background-color: var(--color-goal-7) !important; }
+.u-bg7shaded { background-color: var(--color-goal-7-shaded) !important; }
+.u-color7s { color: var(--color-goal-7) !important; }
+.u-color7shaded { color: var(--color-goal-7-shaded) !important; }
+
+.u-bg8 { background-color: var(--color-goal-8) !important; }
+.u-bg8shaded { background-color: var(--color-goal-8-shaded) !important; }
+.u-color8s { color: var(--color-goal-8) !important; }
+.u-color8shaded { color: var(--color-goal-8-shaded) !important; }
+
+.u-bg9 { background-color: var(--color-goal-9) !important; }
+.u-bg9shaded { background-color: var(--color-goal-9-shaded) !important; }
+.u-color9s { color: var(--color-goal-9) !important; }
+.u-color9shaded { color: var(--color-goal-9-shaded) !important; }
+
+.u-bg10 { background-color: var(--color-goal-10) !important; }
+.u-bg10shaded { background-color: var(--color-goal-10-shaded) !important; }
+.u-color10 { color: var(--color-goal-10) !important; }
+.u-color10shaded { color: var(--color-goal-10-shaded) !important; }
+
+.u-bg11 { background-color: var(--color-goal-11) !important; }
+.u-bg11shaded { background-color: var(--color-goal-11-shaded) !important; }
+.u-color11 { color: var(--color-goal-11) !important; }
+.u-color11shaded { color: var(--color-goal-11-shaded) !important; }
+
+.u-bg12 { background-color: var(--color-goal-12) !important; }
+.u-bg12shaded { background-color: var(--color-goal-12-shaded) !important; }
+.u-color12 { color: var(--color-goal-12) !important; }
+.u-color12shaded { color: var(--color-goal-12-shaded) !important; }
+
+.u-bg13 { background-color: var(--color-goal-13) !important; }
+.u-bg13shaded { background-color: var(--color-goal-13-shaded) !important; }
+.u-color13 { color: var(--color-goal-13) !important; }
+.u-color13shaded { color: var(--color-goal-13-shaded) !important; }
+
+.u-bg14 { background-color: var(--color-goal-14) !important; }
+.u-bg14shaded { background-color: var(--color-goal-14-shaded) !important; }
+.u-color14 { color: var(--color-goal-14) !important; }
+.u-color14shaded { color: var(--color-goal-14-shaded) !important; }
+
+.u-bg15 { background-color: var(--color-goal-15) !important; }
+.u-bg15shaded { background-color: var(--color-goal-15-shaded) !important; }
+.u-color15 { color: var(--color-goal-15) !important; }
+.u-color15shaded { color: var(--color-goal-15-shaded) !important; }
+
+.u-bg16 { background-color: var(--color-goal-16) !important; }
+.u-bg16shaded { background-color: var(--color-goal-16-shaded) !important; }
+.u-color16 { color: var(--color-goal-16) !important; }
+.u-color16shaded { color: var(--color-goal-16-shaded) !important; }
+
+.u-bg17 { background-color: var(--color-goal-17) !important; }
+.u-bg17shaded { background-color: var(--color-goal-17-shaded) !important; }
+.u-color17 { color: var(--color-goal-17) !important; }
+.u-color17shaded { color: var(--color-goal-17-shaded) !important; }

@@ -1,0 +1,131 @@
+/* @define Hero14 */
+
+.Hero14 {
+
+}
+
+.Hero14-sea {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+.Hero14-sea.is-visible {
+  animation: Hero14-sea--appear 1800ms 200ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+@keyframes Hero14-sea--appear {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/**
+ * Jellyfish
+ */
+
+.Hero14-jellyfish {
+  display: none;
+  width: 50px;
+  height: auto;
+
+  position: absolute;
+  top: 100%;
+}
+
+.Hero14-jellyfish.in-transition {
+  transition: transform 15000ms linear;
+  transform: translateY(calc(-100vh - 100%));
+}
+
+@media (--Hero-wide) {
+  .Hero14-jellyfish {
+    display: inline;
+  }
+}
+
+/**
+ * Fish
+ */
+
+.Hero14-fish {
+  display: inline;
+  width: 87px;
+  height: auto;
+
+  position: absolute;
+  right: 100%;
+
+  color: #fff;
+}
+
+.Hero14-fish.in-transition {
+  transition: transform 45000ms linear;
+  transform: translateX(calc(100vw + 100%));
+}
+
+.Hero14-fish--small.in-transition {
+  transition-duration: 45000ms;
+}
+
+.Hero14-fish--medium.in-transition {
+  transition-duration: 35000ms;
+}
+
+.Hero14-fish--large.in-transition {
+  transition-duration: 25000ms;
+}
+
+.Hero14-fish--small {
+  width: 57px;
+  color: var(--color-goal-14-shaded);
+  opacity: 0.7;
+}
+
+.Hero14-fish--medium {
+  width: 87px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.Hero14-fish--large {
+  width: 123px;
+  color: #fff;
+}
+
+/**
+ * Bubble
+ */
+
+.Hero14-bubble {
+  display: inline;
+  width: 50px;
+  height: auto;
+
+  position: absolute;
+  top: 100%;
+
+  color: #fff;
+}
+
+.Hero14-bubble.in-transition {
+  transition: transform 9000ms linear;
+  transform: translateY(calc(-100vh - 100%));
+}
+
+.Hero14-bubble--small.in-transition {
+  width: 20px;
+  transition-duration: 15000ms;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.Hero14-bubble--large {
+  width: 32px;
+  color: #fff;
+}

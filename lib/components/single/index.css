@@ -1,0 +1,76 @@
+/* @define Single */
+
+@import "../base";
+
+.Single {
+  contain: style layout paint;
+}
+
+.Single-body {
+  max-width: 500px;
+  padding: 40px 0 0;
+}
+
+.Single-body::before {
+  content: "";
+  height: 8vh;
+  display: block;
+  max-height: 50px;
+}
+
+@media (--viewport-md) {
+  .Single-body {
+    padding: 40px 0 0;
+    max-width: 760px;
+  }
+}
+
+@media (--viewport-lg) {
+  .Single-body {
+    padding: 70px 0 0;
+  }
+}
+
+.Single-body--pullUp {
+  padding-top: 25px;
+}
+
+.Single-body--pullUp::before {
+  content: none;
+}
+
+/**
+ * Banner
+ */
+
+.Single-banner {
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+}
+
+.Single-bannerFigure {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: var(--color-gray-light);
+}
+
+@supports (object-fit: cover) {
+  .Single-bannerFigure {
+    height: 100%;
+  }
+}
+
+/**
+ * Date
+ */
+
+.Single-date {
+  display: block;
+  margin: 0px 0 12px;
+  color: var(--color-text-light);
+  position: relative;
+  top: -5px;
+}

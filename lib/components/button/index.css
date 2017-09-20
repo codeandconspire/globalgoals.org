@@ -1,0 +1,28 @@
+/* @define Button */
+
+.Button {
+  display: inline-block;
+  padding: 0.75em 1.4em 0.65em;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: currentColor;
+  font-family: var(--font-family-heading);
+  background-color: var(--color-gray-light-alpha);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Button:hover {
+  background-color: var(--color-hover-dark);
+}
+
+.Button--fill {
+  width: 100%;
+}
+
+.Button[disabled],
+.Button.is-disabled {
+  opacity: 0.6;
+}

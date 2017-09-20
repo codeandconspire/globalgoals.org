@@ -1,0 +1,303 @@
+/* @define Card */
+
+@import "../text";
+
+.Card {
+  display: block;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+:root.has-js .Card:not(.is-loading) {
+  cursor: pointer;
+}
+
+.Card-figure {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-gray-light);
+  user-select: none;
+  max-height: 420px;
+}
+
+.Card-figure::before {
+  content: "";
+  display: block;
+  padding-top: 81%;
+  height: 0;
+}
+
+.Card-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+@supports (object-fit: cover) {
+  .Card-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
+}
+
+.Card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  flex-grow: 1;
+}
+
+@media (--viewport-lg) {
+  .Card-content {
+    padding-bottom: 17px;
+  }
+}
+
+@media (--viewport-xl) {
+  .Card-content {
+    padding-bottom: 10px;
+  }
+}
+
+.Card-meta {
+  display: block;
+  margin: 19px 0 14px;
+  color: var(--color-text-light);
+  font-size: 14px;
+  font-style: normal;
+}
+
+.Card-meta--caption {
+  margin-top: 0.5rem;
+}
+
+/**
+ * Read more link
+ */
+
+.Card-link {
+  float: left;
+  margin: 17px 0 0 -16px;
+  padding: 0 29px 0 16px;
+  line-height: 49px;
+
+  position: relative;
+
+  font-size: 24px;
+  color: var(--color-link);
+  text-transform: uppercase;
+  font-family: var(--font-family-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-spacing: var(--word-spacing-heading);
+  user-select: none;
+  transition: color 140ms var(--ease-out), background 140ms var(--ease-out);
+  user-select: none;
+}
+
+.Card-linkText {
+  display: inline-block;
+  position: relative;
+}
+
+.Card-arrow {
+  position: absolute;
+  border-style: solid;
+  width: 10px;
+  height: 10px;
+  border-width: 1px 1px 0 0;
+  top: 19px;
+  right: -18px;
+  transform: rotate(45deg);
+  transition: transform 180ms cubic-bezier(0,0,.2,1);
+}
+
+.Card:not(.is-loading) .Card-link:hover,
+:root.has-js .Card:not(.is-loading):hover .Card-link {
+  background: var(--color-hover-dark);
+}
+
+.Card:not(.is-loading) .Card-link:hover,
+:root.has-js .Card:not(.is-loading):hover .Card-link {
+  color: var(--color-link-enter);
+}
+
+.Card:not(.is-loading) .Card-link:hover .Card-arrow,
+:root.has-js .Card:not(.is-loading):hover .Card-arrow {
+  transform: rotate(45deg) translate(-2.5px, 2.5px);
+}
+
+/**
+ * Tags
+ */
+
+.Card-tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "first third sixth"
+    "forth second fifth";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Card-tag:nth-child(1) {
+  grid-area: first;
+}
+
+.Card-tag:nth-child(2) {
+  grid-area: second;
+}
+
+.Card-tag:nth-child(3) {
+  grid-area: third;
+}
+
+.Card-tag:nth-child(4) {
+  grid-area: forth;
+}
+
+.Card-tag:nth-child(5) {
+  grid-area: fifth;
+}
+
+.Card-tag:nth-child(6) {
+  grid-area: sixth;
+}
+
+.Card-tag {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+  font-size: 48px;
+  color: #fff;
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+.Card-tag:only-child {
+  font-size: 64px;
+  width: 96px;
+  height: 96px;
+}
+
+/**
+ * Horizontal
+ */
+
+@media (--viewport-md) {
+  .Card--horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .Card--horizontal .Card-figure {
+    flex-grow: 1;
+  }
+
+  .Card--horizontal .Card-content {
+    flex-grow: 0;
+  }
+}
+
+@media (--viewport-md) {
+  .Card--horizontal .Card-content {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (--viewport-lg) {
+  .Card--horizontal .Card-content {
+    width: calc((100% / 3) - 21px);
+  }
+}
+
+@media (--viewport-xl) {
+  .Card--horizontal .Card-content {
+    width: calc((100% / 3) - 32px);
+  }
+}
+
+/**
+ * Fill
+ */
+
+.Card--fill .Card-content {
+  justify-content: space-between;
+  padding: 28px 32px 32px;
+  color: #fff;
+  min-height: 275px;
+  background-color: var(--color-interactive);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Card--fill .Card-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-hover-dark);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 1px;
+  transition: opacity 180ms var(--ease-out);
+}
+
+.Card--fill .Card-link {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 35px 0 -23px;
+  padding: 9px 0 0 0;
+  width: 100%;
+}
+
+.Card--fill .Card-link {
+  background: none !important;
+}
+
+.Card--fill .Card-link,
+.Card--fill .Card-link:hover,
+:root.has-js .Card--fill:hover .Card-link {
+  color: #fff !important;
+}
+
+:root.has-js .Card--fill:not(.is-loading):hover .Card-content::before {
+  opacity: 1;
+}
+
+/**
+ * Loading state
+ */
+
+.Card.is-loading .Card-arrow {
+  display: none;
+}
+
+.Card--fill.is-loading .Card-content {
+  background: #f8f8f8;
+}
+
+.Card--fill.is-loading .Card-link {
+  border-color: transparent;
+}
