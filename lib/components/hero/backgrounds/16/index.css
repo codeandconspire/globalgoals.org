@@ -4,11 +4,248 @@
 
 }
 
-.Hero16 svg {
+.Hero16-container {
+  height: 100%;
+  width: calc(100% - (24px * 2));
+  max-width: calc(1280px + (48px * 2));
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+
+  animation: Hero16--appear 1000ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes Hero16--appear {
+  to {
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media (--viewport-lg) {
+  .Hero16-container {
+    width: calc(100% - (32px * 2));
+  }
+}
+
+@media (--viewport-xl) {
+  .Hero16-container {
+    width: calc(100% - (48px * 2));
+  }
+}
+
+.Hero16-institution {
+  height: 22vh;
+  max-height: 174px;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+  animation: Hero16-institution--appear 1000ms 400ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+@keyframes Hero16-institution--appear {
+  to {
+    transform: translate(-50%, 0%);
+  }
+}
+
+.Hero16-building {
+  display: none;
+  height: 18vh;
+  max-height: 147px;
+
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  animation: Hero16-building--appear 1200ms 400ms cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+@keyframes Hero16-building--appear {
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.Hero16-building--left {
+  left: 0;
+}
+
+.Hero16-building--right {
+  right: 0;
+}
+
+@media (--Hero-wide) {
+  .Hero16-building {
+    display: block;
+  }
+}
+
+.Hero16-person {
+  display: none;
+  height: 5vh;
+  max-height: 43px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  animation: Hero16-person--appear 600ms 700ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+@media (--Hero-wide) {
+  .Hero16-person {
+    display: block;
+  }
+}
+
+.Hero16-person--judge {
+  right: 8%;
+  animation-delay: 900ms;
+}
+
+.Hero16-person--police:nth-child(1) {
+  left: 8%;
+}
+
+.Hero16-person--police:nth-child(2) {
+  left: 11%;
+  height: 4vh;
+  animation-delay: 1000ms;
+}
+
+.Hero16-person--police:nth-child(3) {
+  right: 11%;
+}
+
+@keyframes Hero16-person--appear {
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.Hero16-sky {
+  height: 100%;
   width: 100%;
-  max-height: 100%;
 
   position: absolute;
   left: 0;
   bottom: 0;
+  transform: translateY(100%);
+
+  animation: Hero16-sky--appear 1000ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes Hero16-sky--appear {
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.Hero16-cloud {
+  position: absolute;
+  color: #fff;
+  opacity: 0.1;
+  animation: Hero16-cloud--appear 1200ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes Hero16-cloud--appear {
+  0% {
+    transform: translateY(calc(200% + 50px));
+  }
+
+  25% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.Hero16-cloud--small {
+  width: 9%;
+}
+
+.Hero16-cloud--medium {
+  width: 15%;
+}
+
+.Hero16-cloud--large {
+  width: 24%;
+}
+
+@media (--Hero-wide) {
+  .Hero16-cloud--small {
+    width: 3%;
+  }
+
+  .Hero16-cloud--medium {
+    width: 5%;
+  }
+
+  .Hero16-cloud--large {
+    width: 8%;
+  }
+}
+
+.Hero16-cloud--light {
+  opacity: 0.275;
+  visibility: hidden;
+}
+
+@media (--Hero-wide) {
+  .Hero16-cloud--light {
+    visibility: visible;
+  }
+}
+
+.Hero16-cloud--dark {
+  opacity: 0.4;
+  color: var(--color-goal-16-shaded);
+}
+
+.Hero16-cloud:nth-child(1) {
+  top: 70vh;
+  left: -2.5%;
+}
+
+.Hero16-cloud:nth-child(2) {
+  top: 25vh;
+  left: 5.55%;
+}
+
+.Hero16-cloud:nth-child(3) {
+  top: 50vh;
+  left: 10%;
+}
+
+.Hero16-cloud:nth-child(4) {
+  top: 60vh;
+  left: 22%;
+}
+
+.Hero16-cloud:nth-child(5) {
+  top: 30vh;
+  left: 32%;
+}
+
+.Hero16-cloud:nth-child(6) {
+  top: 18vh;
+  right: 20%;
+}
+
+.Hero16-cloud:nth-child(7) {
+  top: 35vh;
+  right: 12%;
+}
+
+.Hero16-cloud:nth-child(8) {
+  top: 50vh;
+  right: 14%;
+}
+
+.Hero16-cloud:nth-child(9) {
+  top: 70vh;
+  right: -1.5%;
 }
