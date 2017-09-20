@@ -69,6 +69,10 @@
   will-change: transform;
 }
 
+.Hero--takeover .Hero-container {
+  will-change: unset;
+}
+
 @media (--Hero-wide) {
   .Hero {
     min-height: 580px;
