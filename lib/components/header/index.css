@@ -15,18 +15,18 @@
 }
 
 /**
- * 1. Root element is left at top of page to fill upp space
+ * 1. Root element is left behind (at top of page) to fill upp space
  */
 
 .Header {
-  position: relative /* 1 */;
+  position: relative; /* 1 */
   z-index: 100;
   height: var(--Header-height);
   contain: size layout style;
 }
 
 /**
- * The sticky positioned element
+ * The thing following along on scroll
  */
 
 .Header-bar {
