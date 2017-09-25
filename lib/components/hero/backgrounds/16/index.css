@@ -104,18 +104,59 @@
   animation-delay: 900ms;
 }
 
-.Hero16-person--police:nth-child(1) {
+.Hero16-person--citizen:nth-child(1) {
   left: 8%;
 }
 
-.Hero16-person--police:nth-child(2) {
+.Hero16-person--citizen:nth-child(2) {
+  left: 9.5%;
+  height: 5.25vh;
+}
+
+.Hero16-person--citizen:nth-child(3) {
   left: 11%;
   height: 4vh;
   animation-delay: 1000ms;
 }
 
-.Hero16-person--police:nth-child(3) {
-  right: 11%;
+.Hero16-person--citizen:nth-child(4) {
+  display: none;
+  left: 20%;
+  height: 3.5vh;
+}
+
+.Hero16-person--citizen:nth-child(5) {
+  display: none;
+  left: 22%;
+}
+
+.Hero16-person--citizen:nth-child(6) {
+  display: none;
+  right: 25%;
+}
+
+.Hero16-person--citizen:nth-child(7) {
+  display: none;
+  right: 23%;
+}
+
+.Hero16-person--citizen:nth-child(8) {
+  right: 11.5%;
+  height: 4.5vh;
+}
+
+.Hero16-person--citizen:nth-child(9) {
+  right: 10%;
+  height: 4vh;
+}
+
+@media (min-width: 1200px) {
+  .Hero16-person--citizen:nth-child(4),
+  .Hero16-person--citizen:nth-child(5),
+  .Hero16-person--citizen:nth-child(6),
+  .Hero16-person--citizen:nth-child(7) {
+    display: block;
+  }
 }
 
 @keyframes Hero16-person--appear {
