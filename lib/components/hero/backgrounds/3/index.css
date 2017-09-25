@@ -7,13 +7,14 @@
 .Hero3-heart {
   position: absolute;
   opacity: 0;
-  fill: var(--color-goal-3-shaded);
+  fill: #fff;
 }
 
 .Hero3-heart.is-visible {
   animation-name: Hero3-heart--pop;
   animation-duration: 700ms;
-  animation-timing-function: ease;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50% 50%;
 }
 
 @keyframes Hero3-heart--pop {
@@ -22,19 +23,19 @@
     transform: scale(0.5);
   }
 
-  35% {
+  20% {
     opacity: 1;
     transform: scale(1.5);
   }
 
-  45% {
+  35% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(0.9);
   }
 
-  80% {
+  50% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1.5);
   }
 
   100% {
