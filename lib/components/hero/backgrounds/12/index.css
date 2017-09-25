@@ -37,7 +37,7 @@
 
   opacity: 0.6;
   transform: translate(-50%, -50%) rotate(0.5turn);
-  animation: Hero12-circle--spin 20000ms linear infinite;
+  animation: Hero12-circle--spin 30000ms linear infinite;
 }
 
 @keyframes Hero12-circle--spin {
