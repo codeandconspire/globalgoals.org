@@ -11,33 +11,6 @@
   }
 }
 
-.Hero9-industrySun {
-  display: none;
-  width: 7%;
-  min-width: 75px;
-  position: absolute;
-  left: 11%;
-  bottom: 30vh;
-
-  animation: Hero9-industrySun--spin 8000ms linear infinite;
-}
-
-@keyframes Hero9-industrySun--spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (--Hero-wide) {
-  .Hero9-industrySun {
-    display: block;
-  }
-}
-
 .Hero9-industryCloud {
   position: absolute;
   color: #fff;
@@ -166,5 +139,45 @@
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+.Hero9-satelite {
+  display: none;
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  top: 12%;
+
+  transform-origin: 0 300vh;
+  animation: Hero9-satelite--flying 15000ms linear infinite;
+}
+
+@media (--Hero-wide) {
+  .Hero9-satelite {
+    display: block;
+  }
+}
+
+@keyframes Hero9-satelite--flying {
+  from {
+    transform: rotate(-25deg);
+  }
+  to {
+    transform: rotate(25deg);
+  }
+}
+
+.Hero9-tower {
+  display: none;
+  height: 250px;
+  position: absolute;
+  left: 12%;
+  bottom: 0;
+}
+
+@media (--Hero-wide) {
+  .Hero9-tower {
+    display: block;
   }
 }

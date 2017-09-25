@@ -7,6 +7,7 @@
 .Hero-eye {
   display: none;
   width: 90%;
+  max-height: 90%;
 
   position: absolute;
   left: 50%;
@@ -24,7 +25,8 @@
 
 .Hero-eyeLid {
   display: none;
-  width: calc(90% + 0px);
+  width: 90%;
+  max-height: 47%;
 
   position: absolute;
   left: calc(50% - 0px);
@@ -72,7 +74,8 @@
 
 @media (--Hero-wide) {
   .Hero-globe {
-    width: 45%;
+    width: 38%;
+    max-height: 70%;
     max-width: none;
   }
 
@@ -98,7 +101,7 @@
 
 .Hero-globeShape {
   transform-origin: 50% 50%;
-  animation: Hero-globeShape--spin 12000ms linear infinite;
+  animation: Hero-globeShape--spin 30000ms linear infinite;
 }
 
 @keyframes Hero-globeShape--spin {

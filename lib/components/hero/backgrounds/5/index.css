@@ -64,7 +64,9 @@
 }
 
 .Hero5-figure {
-  fill: var(--color-goal-5-shaded);
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1;
 }
 
 .Hero5-grower {
