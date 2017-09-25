@@ -169,8 +169,15 @@
 }
 
 .Hero9-tower {
+  display: none;
   height: 250px;
   position: absolute;
   left: 12%;
   bottom: 0;
+}
+
+@media (--Hero-wide) {
+  .Hero9-tower {
+    display: block;
+  }
 }
