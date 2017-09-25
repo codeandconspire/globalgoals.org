@@ -26,7 +26,7 @@
 
 .Hero10-scaleArm {
   transform-origin: 50% 0%;
-  transition: transform 1000ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 1750ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .Hero10-scaleArm.is-rightTilted {
@@ -39,7 +39,7 @@
 
 .Hero10-scaleWeight {
   transform-origin: 50% 0%;
-  transition: transform 1000ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 1750ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .Hero10-scaleWeight--right.is-rightTilted,
@@ -64,7 +64,7 @@
   background: var(--color-goal-10);
   border-radius: 100%;
 
-  animation: Hero10-bend--disappear 1500ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero10-bend--disappear 1750ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes Hero10-bend--disappear {
@@ -83,7 +83,7 @@
 
   transform: translateX(-50%);
   transform-origin: 50% 0;
-  transition: transform 1000ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 1750ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .Hero10-board.is-rightTilted {
@@ -95,7 +95,8 @@
 }
 
 .Hero10-board--light {
-  background-color: color(var(--color-goal-10-shaded) lightness(+25));
+  opacity: 0.15;
+  background-color: #fff;
 }
 
 .Hero10-board--dark {
