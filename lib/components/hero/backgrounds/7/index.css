@@ -86,23 +86,23 @@
 
 .Hero7-energyTurbine:nth-child(1) {
   height: 180px;
-  right: -20%;
+  right: 14%;
 }
 
 .Hero7-energyTurbine:nth-child(2) {
   height: 100px;
-  right: 5%;
+  right: 40%;
 }
 
 @media (--Hero-wide) {
   .Hero7-energyTurbine:nth-child(1) {
     height: 250px;
-    right: 0%;
+    right: 10%;
   }
 
   .Hero7-energyTurbine:nth-child(2) {
     height: 130px;
-    right: 12%;
+    right: 22%;
   }
 }
 

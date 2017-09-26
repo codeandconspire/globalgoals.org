@@ -107,28 +107,28 @@
 
 .Hero9-industryTurbine:nth-child(1) {
   height: 150px;
-  right: 14%;
+  right: 40%;
 }
 
 .Hero9-industryTurbine:nth-child(2) {
   height: 100px;
-  right: -30px;
+  right: 18%;
 }
 
 @media (--Hero-wide) {
   .Hero9-industryTurbine:nth-child(1) {
     height: 200px;
-    right: 14%;
-  }
+    right: 18%;
+}
 
   .Hero9-industryTurbine:nth-child(2) {
     height: 120px;
-    right: 5%;
+    right: 10%;
   }
 }
 
 .Hero9-industryBlades {
-  transform-origin: 49.9% 65.3%;
+  transform-origin: 50% 50%;
   animation: Hero9-industryBlades--spin 3000ms linear infinite;
 }
 
