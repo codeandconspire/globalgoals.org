@@ -376,3 +376,27 @@
 :root.has-js .CallToAction-panel.is-expanded {
   display: block;
 }
+
+/**
+ * Message
+ */
+
+.CallToAction-message {
+
+}
+
+
+.CallToAction-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-color: var(--color-gray-light);
+}
+
+.CallToAction-share {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+}
