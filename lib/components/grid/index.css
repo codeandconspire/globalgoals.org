@@ -3,7 +3,7 @@
 :root {
   --Grid-gutter: 24px;
   --Grid-gutter-lg: 32px;
-  --Grid-gutter-xl: 48px;
+  --Grid-gutter-xl: 46px;
 
   --Grid-loose-gutter: 45px;
   --Grid-loose-gutter-md: 65px;
@@ -113,13 +113,9 @@
   width: 50%;
 }
 
-/**
- * 1. Compensate for browser inconsistencies in pixel rounding
- */
-
 .Grid-cell--1of3 {
   flex-basis: auto;
-  width: calc((100% / 3) - 1px); /* 1 */
+  width: calc(100% / 3);
 }
 
 @media (--viewport-sm) {
@@ -130,7 +126,7 @@
 
   .Grid-cell--sm1of3 {
     flex-basis: auto;
-    width: calc((100% / 3) - 1px);
+    width: calc(100% / 3);
   }
 }
 
@@ -142,7 +138,7 @@
 
   .Grid-cell--md1of3 {
     flex-basis: auto;
-    width: calc((100% / 3) - 1px);
+    width: calc(100% / 3);
   }
 
   .Grid-cell--divideDown {
@@ -158,7 +154,7 @@
 
   .Grid-cell--lg1of3 {
     flex-basis: auto;
-    width: calc((100% / 3) - 1px);
+    width: calc(100% / 3);
   }
 
   .Grid-cell--divideDown {

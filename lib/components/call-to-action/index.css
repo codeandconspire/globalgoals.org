@@ -381,8 +381,8 @@
  * Message
  */
 
-.CallToAction-message {
-
+.CallToAction-poster {
+  cursor: pointer;
 }
 
 
@@ -398,5 +398,25 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding: 16px;
+  padding: 8px;
+}
+
+@media (--viewport-md) {
+  .CallToAction-share {
+    padding: 16px;
+  }
+}
+
+.CallToAction-shareIcon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-right: 16px;
+}
+
+@media (--viewport-md) {
+  .CallToAction-shareIcon {
+    width: 32px;
+    height: 32px;
+  }
 }

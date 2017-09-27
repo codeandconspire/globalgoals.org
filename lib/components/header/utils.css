@@ -1,16 +1,14 @@
 /* @define utilities */
 
-@media (--viewport-md-max) {
-  :root:not(.has-menu) .u-transformTarget {
-    transition: transform 300ms var(--ease-out), opacity 300ms var(--ease-out) !important;
-  }
+:root:not(.has-overlay) .u-transformTarget {
+  transition: transform 300ms var(--ease-out), opacity 300ms var(--ease-out) !important;
+}
 
-  /**
-   * 1. Hide while "mobile" navigation is visible
-   */
+/**
+ * 1. Hide while "mobile" navigation is visible
+ */
 
-  :root.has-menu .u-transformTarget {
-    opacity: 0 !important;
-    transform: translateY(40px) !important; /* 1 */
-  }
+:root.has-overlay .u-transformTarget {
+  opacity: 0 !important;
+  transform: translateY(40px) !important; /* 1 */
 }
