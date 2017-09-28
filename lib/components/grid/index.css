@@ -16,6 +16,11 @@
   margin: 0 calc(var(--Grid-gutter) * -0.5);
 }
 
+.Grid--masonry {
+  display: block;
+  column-count: 1;
+}
+
 .Grid-cell {
   display: flex;
   flex-basis: 100%;
@@ -24,8 +29,18 @@
   margin-bottom: var(--Grid-gutter);
 }
 
+/**
+ * 1. Don't let them vertically span multiple columns
+ * 2. Don't let their width change
+ */
+
+.Grid--masonry > .Grid-cell {
+  display: inline-block; /* 1 */
+  width: 100%; /* 2 */
+}
+
 .Grid--loose {
-  margin: 0 calc(var(--Grid-loose-gutter) * -0.5);
+  margin: 0 calc(var(--Grid-loose-gutter) * -0.5) calc(var(--Grid-loose-gutter) * -1);
 }
 
 .Grid--loose > .Grid-cell {
@@ -35,7 +50,7 @@
 
 @media (--viewport-md) {
   .Grid--loose {
-    margin: 0 calc(var(--Grid-loose-gutter-md) * -0.5);
+    margin: 0 calc(var(--Grid-loose-gutter-md) * -0.5) calc((var(--Grid-loose-gutter-md) + 10px) * -1);
   }
 
   .Grid--loose > .Grid-cell {
@@ -49,13 +64,13 @@
     margin: 0 calc(var(--Grid-gutter-lg) * -0.5);
   }
 
-  .Grid-cell {
+  .Grid .Grid-cell {
     padding: 0 calc(var(--Grid-gutter-lg) * 0.5);
     margin-bottom: var(--Grid-gutter-lg);
   }
 
   .Grid--loose {
-    margin: 0 calc(var(--Grid-loose-gutter-lg) * -0.5);
+    margin: 0 calc(var(--Grid-loose-gutter-lg) * -0.5) calc(var(--Grid-loose-gutter-lg) * -1);
   }
 
   .Grid--loose > .Grid-cell {
@@ -69,13 +84,13 @@
     margin: 0 calc(var(--Grid-gutter-xl) * -0.5);
   }
 
-  .Grid-cell {
+  .Grid .Grid-cell {
     padding: 0 calc(var(--Grid-gutter-xl) * 0.5);
     margin-bottom: var(--Grid-gutter-xl);
   }
 
   .Grid--loose {
-    margin: 0 calc(var(--Grid-loose-gutter-lg) * -0.5);
+    margin: 0 calc(var(--Grid-loose-gutter-lg) * -0.5) calc(var(--Grid-loose-gutter-lg) * -1);
   }
 
   .Grid--loose > .Grid-cell {
@@ -113,9 +128,17 @@
   width: 50%;
 }
 
+.Grid--masonry.Grid--2col {
+  column-count: 2;
+}
+
 .Grid-cell--1of3 {
   flex-basis: auto;
   width: calc(100% / 3);
+}
+
+.Grid--masonry.Grid--3col {
+  column-count: 3;
 }
 
 @media (--viewport-sm) {
@@ -124,9 +147,17 @@
     width: 50%;
   }
 
+  .Grid--masonry.Grid--sm2col {
+    column-count: 2;
+  }
+
   .Grid-cell--sm1of3 {
     flex-basis: auto;
     width: calc(100% / 3);
+  }
+
+  .Grid--masonry.Grid--sm3col {
+    column-count: 3;
   }
 }
 
@@ -136,9 +167,17 @@
     width: 50%;
   }
 
+  .Grid--masonry.Grid--md2col {
+    column-count: 2;
+  }
+
   .Grid-cell--md1of3 {
     flex-basis: auto;
     width: calc(100% / 3);
+  }
+
+  .Grid--masonry.Grid--md3col {
+    column-count: 3;
   }
 
   .Grid-cell--divideDown {
@@ -152,9 +191,17 @@
     width: 50%;
   }
 
+  .Grid--masonry.Grid--lg2col {
+    column-count: 2;
+  }
+
   .Grid-cell--lg1of3 {
     flex-basis: auto;
     width: calc(100% / 3);
+  }
+
+  .Grid--masonry.Grid--lg3col {
+    column-count: 3;
   }
 
   .Grid-cell--divideDown {
