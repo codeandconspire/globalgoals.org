@@ -59,12 +59,14 @@
   right: calc(100% + 1px);
   bottom: 0;
   will-change: transform;
+}
 
-  animation-name: Hero11-bus--drive;
-  animation-duration: 14000ms;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-delay: 1000ms;
+.Hero11-bus.is-coming {
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.Hero11-bus.is-leaving {
+  transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 @media (--Hero-wide) {
@@ -74,18 +76,8 @@
   }
 }
 
-:root.has-js .Hero11-bus {
-  animation-play-state: paused;
-}
-
 :root.has-js .Hero11-bus.in-transition {
-  animation-play-state: running;
-}
-
-@keyframes Hero11-bus--drive {
-  to {
-    transform: translateX(calc(100vw + 100%));
-  }
+  transition-property: transform;
 }
 
 /**
