@@ -5,9 +5,9 @@
 }
 
 .Hero8-bars {
-  width: 300px;
+  width: 400px;
   position: absolute;
-  left: 48px;
+  right: 48px;
   bottom: 0;
 }
 
@@ -20,7 +20,7 @@
 .Hero8-bar {
   visibility: hidden;
   transform: translateY(100%);
-  animation: Hero8-bar--appear 325ms 200ms ease-out forwards;
+  animation: Hero8-bar--appear 325ms 400ms ease-out forwards;
   fill: #fff;
 }
 
@@ -39,25 +39,25 @@
   }
 }
 
-.Hero8-bar--light:nth-child(1) { animation-delay: 200ms; }
-.Hero8-bar--light:nth-child(2) { animation-delay: 275ms; }
-.Hero8-bar--light:nth-child(3) { animation-delay: 350ms; }
-.Hero8-bar--light:nth-child(4) { animation-delay: 425ms; }
-.Hero8-bar--light:nth-child(5) { animation-delay: 500ms; }
-.Hero8-bar--light:nth-child(6) { animation-delay: 575ms; }
+.Hero8-bar--light:nth-child(1) { animation-delay: 400ms; }
+.Hero8-bar--light:nth-child(2) { animation-delay: 475ms; }
+.Hero8-bar--light:nth-child(3) { animation-delay: 550ms; }
+.Hero8-bar--light:nth-child(4) { animation-delay: 625ms; }
+.Hero8-bar--light:nth-child(5) { animation-delay: 700ms; }
+.Hero8-bar--light:nth-child(6) { animation-delay: 775ms; }
 
-.Hero8-bar--dark:nth-child(1) { animation-delay: 500ms; }
-.Hero8-bar--dark:nth-child(2) { animation-delay: 575ms; }
-.Hero8-bar--dark:nth-child(3) { animation-delay: 650ms; }
-.Hero8-bar--dark:nth-child(4) { animation-delay: 725ms; }
-.Hero8-bar--dark:nth-child(5) { animation-delay: 800ms; }
+.Hero8-bar--dark:nth-child(1) { animation-delay: 700ms; }
+.Hero8-bar--dark:nth-child(2) { animation-delay: 775ms; }
+.Hero8-bar--dark:nth-child(3) { animation-delay: 850ms; }
+.Hero8-bar--dark:nth-child(4) { animation-delay: 925ms; }
+.Hero8-bar--dark:nth-child(5) { animation-delay: 1000ms; }
 
 .Hero8-curves {
   width: 100%;
   max-width: 627px;
 
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
 }
 
@@ -65,7 +65,7 @@
   fill: #fff;
   transform: scaleY(0);
   transform-origin: 0 100%;
-  animation: Hero8-curve--appear 450ms 200ms ease-out forwards;
+  animation: Hero8-curve--appear 450ms 250ms ease-out forwards;
   will-change: transform;
 }
 
@@ -80,6 +80,6 @@
 }
 
 .Hero8-curve:nth-child(1) { animation-delay: 300ms; }
-.Hero8-curve:nth-child(2) { animation-delay: 500ms; }
+.Hero8-curve:nth-child(2) { animation-delay: 1300ms; }
 .Hero8-curve:nth-child(3) { animation-delay: 1050ms; }
 .Hero8-curve:nth-child(4) { animation-delay: 650ms; animation-duration: 600ms; }
