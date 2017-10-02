@@ -105,10 +105,7 @@
 
 .Grid-cell--appear {
   opacity: 0;
-  animation-name: Grid-cell--appear;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-duration: 600ms;
+  animation: Grid-cell--appear 600ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes Grid-cell--appear {

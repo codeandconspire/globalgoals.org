@@ -8,8 +8,7 @@
 
 :root {
   --giorgio-sans-bold: "Giorgio Sans Bold", impact, sans-serif;
-  --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
   --font-family-heading: var(--giorgio-sans-bold);
   --font-family-body: var(--system-font);

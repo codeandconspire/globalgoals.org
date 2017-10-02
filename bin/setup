@@ -24,6 +24,7 @@ const dotenv = dedent`
   PRISMIC_HOOK=/prismic-hook
   PRISMIC_PREVIEW=/prismic-preview
   # GOOGLE_ANALYTICS_ID=<INSERT_ANALYTICS_ID_HERE>
+  #MAILCHIMP_ACTION=<INSERT_MAILCHIMP_EMBED_ACTION_HERE>
 
   # Settings
   GLOBALGOALS_NAME=The Global Goals
