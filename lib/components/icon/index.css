@@ -17,7 +17,7 @@
 .Icon-label {
   width: 100%;
   color: currentColor;
-  font-family: "Giorgio Sans Bold", impact, sans-serif;
+  font-family: var(--font-family-heading);
   text-transform: uppercase;
   white-space: nowrap;
   -webkit-font-smoothing: antialiased;
