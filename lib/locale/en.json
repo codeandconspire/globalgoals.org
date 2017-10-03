@@ -93,5 +93,10 @@
   "Choose how to share": "Choose how to share",
   "More": "More",
   "Share image": "Share image",
-  "Email address": "Email address"
+  "Email address": "Email address",
+  "Enter your name and e-mail address below to get news about %s what’s happening around the Global goals.": "Enter your name and e-mail address below to get news about %s what’s happening around the Global goals.",
+  "Your name": "Your name",
+  "E.g. John": "E.g. John",
+  "Your e-mail": "Your e-mail",
+  "E.g. email@domain.com": "E.g. email@domain.com"
 }
