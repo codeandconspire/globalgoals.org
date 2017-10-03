@@ -4,9 +4,10 @@
 @import "./utils";
 
 :root {
-  --Header-height: 117px;
+  --Header-height: 78px;
+  --Header-height-md: 117px;
   --Header-height-lg: 128px;
-  --Header-height-nano: 78px;
+
 
   --Header-fill-y: 40px;
   --Header-content-y: 20px;
@@ -26,7 +27,7 @@
 }
 
 /**
- * The thing following along on scroll
+ * The thing that is following along on scroll
  */
 
 .Header-bar {
@@ -83,7 +84,7 @@
 }
 
 /**
- * El logotipo
+ * The logo
  */
 
 .Header-logo {
@@ -110,6 +111,12 @@
 /**
  * On wider viewports
  */
+
+@media (--viewport-md) {
+  .Header {
+    height: var(--Header-height-md);
+  }
+}
 
 @media (--viewport-lg) {
   .Header {
@@ -158,6 +165,10 @@
   transition: background 180ms var(--ease-out);
 }
 
+/**
+ * Took this a bit too far, but it looks better than a simple semi-black overlay
+ */
+
 .Header-button:hover { background: var(--color-hover-dark); }
 .Header--1:not(.is-following) .Header-button:hover { background: color(var(--color-goal-1-shaded) alpha(10%)); }
 .Header--2:not(.is-following) .Header-button:hover { background: color(var(--color-goal-2-shaded) alpha(10%)); }
@@ -191,7 +202,7 @@
 }
 
 /**
- * Navigation toggle and our sweet vegan burger
+ * Navigation toggle and our juicy vegan burger
  */
 
 .Header-button--toggle {
@@ -246,8 +257,6 @@
   transform-origin: center center;
 }
 
-/* Still things related to the toggle... */
-
 .Header:matches(.is-open, :target) .Header-button--toggle {
   display: none;
 }
@@ -274,7 +283,7 @@
 }
 
 /**
- * Hide toggle text on narrow viewports
+ * Hide toggle text on very narrow viewports
  */
 
 @media (--viewport-xs-max) {
@@ -295,7 +304,6 @@
 
 /**
  * Back button
- * 1. Replaces the logo when the header is marked as within history
  */
 
 .Header-button--back {
@@ -305,6 +313,10 @@
   left: -12px;
   transform-origin: top left;
 }
+
+/**
+ * Again, taking it a bit to far
+ */
 
 .Header-button--back { background: rgba(0, 0, 0, 0.15); }
 .Header--1 .Header-button--back { background: color(var(--color-goal-1-shaded) alpha(35%)); }
@@ -343,6 +355,10 @@
 .Header--15:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-15-shaded) alpha(50%)); }
 .Header--16:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-16-shaded) alpha(50%)); }
 .Header--17:not(.is-following) .Header-button--back:hover { background: color(var(--color-goal-17-shaded) alpha(50%)); }
+
+/**
+ * 1. Replaces the logo when the header is marked as within history
+ */
 
 .Header:matches(.is-open, :target) .Header-button--back,
 .Header.is-inHistory:not(.is-open):not(:target) .Header-logo {
@@ -519,10 +535,6 @@
  * On goal page
  */
 
-.Header:not(.is-fromGoalGrid):not(.is-following) {
-  opacity: 1 !important;
-}
-
 .Header--white .Header-button--link.is-current,
 .Header--white .Header-button--link.is-current:hover,
 .Header--white:not(.is-following) {
@@ -549,6 +561,7 @@
 
 /**
  * Fade in on goal pages
+ * 1. Except if the user landed hard on the goal page
  */
 
 .Header.is-fromGoalGrid:not(.is-following) {
@@ -565,6 +578,10 @@
     opacity: 1;
     will-change: unset;
   }
+}
+
+.Header:not(.is-fromGoalGrid):not(.is-following) {
+  opacity: 1 !important; /* 1 */
 }
 
 /**
@@ -609,10 +626,10 @@
 /* -------------------------------------------------------------------------- */
 
 /**
- * Default to expanded header (but not on very narrow viewports)
+ * Default to expanded header on wider viewports
  */
 
-@media (min-width: 310px) {
+@media (--viewport-md) {
   .Header-fill {
     transform: translateY(var(--Header-fill-y));
     will-change: transform;
@@ -629,25 +646,18 @@
   }
 }
 
+@media (--viewport-md-max) {
+  .Header :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
+    transform: none !important;
+    will-change: unset;
+  }
+}
+
 @media (--viewport-lg) {
   .Header-list,
   .Header-button--back {
     transform: scale(var(--Header-list-z));
     will-change: transform;
-  }
-}
-
-/**
- * Disable expansion in some cases
- */
-
-@media (--viewport-nano-max) {
-  .Header {
-    height: var(--Header-height-nano);
-  }
-  .Header :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
-    transform: none !important;
-    will-change: unset;
   }
 }
 
@@ -657,6 +667,21 @@
     will-change: unset;
   }
 }
+
+/**
+ * Disable expansion in some cases
+ */
+/*
+@media (--viewport-nano-max) {
+  .Header {
+    height: var(--Header-height-nano);
+  }
+  .Header :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
+    transform: none !important;
+    will-change: unset;
+  }
+}
+*/
 
 @media (--viewport-md-max) {
   .Header--goalPage :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
