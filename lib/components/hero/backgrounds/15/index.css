@@ -306,11 +306,11 @@
   }
 
   45% {
-    transform: rotate(-12deg) translate(-5px, -5px);
+    transform: rotate(-12deg) translate(-5px, -7px);
   }
 
   55% {
-    transform: rotate(-12deg) translate(-5px -5px);
+    transform: rotate(-12deg) translate(-5px -7px);
   }
 
   100% {

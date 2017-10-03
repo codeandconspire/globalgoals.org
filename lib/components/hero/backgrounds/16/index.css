@@ -106,6 +106,7 @@
 
 .Hero16-person--citizen:nth-child(1) {
   left: 8%;
+  height: 4.5vh;
 }
 
 .Hero16-person--citizen:nth-child(2) {
@@ -114,20 +115,20 @@
 }
 
 .Hero16-person--citizen:nth-child(3) {
-  left: 11%;
-  height: 4vh;
+  left: 11.25%;
+  height: 4.4vh;
   animation-delay: 1000ms;
 }
 
 .Hero16-person--citizen:nth-child(4) {
   display: none;
   left: 20%;
-  height: 3.5vh;
 }
 
 .Hero16-person--citizen:nth-child(5) {
   display: none;
-  left: 22%;
+  height: 3vh;
+  left: 21.75%;
 }
 
 .Hero16-person--citizen:nth-child(6) {
@@ -142,7 +143,7 @@
 
 .Hero16-person--citizen:nth-child(8) {
   right: 11.5%;
-  height: 4.5vh;
+  height: 4vh;
 }
 
 .Hero16-person--citizen:nth-child(9) {
