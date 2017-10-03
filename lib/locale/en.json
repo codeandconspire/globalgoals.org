@@ -17,7 +17,7 @@
   "GOAL_TITLE_16": "Peace, Justice|and Strong|Institutions",
   "GOAL_TITLE_17": "Partnerships|for the Goals",
   "The Goals": "The Goals",
-  "Initiatives": "Initiatives",
+  "Activities": "Activities",
   "News": "News",
   "Resources": "Resources",
   "Close": "Close",
@@ -25,8 +25,8 @@
   "Menu": "Menu",
   "Related goals": "Related goals",
   "The Global Goals": "The Global Goals",
-  "Inspiring text about The Global Goals initiatives, projects and organisations.": "Inspiring text about The Global Goals initiatives, projects and organisations.",
-  "View initiative": "View initiative",
+  "Inspiring text about The Global Goals activities, projects and organisations.": "Inspiring text about The Global Goals activities, projects and organisations.",
+  "View activity": "View activity",
   "Tags": "Tags",
   "Read more": "Read more",
   "Technical problem!": "Technical problem!",
@@ -98,5 +98,10 @@
   "Your name": "Your name",
   "E.g. John": "E.g. John",
   "Your e-mail": "Your e-mail",
-  "E.g. email@domain.com": "E.g. email@domain.com"
+  "E.g. email@domain.com": "E.g. email@domain.com",
+  "Page type not recognized": "Page type not recognized",
+  "Page type %s not recognized": "Page type %s not recognized",
+  "activities": "activities",
+  "Download": "Download",
+  "goal number %s and": "goal number %s and"
 }
