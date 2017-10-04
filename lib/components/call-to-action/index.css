@@ -358,10 +358,16 @@
 .CallToAction-panel {
   display: none;
   flex-basis: 100%;
-  padding: 3rem 0;
-
+  padding: 34px 0;
   opacity: 0;
 }
+
+@media (--viewport-md) {
+  .CallToAction-panel {
+    padding-top: 64px;
+  }
+}
+
 .CallToAction-panel:target {
   display: block;
   animation: CallToAction-panel--appear 600ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
@@ -379,7 +385,7 @@
 @keyframes CallToAction-panel--appear {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(60px);
   }
 
   100% {
@@ -395,6 +401,7 @@
 
 .CallToAction-poster {
   cursor: pointer;
+  user-select: none;
 }
 
 

@@ -283,26 +283,6 @@
 }
 
 /**
- * Hide toggle text on very narrow viewports
- */
-
-@media (--viewport-xs-max) {
-  .Header-button--toggle {
-    width: 60px;
-    font-size: 0;
-    right: -24px;
-  }
-
-  .Header-burger {
-    right: 0;
-  }
-
-  .Header:matches(.is-open, :target) .Header-burger {
-    transform: translateX(-2px);
-  }
-}
-
-/**
  * Back button
  */
 

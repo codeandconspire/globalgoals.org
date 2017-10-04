@@ -2,21 +2,30 @@
 
 .Button {
   display: inline-block;
-  padding: 19px 34px 15px;
-
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #fff;
   font-family: var(--font-family-heading);
-  background-color: var(--color-red);
+  line-height: 1.1;
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  background: var(--color-red);
+  color: #fff;
+  font-size: 24px;
+  line-height: 56px;
+  height: 56px;
+  padding: 0 20px;
+  min-width: 130px;
+  display: inline-block;
+  text-align: center;
+  transition: color 180ms var(--ease-out);
+  white-space: nowrap;
+  transition: background 140ms var(--ease-out);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 @media (--viewport-md) {
   .Button {
-    padding: 22px 34px 18px;
+    height: 64px;
+    padding: 0 30px;
   }
 }
 
