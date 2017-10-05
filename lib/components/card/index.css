@@ -137,6 +137,28 @@
 }
 
 /**
+ * Tweak the global focus states a little bit
+ */
+
+:root[data-focus-source="key"] .Card-link:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+:root[data-focus-source="key"] .Card-link:focus .Card-linkText::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  padding: 0 29px 0 16px;
+  position: absolute;
+  top: 0;
+  left: -16px;
+  box-shadow: 0 0 0 2px currentColor;
+  border-radius: 2px;
+}
+
+/**
  * Tags
  */
 

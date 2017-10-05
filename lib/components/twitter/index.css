@@ -64,6 +64,12 @@
 }
 
 @media (--viewport-md) {
+  .Twitter--size2 .Twitter-tweet:nth-child(-n+3) {
+    display: flex;
+  }
+}
+
+@media (--viewport-md) {
   .Twitter--size1 .Twitter-tweet:nth-child(-n+4) {
     display: flex;
     width: calc(50% - 40px);
