@@ -13,11 +13,12 @@
 @import "../components/icon";
 @import "../components/layer";
 @import "../components/logo";
-@import "../components/single";
 @import "../components/share";
+@import "../components/single";
 @import "../components/space";
 @import "../components/target";
 @import "../components/text";
+@import "../components/twitter";
 @import "../components/view";
 
 @import "suitcss-utils-display";

@@ -96,7 +96,16 @@
 }
 
 .Text--adaptive a {
+  text-decoration: underline;
+}
+
+.Text--adaptive a:hover {
+  background: var(--color-hover-dark);
+}
+
+.Text--adaptive .Text-largeLink {
   display: inline-block;
+  text-decoration: none;
   height: 2.6em;
   padding: 0 0.8em;
   margin: 0 -0.8em;

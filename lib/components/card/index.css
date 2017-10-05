@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 
-:root.has-js .Card:not(.is-loading) {
+:root.has-js .Card:not(.is-loading):not(.Card--noFillLink) {
   cursor: pointer;
 }
 
@@ -132,7 +132,7 @@
 }
 
 .Card:not(.is-loading) .Card-link:hover .Card-arrow,
-:root.has-js .Card:not(.is-loading):hover .Card-arrow {
+:root.has-js .Card--fillLink:not(.is-loading):hover .Card-arrow {
   transform: rotate(45deg) translate(-2.5px, 2.5px);
 }
 
@@ -252,7 +252,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.Card--fill .Card-content::before {
+.Card--fillLink .Card-content::before {
   content: "";
   position: absolute;
   top: 0;
@@ -282,7 +282,7 @@
   color: #fff !important;
 }
 
-:root.has-js .Card--fill:not(.is-loading):hover .Card-content::before {
+:root.has-js .Card--fillLink:not(.is-loading):hover .Card-content::before {
   opacity: 1;
 }
 

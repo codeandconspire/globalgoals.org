@@ -72,6 +72,12 @@
   --color-hover-light: rgba(255, 255, 255, 0.04);
 
   /**
+   * Other
+   */
+
+  --color-twitter: #1da1f2;
+
+  /**
    * Map colors to goals
    */
 

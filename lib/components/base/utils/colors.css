@@ -3,6 +3,10 @@
 .u-bgWhite { background-color: #fff !important; }
 .u-colorWhite { color: #fff !important; }
 
+/**
+ * Goals
+ */
+
 .u-bg1 { background-color: var(--color-goal-1) !important; }
 .u-bg1shaded { background-color: var(--color-goal-1-shaded) !important; }
 .u-color1s { color: var(--color-goal-1) !important; }
@@ -87,3 +91,10 @@
 .u-bg17shaded { background-color: var(--color-goal-17-shaded) !important; }
 .u-color17 { color: var(--color-goal-17) !important; }
 .u-color17shaded { color: var(--color-goal-17-shaded) !important; }
+
+/**
+ * Other
+ */
+
+.u-bgTwitter { background-color: var(--color-twitter) !important; }
+.u-colorTwitter { color: var(--color-twitter) !important; }

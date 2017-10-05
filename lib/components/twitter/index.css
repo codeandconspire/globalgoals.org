@@ -1,1 +1,108 @@
 /* @define Twitter */
+
+.Twitter {
+  position: relative;
+  padding-top: 75px;
+  width: 100%;
+}
+
+.Twitter-icon {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 36px;
+}
+
+.Twitter-heading {
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
+.Twitter-clip {
+  overflow: hidden;
+  padding: 20px;
+  margin: -20px;
+}
+
+.Twitter-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -46px;
+}
+
+/**
+ * Tweet
+ */
+
+.Twitter-tweet {
+  position: relative;
+  width: 100%;
+  line-height: 1.4;
+  margin-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 22px;
+}
+
+.Twitter-text a,
+.Twitter-user,
+.Twitter-link {
+  padding: 3px;
+  margin: -3px;
+  text-decoration: underline;
+  border-radius: 1px;
+  transition: background 140ms var(--ease-out);
+  border-radius: 1px;
+}
+
+.Twitter-text a:hover,
+.Twitter-user:hover,
+.Twitter-link:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.Twitter-link {
+  cursor: pointer;
+  position: absolute;
+  top: 17px;
+  left: -8px;
+  width: calc(100% + 16px);
+  height: calc(100% + -6px);
+  margin: 0;
+  padding: 0;
+  transition-delay: 30ms;
+}
+
+.Twitter-user,
+.Twitter-date {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Twitter-date {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  color: color(var(--color-twitter) shade(50%));
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.Twitter-text {
+  display: block;
+  padding-top: 8px;
+  clear: both;
+  position: relative;
+  pointer-events: none;
+}
+
+.Twitter-text a {
+  pointer-events: auto;
+}
+
+.Twitter-text,
+.Twitter-user {
+  z-index: 1;
+  position: relative;
+}
