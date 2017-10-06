@@ -29,7 +29,6 @@
 }
 
 .Instagram-container {
-  overflow: hidden;
   margin: -8px -8px 12px;
 }
 
@@ -37,6 +36,18 @@
   width: calc(100% / 3);
   float: left;
   padding: 8px;
+  transition: transform 150ms var(--ease-out);
+  user-select: none;
+  will-change: transform;
+}
+
+.Instagram-photo:hover {
+  transform: scale(1.06);
+}
+
+.Instagram-photo:active {
+  transform: scale(0.98);
+  transition: transform 100ms var(--ease-out);
 }
 
 .Instagram-figure {
