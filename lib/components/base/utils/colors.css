@@ -3,6 +3,9 @@
 .u-bgWhite { background-color: #fff !important; }
 .u-colorWhite { color: #fff !important; }
 
+.u-bgGrayDark { background-color: var(--color-gray-dark) !important; }
+.u-colorGrayDark { color: var(--color-gray-dark) !important; }
+
 /**
  * Goals
  */

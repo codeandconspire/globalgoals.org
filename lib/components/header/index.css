@@ -527,7 +527,7 @@
   color: #000;
 }
 
-.Header--goalPage:not(.is-following):not(.is-open):not(:target) :matches(.Header-logoGoal, .Header-logoText) {
+.Header--goalPage:not(.is-following):not(.is-open):not(:target) :matches(.Header-logoSlice, .Header-logoText) {
   fill: currentColor;
 }
 

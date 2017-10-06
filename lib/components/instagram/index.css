@@ -1,0 +1,73 @@
+/* @define Instagram */
+
+.Instagram {
+  position: relative;
+  padding-top: 85px;
+  width: 100%;
+  line-height: 1.4;
+}
+
+.Instagram-icon {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 33px;
+}
+
+.Instagram-heading {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  padding: 3px;
+  margin: -3px;
+  transition: background 140ms var(--ease-out);
+  border-radius: 1px;
+}
+
+.Instagram-heading:hover {
+  background: var(--color-hover-light);
+}
+
+.Instagram-container {
+  overflow: hidden;
+  margin: -8px -8px 12px;
+}
+
+.Instagram-photo {
+  width: calc(100% / 3);
+  float: left;
+  padding: 8px;
+}
+
+.Instagram-figure {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.Instagram-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (--viewport-md) {
+  .Instagram--size1 .Instagram-photo {
+    width: calc((100% / 4));
+  }
+
+  .Instagram--size1 .Instagram-photo:nth-child(9) {
+    display: none;
+  }
+}
+
+@media (--viewport-xl) {
+  .Instagram--size1 .Instagram-photo {
+    width: calc((100% / 8));
+  }
+}
