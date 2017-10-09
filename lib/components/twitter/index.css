@@ -57,9 +57,21 @@
   display: flex;
 }
 
+.Twitter-tweet:nth-child(2) {
+  border-bottom-width: 0;
+}
+
 @media (--viewport-md) {
   .Twitter--size2 .Twitter-tweet:nth-child(-n+3) {
     display: flex;
+  }
+
+  .Twitter--size2 .Twitter-tweet:nth-child(3) {
+    border-bottom-width: 0;
+  }
+
+  .Twitter--size2 .Twitter-tweet:nth-child(2) {
+    border-bottom-width: 1px;
   }
 }
 
@@ -68,12 +80,27 @@
     display: flex;
     width: calc(50% - 40px);
   }
+
+  .Twitter--size1 .Twitter-tweet:nth-child(3),
+  .Twitter--size1 .Twitter-tweet:nth-child(4),
+  .Twitter--size1 .Twitter-tweet:nth-child(5),
+  .Twitter--size1 .Twitter-tweet:nth-child(6) {
+    border-bottom-width: 0;
+  }
+
+  .Twitter--size1 .Twitter-tweet:nth-child(2) {
+    border-bottom-width: 1px;
+  }
 }
 
 @media (--viewport-xl) {
   .Twitter--size1 .Twitter-tweet:nth-child(-n+6) {
     display: flex;
     width: calc((100% / 3) - 40px);
+  }
+
+  .Twitter--size1 .Twitter-tweet:nth-child(3) {
+    border-bottom-width: 1px;
   }
 }
 
