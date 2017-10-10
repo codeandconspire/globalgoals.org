@@ -1,0 +1,166 @@
+/* @define Manifest */
+
+@import "../base";
+@import "../header";
+
+:root {
+  --Manifest-padding: var(--Header-height);
+  --Manifest-padding-md: var(--Header-height-md);
+  --Manifest-padding-lg: var(--Header-height-lg);
+  --Manifest-line-height: 36px;
+  --Manifest-steps: 40;
+}
+
+.Manifest {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 60px;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-top: var(--Manifest-padding);
+  margin-top: calc(var(--Manifest-padding) * -1);
+}
+
+@media (--viewport-md) {
+  .Manifest {
+    margin-top: calc(var(--Manifest-padding-md) * -1);
+    padding-top: var(--Manifest-padding-md);
+  }
+}
+
+@media (--viewport-lg) {
+  .Manifest {
+    margin-top: calc(var(--Manifest-padding-lg) * -1);
+    padding-top: var(--Manifest-padding-lg);
+  }
+}
+
+.Manifest-content {
+  width: 100%;
+}
+
+.Manifest-paper {
+  font-family: var(--font-family-heading);
+  font-size: var(--Manifest-line-height);
+  margin-bottom: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: calc(var(--Manifest-line-height) * 4);
+  padding-top: calc(var(--Manifest-line-height) * 3);
+  overflow: hidden;
+  position: relative;
+  max-width: 285px;
+  width: 100%;
+  margin-top: -20vh;
+}
+
+.Manifest-text {
+  animation: Manifest-text-up 50s steps(var(--Manifest-steps)) forwards;
+  will-change: transform;
+}
+
+.Manifest-figure {
+  display: none;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform;
+  transform-origin: center;
+}
+
+.Manifest-circle {
+  animation: Manifest-figure-rotate 50s forwards infinite linear;
+  will-change: transform;
+  width: 100%;
+}
+
+@media (--viewport-md) {
+  .Manifest-content {
+    margin-left: 38vw;
+    max-width: 600px;
+  }
+
+  .Manifest-figure {
+    display: block;
+    position: absolute;
+    left: -105%;
+    top: 50%;
+    width: 140vw;
+    transform: translateY(-50%) rotate(80deg);
+  }
+}
+
+/**
+ * Fade out overlay
+ */
+
+.Manifest-paper::before,
+.Manifest-paper::after {
+  content: "";
+  height: var(--Manifest-line-height);
+  background: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 var(--Manifest-line-height) 0 0 rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+}
+
+.Manifest-paper::before {
+  display: none;
+}
+
+@supports (mix-blend-mode: saturation) {
+  .Manifest-paper::before {
+    display: block;
+    height: calc(var(--Manifest-line-height) * 2);
+    box-shadow: none;
+    mix-blend-mode: saturation;
+    background: #fff;
+  }
+}
+
+/**
+ * Lines
+ */
+
+.Manifest-line {
+  display: block;
+}
+
+/**
+ * Footer button
+ */
+
+.Manifest-footer {
+  margin-top: 20px;
+}
+
+/**
+ * Animations
+ */
+
+@keyframes Manifest-figure-rotate {
+  from {
+    transform: translateY(-50%) rotate(80deg);
+  }
+
+  to {
+    transform: translateY(-50%) rotate(-260deg);
+  }
+}
+
+@keyframes Manifest-text-up {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% + (var(--Manifest-line-height) * 1)));
+  }
+}

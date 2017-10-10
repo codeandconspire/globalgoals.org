@@ -18,6 +18,7 @@
   transition: color 180ms var(--ease-out);
   white-space: nowrap;
   transition: background 140ms var(--ease-out);
+  user-select: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,6 +26,7 @@
 @media (--viewport-md) {
   .Button {
     height: 64px;
+    line-height: 64px;
     padding: 0 30px;
   }
 }

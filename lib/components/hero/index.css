@@ -22,8 +22,8 @@
 
 :root {
   --Hero-padding: var(--Header-height);
+  --Hero-padding-md: var(--Header-height-md);
   --Hero-padding-lg: var(--Header-height-lg);
-  --Hero-padding-nano: var(--Header-height-nano);
 }
 
 @custom-media --Hero-wide (min-width: 860px);
@@ -47,17 +47,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (--viewport-md) {
+  .Hero {
+    margin-top: calc(var(--Hero-padding-md) * -1);
+    padding-top: var(--Hero-padding-md);
+  }
+}
+
 @media (--viewport-lg) {
   .Hero {
     margin-top: calc(var(--Hero-padding-lg) * -1);
     padding-top: var(--Hero-padding-lg);
-  }
-}
-
-@media (--viewport-nano-max) {
-  .Hero {
-    margin-top: calc(var(--Hero-padding-nano) * -1);
-    padding-top: var(--Hero-padding-nano);
   }
 }
 

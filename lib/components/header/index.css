@@ -8,7 +8,6 @@
   --Header-height-md: 117px;
   --Header-height-lg: 128px;
 
-
   --Header-fill-y: 40px;
   --Header-content-y: 20px;
   --Header-logo-z: 1.25;
@@ -21,7 +20,6 @@
 
 .Header {
   position: relative; /* 1 */
-  z-index: 100;
   height: var(--Header-height);
   contain: size layout style;
 }
@@ -53,11 +51,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(78px + 50px); /* 1 */
+  height: calc(78px + var(--Header-fill-y)); /* 1 */
   width: 100%;
-  margin-top: -50px; /* 1 */
+  margin-top: calc(var(--Header-fill-y) * -1); /* 1 */
 
-  background: rgba(255, 255, 255, 0.99);
+  background: rgba(255, 255, 255, 0.985);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
   transform-origin: top center;
 }
@@ -124,7 +122,7 @@
   }
 
   .Header-fill {
-    height: calc(88px + 50px);
+    height: calc(88px + var(--Header-fill-y));
   }
 
   .Header-logo {
@@ -414,7 +412,7 @@
     opacity: 0;
     transition: 300ms 100ms var(--ease-out);
     transition-property: transform, opacity;
-    transform: translateY(40px);
+    transform: translateY(var(--Header-fill-y));
   }
 
   .Header-button--link {
@@ -647,21 +645,6 @@
     will-change: unset;
   }
 }
-
-/**
- * Disable expansion in some cases
- */
-/*
-@media (--viewport-nano-max) {
-  .Header {
-    height: var(--Header-height-nano);
-  }
-  .Header :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
-    transform: none !important;
-    will-change: unset;
-  }
-}
-*/
 
 @media (--viewport-md-max) {
   .Header--goalPage :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
