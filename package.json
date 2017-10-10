@@ -83,7 +83,7 @@
     "prismic-element": "^0.3.2",
     "prismic-javascript": "^1.4.0",
     "prismic-richtext": "^0.2.4",
-    "scroll-into-view": "^1.9.1",
+    "smoothscroll-polyfill": "^0.4.0",
     "universal-analytics": "^0.4.15",
     "y18n": "^3.2.1"
   }

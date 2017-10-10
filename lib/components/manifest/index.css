@@ -54,7 +54,7 @@
   overflow: hidden;
   position: relative;
   max-width: 285px;
-  width: 100%;
+  width: auto;
   margin-top: -20vh;
 }
 
