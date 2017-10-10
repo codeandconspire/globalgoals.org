@@ -20,6 +20,7 @@
   background-color: var(--color-gray-light);
   user-select: none;
   max-height: 420px;
+  margin-bottom: 24px;
 }
 
 .Card-figure::before {
@@ -70,7 +71,7 @@
 
 .Card-meta {
   display: block;
-  margin: 19px 0 14px;
+  margin: -8px 0 14px;
   color: var(--color-text-light);
   font-size: 14px;
   font-style: normal;
@@ -87,7 +88,7 @@
 .Card-link {
   float: left;
   margin: 17px 0 0 -16px;
-  padding: 0 29px 0 16px;
+  padding: 0 16px;
   line-height: 49px;
 
   position: relative;
@@ -105,18 +106,17 @@
 }
 
 .Card-linkText {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
 .Card-arrow {
-  position: absolute;
   border-style: solid;
   width: 10px;
   height: 10px;
+  margin-left: 8px;
   border-width: 1px 1px 0 0;
-  top: 19px;
-  right: -18px;
   transform: rotate(45deg);
   transition: transform 180ms cubic-bezier(0,0,.2,1);
 }
@@ -134,6 +134,21 @@
 .Card:not(.is-loading) .Card-link:hover .Card-arrow,
 :root.has-js .Card--linked:not(.is-loading):hover .Card-arrow {
   transform: rotate(45deg) translate(-2.5px, 2.5px);
+}
+
+.Card-download {
+  display: block;
+  margin-left: 12px;
+  height: 18px;
+}
+
+.Card-downloadArrow {
+  transition: transform 180ms cubic-bezier(0,0,.2,1);
+}
+
+.Card:not(.is-loading) .Card-link:hover .Card-downloadArrow,
+:root.has-js .Card--linked:not(.is-loading):hover .Card-downloadArrow {
+  transform: translateY(2.5px);
 }
 
 /**
