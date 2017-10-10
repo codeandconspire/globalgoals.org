@@ -199,6 +199,14 @@
     width: 75%;
   }
 
+  .GoalGrid-item--banner .GoalGrid-desc {
+    flex: 1 0 auto;
+  }
+
+  .GoalGrid-item--banner .GoalGrid-button {
+    margin-left: 0;
+  }
+
   .GoalGrid-item--banner .GoalGrid-details {
     display: flex;
     height: 100%;
@@ -243,7 +251,7 @@
   }
 
   .GoalGrid-button {
-    margin: 30px 0 0 0;
+    margin: 30px 0 0 24px;
   }
 }
 
@@ -471,6 +479,19 @@
 /**
  * Item themes
  */
+
+.GoalGrid-item--dark .GoalGrid-content {
+  color: #fff;
+}
+
+.GoalGrid-item--light .GoalGrid-content {
+  color: var(--color-text);
+}
+
+.GoalGrid-item--light .GoalGrid-button {
+  color: #fff;
+  background: #000;
+}
 
 .GoalGrid-item--1 .GoalGrid-button { color: var(--color-goal-1); }
 .GoalGrid-item--1:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-1) shade(8%)); }
