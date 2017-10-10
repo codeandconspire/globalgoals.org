@@ -1,5 +1,6 @@
 @import "normalize.css";
 
+@import "../components/border";
 @import "../components/button";
 @import "../components/call-to-action";
 @import "../components/card";

@@ -1,0 +1,17 @@
+/* @define Border */
+
+.Border {
+  padding: 0 32px;
+  margin: 56px 0;
+  background-color: var(--color-text);
+}
+
+.Border-text {
+  color: #fff;
+  font-size: 24px;
+  line-height: 64px;
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
