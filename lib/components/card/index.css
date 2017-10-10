@@ -250,6 +250,7 @@
 
   .Card--horizontal .Card-figure {
     flex-grow: 1;
+    margin-bottom: 0;
   }
 
   .Card--horizontal .Card-content {
