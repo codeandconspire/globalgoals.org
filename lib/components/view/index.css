@@ -138,7 +138,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 200;
+  z-index: 30;
   opacity: 0;
 
   transform-origin: 0 0;

@@ -7,7 +7,7 @@
   position: fixed;
   bottom: 30px;
   right: 45px;
-  z-index: 1000;
+  z-index: 20;
   color: #fff;
   font-family: var(--font-family-heading);
   text-transform: uppercase;

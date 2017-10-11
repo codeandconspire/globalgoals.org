@@ -15,11 +15,10 @@
 }
 
 /**
- * 1. Root element is left behind (at top of page) to fill upp space
+ * Root element is left behind (at top of page) to fill upp space
  */
 
 .Header {
-  position: relative; /* 1 */
   height: var(--Header-height);
   contain: size layout style;
 }
@@ -32,7 +31,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 10;
   width: 100%;
   user-select: none;
 }
