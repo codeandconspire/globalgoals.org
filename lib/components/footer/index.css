@@ -64,7 +64,7 @@
   -moz-osx-font-smoothing: grayscale;
   font-size: 24px;
   margin-bottom: 17px;
-  color: var(--color-gray-dark);
+  color: var(--color-text);
 }
 
 @media (--viewport-lg) {

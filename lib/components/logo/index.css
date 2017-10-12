@@ -4,8 +4,53 @@
 
 .Logo {
   display: block;
-  width: auto;
+  width: 100%;
   height: 100%;
-  max-width: 100%;
-  contain: strict;
+}
+
+.Logo-symbol {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.Logo-text {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/**
+ * Horizontal
+ */
+
+.Logo--horizontal {
+  padding-right: 4.5%;
+}
+
+.Logo--horizontal .Logo-symbol {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Logo--horizontal .Logo-text {
+  height: 63%;
+  width: auto;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  top: 2.5%;
+  left: 4.5%;
+}
+
+/**
+ * Vertical
+ */
+
+.Logo--vertical .Logo-symbol {
+  width: 67%;
+  height: auto;
+  margin: 0 auto 8%;
 }

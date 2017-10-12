@@ -115,6 +115,7 @@
   position: absolute;
   top: 18%;
   left: 18%;
+  color: var(--color-text);
 }
 
 .GoalGrid-item--cta {
@@ -159,7 +160,7 @@
   white-space: nowrap;
   word-spacing: var(--word-spacing-heading);
   background: #fff;
-  color: var(--color-gray-dark);
+  color: var(--color-text);
   font-size: 24px;
   padding: 16px 20px 14px;
   margin: 30px 0 0 32px;

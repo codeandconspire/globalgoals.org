@@ -97,14 +97,6 @@
   transform-origin: center left;
 }
 
-.Header:matches(.is-open, :target) .Header-logoText {
-  fill: currentColor;
-}
-
-.Header:matches(.is-open, :target) .Header-logoMask {
-  fill: #000;
-}
-
 /**
  * On wider viewports
  */
@@ -522,18 +514,6 @@
 .Header--black .Header-button--link.is-current:hover,
 .Header--black:not(.is-following) {
   color: #000;
-}
-
-.Header--goalPage:not(.is-following):not(.is-open):not(:target) :matches(.Header-logoSlice, .Header-logoText) {
-  fill: currentColor;
-}
-
-.Header--white:not(.is-following) .Header-logoMask {
-  fill: #000;
-}
-
-.Header--black:not(.is-following) .Header-logoMask {
-  fill: #fff;
 }
 
 /**

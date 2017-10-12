@@ -58,23 +58,37 @@
   margin-top: -20vh;
 }
 
-.Manifest-text {
+.Manifest.is-animating .Manifest-text {
   animation: Manifest-text-up 50s steps(var(--Manifest-steps)) forwards;
   will-change: transform;
 }
 
-.Manifest-figure {
-  display: none;
+.Manifest-tire {
+  width: 140vw;
+  position: absolute;
+  left: -105%;
+  top: 50%;
   pointer-events: none;
   user-select: none;
-  will-change: transform;
-  transform-origin: center;
+  transform: translateY(-50%);
+  will-change: unset;
+
+  display: none;
 }
 
-.Manifest-circle {
-  animation: Manifest-figure-rotate 50s forwards infinite linear;
+:root.has-js .Manifest-wheel {
   will-change: transform;
+}
+
+.Manifest-rim {
   width: 100%;
+  transform-origin: center;
+  transform: rotate(80deg);
+}
+
+.Manifest.is-animating .Manifest-rim {
+  animation: Manifest-rim-rotate 50s forwards infinite linear;
+  will-change: transform;
 }
 
 @media (--viewport-md) {
@@ -83,13 +97,8 @@
     max-width: 600px;
   }
 
-  .Manifest-figure {
+  .Manifest-tire {
     display: block;
-    position: absolute;
-    left: -105%;
-    top: 50%;
-    width: 140vw;
-    transform: translateY(-50%) rotate(80deg);
   }
 }
 
@@ -145,13 +154,13 @@
  * Animations
  */
 
-@keyframes Manifest-figure-rotate {
+@keyframes Manifest-rim-rotate {
   from {
-    transform: translateY(-50%) rotate(80deg);
+    transform: rotate(80deg);
   }
 
   to {
-    transform: translateY(-50%) rotate(-260deg);
+    transform: rotate(calc(1turn + 80deg));
   }
 }
 
