@@ -151,7 +151,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   -webkit-touch-callout: none;
-  transition: background 180ms var(--ease-out);
+  transition: background-color 180ms var(--ease-out);
 }
 
 /**
@@ -183,7 +183,7 @@
 
 .Header-button.is-current {
   color: var(--color-interactive);
-  transition: background 180ms var(--ease-out), color 140ms var(--ease-out);
+  transition: background-color 180ms var(--ease-out);
 }
 
 .Header-button:hover.is-current {

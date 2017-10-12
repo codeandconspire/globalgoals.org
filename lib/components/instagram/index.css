@@ -20,7 +20,7 @@
   right: 0;
   padding: 3px;
   margin: -3px;
-  transition: background 140ms var(--ease-out);
+  transition: background-color 140ms var(--ease-out);
   border-radius: 1px;
 }
 

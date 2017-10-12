@@ -112,7 +112,7 @@
   line-height: 2.5em;
   -webkit-touch-callout: none;
   border-radius: 1px;
-  transition: background 140ms var(--ease-out);
+  transition: background-color 140ms var(--ease-out);
 }
 
 .Text--adaptive a:hover {
@@ -256,7 +256,7 @@
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: background 140ms var(--ease-out);
+  transition: background-color 140ms var(--ease-out);
 }
 
 .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) a:hover {

@@ -337,7 +337,7 @@
 
 .Footer-link {
   position: relative;
-  transition: background 140ms var(--ease-out);
+  transition: background-color 140ms var(--ease-out);
 }
 
 .Footer-link:hover {

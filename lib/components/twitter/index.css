@@ -115,7 +115,7 @@
   padding: 3px;
   margin: -3px;
   text-decoration: underline;
-  transition: background 140ms var(--ease-out);
+  transition: background-color 140ms var(--ease-out);
   border-radius: 1px;
 }
 

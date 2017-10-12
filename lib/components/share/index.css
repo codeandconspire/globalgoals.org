@@ -54,7 +54,7 @@
   right: -19px;
 
   border-radius: 1px;
-  transition: background 180ms var(--ease-out);
+  transition: background-color 180ms var(--ease-out);
 }
 
 .Share-close:matches(::before, ::after) {

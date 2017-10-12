@@ -346,7 +346,7 @@
       position: absolute;
       bottom: 23px;
       right: 23px;
-      transition: background 140ms var(--ease-out);
+      transition: background-color 140ms var(--ease-out);
     }
 
     .GoalGrid-item--cta:hover .GoalGrid-button {
