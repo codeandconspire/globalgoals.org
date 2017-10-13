@@ -134,6 +134,11 @@
   width: calc(100% / 3);
 }
 
+.Grid-cell--2of3 {
+  flex-basis: auto;
+  width: calc((100% / 3) * 2);
+}
+
 .Grid--masonry.Grid--3col {
   column-count: 3;
 }
@@ -151,6 +156,11 @@
   .Grid-cell--sm1of3 {
     flex-basis: auto;
     width: calc(100% / 3);
+  }
+
+  .Grid-cell--sm2of3 {
+    flex-basis: auto;
+    width: calc((100% / 3) * 2);
   }
 
   .Grid--masonry.Grid--sm3col {
@@ -171,6 +181,11 @@
   .Grid-cell--md1of3 {
     flex-basis: auto;
     width: calc(100% / 3);
+  }
+
+  .Grid-cell--md2of3 {
+    flex-basis: auto;
+    width: calc((100% / 3) * 2);
   }
 
   .Grid--masonry.Grid--md3col {
@@ -195,6 +210,11 @@
   .Grid-cell--lg1of3 {
     flex-basis: auto;
     width: calc(100% / 3);
+  }
+
+  .Grid-cell--lg2of3 {
+    flex-basis: auto;
+    width: calc((100% / 3) * 2);
   }
 
   .Grid--masonry.Grid--lg3col {

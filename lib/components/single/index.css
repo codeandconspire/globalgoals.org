@@ -1,14 +1,21 @@
 /* @define Single */
 
 @import "../base";
+@import "../button";
+@import "../grid";
+@import "../text";
 
 .Single {
   contain: style layout paint;
 }
 
 .Single-body {
-  max-width: 500px;
   padding: 40px 0 0;
+}
+
+.Single-column {
+  width: 100%;
+  max-width: 500px;
 }
 
 .Single-body::before {
@@ -21,6 +28,9 @@
 @media (--viewport-md) {
   .Single-body {
     padding: 40px 0 0;
+  }
+
+  .Single-column {
     max-width: 760px;
   }
 }
