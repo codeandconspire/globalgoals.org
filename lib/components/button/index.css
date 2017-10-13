@@ -2,7 +2,7 @@
 
 .Button {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: baseline;
   height: 56px;
   min-width: 130px;
@@ -41,6 +41,10 @@
 
 .Button--fill {
   width: 100%;
+}
+
+.Button--justifyLeft {
+  justify-content: flex-start;
 }
 
 .Button[disabled],
