@@ -12,6 +12,7 @@
  */
 
 .GoalGrid {
+  width: 100%;
   margin: calc((var(--GoalGrid-gap) / 2) * -1);
   user-select: none;
   contain: style layout paint;
@@ -24,6 +25,15 @@
   transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
   transform: scale(1.0001);
+}
+
+.GoalGrid--simple {
+  margin: 0;
+}
+
+.GoalGrid--simple .GoalGrid-item {
+  width: 100%;
+  padding: 0;
 }
 
 .GoalGrid-bg::before {
@@ -175,13 +185,13 @@
 }
 
 @media (--viewport-sm) {
-  .GoalGrid-item {
+  .GoalGrid:not(.GoalGrid--simple) .GoalGrid-item {
     width: calc(100% / 3);
   }
 }
 
 @media (min-width: 710px) {
-  .GoalGrid-item {
+  .GoalGrid:not(.GoalGrid--simple) .GoalGrid-item {
     width: calc(100% / 4);
   }
 
@@ -224,7 +234,7 @@
    * 1. Fix for incorrect pixel rounding (Edge)
    */
 
-  .GoalGrid-item {
+  .GoalGrid:not(.GoalGrid--simple) .GoalGrid-item {
     width: calc(100% / 6);
   }
 
@@ -277,7 +287,7 @@
 
 @supports (display: grid) {
   @media (--viewport-lg) {
-    .GoalGrid {
+    .GoalGrid:not(.GoalGrid--simple) {
       margin: 0;
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -285,20 +295,20 @@
       grid-gap: var(--GoalGrid-gap);
     }
 
-    .GoalGrid-item {
+    .GoalGrid:not(.GoalGrid--simple) .GoalGrid-item {
       width: auto;
       float: none;
       padding: 0;
     }
 
-    .GoalGrid-bg::before {
+    .GoalGrid:not(.GoalGrid--simple) .GoalGrid-bg::before {
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
     }
 
-    .GoalGrid-icon {
+    .GoalGrid:not(.GoalGrid--simple) .GoalGrid-icon {
       position: relative;
     }
 

@@ -1,0 +1,68 @@
+/* @define Tags */
+
+.Tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "one two"
+    "three four";
+  width: 100%;
+}
+
+.Tags-item:nth-child(1) {
+  grid-area: one;
+}
+
+.Tags-item:nth-child(2) {
+  grid-area: two;
+}
+
+.Tags-item:nth-child(2):last-child {
+  grid-area: four;
+}
+
+.Tags-item:nth-child(3) {
+  grid-area: three;
+}
+
+.Tags-item:nth-child(4) {
+  grid-area: four;
+}
+
+.Tags-item {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+
+  font-size: 48px;
+  color: #fff;
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+@supports (display: grid) {
+  .Tags-item {
+    width: auto;
+  }
+}
+
+.Tags-item::before {
+  content: "";
+  display: block;
+  width: 0;
+  padding-bottom: 100%;
+}
+
+.Tags-item:only-child {
+  grid-row-start: one;
+  grid-row-end: three;
+  font-size: 64px;
+  width: 100%;
+}
