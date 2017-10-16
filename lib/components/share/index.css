@@ -264,6 +264,10 @@
   }
 }
 
+.Share-meta:only-child {
+  padding: 0;
+}
+
 .Share-raw {
   flex-shrink: 0;
   display: flex;
