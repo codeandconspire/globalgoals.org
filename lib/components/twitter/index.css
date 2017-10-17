@@ -169,6 +169,7 @@
   clear: both;
   pointer-events: none;
   z-index: 1;
+  overflow: hidden;
 }
 
 .Twitter-text a {
