@@ -7,8 +7,8 @@
   --Manifest-padding: var(--Header-height);
   --Manifest-padding-md: var(--Header-height-md);
   --Manifest-padding-lg: var(--Header-height-lg);
-  --Manifest-line-height: 36px;
-  --Manifest-steps: 40;
+  --Manifest-line-height: 72px;
+  --Manifest-rotate-duration: 60s;
 }
 
 .Manifest {
@@ -53,52 +53,13 @@
   padding-top: calc(var(--Manifest-line-height) * 3);
   overflow: hidden;
   position: relative;
-  max-width: 285px;
-  width: auto;
   margin-top: -20vh;
-}
-
-.Manifest.is-animating .Manifest-text {
-  animation: Manifest-text-up 50s steps(var(--Manifest-steps)) forwards;
-  will-change: transform;
-}
-
-.Manifest-tire {
-  width: 140vw;
-  position: absolute;
-  left: -105%;
-  top: 50%;
-  pointer-events: none;
-  user-select: none;
-  transform: translateY(-50%);
-  will-change: unset;
-
-  display: none;
-}
-
-:root.has-js .Manifest-wheel {
-  will-change: transform;
-}
-
-.Manifest-rim {
-  width: 100%;
-  transform-origin: center;
-  transform: rotate(80deg);
-}
-
-.Manifest.is-animating .Manifest-rim {
-  animation: Manifest-rim-rotate 50s forwards infinite linear;
-  will-change: transform;
+  width: 700px;
 }
 
 @media (--viewport-md) {
   .Manifest-content {
     margin-left: 38vw;
-    max-width: 600px;
-  }
-
-  .Manifest-tire {
-    display: block;
   }
 }
 
@@ -151,25 +112,71 @@
 }
 
 /**
- * Animations
+ * The rotating tire
  */
 
-@keyframes Manifest-rim-rotate {
-  from {
-    transform: rotate(80deg);
-  }
+.Manifest-tire {
+  width: 140vw;
+  position: absolute;
+  left: -105%;
+  top: 50%;
+  pointer-events: none;
+  user-select: none;
+  transform: translateY(-50%);
+  will-change: unset;
 
-  to {
-    transform: rotate(calc(1turn + 80deg));
+  display: none;
+}
+
+:root.has-js .Manifest-wheel {
+  will-change: transform;
+}
+
+.Manifest-rim {
+  width: 100%;
+  transform-origin: center;
+  transform: rotate(80deg);
+}
+
+.Manifest.is-animating .Manifest-rim {
+  animation: Manifest-rim-rotate var(--Manifest-rotate-duration) 1400ms forwards linear;
+  will-change: transform;
+}
+
+@media (--viewport-md) {
+  .Manifest-tire {
+    display: block;
   }
 }
 
-@keyframes Manifest-text-up {
-  from {
-    transform: translateY(0);
-  }
+@keyframes Manifest-rim-rotate {
+ from {
+   transform: rotate(80deg);
+ }
 
-  to {
-    transform: translateY(calc(-100% + (var(--Manifest-line-height) * 1)));
-  }
+ to {
+   transform: rotate(calc(-1turn + 101deg));
+ }
+}
+
+/**
+ * Text animation
+ */
+
+.Manifest-word {
+  opacity: 0;
+  transition: opacity 300ms var(--ease-out);
+}
+
+.Manifest-word.is-visible {
+  opacity: 1;
+}
+
+.Manifest-text {
+  will-change: transform;
+  transition: transform 500ms ease;
+}
+
+.Manifest.is-animating .Manifest-text {
+  transform: translateY(calc(var(--Manifest-line-height) * -1));
 }
