@@ -91,8 +91,8 @@
 
 .Card-link {
   float: left;
-  margin: 17px 0 0 -16px;
-  padding: 0 16px;
+  margin: 17px 0 0 -14px;
+  padding: 0 14px;
   line-height: 49px;
 
   position: relative;
@@ -169,10 +169,10 @@
   width: 100%;
   height: 100%;
   box-sizing: content-box;
-  padding: 0 29px 0 16px;
+  padding: 0 29px 0 14px;
   position: absolute;
   top: 0;
-  left: -16px;
+  left: -14px;
   box-shadow: 0 0 0 2px currentColor;
   border-radius: 2px;
 }

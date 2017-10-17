@@ -61,7 +61,7 @@
   "Join an Organisation": "Join an Organisation",
   "Sign Up For Newsletter": "Sign Up For Newsletter",
   "Tips & Tricks": "Tips & Tricks",
-  "Submit": "Submit",
+  "Sign up": "Sign up",
   "Target": "Target",
   "Show more": "Show more",
   "There are many ways to contribute": "There are many ways to contribute",
@@ -94,7 +94,7 @@
   "More": "More",
   "Share image": "Share image",
   "Email address": "Email address",
-  "Enter your name and e-mail address below to get news about %s what’s happening around the Global goals.": "Enter your name and e-mail address below to get news about %s what’s happening around the Global goals.",
+  "Sign up below to get a high quality curated monthly newsletter about %s what’s happening around The Global Goals.": "Sign up below to get a high quality curated monthly newsletter about %s what’s happening around The Global Goals.",
   "Your name": "Your name",
   "E.g. John": "E.g. John",
   "Your e-mail": "Your e-mail",
@@ -143,7 +143,13 @@
   "Privacy Policy": "Privacy Policy",
   "Anti-Corruption Policy": "Anti-Corruption Policy",
   "Asset Licence": "Asset Licence",
+  "Download zip": "Download zip",
+  "Download file": "Download file",
+  "Download pdf": "Download pdf",
   "Organisations": "Organisations",
   "Tip & Tricks": "Tip & Tricks",
-  "Understand The Goals": "Understand The Goals"
+  "Understand The Goals": "Understand The Goals",
+  "Enter your name and e-mail address below to get news about %s what’s happening around the Global goals.": "Enter your name and e-mail address below to get news about %s what’s happening around the Global goals.",
+  "E.g. Fatima Olivia": "E.g. Fatima Olivia",
+  "E.g. name@example.com": "E.g. name@example.com"
 }

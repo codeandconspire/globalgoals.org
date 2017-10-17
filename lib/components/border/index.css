@@ -1,17 +1,30 @@
 /* @define Border */
 
 .Border {
-  padding: 0 32px;
-  margin: 56px 0;
+  padding: 0 16px;
+  margin-bottom: 32px;
   background-color: var(--color-text);
 }
 
 .Border-text {
   color: #fff;
   font-size: 24px;
-  line-height: 64px;
+  line-height: 44px;
   font-family: var(--font-family-heading);
   text-transform: uppercase;
+  white-space: nowrap;
+  word-spacing: var(--word-spacing-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (--viewport-lg) {
+  .Border {
+    padding: 0 32px;
+    margin-bottom: 72px;
+  }
+
+  .Border-text {
+    line-height: 64px;
+  }
 }

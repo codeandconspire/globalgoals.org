@@ -205,13 +205,15 @@
     display: none;
   }
 
-  .GoalGrid-item--banner {
+  .GoalGrid:not(.GoalGrid--simple) .GoalGrid-item--banner {
     display: block;
     width: 75%;
   }
 
   .GoalGrid-item--banner .GoalGrid-desc {
     flex: 1 0 auto;
+    position: relative;
+    top: 6px;
   }
 
   .GoalGrid-item--banner .GoalGrid-button {
