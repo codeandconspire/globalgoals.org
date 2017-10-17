@@ -67,7 +67,7 @@
 }
 
 /**
- * Just some wrappers
+ * Some wrappers
  */
 
 .Header-content {
@@ -78,6 +78,10 @@
 
 .Header-list {
   transform-origin: center right;
+}
+
+.Header-list--secondary {
+  display: none;
 }
 
 /**
@@ -98,7 +102,7 @@
 }
 
 /**
- * On wider viewports
+ * Increase dimensions wider viewports
  */
 
 @media (--viewport-md) {
@@ -406,32 +410,6 @@
     transform: translateY(var(--Header-fill-y));
   }
 
-  .Header-button--link {
-    height: auto;
-    padding: 0 48px 0 16px;
-    margin: 0 0 0 -10px;
-    color: inherit;
-    font-size: 48px;
-    line-height: 76px;
-    height: 74px;
-  }
-
-  .Header-button--link .Header-arrow {
-    width: 18px;
-    height: 18px;
-    top: 28px;
-    right: 16px;
-  }
-
-  /**
-   * Let's not mark selected page in vertical nav, it's mostly confusing
-   */
-
-  .Header-button--link.is-current,
-  .Header-button--link.is-current:hover {
-    color: inherit;
-  }
-
   /**
    * The fill is used as background for the full page navigation
    */
@@ -455,15 +433,67 @@
   .Header:matches(.is-open, :target) .Header-nav {
     visibility: visible;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 15px);
     opacity: 1;
     transform: translateY(0);
   }
 
-  .Header:matches(.is-open, :target) .Header-list {
+  .Header-list {
     position: absolute;
-    top: 22%;
+    top: 18%;
     left: 4px;
+  }
+
+  /**
+   * Link styles
+   */
+
+  .Header-button--link {
+    height: auto;
+    padding: 0 48px 0 16px;
+    margin: 0 0 0 -10px;
+    color: inherit;
+    font-size: 48px;
+    line-height: 76px;
+    height: 74px;
+  }
+
+  .Header-button--link .Header-arrow {
+    width: 18px;
+    height: 18px;
+    top: 28px;
+    right: 16px;
+  }
+
+  .Header-list--secondary .Header-button--link {
+    height: auto;
+    padding: 0 10px;
+    margin: 0 0 0 -5px;
+    font-size: inherit;
+    line-height: 2;
+    font-family: inherit;
+    text-transform: none;
+  }
+
+  .Header-button--link:hover .Header-arrow {
+    right: 19px;
+  }
+
+  /**
+   * Let's not mark current page in vertical nav, it's mostly confusing
+   */
+
+  .Header-button--link.is-current,
+  .Header-button--link.is-current:hover {
+    color: inherit;
+  }
+}
+
+@media (--viewport-md-max) and (min-height: 580px) {
+  .Header-list--secondary {
+    display: block;
+    top: auto;
+    bottom: 28px;
   }
 }
 
