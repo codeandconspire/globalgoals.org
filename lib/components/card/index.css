@@ -21,6 +21,9 @@
   background-color: var(--color-gray-light);
   user-select: none;
   max-height: 420px;
+}
+
+.Card:not(.Card--fill) .Card-figure {
   margin-bottom: 24px;
 }
 
@@ -179,7 +182,7 @@
  */
 
 .Card-tags {
-  width: 30%;
+  width: 40%;
   position: absolute;
   top: 0;
   left: 0;

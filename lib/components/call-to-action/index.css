@@ -1,6 +1,7 @@
 /* @define CallToAction */
 
 @import "../form";
+@import "../grid";
 
 /**
  * 1. Hardcoded in JavaScript, see tablist.js
@@ -470,4 +471,29 @@
     display: block;
     margin: 24px 24px 0 0;
   }
+}
+
+/**
+ * Tips & Tricks
+ */
+
+.CallToAction-tip {
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.CallToAction-tipIcon {
+  align-self: flex-start;
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+}
+
+.CallToAction-tipText {
+  padding-bottom: 40px;
+  margin-left: 36px;
+  border-bottom: 1px solid var(--color-gray-light);
+  overflow: hidden;
 }
