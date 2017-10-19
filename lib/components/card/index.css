@@ -216,6 +216,10 @@
   .Card--horizontal .Card-meta {
     margin-top: 0;
   }
+
+  .Card--horizontal .Card-tags {
+    width: 15%;
+  }
 }
 
 @media (--viewport-md) {
