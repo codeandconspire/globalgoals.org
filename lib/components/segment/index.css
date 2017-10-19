@@ -1,85 +1,80 @@
-/* @define Target */
+/* @define Segment */
 
 :root {
-  --Target-pictogram-sm: 72px;
-  --Target-pictogram-lg: 128px;
-  --Target-id-height: 28px;
-  --Target-id-margin: 4px;
+  --Segment-image-sm: 72px;
+  --Segment-image-lg: 128px;
+  --Segment-caption-height: 28px;
+  --Segment-caption-margin: 4px;
 }
 
 /**
  * 1. Internet Explorer be like "YOLO!"
  */
 
-.Target {
+.Segment {
   position: relative;
   max-width: 100%; /* 1 */
 }
 
-.Target-pictogram {
+.Segment-figure {
   position: relative;
   float: left;
-  width: var(--Target-pictogram-sm);
-  height: var(--Target-pictogram-sm);
-  padding-bottom: calc(var(--Target-id-height) + var(--Target-id-margin));
+  width: var(--Segment-image-sm);
+  height: var(--Segment-image-sm);
   margin-right: 16px;
   box-sizing: content-box;
   user-select: none;
 }
 
 @media (--viewport-sm) {
-  .Target-pictogram {
-    width: var(--Target-pictogram-lg);
-    height: var(--Target-pictogram-lg);
+  .Segment-figure {
+    width: var(--Segment-image-lg);
+    height: var(--Segment-image-lg);
     margin-right: 24px;
   }
 }
 
 @media (--viewport-lg) {
-  .Target-pictogram {
+  .Segment-figure {
     float: left;
     margin-right: 32px;
   }
 }
 
-.Target-id {
-  position: absolute;
-  top: 0;
-  left: 0;
+.Segment-caption {
+  position: relative;
   width: 100%;
-  height: var(--Target-id-height);
+  height: var(--Segment-caption-height);
+  margin-bottom: var(--Segment-caption-margin);
 }
 
-.Target-id,
-.Target-fallbackText {
+.Segment-caption,
+.Segment-fallbackText {
   color: #fff;
   text-align: center;
   font-size: 18px;
   font-family: var(--font-family-heading);
-  line-height: calc(var(--Target-id-height) + 1px);
+  line-height: calc(var(--Segment-caption-height) + 1px);
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.Target-image,
-.Target-fallback {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.Segment-image,
+.Segment-fallback {
+  position: relative;
   width: 100%;
   height: auto;
   color: transparent;
-  height: calc(100% - (var(--Target-id-height) + var(--Target-id-margin)));
 }
 
-.Target-fallbackText {
+.Segment-fallbackText {
   font-size: 18px;
   line-height: 18px;
 }
 
-.Target-fallbackText {
+.Segment-fallbackText {
   position: absolute;
   top: 50%;
   left: 10%;
@@ -87,7 +82,7 @@
   transform: translateY(-50%);
 }
 
-.Target-body {
+.Segment-body {
   overflow: hidden;
   position: relative;
   top: 1px;
@@ -95,14 +90,14 @@
 
 
 @media (--viewport-sm) {
-  .Target-fallbackText {
+  .Segment-fallbackText {
     font-size: 30px;
     line-height: 30px;
   }
 }
 
 @media (--viewport-lg) {
-  .Target-body {
+  .Segment-body {
     top: -1px;
   }
 }

@@ -140,6 +140,10 @@
   margin: 1.5em 0;
 }
 
+.Text .block-img img {
+  margin: 0
+}
+
 .Text img {
   max-width: 100%;
   height: auto;

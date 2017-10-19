@@ -16,11 +16,11 @@
 @import "../components/layer";
 @import "../components/logo";
 @import "../components/manifest";
+@import "../components/segment";
 @import "../components/share";
 @import "../components/single";
 @import "../components/space";
 @import "../components/tags";
-@import "../components/target";
 @import "../components/text";
 @import "../components/twitter";
 @import "../components/view";
