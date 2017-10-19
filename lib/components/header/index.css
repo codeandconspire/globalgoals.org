@@ -21,6 +21,8 @@
 .Header {
   height: var(--Header-height);
   contain: size layout style;
+  position: relative;
+  z-index: 10;
 }
 
 /**
@@ -540,10 +542,18 @@
   color: #fff;
 }
 
+.Header--white:not(.is-following) .Header-logo {
+  filter: brightness(100);
+}
+
 .Header--black .Header-button--link.is-current,
 .Header--black .Header-button--link.is-current:hover,
 .Header--black:not(.is-following) {
   color: #000;
+}
+
+.Header--black:not(.is-following) .Header-logo {
+  filter: brightness(0);
 }
 
 /**
