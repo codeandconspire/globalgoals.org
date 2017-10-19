@@ -25,6 +25,8 @@
  */
 
 .Logo--horizontal {
+  display: flex;
+  align-items: center;
   padding-right: 4.5%;
 }
 
