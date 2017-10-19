@@ -35,7 +35,7 @@
  */
 
 .Grid--masonry > .Grid-cell {
-  display: block;
+  display: inline-block;
   width: 100%; /* 1 */
   break-inside: avoid;
 }
