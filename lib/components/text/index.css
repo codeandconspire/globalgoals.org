@@ -86,7 +86,7 @@
 .Text:not(.Text--adaptive) a {
   margin: -5px;
   padding: 5px;
-  font-weight: bold;
+  font-weight: 600;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-link);
@@ -130,33 +130,34 @@
 
 /**
  * Misc block elements
+ * 1. Prismic wrapps images in paragraphs with this class
  */
 
-.Text:not(.Text--compact) :matches(p, ul, ol) {
+.Text :matches(p, ul, ol) {
   margin: 1.3em 0;
 }
 
-.Text:not(.Text--compact) :matches(img, pre, .Text-embed, [data-oembed]) {
+.Text :matches(img, pre, .Text-embed, [data-oembed]) {
   margin: 1.5em 0;
 }
 
-.Text .block-img img {
-  margin: 0
+.Text--compact :matches(p, ul, ol),
+.Text--compact :matches(img, pre, .Text-embed, [data-oembed]) {
+  margin: 0;
 }
 
 .Text img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   background: var(--color-gray-light);
 }
 
-.Text ul,
-.Text ol {
-  padding-left: 32px;
+.Text .block-img {
+  margin: 0; /* 1 */
 }
 
 .Text ul {
-  list-style-type: disc;
+  list-style-type: none;
 }
 
 .Text ol {
@@ -165,10 +166,13 @@
 
 .Text li {
   padding-left: 23px;
+  position: relative;
 }
 
-.Text ul li {
-  padding-left: 8px;
+.Text ul li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
 }
 
 .Text li + li {
@@ -195,8 +199,12 @@
   position: relative;
 }
 
-.Text:not(.Text--compact) :matches(.Text-embed, [data-oembed]) {
+.Text :matches(.Text-embed, [data-oembed]) {
   margin: 32px 0;
+}
+
+.Text--compact :matches(.Text-embed, [data-oembed]) {
+  margin: 0;
 }
 
 .Text :matches(.Text-embed, [data-oembed]) iframe {

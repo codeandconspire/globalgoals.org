@@ -159,10 +159,6 @@
   margin-left: 32px;
 }
 
-.GoalGrid-desc p {
-  margin: 0;
-}
-
 .GoalGrid-button {
   font-family: var(--font-family-heading);
   line-height: 1.1;

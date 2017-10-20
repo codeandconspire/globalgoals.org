@@ -44,6 +44,12 @@
   content: none;
 }
 
+@media (--viewport-md) {
+  .Single-body--pullUp {
+    padding-top: 40px;
+  }
+}
+
 /**
  * Sidebar
  */
@@ -140,7 +146,7 @@
 .Single-tags--single {
   background-color: transparent;
 }
-
+/*
 .Single-link {
   display: flex;
   justify-content: flex-start;
@@ -176,7 +182,7 @@
   content: "–";
   display: inline-block;
   margin-right: 16px;
-}
+}*/
 
 /**
  * Columns
@@ -240,8 +246,13 @@
 
 .Single-date {
   display: block;
-  margin: 0px 0 12px;
+  margin: -5px 0 16px;
   color: var(--color-text-light);
   position: relative;
-  top: -5px;
+}
+
+@media (--viewport-md) {
+  .Single-date {
+    margin: -8px 0 23px;
+  }
 }

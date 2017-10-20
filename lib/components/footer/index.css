@@ -3,7 +3,7 @@
 @import "../base";
 
 .Footer {
-  margin: 64px 0 0;
+  margin: 74px 0 0;
   overflow: hidden;
   line-height: 1.5;
   width: 100%;
@@ -37,7 +37,7 @@
 
 @media (--viewport-lg) {
   .Footer {
-    margin-top: 114px;
+    margin-top: 124px;
   }
 
   .Footer-column {

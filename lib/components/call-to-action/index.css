@@ -201,7 +201,6 @@
 @media (--viewport-xl) {
   .CallToAction-tablist {
     margin-bottom: -26px;
-    margin-top: 52px;
   }
 }
 
@@ -448,8 +447,8 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  max-width: 700px;
-  margin-top: 24px;
+  max-width: 835px;
+  margin-top: 26px;
 }
 
 .CallToAction-field {
@@ -488,10 +487,12 @@
   flex: 0 0 auto;
   width: 64px;
   height: 64px;
+  position: relative;
+  top: 4px;
 }
 
 .CallToAction-tipText {
-  padding-bottom: 40px;
+  padding-bottom: 46px;
   margin-left: 36px;
   border-bottom: 1px solid var(--color-gray-light);
   overflow: hidden;
