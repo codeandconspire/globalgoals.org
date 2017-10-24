@@ -22,9 +22,6 @@
   transition: color 180ms var(--ease-out);
   transition: background-color 140ms var(--ease-out);
   user-select: none;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (--viewport-md) {

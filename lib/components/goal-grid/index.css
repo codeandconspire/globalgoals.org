@@ -103,8 +103,6 @@
   color: #fff;
   transition: 100ms var(--ease-out);
   transition-property: opacity, transform;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .GoalGrid-item.is-loading .GoalGrid-content {

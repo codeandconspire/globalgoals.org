@@ -47,8 +47,6 @@
   line-height: 1;
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   height: calc(var(--Manifest-line-height) * 4);
   padding-top: calc(var(--Manifest-line-height) * 3);
   overflow: hidden;

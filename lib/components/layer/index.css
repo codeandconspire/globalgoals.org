@@ -40,8 +40,6 @@
   color: #fff;
   text-transform: uppercase;
   font-family: var(--font-family-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .Layer-close:matches(::before, ::after) {

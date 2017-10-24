@@ -44,6 +44,8 @@
   font-size: 16px;
   line-height: 1;
   -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 *,
@@ -65,11 +67,6 @@ a {
 a:matches(:hover, :active) {
 	background-color: transparent; /* 1 */
   text-decoration: none;
-}
-
-strong {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 svg {

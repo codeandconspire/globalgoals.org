@@ -39,10 +39,7 @@
   margin-top: calc(var(--Hero-padding) * -1);
   overflow: hidden;
   position: relative;
-
   color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (--viewport-md) {

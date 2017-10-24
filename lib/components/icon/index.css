@@ -20,8 +20,6 @@
   font-family: var(--font-family-heading);
   text-transform: uppercase;
   white-space: nowrap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .Icon-glyph {

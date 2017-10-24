@@ -57,8 +57,6 @@
   line-height: calc(var(--Segment-caption-height) + 1px);
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .Segment-image,

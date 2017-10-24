@@ -87,8 +87,6 @@
   margin: -5px;
   padding: 5px;
   font-weight: 600;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: var(--color-link);
   transition: color 90ms var(--ease-out);
 }
@@ -221,8 +219,6 @@
 
 .Text :matches(h1, h2, h3, h4, h5, h6,
   .Text-h1, .Text-h2, .Text-h3, .Text-h4, .Text-h5, .Text-h6) {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   margin: 0;
 }
 
@@ -268,8 +264,6 @@
   padding: 0.15em 0.18em 0.08em;
   margin: 0;
   font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   transition: background-color 140ms var(--ease-out);
 }
 
@@ -301,8 +295,6 @@
   line-height: 1.1;
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .Text-small,

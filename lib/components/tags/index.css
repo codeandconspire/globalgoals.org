@@ -42,8 +42,6 @@
   font-family: var(--font-family-heading);
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   user-select: none;
 }
 

@@ -44,8 +44,6 @@
   text-transform: uppercase;
   white-space: nowrap;
   word-spacing: var(--word-spacing-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
   transform-origin: 0 0;
   will-change: transform;
@@ -264,8 +262,6 @@
 
   text-transform: uppercase;
   white-space: nowrap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   will-change: transform;
 
   transition: color 120ms var(--ease-out);

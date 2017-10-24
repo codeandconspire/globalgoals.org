@@ -14,8 +14,6 @@
   text-transform: uppercase;
   white-space: nowrap;
   word-spacing: var(--word-spacing-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (--viewport-lg) {

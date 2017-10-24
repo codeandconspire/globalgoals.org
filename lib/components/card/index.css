@@ -101,8 +101,6 @@
   color: var(--color-link);
   text-transform: uppercase;
   font-family: var(--font-family-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   word-spacing: var(--word-spacing-heading);
   user-select: none;
   transition: color 140ms var(--ease-out), background-color 140ms var(--ease-out);
@@ -249,8 +247,6 @@
   min-height: 275px;
   color: #fff;
   background-color: var(--color-interactive);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .Card--fill.Card--linked .Card-content::before {

@@ -60,8 +60,6 @@
   line-height: 1.4;
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-size: 24px;
   margin-bottom: 17px;
   color: var(--color-text);
