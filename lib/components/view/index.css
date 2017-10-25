@@ -53,7 +53,7 @@
   padding: 0;
 }
 
-@media (--viewport-xs) {
+@media (--viewport-sm) {
   .View-section {
     padding: 0 24px;
   }

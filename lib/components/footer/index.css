@@ -199,6 +199,9 @@
 }
 
 @media (--viewport-md) {
+  .Footer-column--horizontal {
+    padding: 12px 0 27px;
+  }
   .Footer-column--horizontal .Footer-list {
     max-width: none;
     top: 4px;
@@ -238,7 +241,7 @@
   color: transparent;
   font-size: 0;
   position: relative;
-  margin: -3px 0 3px 0;
+  margin: 0;
 }
 
 .Footer-list--social .Footer-item {

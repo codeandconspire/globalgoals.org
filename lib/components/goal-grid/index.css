@@ -111,6 +111,11 @@
   will-change: transform;
 }
 
+
+/**
+ * Item themes
+ */
+
 .GoalGrid-icon {
   height: 92%;
   width: 100%;
@@ -157,6 +162,10 @@
   margin-left: 32px;
 }
 
+.GoalGrid-item--light .GoalGrid-desc {
+  color: black;
+}
+
 .GoalGrid-button {
   font-family: var(--font-family-heading);
   line-height: 1.1;
@@ -172,6 +181,22 @@
   display: inline-block;
   text-align: center;
   transition: color 180ms var(--ease-out);
+}
+
+.GoalGrid-item--light .GoalGrid-button {
+  color: #fff;
+  background: #000;
+}
+
+@supports (mix-blend-mode: screen) {
+  .GoalGrid-button {
+    color: #000;
+    mix-blend-mode: screen;
+  }
+
+  .GoalGrid-item--light .GoalGrid-button {
+    mix-blend-mode: multiply;
+  }
 }
 
 .GoalGrid-animation {
@@ -353,6 +378,7 @@
       bottom: 23px;
       right: 23px;
       transition: background-color 140ms var(--ease-out);
+      mix-blend-mode: normal;
     }
 
     .GoalGrid-item--cta:hover .GoalGrid-button {
@@ -482,55 +508,3 @@
     }
   }
 }
-
-/**
- * Item themes
- */
-
-.GoalGrid-item--dark .GoalGrid-content {
-  color: #fff;
-}
-
-.GoalGrid-item--light .GoalGrid-content {
-  color: var(--color-text);
-}
-
-.GoalGrid-item--light .GoalGrid-button {
-  color: #fff;
-  background: #000;
-}
-
-.GoalGrid-item--1 .GoalGrid-button { color: var(--color-goal-1); }
-.GoalGrid-item--1:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-1) shade(8%)); }
-.GoalGrid-item--2 .GoalGrid-button { color: var(--color-goal-2); }
-.GoalGrid-item--2:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-2) shade(8%)); }
-.GoalGrid-item--3 .GoalGrid-button { color: var(--color-goal-3); }
-.GoalGrid-item--3:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-3) shade(8%)); }
-.GoalGrid-item--4 .GoalGrid-button { color: var(--color-goal-4); }
-.GoalGrid-item--4:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-4) shade(8%)); }
-.GoalGrid-item--5 .GoalGrid-button { color: var(--color-goal-5); }
-.GoalGrid-item--5:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-5) shade(8%)); }
-.GoalGrid-item--6 .GoalGrid-button { color: var(--color-goal-6); }
-.GoalGrid-item--6:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-6) shade(8%)); }
-.GoalGrid-item--7 .GoalGrid-button { color: #fff; background: #000; }
-.GoalGrid-item--7 .GoalGrid-details { color: #000; }
-.GoalGrid-item--8 .GoalGrid-button { color: var(--color-goal-8); }
-.GoalGrid-item--8:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-8) shade(8%)); }
-.GoalGrid-item--9 .GoalGrid-button { color: var(--color-goal-9); }
-.GoalGrid-item--9:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-9) shade(8%)); }
-.GoalGrid-item--10 .GoalGrid-button { color: var(--color-goal-10); }
-.GoalGrid-item--10:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-10) shade(8%)); }
-.GoalGrid-item--11 .GoalGrid-button { color: var(--color-goal-11); }
-.GoalGrid-item--11:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-11) shade(8%)); }
-.GoalGrid-item--12 .GoalGrid-button { color: var(--color-goal-12); }
-.GoalGrid-item--12:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-12) shade(8%)); }
-.GoalGrid-item--13 .GoalGrid-button { color: var(--color-goal-13); }
-.GoalGrid-item--13:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-13) shade(8%)); }
-.GoalGrid-item--14 .GoalGrid-button { color: var(--color-goal-14); }
-.GoalGrid-item--14:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-14) shade(8%)); }
-.GoalGrid-item--15 .GoalGrid-button { color: var(--color-goal-15); }
-.GoalGrid-item--15:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-15) shade(8%)); }
-.GoalGrid-item--16 .GoalGrid-button { color: var(--color-goal-16); }
-.GoalGrid-item--16:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-16) shade(8%)); }
-.GoalGrid-item--17 .GoalGrid-button { color: var(--color-goal-17); }
-.GoalGrid-item--17:not(.is-pressed):hover .GoalGrid-button { color: color(var(--color-goal-17) shade(8%)); }

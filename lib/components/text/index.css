@@ -10,14 +10,16 @@
   max-width: 37em;
 }
 
+.Text--wide {
+  max-width: 43em;
+}
+
 .Text--full {
   max-width: none;
 }
 
-@media (--viewport-lg) {
-  .Text--wide {
-    max-width: none;
-  }
+.Text--compact * {
+  margin: 0 !important;
 }
 
 .Text--growing {
@@ -139,11 +141,6 @@
   margin: 1.5em 0;
 }
 
-.Text--compact :matches(p, ul, ol),
-.Text--compact :matches(img, pre, .Text-embed, [data-oembed]) {
-  margin: 0;
-}
-
 .Text img {
   width: 100%;
   height: auto;
@@ -199,10 +196,6 @@
 
 .Text :matches(.Text-embed, [data-oembed]) {
   margin: 32px 0;
-}
-
-.Text--compact :matches(.Text-embed, [data-oembed]) {
-  margin: 0;
 }
 
 .Text :matches(.Text-embed, [data-oembed]) iframe {
