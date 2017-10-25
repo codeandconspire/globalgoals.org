@@ -91,7 +91,7 @@
 
 .Card-link {
   float: left;
-  margin: 17px 0 0 -14px;
+  margin: 8px 0 0 -14px;
   padding: 0 14px;
   line-height: 49px;
 
@@ -180,7 +180,7 @@
  */
 
 .Card-tags {
-  width: 40%;
+  width: 35%;
   position: absolute;
   top: 0;
   left: 0;
