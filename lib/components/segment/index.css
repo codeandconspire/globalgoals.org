@@ -61,10 +61,15 @@
 
 .Segment-image,
 .Segment-fallback {
+  display: block;
   position: relative;
   width: 100%;
   height: auto;
   color: transparent;
+}
+
+.Segment-fallback {
+  padding-bottom: 100%;
 }
 
 .Segment-fallbackText {
