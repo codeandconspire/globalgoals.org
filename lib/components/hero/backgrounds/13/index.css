@@ -32,8 +32,6 @@
   left: calc(50% - 0px);
   top: 50%;
   transform: translate(calc(-50% + 0px), -11px);
-
-  color: var(--color-goal-13-shaded);
 }
 
 @media (--Hero-wide) {
