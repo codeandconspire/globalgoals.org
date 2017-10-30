@@ -63,7 +63,7 @@
 }
 
 .Single-block--group .Single-block:first-child {
-  margin-top: 0;
+  margin-top: 7px;
 }
 
 .Single-block--group .Single-block:last-child {

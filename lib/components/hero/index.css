@@ -309,12 +309,30 @@
 
 .Hero--takeover {
   width: 100%;
-  height: 100%;
+  min-height: 430px;
 
   position: fixed;
-  bottom: 0;
+  top: calc(var(--Hero-padding));
   left: 0;
   z-index: 30;
+}
+
+@media (--viewport-md) {
+  .Hero--takeover {
+    top: calc(var(--Hero-padding-md));
+  }
+}
+
+@media (--viewport-lg) {
+  .Hero--takeover {
+    top: calc(var(--Hero-padding-lg));
+  }
+}
+
+@media (--Hero-wide) {
+  .Hero--takeover {
+    min-height: 580px;
+  }
 }
 
 .Hero--takeover .Hero-title:not(.is-clone) {
