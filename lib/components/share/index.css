@@ -1,5 +1,9 @@
 /* @define Share */
 
+:root {
+  --Share-preview-thumbnail-size: 64px;
+}
+
 .Share {
   display: flex;
   align-items: stretch;
@@ -197,8 +201,10 @@
 
 .Share-preview {
   display: none;
+  min-height: var(--Share-preview-thumbnail-size);
   width: 100%;
   transform: translateY(calc(100% + 16px));
+  opacity: 0;
   animation: Share-preview--appear 600ms 400ms cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
@@ -211,6 +217,7 @@
 @keyframes Share-preview--appear {
   to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -230,15 +237,13 @@
 }
 
 .Share-thumbnail {
-  width: 64px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--Share-preview-thumbnail-size);
   float: left;
   height: auto;
-}
-
-@media (--viewport-sm) {
-  .Share-thumbnail {
-    width: 96px;
-  }
+  background-color: var(--color-gray-light);
 }
 
 .Share-title {
@@ -248,18 +253,10 @@
 }
 
 .Share-meta {
-  padding-left: 16px;
+  margin-left: calc(var(--Share-preview-thumbnail-size) + 24px);
   line-height: 20px;
-  overflow: hidden;
   font-size: 14px;
   user-select: text;
-}
-
-@media (--viewport-sm) {
-  .Share-meta {
-    padding-left: 24px;
-    font-size: 1rem;
-  }
 }
 
 .Share-meta:only-child {
