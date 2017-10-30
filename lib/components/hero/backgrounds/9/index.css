@@ -142,7 +142,7 @@
   }
 }
 
-.Hero9-satelite {
+.Hero9-satellite {
   display: none;
   width: 30px;
   position: absolute;
@@ -150,21 +150,21 @@
   top: 12%;
 
   transform-origin: 0 300vh;
-  animation: Hero9-satelite--flying 15000ms linear infinite;
+  animation: Hero9-satellite--flying 24000ms linear infinite;
 }
 
 @media (--Hero-wide) {
-  .Hero9-satelite {
+  .Hero9-satellite {
     display: block;
   }
 }
 
-@keyframes Hero9-satelite--flying {
+@keyframes Hero9-satellite--flying {
   from {
-    transform: rotate(-25deg);
+    transform: rotate(-20deg);
   }
   to {
-    transform: rotate(25deg);
+    transform: rotate(20deg);
   }
 }
 
