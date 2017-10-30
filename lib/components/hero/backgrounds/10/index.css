@@ -2,7 +2,7 @@
 
 .Hero10 {
   transform: translateY(100%);
-  transition: transform 1200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 1400ms 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .Hero10.is-visible {
@@ -21,7 +21,7 @@
   background: var(--color-goal-10);
   border-radius: 100%;
 
-  animation: Hero10-bend--disappear 1750ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero10-bend--disappear 2200ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes Hero10-bend--disappear {
@@ -40,7 +40,7 @@
 
   transform: translateX(-50%);
   transform-origin: 50% 0;
-  transition: transform 1750ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 2150ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .Hero10-board.is-rightTilted {
