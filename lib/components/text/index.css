@@ -88,9 +88,10 @@
 .Text:not(.Text--adaptive) a {
   margin: -5px;
   padding: 5px;
+  max-width: 100%;
   font-weight: 600;
   color: var(--color-link);
-  transition: color 90ms var(--ease-out);
+  transition: color 50ms var(--ease-out);
 }
 
 .Text:not(.Text--adaptive) a:hover {
@@ -180,6 +181,41 @@
   background: var(--color-gray-light);
   padding: 1em;
   text-align: left;
+}
+
+/**
+ * Link list
+ */
+
+ul.Text--links li {
+  padding: 0 0 8px 0;
+}
+
+ul.Text--links li::before {
+  content: none;
+}
+
+.Text ul.Text--links a {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+ul.Text--links a::after {
+  content: attr(href);
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
+  color: var(--color-text-light);
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: color 50ms var(--ease-out);
+}
+
+.Text ul.Text--links a:hover::after {
+  color: var(--color-text);
 }
 
 /**
