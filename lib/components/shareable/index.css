@@ -1,0 +1,85 @@
+/* @define Shareable */
+
+.Shareable {
+  width: 100%;
+}
+
+.Shareable-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.Shareable-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  color: var(--color-text-light);
+}
+
+.Shareable-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  margin-right: 12px;
+  color: var(--color-link);
+  transition: color 150ms var(--ease-out);
+}
+
+.Shareable--muted .Shareable-icon {
+  color: var(--color-gray);
+}
+
+.Shareable-examples {
+  overflow: hidden;
+  height: 32px;
+  margin-right: -7px;
+  margin-left: 8px;
+  color: var(--color-gray);
+  transition: opacity 150ms var(--ease-out);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.Shareable-example {
+  width: 32px;
+  height: 32px;
+  float: right;
+}
+
+/**
+ * Hover
+ */
+
+.Shareable:hover .Shareable-icon {
+  color: var(--color-link-enter);
+}
+
+.Shareable--muted:hover .Shareable-icon {
+  color: #929292;
+}
+
+.Shareable:hover .Shareable-examples {
+  opacity: 1;
+}
+
+/**
+ * Large style
+ */
+
+.Shareable--large .Shareable-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+}
+
+.Shareable--large .Shareable-text {
+  color: var(--color-text-light);
+  font-size: 20px;
+}

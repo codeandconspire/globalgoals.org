@@ -18,6 +18,7 @@
 @import "../components/manifest";
 @import "../components/segment";
 @import "../components/share";
+@import "../components/shareable";
 @import "../components/single";
 @import "../components/space";
 @import "../components/tags";

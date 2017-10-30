@@ -58,6 +58,10 @@
   margin: 64px 0;
 }
 
+.Single-line {
+  margin: 16px 0;
+}
+
 .Single-block--group .Single-block:first-child {
   margin-top: 0;
 }
@@ -146,43 +150,6 @@
 .Single-tags--single {
   background-color: transparent;
 }
-/*
-.Single-link {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  margin: 16px 0;
-  font-size: 20px;
-  color: var(--color-link);
-}
-
-.Single-link--plain {
-  color: inherit;
-}
-
-.Single-link--plain:hover {
-  color: var(--color-link);
-}
-
-.Single-link:active {
-  color: var(--color-link-enter);
-}
-
-.Single-linkIcon {
-  display: inline-block;
-  margin-right: 16px;
-}
-
-.Single-list .Single-link {
-  list-style: none;
-}
-
-.Single-list .Single-link::before {
-  content: "–";
-  display: inline-block;
-  margin-right: 16px;
-}*/
 
 /**
  * Columns
