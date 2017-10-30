@@ -158,11 +158,16 @@
 
 .Text ol {
   list-style-type: decimal;
+  padding-left: 22px;
 }
 
-.Text li {
+.Text ul li {
   padding-left: 23px;
   position: relative;
+}
+
+.Text ol li {
+  padding-left: 8px;
 }
 
 .Text ul li::before {
@@ -284,6 +289,7 @@ ul.Text--links a::after {
   font-weight: bold;
   font-size: inherit;
   line-height: inherit;
+  margin: 1.3em 0;
 }
 
 .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) a {
@@ -306,7 +312,7 @@ ul.Text--links a::after {
  */
 
 .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) strong {
-  font-weight: inherit;
+  font-weight: inherit !important;
 }
 
 /**
