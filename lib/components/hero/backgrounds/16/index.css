@@ -36,8 +36,8 @@
 }
 
 .Hero16-institution {
-  height: 22vh;
-  max-height: 174px;
+  height: 24vh;
+  max-height: 190px;
 
   position: absolute;
   left: 50%;
@@ -54,8 +54,8 @@
 
 .Hero16-building {
   display: none;
-  height: 18vh;
-  max-height: 147px;
+  height: 11vh;
+  max-height: 90px;
 
   position: absolute;
   bottom: 0;
@@ -110,7 +110,7 @@
 }
 
 .Hero16-person--citizen:nth-child(2) {
-  left: 9.5%;
+  left: 9.65%;
   height: 5.25vh;
 }
 
