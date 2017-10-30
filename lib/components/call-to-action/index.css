@@ -10,6 +10,8 @@
 :root {
   --CallToAction-selector-height: 4px; /* 1 */
   --CallToAction-tablist-height: 46px;
+  --CallToAction-selector-duration: 250ms;
+
 }
 
 .CallToAction {
@@ -89,12 +91,12 @@
   background-color: #fff;
   transform: translateY(-50%);
 
-  transition: transform 180ms var(--ease-out), opacity 150ms var(--ease-in);
+  transition: transform 180ms var(--ease-out), opacity 90ms var(--ease-in);
 }
 
 .CallToAction-tablist.is-slow .CallToAction-button::after,
 .CallToAction-tablist.is-slow .CallToAction-button::before {
-  transition: transform 180ms var(--ease-out), opacity 200ms var(--ease-in);
+  transition: transform 180ms var(--ease-out), opacity 90ms var(--ease-in);
 }
 
 .CallToAction-button::after {
@@ -268,12 +270,17 @@
   white-space: nowrap;
   will-change: transform;
 
-  transition: color 120ms var(--ease-out);
+  transition:
+    color 90ms var(--ease-out),
+    border-color 0ms 0ms linear;
 }
 
 .CallToAction-tab.is-active {
-  transition: none;
+  transition:
+    color var(--CallToAction-selector-duration) var(--ease-out),
+    border-color 0ms var(--CallToAction-selector-duration) linear;
 }
+
 
 .CallToAction-tab:hover {
   color: rgba(0, 0, 0, 0.5);
@@ -331,7 +338,7 @@
 
   will-change: transform;
   transform-origin: 0 50%;
-  transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform var(--CallToAction-selector-duration) cubic-bezier(0.165, 0.84, 0.44, 1);
   background-color: var(--color-red);
 }
 
@@ -397,6 +404,10 @@
   animation: CallToAction-panel--appear 500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
+:root.has-js .CallToAction-panel.is-hidden {
+  animation: CallToAction-panel--hide 200ms var(--ease-in) forwards;
+}
+
 @keyframes CallToAction-panel--appear {
   0% {
     opacity: 0;
@@ -405,7 +416,19 @@
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
+  }
+}
+
+@keyframes CallToAction-panel--hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(15px);
   }
 }
 
