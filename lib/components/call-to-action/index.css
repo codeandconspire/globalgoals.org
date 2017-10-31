@@ -46,6 +46,7 @@
   text-transform: uppercase;
   white-space: nowrap;
   word-spacing: var(--word-spacing-heading);
+  user-select: none;
 
   transform-origin: 0 0;
   will-change: transform;

@@ -150,15 +150,34 @@
   display: block;
   margin-left: 12px;
   height: 18px;
+  position: relative;
+  top: -1px;
 }
 
 .Card-downloadArrow {
+  transform: translateY(1px);
   transition: transform 180ms cubic-bezier(0,0,.2,1);
 }
 
 .Card:not(.is-loading) .Card-link:hover .Card-downloadArrow,
 :root.has-js .Card--linked:not(.is-loading):hover .Card-downloadArrow {
   transform: translateY(2.5px);
+}
+
+.Card-external {
+  display: block;
+  margin-left: 12px;
+  height: 15px;
+  overflow: visible !important;
+}
+
+.Card-externalArrow {
+  transition: transform 180ms cubic-bezier(0,0,.2,1);
+}
+
+.Card:not(.is-loading) .Card-link:hover .Card-externalArrow,
+:root.has-js .Card--linked:not(.is-loading):hover .Card-externalArrow {
+  transform: translate(2px, -2px);
 }
 
 /**
