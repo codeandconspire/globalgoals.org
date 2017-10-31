@@ -46,7 +46,8 @@
 
 .Button[disabled],
 .Button.is-disabled {
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
 }
 
 .Button-icon {
@@ -66,4 +67,22 @@
 
 .Button-icon:last-child:not(:first-child) /* 1 */ {
   margin-left: 16px;
+}
+
+/**
+ * Secondary version
+ */
+
+.Button--secondary {
+  background: #e8e8e8;
+  color: var(--color-text);
+}
+
+.Button--secondary:hover {
+  background: #dcdcdc;
+}
+
+.Button--secondary[disabled],
+.Button--secondary.is-disabled {
+  color: rgba(0, 0, 0, 0.3);
 }
