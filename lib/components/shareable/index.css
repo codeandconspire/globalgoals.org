@@ -12,6 +12,7 @@
   position: relative;
   justify-content: space-between;
   user-select: none;
+  will-change: opacity;
 }
 
 .Shareable-text {
