@@ -48,6 +48,7 @@
 .Button.is-disabled {
   color: rgba(255, 255, 255, 0.3);
   pointer-events: none;
+  transition: color 200ms var(--ease);
 }
 
 .Button-icon {
@@ -74,12 +75,12 @@
  */
 
 .Button--secondary {
-  background: #e8e8e8;
+  background: var(--color-gray-light);
   color: var(--color-text);
 }
 
 .Button--secondary:hover {
-  background: #dcdcdc;
+  background: #e8e8e8;
 }
 
 .Button--secondary[disabled],

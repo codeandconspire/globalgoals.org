@@ -101,11 +101,17 @@
 }
 
 /**
- * View Intro
+ * Text block spacing for use with text blocks.
+ * "First" refers to when the text block is the first element on a page and
+ * could move up a bit to keep a reasonable amount of content above the fold
  */
 
 .Space--textBlock {
   padding: 50px 0 30px;
+}
+
+.Space--textBlockFirst {
+  margin-top: -30px;
 }
 
 .Space--textBlock::before {
@@ -118,6 +124,10 @@
 @media (--viewport-md) {
   .Space--textBlock {
     padding: 70px 0 40px;
+  }
+
+  .Space--textBlockFirst {
+    margin-top: -60px;
   }
 }
 
