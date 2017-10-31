@@ -13,7 +13,7 @@
 .Grid {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 calc(var(--Grid-gutter) * -0.5);
+  margin: 0 calc(var(--Grid-gutter) * -0.5) calc(var(--Grid-gutter) * -1);
 }
 
 .Grid--masonry {
@@ -62,7 +62,7 @@
 
 @media (--viewport-lg) {
   .Grid {
-    margin: 0 calc(var(--Grid-gutter-lg) * -0.5);
+    margin: 0 calc(var(--Grid-gutter-lg) * -0.5) calc(var(--Grid-gutter-lg) * -1);
   }
 
   .Grid .Grid-cell {
@@ -82,7 +82,7 @@
 
 @media (--viewport-xl) {
   .Grid {
-    margin: 0 calc(var(--Grid-gutter-xl) * -0.5);
+    margin: 0 calc(var(--Grid-gutter-xl) * -0.5) calc(var(--Grid-gutter-xl) * -1);
   }
 
   .Grid .Grid-cell {

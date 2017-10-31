@@ -148,8 +148,16 @@
   background: var(--color-gray-light);
 }
 
-.Text .block-img {
-  margin: 0; /* 1 */
+.Text .block-img /* 1 */ {
+  margin: 0;
+}
+
+.Text > :first-child img {
+  margin-top: 0 !important;
+}
+
+.Text > :last-child img {
+  margin-bottom: 0 !important;
 }
 
 .Text ul {

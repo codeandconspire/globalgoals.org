@@ -271,17 +271,14 @@
   white-space: nowrap;
   will-change: transform;
 
-  transition:
-    color 90ms var(--ease-out),
-    border-color 0ms 0ms linear;
+  transition: color 90ms var(--ease-out);
 }
 
-.CallToAction-tab.is-active {
+.CallToAction-tab.is-activeTemporarily {
   transition:
     color var(--CallToAction-selector-duration) var(--ease-out),
     border-color 0ms var(--CallToAction-selector-duration) linear;
 }
-
 
 .CallToAction-tab:hover {
   color: rgba(0, 0, 0, 0.5);
@@ -312,7 +309,8 @@
   transform: translateX(200px);
 }
 
-.CallToAction-tab.is-active {
+.CallToAction-tab.is-active,
+.CallToAction-tab.is-activeTemporarily {
   color: var(--color-red);
   border-bottom-color: currentColor;
 }
