@@ -82,7 +82,7 @@
     "nanohref": "^3.0.0",
     "nanoraf": "^3.0.1",
     "path-to-regexp": "^1.7.0",
-    "prismic-element": "^0.3.2",
+    "prismic-element": "^0.5.0",
     "prismic-javascript": "^1.4.0",
     "prismic-richtext": "^0.2.4",
     "smoothscroll-polyfill": "^0.4.0",
