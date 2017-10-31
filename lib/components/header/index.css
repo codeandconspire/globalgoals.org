@@ -343,7 +343,7 @@
  */
 
 .Header-button--back {
-  padding-left: 31px;
+  padding-left: 29px;
 }
 
 .Header-button--link {
@@ -358,7 +358,7 @@
   height: 10px;
   border-width: 1px 1px 0 0;
   top: 19px;
-  left: 14px;
+  left: 16px;
   transform: rotate(-135deg);
   transition: left 140ms var(--ease-out), right 140ms var(--ease-out);
 }
@@ -366,15 +366,15 @@
 .Header-button--link .Header-arrow {
   transform: rotate(45deg);
   left: auto;
-  right: 11px;
+  right: 15px;
 }
 
 .Header-button--back:hover .Header-arrow {
-  left: 17px;
+  left: 14px;
 }
 
 .Header-button--link:hover .Header-arrow {
-  right: 14px;
+  right: 13px;
 }
 
 /**
@@ -462,7 +462,7 @@
     width: 18px;
     height: 18px;
     top: 28px;
-    right: 16px;
+    right: 20px;
   }
 
   .Header-list--secondary .Header-button--link {
@@ -476,7 +476,7 @@
   }
 
   .Header-button--link:hover .Header-arrow {
-    right: 19px;
+    right: 18px;
   }
 
   /**
@@ -540,8 +540,8 @@
   color: #fff;
 }
 
-.Header--white:not(.is-following) .Header-logo {
-  filter: brightness(100);
+.Header--white:not(.is-following) .Header-logo path {
+  fill: #fff;
 }
 
 .Header--black .Header-button--link.is-current,
@@ -550,8 +550,8 @@
   color: #000;
 }
 
-.Header--black:not(.is-following) .Header-logo {
-  filter: brightness(0);
+.Header--black:not(.is-following) .Header-logo path {
+  fill: #000;
 }
 
 /**

@@ -86,5 +86,5 @@
 }
 
 .Shareable--large:hover .Shareable-text {
-  color: var(--color-link-enter);
+  color: var(--color-text);
 }

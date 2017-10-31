@@ -2,8 +2,13 @@
 
 .Border {
   padding: 0 16px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+  margin-top: 70px;
   background-color: var(--color-text);
+}
+
+.Border--first {
+  margin-top: 0;
 }
 
 .Border-text {
@@ -19,10 +24,26 @@
 @media (--viewport-lg) {
   .Border {
     padding: 0 32px;
-    margin-bottom: 72px;
   }
 
   .Border-text {
     line-height: 64px;
+  }
+}
+
+@media (--viewport-lg) {
+  .Border {
+    padding: 0 32px;
+    margin-bottom: 32px;
+  }
+
+  .Border-text {
+    line-height: 64px;
+  }
+}
+
+@media (--viewport-xl) {
+  .Border {
+    margin-bottom: 46px;
   }
 }

@@ -35,9 +35,9 @@
   "Join Organisations": "Join Organisations",
   "Understand The Goals": "Understand The Goals",
   "Stay Updated": "Stay Updated",
-  "View campaign": "View campaign",
+  "Read more": "Read more",
   "Related goals": "Related goals",
-  "Read the full article": "Read the full article",
+  "Read more": "Read more",
   "Published on %s %s, %s": "Published on %s %s, %s",
   "Edit": "Edit",
   "The Goals": "The Goals",
@@ -106,5 +106,6 @@
   "See all Tweets": "See all Tweets",
   "Show more articles": "Show more articles",
   "Go to website": "Go to website",
-  "See all Photos": "See all Photos"
+  "See all Photos": "See all Photos",
+  "Read more": "Read more"
 }
