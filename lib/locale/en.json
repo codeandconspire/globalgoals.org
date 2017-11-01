@@ -37,7 +37,6 @@
   "Stay Updated": "Stay Updated",
   "Read more": "Read more",
   "Related goals": "Related goals",
-  "Read more": "Read more",
   "Published on %s %s, %s": "Published on %s %s, %s",
   "Edit": "Edit",
   "The Goals": "The Goals",
@@ -107,5 +106,5 @@
   "Show more articles": "Show more articles",
   "Go to website": "Go to website",
   "See all Photos": "See all Photos",
-  "Read more": "Read more"
+  "An error occured": "An error occured"
 }
