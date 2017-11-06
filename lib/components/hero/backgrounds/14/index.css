@@ -17,7 +17,7 @@
 }
 
 .Hero14-sea.is-visible {
-  animation: Hero14-sea--appear 1800ms 200ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  animation: Hero14-sea--appear 1800ms 50ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
 
 @keyframes Hero14-sea--appear {

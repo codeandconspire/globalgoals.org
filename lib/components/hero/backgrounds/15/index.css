@@ -58,19 +58,19 @@
  */
 
 .Hero15-savannahThing {
-  visibility: hidden;
+  opacity: 0;
   transform: translateY(100%);
-  animation: Hero15-savannahThing--appear 600ms 200ms ease-out forwards;
+  animation: Hero15-savannahThing--appear 600ms 200ms var(--ease-out) forwards;
 }
 
 @keyframes Hero15-savannahThing--appear {
   from {
-    visibility: visible;
+    opacity: 1;
     transform: translateY(100%);
   }
 
   to {
-    visibility: visible;
+    opacity: 1;
     transform: translateY(0%);
   }
 }

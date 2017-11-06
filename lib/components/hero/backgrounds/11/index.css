@@ -22,14 +22,10 @@
   }
 }
 
-/**
- * 1. Initial transform applied to <g> has no effect
- */
-
 .Hero11-cityThing {
-  visibility: hidden; /* 1 */
+  opacity: 0;
   transform: translateY(100%);
-  animation: Hero11-cityThing--appear 400ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero11-cityThing--appear 400ms 100ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 .Hero11-cityThing--shaded {
@@ -38,13 +34,13 @@
 
 @keyframes Hero11-cityThing--appear {
   from {
-    visibility: visible;
     transform: translateY(100%);
+    opacity: 1;
   }
 
   to {
-    visibility: visible;
     transform: translateY(0%);
+    opacity: 1;
   }
 }
 

@@ -3,7 +3,7 @@
 .Hero12 {
   opacity: 0;
   color: var(--color-goal-12-shaded);
-  animation: Hero12-bg--appear 600ms 200ms var(--ease) forwards;
+  animation: Hero12-bg--appear 600ms 50ms var(--ease) forwards;
 }
 
 @keyframes Hero12-bg--appear {
@@ -20,7 +20,7 @@
   left: 0;
   top: 0;
   transform: scale(0.85);
-  animation: Hero12-circle--appear 700ms 200ms var(--ease-out) forwards;
+  animation: Hero12-circle--appear 700ms 50ms var(--ease-out) forwards;
 }
 
 @keyframes Hero12-circle--appear {

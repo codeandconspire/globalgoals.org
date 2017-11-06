@@ -117,19 +117,20 @@
 
 @media (--Hero-wide) {
   .Hero9-industryTurbine:nth-child(1) {
-    height: 200px;
-    right: 18%;
-}
+    height: 140px;
+    right: 19%;
+  }
 
   .Hero9-industryTurbine:nth-child(2) {
-    height: 120px;
-    right: 10%;
+    height: 220px;
+    right: 8%;
   }
 }
 
 .Hero9-industryBlades {
   transform-origin: 50% 50%;
-  animation: Hero9-industryBlades--spin 3000ms linear infinite;
+  will-change: transform;
+  animation: Hero9-industryBlades--spin 3500ms linear infinite;
 }
 
 @keyframes Hero9-industryBlades--spin {
@@ -144,11 +145,12 @@
 
 .Hero9-satellite {
   display: none;
-  width: 30px;
+  width: 35px;
   position: absolute;
   left: 50%;
-  top: 12%;
+  top: 13%;
 
+  will-change: transform;
   transform-origin: 0 300vh;
   animation: Hero9-satellite--flying 24000ms linear infinite;
 }
@@ -170,7 +172,7 @@
 
 .Hero9-tower {
   display: none;
-  height: 250px;
+  height: 230px;
   position: absolute;
   left: 12%;
   bottom: 0;

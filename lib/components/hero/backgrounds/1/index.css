@@ -29,7 +29,7 @@
   fill: #fff;
   opacity: 0;
   transform: translateY(100%);
-  animation: Hero1-person--appear 1400ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero1-person--appear 1000ms 50ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes Hero1-person--appear {

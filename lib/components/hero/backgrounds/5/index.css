@@ -24,7 +24,7 @@
   fill: #fff;
   opacity: 0;
   transform: translateY(100%);
-  animation: Hero5-person--appear 450ms 300ms var(--ease-out) forwards;
+  animation: Hero5-person--appear 1000ms 50ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 .Hero5-person:nth-child(1) { animation-delay: 400ms; }

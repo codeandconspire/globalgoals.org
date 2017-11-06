@@ -14,7 +14,7 @@
   bottom: 0;
   transform: translate(-50%, 100%);
 
-  animation: Hero16--appear 1000ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero16--appear 1000ms 100ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes Hero16--appear {

@@ -562,7 +562,7 @@
 .Header.is-fromGoalGrid:not(.is-following) {
   opacity: 0;
   will-change: opacity;
-  animation: Header-in 600ms 200ms var(--ease) forwards;
+  animation: Header-in 600ms 100ms var(--ease) forwards;
 }
 
 @keyframes Header-in {
