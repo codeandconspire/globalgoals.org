@@ -24,7 +24,7 @@
   float: left;
   transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
-  transform: scale(1.0001);
+  transform: scale(1);
 }
 
 .GoalGrid--simple {
@@ -62,7 +62,7 @@
 }
 
 .GoalGrid-item.is-pressed .GoalGrid-iconGlyph {
-  transform: scale(1.0001);
+  transform: scale(1);
 }
 
 /**
