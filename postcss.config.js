@@ -14,4 +14,4 @@ module.exports = (ctx) => ({
     require('autoprefixer')({browsers: [ 'last 2 versions', 'ie >= 9', 'Firefox ESR' ]}),
     require('postcss-csso')()
   ]
-});
+})

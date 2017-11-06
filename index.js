@@ -1,26 +1,26 @@
-const Koa = require('koa');
-const static = require('koa-static');
-const body = require('koa-body');
-const helmet = require('koa-helmet');
-const router = require('./lib/router');
-const { auth, unauthorized } = require('./lib/middleware/auth');
-const cache = require('./lib/middleware/cache');
-const assets = require('./lib/middleware/assets');
-const render = require('./lib/middleware/render');
-const prismic = require('./lib/middleware/prismic');
-const catchall = require('./lib/middleware/catchall');
-const analytics = require('./lib/middleware/analytics');
-const app = require('./lib/app');
+const Koa = require('koa')
+const serve = require('koa-static')
+const body = require('koa-body')
+const helmet = require('koa-helmet')
+const router = require('./lib/router')
+const { auth, unauthorized } = require('./lib/middleware/auth')
+const cache = require('./lib/middleware/cache')
+const assets = require('./lib/middleware/assets')
+const render = require('./lib/middleware/render')
+const prismic = require('./lib/middleware/prismic')
+const catchall = require('./lib/middleware/catchall')
+const analytics = require('./lib/middleware/analytics')
+const app = require('./lib/app')
 
-const server = new Koa();
+const server = new Koa()
 
 /**
  * Basic authentication
  */
 
 if (process.env.AUTH === 'true') {
-  server.use(unauthorized);
-  server.use(auth({ name: process.env.AUTH_NAME, pass: process.env.AUTH_PASS }));
+  server.use(unauthorized)
+  server.use(auth({ name: process.env.AUTH_NAME, pass: process.env.AUTH_PASS }))
 }
 
 /**
@@ -28,7 +28,7 @@ if (process.env.AUTH === 'true') {
  */
 
 if (process.env.NODE_ENV === 'development') {
-  server.use(require('./lib/middleware/dev'));
+  server.use(require('./lib/middleware/dev'))
 }
 
 /**
@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === 'development') {
  */
 
 if (process.env.NODE_ENV !== 'development') {
-  server.use(helmet());
+  server.use(helmet())
 }
 
 /**
@@ -44,57 +44,57 @@ if (process.env.NODE_ENV !== 'development') {
  */
 
 if (process.env.NODE_ENV !== 'production') {
-  server.use(require('./lib/middleware/robots'));
+  server.use(require('./lib/middleware/robots'))
 }
 
 /**
  * Serve static files
  */
 
-server.use(assets);
-server.use(static('public', { maxage: 1000 * 60 * 60 * 24 * 365 }));
+server.use(assets)
+server.use(serve('public', { maxage: 1000 * 60 * 60 * 24 * 365 }))
 
 /**
  * Add on Universal Analytics for server process tracking
  */
 
-server.use(analytics(process.env.GOOGLE_ANALYTICS_ID));
+server.use(analytics(process.env.GOOGLE_ANALYTICS_ID))
 
 /**
  * Set up request cache mechanism
  */
 
-server.use(cache);
+server.use(cache)
 
 /**
  * Parse request body
  */
 
-server.use(body());
+server.use(body())
 
 /**
  * Guard against any downstream errors
  */
 
-server.use(catchall);
+server.use(catchall)
 
 /**
  * Handle rendering response
  */
 
-server.use(render(app));
+server.use(render(app))
 
 /**
  * Hook up the Prismic api
  */
 
-server.use(prismic);
+server.use(prismic)
 
 /**
  * Hook up em' routes
  */
 
-server.use(router);
+server.use(router)
 
 /**
  * Lift off
@@ -102,5 +102,5 @@ server.use(router);
 
 server.listen(process.env.PORT, () => {
   // eslint-disable-next-line no-console
-  console.info(`🚀  Server listening at localhost:${ process.env.PORT }`);
-});
+  console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
+})
