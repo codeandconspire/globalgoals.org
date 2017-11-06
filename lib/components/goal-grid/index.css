@@ -12,7 +12,7 @@
  */
 
 .GoalGrid {
-  width: 100%;
+  width: calc(100% + 10px);
   margin: calc((var(--GoalGrid-gap) / 2) * -1);
   user-select: none;
   contain: style layout paint;
@@ -310,6 +310,7 @@
   @media (--viewport-lg) {
     .GoalGrid:not(.GoalGrid--simple) {
       margin: 0;
+      width: 100%;
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(6, 1fr);
