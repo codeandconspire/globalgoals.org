@@ -67,7 +67,8 @@
     "yo-yoify": "^3.7.3"
   },
   "dependencies": {
-    "choo": "^6.3.0",
+    "choo": "^6.5.1",
+    "document-ready": "^2.0.1",
     "fun-component": "^2.0.3",
     "got": "^7.1.0",
     "koa": "^2.3.0",
