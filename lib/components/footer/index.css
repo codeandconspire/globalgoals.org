@@ -162,7 +162,6 @@
 .Footer-figureImg {
   width: auto;
   vertical-align: middle;
-  max-width: 95%;
 }
 
 @media (--viewport-sm-max) {

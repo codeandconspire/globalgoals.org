@@ -67,7 +67,7 @@
   opacity: 0;
   transform: translate(-50%, -50%);
 
-  animation: Hero-globe--appear 800ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero-globe--appear 600ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @media (--Hero-wide) {

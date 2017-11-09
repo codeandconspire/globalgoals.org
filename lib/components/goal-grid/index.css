@@ -29,6 +29,7 @@
 
 .GoalGrid--simple {
   margin: 0;
+  width: 100%;
 }
 
 .GoalGrid--simple .GoalGrid-item {
