@@ -60,7 +60,6 @@
   width: 100%;
   margin-top: calc(var(--Hero-padding) * -1);
   z-index: 1;
-  position: relative;
   will-change: transform;
 }
 
@@ -340,7 +339,7 @@
 }
 
 .Hero--takeover .Hero-title.is-clone {
-  position: fixed;
+  position: absolute;
   transform-origin: 0 0;
 }
 
