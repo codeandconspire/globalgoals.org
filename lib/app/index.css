@@ -1,8 +1,9 @@
 @import "normalize.css";
 
+@import "../components/base";
 @import "../components/border";
 @import "../components/button";
-@import "../components/call-to-action";
+@import "../components/engager";
 @import "../components/card";
 @import "../components/edit";
 @import "../components/footer";

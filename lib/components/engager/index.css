@@ -1,0 +1,635 @@
+/* @define Engager */
+
+@import "../base";
+@import "../form";
+@import "../grid";
+
+/**
+ * 1. Hardcoded in JavaScript, see tablist.js
+ */
+
+:root {
+  --Engager-selector-height: 4px; /* 1 */
+  --Engager-tablist-height: 46px;
+  --Engager-selector-duration: 250ms;
+}
+
+.Engager {
+  float: left;
+  width: 100%;
+}
+
+/**
+ * 1. Prevent next sibling element peeking into view during transition
+ */
+
+.Engager.in-transition {
+  min-height: 800px; /* 1 */
+}
+
+/**
+ * Large button
+ * 1. Simplest way of overriding the IE hover background fix
+ */
+
+.Engager-button {
+  float: left;
+  padding: 17px 73px 15px 24px;
+  margin: 0 16px 16px 0;
+
+  position: relative;
+  overflow: hidden;
+
+  font-size: 26px;
+  color: #fff;
+  font-family: var(--font-family-heading);
+  background: var(--color-red) !important; /* 1 */
+  text-transform: uppercase;
+  white-space: nowrap;
+  word-spacing: var(--word-spacing-heading);
+  user-select: none;
+
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+@media (--viewport-xs) {
+  .Engager-button {
+    font-size: 32px;
+  }
+}
+
+@media (--viewport-lg) {
+  .Engager-button {
+    font-size: 48px;
+    padding: 13px 73px 11px 26px;
+    margin: 0 24px 24px 0;
+  }
+}
+
+@media (--viewport-xl) {
+  .Engager-button {
+    font-size: 72px;
+    padding: 14px 74px 10px 32px;
+    margin: 0 26px 26px 0;
+  }
+}
+
+/**
+ * Darken on mouse over
+ */
+
+.Engager-buttonText::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--color-red-shaded);
+  transition: opacity 180ms var(--ease-out);
+  opacity: 0;
+  z-index: -1;
+}
+
+.Engager-button:hover .Engager-buttonText::before {
+  opacity: 0.1;
+}
+
+/**
+ * The "+"
+ */
+
+.Engager-button::after,
+.Engager-button::before {
+  content: "";
+  width: 2px;
+  height: 26px;
+
+  position: absolute;
+  top: 50%;
+  right: 36px;
+
+  background: #fff;
+  transform: translateY(-50%);
+
+  transition: transform 180ms var(--ease-out), opacity 90ms var(--ease-in);
+}
+
+.Engager-tablist.is-slow .Engager-button::after,
+.Engager-tablist.is-slow .Engager-button::before {
+  transition: transform 180ms var(--ease-out), opacity 90ms var(--ease-in);
+}
+
+.Engager-button::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.Engager-button.is-expanded::before {
+  opacity: 0;
+}
+
+.Engager-button:hover::before {
+  transform: translate(-4px, -50%);
+}
+
+.Engager-button:hover::after {
+  transform: translate(-4px, -50%) rotate(90deg);
+}
+
+@media (--viewport-lg) {
+  .Engager-button::after,
+  .Engager-button::before {
+    height: 30px;
+  }
+}
+
+@media (--viewport-xl) {
+  .Engager-button {
+    padding-right: 100px;
+  }
+
+  .Engager-button::after,
+  .Engager-button::before {
+    height: 38px;
+    right: 50px;
+  }
+}
+
+/**
+ * Wide
+ */
+
+.Engager-button--row {
+  float: none;
+  margin: 0;
+  flex-grow: 1;
+}
+
+@media (--viewport-md) {
+  .Engager-button--row {
+    display: none;
+  }
+}
+
+/**
+ * Align button with tab bottom border
+ */
+
+.Engager-button.is-flat {
+  color: transparent;
+}
+
+.Engager-button.is-flat::after,
+.Engager-button.is-flat::before {
+  opacity: 0;
+}
+
+/**
+ * Tablist
+ */
+
+.Engager-tablist {
+  display: none;
+  flex-wrap: wrap;
+  position: relative;
+  -webkit-touch-callout: none;
+  user-select: none;
+  z-index: 1;
+}
+
+@media (--viewport-md) {
+  .Engager-tablist {
+    display: flex;
+    margin-bottom: -16px;
+  }
+
+  .Engager-tablist.is-expanded {
+    width: 100%;
+  }
+}
+
+@media (--viewport-lg) {
+  .Engager-tablist {
+    margin-bottom: -24px;
+  }
+}
+
+@media (--viewport-xl) {
+  .Engager-tablist {
+    margin-bottom: -26px;
+  }
+}
+
+.Engager.is-expanded .Engager-tablist {
+  margin-bottom: 0;
+}
+
+.Engager-tabs {
+  height: var(--Engager-tablist-height);
+  display: flex;
+  flex: 1 0 100%;
+  box-shadow: 0px 1px 0px 0px var(--color-gray-light);
+}
+
+.Engager-tabs.in-transition {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/**
+ * All buttons but the one in transition disappear
+ */
+
+.Engager-tablist.is-hidden > .Engager-button:not(.in-transition) {
+  opacity: 0;
+  transform: translateY(200%);
+}
+
+.Engager-tablist.is-hidden .Engager-button.in-transition {
+  transition:
+    color 200ms linear,
+    background 200ms linear,
+    transform 340ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Engager-tablist.in-transition .Engager-button {
+  transition:
+    opacity 175ms linear,
+    transform 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.Engager-tablist.is-slow .Engager-button.in-transition {
+  transition:
+    color 275ms linear,
+    background 275ms linear,
+    transform 450ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/**
+ * Tab
+ */
+
+.Engager-tab {
+  margin-right: 24px;
+  border-bottom: var(--Engager-selector-height) solid transparent;
+
+  position: relative;
+
+  font-size: 20px;
+  line-height: 38px;
+  color: var(--color-gray-alpha);
+  font-family: var(--font-family-heading);
+  word-spacing: var(--word-spacing-heading);
+
+  text-transform: uppercase;
+  white-space: nowrap;
+  will-change: transform;
+
+  transition: color 90ms var(--ease-out);
+}
+
+.Engager-tab.is-activeTemporarily {
+  transition:
+    color var(--Engager-selector-duration) var(--ease-out),
+    border-color 0ms var(--Engager-selector-duration) linear;
+}
+
+.Engager-tab:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (--viewport-md) {
+  .Engager-tab {
+    font-size: 24px;
+    line-height: 27px;
+    margin-right: 48px;
+  }
+}
+
+.Engager-tabs.in-transition .Engager-tab {
+  transition:
+    opacity 200ms linear,
+    transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.Engager-tablist.is-slow .Engager-tabs.in-transition .Engager-tab {
+  transition:
+    opacity 225ms linear,
+    transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.Engager-tabs.is-hidden .Engager-tab {
+  opacity: 0;
+  transform: translateX(200px);
+}
+
+.Engager-tab:matches(.is-active, .is-activeTemporarily) {
+  color: var(--color-red);
+  border-bottom-color: currentColor;
+}
+
+.Engager-tablist.in-transition .Engager-tab.is-active {
+  border-bottom-color: transparent;
+}
+
+.Engager-tab.is-first {
+  order: -1;
+}
+
+/**
+ * Active selector transition element
+ */
+
+.Engager-selector {
+  width: 100%;
+  height: var(--Engager-selector-height);
+
+  position: absolute;
+  left: 0;
+  bottom: calc(var(--Engager-selector-height) * -1);
+
+  will-change: transform;
+  transform-origin: 0 50%;
+  transition: transform var(--Engager-selector-duration) cubic-bezier(0.165, 0.84, 0.44, 1);
+  background: var(--color-red);
+}
+
+/**
+ * Block – container of button and panel pair
+ */
+
+.Engager-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Engager-block + .Engager-block {
+  margin-top: 16px;
+}
+
+@media (--viewport-md) {
+  .Engager-block + .Engager-block {
+    margin: 0;
+  }
+}
+
+/**
+ * Panel
+ */
+
+.Engager-panel {
+  display: none;
+  flex-basis: 100%;
+  padding: 24px 0;
+  opacity: 0;
+}
+
+@media (--viewport-md) {
+  .Engager-panel {
+    padding-top: 24px;
+  }
+}
+
+@media (--viewport-lg) {
+  .Engager-panel {
+    padding-top: 32px;
+  }
+}
+
+@media (--viewport-xl) {
+  .Engager-panel {
+    padding-top: 46px;
+  }
+}
+
+.Engager-panel:target {
+  display: block;
+  animation: Engager-panel--appear 350ms var(--ease-out) forwards;
+}
+
+:root.has-js .Engager-panel {
+  display: none;
+}
+
+:root.has-js .Engager-panel.is-expanded {
+  display: block;
+  animation: Engager-panel--appear 500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+:root.has-js .Engager-panel.is-hidden {
+  animation: Engager-panel--hide 200ms var(--ease-in) forwards;
+}
+
+@keyframes Engager-panel--appear {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes Engager-panel--hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+}
+
+/**
+ * Poster
+ */
+
+.Engager-poster {
+  cursor: pointer;
+  user-select: none;
+}
+
+.Engager-imageWrapper {
+  position: relative;
+  background: var(--color-gray-light);
+}
+
+.Engager-imageWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-hover-dark-on-fill);
+  transition: opacity 250ms var(--ease);
+  opacity: 0;
+}
+
+:root.has-js .Engager-poster:hover .Engager-imageWrapper::after {
+  opacity: 1;
+}
+
+.Engager-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  outline: 2px solid rgba(0, 0, 0, 0.05);
+  outline-offset: -2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Engager-share {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.Engager-shareIcon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+/**
+ * Form
+ */
+
+.Engager-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 835px;
+  margin-top: 26px;
+}
+
+.Engager-field {
+  width: 100%;
+  display: block;
+  margin: 0 0 24px;
+}
+
+@media (--viewport-md) {
+  .Engager-fields {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 0;
+  }
+
+  .Engager-field {
+    width: 100%;
+    display: block;
+    margin: 24px 24px 0 0;
+  }
+}
+
+/**
+ * Tips & Tricks
+ */
+
+.Engager-tip {
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.Engager-tipIcon {
+  align-self: flex-start;
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  top: 4px;
+}
+
+.Engager-tipText {
+  padding-bottom: 46px;
+  margin-left: 36px;
+  border-bottom: 1px solid var(--color-gray-light);
+  overflow: hidden;
+}
+
+
+/**
+ * Themes
+ */
+
+.Engager--1 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-1) !important; }
+.Engager--1 .Engager-buttonText::before { background: var(--color-goal-1)-shaded ; }
+.Engager--1 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-1); }
+
+.Engager--2 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-2) !important; }
+.Engager--2 .Engager-buttonText::before { background: var(--color-goal-2)-shaded ; }
+.Engager--2 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-2); }
+
+.Engager--3 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-3) !important; }
+.Engager--3 .Engager-buttonText::before { background: var(--color-goal-3)-shaded ; }
+.Engager--3 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-3); }
+
+.Engager--4 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-4) !important; }
+.Engager--4 .Engager-buttonText::before { background: var(--color-goal-4)-shaded ; }
+.Engager--4 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-4); }
+
+.Engager--5 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-5) !important; }
+.Engager--5 .Engager-buttonText::before { background: var(--color-goal-5)-shaded ; }
+.Engager--5 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-5); }
+
+.Engager--6 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-6) !important; }
+.Engager--6 .Engager-buttonText::before { background: var(--color-goal-6)-shaded ; }
+.Engager--6 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-6); }
+
+.Engager--7 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-7) !important; }
+.Engager--7 .Engager-buttonText::before { background: var(--color-goal-7)-shaded ; }
+.Engager--7 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-7); }
+
+.Engager--8 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-8) !important; }
+.Engager--8 .Engager-buttonText::before { background: var(--color-goal-8)-shaded ; }
+.Engager--8 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-8); }
+
+.Engager--9 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-9) !important; }
+.Engager--9 .Engager-buttonText::before { background: var(--color-goal-9)-shaded ; }
+.Engager--9 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-9); }
+
+.Engager--10 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-10) !important; }
+.Engager--10 .Engager-buttonText::before { background: var(--color-goal-10-shaded); }
+.Engager--10 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-10); }
+
+.Engager--11 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-11) !important; }
+.Engager--11 .Engager-buttonText::before { background: var(--color-goal-11-shaded); }
+.Engager--11 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-11); }
+
+.Engager--12 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-12) !important; }
+.Engager--12 .Engager-buttonText::before { background: var(--color-goal-12-shaded); }
+.Engager--12 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-12); }
+
+.Engager--13 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-13) !important; }
+.Engager--13 .Engager-buttonText::before { background: var(--color-goal-13-shaded); }
+.Engager--13 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-13); }
+
+.Engager--14 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-14) !important; }
+.Engager--14 .Engager-buttonText::before { background: var(--color-goal-14-shaded); }
+.Engager--14 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-14); }
+
+.Engager--15 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-15) !important; }
+.Engager--15 .Engager-buttonText::before { background: var(--color-goal-15-shaded); }
+.Engager--15 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-15); }
+
+.Engager--16 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-16) !important; }
+.Engager--16 .Engager-buttonText::before { background: var(--color-goal-16-shaded); }
+.Engager--16 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-16); }
+
+.Engager--17 :matches(.Engager-button, .Engager-selector) { background: var(--color-goal-17) !important; }
+.Engager--17 .Engager-buttonText::before { background: var(--color-goal-17-shaded); }
+.Engager--17 .Engager-tab:matches(.is-active, .is-activeTemporarily) { color: var(--color-goal-17); }

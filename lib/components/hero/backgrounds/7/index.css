@@ -13,7 +13,7 @@
   top: 0;
 
   background-color: var(--color-goal-7-shaded);
-  opacity: 0.7;
+  opacity: 0.6;
   animation: Hero7-dimmer--up 800ms 1900ms linear forwards;
 }
 
