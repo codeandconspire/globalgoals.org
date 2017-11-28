@@ -4,82 +4,48 @@
 
 }
 
-.Hero3-heart {
-  position: absolute;
-  opacity: 0;
-  fill: #fff;
-}
-
-.Hero3-heart.is-visible {
-  animation-name: Hero3-heart--pop;
-  animation-duration: 700ms;
-  animation-timing-function: ease-in-out;
-  transform-origin: 50% 50%;
-}
-
-@keyframes Hero3-heart--pop {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-
-  20% {
-    opacity: 1;
-    transform: scale(1.5);
-  }
-
-  35% {
-    opacity: 1;
-    transform: scale(0.9);
-  }
-
-  50% {
-    opacity: 1;
-    transform: scale(1.5);
-  }
-
-  100% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-}
-
 .Hero3-lifeline {
-  max-height: 20%;
-  width: 200%;
-
+  width: calc(100% + 6px);
+  margin: 0 -3px;
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 8vh;
+}
+
+.Hero3-lifeline--wide {
+  display: none;
 }
 
 @media (--Hero-wide) {
   .Hero3-lifeline {
-    max-height: none;
-    width: calc(100% + 4px);
-    margin: 0 -2px;
+    display: none;
+  }
+
+  .Hero3-lifeline--wide {
+    display: block;
   }
 }
 
 :root.has-js .Hero3-lifepath {
-  display: none;
+  visibility: hidden;
 }
 
 :root.has-js .Hero3-lifepath.in-transition {
-  display: block;
+  visibility: visible;
 }
 
 .Hero3-lifepath.in-transition {
   stroke-dasharray: 1800;
   stroke-dashoffset: 1800;
   animation-name: Hero3-lifepath--draw;
-  animation-duration: 3000ms;
+  animation-duration: 2800ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
 .Hero3-lifepath.in-reverse {
   stroke-dashoffset: 3600;
+  animation-duration: 2400ms;
   animation-name: Hero3-lifepath--undraw;
 }
 

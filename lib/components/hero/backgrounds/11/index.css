@@ -55,6 +55,7 @@
   right: calc(100% + 1px);
   bottom: 0;
   will-change: transform;
+  transition-delay: 500ms;
 }
 
 .Hero11-bus.is-coming {
@@ -67,6 +68,7 @@
 
 @media (--Hero-wide) {
   .Hero11-bus {
+    transition-delay: 0ms;
     max-width: 10vw;
     max-height: 3.5vh;
   }

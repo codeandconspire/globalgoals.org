@@ -14,7 +14,7 @@
 
   background-color: var(--color-goal-7-shaded);
   opacity: 0.6;
-  animation: Hero7-dimmer--up 800ms 1900ms linear forwards;
+  animation: Hero7-dimmer--up 800ms 1300ms var(--ease-in) forwards;
 }
 
 @keyframes Hero7-dimmer--up {
@@ -31,7 +31,7 @@
 
   visibility: hidden;
   transform: translateY(100vh);
-  animation: Hero7-energySun--appear 600ms 400ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero7-energySun--appear 600ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @media (--Hero-wide) {
@@ -55,7 +55,7 @@
 
   visibility: hidden;
   transform: translateY(100%);
-  animation: Hero7-energyTurbine--appear 600ms 400ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero7-energyTurbine--appear 600ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @media (--Hero-wide) {
@@ -75,7 +75,7 @@
   bottom: 0;
 
   transform: translateY(100%);
-  animation: Hero7-energyTurbine--appear 600ms 400ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero7-energyTurbine--appear 600ms 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes Hero7-energyTurbine--appear {
@@ -125,9 +125,10 @@
   height: 50%;
   position: absolute;
   top: 0;
+  will-change: transform;
 
   transform: translateY(-100%);
-  animation: Hero7-lightBulb--appear 450ms 400ms forwards;
+  animation: Hero7-lightBulb--appear 450ms 200ms forwards;
 }
 
 @keyframes Hero7-lightBulb--appear {
@@ -141,36 +142,36 @@
 }
 
 .Hero7-lightbulb:nth-child(2) {
-  right: -10%;
+  right: 20%;
   top: -30vh;
 }
 
 .Hero7-lightbulb:nth-child(3) {
-  right: -25%;
+  right: 5%;
   top: -20vh;
 }
 
 @media (--Hero-wide) {
   .Hero7-lightbulb:nth-child(1) {
     display: block;
-    left: 0%;
+    left: 8%;
     top: -20vh;
   }
 
   .Hero7-lightbulb:nth-child(2) {
-    right: 10%;
+    right: 18%;
     top: -15vh;
   }
 
   .Hero7-lightbulb:nth-child(3) {
-    right: 0;
+    right: 8%;
   }
 }
 
 .Hero7-lightRay {
   stroke-dasharray: 10;
   stroke-dashoffset: 10;
-  animation: Hero7-lightRay--appear 300ms forwards;
+  animation: Hero7-lightRay--appear 280ms forwards;
 }
 
 @keyframes Hero7-lightRay--appear {
@@ -179,15 +180,15 @@
   }
 }
 
-.Hero7-bulbRays .Hero7-lightRay:nth-child(1) { animation-delay: 1300ms; }
-.Hero7-bulbRays .Hero7-lightRay:nth-child(2) { animation-delay: 1450ms; }
-.Hero7-bulbRays .Hero7-lightRay:nth-child(3) { animation-delay: 1600ms; }
-.Hero7-bulbRays .Hero7-lightRay:nth-child(4) { animation-delay: 1750ms; }
-.Hero7-bulbRays .Hero7-lightRay:nth-child(5) { animation-delay: 1900ms; }
-.Hero7-bulbRays .Hero7-lightRay:nth-child(6) { animation-delay: 2050ms; }
-.Hero7-bulbRays .Hero7-lightRay:nth-child(7) { animation-delay: 2200ms; }
-.Hero7-bulbRays .Hero7-lightRay:nth-child(8) { animation-delay: 2350ms; }
-.Hero7-bulbRays .Hero7-lightRay:nth-child(9) { animation-delay: 2500ms; }
+.Hero7-bulbRays .Hero7-lightRay:nth-child(1) { animation-delay: 900ms; }
+.Hero7-bulbRays .Hero7-lightRay:nth-child(2) { animation-delay: 1050ms; }
+.Hero7-bulbRays .Hero7-lightRay:nth-child(3) { animation-delay: 1200ms; }
+.Hero7-bulbRays .Hero7-lightRay:nth-child(4) { animation-delay: 1350ms; }
+.Hero7-bulbRays .Hero7-lightRay:nth-child(5) { animation-delay: 1500ms; }
+.Hero7-bulbRays .Hero7-lightRay:nth-child(6) { animation-delay: 1650ms; }
+.Hero7-bulbRays .Hero7-lightRay:nth-child(7) { animation-delay: 1800ms; }
+.Hero7-bulbRays .Hero7-lightRay:nth-child(8) { animation-delay: 1950ms; }
+.Hero7-bulbRays .Hero7-lightRay:nth-child(9) { animation-delay: 2100ms; }
 
 .Hero7-energySun .Hero7-lightRay {
   stroke-dashoffset: 6;
