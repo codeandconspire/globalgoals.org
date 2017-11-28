@@ -77,6 +77,7 @@
 
 /**
  * Darken on mouse over
+ * 1. Fix text rendering jumping in Safari on hover
  */
 
 .Engager-buttonText::before {
@@ -90,6 +91,7 @@
   transition: opacity 180ms var(--ease-out);
   opacity: 0;
   z-index: -1;
+  will-change: transform; /* 1 */
 }
 
 .Engager-button:hover .Engager-buttonText::before {

@@ -165,11 +165,16 @@
   transform: translateY(2px);
 }
 
+/**
+ * 1. Fix text rendering jumping in Safari on hover
+ */
+
 .Card-external {
   display: block;
   margin-left: 11px;
   height: 15px;
   overflow: visible !important;
+  will-change: transform;
 }
 
 .Card-externalArrow {

@@ -39,18 +39,36 @@
 
 .GoalGrid-bg::before {
   content: "";
-  background: rgba(0, 0, 0, 0.08);
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
   transition: opacity 180ms var(--ease-out);
 }
 
+.GoalGrid-item--1 .GoalGrid-bg::before { background: var(--color-goal-1-shaded); }
+.GoalGrid-item--2 .GoalGrid-bg::before { background: var(--color-goal-2-shaded); }
+.GoalGrid-item--3 .GoalGrid-bg::before { background: var(--color-goal-3-shaded); }
+.GoalGrid-item--4 .GoalGrid-bg::before { background: var(--color-goal-4-shaded); }
+.GoalGrid-item--5 .GoalGrid-bg::before { background: var(--color-goal-5-shaded); }
+.GoalGrid-item--6 .GoalGrid-bg::before { background: var(--color-goal-6-shaded); }
+.GoalGrid-item--7 .GoalGrid-bg::before { background: var(--color-goal-7-shaded); }
+.GoalGrid-item--8 .GoalGrid-bg::before { background: var(--color-goal-8-shaded); }
+.GoalGrid-item--9 .GoalGrid-bg::before { background: var(--color-goal-9-shaded); }
+.GoalGrid-item--10 .GoalGrid-bg::before { background: var(--color-goal-10-shaded); }
+.GoalGrid-item--11 .GoalGrid-bg::before { background: var(--color-goal-11-shaded); }
+.GoalGrid-item--12 .GoalGrid-bg::before { background: var(--color-goal-12-shaded); }
+.GoalGrid-item--13 .GoalGrid-bg::before { background: var(--color-goal-13-shaded); }
+.GoalGrid-item--14 .GoalGrid-bg::before { background: var(--color-goal-14-shaded); }
+.GoalGrid-item--15 .GoalGrid-bg::before { background: var(--color-goal-15-shaded); }
+.GoalGrid-item--16 .GoalGrid-bg::before { background: var(--color-goal-16-shaded); }
+.GoalGrid-item--17 .GoalGrid-bg::before { background: var(--color-goal-17-shaded); }
+
+
 .GoalGrid-item:hover .GoalGrid-bg::before {
-  opacity: 1;
+  opacity: 0.13;
 }
 
 .GoalGrid-iconGlyph {
