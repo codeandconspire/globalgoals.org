@@ -170,6 +170,7 @@
   pointer-events: none;
   z-index: 1;
   overflow: hidden;
+  position: relative;
 }
 
 .Twitter-text a {

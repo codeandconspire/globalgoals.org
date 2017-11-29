@@ -101,7 +101,7 @@
 }
 
 /**
- * Text block spacing for use with text blocks.
+ * Text block spacing for use with page blocks that start with a title.
  * "First" refers to when the text block is the first element on a page and
  * could move up a bit to keep a reasonable amount of content above the fold
  */
@@ -135,4 +135,8 @@
   .Space--textBlock {
     padding: 120px 0 58px;
   }
+}
+
+.Space--textBlockTopOnly {
+  padding-bottom: 0;
 }

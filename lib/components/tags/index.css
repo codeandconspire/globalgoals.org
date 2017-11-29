@@ -65,7 +65,7 @@
 
 @media (--viewport-md) {
   .Tags-item:only-child {
-    min-width: 96px;
+    min-width: 84px;
   }
 }
 

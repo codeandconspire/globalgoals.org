@@ -82,10 +82,6 @@
   transform-origin: center right;
 }
 
-.Header-list--secondary {
-  display: none;
-}
-
 /**
  * The logo
  */
@@ -440,7 +436,7 @@
 
   .Header-list {
     position: absolute;
-    top: 18%;
+    top: 22%;
     left: 4px;
   }
 
@@ -465,16 +461,6 @@
     right: 20px;
   }
 
-  .Header-list--secondary .Header-button--link {
-    height: auto;
-    padding: 0 10px;
-    margin: 0 0 0 -5px;
-    font-size: inherit;
-    line-height: 2;
-    font-family: inherit;
-    text-transform: none;
-  }
-
   .Header-button--link:hover .Header-arrow {
     right: 18px;
   }
@@ -486,14 +472,6 @@
   .Header-button--link.is-current,
   .Header-button--link.is-current:hover {
     color: inherit;
-  }
-}
-
-@media (--viewport-md-max) and (min-height: 580px) {
-  .Header-list--secondary {
-    display: block;
-    top: auto;
-    bottom: 28px;
   }
 }
 
@@ -550,7 +528,7 @@
   color: #000;
 }
 
-.Header--black:not(.is-following) .Header-logo path {
+.Header--black:not(.is-following):not(.is-open) .Header-logo path {
   fill: #000;
 }
 

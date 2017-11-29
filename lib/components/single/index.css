@@ -16,36 +16,12 @@
   contain: style layout paint;
 }
 
-.Single-body::before {
-  content: "";
-  display: block;
-  height: 8vh;
-  width: 100%;
-  max-height: 50px;
-}
-
-@media (--viewport-md) {
-  .Single-body {
-    padding: 40px 0 0;
-  }
-}
-
-@media (--viewport-lg) {
-  .Single-body {
-    padding: 70px 0 0;
-  }
-}
-
-.Single-body--pullUp {
+.Single-body--padd {
   padding-top: 25px;
 }
 
-.Single-body--pullUp::before {
-  content: none;
-}
-
 @media (--viewport-md) {
-  .Single-body--pullUp {
+  .Single-body--padd {
     padding-top: 40px;
   }
 }

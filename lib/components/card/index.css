@@ -95,7 +95,7 @@
 
 .Card-link {
   float: left;
-  margin: 8px 0 0 -14px;
+  margin: 3px 0 -23px -14px;
   padding: 0 16px 0 14px;
   line-height: 49px;
 
@@ -109,6 +109,13 @@
   user-select: none;
   transition: color 140ms var(--ease-out), background-color 140ms var(--ease-out);
   user-select: none;
+}
+
+@media (--viewport-sm) {
+  .Card-link {
+    padding: 0 16px 0 14px;
+    margin: 8px 0 0 -14px;
+  }
 }
 
 .Card-linkText {
@@ -213,7 +220,7 @@
  */
 
 .Card-tags {
-  width: 35%;
+  width: 30%;
   position: absolute;
   top: 0;
   left: 0;
@@ -276,10 +283,16 @@
  */
 
 .Card--fill .Card-content {
-  padding: 28px 32px 32px;
-  min-height: 275px;
+  padding: 20px 24px 30px;
   color: #fff;
   background-color: var(--color-interactive);
+}
+
+@media (--viewport-sm) {
+  .Card--fill .Card-content {
+    padding: 28px 32px 32px;
+    min-height: 260px;
+  }
 }
 
 .Card--fill.Card--linked .Card-content::before {
@@ -306,10 +319,17 @@
 }
 
 .Card--fill .Card-link {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 35px 0 -23px;
-  padding: 9px 0 0 0;
+  padding: 0;
   width: 100%;
+  margin: 4px 0 -23px;
+}
+
+@media (--viewport-sm) {
+  .Card--fill .Card-link {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 9px;
+    margin: 35px 0 -23px;
+  }
 }
 
 .Card--light .Card-link {

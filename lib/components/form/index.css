@@ -32,7 +32,7 @@
   box-shadow: none;
 
   font-size: 16px;
-  line-height: 48px;
+  line-height: normal;
   color: var(--color-text);
   transition: border-color 80ms ease;
 }
