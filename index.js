@@ -8,7 +8,6 @@ const cache = require('./lib/middleware/cache')
 const assets = require('./lib/middleware/assets')
 const render = require('./lib/middleware/render')
 const prismic = require('./lib/middleware/prismic')
-const catchall = require('./lib/middleware/catchall')
 const analytics = require('./lib/middleware/analytics')
 const app = require('./lib/app')
 
@@ -73,12 +72,6 @@ server.use(cache)
 server.use(body())
 
 /**
- * Guard against any downstream errors
- */
-
-server.use(catchall)
-
-/**
  * Handle rendering response
  */
 
@@ -101,6 +94,5 @@ server.use(router)
  */
 
 server.listen(process.env.PORT, () => {
-  // eslint-disable-next-line no-console
   console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
 })
