@@ -72,6 +72,7 @@
     "document-ready": "^2.0.1",
     "fun-component": "^2.0.3",
     "got": "^7.1.0",
+    "idb-keyval": "^2.3.0",
     "koa": "^2.3.0",
     "koa-body": "^2.5.0",
     "koa-compose": "^4.0.0",
