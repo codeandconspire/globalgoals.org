@@ -1,6 +1,6 @@
 {
   "name": "globalgoals.org",
-  "version": "2.0.0-rc22",
+  "version": "2.0.0-rc23",
   "description": "Public Website for The Global Goals",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "compress:js": "npm run compress:js:app && npm run compress:js:sw",
     "compress:css": "gzip -9 -f -c public/index-$npm_package_version.css > public/index-$npm_package_version.css.gz",
     "compress": "npm run compress:css && npm run compress:js",
-    "build:js:app": "browserify lib/app/index.js -p common-shakeify -t localenvify -t yo-yoify -t babelify -g unassertify -g yo-yoify -g uglifyify | uglifyjs -o public/index-$npm_package_version.js",
+    "build:js:app": "browserify lib/app/index.js -p common-shakeify -t localenvify -t yo-yoify -t babelify -g unassertify -g uglifyify | uglifyjs -o public/index-$npm_package_version.js",
     "build:js:sw": "browserify lib/app/service-worker.js -t localenvify -t uglifyify -o public/service-worker.js",
     "build:js": "npm run build:js:app && npm run build:js:sw",
     "build:css": "postcss lib/app/index.css --no-map -c postcss.config.js -o public/index-$npm_package_version.css",
@@ -83,8 +83,7 @@
     "lru-cache": "^4.1.1",
     "nanohref": "^3.0.0",
     "nanoraf": "^3.0.1",
-    "path-to-regexp": "^1.7.0",
-    "prismic-element": "^0.6.0",
+    "prismic-element": "^0.7.0",
     "prismic-javascript": "^1.4.0",
     "prismic-richtext": "^0.2.4",
     "smoothscroll-polyfill": "^0.4.0",
