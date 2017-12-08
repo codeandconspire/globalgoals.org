@@ -449,20 +449,20 @@
     padding: 0 48px 0 16px;
     margin: 0 0 0 -10px;
     color: inherit;
-    font-size: 48px;
-    line-height: 76px;
-    height: 74px;
+    font-size: 32px;
+    line-height: 48px;
   }
 
   .Header-button--link .Header-arrow {
-    width: 18px;
-    height: 18px;
-    top: 28px;
-    right: 20px;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    right: 26px;
+    transform: translateY(-50%) rotate(45deg);
   }
 
   .Header-button--link:hover .Header-arrow {
-    right: 18px;
+    right: 24px;
   }
 
   /**
@@ -472,6 +472,24 @@
   .Header-button--link.is-current,
   .Header-button--link.is-current:hover {
     color: inherit;
+  }
+}
+
+@media (--viewport-md-max) and (min-height: 480px) {
+  .Header-button--link {
+    font-size: 48px;
+    line-height: 76px;
+    height: 74px;
+  }
+
+  .Header-button--link .Header-arrow {
+    width: 18px;
+    height: 18px;
+    right: 20px;
+  }
+
+  .Header-button--link:hover .Header-arrow {
+    right: 18px;
   }
 }
 
