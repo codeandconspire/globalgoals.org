@@ -75,7 +75,7 @@
 .Header-content {
   position: relative;
   z-index: 1;
-  margin: 15px 0 0;
+  padding: 15px 0 0;
 }
 
 .Header-list {
@@ -198,7 +198,7 @@
   position: absolute;
   right: -14px;
   padding-right: 13px;
-  top: 0;
+  top: 15px;
   width: 92px;
   text-align: right;
 }
@@ -210,7 +210,7 @@
 
 .Header-burger {
   position: absolute;
-  top: 17px;
+  top: 32px;
   right: 46px;
   width: 18px;
   height: 14px;
@@ -278,7 +278,7 @@
 .Header-button--back {
   display: none;
   position: absolute;
-  top: 0;
+  top: 15px;
   left: -12px;
   transform-origin: top left;
 }
@@ -507,7 +507,7 @@
 
   .Header-nav {
     position: absolute;
-    top: 0;
+    top: 15px;
     right: 0;
     width: 100%;
   }
