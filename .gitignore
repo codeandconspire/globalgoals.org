@@ -3,6 +3,7 @@
 server.key
 server.crt
 .vscode
+.npmrc
 
 # Libs
 node_modules
