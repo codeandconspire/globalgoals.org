@@ -38,6 +38,7 @@
     "babelify": "^7.3.0",
     "browserify": "^14.4.0",
     "chokidar": "^1.7.0",
+    "choo-devtools": "^2.2.0",
     "common-shakeify": "^0.4.4",
     "dedent": "^0.7.0",
     "dotenv": "^4.0.0",
