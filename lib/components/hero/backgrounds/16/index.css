@@ -52,6 +52,10 @@
   }
 }
 
+.Hero16--tight .Hero16-institution {
+  display: none;
+}
+
 .Hero16-building {
   display: none;
   height: 11vh;
@@ -75,6 +79,15 @@
 
 .Hero16-building--right {
   right: 0;
+}
+
+.Hero16--tight .Hero16-building--left {
+  display: none;
+}
+
+.Hero16--tight .Hero16-building--right {
+  height: 23%;
+  right: -50%;
 }
 
 @media (--Hero-wide) {
@@ -158,6 +171,28 @@
   .Hero16-person--citizen:nth-child(7) {
     display: block;
   }
+}
+
+.Hero16--tight .Hero16-person {
+  display: none;
+}
+
+.Hero16--tight .Hero16-person--citizen:nth-child(8) {
+  height: 6%;
+  right: -10%;
+  display: block;
+}
+
+.Hero16--tight .Hero16-person--citizen:nth-child(9) {
+  height: 6%;
+  right: -16%;
+  display: block;
+}
+
+.Hero16--tight .Hero16-person--judge {
+  height: 9%;
+  right: -28%;
+  display: block;
 }
 
 @keyframes Hero16-person--appear {

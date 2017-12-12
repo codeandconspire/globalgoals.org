@@ -82,6 +82,7 @@
     "koa-static": "^4.0.1",
     "lodash.debounce": "^4.0.8",
     "lru-cache": "^4.1.1",
+    "nanocomponent": "^6.4.6",
     "nanohref": "^3.0.0",
     "nanoraf": "^3.0.1",
     "prismic-element": "^0.7.0",

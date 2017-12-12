@@ -64,6 +64,10 @@
   }
 }
 
+.Hero7--tight .Hero7-building {
+  display: none;
+}
+
 @keyframes Hero7-building--appear {
   to {
     transform: translateY(0%);
@@ -104,6 +108,16 @@
     height: 130px;
     right: 22%;
   }
+}
+
+.Hero7--tight .Hero7-energyTurbine:nth-child(1) {
+  height: 125px;
+  right: 5%;
+}
+
+.Hero7--tight .Hero7-energyTurbine:nth-child(2) {
+  height: 80px;
+  right: 18%;
 }
 
 .Hero7-energyBlades {
@@ -152,7 +166,7 @@
 }
 
 @media (--Hero-wide) {
-  .Hero7-lightbulb:nth-child(1) {
+  .Hero:not(.Hero--tight) .Hero7-lightbulb:nth-child(1) {
     display: block;
     left: 8%;
     top: -20vh;
@@ -166,6 +180,10 @@
   .Hero7-lightbulb:nth-child(3) {
     right: 8%;
   }
+}
+
+.Hero7--tight .Hero7-lightbulb:nth-child(3) {
+  display: none;
 }
 
 .Hero7-lightRay {
@@ -196,4 +214,8 @@
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+}
+
+.Hero7--tight .Hero7-energySun {
+  display: none;
 }

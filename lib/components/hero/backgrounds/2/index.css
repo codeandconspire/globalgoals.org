@@ -5,17 +5,15 @@
 }
 
 .Hero2-field {
-  width: 100%;
+  width: 200%;
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-@media (--viewport-md-max) {
-  .Hero2-field {
-    width: 200vw;
-    padding: 0;
-    right: 0;
+@media (--viewport-md) {
+  .Hero2:not(.Hero2--tight) .Hero2-field {
+    width: 100%;
   }
 }
 

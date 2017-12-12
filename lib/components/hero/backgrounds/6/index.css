@@ -7,6 +7,7 @@
 .Hero6-drop {
   position: absolute;
   bottom: 100%;
+  color: #fff;
   animation: Hero6-drop--falling 1600ms linear infinite;
 }
 
@@ -46,4 +47,16 @@
 
 .Hero6-drop--lg.in-transition {
   transition-duration: 1600ms;
+}
+
+.Hero6--tight .Hero6-drop--sm {
+  width: 12px;
+}
+
+.Hero6--tight .Hero6-drop--md {
+  width: 16px;
+}
+
+.Hero6--tight .Hero6-drop--lg {
+  width: 22px;
 }

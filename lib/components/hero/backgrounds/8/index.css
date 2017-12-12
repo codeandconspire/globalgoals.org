@@ -11,6 +11,10 @@
   bottom: 0;
 }
 
+.Hero8--tight .Hero8-bars {
+  display: none;
+}
+
 @media (max-width: 1150px) {
   .Hero8-bars {
     display: none;

@@ -22,6 +22,11 @@
   }
 }
 
+.Hero11--tight .Hero11-city {
+  width: auto;
+  left: 103%;
+}
+
 .Hero11-cityThing {
   opacity: 0;
   transform: translateY(100%);
@@ -157,6 +162,10 @@
   .Hero11-citySun {
     visibility: visible;
   }
+}
+
+.Hero11--tight .Hero11-citySun {
+  display: none;
 }
 
 .Hero11-lightRay {

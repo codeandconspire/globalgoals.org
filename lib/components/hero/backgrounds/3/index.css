@@ -12,6 +12,10 @@
   bottom: 8vh;
 }
 
+.Hero3--tight .Hero3-lifeline {
+  bottom: 35%;
+}
+
 .Hero3-lifeline--wide {
   display: none;
 }

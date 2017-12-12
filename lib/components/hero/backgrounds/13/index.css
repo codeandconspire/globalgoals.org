@@ -23,6 +23,10 @@
   }
 }
 
+.Hero13--tight .Hero-eye {
+  display: none;
+}
+
 .Hero-eyeLid {
   display: none;
   width: 90%;
@@ -38,6 +42,10 @@
   .Hero-eyeLid {
     display: block;
   }
+}
+
+.Hero13--tight .Hero-eyeLid {
+  display: none;
 }
 
 .Hero-eyeLidLine {
@@ -70,19 +78,25 @@
   animation: Hero-globe--appear 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
+.Hero13--tight .Hero-globe {
+  width: 94%;
+  left: 100%;
+  top: 0;
+}
+
 @media (--Hero-wide) {
-  .Hero-globe {
+  .Hero13:not(.Hero13--tight) .Hero-globe {
     width: 38%;
     max-height: 70%;
     max-width: none;
     animation: Hero-globe--appear 600ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
   }
 
-  :root.has-js .Hero-globe {
+  :root.has-js .Hero13:not(.Hero13--tight) .Hero-globe {
     animation: none;
   }
 
-  :root.has-js .Hero-globe.is-visible {
+  :root.has-js .Hero13:not(.Hero13--tight) .Hero-globe.is-visible {
     animation: Hero-globe--appear 800ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
   }
 }

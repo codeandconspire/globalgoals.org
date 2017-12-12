@@ -33,7 +33,7 @@
   height: 95%;
   position: absolute;
   left: 50%;
-  top: 50vh;
+  top: 50%;
 
   opacity: 0.6;
   transform: translate(-50%, -50%) rotate(0.5turn);
@@ -54,4 +54,10 @@
     height: auto;
     width: 80%;
   }
+}
+
+.Hero12--tight .Hero12-circle {
+  height: auto;
+  width: 100%;
+  left: 100%;
 }

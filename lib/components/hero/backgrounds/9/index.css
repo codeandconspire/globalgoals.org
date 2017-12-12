@@ -127,6 +127,15 @@
   }
 }
 
+.Hero9--tight .Hero9-industryTurbine:nth-child(1) {
+  height: 180px;
+  right: 27%;
+}
+
+.Hero9--tight .Hero9-industryTurbine:nth-child(2) {
+  display: none;
+}
+
 .Hero9-industryBlades {
   transform-origin: 50% 50%;
   will-change: transform;
@@ -182,4 +191,8 @@
   .Hero9-tower {
     display: block;
   }
+}
+
+.Hero9--tight .Hero9-tower {
+  display: none;
 }

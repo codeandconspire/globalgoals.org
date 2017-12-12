@@ -25,14 +25,36 @@
   }
 }
 
+.Hero1--tight {
+  display: none;
+}
+
+.Hero1--tight .Hero1-people {
+  width: 150%;
+  max-height: none;
+  left: 109.5%;
+  bottom: 42%;
+}
+
+@media (--viewport-lg) {
+  .Hero1--tight {
+    display: block;
+  }
+}
+
 .Hero1-person {
   fill: #fff;
   opacity: 0;
   transform: translateY(100%);
-  animation: Hero1-person--appear 1000ms 50ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: Hero1-person--appearBottom 1000ms 50ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@keyframes Hero1-person--appear {
+.Hero1--tight .Hero1-person:not(.Hero1-person--double) {
+  transform: translateX(100%);
+  animation-name: Hero1-person--appearRight;
+}
+
+@keyframes Hero1-person--appearBottom {
   from {
     opacity: 1;
     transform: translateY(100%);
@@ -41,6 +63,18 @@
   to {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+@keyframes Hero1-person--appearRight {
+  from {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
 
