@@ -52,6 +52,8 @@
 .Hero1--tight .Hero1-person:not(.Hero1-person--double) {
   transform: translateX(100%);
   animation-name: Hero1-person--appearRight;
+  animation-duration: 1550ms;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.275, 1);
 }
 
 @keyframes Hero1-person--appearBottom {
