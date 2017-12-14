@@ -57,6 +57,7 @@
 
 .Footer-title {
   font-family: var(--font-family-heading);
+  font-weight: bold;
   line-height: 1.4;
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);

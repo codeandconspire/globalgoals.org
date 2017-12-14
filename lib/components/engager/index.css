@@ -43,6 +43,7 @@
   font-size: 26px;
   color: #fff;
   font-family: var(--font-family-heading);
+  font-weight: bold;
   background: var(--color-red) !important; /* 1 */
   text-transform: uppercase;
   white-space: nowrap;
@@ -283,6 +284,7 @@
   line-height: 38px;
   color: var(--color-gray-alpha);
   font-family: var(--font-family-heading);
+  font-weight: bold;
   word-spacing: var(--word-spacing-heading);
 
   text-transform: uppercase;

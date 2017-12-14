@@ -18,6 +18,7 @@
   width: 100%;
   color: currentColor;
   font-family: var(--font-family-heading);
+  font-weight: bold;
   text-transform: uppercase;
   white-space: nowrap;
 }

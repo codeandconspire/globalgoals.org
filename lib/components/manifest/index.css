@@ -42,6 +42,7 @@
 
 .Manifest-paper {
   font-family: var(--font-family-heading);
+  font-weight: bold;
   font-size: var(--Manifest-line-height);
   margin-bottom: 20px;
   line-height: 1;

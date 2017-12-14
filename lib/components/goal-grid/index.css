@@ -190,6 +190,7 @@
 
 .GoalGrid-button {
   font-family: var(--font-family-heading);
+  font-weight: bold;
   line-height: 1.1;
   text-transform: uppercase;
   white-space: nowrap;

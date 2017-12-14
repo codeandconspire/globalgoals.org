@@ -105,6 +105,7 @@
   color: var(--color-link);
   text-transform: uppercase;
   font-family: var(--font-family-heading);
+  font-weight: bold;
   word-spacing: var(--word-spacing-heading);
   user-select: none;
   transition: color 140ms var(--ease-out), background-color 140ms var(--ease-out);

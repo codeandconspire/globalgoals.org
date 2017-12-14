@@ -40,6 +40,7 @@
   color: #fff;
   text-transform: uppercase;
   font-family: var(--font-family-heading);
+  font-weight: bold;
 }
 
 .Layer-close:matches(::before, ::after) {

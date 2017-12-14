@@ -54,6 +54,7 @@
   text-align: center;
   font-size: 18px;
   font-family: var(--font-family-heading);
+  font-weight: bold;
   line-height: calc(var(--Segment-caption-height) + 1px);
   text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);

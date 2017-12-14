@@ -14,6 +14,7 @@
   text-align: center;
   white-space: nowrap;
   font-family: var(--font-family-heading);
+  font-weight: bold;
   word-spacing: var(--word-spacing-heading);
   text-transform: uppercase;
   color: #fff;
