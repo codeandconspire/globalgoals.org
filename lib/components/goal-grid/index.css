@@ -344,7 +344,7 @@
 
 @supports (display: grid) {
   @media (--viewport-lg) {
-    .GoalGrid:not(.GoalGrid--simple) {
+    .GoalGrid--layout:not(.GoalGrid--simple) {
       margin: 0;
       width: 100%;
       display: grid;
@@ -353,62 +353,58 @@
       grid-gap: var(--GoalGrid-gap);
     }
 
-    .GoalGrid:not(.GoalGrid--simple) .GoalGrid-item {
+    .GoalGrid--layout.GoalGrid:not(.GoalGrid--simple) .GoalGrid-item {
       width: auto;
       float: none;
       padding: 0;
     }
 
-    .GoalGrid:not(.GoalGrid--simple) .GoalGrid-bg::before {
+    .GoalGrid--layout.GoalGrid:not(.GoalGrid--simple) .GoalGrid-bg::before {
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
     }
 
-    .GoalGrid:not(.GoalGrid--simple) .GoalGrid-icon {
+    .GoalGrid--layout.GoalGrid:not(.GoalGrid--simple) .GoalGrid-icon {
       position: relative;
     }
 
-    .GoalGrid-item--cta,
-    .GoalGrid-item--banner {
+    .GoalGrid--layout .GoalGrid-item--cta,
+    .GoalGrid--layout .GoalGrid-item--banner {
       display: block;
     }
 
-    .GoalGrid-item--cta .GoalGrid-bg,
-    .GoalGrid-item--banner .GoalGrid-bg {
+    .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-bg,
+    .GoalGrid--layout .GoalGrid-item--banner .GoalGrid-bg {
       padding: 0;
       height: 100%
     }
 
-    .GoalGrid-item--cta .GoalGrid-bg::before {
+    .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-bg::before {
       content: none;
     }
 
-    .GoalGrid-item--logo {
+    .GoalGrid--layout .GoalGrid-item--logo {
       display: none;
     }
 
-    :root:root .GoalGrid-item--cta {
-      cursor: pointer !important;
-    }
-
-    .GoalGrid-item--cta .GoalGrid-details {
+    .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-details {
       display: block;
       max-width: 450px;
       margin-top: 32px;
     }
 
-    .GoalGrid-item--cta .GoalGrid-paragraph {
+    .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-paragraph {
       display: none;
     }
 
-    .GoalGrid-item--cta .GoalGrid-desc {
+    .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-desc {
       width: 100%;
       margin-right: 0;
     }
 
-    .GoalGrid-item--cta .GoalGrid-button {
+    .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-button {
       color: #fff;
       background: var(--color-red);
       position: absolute;
@@ -418,18 +414,18 @@
       mix-blend-mode: normal;
     }
 
-    .GoalGrid-item--cta:hover .GoalGrid-button {
+    .GoalGrid--layout .GoalGrid-item--cta:hover .GoalGrid-button {
       background: var(--color-dark-red);
     }
 
-    .GoalGrid-item--cta .GoalGrid-logo {
+    .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-logo {
       top: auto;
       bottom: 24px;
       left: 24px;
       height: 56px;
     }
 
-    .GoalGrid-item--cta .GoalGrid-paragraph {
+    .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-paragraph {
       display: block;
     }
 
