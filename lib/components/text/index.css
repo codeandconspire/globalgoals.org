@@ -81,6 +81,22 @@
   color: #ddd;
 }
 
+.Text-cols {
+  column-gap: 32px;
+}
+
+@media (--viewport-md) {
+  .Text-cols {
+    column-count: 2;
+  }
+}
+
+@media (--viewport-lg) {
+  .Text-cols {
+    column-count: 3;
+  }
+}
+
 /**
  * Misc inline elements
  */

@@ -273,6 +273,39 @@
 }
 
 /**
+ * Language picker
+ */
+
+.Header-lang {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color-text-light-large);
+  text-decoration: none;
+  -webkit-font-smmothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Header--white .Header-lang {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.Header-lang:hover {
+  text-decoration: underline;
+}
+
+.Header-langIcon {
+  width: 14px;
+  margin-right: 8px;
+  position: relative;
+  top: -1.5px;
+}
+
+/**
  * Back button
  */
 
