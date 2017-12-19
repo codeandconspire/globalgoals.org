@@ -14,6 +14,10 @@
   white-space: nowrap;
 }
 
+/**
+ * 1. Overwrite normalize svg rule
+ */
+
 .Icon-label {
   width: 100%;
   color: currentColor;
@@ -21,6 +25,7 @@
   font-weight: bold;
   text-transform: uppercase;
   white-space: nowrap;
+  overflow: visible !important; /* 1 */
 }
 
 .Icon-glyph {
