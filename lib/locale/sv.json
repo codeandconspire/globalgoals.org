@@ -1,8 +1,10 @@
 {
-  "Goal %s": "Goal %s",
+  "Goal %s": "Mål %s",
   "Edit": "Edit",
-  "The Goals": "The Goals",
+  "The Goals": "Målen",
   "Languages": "Språk",
   "DEFAULT_DESCRIPTION": "DEFAULT_DESCRIPTION",
-  "sv": "Svenska"
+  "sv": "Svenska",
+  "There is no goal %s": "Det finns inget mål %s",
+  "The Global Goals": "Globala målen"
 }
