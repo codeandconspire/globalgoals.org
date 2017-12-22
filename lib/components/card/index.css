@@ -182,10 +182,10 @@
   margin-left: 11px;
   height: 15px;
   overflow: visible !important;
-  will-change: transform;
 }
 
 .Card-externalArrow {
+  will-change: transform;
   transition: transform 180ms cubic-bezier(0,0,.2,1);
 }
 

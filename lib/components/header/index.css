@@ -380,6 +380,10 @@
   padding-right: 29px;
 }
 
+.Header-button--external {
+  padding-right: 33px;
+}
+
 .Header-arrow {
   position: absolute;
   border-style: solid;
@@ -405,6 +409,28 @@
 
 .Header-button--link:hover .Header-arrow {
   right: 13px;
+}
+
+.Header-external {
+  display: block;
+  margin-left: 11px;
+  height: 15px;
+
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: visible !important;
+}
+
+.Header-externalArrow {
+  will-change: transform;
+  transition: transform 180ms cubic-bezier(0,0,.2,1);
+}
+
+.Header-button:hover .Header-externalArrow,
+:root.has-js .Header-button:hover .header-externalArrow {
+  transform: translate(2px, -2px);
 }
 
 /**
