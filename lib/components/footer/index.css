@@ -180,7 +180,6 @@
   }
 }
 
-
 /**
  * Horizontal list
  */
@@ -202,6 +201,7 @@
   .Footer-column--horizontal {
     padding: 12px 0 27px;
   }
+
   .Footer-column--horizontal .Footer-list {
     max-width: none;
     top: 4px;
