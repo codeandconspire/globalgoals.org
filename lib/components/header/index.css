@@ -273,39 +273,6 @@
 }
 
 /**
- * Language picker
- */
-
-.Header-lang {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: var(--color-text-light-large);
-  text-decoration: none;
-  -webkit-font-smmothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.Header--white .Header-lang {
-  color: rgba(255, 255, 255, 0.54);
-}
-
-.Header-lang:hover {
-  text-decoration: underline;
-}
-
-.Header-langIcon {
-  width: 14px;
-  margin-right: 8px;
-  position: relative;
-  top: -1.5px;
-}
-
-/**
  * Back button
  */
 
@@ -380,10 +347,6 @@
   padding-right: 29px;
 }
 
-.Header-button--external {
-  padding-right: 33px;
-}
-
 .Header-arrow {
   position: absolute;
   border-style: solid;
@@ -411,26 +374,31 @@
   right: 13px;
 }
 
+/**
+ * External arrow
+ */
+
 .Header-external {
-  display: block;
-  margin-left: 11px;
-  height: 15px;
-
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
   position: absolute;
+  top: 18px;
   right: 9px;
-  top: 50%;
-  transform: translateY(-50%);
-  overflow: visible !important;
 }
 
-.Header-externalArrow {
-  will-change: transform;
-  transition: transform 180ms cubic-bezier(0,0,.2,1);
+/**
+ * Language picker
+ */
+
+.Header-button--lang {
+  padding-right: 16px;
 }
 
-.Header-button:hover .Header-externalArrow,
-:root.has-js .Header-button:hover .header-externalArrow {
-  transform: translate(2px, -2px);
+.Header-langIcon {
+  width: 23px;
+  position: relative;
+  top: -16px;
 }
 
 /**
@@ -447,7 +415,7 @@
  * Narrow viewports with vertical navigation
  */
 
-@media (--viewport-md-max) {
+@media (--viewport-lg-max) {
   .Header-list,
   .Header-button--back {
     transform: none !important;
@@ -535,7 +503,7 @@
   }
 }
 
-@media (--viewport-md-max) and (min-height: 480px) {
+@media (--viewport-lg-max) and (min-height: 480px) {
   .Header-button--link {
     font-size: 48px;
     line-height: 76px;
@@ -559,7 +527,7 @@
  * Horizontal navigation
  */
 
-@media (--viewport-md) {
+@media (--viewport-lg) {
   .Header-button--toggle,
   .Header-burger {
     display: none !important;
@@ -573,14 +541,14 @@
   }
 
   .Header-list {
-    margin-right: -9px;
+    margin-right: -16px;
     overflow: hidden;
     float: right;
   }
 
   .Header-item {
     float: left;
-    margin-left: 13px;
+    margin-left: 12px;
   }
 }
 
@@ -704,7 +672,7 @@
   }
 }
 
-@media (--viewport-lg) {
+@media (--viewport-xl) {
   .Header-list,
   .Header-button--back {
     transform: scale(var(--Header-list-z));
@@ -712,14 +680,14 @@
   }
 }
 
-@media (--viewport-lg-max) {
+@media (--viewport-xl-max) {
   .Header-list {
     transform: none !important;
     will-change: unset;
   }
 }
 
-@media (--viewport-md-max) {
+@media (--viewport-lg-max) {
   .Header--goalPage :matches(.Header-fill, .Header-logo, .Header-content, .Header-list) {
     transform: none !important;
     will-change: unset;
