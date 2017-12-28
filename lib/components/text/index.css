@@ -247,23 +247,26 @@ ul.Text--links a::after {
   color: var(--color-text);
 }
 
+.Text-embed {
+  margin: 32px 0;
+  padding: 16px;
+  background: var(--color-gray-light);
+}
+
 /**
- * Let's pretend all embeds are 16:9
+ * Assume a ratio of 16:9 on all video sources
  */
 
-.Text :matches(.Text-embed, [data-oembed]) {
-  background: var(--color-gray-light);
+.Text-embed--youtube,
+.Text-embed--vimeo {
   width: 100%;
   height: 0;
-  padding-top: calc(720 / 1280 * 100%);
+  padding: calc(720 / 1280 * 100%) 0 0 0;
   position: relative;
 }
 
-.Text :matches(.Text-embed, [data-oembed]) {
-  margin: 32px 0;
-}
-
-.Text :matches(.Text-embed, [data-oembed]) iframe {
+.Text-embed--youtube iframe,
+.Text-embed--vimeo iframe {
   position: absolute;
   top: 0;
   left: 0;
