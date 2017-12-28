@@ -70,7 +70,6 @@
   },
   "dependencies": {
     "choo": "^6.5.1",
-    "document-ready": "^2.0.1",
     "fun-component": "^2.0.3",
     "got": "^7.1.0",
     "idb-keyval": "^2.3.0",
