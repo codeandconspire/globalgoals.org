@@ -8,22 +8,22 @@
   position: absolute;
   bottom: 100%;
   color: #fff;
-  animation: Hero6-drop--falling 1600ms linear infinite;
+  animation: Hero6-drop--falling 2600ms linear infinite;
 }
 
 @keyframes Hero6-drop--falling {
+  from {
+    transform: translateY(-100%);
+  }
+
   to {
-    transform: translateY(100vh);
+    transform: translateY(calc(100vh + 100%));
   }
 }
 
-:root.has-js .Hero6-drop {
-  animation: none;
-}
-
-.Hero6-drop.in-transition {
-  visibility: visible;
-  transition: transform 2000ms linear;
+.Hero6-symbol {
+  display: block;
+  width: 100%;
 }
 
 .Hero6-drop--sm {
@@ -31,8 +31,8 @@
   opacity: 0.6;
 }
 
-.Hero6-drop--sm.in-transition {
-  transition-duration: 2400ms;
+.Hero6-drop--sm {
+  animation-duration: 3000ms;
 }
 
 .Hero6-drop--md {
@@ -45,8 +45,8 @@
   opacity: 0.6;
 }
 
-.Hero6-drop--lg.in-transition {
-  transition-duration: 1600ms;
+.Hero6-drop--lg {
+  animation-duration: 2200ms;
 }
 
 .Hero6--tight .Hero6-drop--sm {
