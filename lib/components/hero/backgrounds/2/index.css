@@ -6,6 +6,8 @@
 
 .Hero2-field {
   width: 200%;
+  height: auto;
+  max-height: 246px;
   position: absolute;
   bottom: 0;
   right: 0;
