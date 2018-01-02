@@ -32,9 +32,6 @@
 
 .Tags-item {
   float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 50%;
   position: relative;
 
