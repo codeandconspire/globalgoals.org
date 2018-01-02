@@ -92,6 +92,7 @@
   display: inline-block;
   vertical-align: top;
   height: 45px;
+  width: 162px;
   padding: 16px 10px;
   margin-left: -11px;
   margin-top: -15px;
@@ -120,6 +121,7 @@
 
   .Header-logo {
     height: 54px;
+    width: 195px;
   }
 
   .Header-list,
@@ -397,8 +399,7 @@
 
 .Header-langIcon {
   width: 23px;
-  position: relative;
-  top: -16px;
+  height: 48px;
 }
 
 /**

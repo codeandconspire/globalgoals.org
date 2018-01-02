@@ -26,11 +26,13 @@
 
 .Logo--horizontal {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   padding-right: 4.5%;
 }
 
 .Logo--horizontal .Logo-symbol {
+  -ms-flex: 0 1 302px;
   height: 100%;
   width: auto;
   display: inline-block;
@@ -38,6 +40,7 @@
 }
 
 .Logo--horizontal .Logo-text {
+  -ms-flex: 0 1 452px;
   height: 63%;
   width: auto;
   vertical-align: middle;
