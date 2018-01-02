@@ -1,0 +1,71 @@
+/* @define Whopper */
+
+@import "../base";
+
+.Whopper {
+  column-gap: 32px;
+  margin-left: -14px;
+}
+
+.Whopper-item {
+
+}
+
+.Whopper-link {
+  white-space: nowrap;
+  position: relative;
+  font-size: 72px;
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  line-height: 84px;
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+}
+
+.Whopper-text {
+  display: inline-block;
+  padding-right: 68px;
+  padding-left: 14px;
+  vertical-align: top;
+  padding-top: 2px;
+}
+
+.Whopper-text--nonRoman {
+  font-size: 78%;
+  text-indent: -6px;
+}
+
+.Whopper-text:hover {
+  background: var(--color-hover-dark);
+  transition: background-color 180ms cubic-bezier(0, 0, 0.2, 1);
+  border-radius: 1px;
+}
+
+.Whopper-arrow {
+  border-style: solid;
+  width: 25px;
+  height: 25px;
+  border-width: 2.2px 2.2px 0 0;
+  display: inline-block;
+  position: absolute;
+  right: 25px;
+  top: 16px;
+  transform: rotate(45deg);
+  transition: transform 180ms cubic-bezier(0,0,.2,1);
+}
+
+.Whopper-link:hover .Whopper-arrow {
+  transform: rotate(45deg) translate(2px, -2px);
+}
+
+@media (--viewport-md) {
+  .Whopper {
+    column-count: 2;
+  }
+}
+
+@media (--viewport-lg) {
+  .Whopper {
+    column-count: 3;
+  }
+}

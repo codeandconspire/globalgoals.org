@@ -400,6 +400,8 @@
 .Header-langIcon {
   width: 23px;
   height: 48px;
+  position: relative;
+  top: -1px;
 }
 
 /**

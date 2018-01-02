@@ -26,6 +26,7 @@
 @import "../components/text";
 @import "../components/twitter";
 @import "../components/view";
+@import "../components/whopper";
 
 @import "suitcss-utils-display";
 @import "suitcss-utils-text";

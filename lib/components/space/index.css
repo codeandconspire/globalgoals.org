@@ -1,5 +1,7 @@
 /* @define Space */
 
+@import "../base";
+
 :root {
   --Space-default: 74px;
   --Space-default-lg: 110px;
