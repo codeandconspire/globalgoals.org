@@ -69,7 +69,7 @@
     "yo-yoify": "^3.7.3"
   },
   "dependencies": {
-    "choo": "^6.5.1",
+    "choo": "^6.6.1",
     "fun-component": "^2.0.3",
     "got": "^7.1.0",
     "idb-keyval": "^2.3.0",
