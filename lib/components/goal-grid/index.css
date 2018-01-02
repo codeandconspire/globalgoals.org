@@ -32,7 +32,7 @@
   width: 100%;
 }
 
-.GoalGrid--simple .GoalGrid-item {
+.GoalGrid.GoalGrid--simple .GoalGrid-item {
   width: 100%;
   padding: 0;
 }
@@ -222,31 +222,14 @@
   }
 }
 
-.GoalGrid-animation {
-  display: none;
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-
-@media (--viewport-lg) {
-  .GoalGrid-animation {
-    display: block;
-  }
-}
-
 @media (--viewport-sm) {
-  .GoalGrid:not(.GoalGrid--simple) .GoalGrid-item {
+  .GoalGrid--layout .GoalGrid-item {
     width: calc(100% / 3);
   }
 }
 
 @media (min-width: 710px) {
-  .GoalGrid:not(.GoalGrid--simple) .GoalGrid-item {
+  .GoalGrid--layout .GoalGrid-item {
     width: calc(100% / 4);
   }
 
@@ -260,7 +243,7 @@
     display: none;
   }
 
-  .GoalGrid:not(.GoalGrid--simple) .GoalGrid-item--banner {
+  .GoalGrid--layout .GoalGrid-item--banner {
     display: block;
     width: 75%;
   }
@@ -287,11 +270,15 @@
 }
 
 @media (--viewport-lg) {
+  .GoalGrid--layout .GoalGrid-item--banner {
+    display: none;
+  }
+
   /**
    * 1. Fix for incorrect pixel rounding (Edge)
    */
 
-  .GoalGrid:not(.GoalGrid--simple) .GoalGrid-item {
+  .GoalGrid .GoalGrid-item {
     width: calc(100% / 6);
   }
 
@@ -342,9 +329,24 @@
  * CSS Grid Layout
  */
 
+.GoalGrid-animation {
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
 @supports (display: grid) {
   @media (--viewport-lg) {
-    .GoalGrid--layout:not(.GoalGrid--simple) {
+    .GoalGrid--layout .GoalGrid-animation {
+      display: block;
+    }
+
+    .GoalGrid--layout {
       margin: 0;
       width: 100%;
       display: grid;
@@ -353,20 +355,20 @@
       grid-gap: var(--GoalGrid-gap);
     }
 
-    .GoalGrid--layout.GoalGrid:not(.GoalGrid--simple) .GoalGrid-item {
+    .GoalGrid--layout.GoalGrid .GoalGrid-item {
       width: auto;
       float: none;
       padding: 0;
     }
 
-    .GoalGrid--layout.GoalGrid:not(.GoalGrid--simple) .GoalGrid-bg::before {
+    .GoalGrid--layout.GoalGrid .GoalGrid-bg::before {
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
     }
 
-    .GoalGrid--layout.GoalGrid:not(.GoalGrid--simple) .GoalGrid-icon {
+    .GoalGrid--layout.GoalGrid .GoalGrid-icon {
       position: relative;
     }
 
