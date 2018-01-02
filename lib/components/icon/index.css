@@ -20,6 +20,8 @@
 
 .Icon-label {
   width: 100%;
+  height: auto;
+  min-height: 0;
   color: currentColor;
   font-family: var(--font-family-heading);
   font-weight: bold;
