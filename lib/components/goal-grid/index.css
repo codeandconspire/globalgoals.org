@@ -18,6 +18,12 @@
   contain: style layout paint;
 }
 
+@media print {
+  .GoalGrid {
+    display: none;
+  }
+}
+
 .GoalGrid-item {
   padding: calc(var(--GoalGrid-gap) / 2);
   width: 50%;

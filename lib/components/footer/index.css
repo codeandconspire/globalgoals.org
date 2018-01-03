@@ -13,6 +13,12 @@
   contain: style layout paint;
 }
 
+@media print {
+  .Footer {
+    display: none;
+  }
+}
+
 .Footer-content {
   width: calc(100% + 14px);
   margin: 0 -7px;

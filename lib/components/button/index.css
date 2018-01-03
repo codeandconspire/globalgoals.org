@@ -25,6 +25,12 @@
   user-select: none;
 }
 
+@media print {
+  .Button {
+    display: none;
+  }
+}
+
 @media (--viewport-md) {
   .Button {
     height: 64px;

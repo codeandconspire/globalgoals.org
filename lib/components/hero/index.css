@@ -42,6 +42,12 @@
   color: #fff;
 }
 
+@media print {
+  .Hero {
+    height: auto !important;
+  }
+}
+
 @media (--viewport-md) {
   .Hero {
     margin-top: calc(var(--Hero-padding-md) * -1);
@@ -349,4 +355,11 @@
 
 .Hero--takeover .Hero-intro {
   visibility: hidden;
+}
+
+@media print {
+  .Hero-link,
+  .Hero-bg {
+    display: none;
+  }
 }

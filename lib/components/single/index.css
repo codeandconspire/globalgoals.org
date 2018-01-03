@@ -159,6 +159,12 @@
   }
 }
 
+@media print {
+  .Single-column--sidebar {
+    display: none;
+  }
+}
+
 /**
  * Banner
  */

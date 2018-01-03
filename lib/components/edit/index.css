@@ -19,6 +19,12 @@
   transition: background-color 180ms var(--ease-out);
 }
 
+@media print {
+  .Edit {
+    display: none;
+  }
+}
+
 .Edit:hover {
   background: rgba(0, 0, 0, 0.35);
 }

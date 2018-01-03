@@ -48,6 +48,12 @@
   margin-bottom: var(--Segment-caption-margin);
 }
 
+@media print {
+  .Segment-caption {
+    color: black !important;
+  }
+}
+
 .Segment-caption,
 .Segment-fallbackText {
   color: #fff;

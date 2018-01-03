@@ -25,6 +25,12 @@
   z-index: 10;
 }
 
+@media print {
+  .Header {
+    display: none;
+  }
+}
+
 /**
  * The thing that is following along on scroll
  */

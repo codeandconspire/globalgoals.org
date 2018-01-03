@@ -10,6 +10,13 @@
   max-width: 37em;
 }
 
+@media print {
+  .Text,
+  .Text--adaptive {
+    color: black !important;
+  }
+}
+
 .Text--wide {
   max-width: 43em;
 }

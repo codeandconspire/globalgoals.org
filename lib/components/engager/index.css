@@ -18,6 +18,12 @@
   width: 100%;
 }
 
+@media print {
+  .Engager {
+    display: none;
+  }
+}
+
 /**
  * 1. Prevent next sibling element peeking into view during transition
  */

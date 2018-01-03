@@ -8,6 +8,12 @@
   color: #fff;
 }
 
+@media print {
+  .Border {
+    display: none;
+  }
+}
+
 .Border.is-loading {
   background: var(--color-gray-light);
   color: transparent;

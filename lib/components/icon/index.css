@@ -14,6 +14,13 @@
   white-space: nowrap;
 }
 
+@media print {
+  .Icon,
+  .Icon-number {
+    color: black !important;
+  }
+}
+
 /**
  * 1. Overwrite normalize svg rule
  */

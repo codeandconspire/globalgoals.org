@@ -138,3 +138,50 @@ figure {
   list-style: none;
   padding: 0;
 }
+
+/**
+ * Print styles
+ */
+
+@page {
+  margin: 2cm;
+}
+
+@media print {
+  a {
+    page-break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  img {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+
+  ul,
+  ol,
+  img {
+    page-break-before: avoid;
+  }
+
+  iframe {
+    display: none;
+  }
+
+  a,
+  a:link,
+  a:visited {
+    background: transparent;
+    text-decoration: underline;
+  }
+}

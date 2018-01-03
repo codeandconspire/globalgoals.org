@@ -11,6 +11,12 @@
   flex-direction: column;
 }
 
+@media print {
+  .Card {
+    display: none;
+  }
+}
+
 :root.has-js .Card--linked:not(.is-loading) {
   cursor: pointer;
 }
