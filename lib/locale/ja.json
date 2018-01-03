@@ -1,15 +1,14 @@
 {
-  "Goal %s": "Goal %s",
+  "Goal %s": "ゴール%s",
   "Edit": "Edit",
-  "The Goals": "The Goals",
+  "The Goals": "ゴール",
   "Resources": "Resources",
   "DEFAULT_DESCRIPTION": "DEFAULT_DESCRIPTION",
   "There is no goal %s": "There is no goal %s",
-  "Explore the Targets": "Explore the Targets",
-  "Target %s": "Target %s",
-  "Coming soon": "Coming soon",
+  "Explore the Targets": "ターゲットについて読む",
+  "Target %s": "ターゲット %s",
+  "Coming soon": "近日公開",
   "The Global Goals": "The Global Goals",
   "ja": "日本語",
-  "Languages": "言語",
-  "Schools": "Schools"
+  "Languages": "言語"
 }
