@@ -14,10 +14,10 @@
   "LOADING_TEXT_SHORT": "Loading…",
   "LOADING_TEXT_MEDIUM": "Loading to your device…",
   "LOADING_TEXT_LONG": "This part of the website is being sent to you from our servers. If it takes too long – make sure you are connected to the internet.",
-  "Spreat the word": "Spreat the word",
+  "Spread the word": "Spread the word",
   "Support an organization": "Support an organization",
   "Questions & answers": "Questions & answers",
-  "Follow us": "Stay Updated",
+  "Follow us": "Follow us",
   "Read more": "Read more",
   "Related goals": "Related goals",
   "Published on %s %s, %s": "Published on %s %s, %s",
@@ -56,7 +56,6 @@
   "is associated with": "is associated with",
   "Goal %s": "Goal %s",
   "Find out more": "Find out more",
-  "Spread the word": "Spread the word",
   "Share with others": "Share with others",
   "Email to a friend": "Email to a friend",
   "There is no goal %s": "There is no goal %s",
@@ -93,6 +92,5 @@
   "en": "English",
   "Languages": "Languages",
   "Schools": "Schools",
-  "View page": "View page",
-  "Stay Updated": "Stay Updated"
+  "View page": "View page"
 }
