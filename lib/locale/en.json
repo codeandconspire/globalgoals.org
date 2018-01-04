@@ -14,10 +14,10 @@
   "LOADING_TEXT_SHORT": "Loading…",
   "LOADING_TEXT_MEDIUM": "Loading to your device…",
   "LOADING_TEXT_LONG": "This part of the website is being sent to you from our servers. If it takes too long – make sure you are connected to the internet.",
-  "Share a Message": "Share a Message",
-  "Join an Organisation": "Join an Organisation",
-  "Understand The Goals": "Understand The Goals",
-  "Stay Updated": "Stay Updated",
+  "Spreat the word": "Spreat the word",
+  "Support an organization": "Support an organization",
+  "Questions & answers": "Questions & answers",
+  "Follow us": "Stay Updated",
   "Read more": "Read more",
   "Related goals": "Related goals",
   "Published on %s %s, %s": "Published on %s %s, %s",
@@ -63,7 +63,7 @@
   "Explore the Targets": "Explore the Targets",
   "Target %s": "Target %s",
   "Coming soon": "Coming soon",
-  "Tips & Tricks": "Tips & Tricks",
+  "Tips & tricks": "Tips & tricks",
   "Quick links": "Quick links",
   "Download zip": "Download zip",
   "Download pdf": "Download pdf",
@@ -94,5 +94,5 @@
   "Languages": "Languages",
   "Schools": "Schools",
   "View page": "View page",
-  "To-do, add social media channels here.": "To-do, add social media channels here."
+  "Stay Updated": "Stay Updated"
 }
