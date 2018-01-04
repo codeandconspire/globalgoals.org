@@ -1,6 +1,6 @@
 {
   "name": "globalgoals.org",
-  "version": "2.0.0-rc33",
+  "version": "2.0.0-rc35",
   "description": "Public Website for The Global Goals",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,8 @@
     "build:js:sw": "browserify lib/app/service-worker.js -t localenvify -t uglifyify -o public/service-worker.js",
     "build:js": "npm run build:js:app && npm run build:js:sw",
     "build:css": "postcss lib/app/index.css --no-map -c postcss.config.js -o public/index-$npm_package_version.css",
-    "build": "npm run build:css && npm run build:js"
+    "build:fallback": "postcss lib/app/fallback.css --no-map -o public/fallback-$npm_package_version.css",
+    "build": "npm run build:css && npm run build:fallback && npm run build:js"
   },
   "repository": {
     "type": "git",

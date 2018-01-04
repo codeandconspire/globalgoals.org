@@ -1,0 +1,234 @@
+html {
+  font-family: sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+a {
+  color: #26bde2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #10a2c6;
+  text-decoration: underline;
+}
+
+.is-current,
+.is-activeTemporarily {
+  color: inherit;
+  font-weight: bold;
+}
+
+body {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 1em 4em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transform: none !important;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+svg {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2em 0 0.7em;
+  clear: both;
+}
+
+p,
+ul,
+ol,
+img,
+iframe {
+  margin: 0.7em 0;
+}
+
+.Text ol,
+.Text ul {
+  margin: 0 1em;
+}
+
+.Segment-caption {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 5px;
+}
+
+.Segment-body {
+  margin-top: -30px;
+}
+
+section {
+  display: block;
+}
+
+.Header {
+  margin: 0 0 70px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  background: url('/icon.png');
+  background-size: 150px auto;
+  background-repeat: no-repeat;
+  background-position: -15px -3px;
+}
+
+.Header-button--toggle {
+  display: none;
+}
+
+.Header ul {
+  float: right;
+  text-align: right;
+}
+
+.Header ul,
+.Footer ul {
+  list-style: none;
+}
+
+.Grid {
+  margin: 0 -20px;
+}
+
+.Hero {
+  height: auto !important;
+}
+
+.Footer-title {
+  margin: 40px 20px 10px;
+  font-size: inherit;
+}
+
+.Grid-cell {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+}
+
+.Footer {
+  margin: 70px -20px 0;
+  padding-top: 30px;
+  border-top: 1px solid #ddd;
+}
+
+.Footer-item {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+}
+
+.Card img {
+  margin-bottom: -1.5em;
+}
+
+.Card-meta {
+  margin: 2em 0 -2em;
+  display: block;
+  color: #999;
+}
+
+.Card *,
+.Footer * {
+  background: none !important;
+}
+
+.Footer-column--credits {
+  display: none;
+}
+
+.GoalGrid {
+  overflow: hidden;
+  margin: 15px -8px;
+}
+
+.GoalGrid-item {
+  display: block;
+  float: left;
+  width: 118px;
+  height: 118px;
+  background-position: center center;
+  background-size: 190px auto;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 6px;
+  font-size: 0;
+  color: transparent;
+}
+
+.Header {
+  opacity: 1 !important;
+}
+
+.GoalGrid-item--banner,
+.GoalGrid-item--cta {
+  display: none;
+}
+
+.GoalGrid-item--1 { background-image: url('/1.png'); }
+.GoalGrid-item--2 { background-image: url('/2.png'); }
+.GoalGrid-item--3 { background-image: url('/3.png'); }
+.GoalGrid-item--4 { background-image: url('/4.png'); }
+.GoalGrid-item--5 { background-image: url('/5.png'); }
+.GoalGrid-item--6 { background-image: url('/6.png'); }
+.GoalGrid-item--7 { background-image: url('/7.png'); }
+.GoalGrid-item--8 { background-image: url('/8.png'); }
+.GoalGrid-item--9 { background-image: url('/9.png'); }
+.GoalGrid-item--10 { background-image: url('/10.png'); }
+.GoalGrid-item--11 { background-image: url('/11.png'); }
+.GoalGrid-item--12 { background-image: url('/12.png'); }
+.GoalGrid-item--13 { background-image: url('/13.png'); }
+.GoalGrid-item--14 { background-image: url('/14.png'); }
+.GoalGrid-item--15 { background-image: url('/15.png'); }
+.GoalGrid-item--16 { background-image: url('/16.png'); }
+.GoalGrid-item--17 { background-image: url('/17.png'); }
+
+.Engager-tab,
+.Engager-button {
+  margin: 0 25px 0 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Engager-block,
+.Engager-tab,
+.Engager-selector,
+.GoalGrid--simple,
+.Share,
+.Shareable,
+.Instagram,
+.Twitter,
+.Hero-link,
+.Header-button--back {
+  display: none;
+}
+
+.Header .u-hiddenVisually,
+.Footer .u-hiddenVisually,
+.Card .u-hiddenVisually,
+.GoalGrid-item .u-hiddenVisually {
+  font-size: 0;
+  position: absolute;
+  color: transparent;
+}
