@@ -85,6 +85,7 @@
     "nanocomponent": "^6.4.6",
     "nanohref": "^3.0.0",
     "nanoraf": "^3.0.1",
+    "on-idle": "^3.1.4",
     "prismic-element": "^0.7.0",
     "prismic-javascript": "^1.4.0",
     "prismic-richtext": "^0.2.4",
