@@ -182,6 +182,26 @@
   margin: 0 auto 16px;
   position: relative;
   transition: transform 150ms var(--ease-out);
+  border-radius: 50%;
+  background: var(--color-gray-light);
+  color: #fff;
+}
+
+.Share-icon--facebook { background: var(--color-facebook); }
+.Share-icon--twitter { background: var(--color-twitter); }
+.Share-icon--weibo { background: var(--color-weibo); }
+.Share-icon--vk { background: var(--color-vk); }
+.Share-icon--download { background: var(--color-interactive); }
+.Share-icon--mail { background: var(--color-gray); }
+
+.Share-glyph {
+  width: 32px;
+  height: 32px;
+  margin: 17px 0 0 0;
+}
+
+.Share-icon--download .Share-glyph {
+  stroke-width: 0.7px;
 }
 
 .Share-link:hover .Share-icon {

@@ -49,9 +49,14 @@
 }
 
 .Shareable-example {
-  width: 32px;
-  height: 32px;
+  width: 17px;
+  height: 17px;
   float: right;
+  margin: 8px 7px;
+}
+
+.Shareable-exampleStroke {
+  stroke-width: 2.4px;
 }
 
 /**
