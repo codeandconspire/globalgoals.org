@@ -22,6 +22,8 @@
   margin: 0 auto;
   width: 100%;
   padding: 0 18px;
+  padding: 0 calc(18px + constant(safe-area-inset-right)) 0 calc(18px + constant(safe-area-inset-right));
+  padding: 0 calc(18px + env(safe-area-inset-right)) 0 calc(18px + env(safe-area-inset-right));
 }
 
 /**
@@ -46,32 +48,44 @@
 }
 
 .View-section--full {
+  padding: 0 constant(safe-area-inset-right) 0 constant(safe-area-inset-left);
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   max-width: none;
 }
 
 .View-section--fullOnSmall {
   padding: 0;
+  padding: 0 constant(safe-area-inset-right) 0 constant(safe-area-inset-left);
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
 @media (--viewport-sm) {
   .View-section {
     padding: 0 24px;
+    padding: 0 calc(24px + constant(safe-area-inset-right)) 0 calc(24px + constant(safe-area-inset-left));
+    padding: 0 calc(24px + env(safe-area-inset-right)) 0 calc(24px + env(safe-area-inset-left));
   }
 
   .View-section--fullOnSmall {
     padding: 0;
+    padding: 0 constant(safe-area-inset-right) 0 constant(safe-area-inset-left);
+    padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   }
 }
 
 @media (--viewport-sm) {
   .View-section--fullOnSmall {
     padding: 0;
+    padding: 0 constant(safe-area-inset-right) 0 constant(safe-area-inset-left);
+    padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   }
 }
 
 @media (--viewport-md) {
   .View-section--fullOnSmall {
     padding: 0;
+    padding: 0 constant(safe-area-inset-right) 0 constant(safe-area-inset-left);
+    padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   }
 }
 
@@ -79,6 +93,8 @@
   .View-section,
   .View-section--fullOnSmall {
     padding: 0 32px;
+    padding: 0 calc(32px + constant(safe-area-inset-right)) 0 calc(32px + constant(safe-area-inset-left));
+    padding: 0 calc(32px + env(safe-area-inset-right)) 0 calc(32px + env(safe-area-inset-left));
   }
 }
 
@@ -86,6 +102,8 @@
   .View-section,
   .View-section--fullOnSmall {
     padding: 0 48px;
+    padding: 0 calc(48px + constant(safe-area-inset-right)) 0 calc(48px + constant(safe-area-inset-left));
+    padding: 0 calc(48px + env(safe-area-inset-right)) 0 calc(48px + env(safe-area-inset-left));
     max-width: calc(1280px + (48px * 2));
   }
 }
