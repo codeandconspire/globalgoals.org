@@ -58,7 +58,7 @@
 .Segment-fallbackText {
   color: #fff;
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   font-family: var(--font-family-heading);
   font-weight: bold;
   line-height: calc(var(--Segment-caption-height) + 1px);
