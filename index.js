@@ -5,7 +5,6 @@ const body = require('koa-body')
 const helmet = require('koa-helmet')
 const postcss = require('koa-postcss-watch')
 const router = require('./lib/router')
-const { auth, unauthorized } = require('./lib/middleware/auth')
 const cache = require('./lib/middleware/cache')
 const assets = require('./lib/middleware/assets')
 const render = require('./lib/middleware/render')
@@ -14,15 +13,6 @@ const analytics = require('./lib/middleware/analytics')
 const app = require('./lib/app')
 
 const server = new Koa()
-
-/**
- * Basic authentication
- */
-
-if (process.env.AUTH === 'true') {
-  server.use(unauthorized)
-  server.use(auth({ name: process.env.AUTH_NAME, pass: process.env.AUTH_PASS }))
-}
 
 /**
  * Compile and serve assets on demand during development

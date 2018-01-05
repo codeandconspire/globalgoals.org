@@ -42,7 +42,6 @@
     "common-shakeify": "^0.4.4",
     "dedent": "^0.7.0",
     "dotenv": "^4.0.0",
-    "koa-basic-auth": "^2.0.0",
     "koa-postcss-watch": "^1.0.5",
     "koa-send": "^4.1.1",
     "localenvify": "^1.0.1",
