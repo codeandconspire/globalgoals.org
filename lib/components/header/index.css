@@ -387,12 +387,30 @@
  */
 
 .Header-external {
-  width: 13px;
-  height: 13px;
+  width: 21px;
+  height: 21px;
   fill: currentColor;
   position: absolute;
+  top: 27px;
+  right: 14px;
+}
+
+.Header-external--small {
+  width: 13px;
+  height: 13px;
   top: 18px;
   right: 9px;
+  display: none;
+}
+
+@media (--viewport-lg) {
+  .Header-external {
+    display: none;
+  }
+
+  .Header-external--small {
+    display: block;
+  }
 }
 
 /**
@@ -403,11 +421,24 @@
   padding-right: 16px;
 }
 
+
+
 .Header-langIcon {
-  width: 23px;
-  height: 48px;
   position: relative;
-  top: -1px;
+  top: -23px;
+  width: auto;
+  height: 39px;
+}
+
+@media (--viewport-lg) {
+  .Header-langIcon {
+    height: 19px;
+    top: -17px;
+  }
+
+  .Header-button--lang .Header-arrow {
+    display: none;
+  }
 }
 
 /**
@@ -473,7 +504,7 @@
 
   .Header-list {
     position: absolute;
-    top: 22%;
+    top: 23%;
     left: 4px;
   }
 
@@ -483,7 +514,7 @@
 
   .Header-button--link {
     height: auto;
-    padding: 0 48px 0 16px;
+    padding: 2px 43px 0 16px;
     margin: 0 0 0 -10px;
     color: inherit;
     font-size: 32px;
@@ -494,12 +525,28 @@
     width: 12px;
     height: 12px;
     top: 50%;
-    right: 26px;
+    right: 21px;
     transform: translateY(-50%) rotate(45deg);
   }
 
   .Header-button--link:hover .Header-arrow {
-    right: 24px;
+    right: 19px;
+  }
+
+  .Header-button--external {
+    padding-right: 45px;
+  }
+
+  .Header-external {
+    width: 15px;
+    height: 15px;
+    top: 18px;
+    right: 15px;
+  }
+
+  .Header-langIcon {
+    top: -15px;
+    height: 25px;
   }
 
   /**
@@ -512,11 +559,15 @@
   }
 }
 
-@media (--viewport-lg-max) and (min-height: 480px) {
+@media (--viewport-lg-max) and (min-height: 580px) {
   .Header-button--link {
     font-size: 48px;
     line-height: 76px;
     height: 74px;
+  }
+
+  .Header-list {
+    top: 18%;
   }
 
   .Header-button--link .Header-arrow {
@@ -527,6 +578,26 @@
 
   .Header-button--link:hover .Header-arrow {
     right: 18px;
+  }
+
+  .Header-button--external {
+    padding-right: 53px;
+  }
+
+  /**
+   * Todo: refactor this reduntant stuff
+   */
+
+  .Header-external {
+    width: 21px;
+    height: 21px;
+    top: 29px;
+    right: 17px;
+  }
+
+  .Header-langIcon {
+    top: -23px;
+    height: 39px;
   }
 }
 
