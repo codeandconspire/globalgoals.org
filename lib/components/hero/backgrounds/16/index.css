@@ -38,6 +38,7 @@
 .Hero16-institution {
   height: 24vh;
   max-height: 190px;
+  width: auto;
 
   position: absolute;
   left: 50%;
@@ -100,6 +101,7 @@
   display: none;
   height: 5vh;
   max-height: 43px;
+  width: auto;
   position: absolute;
   bottom: 0;
   transform: translateY(100%);

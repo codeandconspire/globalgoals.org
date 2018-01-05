@@ -121,7 +121,7 @@
 }
 
 .Hero7-energyBlades {
-  transform-origin: 49.9% 65.3%;
+  transform-origin: 50% 50%;
   animation: Hero7-energyBlades--spin 3000ms 1750ms linear infinite;
 }
 

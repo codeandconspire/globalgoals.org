@@ -6,6 +6,7 @@
 
 .Hero3-lifeline {
   width: calc(100% + 6px);
+  height: auto;
   margin: 0 -3px;
   position: absolute;
   left: 0;

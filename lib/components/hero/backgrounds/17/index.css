@@ -23,6 +23,7 @@
 
 .Hero17-thread--reverse {
   stroke-dashoffset: -1440;
+  stroke-dasharray: -1440;
 }
 
 .Hero17-thread:nth-child(1) {
@@ -60,30 +61,28 @@
 }
 
 .Hero17-node {
-  fill: color(var(--color-goal-17) lightness(+8));
-  transform: scale(0);
-  transform-origin: center;
-  animation: Hero17-node--appear 200ms cubic-bezier(0.175, 0.885, 0.32, 1.475) forwards;
+  opacity: 0;
+  animation: Hero17-node--appear 200ms ease-in forwards;
 }
 
 .Hero17-node:nth-child(1) {
-  animation-delay: 2450ms;
+  animation-delay: 2200ms;
 }
 
 .Hero17-node:nth-child(2) {
-  animation-delay: 3875ms;
+  animation-delay: 3000ms;
 }
 
 .Hero17-node:nth-child(3) {
-  animation-delay: 4100ms;
+  animation-delay: 3400ms;
 }
 
 .Hero17-node:nth-child(4) {
-  animation-delay: 5200ms;
+  animation-delay: 4300ms;
 }
 
 @keyframes Hero17-node--appear {
   to {
-    transform: scale(1);
+    opacity: 1;
   }
 }

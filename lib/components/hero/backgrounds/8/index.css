@@ -59,6 +59,7 @@
 .Hero8-curves {
   width: 100%;
   max-width: 627px;
+  height: auto;
 
   position: absolute;
   left: 0;
