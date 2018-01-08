@@ -108,7 +108,7 @@
   float: left;
   margin: 3px 0 -23px -14px;
   padding: 0 16px 0 14px;
-  line-height: 49px;
+  line-height: 52px;
 
   position: relative;
 
@@ -295,7 +295,7 @@
  */
 
 .Card--fill .Card-content {
-  padding: 20px 24px 30px;
+  padding: 20px 20px 30px;
   color: #fff;
   background-color: var(--color-interactive);
 }
@@ -339,8 +339,8 @@
 @media (--viewport-sm) {
   .Card--fill .Card-link {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 9px;
-    margin: 35px 0 -23px;
+    padding-top: 5px;
+    margin: 34px 0 -26px;
   }
 }
 
@@ -480,6 +480,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .Card--youtube .Card-icon {

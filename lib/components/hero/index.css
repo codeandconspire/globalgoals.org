@@ -75,12 +75,10 @@
 
 @media (--Hero-wide) {
   .Hero {
-    min-height: 580px;
+    min-height: 630px;
   }
 
   .Hero-title {
-    height: 100vh;
-    max-height: 205px;
     width: 860px;
     margin: 0 auto;
   }

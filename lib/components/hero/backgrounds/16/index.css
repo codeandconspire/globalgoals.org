@@ -36,7 +36,7 @@
 }
 
 .Hero16-institution {
-  height: 24vh;
+  height: 18%;
   max-height: 190px;
   width: auto;
 
@@ -59,7 +59,7 @@
 
 .Hero16-building {
   display: none;
-  height: 11vh;
+  height: 11%;
   max-height: 90px;
 
   position: absolute;
@@ -99,7 +99,7 @@
 
 .Hero16-person {
   display: none;
-  height: 5vh;
+  height: 5%;
   max-height: 43px;
   width: auto;
   position: absolute;
@@ -115,23 +115,23 @@
 }
 
 .Hero16-person--judge {
-  right: 8%;
+  right: 6.9%;
   animation-delay: 900ms;
 }
 
 .Hero16-person--citizen:nth-child(1) {
   left: 8%;
-  height: 4.5vh;
+  height: 4.5%;
 }
 
 .Hero16-person--citizen:nth-child(2) {
   left: 9.65%;
-  height: 5.25vh;
+  height: 5.25%;
 }
 
 .Hero16-person--citizen:nth-child(3) {
-  left: 11.25%;
-  height: 4.4vh;
+  left: 11.5%;
+  height: 4.4%;
   animation-delay: 1000ms;
 }
 
@@ -142,7 +142,7 @@
 
 .Hero16-person--citizen:nth-child(5) {
   display: none;
-  height: 3vh;
+  height: 3%;
   left: 21.75%;
 }
 
@@ -158,12 +158,12 @@
 
 .Hero16-person--citizen:nth-child(8) {
   right: 11.5%;
-  height: 4vh;
+  height: 4%;
 }
 
 .Hero16-person--citizen:nth-child(9) {
   right: 10%;
-  height: 4vh;
+  height: 4%;
 }
 
 @media (min-width: 1200px) {
@@ -230,7 +230,7 @@
 
 @keyframes Hero16-cloud--appear {
   0% {
-    transform: translateY(calc(200% + 50px));
+    transform: translateY(200%) translateY(50px);
   }
 
   25% {
@@ -285,46 +285,46 @@
 }
 
 .Hero16-cloud:nth-child(1) {
-  top: 70vh;
+  top: 70%;
   left: -2.5%;
 }
 
 .Hero16-cloud:nth-child(2) {
-  top: 25vh;
+  top: 25%;
   left: 5.55%;
 }
 
 .Hero16-cloud:nth-child(3) {
-  top: 50vh;
+  top: 50%;
   left: 10%;
 }
 
 .Hero16-cloud:nth-child(4) {
-  top: 60vh;
+  top: 60%;
   left: 22%;
 }
 
 .Hero16-cloud:nth-child(5) {
-  top: 30vh;
+  top: 30%;
   left: 32%;
 }
 
 .Hero16-cloud:nth-child(6) {
-  top: 18vh;
+  top: 18%;
   right: 20%;
 }
 
 .Hero16-cloud:nth-child(7) {
-  top: 35vh;
+  top: 35%;
   right: 12%;
 }
 
 .Hero16-cloud:nth-child(8) {
-  top: 50vh;
+  top: 50%;
   right: 14%;
 }
 
 .Hero16-cloud:nth-child(9) {
-  top: 70vh;
+  top: 70%;
   right: -1.5%;
 }

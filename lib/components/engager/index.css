@@ -137,14 +137,6 @@
   opacity: 0;
 }
 
-.Engager-button:hover::before {
-  transform: translate(-4px, -50%);
-}
-
-.Engager-button:hover::after {
-  transform: translate(-4px, -50%) rotate(90deg);
-}
-
 @media (--viewport-lg) {
   .Engager-button::after,
   .Engager-button::before {
@@ -557,19 +549,28 @@
 .Engager-tipIcon {
   align-self: flex-start;
   flex: 0 0 auto;
-  width: 64px;
-  height: 64px;
-  position: relative;
-  top: 4px;
+  width: 44px;
+  height: 44px;
 }
 
 .Engager-tipText {
-  padding-bottom: 46px;
-  margin-left: 36px;
+  padding-bottom: 26px;
+  margin-left: 18px;
   border-bottom: 1px solid var(--color-gray-light);
   overflow: hidden;
 }
 
+@media (--viewport-sm) {
+  .Engager-tipIcon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .Engager-tipText {
+    margin-left: 36px;
+    padding-bottom: 47px;
+  }
+}
 
 /**
  * Themes

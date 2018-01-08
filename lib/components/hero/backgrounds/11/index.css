@@ -205,7 +205,7 @@
 
 @keyframes Hero11-cityCloud--appear {
   0% {
-    transform: translateY(calc(200% + 50px));
+    transform: translateY(200%) translateY(50px);
   }
 
   25% {

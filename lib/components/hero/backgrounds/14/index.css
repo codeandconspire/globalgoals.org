@@ -43,7 +43,7 @@
 
 .Hero14-jellyfish.in-transition {
   transition: transform 15000ms linear;
-  transform: translateY(calc(-100vh - 100%));
+  transform: translateY(-100vh) translateY(-100%));
 }
 
 @media (--Hero-wide) {
@@ -69,7 +69,7 @@
 
 .Hero14-fish.in-transition {
   transition: transform 45000ms linear;
-  transform: translateX(calc(100vw + 100%));
+  transform: translateX(100vw) translateX(100%);
 }
 
 .Hero14-fish--small.in-transition {
@@ -117,7 +117,7 @@
 
 .Hero14-bubble.in-transition {
   transition: transform 9000ms linear;
-  transform: translateY(calc(-100vh - 100%));
+  transform: translateY(-100vh) translateY(100%);
 }
 
 .Hero14-bubble--small.in-transition {

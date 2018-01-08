@@ -17,7 +17,7 @@
   }
 
   to {
-    transform: translateY(calc(100vh + 100%));
+    transform: translateY(100vh) translateY(100%);
   }
 }
 

@@ -195,9 +195,9 @@
 .Share-icon--mail { background: var(--color-gray); }
 
 .Share-glyph {
-  width: 32px;
-  height: 32px;
-  margin: 17px 0 0 0;
+  width: 50%;
+  height: 50%;
+  margin: 25% 0 0;
 }
 
 .Share-icon--download .Share-glyph {
@@ -318,6 +318,7 @@
   -webkit-appearance: none;
   border-radius: 0;
   user-select: text;
+  min-width: 0;
 }
 
 .Share-fade {
@@ -341,7 +342,7 @@
 .Share-button {
   display: inline-block;
   padding: 0 10px;
-  margin: -17px -10px 0 4px;
+  margin: -17px -10px 0 -1px;
   position: relative;
   color: var(--color-link);
   transition: transform 250ms var(--ease);

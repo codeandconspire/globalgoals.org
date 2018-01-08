@@ -20,7 +20,7 @@
   position: relative;
   float: left;
   width: var(--Segment-image-sm);
-  height: var(--Segment-image-sm);
+  min-height: var(--Segment-image-sm);
   margin-right: 16px;
   box-sizing: content-box;
   user-select: none;
@@ -29,7 +29,7 @@
 @media (--viewport-sm) {
   .Segment-figure {
     width: var(--Segment-image-lg);
-    height: var(--Segment-image-lg);
+    min-height: var(--Segment-image-lg);
     margin-right: 24px;
   }
 }
@@ -44,7 +44,7 @@
 .Segment-caption {
   position: relative;
   width: 100%;
-  height: var(--Segment-caption-height);
+  min-height: var(--Segment-caption-height);
   margin-bottom: var(--Segment-caption-margin);
 }
 
@@ -54,11 +54,10 @@
   }
 }
 
-.Segment-caption,
-.Segment-fallbackText {
+.Segment-caption {
   color: #fff;
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   font-family: var(--font-family-heading);
   font-weight: bold;
   line-height: calc(var(--Segment-caption-height) + 1px);
@@ -66,8 +65,19 @@
   word-spacing: var(--word-spacing-heading);
 }
 
-.Segment-image,
-.Segment-fallback {
+@media (--viewport-sm) {
+  .Segment-caption {
+    font-size: 22px;
+  }
+}
+
+@media (--viewport-lg) {
+  .Segment-caption {
+    font-size: 24px;
+  }
+}
+
+.Segment-image {
   display: block;
   position: relative;
   width: 100%;
@@ -75,35 +85,10 @@
   color: transparent;
 }
 
-.Segment-fallback {
-  padding-bottom: 100%;
-}
-
-.Segment-fallbackText {
-  font-size: 18px;
-  line-height: 18px;
-}
-
-.Segment-fallbackText {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  width: 80%;
-  transform: translateY(-50%);
-}
-
 .Segment-body {
   overflow: hidden;
   position: relative;
   top: 1px;
-}
-
-
-@media (--viewport-sm) {
-  .Segment-fallbackText {
-    font-size: 30px;
-    line-height: 30px;
-  }
 }
 
 @media (--viewport-lg) {

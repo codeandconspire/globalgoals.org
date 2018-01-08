@@ -35,7 +35,7 @@
   position: absolute;
   left: calc(50% - 0px);
   top: 50%;
-  transform: translate(calc(-50% + 0px), -11px);
+  transform: translate(-50%, -11px);
 }
 
 @media (--Hero-wide) {
