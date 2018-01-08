@@ -142,3 +142,25 @@
 .Space--textBlockTopOnly {
   padding-bottom: 0;
 }
+
+/**
+ * Custom for the manifests
+ */
+
+.Space--manifest {
+  max-width: 830px;
+  margin-top: 60px;
+  margin-bottom: -45px;
+}
+
+@media (--viewport-md) {
+  .Space--manifest {
+    margin-top: 74px;
+  }
+}
+
+@media (--viewport-lg) {
+  .Space--manifest {
+    margin-top: var(--Space-default-lg);
+  }
+}
