@@ -92,7 +92,6 @@
   "Languages": "Languages",
   "Schools": "Schools",
   "View page": "View page",
-  "Spread the word": "Spread the word",
   "Join an Organisation": "Join an Organisation",
   "Questions & Answers": "Questions & Answers",
   "Stay in Touch": "Stay in Touch",
@@ -102,5 +101,6 @@
   "You will find all videos produced for Global Goals on the YouTube channel": "You will find all videos produced for Global Goals on the YouTube channel",
   "Global Goals on %s": "Global Goals on %s",
   "Go to %s": "Go to %s",
-  "Close": "Close"
+  "Close": "Close",
+  "Action": "Action"
 }
