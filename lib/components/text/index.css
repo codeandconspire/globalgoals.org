@@ -321,6 +321,11 @@ ul.Text--links a::after {
   transition: background-color 140ms var(--ease-out);
 }
 
+:root[data-focus-source="key"] .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) a:focus {
+  outline: 3px solid black;
+  outline-offset: -1px;
+}
+
 .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) a:hover {
   background: var(--color-link-enter);
   color: #fff;

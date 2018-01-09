@@ -59,6 +59,15 @@
   will-change: transform;
 }
 
+/**
+ * Tweak the global focus states a little bit
+ */
+
+:root[data-focus-source="key"] .Engager-button:focus {
+  outline: 2px solid black;
+  outline-offset: 5px;
+}
+
 @media (--viewport-xs) {
   .Engager-button {
     font-size: 32px;
