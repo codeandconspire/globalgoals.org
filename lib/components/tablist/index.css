@@ -1,0 +1,91 @@
+/* @define Tablist */
+
+@import "../base";
+
+:root {
+  --Tablist-height: 46px;
+  --Tablist-selector-height: 4px;
+}
+
+.Tablist {
+  flex: 1 0 100%;
+  display: flex;
+  width: 100%;
+  height: var(--Tablist-height);
+  position: relative;
+  user-select: none;
+  z-index: 1;
+  box-shadow: 0px 1px 0px 0px var(--color-gray-light);
+}
+
+/**
+ * Tab
+ */
+
+.Tablist-tab {
+  display: flex;
+}
+
+.Tablist-link {
+  display: block;
+  border-bottom: var(--Tablist-selector-height) solid transparent;
+
+  position: relative;
+
+  font-size: 24px;
+  line-height: 27px;
+  color: var(--color-gray-alpha);
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  word-spacing: var(--word-spacing-heading);
+
+  text-transform: uppercase;
+  white-space: nowrap;
+  will-change: transform;
+
+  transition: color 90ms var(--ease-out);
+}
+
+/* .Tablist-tab.is-activeTemporarily {
+  transition:
+    color var(--Tablist-selector-duration) var(--ease-out),
+    border-color 0ms var(--Tablist-selector-duration) linear;
+} */
+
+.Tablist-link:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (--viewport-md) {
+  .Tablist-tab {
+    margin-right: 48px;
+  }
+}
+
+.Tablist-link:matches(.is-active, .is-activeTemporarily) {
+  color: var(--color-red);
+  border-bottom-color: currentColor;
+}
+
+.Tablist.in-transition .Tablist-link.is-active {
+  border-bottom-color: transparent;
+}
+
+/**
+ * Active selector transition element
+ */
+
+.Tablist-selector {
+  width: 100%;
+  height: var(--Tablist-selector-height);
+
+  position: absolute;
+  left: 0;
+  bottom: calc(var(--Tablist-selector-height) * -1);
+
+  color: var(--color-red);
+  will-change: transform;
+  transform-origin: 0 50%;
+  transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  background: currentColor;
+}

@@ -2,6 +2,7 @@
 
 @import "../base";
 @import "../grid";
+@import "../tablist"
 
 /**
  * 1. Hardcoded in JavaScript, see tablist.js
@@ -44,6 +45,7 @@
 
   position: relative;
   overflow: hidden;
+  z-index: 1;
 
   font-size: 26px;
   color: #fff;
@@ -198,23 +200,17 @@
  * Tablist
  */
 
+ .Engager-tabs {
+   position: relative;
+ }
+
 .Engager-tablist {
-  display: none;
-  flex-wrap: wrap;
-  position: relative;
-  -webkit-touch-callout: none;
-  user-select: none;
-  z-index: 1;
+  width: 100%;
 }
 
 @media (--viewport-md) {
   .Engager-tablist {
-    display: flex;
     margin-bottom: -16px;
-  }
-
-  .Engager-tablist.is-expanded {
-    width: 100%;
   }
 }
 
@@ -234,136 +230,51 @@
   margin-bottom: 0;
 }
 
-.Engager-tabs {
-  height: var(--Engager-tablist-height);
-  display: flex;
-  flex: 1 0 100%;
-  box-shadow: 0px 1px 0px 0px var(--color-gray-light);
-}
-
-.Engager-tabs.in-transition {
+.Engager-tablist.in-transition {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.Engager-tablist.in-transition .Engager-tab {
+  transition:
+    opacity 200ms linear,
+    transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.Engager-tablist.is-hidden .Engager-tab {
+  opacity: 0;
+  transform: translateX(200px);
 }
 
 /**
  * All buttons but the one in transition disappear
  */
 
-.Engager-tablist.is-hidden > .Engager-button:not(.in-transition) {
+
+.Engager-tabs.in-transition .Engager-button {
+  transition:
+    opacity 175ms linear,
+    transform 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.Engager-tabs.in-transition > .Engager-button:not(.is-clone) {
   opacity: 0;
   transform: translateY(200%);
 }
 
-.Engager-tablist.is-hidden .Engager-button.in-transition {
+.Engager-tabs.in-transition .Engager-button.is-clone {
   transition:
     color 200ms linear,
     background 200ms linear,
     transform 340ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.Engager-tablist.in-transition .Engager-button {
-  transition:
-    opacity 175ms linear,
-    transform 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
-}
-
-.Engager-tablist.is-slow .Engager-button.in-transition {
+.Engager-tabs.in-transition.is-slow .Engager-button.is-clone {
   transition:
     color 275ms linear,
     background 275ms linear,
     transform 450ms cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-/**
- * Tab
- */
-
-.Engager-tab {
-  margin-right: 24px;
-  border-bottom: var(--Engager-selector-height) solid transparent;
-
-  position: relative;
-
-  font-size: 20px;
-  line-height: 38px;
-  color: var(--color-gray-alpha);
-  font-family: var(--font-family-heading);
-  font-weight: bold;
-  word-spacing: var(--word-spacing-heading);
-
-  text-transform: uppercase;
-  white-space: nowrap;
-  will-change: transform;
-
-  transition: color 90ms var(--ease-out);
-}
-
-.Engager-tab.is-activeTemporarily {
-  transition:
-    color var(--Engager-selector-duration) var(--ease-out),
-    border-color 0ms var(--Engager-selector-duration) linear;
-}
-
-.Engager-tab:hover {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-@media (--viewport-md) {
-  .Engager-tab {
-    font-size: 24px;
-    line-height: 27px;
-    margin-right: 48px;
-  }
-}
-
-.Engager-tabs.in-transition .Engager-tab {
-  transition:
-    opacity 200ms linear,
-    transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.Engager-tablist.is-slow .Engager-tabs.in-transition .Engager-tab {
-  transition:
-    opacity 225ms linear,
-    transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.Engager-tabs.is-hidden .Engager-tab {
-  opacity: 0;
-  transform: translateX(200px);
-}
-
-.Engager-tab:matches(.is-active, .is-activeTemporarily) {
-  color: var(--color-red);
-  border-bottom-color: currentColor;
-}
-
-.Engager-tablist.in-transition .Engager-tab.is-active {
-  border-bottom-color: transparent;
-}
-
-.Engager-tab.is-first {
-  order: -1;
-}
-
-/**
- * Active selector transition element
- */
-
-.Engager-selector {
-  width: 100%;
-  height: var(--Engager-selector-height);
-
-  position: absolute;
-  left: 0;
-  bottom: calc(var(--Engager-selector-height) * -1);
-
-  will-change: transform;
-  transform-origin: 0 50%;
-  transition: transform var(--Engager-selector-duration) cubic-bezier(0.165, 0.84, 0.44, 1);
-  background: var(--color-red);
 }
 
 /**
