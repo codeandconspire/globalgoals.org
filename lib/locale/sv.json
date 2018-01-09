@@ -6,5 +6,8 @@
   "DEFAULT_DESCRIPTION": "DEFAULT_DESCRIPTION",
   "sv": "Svenska",
   "There is no Goal %s": "Det finns inget mål %s",
-  "The Global Goals": "Globala målen"
+  "The Global Goals": "Globala målen",
+  "Explore The Goal": "Explore The Goal",
+  "Target %s": "Target %s",
+  "Coming soon": "Coming soon"
 }

@@ -43,7 +43,7 @@
 
 .Hero14-jellyfish.in-transition {
   transition: transform 15000ms linear;
-  transform: translateY(-100vh) translateY(-100%));
+  transform: translateY(-100vh) translateY(-100%);
 }
 
 @media (--Hero-wide) {
