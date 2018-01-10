@@ -210,6 +210,11 @@
 
   .Footer-column--horizontal .Footer-list {
     max-width: none;
+  }
+}
+
+@media (--viewport-lg) {
+  .Footer-column--horizontal .Footer-list {
     top: 4px;
     position: relative;
     display: inline-block;
@@ -275,7 +280,7 @@
   background: none;
 }
 
-@media (--viewport-md) {
+@media (--viewport-lg) {
   .Footer-list--social {
     float: right;
     margin: -5px 0;
