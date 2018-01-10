@@ -15,8 +15,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.is-current,
-.is-activeTemporarily {
+.is-current {
   color: inherit;
   font-weight: bold;
 }

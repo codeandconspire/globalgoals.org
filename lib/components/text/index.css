@@ -50,11 +50,11 @@
   color: inherit;
 }
 
-.Text > :first-child {
+.Text > :first-child:not(.Text-embed) {
   margin-top: 0 !important;
 }
 
-.Text > :last-child {
+.Text > :last-child:not(.Text-embed) {
   margin-bottom: 0 !important;
 }
 
