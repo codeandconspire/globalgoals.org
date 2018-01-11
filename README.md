@@ -2,7 +2,7 @@
 
 # The Global Goals
 
-[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=www.globalgoals.org&style=flat-square)](www.globalgoals.org) [![GitHub tag](https://img.shields.io/github/tag/codeandconspire/globalgoals.org.svg?style=flat-square)]() [![style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/codeandconspire/globalgoals.org)
+[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=www.globalgoals.org&style=flat-square)](http://www.globalgoals.org) [![GitHub tag](https://img.shields.io/github/tag/codeandconspire/globalgoals.org.svg?style=flat-square)]() [![style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/codeandconspire/globalgoals.org)
 
 ![Screenshot](lib/assets/screenshot.jpg)
 
