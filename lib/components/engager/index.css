@@ -201,8 +201,15 @@
  */
 
  .Engager-tabs {
+   display: none;
    position: relative;
  }
+
+@media (--viewport-md) {
+  .Engager-tabs {
+    display: block;
+  }
+}
 
 .Engager-tablist {
   width: 100%;
