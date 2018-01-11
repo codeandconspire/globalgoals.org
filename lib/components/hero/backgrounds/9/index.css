@@ -58,38 +58,38 @@
 }
 
 .Hero9-industryCloud:nth-child(2) {
-  bottom: 48vh;
+  bottom: 48%;
   left: 8%;
 }
 
 .Hero9-industryCloud:nth-child(3) {
-  bottom: 76vh;
+  bottom: 76%;
   left: 14%;
 }
 
 .Hero9-industryCloud:nth-child(4) {
-  top: 43vh;
+  top: 43%;
   left: 25%;
 }
 
 .Hero9-industryCloud:nth-child(5) {
-  top: 20vh;
+  top: 20%;
   right: 25%;
 }
 
 .Hero9-industryCloud:nth-child(6) {
-  top: 50vh;
+  top: 50%;
   right: 14%;
 }
 
 .Hero9-industryCloud:nth-child(7) {
   visibility: hidden;
-  top: 36vh;
+  top: 36%;
   right: 6%;
 }
 
 .Hero9-industryCloud:nth-child(8) {
-  top: 48vh;
+  top: 48%;
   right: 2%;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .Hero9--tight .Hero9-industryTurbine:nth-child(1) {
-  height: 180px;
+  height: 210px;
   right: 18.5%;
 }
 

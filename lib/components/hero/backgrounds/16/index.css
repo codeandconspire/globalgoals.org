@@ -87,8 +87,9 @@
 }
 
 .Hero16--tight .Hero16-building--right {
-  height: 23%;
-  right: -50%;
+  height: 60%;
+  right: -10%;
+  max-height: 110px;
 }
 
 @media (--Hero-wide) {
@@ -180,21 +181,19 @@
 }
 
 .Hero16--tight .Hero16-person--citizen:nth-child(8) {
-  height: 6%;
-  right: -10%;
+  height: 8%;
+  right: 20%;
   display: block;
 }
 
 .Hero16--tight .Hero16-person--citizen:nth-child(9) {
-  height: 6%;
-  right: -16%;
+  height: 8%;
+  right: 30%;
   display: block;
 }
 
 .Hero16--tight .Hero16-person--judge {
-  height: 9%;
-  right: -28%;
-  display: block;
+  display: none;
 }
 
 @keyframes Hero16-person--appear {

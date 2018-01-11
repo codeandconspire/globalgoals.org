@@ -21,6 +21,10 @@
   animation: Hero17-thread--draw 1200ms linear forwards;
 }
 
+.Hero17--tight .Hero17-thread {
+  stroke-width: 3px;
+}
+
 .Hero17-thread--reverse {
   stroke-dashoffset: -1440;
   stroke-dasharray: -1440;

@@ -242,11 +242,29 @@ ul.Text--links a::after {
   margin: 32px 0;
   padding: 16px;
   background: var(--color-gray-light);
+  border-radius: 1px;
+}
+
+.Text-embed::before {
+  content: "";
+  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  border: solid #1a1a1a;
+  border-width: 20px 0 20px 30px;
+  border-color: transparent black transparent black;
+  margin: 10px 30px 12px 12px;
 }
 
 /**
  * Assume a ratio of 16:9 on all video sources
  */
+
+.Text-embed--youtube::before,
+.Text-embed--vimeo::before {
+  content: none;
+}
 
 .Text-embed--youtube,
 .Text-embed--vimeo {

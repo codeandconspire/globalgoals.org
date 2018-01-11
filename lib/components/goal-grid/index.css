@@ -350,6 +350,7 @@
   @media (--viewport-lg) {
     .GoalGrid--layout .GoalGrid-animation {
       display: block;
+      overflow: hidden;
     }
 
     .GoalGrid--layout {

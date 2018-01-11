@@ -47,11 +47,18 @@
   margin-bottom: 0;
 }
 
+/**
+ * 1. Quick change not reflected in rest of file: hide sidebar on narrow sceens
+ */
+
+.Single-column--sidebar {
+  display: none; /* 1 */
+}
+
  @media (--viewport-sm) {
   .Single-column--sidebar {
-    display: flex;
     flex-wrap: wrap;
-    margin: 74px calc(var(--Single-gutter) * -0.5);
+    margin: 74px calc(var(--Single-gutter) * -0.5) 0;
   }
 
   .Single-block {
@@ -143,7 +150,6 @@
     flex-basis: 100%;
     min-width: 0;
     padding: 0 calc(var(--Single-gutter) * 0.5);
-    margin-bottom: var(--Single-gutter);
   }
 
   .Single-column--main {
@@ -182,6 +188,12 @@
   min-height: 100%;
   height: auto;
   background: var(--color-gray-light);
+}
+
+@media (--viewport-md) {
+  .Single-banner {
+    height: 63vh;
+  }
 }
 
 @supports (object-fit: cover) {

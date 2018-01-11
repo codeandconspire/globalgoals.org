@@ -111,13 +111,13 @@
 }
 
 .Hero7--tight .Hero7-energyTurbine:nth-child(1) {
-  height: 125px;
-  right: 5%;
+  height: 155px;
+  right: -9%;
 }
 
 .Hero7--tight .Hero7-energyTurbine:nth-child(2) {
-  height: 80px;
-  right: 18%;
+  height: 100px;
+  right: 8%;
 }
 
 .Hero7-energyBlades {
@@ -184,6 +184,12 @@
 
 .Hero7--tight .Hero7-lightbulb:nth-child(3) {
   display: none;
+}
+
+.Hero7--tight .Hero7-lightbulb:nth-child(2) {
+  right: 16%;
+  top: -17.6%;
+  height: 63%;
 }
 
 .Hero7-lightRay {
