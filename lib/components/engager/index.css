@@ -2,7 +2,7 @@
 
 @import "../base";
 @import "../grid";
-@import "../tablist"
+@import "../tablist";
 
 /**
  * 1. Hardcoded in JavaScript, see tablist.js
