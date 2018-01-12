@@ -348,7 +348,7 @@
 
 @supports (display: grid) {
   @media (--viewport-lg) {
-    .GoalGrid--layout .GoalGrid-animation {
+    :root.has-js .GoalGrid--layout .GoalGrid-animation {
       display: block;
       overflow: hidden;
     }

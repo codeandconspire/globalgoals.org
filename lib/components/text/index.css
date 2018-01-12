@@ -7,7 +7,7 @@
   font-family: var(--font-family-body);
   line-height: 1.5;
   font-size: 16px;
-  max-width: 37em;
+  max-width: 39em;
 }
 
 @media print {
