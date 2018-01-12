@@ -114,7 +114,7 @@
 
 @media (--viewport-lg) {
   .Footer-column--credits {
-    width: calc(50% - 1px); /* 1 */
+    width: calc(100% / 3 - 1px); /* 1 */
   }
 }
 
@@ -130,7 +130,13 @@
 
 @media (--viewport-md) {
   .Footer-column--credits .Footer-item {
-    width: calc(100% / 3);
+    width: calc(100% / 4);
+  }
+}
+
+@media (--viewport-lg) {
+  .Footer-column--credits .Footer-item {
+    width: calc(100% / 2);
   }
 }
 
