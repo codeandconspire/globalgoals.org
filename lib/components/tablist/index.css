@@ -67,7 +67,7 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-.Tablist:not(.in-transition) .Tablist-link.is-active {
+.Tablist-link.is-active {
   color: var(--color-red);
   border-bottom-color: currentColor;
 }
