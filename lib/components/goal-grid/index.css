@@ -532,6 +532,32 @@
     .GoalGrid--layout7 .GoalGrid-item--12 .GoalGrid-details { display: flex; flex-wrap: wrap; grid-area: 2 / 1 / 4 / 3; }
     .GoalGrid--layout7 .GoalGrid-item--banner { grid-area: 6 / 1 / 6 / 4; }
     .GoalGrid--layout7 .GoalGrid-item--cta { grid-area: 4 / 1 / 6 / 4; }
+
+    /* 8. */
+
+    .GoalGrid--layout8 .GoalGrid-item--15 { grid-area: 5 / 3 / 7 / 6; }
+    .GoalGrid--layout8 .GoalGrid-item--15 .GoalGrid-bg { padding: 0; height: 100%; }
+    .GoalGrid--layout8 .GoalGrid-item--15 .GoalGrid-content { display: grid; grid: 1fr 1fr / 1fr 1fr 1fr; grid-gap: var(--GoalGrid-gap); }
+    .GoalGrid--layout8 .GoalGrid-item--15 .GoalGrid-details { display: flex; grid-area: 2 / 1 / 3 / 4; }
+    .GoalGrid--layout8 .GoalGrid-item--5 { grid-area: 1 / 5 / 4 / 7; }
+    .GoalGrid--layout8 .GoalGrid-item--5 .GoalGrid-bg { padding: 0; height: 100%; }
+    .GoalGrid--layout8 .GoalGrid-item--5 .GoalGrid-content { display: grid; grid: 1fr 1fr 1fr / 1fr 1fr; grid-gap: var(--GoalGrid-gap); }
+    .GoalGrid--layout8 .GoalGrid-item--5 .GoalGrid-details { display: flex; flex-wrap: wrap; grid-area: 2 / 1 / 4 / 3; }
+    .GoalGrid--layout8 .GoalGrid-item--banner { grid-area: 2 / 1 / 3 / 4; }
+    .GoalGrid--layout8 .GoalGrid-item--cta { grid-area: 3 / 1 / 5 / 4; }
+
+    /* 9. */
+
+    .GoalGrid--layout9 .GoalGrid-item--14 { grid-area: 5 / 4 / 7 / 7; }
+    .GoalGrid--layout9 .GoalGrid-item--14 .GoalGrid-bg { padding: 0; height: 100%; }
+    .GoalGrid--layout9 .GoalGrid-item--14 .GoalGrid-content { display: grid; grid: 1fr 1fr / 1fr 1fr 1fr; grid-gap: var(--GoalGrid-gap); }
+    .GoalGrid--layout9 .GoalGrid-item--14 .GoalGrid-details { display: flex; grid-area: 2 / 1 / 3 / 4; }
+    .GoalGrid--layout9 .GoalGrid-item--4 { grid-area: 1 / 4 / 4 / 6; }
+    .GoalGrid--layout9 .GoalGrid-item--4 .GoalGrid-bg { padding: 0; height: 100%; }
+    .GoalGrid--layout9 .GoalGrid-item--4 .GoalGrid-content { display: grid; grid: 1fr 1fr 1fr / 1fr 1fr; grid-gap: var(--GoalGrid-gap); }
+    .GoalGrid--layout9 .GoalGrid-item--4 .GoalGrid-details { display: flex; flex-wrap: wrap; grid-area: 2 / 1 / 4 / 3; }
+    .GoalGrid--layout9 .GoalGrid-item--banner { grid-area: 2 / 1 / 3 / 4; }
+    .GoalGrid--layout9 .GoalGrid-item--cta { grid-area: 5 / 1 / 7 / 4; }
   }
 
   @media (--viewport-xl) {

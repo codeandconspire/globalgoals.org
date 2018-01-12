@@ -47,6 +47,18 @@
   text-align: center;
 }
 
+.Hero4--tight .Hero4-letter {
+  display: none;
+}
+
+.Hero4--tight :matches(.Hero4-letter--a, .Hero4-letter--b, .Hero4-letter--c, .Hero4-letter--d) {
+  display: block;
+}
+
+.Hero4--tight .Hero4-letters {
+  left: 106.3%
+}
+
 .Hero4-letter.in-transition {
   visibility: visible;
   transition: transform 800ms linear;

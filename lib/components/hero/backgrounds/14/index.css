@@ -52,6 +52,10 @@
   }
 }
 
+.Hero14--tight .Hero14-jellyfish {
+  display: none;
+}
+
 /**
  * Fish
  */

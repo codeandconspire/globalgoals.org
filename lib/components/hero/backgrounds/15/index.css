@@ -11,6 +11,10 @@
   bottom: 0;
 }
 
+.Hero15--tight {
+  z-index: 1;
+}
+
 .Hero15-savannah--left {
   width: 35%;
   max-width: calc(600px * 0.35);
@@ -21,6 +25,10 @@
   width: 65%;
   max-width: calc(600px * 0.65);
   right: 0;
+}
+
+.Hero15--tight .Hero15-savannah {
+  display: none;
 }
 
 @media (--viewport-md) {
@@ -198,6 +206,26 @@
   right: 5%;
 }
 
+.Hero15--tight .Hero15-savannahCloud {
+  display: none;
+}
+
+.Hero15--tight .Hero15-savannahCloud:nth-child(4) {
+  display: block;
+  top: -5%;
+  right: 12%;
+  width: 17%;
+  height: 17%;
+}
+.Hero15--tight .Hero15-savannahCloud:nth-child(5) {
+  display: block;
+  top: -2%;
+  right: 0%;
+  width: 23%;
+  height: 23%;
+  opacity: 0.5;
+}
+
 /**
  * Bee
  */
@@ -224,6 +252,16 @@
   left: 31%;
   top: 12%;
   transform: rotate(30deg);
+}
+
+.Hero15 .Hero15-bee:nth-child(1) {
+  display: none;
+}
+
+.Hero15 .Hero15-bee:nth-child(2) {
+  width: 5%;
+  left: 45%;
+  top: 31%;
 }
 
 /**
@@ -284,6 +322,27 @@
   .Hero15-bird:nth-child(4) {
     width: 6%;
     top: 32%;
+  }
+
+  .Hero15--tight .Hero15-bird:nth-child(1) {
+    width: 6%;
+    top: 12%;
+  }
+  .Hero15--tight .Hero15-bird:nth-child(2) {
+    width: 6%;
+    top: 21%;
+    opacity: 1;
+    color: #fff;
+  }
+  .Hero15--tight .Hero15-bird:nth-child(3) {
+    width: 4%;
+    top: 32%;
+    right: 31%;
+  }
+  .Hero15--tight .Hero15-bird:nth-child(4) {
+    width: 6%;
+    top: 46%;
+    color: #fff;
   }
 }
 
