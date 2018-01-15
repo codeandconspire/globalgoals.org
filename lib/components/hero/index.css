@@ -26,7 +26,7 @@
   --Hero-padding-lg: var(--Header-height-lg);
 }
 
-@custom-media --Hero-wide (min-width: 860px);
+@custom-media --Hero-wide (min-width: 860px) and (min-height: 580px);
 
 .Hero {
   display: flex;
@@ -63,7 +63,6 @@
 }
 
 .Hero-container {
-  width: 100%;
   margin-top: calc(var(--Hero-padding) * -1);
   z-index: 1;
   will-change: transform;
@@ -165,91 +164,91 @@
 
 @media (--Hero-wide) {
   .Hero .Hero-intro {
-    margin: 0 auto;
+    margin: 0;
     max-width: 570px;
   }
 
   .Hero--1 .Hero-intro {
-    left: 53px;
     max-width: 500px;
+    left: 231px;
   }
 
   .Hero--2 .Hero-intro {
-    left: 38px;
     max-width: 470px;
+    left: 231px;
   }
 
   .Hero--3 .Hero-intro {
-    left: 85px;
+    left: 231px;
   }
 
   .Hero--4 .Hero-intro {
-    left: 68px;
     max-width: 530px;
+    left: 231px;
   }
 
   .Hero--5 .Hero-intro {
-    left: 28px;
     max-width: 450px;
+    left: 231px;
   }
 
   .Hero--6 .Hero-intro {
     max-width: 480px;
-    left: 40px;
+    left: 231px;
   }
 
   .Hero--7 .Hero-intro {
     max-width: 470px;
-    left: 38px;
+    left: 231px;
   }
 
   .Hero--8 .Hero-intro {
-    max-width: 500px;
-    left: 36px;
+    max-width: 470px;
+    left: 215px;
   }
 
   .Hero--9 .Hero-intro {
     max-width: 580px;
-    left: 52px;
+    left: 189px;
   }
 
   .Hero--10 .Hero-intro {
-    left: 108px;
+    left: 251px;
   }
 
   .Hero--11 .Hero-intro {
     max-width: 550px;
-    left: 56px;
+    left: 210px;
   }
 
   .Hero--12 .Hero-intro {
     max-width: 420px;
-    left: 33px;
+    left: 250px;
   }
 
   .Hero--13 .Hero-intro {
     max-width: 460px;
-    left: 53px;
+    left: 252px;
   }
 
   .Hero--14 .Hero-intro {
     max-width: 480px;
-    left: 63px;
+    left: 251px;
   }
 
   .Hero--15 .Hero-intro {
     max-width: 510px;
-    left: 78px;
+    left: 251px;
   }
 
   .Hero--16 .Hero-intro {
     max-width: 540px;
-    left: 91px;
+    left: 251px;
   }
 
   .Hero--17 .Hero-intro {
     max-width: 520px;
-    left: 82px;
+    left: 251px;
   }
 }
 
