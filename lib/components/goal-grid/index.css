@@ -220,6 +220,7 @@
   .GoalGrid-button {
     color: #000;
     mix-blend-mode: screen;
+    will-change: transform;
   }
 
   .GoalGrid-item--light .GoalGrid-button {

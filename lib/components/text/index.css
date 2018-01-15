@@ -25,6 +25,10 @@
   max-width: none;
 }
 
+.Text--bold {
+  font-weight: bold;
+}
+
 .Text--compact * {
   margin: 0 !important;
 }
@@ -129,9 +133,13 @@
   background: var(--color-hover-dark);
 }
 
+.Text--adaptive .Text-largeLink {
+  margin-right: 14px;
+}
+
 .Text-icon {
   vertical-align: middle;
-  margin-left: 0.7em;
+  margin-right: 0.7em;
   position: relative;
   top: -0.08em;
 }
