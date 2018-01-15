@@ -1,7 +1,9 @@
 {
-  "Goal %s": "TODO: GOAL %s",
-  "The 17 Goals": "TODO: THE 18 GOALS",
-  "Languages": "TODO: LANGUAGES",
+  "Goal %s": "Цель %s",
+  "The 17 Goals": "18 Целей",
+  "Languages": "Языки",
   "ru": "Русский",
-  "The Global Goals": "TODO: THE GLOBAL GOALS"
+  "The Global Goals": "TODO: THE GLOBAL GOALS",
+  "Edit": "Edit",
+  "There is no Goal %s": "There is no Goal %s"
 }
