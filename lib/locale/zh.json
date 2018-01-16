@@ -1,7 +1,8 @@
 {
-  "Goal %s": "TODO: GOAL %s",
-  "The 17 Goals": "TODO: THE 18 GOALS",
-  "Languages": "TODO: LANGUAGES",
+  "Goal %s": "目标 %s",
+  "The 17 Goals": "目标",
+  "Languages": "语言",
   "zh": "中文",
-  "The Global Goals": "TODO: THE GLOBAL GOALS"
+  "The Global Goals": "全球目标",
+  "Edit": "Edit"
 }
