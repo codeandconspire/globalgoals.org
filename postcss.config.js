@@ -12,6 +12,6 @@ module.exports = (ctx) => ({
     ]),
     require('postcss-flexbugs-fixes')(),
     require('autoprefixer')({browsers: [ 'last 2 versions', 'ie >= 9', 'Firefox ESR' ]}),
-    require('postcss-csso')()
+    require('cssnano')({ preset: 'default' })
   ]
 })
