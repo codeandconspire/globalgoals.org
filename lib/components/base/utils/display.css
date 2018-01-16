@@ -19,3 +19,7 @@
     display: none !important;
   }
 }
+
+.u-rtl {
+  direction: rtl !important;
+}
