@@ -1,9 +1,7 @@
 const Koa = require('koa')
-const mount = require('koa-mount')
 const serve = require('koa-static')
 const body = require('koa-body')
 const helmet = require('koa-helmet')
-const postcss = require('koa-postcss-watch')
 const router = require('./lib/router')
 const cache = require('./lib/middleware/cache')
 const assets = require('./lib/middleware/assets')
@@ -19,28 +17,9 @@ const server = new Koa()
  */
 
 if (process.env.NODE_ENV === 'development') {
-  const plugins = [
-    require('postcss-import')(),
-    require('postcss-custom-properties')(),
-    require('postcss-custom-media')(),
-    require('postcss-color-function')(),
-    require('postcss-selector-matches')(),
-    require('postcss-url')(),
-    require('postcss-flexbugs-fixes')()
-  ]
-
-  // Serve live client scripts
+  // Serve live client resources
   server.use(require('./lib/middleware/watchify'))
-
-  // Serve live styles
-  server.use(mount(`/index-${process.env.npm_package_version}.css`, postcss({
-    file: 'lib/app/index.css',
-    plugins: plugins
-  })))
-  server.use(mount(`/fallback-${process.env.npm_package_version}.css`, postcss({
-    file: 'lib/app/fallback.css',
-    plugins: plugins
-  })))
+  server.use(require('./lib/middleware/postcss'))
 
   // Serve components assets from disk
   server.use(serve('lib'))
