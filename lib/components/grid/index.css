@@ -13,6 +13,7 @@
 .Grid {
   display: flex;
   flex-wrap: wrap;
+  width: calc(100% + var(--Grid-gutter));
   margin: 0 calc(var(--Grid-gutter) * -0.5) calc(var(--Grid-gutter) * -1);
 }
 
@@ -62,6 +63,7 @@
 
 @media (--viewport-lg) {
   .Grid {
+    width: calc(100% + var(--Grid-gutter-lg));
     margin: 0 calc(var(--Grid-gutter-lg) * -0.5) calc(var(--Grid-gutter-lg) * -1);
   }
 
@@ -83,6 +85,7 @@
 @media (--viewport-xl) {
   .Grid {
     margin: 0 calc(var(--Grid-gutter-xl) * -0.5) calc(var(--Grid-gutter-xl) * -1);
+    width: calc(100% + var(--Grid-gutter-xl));
   }
 
   .Grid .Grid-cell {
