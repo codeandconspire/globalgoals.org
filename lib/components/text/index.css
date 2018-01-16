@@ -34,11 +34,9 @@
 }
 
 .Text--growing {
-
 }
 
 .Text--growingLate {
-
 }
 
 .Text--center {
@@ -47,7 +45,6 @@
 }
 
 .Text--growingTitles {
-
 }
 
 .Text--adaptive {
@@ -163,8 +160,8 @@
   background: var(--color-gray-light);
 }
 
-.Text .block-img /* 1 */ {
-  margin: 0;
+.Text .block-img {
+  margin: 0; /* 1 */
 }
 
 .Text > :first-child img {

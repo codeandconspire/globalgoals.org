@@ -42,11 +42,9 @@
   float: left;
   padding: 17px 73px 15px 24px;
   margin: 0 16px 16px 0;
-
   position: relative;
   overflow: hidden;
   z-index: 1;
-
   font-size: 26px;
   color: #fff;
   font-family: var(--font-family-heading);
@@ -56,7 +54,6 @@
   white-space: nowrap;
   word-spacing: var(--word-spacing-heading);
   user-select: none;
-
   transform-origin: 0 0;
   will-change: transform;
 }
@@ -124,14 +121,11 @@
   content: "";
   width: 2px;
   height: 26px;
-
   position: absolute;
   top: 50%;
   right: 36px;
-
   background: #fff;
   transform: translateY(-50%);
-
   transition: transform 180ms var(--ease-out), opacity 90ms var(--ease-in);
 }
 
@@ -200,10 +194,10 @@
  * Tablist
  */
 
- .Engager-tabs {
-   display: none;
-   position: relative;
- }
+.Engager-tabs {
+  display: none;
+  position: relative;
+}
 
 @media (--viewport-md) {
   .Engager-tabs {
@@ -244,9 +238,7 @@
 }
 
 .Engager-tablist.in-transition .Engager-tab {
-  transition:
-    opacity 200ms linear,
-    transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 200ms linear, transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .Engager-tablist.is-hidden .Engager-tab {
@@ -260,9 +252,7 @@
 
 
 .Engager-tabs.in-transition .Engager-button {
-  transition:
-    opacity 175ms linear,
-    transform 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: opacity 175ms linear, transform 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .Engager-tabs.in-transition > .Engager-button:not(.is-clone) {
@@ -271,17 +261,11 @@
 }
 
 .Engager-tabs.in-transition .Engager-button.is-clone {
-  transition:
-    color 200ms linear,
-    background 200ms linear,
-    transform 340ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: color 200ms linear, background 200ms linear, transform 340ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .Engager-tabs.in-transition.is-slow .Engager-button.is-clone {
-  transition:
-    color 275ms linear,
-    background 275ms linear,
-    transform 450ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 275ms linear, background 275ms linear, transform 450ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 /**

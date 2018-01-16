@@ -35,12 +35,10 @@
   width: 25px;
   height: 25px;
   padding: 22px;
-
   position: absolute;
   left: calc(100% - 10px);
   top: 50%;
   transform: translateY(-50%);
-
   background-color: inherit;
   background-image: url('./prismic-logo.svg');
   background-position: center;

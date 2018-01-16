@@ -10,13 +10,11 @@
   width: 100%;
   height: 100%;
   padding: 32px;
-
   position: fixed;
   left: 0;
   top: 0;
   z-index: 30;
   user-select: none;
-
   background-color: #fff;
 }
 
@@ -52,11 +50,9 @@
   width: 24px;
   height: 24px;
   padding: 16px;
-
   position: absolute;
   top: -22px;
   right: -19px;
-
   border-radius: 1px;
   transition: background-color 180ms var(--ease-out);
 }
@@ -65,11 +61,9 @@
   content: "";
   width: 24px;
   height: 2px;
-
   position: absolute;
   right: 16px;
   top: 50%;
-
   background: currentColor;
 }
 
@@ -103,7 +97,6 @@
   position: absolute;
   left: 0;
   top: -4px;
-
   font-size: 24px;
   text-transform: uppercase;
   font-family: var(--font-family-heading);
@@ -143,12 +136,29 @@
   animation: Share-option--appear 600ms cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
-.Share-option:nth-child(1) { animation-delay: 150ms; }
-.Share-option:nth-child(2) { animation-delay: 175ms; }
-.Share-option:nth-child(3) { animation-delay: 200ms; }
-.Share-option:nth-child(4) { animation-delay: 225ms; }
-.Share-option:nth-child(5) { animation-delay: 250ms; }
-.Share-option:nth-child(6) { animation-delay: 275ms; }
+.Share-option:nth-child(1) {
+  animation-delay: 150ms;
+}
+
+.Share-option:nth-child(2) {
+  animation-delay: 175ms;
+}
+
+.Share-option:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.Share-option:nth-child(4) {
+  animation-delay: 225ms;
+}
+
+.Share-option:nth-child(5) {
+  animation-delay: 250ms;
+}
+
+.Share-option:nth-child(6) {
+  animation-delay: 275ms;
+}
 
 @keyframes Share-option--appear {
   to {
@@ -187,12 +197,29 @@
   color: #fff;
 }
 
-.Share-icon--facebook { background: var(--color-facebook); }
-.Share-icon--twitter { background: var(--color-twitter); }
-.Share-icon--weibo { background: var(--color-weibo); }
-.Share-icon--vk { background: var(--color-vk); }
-.Share-icon--download { background: var(--color-interactive); }
-.Share-icon--mail { background: var(--color-gray); }
+.Share-icon--facebook {
+  background: var(--color-facebook);
+}
+
+.Share-icon--twitter {
+  background: var(--color-twitter);
+}
+
+.Share-icon--weibo {
+  background: var(--color-weibo);
+}
+
+.Share-icon--vk {
+  background: var(--color-vk);
+}
+
+.Share-icon--download {
+  background: var(--color-interactive);
+}
+
+.Share-icon--mail {
+  background: var(--color-gray);
+}
 
 .Share-glyph {
   width: 50%;
@@ -331,11 +358,9 @@
   content: "";
   height: 100%;
   width: 5em;
-
   position: absolute;
   right: 0;
   top: 0;
-
   box-shadow: inset -16px 0 16px #fff;
 }
 

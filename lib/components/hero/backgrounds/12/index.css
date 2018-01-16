@@ -35,7 +35,6 @@
   position: absolute;
   left: 50%;
   top: 50%;
-
   opacity: 0.6;
   transform: translate(-50%, -50%) rotate(0.5turn);
   will-change: transform;
@@ -46,6 +45,7 @@
   from {
     transform: translate(-50%, -50%) rotate(0.5turn);
   }
+
   to {
     transform: translate(-50%, -50%) rotate(1.5turn);
   }

@@ -13,15 +13,12 @@
 .Hero10-bend {
   width: 200%;
   height: 100%;
-
   position: absolute;
   left: 50%;
   top: 0;
   transform: translateX(-50%) scaleY(1);
-
   background: var(--color-goal-10);
   border-radius: 100%;
-
   animation: Hero10-bend--disappear 2200ms 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
@@ -34,11 +31,9 @@
 .Hero10-board {
   width: 200%;
   height: 100%;
-
   position: absolute;
   left: 50%;
   top: 50%;
-
   transform: translateX(-50%);
   transform-origin: 50% 0;
   transition: transform 2600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);

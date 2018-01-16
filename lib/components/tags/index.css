@@ -4,9 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas:
-    "one two"
-    "three four";
+  grid-template-areas: "one two" "three four";
   width: 100%;
 }
 
@@ -34,7 +32,6 @@
   float: left;
   width: 50%;
   position: relative;
-
   font-size: 16px;
   color: #fff;
   font-family: var(--font-family-heading);

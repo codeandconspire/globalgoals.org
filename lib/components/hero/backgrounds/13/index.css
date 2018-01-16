@@ -1,19 +1,16 @@
 /* @define Hero13 */
 
 .Hero13 {
-
 }
 
 .Hero13-eye {
   display: none;
   width: 90%;
   max-height: 90%;
-
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
   color: var(--color-goal-13-shaded);
 }
 
@@ -31,7 +28,6 @@
   display: none;
   width: 90%;
   max-height: 47%;
-
   position: absolute;
   left: calc(50% - 0px);
   top: 50%;
@@ -67,14 +63,11 @@
   width: 140%;
   max-width: 600px;
   margin: 0 auto;
-
   position: absolute;
   left: 50%;
   top: 50%;
-
   opacity: 0;
   transform: translate(-50%, -50%);
-
   animation: Hero-globe--appear 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 

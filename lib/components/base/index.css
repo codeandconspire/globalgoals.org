@@ -67,7 +67,7 @@ a {
 }
 
 a:matches(:hover, :active) {
-	background-color: transparent; /* 1 */
+  background-color: transparent; /* 1 */
   text-decoration: none;
 }
 
@@ -89,8 +89,8 @@ select,
 summary,
 textarea,
 [tabindex] {
-	-ms-touch-action: manipulation; /* 1 */
-	touch-action: manipulation;
+  -ms-touch-action: manipulation; /* 1 */
+  touch-action: manipulation;
 }
 
 /**
@@ -144,7 +144,7 @@ figure {
  * Print styles
  */
 
-@page {
+@page  {
   margin: 2cm;
 }
 

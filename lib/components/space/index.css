@@ -5,13 +5,10 @@
 :root {
   --Space-default: 74px;
   --Space-default-lg: 110px;
-
   --Space-tall: 120px;
   --Space-tall-lg: 152px;
-
   --Space-short: 15px;
   --Space-short-lg: 30px;
-
   --Space-contain: 500px;
   --Space-contain-lg: 700px;
 }

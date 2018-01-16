@@ -7,7 +7,6 @@
   --Header-height: 78px;
   --Header-height-md: 117px;
   --Header-height-lg: 128px;
-
   --Header-fill-y: 40px;
   --Header-content-y: 20px;
   --Header-logo-z: 1.25;
@@ -151,14 +150,12 @@
   display: inline-block;
   border-radius: 1px;
   line-height: 49px;
-
   font-family: var(--font-family-heading);
   font-weight: bold;
   word-spacing: var(--word-spacing-heading);
   font-size: 24px;
   text-transform: uppercase;
   white-space: nowrap;
-
   -webkit-touch-callout: none;
   transition: background-color 180ms var(--ease-out);
 }
@@ -690,6 +687,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
     will-change: unset;

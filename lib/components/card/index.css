@@ -109,9 +109,7 @@
   margin: 3px 0 -23px -14px;
   padding: 0 16px 0 14px;
   line-height: 52px;
-
   position: relative;
-
   font-size: 24px;
   color: var(--color-link);
   text-transform: uppercase;
@@ -143,7 +141,7 @@
   margin-left: 5px;
   border-width: 1px 1px 0 0;
   transform: rotate(45deg);
-  transition: transform 180ms cubic-bezier(0,0,.2,1);
+  transition: transform 180ms cubic-bezier(0, 0, .2, 1);
 }
 
 .Card:not(.is-loading):not(.Card--fill) .Card-link:hover,
@@ -176,7 +174,7 @@
 
 .Card-downloadArrow {
   transform: translateY(1px);
-  transition: transform 180ms cubic-bezier(0,0,.2,1);
+  transition: transform 180ms cubic-bezier(0, 0, .2, 1);
 }
 
 .Card:not(.is-loading) .Card-link:hover .Card-downloadArrow,
@@ -197,7 +195,7 @@
 
 .Card-externalArrow {
   will-change: transform;
-  transition: transform 180ms cubic-bezier(0,0,.2,1);
+  transition: transform 180ms cubic-bezier(0, 0, .2, 1);
 }
 
 .Card:not(.is-loading) .Card-link:hover .Card-externalArrow,
@@ -388,7 +386,6 @@
  */
 
 .Card--withIcon .Card-figure {
-
 }
 
 @media (--viewport-sm-max) {
@@ -436,6 +433,7 @@
 .Card--twitter .Card-content {
   background: var(--color-twitter);
 }
+
 .Card--twitter .Card-figure {
   background-color: color(var(--color-twitter) shade(10%));
 }
@@ -443,6 +441,7 @@
 .Card--facebook .Card-content {
   background: var(--color-facebook);
 }
+
 .Card--facebook .Card-figure {
   background-color: color(var(--color-facebook) shade(10%));
 }
@@ -450,6 +449,7 @@
 .Card--instagram .Card-content {
   background: var(--color-instagram);
 }
+
 .Card--instagram .Card-figure {
   background-color: color(var(--color-instagram) shade(10%));
 }
@@ -457,6 +457,7 @@
 .Card--youtube .Card-content {
   background: var(--color-youtube);
 }
+
 .Card--youtube .Card-figure {
   background-color: color(var(--color-youtube) shade(10%));
 }

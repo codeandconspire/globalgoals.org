@@ -158,7 +158,6 @@
   position: absolute;
   left: 50%;
   top: 13%;
-
   will-change: transform;
   transform-origin: 0 300vh;
   animation: Hero9-satellite--flying 24000ms linear infinite;
@@ -174,6 +173,7 @@
   from {
     transform: rotate(-20deg);
   }
+
   to {
     transform: rotate(20deg);
   }

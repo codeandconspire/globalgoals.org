@@ -125,17 +125,14 @@
   height: 100%;
   width: 100vw;
   height: 100vh;
-
   position: fixed;
   left: 0;
   top: 0;
   z-index: 30;
   opacity: 0;
-
   transform-origin: 0 0;
   transition: transform 300ms var(--ease-in);
   will-change: transform;
-
   animation-name: View-takeover--appear;
   animation-duration: 100ms;
   animation-fill-mode: forwards;
@@ -155,11 +152,9 @@
   content: "";
   width: 100%;
   height: 100%;
-
   position: absolute;
   left: 0;
   top: 0;
-
   opacity: 0;
   background-color: var(--color-goal-7-shaded);
   animation: View-takeover--start7 200ms ease forwards;

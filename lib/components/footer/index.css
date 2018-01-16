@@ -86,6 +86,7 @@
   .Footer-item {
     padding-top: 12px;
   }
+
   .Footer-item + .Footer-item {
     margin-top: 14px;
   }
@@ -254,7 +255,7 @@
  * Social icons
  */
 
-.Footer-list--social.Footer-list--social  {
+.Footer-list--social.Footer-list--social {
   color: transparent;
   font-size: 0;
   position: relative;

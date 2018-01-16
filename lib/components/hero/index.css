@@ -291,7 +291,6 @@
   display: block;
   width: 100%;
   height: 100%;
-
   position: absolute;
   left: 0;
   bottom: 0;
@@ -312,7 +311,6 @@
 .Hero--takeover {
   width: 100%;
   min-height: 430px;
-
   position: fixed;
   top: calc(var(--Hero-padding));
   left: 0;

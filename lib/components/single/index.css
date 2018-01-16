@@ -55,7 +55,7 @@
   display: none; /* 1 */
 }
 
- @media (--viewport-sm) {
+@media (--viewport-sm) {
   .Single-column--sidebar {
     flex-wrap: wrap;
     margin: 74px calc(var(--Single-gutter) * -0.5) 0;
@@ -109,7 +109,7 @@
   }
 
   .Single-block,
-  .Single-block--group .Single-block  {
+  .Single-block--group .Single-block {
     width: auto;
     padding: 0;
     margin: 64px 0;

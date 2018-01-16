@@ -1,7 +1,6 @@
 /* @define Hero5 */
 
 .Hero5 {
-
 }
 
 .Hero5-people {
@@ -74,9 +73,7 @@
 .Hero5-grower {
   fill: #fff;
   transform: scale(0.6);
-  animation:
-    Hero5-grower--growing 700ms 1000ms var(--ease) forwards,
-    Hero5-grower--renderFix 10ms 100ms var(--ease) forwards;
+  animation: Hero5-grower--growing 700ms 1000ms var(--ease) forwards, Hero5-grower--renderFix 10ms 100ms var(--ease) forwards;
 }
 
 @keyframes Hero5-grower--renderFix {
