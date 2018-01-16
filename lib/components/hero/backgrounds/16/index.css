@@ -36,7 +36,7 @@
 }
 
 .Hero16-institution {
-  height: 18%;
+  height: 16%;
   max-height: 190px;
   width: auto;
 
@@ -59,7 +59,7 @@
 
 .Hero16-building {
   display: none;
-  height: 11%;
+  height: 10%;
   max-height: 90px;
 
   position: absolute;
