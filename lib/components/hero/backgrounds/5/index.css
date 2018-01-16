@@ -21,6 +21,7 @@
 
 .Hero5-person {
   height: 100%;
+  width: auto;
   fill: #fff;
   opacity: 0;
   transform: translateY(100%);
