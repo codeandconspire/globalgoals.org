@@ -166,11 +166,11 @@
 .Footer-name {
   font-style: normal;
   display: block;
+  max-width: 190px;
 }
 
 .Footer-figure {
-  height: 32px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .Footer-figureImg {
