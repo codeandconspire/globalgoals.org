@@ -66,10 +66,18 @@
   margin-top: calc(var(--Hero-padding) * -1);
   z-index: 1;
   will-change: transform;
+  width: 100%;
 }
 
 .Hero--takeover .Hero-container {
   will-change: unset;
+}
+
+.Hero-intro {
+  margin: 0 9.5%;
+  position: relative;
+  opacity: 0;
+  animation: Hero-intro--appear 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 @media (--Hero-wide) {
@@ -77,78 +85,27 @@
     min-height: 630px;
   }
 
-  .Hero-title {
+  .Hero-title,
+  .Hero-intro {
     width: 860px;
     margin: 0 auto;
+    position: relative;
   }
 }
 
-.Hero-intro {
-  margin: 0 10%;
-  position: relative;
-  opacity: 0;
-  animation: Hero-intro--appear 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-}
-
-.Hero--1 .Hero-intro {
-  margin: 0 11%;
-}
-
-.Hero--3 .Hero-intro {
-  margin: 0 9%;
-}
-
-.Hero--4 .Hero-intro {
-  margin: 0 9%;
-}
-
-.Hero--5 .Hero-intro {
-  margin: 0 9%;
-}
-
-.Hero--6 .Hero-intro {
-  margin: 0 9.5%;
-}
-
-.Hero--8 .Hero-intro {
-  margin: 0 9%;
-}
-
-.Hero--9 .Hero-intro {
-  margin: 0 7.5%;
-}
-
-.Hero--10 .Hero-intro {
-  margin: 0 7.5%;
-}
-
-.Hero--11 .Hero-intro {
-  margin: 0 7.75%;
-}
-
-.Hero--12 .Hero-intro {
-  margin: 0 7.5%;
-}
-
-.Hero--13 .Hero-intro {
-  margin: 0 8.5%;
-}
-
-.Hero--14 .Hero-intro {
-  margin: 0 7.75%;
-}
-
-.Hero--15 .Hero-intro {
-  margin: 0 7.75%;
-}
-
-.Hero--16 .Hero-intro {
-  margin: 0 8%;
-}
-
-.Hero--17 .Hero-intro {
-  margin: 0 8.5%;
-}
+.Hero--1 .Hero-intro { margin: 0 11%; }
+.Hero--4 .Hero-intro { margin: 0 9%; }
+.Hero--7 .Hero-intro { margin: 0 10%; }
+.Hero--8 .Hero-intro { margin: 0 9%; }
+.Hero--9 .Hero-intro { margin: 0 7.5%; }
+.Hero--10 .Hero-intro { margin: 0 7.5%; }
+.Hero--11 .Hero-intro { margin: 0 7.75%; }
+.Hero--12 .Hero-intro { margin: 0 7.5%; }
+.Hero--13 .Hero-intro { margin: 0 8%; }
+.Hero--14 .Hero-intro { margin: 0 7.75%; }
+.Hero--15 .Hero-intro { margin: 0 7.75%; }
+.Hero--16 .Hero-intro { margin: 0 7.75%; }
+.Hero--17 .Hero-intro { margin: 0 8.5%; }
 
 @keyframes Hero-intro--appear {
   0% {
@@ -163,93 +120,49 @@
 }
 
 @media (--Hero-wide) {
+
   .Hero .Hero-intro {
-    margin: 0;
-    max-width: 570px;
+    margin: 0 auto;
+    left: 232px;
   }
 
-  .Hero--1 .Hero-intro {
-    max-width: 500px;
-    left: 231px;
-  }
+  .Hero--1 .Hero-introBody { max-width: 570px }
+  .Hero--2 .Hero-introBody { max-width: 500px }
+  .Hero--3 .Hero-introBody { max-width: 470px }
+  .Hero--4 .Hero-introBody { max-width: 530px }
+  .Hero--5 .Hero-introBody { max-width: 450px }
+  .Hero--6 .Hero-introBody { max-width: 480px }
+  .Hero--7 .Hero-introBody { max-width: 470px }
 
-  .Hero--2 .Hero-intro {
-    max-width: 470px;
-    left: 231px;
-  }
+  .Hero--8 .Hero-intro { left: 215px; }
+  .Hero--8 .Hero-introBody { max-width: 470px }
 
-  .Hero--3 .Hero-intro {
-    left: 231px;
-  }
+  .Hero--9 .Hero-intro { left: 192px; }
+  .Hero--9 .Hero-introBody { max-width: 580px }
 
-  .Hero--4 .Hero-intro {
-    max-width: 530px;
-    left: 231px;
-  }
+  .Hero--10 .Hero-intro { left: 252px; }
+  .Hero--10 .Hero-introBody { max-width: 570px; }
 
-  .Hero--5 .Hero-intro {
-    max-width: 450px;
-    left: 231px;
-  }
+  .Hero--11 .Hero-intro { left: 211px; }
+  .Hero--11 .Hero-introBody { max-width: 550px }
 
-  .Hero--6 .Hero-intro {
-    max-width: 480px;
-    left: 231px;
-  }
+  .Hero--12 .Hero-intro { left: 251px; }
+  .Hero--12 .Hero-introBody { max-width: 420px }
 
-  .Hero--7 .Hero-intro {
-    max-width: 470px;
-    left: 231px;
-  }
+  .Hero--13 .Hero-intro { left: 251px; }
+  .Hero--13 .Hero-introBody { max-width: 460px }
 
-  .Hero--8 .Hero-intro {
-    max-width: 470px;
-    left: 215px;
-  }
+  .Hero--14 .Hero-intro { left: 251px; }
+  .Hero--14 .Hero-introBody { max-width: 480px }
 
-  .Hero--9 .Hero-intro {
-    max-width: 580px;
-    left: 189px;
-  }
+  .Hero--15 .Hero-intro { left: 251px; }
+  .Hero--15 .Hero-introBody { max-width: 510px }
 
-  .Hero--10 .Hero-intro {
-    left: 251px;
-  }
+  .Hero--16 .Hero-intro { left: 251px; }
+  .Hero--16 .Hero-introBody { max-width: 540px }
 
-  .Hero--11 .Hero-intro {
-    max-width: 550px;
-    left: 210px;
-  }
-
-  .Hero--12 .Hero-intro {
-    max-width: 420px;
-    left: 250px;
-  }
-
-  .Hero--13 .Hero-intro {
-    max-width: 460px;
-    left: 252px;
-  }
-
-  .Hero--14 .Hero-intro {
-    max-width: 480px;
-    left: 251px;
-  }
-
-  .Hero--15 .Hero-intro {
-    max-width: 510px;
-    left: 251px;
-  }
-
-  .Hero--16 .Hero-intro {
-    max-width: 540px;
-    left: 251px;
-  }
-
-  .Hero--17 .Hero-intro {
-    max-width: 520px;
-    left: 251px;
-  }
+  .Hero--17 .Hero-intro { left: 251px; }
+  .Hero--17 .Hero-introBody { max-width: 520px }
 }
 
 .Hero-link {

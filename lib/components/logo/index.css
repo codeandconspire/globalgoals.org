@@ -34,7 +34,7 @@
 .Logo--horizontal .Logo-symbol {
   -ms-flex: 0 1 302px;
   height: 100%;
-  width: auto;
+  width: 77%;
   display: inline-block;
   vertical-align: middle;
 }
@@ -42,7 +42,7 @@
 .Logo--horizontal .Logo-text {
   -ms-flex: 0 1 452px;
   height: 63%;
-  width: auto;
+  width: 200%;
   vertical-align: middle;
   display: inline-block;
   position: relative;
@@ -56,6 +56,6 @@
 
 .Logo--vertical .Logo-symbol {
   width: 67%;
-  height: auto;
+  height: 67%;
   margin: 0 auto 8%;
 }

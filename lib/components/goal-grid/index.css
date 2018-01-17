@@ -430,6 +430,7 @@
       bottom: 24px;
       left: 24px;
       height: 56px;
+      max-width: 210px;
     }
 
     .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-paragraph {
