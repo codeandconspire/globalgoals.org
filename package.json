@@ -1,6 +1,6 @@
 {
   "name": "globalgoals.org",
-  "version": "2.0.10",
+  "version": "2.0.11-rc1",
   "description": "Public Website for The Global Goals",
   "main": "index.js",
   "scripts": {
