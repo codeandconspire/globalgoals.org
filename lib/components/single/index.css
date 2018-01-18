@@ -179,6 +179,7 @@
 .Single-banner {
   width: 100%;
   height: 50vh;
+  max-height: 700px;
   overflow: hidden;
 }
 

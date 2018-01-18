@@ -68,6 +68,7 @@
     "yo-yoify": "^3.7.3"
   },
   "dependencies": {
+    "@koa/cors": "^2.2.1",
     "choo": "^6.6.1",
     "got": "^7.1.0",
     "idb-keyval": "^2.3.0",
