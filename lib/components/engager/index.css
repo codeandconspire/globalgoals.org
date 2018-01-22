@@ -330,6 +330,10 @@
   animation: Engager-panel--appear 500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
+_:-ms-input-placeholder, :root.has-js .Engager-panel.is-expanded {
+  opacity: 1;
+}
+
 :root.has-js .Engager-panel.is-hidden {
   animation: Engager-panel--hide 200ms var(--ease-in) forwards;
 }
