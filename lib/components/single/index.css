@@ -62,7 +62,7 @@
   }
 
   .Single-block {
-    width: calc(100% / 2);
+    width: 50%;
     padding: 0 calc(var(--Single-gutter) * 0.5);
     margin: 0 0 var(--Single-gutter);
   }

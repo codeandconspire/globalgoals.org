@@ -149,6 +149,7 @@
 
 .GoalGrid-logo {
   width: 64%;
+  height: 64%;
   position: absolute;
   top: 18%;
   left: 18%;
@@ -235,7 +236,7 @@
 
 @media (min-width: 710px) {
   .GoalGrid--layout .GoalGrid-item {
-    width: calc(100% / 4);
+    width: 25%;
   }
 
   /**

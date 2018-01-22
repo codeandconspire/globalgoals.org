@@ -59,3 +59,7 @@
   height: 67%;
   margin: 0 auto 8%;
 }
+
+.Logo--vertical .Logo-text {
+  height: 25%;
+}

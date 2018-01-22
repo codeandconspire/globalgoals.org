@@ -57,7 +57,8 @@
 
 .Footer-logo {
   display: block;
-  max-width: 110px;
+  width: 110px;
+  height: 110px;
   margin-top: 3px;
 }
 
@@ -131,13 +132,13 @@
 
 @media (--viewport-md) {
   .Footer-column--credits .Footer-item {
-    width: calc(100% / 4);
+    width: 25%;
   }
 }
 
 @media (--viewport-lg) {
   .Footer-column--credits .Footer-item {
-    width: calc(100% / 2);
+    width: 50%;
   }
 }
 

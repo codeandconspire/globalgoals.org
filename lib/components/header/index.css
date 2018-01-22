@@ -427,13 +427,14 @@
 .Header-langIcon {
   position: relative;
   top: -23px;
-  width: auto;
+  width: 50px;
   height: 39px;
 }
 
 @media (--viewport-lg) {
   .Header-langIcon {
     height: 19px;
+    width: 24px;
     top: -17px;
   }
 
@@ -557,6 +558,7 @@
   .Header-langIcon {
     top: -15px;
     height: 25px;
+    width: 32px;
   }
 
   /**
@@ -608,6 +610,7 @@
   .Header-langIcon {
     top: -23px;
     height: 39px;
+    width: 50px;
   }
 
   .Header-button--external:hover .Header-external {
