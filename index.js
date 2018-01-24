@@ -1,14 +1,15 @@
 const Koa = require('koa')
-const serve = require('koa-static')
 const body = require('koa-body')
+const serve = require('koa-static')
 const helmet = require('koa-helmet')
+const noTrailingSlash = require('koa-no-trailing-slash')
+const app = require('./lib/app')
 const router = require('./lib/router')
 const cache = require('./lib/middleware/cache')
 const assets = require('./lib/middleware/assets')
 const render = require('./lib/middleware/render')
 const prismic = require('./lib/middleware/prismic')
 const analytics = require('./lib/middleware/analytics')
-const app = require('./lib/app')
 
 const server = new Koa()
 
@@ -40,6 +41,8 @@ if (process.env.NODE_ENV !== 'development') {
 if (process.env.NODE_ENV !== 'production') {
   server.use(require('./lib/middleware/robots'))
 }
+
+server.use(noTrailingSlash())
 
 /**
  * Serve static files
