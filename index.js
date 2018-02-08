@@ -5,10 +5,12 @@ const helmet = require('koa-helmet')
 const noTrailingSlash = require('koa-no-trailing-slash')
 const app = require('./lib/app')
 const router = require('./lib/router')
+const api = require('./lib/middleware/api')
 const cache = require('./lib/middleware/cache')
 const assets = require('./lib/middleware/assets')
 const render = require('./lib/middleware/render')
 const prismic = require('./lib/middleware/prismic')
+const redirects = require('./lib/middleware/redirects')
 const analytics = require('./lib/middleware/analytics')
 
 const server = new Koa()
@@ -41,6 +43,17 @@ if (process.env.NODE_ENV !== 'development') {
 if (process.env.NODE_ENV !== 'production') {
   server.use(require('./lib/middleware/robots'))
 }
+
+/**
+ * Capture special routes before any other middleware
+ */
+
+server.use(api)
+server.use(redirects)
+
+/**
+ * Remove trailing slashes before continuing
+ */
 
 server.use(noTrailingSlash())
 
