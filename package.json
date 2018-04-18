@@ -47,7 +47,6 @@
     "localenvify": "^1.0.1",
     "nodemon": "^1.14.12",
     "normalize.css": "^7.0.0",
-    "now": "^7.4.0",
     "postcss-cli": "^4.1.1",
     "postcss-color-function": "^4.0.1",
     "postcss-custom-media": "^6.0.0",
