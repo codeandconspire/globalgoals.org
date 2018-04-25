@@ -14,12 +14,19 @@
     "compress:js": "npm run compress:js:app && npm run compress:js:sw",
     "compress:css": "gzip -9 -f -c public/index-$npm_package_version.css > public/index-$npm_package_version.css.gz",
     "compress": "npm run compress:css && npm run compress:js",
-    "build:js:app": "browserify lib/app/index.js -p common-shakeify -t localenvify -t yo-yoify -t babelify -g unassertify -g uglifyify | uglifyjs -o public/index-$npm_package_version.js",
-    "build:js:sw": "browserify lib/app/service-worker.js -p common-shakeify -t localenvify -t yo-yoify -t babelify -g unassertify -g uglifyify | uglifyjs -o public/service-worker.js",
+    "build:js:app": "browserify lib/app/index.js -p common-shakeify -g unassertify -g uglifyify | uglifyjs -o public/index-$npm_package_version.js",
+    "build:js:sw": "browserify lib/app/service-worker.js -p common-shakeify -g unassertify -g uglifyify | uglifyjs -o public/service-worker.js",
     "build:js": "npm run build:js:app && npm run build:js:sw",
     "build:css": "postcss lib/app/index.css --no-map -c postcss.config.js -o public/index-$npm_package_version.css",
     "build:fallback": "postcss lib/app/fallback.css --no-map -o public/fallback-$npm_package_version.css",
     "build": "npm run build:css && npm run build:fallback && npm run build:js"
+  },
+  "browserify": {
+    "transform": [
+      "localenvify",
+      "yo-yoify",
+      "babelify"
+    ]
   },
   "repository": {
     "type": "git",
