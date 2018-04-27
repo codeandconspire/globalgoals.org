@@ -38,6 +38,13 @@
     "url": "https://github.com/codeandconspire/globalgoals.org/issues"
   },
   "homepage": "https://github.com/codeandconspire/globalgoals.org#readme",
+  "devDependencies": {
+    "choo-devtools": "^2.5.0",
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.14.12",
+    "source-map-support": "^0.5.3",
+    "standard": "^10.0.3"
+  },
   "dependencies": {
     "@koa/cors": "^2.2.1",
     "autoprefixer": "^7.2.5",
@@ -45,11 +52,9 @@
     "babelify": "^7.3.0",
     "browserify": "^14.5.0",
     "choo": "^6.7.0",
-    "choo-devtools": "^2.3.3",
     "common-shakeify": "^0.4.5",
     "cssnano": "^3.10.0",
     "dedent": "^0.7.0",
-    "dotenv": "^4.0.0",
     "got": "^7.1.0",
     "idb-keyval": "^2.3.0",
     "koa": "^2.4.1",
@@ -68,7 +73,6 @@
     "nanocomponent": "^6.5.0",
     "nanohref": "^3.0.1",
     "nanoraf": "^3.0.1",
-    "nodemon": "^1.14.12",
     "normalize.css": "^7.0.0",
     "on-idle": "^3.1.4",
     "postcss-cli": "^4.1.1",
@@ -83,8 +87,6 @@
     "prismic-javascript": "^1.4.1",
     "prismic-richtext": "^0.2.7",
     "smoothscroll-polyfill": "^0.4.0",
-    "source-map-support": "^0.5.3",
-    "standard": "^10.0.3",
     "suitcss-utils-display": "^1.0.2",
     "suitcss-utils-text": "^1.0.0",
     "uglify-js": "^3.3.9",
