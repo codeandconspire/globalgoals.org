@@ -3,6 +3,9 @@
 .u-bgWhite { background-color: #fff !important; }
 .u-colorWhite { color: #fff !important; }
 
+.u-bgGrayLight { background-color: var(--color-gray-light) !important; }
+.u-colorGrayLight { color: var(--color-gray-light) !important; }
+
 .u-bgGray { background-color: var(--color-gray) !important; }
 .u-colorGray { color: var(--color-gray) !important; }
 

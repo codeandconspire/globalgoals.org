@@ -93,7 +93,7 @@
  * Misc inline elements
  */
 
-.Text:not(.Text--adaptive) a {
+.Text:not(.Text--adaptive) a:not([class]) {
   margin: -5px;
   padding: 5px;
   max-width: 100%;

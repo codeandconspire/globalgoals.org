@@ -1,0 +1,115 @@
+/* @define Form */
+
+.Form {
+
+}
+
+.Form-choices {
+  border: 0;
+  padding: 0;
+  margin: 24px 0 40px;
+}
+
+.Form-choice {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid var(--color-gray-light);
+  transition: border-color 60ms ease-out;
+}
+
+.Form-choice--red .Form-banner { background-color: var(--color-red); }
+.Form-choice--blue .Form-banner { background-color: var(--color-blue); }
+.Form-choice--yellow .Form-banner { background-color: var(--color-yellow); }
+
+.Form-choices.has-selected .Form-choice:not(.is-selected) .Form-banner {
+  background-color: var(--color-gray-light);
+  color: var(--color-text);
+}
+
+.Form-choice--red.is-selected { border-color: var(--color-red); }
+.Form-choice--blue.is-selected { border-color: var(--color-blue); }
+.Form-choice--yellow.is-selected { border-color: var(--color-yellow); }
+
+.Form-banner {
+  flex: 1 0 100%;
+  align-items: center;
+  display: flex;
+  padding: 16px;
+  color: #fff;
+  font-family: var(--font-family-heading);
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-transform: uppercase;
+  word-spacing: var(--word-spacing-heading);
+  transition:
+    background-color 60ms ease-out,
+    color 60ms ease-out;
+}
+
+.Form-check {
+  display: inline-block;
+  border: 3px solid #fff;
+  margin-right: 16px;
+  position: relative;
+  top: -2px;
+}
+
+.Form-description {
+  flex: 1 0 100%;
+  padding: 16px;
+}
+
+.Form-field {
+  width: 100%;
+}
+
+.Form-label {
+  display: block;
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.Form-meta {
+  font-style: italic;
+  color: var(--color-gray);
+}
+
+.Form-control {
+  display: block;
+  width: 100%;
+  border: 3px solid var(--color-gray-light);
+  padding: 14px;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.Form-control::placeholder {
+  color: var(--color-gray);
+  font-style: italic;
+}
+
+.Form-control:not([rows]) {
+  height: 56px;
+}
+
+.Form-pair {
+  display: inline-flex;
+  align-items: center;
+  height: 56px;
+  margin-right: 32px;
+}
+
+.Form-pair .Form-label {
+  margin: 0;
+}
+
+.Form-toggle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 1ch;
+}
