@@ -11,24 +11,27 @@
 }
 
 .Form-choice {
-  display: flex;
-  flex-wrap: wrap;
   border: 3px solid var(--color-gray-light);
   transition: border-color 60ms ease-out;
 }
 
+.Form-choice--red { border-color: var(--color-red); }
+.Form-choice--blue { border-color: var(--color-blue); }
+.Form-choice--yellow { border-color: var(--color-yellow); }
+
 .Form-choice--red .Form-banner { background-color: var(--color-red); }
 .Form-choice--blue .Form-banner { background-color: var(--color-blue); }
 .Form-choice--yellow .Form-banner { background-color: var(--color-yellow); }
+
+.Form-choices.has-selected .Form-choice:not(.is-selected) {
+  border-color: var(--color-gray-light);
+}
 
 .Form-choices.has-selected .Form-choice:not(.is-selected) .Form-banner {
   background-color: var(--color-gray-light);
   color: var(--color-text);
 }
 
-.Form-choice--red.is-selected { border-color: var(--color-red); }
-.Form-choice--blue.is-selected { border-color: var(--color-blue); }
-.Form-choice--yellow.is-selected { border-color: var(--color-yellow); }
 
 .Form-banner {
   flex: 1 0 100%;
@@ -85,6 +88,10 @@
   background: transparent;
   border-radius: 0;
   -webkit-appearance: none;
+}
+
+.Form-control:focus {
+  border-color: var(--color-gray);
 }
 
 .Form-control::placeholder {
