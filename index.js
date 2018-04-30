@@ -45,6 +45,12 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 /**
+ * Parse request body
+ */
+
+server.use(body({multipart: true}))
+
+/**
  * Capture special routes before any other middleware
  */
 
@@ -77,28 +83,10 @@ server.use(analytics(process.env.GOOGLE_ANALYTICS_ID))
 server.use(cache)
 
 /**
- * Parse request body
- */
-
-server.use(body())
-
-/**
  * Handle rendering response
  */
 
 server.use(render(app))
-
-/**
- * Hook up the Prismic api
- */
-
-server.use(prismic)
-
-/**
- * Hook up em' routes
- */
-
-server.use(router)
 
 /**
  * Lift off
