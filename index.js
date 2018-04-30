@@ -4,12 +4,10 @@ const serve = require('koa-static')
 const helmet = require('koa-helmet')
 const noTrailingSlash = require('koa-no-trailing-slash')
 const app = require('./lib/app')
-const router = require('./lib/router')
 const api = require('./lib/middleware/api')
 const cache = require('./lib/middleware/cache')
 const assets = require('./lib/middleware/assets')
 const render = require('./lib/middleware/render')
-const prismic = require('./lib/middleware/prismic')
 const redirects = require('./lib/middleware/redirects')
 const analytics = require('./lib/middleware/analytics')
 
@@ -37,12 +35,10 @@ if (process.env.NODE_ENV !== 'development') {
 }
 
 /**
- * Prevent indexing everything but production
+ * Prevent indexing everything
  */
 
-if (process.env.NODE_ENV !== 'production') {
-  server.use(require('./lib/middleware/robots'))
-}
+server.use(require('./lib/middleware/robots'))
 
 /**
  * Parse request body
