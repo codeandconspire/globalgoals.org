@@ -24,7 +24,7 @@
 
 .Grid-cell {
   display: flex;
-  flex-basis: 100%;
+  flex: 0 0 100%;
   min-width: 0;
   padding: 0 calc(var(--Grid-gutter) * 0.5);
   margin-bottom: var(--Grid-gutter);
@@ -120,7 +120,7 @@
 }
 
 .Grid-cell--1of2 {
-  flex-basis: auto;
+  flex: 0 0 50%;
   width: 50%;
 }
 
@@ -129,22 +129,30 @@
 }
 
 .Grid-cell--1of3 {
-  flex-basis: auto;
+  flex: 0 0 calc(100% / 3);
   width: calc(100% / 3);
 }
 
 .Grid-cell--2of3 {
-  flex-basis: auto;
-  width: calc((100% / 3) * 2);
+  flex: 0 0 calc(100% / 3 * 2);
+  width: calc(100% / 3 * 2);
 }
 
 .Grid--masonry.Grid--3col {
   column-count: 3;
 }
 
+.Grid--filled {
+  flex-wrap: nowrap;
+}
+
+.Grid-cell--fill {
+  flex: 1 1 auto;
+}
+
 @media (--viewport-sm) {
   .Grid-cell--sm1of2 {
-    flex-basis: auto;
+    flex: 0 0 50%;
     width: 50%;
   }
 
@@ -153,23 +161,31 @@
   }
 
   .Grid-cell--sm1of3 {
-    flex-basis: auto;
+    flex: 0 0 calc(100% / 3);
     width: calc(100% / 3);
   }
 
   .Grid-cell--sm2of3 {
-    flex-basis: auto;
-    width: calc((100% / 3) * 2);
+    flex: 0 0 calc(100% / 3 * 2);
+    width: calc(100% / 3 * 2);
   }
 
   .Grid--masonry.Grid--sm3col {
     column-count: 3;
   }
+
+  .Grid--sm-filled {
+    flex-wrap: nowrap;
+  }
+
+  .Grid-cell--sm-fill {
+    flex: 1 1 auto;
+  }
 }
 
 @media (--viewport-md) {
   .Grid-cell--md1of2 {
-    flex-basis: auto;
+    flex: 0 0 50%;
     width: 50%;
   }
 
@@ -178,13 +194,13 @@
   }
 
   .Grid-cell--md1of3 {
-    flex-basis: auto;
+    flex: 0 0 calc(100% / 3);
     width: calc(100% / 3);
   }
 
   .Grid-cell--md2of3 {
-    flex-basis: auto;
-    width: calc((100% / 3) * 2);
+    flex: 0 0 calc(100% / 3 * 2);
+    width: calc(100% / 3 * 2);
   }
 
   .Grid--masonry.Grid--md3col {
@@ -194,11 +210,19 @@
   .Grid-cell--divideDown {
     padding-bottom: var(--Grid-gutter-xl);
   }
+
+  .Grid--md-filled {
+    flex-wrap: nowrap;
+  }
+
+  .Grid-cell--md-fill {
+    flex: 1 1 auto;
+  }
 }
 
 @media (--viewport-lg) {
   .Grid-cell--lg1of2 {
-    flex-basis: auto;
+    flex: 0 0 50%;
     width: 50%;
   }
 
@@ -207,13 +231,13 @@
   }
 
   .Grid-cell--lg1of3 {
-    flex-basis: auto;
+    flex: 0 0 calc(100% / 3);
     width: calc(100% / 3);
   }
 
   .Grid-cell--lg2of3 {
-    flex-basis: auto;
-    width: calc((100% / 3) * 2);
+    flex: 0 0 calc(100% / 3 * 2);
+    width: calc(100% / 3 * 2);
   }
 
   .Grid--masonry.Grid--lg3col {
@@ -222,5 +246,13 @@
 
   .Grid-cell--divideDown {
     padding-bottom: var(--Grid-gutter-xl);
+  }
+
+  .Grid--lg-filled {
+    flex-wrap: nowrap;
+  }
+
+  .Grid-cell--lg-fill {
+    flex: 1 1 auto;
   }
 }
