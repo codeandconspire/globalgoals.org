@@ -2,6 +2,7 @@ const Koa = require('koa')
 const body = require('koa-body')
 const serve = require('koa-static')
 const helmet = require('koa-helmet')
+const auth = require('koa-basic-auth')
 const noTrailingSlash = require('koa-no-trailing-slash')
 const app = require('./lib/app')
 const api = require('./lib/middleware/api')
@@ -32,6 +33,23 @@ if (process.env.NODE_ENV === 'development') {
 
 if (process.env.NODE_ENV !== 'development') {
   server.use(helmet())
+  const { AUTH_NAME, AUTH_PASS } = process.env
+  if (AUTH_NAME && AUTH_PASS) {
+    server.use(async (ctx, next) => {
+      try {
+        await next()
+      } catch (err) {
+        if (err.status === 401) {
+          ctx.status = 401
+          ctx.set('WWW-Authenticate', 'Basic')
+          ctx.body = 'cant haz that'
+        } else {
+          throw err
+        }
+      }
+    })
+    server.use(auth({name: AUTH_NAME, pass: AUTH_PASS}))
+  }
 }
 
 /**
