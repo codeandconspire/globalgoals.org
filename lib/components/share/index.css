@@ -18,12 +18,6 @@
   background-color: #fff;
 }
 
-@media (--viewport-md) {
-  .Share {
-    padding: 32px;
-  }
-}
-
 @media (--viewport-lg) {
   .Share {
     padding: 48px;

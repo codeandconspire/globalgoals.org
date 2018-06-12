@@ -1,0 +1,240 @@
+/* @define Embed */
+
+.Embed {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: calc(100% * (9 / 16));
+  z-index: 0;
+  color: #fff;
+}
+
+.Embed--fullscreen {
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+
+  background: rgba(0, 0, 0, 0.85);
+  animation: Embed--appear 250ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes Embed--appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.Embed--fullscreen.is-closing {
+  animation: Embed--disappear 350ms 200ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes Embed--disappear {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.Embed-close {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+
+.Embed-cross {
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  padding: 16px;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  border-radius: 1px;
+  pointer-events: none;
+  background-color: rgba(81, 81, 81, 0);
+  transition: background-color 180ms var(--ease-out);
+}
+
+.Embed-cross:matches(::before, ::after) {
+  content: "";
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  background: currentColor;
+}
+
+.Embed-cross::before {
+  transform: rotate(45deg);
+}
+
+.Embed-cross::after {
+  transform: rotate(-45deg);
+}
+
+.Embed-close:hover .Embed-cross {
+  background-color: rgba(81, 81, 81, 1);
+}
+
+.Embed-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.Embed--fullscreen .Embed-wrapper {
+  height: 0;
+  width: 75%;
+  max-width: 1250px;
+
+  left: 50%;
+  top: 50%;
+}
+
+.Embed-iframe {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-bottom: calc(100% * (9 / 16));
+
+  background-color: #000;
+  box-shadow: 0 0 50px rgba(0,0,0,0.2);
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+.Embed--fullscreen.is-closing .Embed-iframe {
+  animation: Embed-iframe--disappear 250ms cubic-bezier(0.33, 0.89, 0.62, 1) forwards;
+}
+
+@keyframes Embed-iframe--disappear {
+  from {
+    transform: translate(-50%, -50%);
+  }
+
+  to {
+    transform: translate(-50%, 50vh);
+  }
+}
+
+.Embed-image,
+.Embed-iframe iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Embed-image {
+  object-fit: cover;
+}
+
+.Embed--fullscreen .Embed-image,
+.Embed--fullscreen .Embed-iframe iframe {
+  visibility: hidden;
+  animation: Embed-content--appear 0ms 650ms linear forwards;
+}
+
+@keyframes Embed-content--appear {
+  to {
+    visibility: visible;
+  }
+}
+
+.Embed-trigger {
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  text-indent: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  transform: translate(-50%, -75%);
+  will-change: transform;
+  background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2272%22%20height%3D%2272%22%20viewBox%3D%220%200%2072%2072%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M0%200h72v72H0V0zm50%2037L26%2022v30l24-15z%22%2F%3E%3Cpath%20fill%3D%22%23000%22%20fill-opacity%3D%22.2%22%20d%3D%22M50%2037L26%2052V22z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+  background-size: 100% 100%;
+}
+
+@media (--viewport-xl) {
+  .Embed-trigger {
+    width: 70px;
+    height: 70px;
+    text-indent: 70px;
+  }
+}
+
+.Embed-link::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background: var(--color-hover-dark-on-fill);
+  transition: opacity 180ms var(--ease-out);
+  will-change: opacity;
+}
+
+.Embed-link:hover::before {
+  opacity: 1;
+}
+
+.Embed-meta {
+  width: 100%;
+  padding: 16px 16px 24px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  color: #fff;
+  font-family: var(--font-family-body);
+  line-height: 1.5;
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 55%);
+}
+
+@media (--viewport-lg) {
+  .Embed-meta {
+    padding: 24px;
+  }
+}
+
+.Embed-description {
+  display: none;
+}
+
+@media (--viewport-lg) {
+  .Embed-description {
+    display: block;
+  }
+}
