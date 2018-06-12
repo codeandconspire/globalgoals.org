@@ -9,6 +9,10 @@
   color: #fff;
 }
 
+.Embed--hidden {
+  padding-bottom: 0;
+}
+
 .Embed--fullscreen {
   width: 100%;
   height: 100%;
