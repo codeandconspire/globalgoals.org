@@ -327,6 +327,11 @@ ul.Text--links a::after {
   margin-bottom: -10px;
 }
 
+.Text .Text-h4--alt {
+  font-size: 32px;
+  line-height: 1.05;
+}
+
 .Text :matches(h5, h6) {
   font-weight: bold;
   font-size: inherit;
