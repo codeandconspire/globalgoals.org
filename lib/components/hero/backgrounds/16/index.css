@@ -111,54 +111,56 @@
 }
 
 .Hero16-person--judge {
-  right: 6.9%;
+  right: 87px;
+  height: 8%;
+  max-height: 47px;
   animation-delay: 900ms;
 }
 
 .Hero16-person--citizen:nth-child(1) {
-  left: 8%;
+  left: 90px;
   height: 4.5%;
 }
 
 .Hero16-person--citizen:nth-child(2) {
-  left: 9.65%;
+  left: 120px;
   height: 5.25%;
 }
 
 .Hero16-person--citizen:nth-child(3) {
-  left: 11.5%;
+  left: 151px;
   height: 4.4%;
   animation-delay: 1000ms;
 }
 
 .Hero16-person--citizen:nth-child(4) {
   display: none;
-  left: 20%;
+  left: 230px;
 }
 
 .Hero16-person--citizen:nth-child(5) {
   display: none;
-  height: 3%;
-  left: 21.75%;
+  height: 2.4%;
+  left: 260px;
 }
 
 .Hero16-person--citizen:nth-child(6) {
   display: none;
-  right: 25%;
+  right: 260px;
 }
 
 .Hero16-person--citizen:nth-child(7) {
   display: none;
-  right: 23%;
+  right: 230px;
 }
 
 .Hero16-person--citizen:nth-child(8) {
-  right: 11.5%;
+  right: 151px;
   height: 4%;
 }
 
 .Hero16-person--citizen:nth-child(9) {
-  right: 10%;
+  right: 125px;
   height: 4%;
 }
 
