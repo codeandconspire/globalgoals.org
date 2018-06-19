@@ -92,3 +92,17 @@
 .Button--secondary.is-disabled {
   color: rgba(0, 0, 0, 0.3);
 }
+
+.Button--blue {
+  background-color: var(--color-blue);
+}
+.Button--blue:hover {
+  background-color: #1082b7;
+}
+
+.Button--yellow {
+  background-color: var(--color-yellow);
+}
+.Button--yellow:hover {
+  background-color: #e0af0f;
+}

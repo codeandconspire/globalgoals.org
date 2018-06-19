@@ -7,7 +7,7 @@
     "test": "standard",
     "setup": "./bin/setup",
     "start": "node index.js",
-    "restart": "nodemon -r dotenv/config --inspect index.js -e js -i lib/components",
+    "restart": "nodemon -r dotenv/config --inspect index.js -e js -i lib/components -i lib/views",
     "postbuild": "npm run compress",
     "compress:js:app": "gzip -9 -f -c public/index-$npm_package_version.js > public/index-$npm_package_version.js.gz",
     "compress:js:sw": "gzip -9 -f -c public/service-worker.js > public/service-worker.js.gz",

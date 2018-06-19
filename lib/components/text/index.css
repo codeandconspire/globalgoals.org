@@ -10,6 +10,16 @@
   max-width: 39em;
 }
 
+.Text::before,
+.Text::after {
+  content: " ";
+  display: table;
+}
+
+.Text::after {
+  clear: both;
+}
+
 @media print {
   .Text,
   .Text--adaptive {
@@ -23,6 +33,10 @@
 
 .Text--full {
   max-width: none;
+}
+
+.Text-contain {
+  max-width: 39em;
 }
 
 .Text--bold {
@@ -154,10 +168,25 @@
   margin: 1.5em 0;
 }
 
-.Text img {
+.Text img,
+.Text-image {
   width: 100%;
   height: auto;
   background: var(--color-gray-light);
+}
+
+img.Text-image--left {
+  max-width: 100%;
+  width: auto;
+  float: left;
+  margin: 0 16px 16px 0;
+}
+
+img.Text-image--right {
+  max-width: 100%;
+  width: auto;
+  float: right;
+  margin: 0 0 16px 16px;
 }
 
 .Text .block-img {
@@ -198,6 +227,27 @@
 
 .Text li + li {
   padding-top: 16px;
+}
+
+.Text dt {
+  font-weight: bold;
+}
+
+@supports (display: grid) {
+  .Text dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .Text dt {
+    display: inline;
+    margin-right: 1ch;
+  }
+
+  .Text dd {
+    display: inline;
+    margin: 0;
+  }
 }
 
 .Text pre {
@@ -260,6 +310,25 @@ ul.Text--links a::after {
   border-width: 20px 0 20px 30px;
   border-color: transparent black transparent black;
   margin: 10px 30px 12px 12px;
+}
+
+.Text-marque {
+  display: inline-block;
+  padding: 0.12em 0.325em 0.055em;
+  background-color: var(--color-text);
+  color: #fff;
+}
+
+.Text-marque--red {
+  background-color: var(--color-red)
+}
+
+.Text-marque--blue {
+  background-color: var(--color-blue)
+}
+
+.Text-marque--yellow {
+  background-color: var(--color-yellow)
 }
 
 /**
