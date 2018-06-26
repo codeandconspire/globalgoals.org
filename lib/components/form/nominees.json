@@ -1,143 +1,263 @@
 {
   "progress": {
-    "color": "blue",
     "title": "Progress Award",
-    "button": "Continue to Changemaker Award",
+    "button": {
+      "text": "Place vote and continue"
+    },
     "comment": "entry.879636731",
     "id": "entry.298026157",
     "choices": [{
-      "value": "progress-1",
-      "name": "Firstname Lastname",
-      "image": "http://via.placeholder.com/400x225",
-      "org": "code and conspire",
-      "age": "XX",
-      "country": "Sweden",
-      "website": "www.codeandconspire.com",
-      "body": [
-        "Mos reperumquaes eumquam et res nis volorestiis volupicil mos ea plique es volum qui offictios eiundis est que non restianitias mo estrum ent, int es quatem expedit volupta tisinvenet remped eatior sam, consequos consequo diciis repernam consequae nitius, cus enis quis ratem si occaeceperum aut facea exere sequaerio etur.Tur re con pore, utem faccusapit debit dolo corest, conecerio tet voluptium faccum imustius, unto imilique volenis ercitaquunt incipsant harum quid quas volupti atectust endis ut acerrunt ilis es et accuptae.",
-        "Cesequate et qui autatec epernatiur aborro te eaqui illiqui optasitem velignam aliqui berio modis as si tore et im andelia sima sit iliti naturem eum quam eaquam landis doluptate volupta quam rerci ut labore sumquis quatem que con pliquid isciur seque cupta dit et, to debit etur. Aborat a vollamu scium, nonseni doluptas doluptaecus que ea que deliquo quo ma con endame dolupta sam, secupta cuptam dentem essimus, comnis voluptatis dus maios doluptatur. Vendes et fugitat et reptatus, est, idit pore libusan diossim olorepe rferat. Agnisse nihilitias nobition reperemporae pro magnihicto omnis as autatati asitibu sdandi dolorisci volorest, volupti sus, autamusdame cus ea quodi aut ommostios et que volore, que eatis ate nus.",
-        "Ore videssimolo et aut omnitat volles expedicatur sinverum is num harumquam reiusti nimusam qui adit ab in corporeium laut fugiasp erchillupta dolupti od quia volupta derumendae nonsed maximus, sus etum volo te maio. Ut qui ist, quissi nuscil et licia que volum adic tem voluptis mod magnatem et re doluptatur. Te prehendes doluptatqui quas di idipid moluptatia cus si occatur, aut volorent voloraerore volupta tenihil magnimintes acia des re nonesciiscil imet quodit liquia quodis reiuscimin pa quae labo. Venditempe dolorae aut ad que consecus ut quaecabo. Et in nonsequ aspellacea quaerec estrume nemqui cor maioris renis aut resenia dolupti re nonsedit et pliqui sa ius ut alia."
-      ],
-      "links": {
+      "value": "Dysmus Kisilu",
+      "image": "6400c094-e580-41c6-ba13-540f7559557d_dysmus+kisilu.png",
+      "attributes": {
+        "Name": "Dysmus Kisilu",
+        "Organisation": "Solar Freeze",
+        "Age": "30",
+        "Country": "Kenya",
+        "Website": {
+          "href": "www.solarfreeze.co.ke",
+          "text": "www.solarfreeze.co.ke"
+        },
         "Facebook": {
-          "handle": "codeandconspire",
-          "href": "https://facebook.com/codeandconspire"
-        },
-        "Google+": {
-          "handle": "codeandconspire",
-          "href": "https://googleplus.com/codeandconspire"
-        },
-        "Snapchat": {
-          "handle": "codeandconspire",
-          "href": "https://snapchat.com/codeandconspire"
+          "text": "SolarFreeze.co.ke",
+          "href": "www.facebook.com/SolarFreeze.co.ke"
         },
         "Twitter": {
-          "handle": "codeandconspire",
-          "href": "https://twitter.com/codeandconspire"
-        },
-        "Instagram": {
-          "handle": "codeandconspire",
-          "href": "https://instagram.com/codeandconspire"
-        },
-        "Youtube": {
-          "handle": "codeandconspire",
-          "href": "https://youtube.com/codeandconspire"
+          "text": "@freeze_solar",
+          "href": "twitter.com/freeze_solar"
         }
-      }
+      },
+      "body": [
+        "Dysmus Kisilu is the founder of Solar Freeze, a company that specializes in providing renewable energy solutions (solar powered irrigation kits and solar powered cold storage units) to smallholder farmers in Kenya to increase agricultural productivity. To date, Dysmus has worked with 3,000 smallholder women farmers in Eastern Kenya to increase agricultural yields by more than 150 per cent from 2016.",
+        "Dysmus is also the founder of ‘Each one, teach one- Train and Earn’ an initiative within Solar Freeze that aims to impact the next generation of renewable energy agricultural leaders in Africa. It does this by mentoring young people aged 18-29 in the operation, maintenance and repair of renewable energy solutions specifically for agriculture. As a result, this skills-transfer program has enabled 100 young people to learn and earn an income.",
+        "Dysmus has received training in Renewable Energy from the University of California, Davis in the USA through to the Mandela Washington Fellowship for Young African Leaders. In addition to this, Dysmus has been recognized for his work in renewable energy and smallholder agriculture by the United Nations through the UNLEASH Young Leaders Program- identifying disruptive youth-led solutions to achieve the SDG’s. He is a 2016 USAID / USADF Grant winner, a 2017 Global Citizen Waislitz Award Finalist, a 2017 United Nations UNLEASH winner for young leader in SDG 2, a 2017 International Youth Foundation Fellow for Renewable Energy & Agriculture and a 2018 Echoing Green Finalist (Climate and Agriculture)"
+      ]
+    }, {
+      "value": "Nick Oketch",
+      "image": "64a42f97-8127-4940-8bc7-98e7dbf41fe4_nick+oketch.png",
+      "attributes": {
+        "Name": "Nick Oketch",
+        "Organisation": "LucyBot",
+        "Age": "29",
+        "Country": "Kenya",
+        "Website": {
+          "href": "https://medium.com/unleash-lab/nick-oketch-is-an-award-winning-young-social-entrepreneur-with-over-4-years-experience-of-working-e0245c188ab7",
+          "text": "Nick Oketch"
+        },
+        "Facebook": {
+          "text": "LucyBot2017",
+          "href": "m.me/LucyBot2017"
+        },
+        "Twitter": {
+          "text": "@nick_oketch",
+          "href": "twitter.com/nick_oketch"
+        }
+      },
+      "body": [
+        "Nick Oketch developed a Facebook messenger platform called LucyBot. LucyBot is built on an artificial intelligence system that is fed with verified information on sexual and reproductive health and relays the information to its users through conversations that are driven by instant text or voice chats. The solution helps relieve awkwardness surrounding discussions and discourse around SRH, particularly in the conservative African setting. LucyBot seeks to meet the needs of young people to understand and learn about their sexuality by giving them the opportunity to ask private, sex-related questions. It then provides real-time answers with information from a reliable source. Since its inception 8 months ago, over 1,000 young people have engaged the Bot and received information."
+      ]
+    }, {
+      "value": "Mohamed Aburaw",
+      "image": "c3ee05f6-b4ed-4093-86ba-9c43a62ae601_mohamed+aburawi.png",
+      "attributes": {
+        "Name": "Mohamed Aburaw",
+        "Occupation": "Doctor",
+        "Age": "30",
+        "Country": "Libya",
+        "Website": {
+          "href": "http://speetar.com",
+          "text": "speetar.com"
+        },
+        "Twitter": {
+          "text": "@AburawiMD",
+          "href": "twitter.com/AburawiMD"
+        }
+      },
+      "body": [
+        "Mohamed Aburawi is a medical doctor, consultant and postdoc research fellow at the Harvard Medical School Department of Surgery. He is the founder of the Harvard awarded and MIT Sandbox supported telemedicine platform, Speetar, which links under-served patients in post-conflict countries to culturally and language-matched specialists. Dr. Aburawi is also responsible for developing the strategy and vision for a novel discarded human kidney reconditioning system (the first in USA).  The work he is leading at Massachusetts General Hospital is paving the way for a ground-breaking multi-centre clinical trial supported by the New England Organ Bank.",
+        "He has first-authored 3 scientific papers, co-authored 5 manuscripts, and received national and international recognition for his clinical research work. At the age of 23, Dr. Aburawi founded a leading medical organization in Libya, which created an innovative electronic blood donation system amid conflict, saving lives and leading to multiple awards including the Ministry of Municipal Affairs Award for Community Service. Mohamed is passionate about disrupting traditional healthcare industries and unlocking the potential of digital technology on a global scale."
+      ]
     }]
   },
   "changemaker": {
-    "color": "yellow",
     "title": "Changemaker Award",
-    "button": "Continues to Campaign Award",
+    "button": {
+      "color": "blue",
+      "text": "Place vote and continue"
+    },
     "comment": "entry.1470366669",
     "id": "entry.1311314296",
     "choices": [{
-      "value": "changemaker-1",
-      "name": "Firstname Lastname",
-      "image": "http://via.placeholder.com/400x225",
-      "org": "code and conspire",
-      "age": "XX",
-      "country": "Sweden",
-      "website": "www.codeandconspire.com",
-      "body": [
-        "Mos reperumquaes eumquam et res nis volorestiis volupicil mos ea plique es volum qui offictios eiundis est que non restianitias mo estrum ent, int es quatem expedit volupta tisinvenet remped eatior sam, consequos consequo diciis repernam consequae nitius, cus enis quis ratem si occaeceperum aut facea exere sequaerio etur.Tur re con pore, utem faccusapit debit dolo corest, conecerio tet voluptium faccum imustius, unto imilique volenis ercitaquunt incipsant harum quid quas volupti atectust endis ut acerrunt ilis es et accuptae.",
-        "Cesequate et qui autatec epernatiur aborro te eaqui illiqui optasitem velignam aliqui berio modis as si tore et im andelia sima sit iliti naturem eum quam eaquam landis doluptate volupta quam rerci ut labore sumquis quatem que con pliquid isciur seque cupta dit et, to debit etur. Aborat a vollamu scium, nonseni doluptas doluptaecus que ea que deliquo quo ma con endame dolupta sam, secupta cuptam dentem essimus, comnis voluptatis dus maios doluptatur. Vendes et fugitat et reptatus, est, idit pore libusan diossim olorepe rferat. Agnisse nihilitias nobition reperemporae pro magnihicto omnis as autatati asitibu sdandi dolorisci volorest, volupti sus, autamusdame cus ea quodi aut ommostios et que volore, que eatis ate nus.",
-        "Ore videssimolo et aut omnitat volles expedicatur sinverum is num harumquam reiusti nimusam qui adit ab in corporeium laut fugiasp erchillupta dolupti od quia volupta derumendae nonsed maximus, sus etum volo te maio. Ut qui ist, quissi nuscil et licia que volum adic tem voluptis mod magnatem et re doluptatur. Te prehendes doluptatqui quas di idipid moluptatia cus si occatur, aut volorent voloraerore volupta tenihil magnimintes acia des re nonesciiscil imet quodit liquia quodis reiuscimin pa quae labo. Venditempe dolorae aut ad que consecus ut quaecabo. Et in nonsequ aspellacea quaerec estrume nemqui cor maioris renis aut resenia dolupti re nonsedit et pliqui sa ius ut alia."
-      ],
-      "links": {
+      "value": "Srishti Jain",
+      "image": "855688df-028c-4439-9ea2-9add0b0ee796_srishti+jain.png",
+      "attributes": {
+        "Name": "Srishti Jain",
+        "Organisation": "Feeding India",
+        "Age": "25",
+        "Country": "India",
+        "Website": {
+          "href": "https://www.feedingindia.org",
+          "text": "www.feedingindia.org"
+        },
         "Facebook": {
-          "handle": "codeandconspire",
-          "href": "https://facebook.com/codeandconspire"
-        },
-        "Google+": {
-          "handle": "codeandconspire",
-          "href": "https://googleplus.com/codeandconspire"
-        },
-        "Snapchat": {
-          "handle": "codeandconspire",
-          "href": "https://snapchat.com/codeandconspire"
+          "text": "feedingindia",
+          "href": "www.facebook.com/feedingindia"
         },
         "Twitter": {
-          "handle": "codeandconspire",
-          "href": "https://twitter.com/codeandconspire"
+          "text": "@feedingindia",
+          "href": "twitter.com/feedingindia"
         },
         "Instagram": {
-          "handle": "codeandconspire",
-          "href": "https://instagram.com/codeandconspire"
+          "text": "feedingindia",
+          "href": "https://www.instagram.com/feedingindia"
         },
         "Youtube": {
-          "handle": "codeandconspire",
-          "href": "https://youtube.com/codeandconspire"
+          "text": "Feeding India",
+          "href": "www.youtube.com/channel/UCyVtJtPF20E4HlcXOvS-YyQ"
         }
-      }
+      },
+      "body": [
+        "“At the age of 21, I co-founded Feeding India, India's first ever and now largest youth-run organisation fighting hunger, malnutrition and food wastage. Over the last 4 years, I spearheaded the national-expansion to grow from 2 to 8500+ volunteers across 60+ cities in India, serving 15 million meals to target beneficiaries including children, women and the elderly. The organization is now supported by the Queen’s Commonwealth Trust (Presided by HM Prince Harry), United Nations World Food Program and recognized by the Prime Minister of India, Narendra Modi. I have been able to positively influence not only the youth of the country, but also the changemakers and policy leaders on a national and international level.",
+        "There was little or no awareness around using excess food to donate to the needy in India. During that darkest hour, I turned towards the powerhouse of our country - the youth. I started gathering volunteers and friends from my network to donate food on an individual level. At the same time, I involved influencers from the food industry such as celebrities, Michelin-star chefs and TV hosts to raise awareness about the cause.",
+        "Feeding India is seen as a best-case example of involving youth to achieve #ZeroHunger in India. We were recognized by the United Nations WFP and started working with their team in India to build awareness about SDG 2 and implement projects on the ground. Feeding India became the first ever project to be supported by the Queen of England Commonwealth Trust in India and was recognized by the Queen of England at Buckingham Palace in June 2017. I was awarded the 'Young Entrepreneur of the Year 2016' by the Government of India and recognized by Prime Minister Modi on National Youth Day in January 2018.”"
+      ]
+    }, {
+      "value": "Nadia Murad",
+      "image": "ce0f73fb-2dff-43a5-95db-a64aafff400f_nadia+murad.png",
+      "attributes": {
+        "Name": "Nadia Murad",
+        "Organisation": "Nadia’s Initiative",
+        "Age": "25",
+        "Country": "Iraq",
+        "website": {
+          "href": "https://www.feedingindia.org",
+          "text": "nadiasinitiative.org"
+        },
+        "Facebook": {
+          "text": "NadiaMuradBasee",
+          "href": "https://www.facebook.com/NadiaMuradBasee"
+        },
+        "Twitter": {
+          "text": "@NadiaMuradBasee",
+          "href": "https://twitter.com/NadiaMuradBasee"
+        }
+      },
+      "body": [
+        "In 2014, aged 19, Nadia was among thousands of Yazidi women who were abducted and enslaved by the self-proclaimed Islamic State (ISIS). She spent approximately one month in captivity. Nadia suffered the loss of six of her nine brothers who were slaughtered by ISIS in the Kocho massacre. Thousands of Yazidi men and older Yazidi women were murdered including Nadia's mother.",
+        "Since escaping, Nadia has dedicated herself to assisting other Yazidis, particularly young women, who have similarly suffered. She has repeatedly shared her story of persecution including details of her enslavement and sexual assault, to raise awareness, demand justice and seek assistance. She is a nominee for the Nobel Peace Prize, the recipient of the Vaclav Havel Human Rights Prize, the Sakharov Prize, and the UN's first Goodwill Ambassador for the Dignity of Survivors of Human Trafficking. She also received the Clinton Global Citizen Award and the Peace Prize from the United Nations Association of Spain. She has published a New York Times Bestselling memoir titled ‘The Last Girl’ in multiple languages in order to share her story and advocate for other survivors, including those still in captivity. The feature documentary ‘On Her Shoulders’ follows Nadia as she repeatedly recounts her story on platforms from radio shows to the floor of the UN to speak out on behalf of the Yazidi community. The documentary made it’s premiere in the US documentary competition at the 2018 Sundance Film Festival.",
+        "Nadia’s Initiative, launched in 2016, is aimed at increasing advocacy for women and minorities and assisting to stabilize and redevelop communities in crisis. Long term ambitions for the initiative include the facilitation of holistic approaches to healing traumatized victims of mass atrocities, by developing and supporting field programs in the areas of healthcare, psychosocial support and education for women and children."
+      ]
+    }, {
+      "value": "Zuriel Oduwole",
+      "image": "0c0cc72c-013b-40b6-ae77-5cc12df7b273_zuriel+oduwole.png",
+      "attributes": {
+        "Name": "Zuriel Oduwole",
+        "Age": "16",
+        "Country": "USA/ Nigeria",
+        "Website": {
+          "href": "https://www.zurieloduwole.com/",
+          "text": "www.zurieloduwole.com"
+        },
+        "Facebook": {
+          "text": "zurieloduwole",
+          "href": "www.facebook.com/zurieloduwole"
+        },
+        "Twitter": {
+          "text": "@zurieloduwole",
+          "href": "twitter.com/zurieloduwole"
+        },
+        "Youtube": {
+          "text": "afiamarie",
+          "href": "https://www.youtube.com/user/afiamarie"
+        }
+      },
+      "body": [
+        "Zuriel Oduwole is a girl education advocate and film maker. She shares her film making skills with girls across the world to empower and educate and uses her influence with leaders to advocate for change. Her advocacy made her the youngest person to be profiled by Forbes (aged 10 in 2013). She focuses on progress towards 2 Sustainable Development Goals- Gender Equality and Quality Education.",
+        "She made her first short documentary at the age of 9 and her first full feature docu-film at the age of 12- it was shown in 2 cinema chains, and screened in South Africa, United Kingdom, Ghana, Nigeria and Japan.",
+        "Zuriel has met 27 presidents and prime ministers around her education advocacy work, including the leaders of Nigeria, Kenya, Tanzania, Malawi, Liberia, South Sudan, Guyana and Namibia.",
+        "Zuriel speaks to youths both in and out of school about the importance of education, showing herself as an example of what an Educated Girl can do. She has spoken to more than 25,000 in 14 countries including Ethiopia, South Africa, Tanzania, Nigeria, UK and USA.",
+        "Zuriel has been running film sessions since 2016 in countries including Liberia, Kenya, Mauritius, Ghana, Cote d’Ivoire, and Namibia. She believes education is not only what can be taught in schools, and that via film making girls are given an opportunity to tell their stories and the stories of others. Around her work she talks to parents about affordable ways they can send their girls to school.",
+        "Zuriel has met with the Prime Ministers of Samoa, Jamaica, Vanuatu, Tuvalu, Fiji and the President of Marshall Islands, to learn more about the effects of climate change on education development. She delivered a keynote speech at COP23 on the direct and human geography effect of Climate Change on Education, in Island countries."
+      ]
     }]
   },
   "campaign": {
-    "color": "",
     "title": "Campaign Award",
-    "button": "Submit your vote",
+    "button": {
+      "color": "yellow",
+      "text": "Submit your vote"
+    },
     "comment": "entry.486816405",
     "id": "entry.1971526978",
     "choices": [{
-      "value": "campaign-1",
-      "name": "Firstname Lastname",
-      "image": "http://via.placeholder.com/400x225",
-      "org": "code and conspire",
-      "age": "XX",
-      "country": "Sweden",
-      "website": "www.codeandconspire.com",
-      "body": [
-        "Mos reperumquaes eumquam et res nis volorestiis volupicil mos ea plique es volum qui offictios eiundis est que non restianitias mo estrum ent, int es quatem expedit volupta tisinvenet remped eatior sam, consequos consequo diciis repernam consequae nitius, cus enis quis ratem si occaeceperum aut facea exere sequaerio etur.Tur re con pore, utem faccusapit debit dolo corest, conecerio tet voluptium faccum imustius, unto imilique volenis ercitaquunt incipsant harum quid quas volupti atectust endis ut acerrunt ilis es et accuptae.",
-        "Cesequate et qui autatec epernatiur aborro te eaqui illiqui optasitem velignam aliqui berio modis as si tore et im andelia sima sit iliti naturem eum quam eaquam landis doluptate volupta quam rerci ut labore sumquis quatem que con pliquid isciur seque cupta dit et, to debit etur. Aborat a vollamu scium, nonseni doluptas doluptaecus que ea que deliquo quo ma con endame dolupta sam, secupta cuptam dentem essimus, comnis voluptatis dus maios doluptatur. Vendes et fugitat et reptatus, est, idit pore libusan diossim olorepe rferat. Agnisse nihilitias nobition reperemporae pro magnihicto omnis as autatati asitibu sdandi dolorisci volorest, volupti sus, autamusdame cus ea quodi aut ommostios et que volore, que eatis ate nus.",
-        "Ore videssimolo et aut omnitat volles expedicatur sinverum is num harumquam reiusti nimusam qui adit ab in corporeium laut fugiasp erchillupta dolupti od quia volupta derumendae nonsed maximus, sus etum volo te maio. Ut qui ist, quissi nuscil et licia que volum adic tem voluptis mod magnatem et re doluptatur. Te prehendes doluptatqui quas di idipid moluptatia cus si occatur, aut volorent voloraerore volupta tenihil magnimintes acia des re nonesciiscil imet quodit liquia quodis reiuscimin pa quae labo. Venditempe dolorae aut ad que consecus ut quaecabo. Et in nonsequ aspellacea quaerec estrume nemqui cor maioris renis aut resenia dolupti re nonsedit et pliqui sa ius ut alia."
-      ],
-      "links": {
+      "value": "RED J+MEX",
+      "title": "Red Mexicana de Adolescentes y Jóvenes Positivos, RedJ+",
+      "image": "9fa6d622-c9bb-4b55-8986-d99236f54fc8_red+j%2Bmex.png",
+      "attributes": {
+        "Campaign": "RED J+MEX",
+        "Country": "Mexico",
         "Facebook": {
-          "handle": "codeandconspire",
-          "href": "https://facebook.com/codeandconspire"
+          "text": "Jovenesvihmex",
+          "href": "https://www.facebook.com/Jovenesvihmex"
+        }
+      },
+      "body": [
+        "Founded six years ago by young activists living with HIV, RedJ+ is a network of people between 12 and 29 years old from all over the country - the majority of them a part of a key population such as LGBT people, sex workers, and drug users. The aim of the network is to promote active youth participation in the design, implementation, and monitoring of HIV and SRHR policies and programs that will contribute to an AIDS-free generation and a society free of stigma and discrimination.",
+        "RedJ+ is one of the active members of the ACT 2030 initiative which advocates for the proper implementation of the SDGs in Mexico, in collaboration with the federal government, civil society organizations, and academia. They are also part of the Latin American Network of Positive Youth (Jovenes Positivos LAC) with whom they share a common agenda in the fight for the right to health, the unfinished agenda of MDG 6, and the development of vaccines and a cure for HIV. RedJ+ trains and mobilizes young people to become peer supporters, human rights defenders, and advocates for the implementation of the international commitments made by the Mexican Government in relation to the 2030 Agenda."
+      ]
+    }, {
+      "value": "Lydia Charles",
+      "image": "206e0611-b4dd-46c2-9557-8c5475fffa64_lydia+charles.png",
+      "attributes": {
+        "Name": "Lydia Charles",
+        "Campaign": "Femina Hip",
+        "Country": "Tanzania",
+        "Website": {
+          "text": "www.feminahip.or.tz",
+          "href": "http://www.feminahip.or.tz/whats-up/news/the-2017-fema-girl-power-team-and-the-red-agenda/?tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=e89936ea9d22ce85ff6fea14d919b228"
         },
-        "Google+": {
-          "handle": "codeandconspire",
-          "href": "https://googleplus.com/codeandconspire"
-        },
-        "Snapchat": {
-          "handle": "codeandconspire",
-          "href": "https://snapchat.com/codeandconspire"
+        "Facebook": {
+          "text": "FeminaHIP1999",
+          "href": "facebook.com/FeminaHIP1999"
         },
         "Twitter": {
-          "handle": "codeandconspire",
-          "href": "https://twitter.com/codeandconspire"
+          "text": "@FeminaHIP",
+          "href": "twitter.com/FeminaHIP"
         },
         "Instagram": {
-          "handle": "codeandconspire",
-          "href": "https://instagram.com/codeandconspire"
+          "text": "feminahip",
+          "href": "www.instagram.com/feminahip"
         },
         "Youtube": {
-          "handle": "codeandconspire",
-          "href": "https://youtube.com/codeandconspire"
+          "text": "feminahip",
+          "href": "https://www.youtube.com/user/feminahip"
         }
-      }
+      },
+      "body": [
+        "Lydia Charles is Femina Hip's TV and radio presenter and leader of the Girl Power team. This team, which is made up of five young women from different backgrounds, was set up to champion girls’ issues and be role models for them.  The key issue they have championed is menstruation, with a special ‘#RedAgenda’ issue of Femina Hip’s well regarded, Fema magazine. This contains entertainment and educational messaging, mirrors young people's own stories and realities, and provides ideas for club activities and collective action.  It is distributed to more than 50% of Tanzania’s secondary schools and discussed in around 2,000 Fema Clubs (which foster skills such as teamwork, critical thinking, confidence, leadership and activism). Lydia and her team have conducted training in secondary schools in Dar es Salaam, using their own personal experience of menstruation as the starting point to have girls (and boys) open up about their own first experience of menstruation. This has led to Lydia and the Girl Power team setting up and conducting their own regular on-line forums simultaneously on Femina Hip’s Twitter, Facebook and Instagram accounts (#SautiYaNguvuYaBinti). The team lead the discussion, with support from guests with expertise in the matter discussed. Topics have included: how men can support girls during menstruation and how can a lack of knowledge about sexual and reproductive health prevent young people from fulfilling their dreams? Additionally, Lydia and her team ran popular workshops for students on the ‘Red Agenda’ as part of a national Gender Festival last year.",
+        "Resulting from this, Lydia is now on the organizing committee for Menstrual Hygiene Day on May 28th, along with UNICEF Tanzania, UNFPA, Plan International and Water Aid. The Girl Power team have dispelled myths about menstruation and brought this taboo subject out into the open."
+      ]
+    }, {
+      "value": "Amika George",
+      "image": "4bb9b5bc-d5c9-48a3-bac7-e03d85b551ff_amika+george.png",
+      "attributes": {
+        "Name": "Amika George",
+        "Campaign": "#FreePeriods",
+        "Country": "United Kingdom",
+        "Website": {
+          "text": "www.freeperiods.org",
+          "href": "www.freeperiods.org/press"
+        },
+        "Twitter": {
+          "text": "@AmikaGeorge",
+          "href": "twitter.com/AmikaGeorge"
+        }
+      },
+      "body": [
+        "Amika George is the 18-year-old founder of #FreePeriods. The aim is to make sure that no girl in the UK is living in period poverty. Amika founded the campaign when she discovered that many young women in the UK cannot afford sanitary products when on their period (a report published by the BBC in 2017 stated that 137,700 girls had missed school in the past year because they couldn’t afford to buy period products). The campaign asks that girls on free school meals be granted free sanitary products. It also acts to distigmatise the taboo around menstruation and calls upon big brands to do more.",
+        "In December 2017 the campaign co organised a protest at Downing street, which over 2000 people attended. Amika’s petition to provide girls from low income families with sanitary products quickly gathered signatures, 83,000 as of March  2018 (over 162,000 by May 2018) as well support from numerous MPs and celebrities. Later in March the government gave £1.5 million in funds to address UK period poverty.",
+        "The #FreePeriods campaign encourages involvement in the fight against period poverty via taking action and supporting partners."
+      ]
     }]
   }
 }

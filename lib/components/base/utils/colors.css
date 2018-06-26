@@ -12,6 +12,10 @@
 .u-bgGrayDark { background-color: var(--color-gray-dark) !important; }
 .u-colorGrayDark { color: var(--color-gray-dark) !important; }
 
+.u-colorProgress { color: var(--color-red) !important; }
+.u-colorChangemaker { color: var(--color-blue) !important; }
+.u-colorCampaign { color: var(--color-yellow) !important; }
+
 /**
  * Goals
  */

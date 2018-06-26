@@ -201,32 +201,43 @@ img.Text-image--right {
   margin-bottom: 0 !important;
 }
 
-.Text ul {
+.Text ul,
+.Text-list .Text-list--unordered {
   list-style-type: none;
 }
 
-.Text ol {
+.Text ol,
+.Text-list .Text-list--ordered {
   list-style-type: decimal;
   padding-left: 22px;
 }
 
-.Text ul li {
+.Text ul li,
+.Text-list--unordered li {
   padding-left: 23px;
   position: relative;
 }
 
-.Text ol li {
+.Text ol li,
+.Text-list--ordered li {
   padding-left: 8px;
 }
 
-.Text ul li::before {
+.Text ul li::before,
+.Text-list--unordered li::before {
   content: "–";
   position: absolute;
   left: 0;
 }
 
-.Text li + li {
+.Text li + li,
+.Text-list li + li {
   padding-top: 16px;
+}
+
+.Text-list.Text-list--bare {
+  padding: 0;
+  list-style: none;
 }
 
 .Text dt {

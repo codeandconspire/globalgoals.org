@@ -29,11 +29,25 @@
   }
 }
 
+.Button--lg {
+  font-size: 32px;
+  padding: 0 30px;
+  line-height: 64px;
+  height: 64px;
+}
+
 @media (--viewport-md) {
   .Button {
     height: 64px;
     line-height: 64px;
     padding: 0 30px;
+  }
+
+  .Button--lg {
+    font-size: 40px;
+    padding: 0 80px;
+    line-height: 75px;
+    height: 72px;
   }
 }
 
