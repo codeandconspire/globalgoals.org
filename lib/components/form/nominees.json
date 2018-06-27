@@ -15,16 +15,16 @@
         "Age": "30",
         "Country": "Kenya",
         "Website": {
-          "href": "www.solarfreeze.co.ke",
+          "href": "https://www.solarfreeze.co.ke",
           "text": "www.solarfreeze.co.ke"
         },
         "Facebook": {
           "text": "SolarFreeze.co.ke",
-          "href": "www.facebook.com/SolarFreeze.co.ke"
+          "href": "https://www.facebook.com/SolarFreeze.co.ke"
         },
         "Twitter": {
           "text": "@freeze_solar",
-          "href": "twitter.com/freeze_solar"
+          "href": "https://twitter.com/freeze_solar"
         }
       },
       "body": [
@@ -46,11 +46,11 @@
         },
         "Facebook": {
           "text": "LucyBot2017",
-          "href": "m.me/LucyBot2017"
+          "href": "https://m.me/LucyBot2017"
         },
         "Twitter": {
           "text": "@nick_oketch",
-          "href": "twitter.com/nick_oketch"
+          "href": "https://twitter.com/nick_oketch"
         }
       },
       "body": [
@@ -70,7 +70,7 @@
         },
         "Twitter": {
           "text": "@AburawiMD",
-          "href": "twitter.com/AburawiMD"
+          "href": "https://twitter.com/AburawiMD"
         }
       },
       "body": [
@@ -101,11 +101,11 @@
         },
         "Facebook": {
           "text": "feedingindia",
-          "href": "www.facebook.com/feedingindia"
+          "href": "https://www.facebook.com/feedingindia"
         },
         "Twitter": {
           "text": "@feedingindia",
-          "href": "twitter.com/feedingindia"
+          "href": "https://twitter.com/feedingindia"
         },
         "Instagram": {
           "text": "feedingindia",
@@ -113,7 +113,7 @@
         },
         "Youtube": {
           "text": "Feeding India",
-          "href": "www.youtube.com/channel/UCyVtJtPF20E4HlcXOvS-YyQ"
+          "href": "https://www.youtube.com/channel/UCyVtJtPF20E4HlcXOvS-YyQ"
         }
       },
       "body": [
@@ -160,11 +160,11 @@
         },
         "Facebook": {
           "text": "zurieloduwole",
-          "href": "www.facebook.com/zurieloduwole"
+          "href": "https://www.facebook.com/zurieloduwole"
         },
         "Twitter": {
           "text": "@zurieloduwole",
-          "href": "twitter.com/zurieloduwole"
+          "href": "https://twitter.com/zurieloduwole"
         },
         "Youtube": {
           "text": "afiamarie",
@@ -218,15 +218,15 @@
         },
         "Facebook": {
           "text": "FeminaHIP1999",
-          "href": "facebook.com/FeminaHIP1999"
+          "href": "https://facebook.com/FeminaHIP1999"
         },
         "Twitter": {
           "text": "@FeminaHIP",
-          "href": "twitter.com/FeminaHIP"
+          "href": "https://twitter.com/FeminaHIP"
         },
         "Instagram": {
           "text": "feminahip",
-          "href": "www.instagram.com/feminahip"
+          "href": "https://www.instagram.com/feminahip"
         },
         "Youtube": {
           "text": "feminahip",
@@ -246,11 +246,11 @@
         "Country": "United Kingdom",
         "Website": {
           "text": "www.freeperiods.org",
-          "href": "www.freeperiods.org/press"
+          "href": "https://www.freeperiods.org/press"
         },
         "Twitter": {
           "text": "@AmikaGeorge",
-          "href": "twitter.com/AmikaGeorge"
+          "href": "https://twitter.com/AmikaGeorge"
         }
       },
       "body": [
