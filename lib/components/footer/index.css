@@ -110,10 +110,6 @@
   color: var(--color-gray-alpha);
 }
 
-/**
- * TODO: Temporarily hidden
- */
-
 .Footer-column--credits {
   position: absolute;
   height: 0;
