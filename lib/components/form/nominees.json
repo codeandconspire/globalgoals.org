@@ -156,10 +156,10 @@
       "attributes": {
         "Name": "Nadia Murad",
         "Organisation": "Nadia’s Initiative",
-        "Age": "25",
+        "Age": "24",
         "Country": "Iraq",
         "website": {
-          "href": "https://www.feedingindia.org",
+          "href": "https://nadiasinitiative.org",
           "text": "nadiasinitiative.org"
         },
         "Facebook": {
@@ -304,7 +304,7 @@
         "Country": "United Kingdom",
         "Website": {
           "text": "www.freeperiods.org",
-          "href": "https://www.freeperiods.org/press"
+          "href": "https://www.freeperiods.org/"
         },
         "Twitter": {
           "text": "@AmikaGeorge",
