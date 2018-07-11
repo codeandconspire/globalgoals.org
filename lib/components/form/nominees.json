@@ -15,7 +15,7 @@
         "Age": "30",
         "Country": "Kenya",
         "Website": {
-          "href": "https://www.solarfreeze.co.ke",
+          "href": "http://www.solarfreeze.co.ke/",
           "text": "www.solarfreeze.co.ke"
         },
         "Facebook": {
@@ -318,26 +318,23 @@
         "In December 2017 #FreePeriods co organised a demonstation at Downing street, which over 2000 people attended. Amika’s petition to provide girls from low income families with sanitary products quickly gathered signatures, 83,000 as of March  2018 (over 162,000 by May 2018) as well support from numerous MPs and celebrities. Later in March the government gave £1.5 million in funds to address UK period poverty."
       ]
     }, {
-      "value": "Emma Gonzalez",
-      "image": "never-again_Sy5eLsiM7.jpg",
+      "value": "Engajamundo",
+      "image": "peeps_HJ2bht7Qm.jpg",
       "attributes": {
-        "Name": "Emma Gonzalez & Marjory Stoneman Douglas High School Student Founders",
-        "Campaign": "Never Again MSD",
-        "Age": "17/18",
-        "Country": "USA",
-        "Facebook": {
-          "text": "NeverAgainMSD",
-          "href": "https://www.facebook.com/NeverAgainMSD/"
+        "Country": "Brazil",
+        "Website": {
+          "text": "www.engajamundo.org",
+          "href": "http://www.engajamundo.org/falae-as-vozes-da-agua/"
         },
-        "Twitter": {
-          "text": "@Emma4Change",
-          "href": "https://twitter.com/Emma4Change"
+        "Youtube": {
+          "text": "View video",
+          "href": "https://www.youtube.com/watch?v=3eR0EeCDA1Q"
         }
       },
       "body": [
-        "On February 14th  2018, a mass shooting took place at Stoneman Douglas High School in Parkland Florida. In the days that followed 20 student survivors formed  Never Again MSD, a movement advocating for gun control and safer school environments, mobilising young Americans to have their voices heard.",
-        "On March  24th 2018, one month after the Parkland shooting, thousands of students across the US took part in March for Our Lives, a nationwide demonstration organised by Never Again MSD. It was one of the largest demonstrations in American history. 5 months on, the Never Again team’s work continues, leveraging their position as peer leaders, and utilising their presence across media platforms to educate and inspire young people to push for a more peaceful future.",
-        "In the wake of the shooting and the weeks that followed, Emma Gonzalez gained national and global attention for her interviews and speeches. She gave an impassioned 11 minute speech in Fort Lauderdale Florida two days after the Parkland shooting.  During March for our Lives, she appeared on stage in front of tens of thousands of demonstrators for six minutes, the same duration as the shooting spree in her college. She continues to use traditional and social media platforms to draw attention to the cause, pushing for more effective gun control policies and educating and advocating against gun violence to save lives. She also uses her position to support and promote the work of other young leaders and changemakers across the country and beyond."
+        "Engajamundo is a Youth Power Partner based in Brazil. It is a Brazilian youth-led NGO working to fulfil Global Goal 6 in their country through the  “FALA AÊ! - As Vozes da Água” (Speak! - The Voices of Water) campaign focusing on SDG 6 to bring youth to the political discussions on water management systems.",
+        "The campaign was created with a two-fold strategy: raising awareness of water management systems whilst providing young people with the knowledge and abilities for effective participation in water governance political spaces. Young people are at the heart of delivery and act as key players in water management and policy making. They work with 20 volunteers throughout the five regions of Brazil partnering with CIVICUS, National Water Alliance (Aliança pela Água), SOS Mata Atlântica and Engineers Without Borders. With Engajamundo’s expertise in youth mobilization and advocacy, FALA AÊ! has proven to be successful in different fields. Since its launch, in September 2017, approximately 2000 people have been reached with activism and workshops in 11 different cities. A campaign video (currently with 16 thousand views) was also produced, gathering statements from people all over Brazil and revealing the struggles of fighting for water security.",
+        "After focusing on an advocacy plan designed to influence decision-makers during the 8th World Water Forum, the campaign is currently turning its attention to youth-led accountability on water policies and the importance of implementing a municipal water security plan that ensures sustainable management of water to prevent future water crisis. While a pilot document is underway in São Paulo city hall, volunteers are carrying out capacity building activities to continue raising awareness and mobilizing young people on water issues across the country."
       ]
     }]
   }
