@@ -10,12 +10,6 @@
   max-width: 39em;
 }
 
-.Text::before,
-.Text::after {
-  content: " ";
-  display: table;
-}
-
 .Text::after {
   clear: both;
 }
