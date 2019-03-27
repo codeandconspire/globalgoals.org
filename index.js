@@ -33,23 +33,6 @@ if (process.env.NODE_ENV === 'development') {
 
 if (process.env.NODE_ENV !== 'development') {
   server.use(helmet())
-  const { AUTH_NAME, AUTH_PASS } = process.env
-  if (AUTH_NAME && AUTH_PASS) {
-    server.use(async (ctx, next) => {
-      try {
-        await next()
-      } catch (err) {
-        if (err.status === 401) {
-          ctx.status = 401
-          ctx.set('WWW-Authenticate', 'Basic')
-          ctx.body = 'cant haz that'
-        } else {
-          throw err
-        }
-      }
-    })
-    server.use(auth({name: AUTH_NAME, pass: AUTH_PASS}))
-  }
 }
 
 /**
@@ -83,6 +66,30 @@ server.use(noTrailingSlash())
 
 server.use(assets)
 server.use(serve('public', { maxage: 1000 * 60 * 60 * 24 * 365 }))
+
+/**
+ * Apply optional authentication for HTML requests
+ */
+
+if (process.env.NODE_ENV !== 'development') {
+  const { AUTH_NAME, AUTH_PASS } = process.env
+  if (AUTH_NAME && AUTH_PASS) {
+    server.use(async (ctx, next) => {
+      try {
+        await next()
+      } catch (err) {
+        if (err.status === 401) {
+          ctx.status = 401
+          ctx.set('WWW-Authenticate', 'Basic')
+          ctx.body = 'cant haz that'
+        } else {
+          throw err
+        }
+      }
+    })
+    server.use(auth({name: AUTH_NAME, pass: AUTH_PASS}))
+  }
+}
 
 /**
  * Add on Universal Analytics for server process tracking
