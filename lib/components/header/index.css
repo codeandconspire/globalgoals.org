@@ -19,7 +19,7 @@
 
 .Header {
   height: var(--Header-height);
-  contain: size layout style;
+  contain: size style;
   position: relative;
   z-index: 10;
 }
