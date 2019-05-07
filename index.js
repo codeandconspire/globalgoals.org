@@ -60,7 +60,9 @@ server.use(noTrailingSlash())
  */
 
 server.use(assets)
-server.use(serve('public', { maxage: 1000 * 60 * 60 * 24 * 365 }))
+if (process.env.NODE_ENV !== 'development') {
+  server.use(serve('public', { maxage: 1000 * 60 * 60 * 24 * 365 }))
+}
 
 /**
  * Add on Universal Analytics for server process tracking
