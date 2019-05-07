@@ -4,6 +4,7 @@ const serve = require('koa-static')
 const helmet = require('koa-helmet')
 const noTrailingSlash = require('koa-no-trailing-slash')
 const app = require('./lib/app')
+const purge = require('./lib/purge')
 const router = require('./lib/router')
 const api = require('./lib/middleware/api')
 const cache = require('./lib/middleware/cache')
@@ -104,6 +105,21 @@ server.use(router)
  * Lift off
  */
 
-server.listen(process.env.PORT, () => {
-  console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
-})
+if (process.env.NODE_ENV === 'development') {
+  start()
+} else {
+  purge(['/service-worker.js'], (err) => {
+    if (err) {
+      console.error(err)
+      process.exit(1)
+    } else {
+      start()
+    }
+  })
+}
+
+function start () {
+  server.listen(process.env.PORT, () => {
+    console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
+  })
+}
