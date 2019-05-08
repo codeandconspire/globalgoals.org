@@ -26,7 +26,7 @@
     "url": "git+https://github.com/codeandconspire/globalgoals.org.git"
   },
   "author": "code and conspire",
-  "license": "CC-BY",
+  "license": "CC-BY-SA-4.0",
   "bugs": {
     "url": "https://github.com/codeandconspire/globalgoals.org/issues"
   },
@@ -69,7 +69,7 @@
     "normalize.css": "^7.0.0",
     "on-idle": "^3.1.4",
     "postcss-clean": "^1.1.0",
-    "postcss-cli": "^4.1.1",
+    "postcss-cli": "^6.1.2",
     "postcss-color-function": "^4.0.1",
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^6.2.0",
