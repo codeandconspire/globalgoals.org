@@ -108,7 +108,11 @@ server.use(router)
 if (process.env.NODE_ENV === 'development') {
   start()
 } else {
-  purge(['/service-worker.js'], (err) => {
+  const urls = ['/service-worker.js']
+  for (let i = 1; i <= process.env.GLOBALGOALS_NUMBER_OF_GRID_LAYOUT; i++) {
+    urls.push(`/?layout=${i}`)
+  }
+  purge(urls, (err) => {
     if (err) {
       console.error(err)
       process.exit(1)
