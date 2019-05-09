@@ -105,25 +105,11 @@ server.use(router)
  * Lift off
  */
 
-if (process.env.NODE_ENV === 'development') {
-  start()
-} else {
-  const urls = ['/service-worker.js']
-  for (let i = 1; i <= process.env.GLOBALGOALS_NUMBER_OF_GRID_LAYOUT; i++) {
-    urls.push(`/?layout=${i}`)
+server.listen(process.env.PORT, () => {
+  console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
+  if (process.env.NOW && process.env.NODE_ENV !== 'development') {
+    purge(['/service-worker.js'], (err) => {
+      if (err) console.error(err)
+    })
   }
-  purge(urls, (err) => {
-    if (err) {
-      console.error(err)
-      process.exit(1)
-    } else {
-      start()
-    }
-  })
-}
-
-function start () {
-  server.listen(process.env.PORT, () => {
-    console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
-  })
-}
+})
