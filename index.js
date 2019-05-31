@@ -1,10 +1,11 @@
 const Koa = require('koa')
-const body = require('koa-body')
 const serve = require('koa-static')
 const helmet = require('koa-helmet')
 const auth = require('koa-basic-auth')
 const noTrailingSlash = require('koa-no-trailing-slash')
 const app = require('./lib/app')
+const purge = require('./lib/purge')
+const router = require('./lib/router')
 const api = require('./lib/middleware/api')
 const cache = require('./lib/middleware/cache')
 const assets = require('./lib/middleware/assets')
@@ -42,12 +43,6 @@ if (process.env.NODE_ENV !== 'development') {
 server.use(require('./lib/middleware/robots'))
 
 /**
- * Parse request body
- */
-
-server.use(body({multipart: true}))
-
-/**
  * Capture special routes before any other middleware
  */
 
@@ -65,7 +60,9 @@ server.use(noTrailingSlash())
  */
 
 server.use(assets)
-server.use(serve('public', { maxage: 1000 * 60 * 60 * 24 * 365 }))
+if (process.env.NODE_ENV !== 'development') {
+  server.use(serve('public', { maxage: 1000 * 60 * 60 * 24 * 365 }))
+}
 
 /**
  * Apply optional authentication for HTML requests
@@ -115,4 +112,9 @@ server.use(render(app))
 
 server.listen(process.env.PORT, () => {
   console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
+  if (process.env.NOW && process.env.NODE_ENV !== 'development') {
+    purge(['/service-worker.js'], (err) => {
+      if (err) console.error(err)
+    })
+  }
 })

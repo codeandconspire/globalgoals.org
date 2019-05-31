@@ -110,14 +110,6 @@
   color: var(--color-gray-alpha);
 }
 
-.Footer-column--credits {
-  position: absolute;
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 /**
  * 1. Compensate browser inconsistencies in pixel rounding
  */
