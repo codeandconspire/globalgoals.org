@@ -1,246 +1,7 @@
 {
-  "progress": {
-    "title": "Progress Award",
-    "button": {
-      "text": "Place vote and continue"
-    },
-    "comment": "entry.879636731",
-    "id": "entry.298026157",
-    "choices": [{
-      "value": "Dysmus Kisilu",
-      "image": "6400c094-e580-41c6-ba13-540f7559557d_dysmus+kisilu.png",
-      "attributes": {
-        "Name": "Dysmus Kisilu",
-        "Organisation": "Solar Freeze",
-        "Age": "30",
-        "Country": "Kenya",
-        "Website": {
-          "href": "http://www.solarfreeze.co.ke/",
-          "text": "www.solarfreeze.co.ke"
-        },
-        "Facebook": {
-          "text": "SolarFreeze.co.ke",
-          "href": "https://www.facebook.com/SolarFreeze.co.ke"
-        },
-        "Twitter": {
-          "text": "@freeze_solar",
-          "href": "https://twitter.com/freeze_solar"
-        }
-      },
-      "body": [
-        "Dysmus Kisilu is the founder of Solar Freeze, a company that specializes in providing renewable energy solutions (solar powered irrigation kits and solar powered cold storage units) to smallholder farmers in Kenya to increase agricultural productivity. To date, Dysmus has worked with 3,000 smallholder women farmers in Eastern Kenya to increase agricultural yields by more than 150 per cent from 2016.",
-        "Dysmus is also the founder of ‘Each one, teach one- Train and Earn’ an initiative within Solar Freeze that aims to impact the next generation of renewable energy agricultural leaders in Africa. It does this by mentoring young people aged 18-29 in the operation, maintenance and repair of renewable energy solutions specifically for agriculture. As a result, this skills-transfer program has enabled 100 young people to learn and earn an income.",
-        "Dysmus has received training in Renewable Energy from the University of California, Davis in the USA through to the Mandela Washington Fellowship for Young African Leaders. In addition to this, Dysmus has been recognized for his work in renewable energy and smallholder agriculture by the United Nations through the UNLEASH Young Leaders Program- identifying disruptive youth-led solutions to achieve the SDG’s. He is a 2016 USAID / USADF Grant winner, a 2017 Global Citizen Waislitz Award Finalist, a 2017 United Nations UNLEASH winner for young leader in SDG 2, a 2017 International Youth Foundation Fellow for Renewable Energy & Agriculture and a 2018 Echoing Green Finalist (Climate and Agriculture)"
-      ]
-    }, {
-      "value": "Nick Oketch",
-      "image": "64a42f97-8127-4940-8bc7-98e7dbf41fe4_nick+oketch.png",
-      "attributes": {
-        "Name": "Nick Oketch",
-        "Organisation": "LucyBot",
-        "Age": "29",
-        "Country": "Kenya",
-        "Website": {
-          "href": "https://medium.com/unleash-lab/nick-oketch-is-an-award-winning-young-social-entrepreneur-with-over-4-years-experience-of-working-e0245c188ab7",
-          "text": "Nick Oketch"
-        },
-        "Facebook": {
-          "text": "LucyBot2017",
-          "href": "https://m.me/LucyBot2017"
-        },
-        "Twitter": {
-          "text": "@nick_oketch",
-          "href": "https://twitter.com/nick_oketch"
-        }
-      },
-      "body": [
-        "Nick Oketch developed a Facebook messenger platform called LucyBot. LucyBot is built on an artificial intelligence system that is fed with verified information on sexual and reproductive health and relays the information to its users through conversations that are driven by instant text or voice chats. The solution helps relieve awkwardness surrounding discussions and discourse around SRH, particularly in the conservative African setting. LucyBot seeks to meet the needs of young people to understand and learn about their sexuality by giving them the opportunity to ask private, sex-related questions. It then provides real-time answers with information from a reliable source. Since its inception 8 months ago, over 1,000 young people have engaged the Bot and received information."
-      ]
-    }, {
-      "value": "Mohamed Aburawi",
-      "image": "c3ee05f6-b4ed-4093-86ba-9c43a62ae601_mohamed+aburawi.png",
-      "attributes": {
-        "Name": "Mohamed Aburawi",
-        "Occupation": "Doctor",
-        "Age": "30",
-        "Country": "Libya",
-        "Website": {
-          "href": "http://speetar.com",
-          "text": "speetar.com"
-        },
-        "Twitter": {
-          "text": "@AburawiMD",
-          "href": "https://twitter.com/AburawiMD"
-        }
-      },
-      "body": [
-        "Mohamed Aburawi is a medical doctor, consultant and postdoc research fellow at the Harvard Medical School Department of Surgery. He is the founder of the Harvard awarded and MIT Sandbox supported telemedicine platform, Speetar, which links under-served patients in post-conflict countries to culturally and language-matched specialists. Dr. Aburawi is also responsible for developing the strategy and vision for a novel discarded human kidney reconditioning system (the first in USA).  The work he is leading at Massachusetts General Hospital is paving the way for a ground-breaking multi-centre clinical trial supported by the New England Organ Bank.",
-        "He has first-authored 3 scientific papers, co-authored 5 manuscripts, and received national and international recognition for his clinical research work. At the age of 23, Dr. Aburawi founded a leading medical organization in Libya, which created an innovative electronic blood donation system amid conflict, saving lives and leading to multiple awards including the Ministry of Municipal Affairs Award for Community Service. Mohamed is passionate about disrupting traditional healthcare industries and unlocking the potential of digital technology on a global scale."
-      ]
-    }, {
-      "value": "Foster Awintiti Akugri",
-      "image": "Foster-Awintiti-Akugri_Hy9x8jizQ.jpg",
-      "attributes": {
-        "Name": "Foster Awintiti Akugri",
-        "Organisation": "HACKLAB Ghana",
-        "Age": "23",
-        "Country": "Ghana",
-        "Facebook": {
-          "href": "https://www.facebook.com/hacklabgh",
-          "text": "hacklabgh"
-        },
-        "Twitter": {
-          "text": "@hacklabgh",
-          "href": "https://twitter.com/hacklabgh"
-        },
-        "Instagram": {
-          "text": "@hacklabgh",
-          "href": "https://instagram.com/hacklabgh"
-        }
-      },
-      "body": [
-        "Foster is the co-founder and curator of HACKLAB Ghana.",
-        "HACKLAB Foundation is a not-for-profit organization, established in Ghana in September 2015. It focuses on preparing young people for future jobs, by helping them develop their skills, connecting them to industry and breeding entrepreneurs who will then create jobs for others.",
-        "HACKLAB is built on the belief that all young people should have equal opportunity to become whoever they want to be and for this they should also have platforms on which to compete equally in the business community.",
-        "The Foundation is known for its Annual Hackathon/ Technology Conference which brings together developers, engineers, designers, entrepreneurs and other stakeholders in Technology to meet and discuss issues, identify opportunities and consult on the way forward in making Ghana better at using technology. With over 200 people under one umbrella, they compete and develop industry standard solutions to address local problems in 36 hours.",
-        "HACKLAB Junior, launched in 2017, aims to introduce business skills at an even earlier age. Designed for children aged between 7-13 years, it builds an interest in information technology in children in their formative years via a fun, simplified yet comprehensive curriculum delivered by experts.",
-        "Foster was the youngest participant at Davos in 2018."
-      ]
-    }]
-  },
-  "changemaker": {
-    "title": "Changemaker Award",
-    "button": {
-      "color": "blue",
-      "text": "Place vote and continue"
-    },
-    "comment": "entry.1470366669",
-    "id": "entry.1311314296",
-    "choices": [{
-      "value": "Srishti Jain",
-      "image": "855688df-028c-4439-9ea2-9add0b0ee796_srishti+jain.png",
-      "attributes": {
-        "Name": "Srishti Jain",
-        "Organisation": "Feeding India",
-        "Age": "25",
-        "Country": "India",
-        "Website": {
-          "href": "https://www.feedingindia.org",
-          "text": "www.feedingindia.org"
-        },
-        "Facebook": {
-          "text": "feedingindia",
-          "href": "https://www.facebook.com/feedingindia"
-        },
-        "Twitter": {
-          "text": "@feedingindia",
-          "href": "https://twitter.com/feedingindia"
-        },
-        "Instagram": {
-          "text": "feedingindia",
-          "href": "https://www.instagram.com/feedingindia"
-        },
-        "Youtube": {
-          "text": "Feeding India",
-          "href": "https://www.youtube.com/channel/UCyVtJtPF20E4HlcXOvS-YyQ"
-        }
-      },
-      "body": [
-        "“At the age of 21, I co-founded Feeding India, India's first ever and now largest youth-run organisation fighting hunger, malnutrition and food wastage. Over the last 4 years, I spearheaded the national-expansion to grow from 2 to 8500+ volunteers across 60+ cities in India, serving 15 million meals to target beneficiaries including children, women and the elderly. The organization is now supported by the Queen’s Commonwealth Trust (Presided by HM Prince Harry), United Nations World Food Program and recognized by the Prime Minister of India, Narendra Modi. I have been able to positively influence not only the youth of the country, but also the changemakers and policy leaders on a national and international level.",
-        "There was little or no awareness around using excess food to donate to the needy in India. During that darkest hour, I turned towards the powerhouse of our country - the youth. I started gathering volunteers and friends from my network to donate food on an individual level. At the same time, I involved influencers from the food industry such as celebrities, Michelin-star chefs and TV hosts to raise awareness about the cause.",
-        "Feeding India is seen as a best-case example of involving youth to achieve #ZeroHunger in India. We were recognized by the United Nations WFP and started working with their team in India to build awareness about SDG 2 and implement projects on the ground. Feeding India became the first ever project to be supported by the Queen of England Commonwealth Trust in India and was recognized by the Queen of England at Buckingham Palace in June 2017. I was awarded the 'Young Entrepreneur of the Year 2016' by the Government of India and recognized by Prime Minister Modi on National Youth Day in January 2018.”"
-      ]
-    }, {
-      "value": "Nadia Murad",
-      "image": "f3c0ce78-2b16-48bb-8ef6-376178d05522_nadia+murad.png",
-      "attributes": {
-        "Name": "Nadia Murad",
-        "Organisation": "Nadia’s Initiative",
-        "Age": "24",
-        "Country": "Iraq",
-        "website": {
-          "href": "https://nadiasinitiative.org",
-          "text": "nadiasinitiative.org"
-        },
-        "Facebook": {
-          "text": "NadiaMuradBasee",
-          "href": "https://www.facebook.com/NadiaMuradBasee"
-        },
-        "Twitter": {
-          "text": "@NadiaMuradBasee",
-          "href": "https://twitter.com/NadiaMuradBasee"
-        }
-      },
-      "body": [
-        "In 2014, aged 19, Nadia was among thousands of Yazidi women who were abducted and enslaved by the self-proclaimed Islamic State (ISIS). She spent approximately one month in captivity. Nadia suffered the loss of six of her nine brothers who were slaughtered by ISIS in the Kocho massacre. Thousands of Yazidi men and older Yazidi women were murdered including Nadia's mother.",
-        "Since escaping, Nadia has dedicated herself to assisting other Yazidis, particularly young women, who have similarly suffered. She has repeatedly shared her story of persecution including details of her enslavement and sexual assault, to raise awareness, demand justice and seek assistance. She is a nominee for the Nobel Peace Prize, the recipient of the Vaclav Havel Human Rights Prize, the Sakharov Prize, and the UN's first Goodwill Ambassador for the Dignity of Survivors of Human Trafficking. She also received the Clinton Global Citizen Award and the Peace Prize from the United Nations Association of Spain. She has published a New York Times Bestselling memoir titled ‘The Last Girl’ in multiple languages in order to share her story and advocate for other survivors, including those still in captivity. The feature documentary ‘On Her Shoulders’ follows Nadia as she repeatedly recounts her story on platforms from radio shows to the floor of the UN to speak out on behalf of the Yazidi community. The documentary made it’s premiere in the US documentary competition at the 2018 Sundance Film Festival.",
-        "Nadia’s Initiative, launched in 2016, is aimed at increasing advocacy for women and minorities and assisting to stabilize and redevelop communities in crisis. Long term ambitions for the initiative include the facilitation of holistic approaches to healing traumatized victims of mass atrocities, by developing and supporting field programs in the areas of healthcare, psychosocial support and education for women and children."
-      ]
-    }, {
-      "value": "Zuriel Oduwole",
-      "image": "0c0cc72c-013b-40b6-ae77-5cc12df7b273_zuriel+oduwole.png",
-      "attributes": {
-        "Name": "Zuriel Oduwole",
-        "Age": "16",
-        "Country": "USA/ Nigeria",
-        "Website": {
-          "href": "https://www.zurieloduwole.com/",
-          "text": "www.zurieloduwole.com"
-        },
-        "Facebook": {
-          "text": "zurieloduwole",
-          "href": "https://www.facebook.com/zurieloduwole"
-        },
-        "Twitter": {
-          "text": "@zurieloduwole",
-          "href": "https://twitter.com/zurieloduwole"
-        },
-        "Youtube": {
-          "text": "afiamarie",
-          "href": "https://www.youtube.com/user/afiamarie"
-        }
-      },
-      "body": [
-        "Zuriel Oduwole is a girl education advocate and film maker. She shares her film making skills with girls across the world to empower and educate and uses her influence with leaders to advocate for change. Her advocacy made her the youngest person to be profiled by Forbes (aged 10 in 2013). She focuses on progress towards 2 Sustainable Development Goals- Gender Equality and Quality Education.",
-        "She made her first short documentary at the age of 9 and her first full feature docu-film at the age of 12- it was shown in 2 cinema chains, and screened in South Africa, United Kingdom, Ghana, Nigeria and Japan.",
-        "Zuriel has met 27 presidents and prime ministers around her education advocacy work, including the leaders of Nigeria, Kenya, Tanzania, Malawi, Liberia, South Sudan, Guyana and Namibia.",
-        "Zuriel speaks to youths both in and out of school about the importance of education, showing herself as an example of what an Educated Girl can do. She has spoken to more than 25,000 in 14 countries including Ethiopia, South Africa, Tanzania, Nigeria, UK and USA.",
-        "Zuriel has been running film sessions since 2016 in countries including Liberia, Kenya, Mauritius, Ghana, Cote d’Ivoire, and Namibia. She believes education is not only what can be taught in schools, and that via film making girls are given an opportunity to tell their stories and the stories of others. Around her work she talks to parents about affordable ways they can send their girls to school.",
-        "Zuriel has met with the Prime Ministers of Samoa, Jamaica, Vanuatu, Tuvalu, Fiji and the President of Marshall Islands, to learn more about the effects of climate change on education development. She delivered a keynote speech at COP23 on the direct and human geography effect of Climate Change on Education, in Island countries."
-      ]
-    }, {
-      "value": "Natalie Robi Tingo",
-      "image": "natalie-robi-tingo_B1ilUoizQ.jpg",
-      "attributes": {
-        "Name": "Natalie Robi Tingo",
-        "Organisation": "Msichana Empowerment Kuria",
-        "Age": "26",
-        "Country": "Kenya",
-        "Website": {
-          "href": "http://www.msichanaempowermentkuria.co.ke",
-          "text": "www.msichanaempowermentkuria.co.ke"
-        },
-        "Facebook": {
-          "text": "msichanakuria",
-          "href": "https://facebook.com/msichanakuria"
-        },
-        "Twitter": {
-          "text": "@MsichanaKuria",
-          "href": "https://twitter.com/MsichanaKuria"
-        },
-        "Instagram": {
-          "text": "msichana_ke",
-          "href": "https://www.instagram.com/msichana_ke"
-        }
-      },
-      "body": [
-        "Natalie Robi Tingo is a Youth Power Accountability Advocate from Kenya working towards the fulfilment of Global Goal 5 target 3, using awareness and youth led accountability. A survivor of violence herself, she is influenced by her own experiences growing up in a community where 8 in 10 girls wake up to the reality of having their genitalia cut off and being married as children. She founded Msichana Empowerment Kuria to give young girls and women a voice and to end Female Genital Mutilation and all other forms of violence against women and girls. She has facilitated village dialogues on ending the cut, leveraged innovation to build sustainable models and initiatives and demystified myths and misconceptions on FGM as a social norm.",
-        "She is committed to ending FGM and other harmful cultural practices and supporting access to fundamental human rights for girls and young women through numerous local, social and educational initiatives in Southern Kenya. Working with other young people, Msichana Empowerment Kuria has reached over 30,000 community members, introduced safe spaces  for women and girls to conduct community-led advocacy and structured community dialogues. She has established 10 networks (all led by male ambassadors), breaking traditional gender roles in her community with over 600 young men calling for an end to female genital mutilation. They also initiated an after school program, using the Children’s Rights Based literacy \"storytelling program\" for children aged  8 to 14 years. This is aimed at developing children's knowledge, life skills and talents- promoting literacy, access to rights and establishing a safe space for girls and children at an early age."
-      ]
-    }]
-  },
   "campaign": {
     "title": "Campaign Award",
+    "theme": 10,
     "button": {
       "color": "yellow",
       "text": "Place vote and continue"
@@ -248,93 +9,215 @@
     "comment": "entry.486816405",
     "id": "entry.1971526978",
     "choices": [{
-      "value": "RED J+MEX",
-      "title": "Red Mexicana de Adolescentes y Jóvenes Positivos, RedJ+",
-      "image": "9fa6d622-c9bb-4b55-8986-d99236f54fc8_red+j%2Bmex.png",
+      "value": "Aya Chebbe",
+      "image": "1eedebcc-e159-4b03-b308-5d58bb8f1798_aya-chebbi.jpg",
       "attributes": {
-        "Campaign": "RED J+MEX",
-        "Country": "Mexico",
-        "Facebook": {
-          "text": "Jovenesvihmex",
-          "href": "https://www.facebook.com/Jovenesvihmex"
-        }
+        "Name": "Aya Chebbe",
+        "Age": "28",
+        "Location": "Tunisia",
+        "Nominating partner": "Mandela Institute"
       },
       "body": [
-        "Founded six years ago by young activists living with HIV, RedJ+ is a network of people between 12 and 29 years old from all over the country - the majority of them a part of a key population such as LGBT people, sex workers, and drug users. The aim of the network is to promote active youth participation in the design, implementation, and monitoring of HIV and SRHR policies and programs that will contribute to an AIDS-free generation and a society free of stigma and discrimination.",
-        "RedJ+ is one of the active members of the ACT 2030 initiative which advocates for the proper implementation of the SDGs in Mexico, in collaboration with the federal government, civil society organizations, and academia. They are also part of the Latin American Network of Positive Youth (Jovenes Positivos LAC) with whom they share a common agenda in the fight for the right to health, the unfinished agenda of MDG 6, and the development of vaccines and a cure for HIV. RedJ+ trains and mobilizes young people to become peer supporters, human rights defenders, and advocates for the implementation of the international commitments made by the Mexican Government in relation to the 2030 Agenda."
+        "Aya is the founder of the Afrika Youth Movement (AYM) which is a pan-African, action-oriented, youth-led movement that strives for the participation, development and leadership of African youth to transform Africa and achieve their rights to peace, equality and social justice. Through their work they promote the values that binds the continent; ubuntu, unity, self-determination, integrity and accountability, to create a continent that respects the rights of all its citizens.",
+        "Aya has traveled to some 30 African countries, supporting and working with thousands of women groups, artists and activists on youth empowerment projects and has trained them in mobilisation, blogging, leadership and non-violence.",
+        "In March 2017 in Kenya, Aya organized the Premier AYM Retreat which brought together an African network of members, organisations and young leaders to set the direction for the  movement’s engagement at the grassroots, national, regional and international levels.",
+        "Aya also organized the Afrika Youth Empowerment Forum on the SDGs and the African Union Agenda 2063 providing a platform for youth to get their voices heard on international processes. She mobilized 70 young changemakers from 19 countries in Africa and the diaspora, many of whom represent grassroots initiatives, to participate in creating a new model of youth forums to engage with the United Nations and the African Union.",
+        "Aya ensured participation from South Africa, Democratic Republic of Congo, Burundi, Ghana, Tunisia and Tanzania among others with no external funding, mainly by maximizing strategic partnerships, members’ mobilization through their organizations and communities."
       ]
     }, {
-      "value": "Lydia Charles",
-      "image": "72c83dfc-c1c4-4d61-b769-a3bbfe8bfcbd_campaign+femina+hip2.png",
+      "value": "Jamie Margolin",
+      "image": "60ba3108-ec9c-4c27-b5bc-c9deaf11eb55_jamie+margolin.jpg",
       "attributes": {
-        "Name": "Lydia Charles",
-        "Campaign": "Femina Hip",
-        "Country": "Tanzania",
-        "Website": {
-          "text": "www.feminahip.or.tz",
-          "href": "http://www.feminahip.or.tz/whats-up/news/the-2017-fema-girl-power-team-and-the-red-agenda/?tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=e89936ea9d22ce85ff6fea14d919b228"
-        },
-        "Facebook": {
-          "text": "FeminaHIP1999",
-          "href": "https://facebook.com/FeminaHIP1999"
-        },
-        "Twitter": {
-          "text": "@FeminaHIP",
-          "href": "https://twitter.com/FeminaHIP"
-        },
-        "Instagram": {
-          "text": "feminahip",
-          "href": "https://www.instagram.com/feminahip"
-        },
-        "Youtube": {
-          "text": "feminahip",
-          "href": "https://www.youtube.com/user/feminahip"
-        }
+        "Name": "Jamie Margolin",
+        "Age": "26",
+        "Location": "US",
+        "Nominating Partner": "Project Everyone"
       },
       "body": [
-        "Lydia Charles is Femina Hip's TV and radio presenter and leader of the Girl Power team. This team, which is made up of five young women from different backgrounds, was set up to champion girls’ issues and be role models for them.  The key issue they have championed is menstruation, with a special ‘#RedAgenda’ issue of Femina Hip’s well regarded, Fema magazine. This contains entertainment and educational messaging, mirrors young people's own stories and realities, and provides ideas for club activities and collective action.  It is distributed to more than 50% of Tanzania’s secondary schools and discussed in around 2,000 Fema Clubs (which foster skills such as teamwork, critical thinking, confidence, leadership and activism). Lydia and her team have conducted training in secondary schools in Dar es Salaam, using their own personal experience of menstruation as the starting point to have girls (and boys) open up about their own first experience of menstruation. This has led to Lydia and the Girl Power team setting up and conducting their own regular on-line forums simultaneously on Femina Hip’s Twitter, Facebook and Instagram accounts (#SautiYaNguvuYaBinti). The team lead the discussion, with support from guests with expertise in the matter discussed. Topics have included: how men can support girls during menstruation and how can a lack of knowledge about sexual and reproductive health prevent young people from fulfilling their dreams? Additionally, Lydia and her team ran popular workshops for students on the ‘Red Agenda’ as part of a national Gender Festival last year.",
-        "Resulting from this, Lydia is now on the organizing committee for Menstrual Hygiene Day on May 28th, along with UNICEF Tanzania, UNFPA, Plan International and Water Aid. The Girl Power team have dispelled myths about menstruation and brought this taboo subject out into the open."
+        "16-year-old Jamie Margolin founded Zero Hour – a movement she started after feeling frustrated by the inaction of elected officials and the fact that youth voices were almost always ignored in the conversation around climate change and the profound impact that it would have on young people.",
+        "In a country where its government seems in denial that climate change is an issue at all, Jamie has established a network of hundreds activists to make the government understand that this is zero hour.",
+        "But its not just about shouting at government. She recognises that young people and the communities on the ground have the power to make real change themselves. By establishing a network of youth leaders and adult mentors amongst communities and young people from a wide range of backgrounds, under the Zero Hour umbrella, she works to empower them to make the change to secure their, and the planet’s future.",
+        "While climate change is a phenomenon that will impact all of us —if it has not already—they believe that the impact of the climate crisis is profoundly unequal, but that those closest to the problem are also often closest to the solution. So, Zero Hour have been actively working to create just solutions and transitions and their goal is to center the unique wisdom, experience, and leadership of their movement in their efforts to make impactful change."
       ]
     }, {
-      "value": "Amika George",
-      "image": "c5fc2488-63f4-4837-ba23-93c2d2d59a71_amika+george.png",
+      "value": "Yo También Tengo Algo Que Decir",
+      "image": "2a070038-cbef-4aad-ae60-78eeaed993cc_yo+tambien2.jpg",
       "attributes": {
-        "Name": "Amika George",
-        "Campaign": "#FreePeriods",
-        "Country": "United Kingdom",
-        "Website": {
-          "text": "www.freeperiods.org",
-          "href": "https://www.freeperiods.org/"
-        },
-        "Twitter": {
-          "text": "@AmikaGeorge",
-          "href": "https://twitter.com/AmikaGeorge"
-        }
+        "Campaign": "Yo También Tengo Algo Que Decir",
+        "Age": "Under 30",
+        "Location": "Peru",
+        "Nominating Partner": "Save the Children"
       },
       "body": [
-        "Amika George is the 18-year-old student founder of #FreePeriods. The aim of #FreePeriods is to make sure that no girl in the UK is living in period poverty. Amika founded the campaign when she discovered that many young women in the UK cannot afford sanitary products when on their period (a report published by the BBC in 2017 stated that 137,700 girls had missed school in the past year because they couldn’t afford to buy period products).",
-        "The #FreePeriods campaign acts to distigmatise the taboo around menstruation. It also asks that girls in the UK on free school meals be granted free sanitary products, calling upon the government and big brands to do more and encouraging collective action in the fight against period poverty. #Free Periods uses it’s platforms to educate the public on period poverty, providing facts and links to resources.",
-        "The campaign also signposts to partners and charities working to reduce period poverty with wide ranging activity helping groups such as school girls, women’s agencies, refugees, asylum seekers and food bank users, in the UK and internationally.",
-        "In December 2017 #FreePeriods co organised a demonstation at Downing street, which over 2000 people attended. Amika’s petition to provide girls from low income families with sanitary products quickly gathered signatures, 83,000 as of March  2018 (over 162,000 by May 2018) as well support from numerous MPs and celebrities. Later in March the government gave £1.5 million in funds to address UK period poverty."
+        "Working to address the risks young people face online and in real life, \"Yo Tambien Tengo Algo Que Decir,\" is tackling the problems that governments the world over are struggling to grapple with.",
+        "The youth lead organization has contributed to setting the public and political agenda within Huanuco and Peru, in regards to the situation of gender violence that is affecting children and adolescents including sexual exploitation, human trafficking and sexual violence in online and offline environments.",
+        "Their intervention had caused a big impact in communities and with stakeholders who are striving to reduce the risks of gender violence on girls and by engaging with young people through their platforms, channels and creative outlets, it is yielding great results.",
+        "\"Yo tambien tengo algo que decir\" have employed many campaign tactics including; digital campaigns such as #Formateaelmachismo, interventions in public spaces, meetings with adolescents, contests with YouTubers, collaborations with the  arts, comics and theatre, public debates and meetings with local authorities.",
+        "The objective of these activities is to engage the general public in the fight against gender violence and strengthen the National Protection System of Peru, with the participation of adolescents as key actors to building a world with gender equality."
       ]
     }, {
-      "value": "Engajamundo",
-      "image": "peeps_HJ2bht7Qm.jpg",
+      "value": "Sikha Patra",
+      "image": "686a65d5-50f9-4c46-9051-5c052b6ed005_sikha-patra-1500x1420.jpg",
       "attributes": {
-        "Country": "Brazil",
-        "Website": {
-          "text": "www.engajamundo.org",
-          "href": "http://www.engajamundo.org/falae-as-vozes-da-agua/"
-        },
-        "Youtube": {
-          "text": "View video",
-          "href": "https://www.youtube.com/watch?v=3eR0EeCDA1Q"
-        }
+        "Name": "Sikha Patra",
+        "Age": "24",
+        "Location": "India",
+        "Nominating Partner": "BMGF"
       },
       "body": [
-        "Engajamundo is a Youth Power Partner based in Brazil. It is a Brazilian youth-led NGO working to fulfil Global Goal 6 in their country through the  “FALA AÊ! - As Vozes da Água” (Speak! - The Voices of Water) campaign focusing on SDG 6 to bring youth to the political discussions on water management systems.",
-        "The campaign was created with a two-fold strategy: raising awareness of water management systems whilst providing young people with the knowledge and abilities for effective participation in water governance political spaces. Young people are at the heart of delivery and act as key players in water management and policy making. They work with 20 volunteers throughout the five regions of Brazil partnering with CIVICUS, National Water Alliance (Aliança pela Água), SOS Mata Atlântica and Engineers Without Borders. With Engajamundo’s expertise in youth mobilization and advocacy, FALA AÊ! has proven to be successful in different fields. Since its launch, in September 2017, approximately 2000 people have been reached with activism and workshops in 11 different cities. A campaign video (currently with 16 thousand views) was also produced, gathering statements from people all over Brazil and revealing the struggles of fighting for water security.",
-        "After focusing on an advocacy plan designed to influence decision-makers during the 8th World Water Forum, the campaign is currently turning its attention to youth-led accountability on water policies and the importance of implementing a municipal water security plan that ensures sustainable management of water to prevent future water crisis. While a pilot document is underway in São Paulo city hall, volunteers are carrying out capacity building activities to continue raising awareness and mobilizing young people on water issues across the country."
+        "Sikha Patra comes from the slums of Kolkata where poor sanitation is common, but she is not allowing her environment to limit her potential.",
+        "By collecting health data in her community using smartphones, she has raised awareness about issues like vaccination and her efforts and determination have won her accolades on the global stage.",
+        "In 2014, she found a place in Melinda Gates’s list of ‘Most Inspiring Women and Girls I met This Year.’ and she was also selected as a Youth Champion in the youth campaign against child marriage, launched by UNICEF and the Department of Social Welfare, Government of West Bengal."
+      ]
+    }]
+  },
+  "changemaker": {
+    "title": "Changemaker Award",
+    "theme": 3,
+    "button": {
+      "color": "blue",
+      "text": "Place vote and continue"
+    },
+    "comment": "entry.1470366669",
+    "id": "entry.1311314296",
+    "choices": [{
+      "value": "Eddy Oketch",
+      "image": "7c2f63f2-86c5-456d-a35b-d67888a3a17a_eddy-oketch-migori-senate-race.jpg",
+      "attributes": {
+        "Name": "Eddy Oketch",
+        "Age": "28",
+        "Location": "Kenya",
+        "Nominating Partner": "Mandela Institute"
+      },
+      "body": [
+        "Eddy grew up in rural Migori, and while from a loving and well-meaning family, he knew the hardships of so many Migorians—including early teen years spent surviving on the streets.  Through hard work and the remarkable generosity of the community, Eddy made his way to Friends School Kamusinga, African Leadership Academy in Johannesburg, Trinity College in the United States, and eventually Yale University where he graduated with a Masters in Global Affairs. It is his goal to help his community provide similar opportunities to hardworking residents like he was lucky enough to receive.",
+        "During the 2007/2008 post-election violence, Eddy founded Ongoza, an organization committed to bringing an end to civil violence by empowering young people to become economically independent and champions of peace in their local communities. Ongoza is now an independent institution continuing to strengthen youth across Kenya.",
+        "Eddy is also the Founder and Trustee of The Oketch Gicheru Trust, a foundation that offers education scholarships and digital mentorship to gifted and disadvantaged youth in Kenya. In the community, he serves on the Boards of Ulanda Girls High and St. Pauls Omboo Secondary, where he is leading infrastructural development."
+      ]
+    }, {
+      "value": "Hauwa Ojeifo",
+      "image": "14b13189-3016-4324-91d7-1d48e20842f5_hauwa+ojeifo.jpg",
+      "attributes": {
+        "Name": "Hauwa Ojeifo",
+        "Age": "26",
+        "Location": "Nigeria",
+        "Nominating Partner": "One Young World"
+      },
+      "body": [
+        "Hauwa is the founder of ‘She Writes Woman’ which is the first privately held mental health hotline in Nigeria, a women-led movement of love hope and support that gives mental health a voice in Nigeria.",
+        "‘She Writes Woman’ is the first privately held 24/7 mental health helpline and has impacted over 500 people and averted over 45 cases of suicide. Hauwa also initiated the only monthly mental health support group that has now been running for 2 years and operates in 5 states across Nigeria. About 450 women have registered for the Safe Place support group and benefitted from free or subsidised mental healthcare in Nigeria."
+      ]
+    }, {
+      "value": "Payla Jangid",
+      "image": "2a383d29-5a00-4ca8-9d0f-ea0c2b30f67c_payla+jangid.jpg",
+      "attributes": {
+        "Name": "Payla Jangid",
+        "Age": "16",
+        "Location": "India",
+        "Nominating Partner": "Project Everyone"
+      },
+      "body": [
+        "After escaping child slavery and refusing to marry at 12 years old, a common practice in her village in Rajasthan, Jangid became a children’s rights activist committed to education and the abolition of child marriage and child labour.",
+        "Payal is now the leader of the Child Parliament in her village, working to make her village “child-friendly” by educating the community about domestic violence and child marriage. When she talks, adults and children alike listen. She wants to cause a change in her country, she wants girls to be treated properly and equal to men and her goal to is to inform the people of India how important it is for girls to receive a proper education.",
+        "Payal has also been working with Bachpan Bachao Andolan which translates to Save the Childhood since 2012. She has helped campaign for the rights of children and spends most of her free time walking around rural villages to stop child marriages. Due to her hard work and activism she was chosen as the jury member of the World Children's Prize previously  awarded Malala Yousafzai."
+      ]
+    }, {
+      "value": "Ayesha Akhter",
+      "image": "771f60b0-871f-4f78-adba-441301ea94bd_ayesha+akhter.jpg",
+      "attributes": {
+        "Name": "Ayesha Akhter",
+        "Age": "28",
+        "Location": "Bangladesh",
+        "Nominating Partner": "Project Everyone"
+      },
+      "body": [
+        "The garment factories of Dhaka make so much of the world’s fashion and women make up 80% of the workforce. When a complex of garment factories collapsed killing 1000’s, things had to change. Ayesha Akhter is a seamstress and now also President of the workers’ union at Jeans Factory Limited in Dhaka. “In all these years, I have heard supervisors yell verbal abuse, call us prostitutes and slap us behind our heads to work faster. Then I became the union president and everything changed. Overnight, I became important.”",
+        "Aysesha is among scores of women standing up to head unions and negotiating with male-dominated management for more pay, safer workplaces and respect on the job. This is no easy task. Those attempting to set up unions have encountered resistance with many losing their jobs or being suspended by managements. And then there is the resistance at home. Akhter remembers the “big fight” she had with her husband when she said she was considering standing for president “He was mad and upset and clearly told me not to,” said the mother of two. “He was scared and worried about my safety. He relented but we always worry because of what we see and hear.”",
+        "In the face of threats and job insecurity, she is now part of an increasingly women led movement to give rights and security to the people making the clothes we love to wear."
+      ]
+    }, {
+      "value": "Brigitte Sossou Perenyi",
+      "image": "8c2c7cc8-2dca-4c5c-8c73-d924ff35f666_brigitte+sossou+perenyi+.jpg",
+      "attributes": {
+        "Name": "Brigitte Sossou Perenyi",
+        "Age": "28",
+        "Location": "Ghana",
+        "Nominating Partner": "Project Everyone"
+      },
+      "body": [
+        "When Brigitte was just seven, she was trafficked from Togo into Ghana and forced into a system she knew nothing about; a system where families give up their young daughters as a sacrifice to the gods, for her to be used as a slave to ‘pay’ for the sins of family members. Brigitte was taken to such a religious shrine in order to ‘pay’ for her uncles infidelity. The system is known as Trokosi or “slave of God”.",
+        "During her time at the shrine, Brigitte was captured in a documentary produced by CBS. When the program aired, an American man, Kenneth Perenyi watched it and flew to Ghana to make arrangements to adopt Brigitte with the help of an organization called International Needs Ghana and she has since lived in America.",
+        "Brigitte, having been saved by storytelling, recognizes the impact a story can have so travelled back to her village in Togo in 2017 to film a documentary in order to share it and inspire others to share their stories, as well as bring to light the Trokosi system. She hopes that by exposing these harmful practices to the world, girls can be empowered to reach their full potential and have the freedom so many girls never experience.",
+        "It is work like this that sparks dialogue and encourages healthy discussions surrounding age-long practices and belief systems."
+      ]
+    }]
+  },
+  "progress": {
+    "title": "Progress Award",
+    "theme": 6,
+    "button": {
+      "text": "Place vote and continue"
+    },
+    "comment": "entry.879636731",
+    "id": "entry.298026157",
+    "choices": [{
+      "value": "Ganesh Muren",
+      "image": "2f4ef9bb-cadc-40c0-8c03-482cb5b92156_ganesh+muren.jpg",
+      "attributes": {
+        "Name": "Ganesh Muren",
+        "Age": "29",
+        "Location": "Malaysia",
+        "Nominating Partner": "Obama Foundation"
+      },
+      "body": [
+        "Ganesh is a social entrepreneur who founded Saora Industries which delivers safe and clean drinking water through Solar Powered Water Purification systems.",
+        "This off-grid system has impacted 4000 rural and marginalized families throughout Malaysia and has empowered single mothers in the village by having them maintain the Solar Powered Water Purification system through micro-financing. Recognized internationally and locally, this social enterprise also launched in the Philippines in 2018 to deliver safe water to island communities.",
+        "Ganesh was also selected to be the youngest council member of the Entrepreneurship Development Council of the Ministry of Education, appointed by Minister of Education, the Honorable Dr. Maszlee bin Malik."
+      ]
+    }, {
+      "value": "Gregory Rockson",
+      "image": "8d31d3be-2751-4a5c-a2e8-0a2c0a003b8d_gregory+rockson.jpg",
+      "attributes": {
+        "Name": "Gregory Rockson",
+        "Age": "28",
+        "Location": "Ghana",
+        "Nominating Partner": "One Young World"
+      },
+      "body": [
+        "Gregory is an outstanding young leader making medicine available and affordable across Africa.",
+        "Growing up in Ghana with thoracic scoliosis, he observed the struggles of his parents in sourcing medication with pharmacies experiencing frequent stock outs and charging high and fluctuating prices. At the age of 15, Gregory set up a non-profit to provide medicines to children living with HIV/AIDS. In 2013 he co-founded mPharma.",
+        "mPharma achieves lower prices by aggregating and predicting demand across a network of providers. Their work has reduced drug prices by up to 30 percent and eliminates stockouts. Clinics have also reported a decrease of up to 25 percent in medicine-related complications.",
+        "To date their innovations have helped 400,000 patients regain their health and are now operational in Ghana, Nigeria, Zimbabwe, Zambia and most recently in Kenya."
+      ]
+    }, {
+      "value": "Pranav Sridhar",
+      "image": "2ee0fcdb-5efd-4a1c-a423-9d46fc24a999_pranav+sridhar.jpg",
+      "attributes": {
+        "Name": "Pranav Sridhar",
+        "Age": "26",
+        "Location": "India",
+        "Nominating Partner": "UNLEASH"
+      },
+      "body": [
+        "OneDay Health was born when Pranav met Dr. Nicolas, who worked in rural Uganda. His stories of poor health infrastructure, insufficient health workers and crippling travel costs in remote areas resonated with Pranav’s experience of rural India.",
+        "Together they launched OneDay Health which now exists to give access to quality heath care to the 10 million Ugandans currently without it.",
+        "Using satellite images, they geo-mapped every health center in the Northern Ugandan region, to identify remote healthcare ‘black holes’, far from any healthcare facility. They addressed those black holes with the first hub of 10 OneDay Health Centers, a sustainable healthcare option for Uganda’s rural citizens.",
+        "They equip their nurses to diagnose and treat conditions with competence and confidence and to date, the nurses have treated over 20,000 patients and cured over 7000 malaria cases and there are plans for expansion.",
+        "Long term, they plan to partner with the Ugandan Government, to integrate their model into Uganda’s public health system."
+      ]
+    }, {
+      "value": "Shravan Kumaran & Sanjay Kumaran",
+      "image": "6d2bda4f-f6d5-4bd2-ac96-6e5bb2716699_kumaran.jpg",
+      "attributes": {
+        "Name": "Shravan Kumaran & Sanjay Kumaran",
+        "Age": "17, 15",
+        "Location": "India",
+        "Nominating Partner": "BMGF"
+      },
+      "body": [
+        "Shravan Kumaran and his brother Sanjay Kumaran are perfect examples that age is not a bar to follow your passion. The two have been identified as the youngest App developers and co-founders of a company in India, having cofounded GoDimensions, a mobile app developer, when they were just 12 and 10 respectively.",
+        "“We’ve always believed that we must do something for society,” says Sanjay, on the thinking behind their latest app GoDonate, which is a platform for sharing excess food, clothes and furniture with those in need. “In Central Asia itself, about 500 millions tons of food is being wasted each year,” says Shravan. By the boys’ own admission, social impact is a key deciding factor behind their projects.",
+        "To date, they've built a total of seven apps for the App Store and three for Google Play which together have clocked over 70,000 downloads in over 60 countries. They hold the distinction of being the youngest Mobile Application Programmers in India by Apple."
       ]
     }]
   }
