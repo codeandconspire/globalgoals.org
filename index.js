@@ -105,11 +105,15 @@ server.use(router)
  * Lift off
  */
 
-server.listen(process.env.PORT, () => {
-  console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
-  if (process.env.NOW && process.env.NODE_ENV !== 'development') {
-    purge(['/service-worker.js'], (err) => {
-      if (err) console.error(err)
+if (process.env.NOW && process.env.NODE_ENV !== 'development') {
+  purge(['/service-worker.js'], (err) => {
+    if (err) return console.error(err)
+    server.listen(process.env.PORT, () => {
+      console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
     })
-  }
-})
+  })
+} else {
+  server.listen(process.env.PORT, () => {
+    console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
+  })
+}
