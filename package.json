@@ -47,6 +47,7 @@
     "cccpurge": "^2.0.0",
     "choo": "^6.7.0",
     "choo-service-worker": "^2.4.0",
+    "cloudinary": "^1.14.0",
     "dedent": "^0.7.0",
     "got": "^7.1.0",
     "koa": "^2.4.1",
