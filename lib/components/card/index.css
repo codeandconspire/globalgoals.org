@@ -399,9 +399,6 @@
  * Card Card--fill Card--linked Card--withIcon Card--facebook
  */
 
-.Card--withIcon .Card-figure {
-}
-
 @media (--viewport-sm-max) {
   .Card--withIcon .Card-figure {
     display: none;
@@ -498,3 +495,49 @@
   width: 48%;
   height: 48%;
 }
+
+/**
+ * Banner version
+ */
+
+.Card--banner { 
+  height: 100%;
+}
+
+.Card--banner .Card-content { 
+  z-index: 1;
+  background: none;
+  /* background-image: linear-gradient(-180deg,rgba(0,0,0,.08) 0%,rgba(0,0,0,.1) 30%,rgba(0,0,0,.11) 55%,rgba(0,0,0,.7) 100%); */
+}
+
+.Card--banner.Card--light .Card-content { 
+  /* background-image: linear-gradient(-180deg,rgba(255,255,255,.08) 0%,rgba(255,255, 255,.1) 30%,rgba(255,255,255,.11) 55%,rgba(255,255,255,.7) 100%); */
+}
+
+.Card--banner .Card-body { 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: -1rem;
+}
+
+.Card--banner .Card-figure {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* 
+.Card--banner .Card-content,
+.Card--banner .Card-meta,
+.Card--banner .Card-link,
+.Card--banner .Card-link:hover,
+:root.has-js .Card--banner:hover .Card-link {
+  color: #fff;
+}
+
+.Card--banner .Card-link {
+  border-top-color: rgba(255, 255, 255, 0.2);
+} */
