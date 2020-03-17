@@ -510,6 +510,16 @@
     left: 4px;
   }
 
+  @media (--viewport-sm) {
+    .Header-list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: calc(100% - 4px);
+      height: 70%;
+    }
+  }
+
   /**
    * Link styles
    */
