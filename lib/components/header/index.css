@@ -126,12 +126,18 @@
 
   .Header-logo {
     height: 54px;
-    width: 195px;
   }
 
   .Header-list,
   .Header-back {
     margin-top: 5px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .Header-logo {
+    height: 54px;
+    width: 195px;
   }
 }
 
@@ -655,6 +661,12 @@
 
   .Header-item {
     float: left;
+    margin-left: 2px;
+  }
+}
+
+@media (--viewport-xl) {
+  .Header-item {
     margin-left: 12px;
   }
 }
