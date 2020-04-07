@@ -15,8 +15,8 @@
     "compress:js": "npm run compress:js:app && npm run compress:js:sw",
     "compress:css": "gzip -9 -f -c public/index-$SOURCE_VERSION.css > public/index-$SOURCE_VERSION.css.gz",
     "compress": "npm run compress:css && npm run compress:js",
-    "build:js:app": "browserify lib/app/index.js -t localenvify -t nanohtml -t babelify -p tinyify | uglifyjs -o public/index-$SOURCE_VERSION.js",
-    "build:js:sw": "browserify lib/app/service-worker.js -t localenvify -t nanohtml -t babelify -p tinyify | uglifyjs -o public/service-worker.js",
+    "build:js:app": "browserify lib/app/index.js -t localenvify -t nanohtml -g nanohtml -t babelify -p tinyify | uglifyjs -o public/index-$SOURCE_VERSION.js",
+    "build:js:sw": "browserify lib/app/service-worker.js -t localenvify -t nanohtml -g nanohtml -t babelify -p tinyify | uglifyjs -o public/service-worker.js",
     "build:js": "npm run build:js:app && npm run build:js:sw",
     "build:css": "postcss lib/app/index.css --no-map -c postcss.config.js -o public/index-$SOURCE_VERSION.css",
     "build:fallback": "postcss lib/app/fallback.css --no-map -o public/fallback-$SOURCE_VERSION.css",
@@ -25,44 +25,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codeandconspire/globalgoals.org.git"
-  },
-  "now": {
-    "build": {
-      "env": {
-        "NODE_ENV": "production",
-        "GLOBALGOALS_NAME": "The Global Goals",
-        "GLOBALGOALS_URL": "https://www.globalgoals.org",
-        "GLOBALGOALS_LANG": "en",
-        "GLOBALGOALS_NUMBER_OF_GRID_LAYOUT": "9",
-        "PRISMIC_API": "https://globalgoals.cdn.prismic.io/api/v2",
-        "GOOGLE_ANALYTICS_ID": "UA-62720664-1",
-        "FACEBOOK_ID": "1568338293280396",
-        "TWITTER_USERNAME": "TheGlobalGoals",
-        "INSTAGRAM_USERNAME": "TheGlobalGoals"
-      }
-    },
-    "env": {
-      "NODE_ENV": "production",
-      "GLOBALGOALS_NAME": "The Global Goals",
-      "GLOBALGOALS_URL": "https://www.globalgoals.org",
-      "GLOBALGOALS_LANG": "en",
-      "GLOBALGOALS_NUMBER_OF_GRID_LAYOUT": "9",
-      "CLOUDFLARE_ZONE": "@cloudflare-globalgoals-zone",
-      "CLOUDFLARE_EMAIL": "@cloudflare-globalgoals-email",
-      "CLOUDFLARE_KEY": "@cloudflare-globalgoals-key",
-      "PRISMIC_API": "https://globalgoals.cdn.prismic.io/api/v2",
-      "PRISMIC_SECRET": "@prismic-globalgoals-secret",
-      "CLOUDINARY_KEY": "@cloudinary-globalgoals-key",
-      "CLOUDINARY_SECRET": "@cloudinary-globalgoals-secret",
-      "GOOGLE_ANALYTICS_ID": "UA-62720664-1",
-      "FACEBOOK_ID": "1568338293280396",
-      "TWITTER_USERNAME": "TheGlobalGoals",
-      "TWITTER_CONSUMER_KEY": "@twitter-globalgoals-key",
-      "TWITTER_CONSUMER_SECRET": "@twitter-globalgoals-secret",
-      "INSTAGRAM_USER_ID": "30261039",
-      "INSTAGRAM_USERNAME": "TheGlobalGoals",
-      "INSTAGRAM_ACCESS_TOKEN": "@instagram-globalgoals-token"
-    }
   },
   "author": "code and conspire",
   "license": "CC-BY-SA-4.0",
