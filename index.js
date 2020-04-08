@@ -112,7 +112,7 @@ server.use(router)
  * Lift off
  */
 
-if (process.env.NOW && process.env.NODE_ENV !== 'development') {
+if (process.env.HEROKU && process.env.NODE_ENV !== 'development') {
   purge(['/service-worker.js'], (err) => {
     if (err) return console.error(err)
     server.listen(process.env.PORT, () => {
