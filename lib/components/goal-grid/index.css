@@ -251,6 +251,22 @@
   background: #000;
 }
 
+.GoalGrid-item--cta .GoalGrid-button,
+.GoalGrid-item--banner .GoalGrid-button {
+  color: #fff;
+  background: var(--color-red);
+  position: absolute;
+  bottom: 23px;
+  right: 23px;
+  transition: background-color 140ms var(--ease-out);
+  mix-blend-mode: normal;
+}
+
+.GoalGrid-item--cta:hover .GoalGrid-button,
+.GoalGrid-item--banner:hover .GoalGrid-button {
+  background: var(--color-dark-red);
+}
+
 @media (--viewport-sm) {
   .GoalGrid--layout .GoalGrid-item {
     width: calc(100% / 3);
@@ -281,6 +297,7 @@
     flex: 1 0 auto;
     position: relative;
     top: 6px;
+    max-width: calc(100% - 11rem);
   }
 
   .GoalGrid-item--banner .GoalGrid-button {
@@ -433,20 +450,6 @@
     .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-desc {
       width: 100%;
       margin-right: 0;
-    }
-
-    .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-button {
-      color: #fff;
-      background: var(--color-red);
-      position: absolute;
-      bottom: 23px;
-      right: 23px;
-      transition: background-color 140ms var(--ease-out);
-      mix-blend-mode: normal;
-    }
-
-    .GoalGrid--layout .GoalGrid-item--cta:hover .GoalGrid-button {
-      background: var(--color-dark-red);
     }
 
     .GoalGrid--layout .GoalGrid-item--cta .GoalGrid-logo {
