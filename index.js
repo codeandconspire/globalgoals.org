@@ -12,6 +12,7 @@ const assets = require('./lib/middleware/assets')
 const render = require('./lib/middleware/render')
 const redirects = require('./lib/middleware/redirects')
 const analytics = require('./lib/middleware/analytics')
+const imageproxy = require('./lib/middleware/cloudinary-proxy')
 
 const server = new Koa()
 
@@ -41,6 +42,12 @@ if (process.env.NODE_ENV !== 'development') {
  */
 
 server.use(require('./lib/middleware/robots'))
+
+/**
+ * Proxy cloudinary on-demand-transform API
+ */
+
+server.use(imageproxy)
 
 /**
  * Capture special routes before any other middleware
@@ -110,11 +117,15 @@ server.use(render(app))
  * Lift off
  */
 
-server.listen(process.env.PORT, () => {
-  console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
-  if (process.env.NOW && process.env.NODE_ENV !== 'development') {
-    purge(['/service-worker.js'], (err) => {
-      if (err) console.error(err)
+if (process.env.HEROKU && process.env.NODE_ENV !== 'development') {
+  purge(['/service-worker.js'], (err) => {
+    if (err) return console.error(err)
+    server.listen(process.env.PORT, () => {
+      console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
     })
-  }
-})
+  })
+} else {
+  server.listen(process.env.PORT, () => {
+    console.info(`🚀  Server listening at localhost:${process.env.PORT}`)
+  })
+}

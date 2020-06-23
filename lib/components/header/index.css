@@ -10,7 +10,7 @@
   --Header-fill-y: 40px;
   --Header-content-y: 20px;
   --Header-logo-z: 1.25;
-  --Header-list-z: 1.2;
+  --Header-list-z: 1.1;
 }
 
 /**
@@ -126,12 +126,18 @@
 
   .Header-logo {
     height: 54px;
-    width: 195px;
   }
 
   .Header-list,
   .Header-back {
     margin-top: 5px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .Header-logo {
+    height: 54px;
+    width: 195px;
   }
 }
 
@@ -510,6 +516,16 @@
     left: 4px;
   }
 
+  @media (--viewport-sm) {
+    .Header-list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: calc(100% - 4px);
+      height: 70%;
+    }
+  }
+
   /**
    * Link styles
    */
@@ -645,6 +661,12 @@
 
   .Header-item {
     float: left;
+    margin-left: 2px;
+  }
+}
+
+@media (--viewport-xl) {
+  .Header-item {
     margin-left: 12px;
   }
 }
