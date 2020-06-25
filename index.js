@@ -12,7 +12,6 @@ const assets = require('./lib/middleware/assets')
 const render = require('./lib/middleware/render')
 const prismic = require('./lib/middleware/prismic')
 const redirects = require('./lib/middleware/redirects')
-const analytics = require('./lib/middleware/analytics')
 const imageproxy = require('./lib/middleware/cloudinary-proxy')
 
 const server = new Koa()
@@ -71,12 +70,6 @@ server.use(assets)
 if (process.env.NODE_ENV !== 'development') {
   server.use(serve('public', { maxage: 1000 * 60 * 60 * 24 * 365 }))
 }
-
-/**
- * Add on Universal Analytics for server process tracking
- */
-
-server.use(analytics(process.env.GOOGLE_ANALYTICS_ID))
 
 /**
  * Set up request cache mechanism
