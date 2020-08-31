@@ -55,12 +55,12 @@
 }
 
 .Tags-item:only-child {
-  min-width: 64px;
+  min-width: 54px;
 }
 
 @media (--viewport-md) {
   .Tags-item:only-child {
-    min-width: 84px;
+    min-width: 54px;
   }
 }
 
