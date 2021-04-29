@@ -84,7 +84,7 @@ if (process.env.NODE_ENV !== 'development') {
         if (err.status === 401) {
           ctx.status = 401
           ctx.set('WWW-Authenticate', 'Basic')
-          ctx.body = 'cant haz that'
+          ctx.body = 'Incorrect login. Please reload the page and try again.'
         } else {
           throw err
         }
