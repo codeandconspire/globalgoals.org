@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "Giorgio Sans Bold";
+  font-family: "Noto";
   font-style: normal;
   font-weight: bold;
-  src: url("./giorgio-sans-bold.woff") format("woff");
+  src: url("./notosans.woff2") format("woff2");
   font-display: block;
 }
 
 :root {
-  --giorgio-sans-bold: "Giorgio Sans Bold", "AvenirNextCondensed-DemiBold", "HelveticaNeue-CondensedBold", "Helvetica Inserat", "Franklin Gothic Condensed", Haettenschweiler, Impact, sans-serif-condensed, sans-serif;
+  --giorgio-sans-bold: "Noto", "AvenirNextCondensed-DemiBold", "HelveticaNeue-CondensedBold", "Helvetica Inserat", "Franklin Gothic Condensed", Haettenschweiler, Impact, sans-serif-condensed, sans-serif;
   --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   --font-family-heading: var(--giorgio-sans-bold);

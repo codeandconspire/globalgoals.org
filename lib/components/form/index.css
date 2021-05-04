@@ -40,14 +40,26 @@
   padding: 16px;
   color: #fff;
   font-family: var(--font-family-heading);
-  font-size: 32px;
+  letter-spacing: -0.02em;
+  font-size: 24px;
   font-weight: bold;
   line-height: 1.1;
-  text-transform: uppercase;
   word-spacing: var(--word-spacing-heading);
   transition:
     background-color 60ms ease-out,
     color 60ms ease-out;
+}
+
+@media (min-width: 768px) {
+  .Form-banner {
+    min-height: 5.3rem;
+  }
+}
+
+@media (min-width: 980px) {
+  .Form-banner {
+    min-height: 0;
+  }
 }
 
 .Form-check {
@@ -105,9 +117,13 @@
 
 .Form-pair {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
   height: 56px;
   margin-right: 32px;
+}
+
+.Form-pair a {
+  white-space: nowrap;
 }
 
 .Form-pair .Form-label {

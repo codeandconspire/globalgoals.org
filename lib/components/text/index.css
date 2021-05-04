@@ -389,15 +389,14 @@ ul.Text--links a::after {
 
 .Text :matches(h1, h2, h3, h4, .Text-h1, .Text-h2, .Text-h3, .Text-h4) {
   font-family: var(--font-family-heading);
+  letter-spacing: -0.02em;
   font-weight: bold;
   line-height: 1.1;
-  text-transform: uppercase;
-  word-spacing: var(--word-spacing-heading);
   margin: 53px 0 -8px;
 }
 
 .Text :matches(h1, .Text-h1) {
-  font-size: 64px;
+  font-size: 57px;
   line-height: 0.95;
 }
 
