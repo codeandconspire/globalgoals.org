@@ -9,59 +9,88 @@
     "comment": "entry.486816405",
     "id": "entry.1971526978",
     "choices": [{
-      "value": "Glitch",
-      "image": "glitch_xf4r6l.jpg",
+      "value": "Vanessa Nakate",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290394/image-016_ezcwdm.jpg",
       "attributes": {
-        "Name": "Seyi Akiwowo",
-        "Age": "29",
-        "Location": "UK"
+        "Name": "Vanessa Nakate",
+        "Age": "24",
+        "Gender": "Female",
+        "Issue": "Climate",
+        "Location": "Uganda"
       },
       "body": [
-        "Glitch is a not-for-profit organsiation working towards to ending online abuse through education, campaigns and advocacy. Glitch was founded in 2017 by Seyi Akiwowo, after she faced horrendous online abuse when a video of her speech at the European Parliament went viral. Glitch wants to see an increase in digital citizenship for all, across all online platforms. Their work is upheld by three pillars: 1) Raising awareness, through campaigning and providing free information and resources 2) Advocacy work with social media companies on how to make their online platforms safer and to decision makers 3) Action, Glitch’s programmatic work consists of Digital Citizenship Workshop and Digital Resilience Training.",
-        "Glitch has been praised in UK parliament twice and in 2018 and 2019 were invited by the UN Human Rights Council to advocate on behalf of those who have experienced online abuse. Seyi is the 2019 UK Digital Leader of the Year and in 2018, she was name Stylist Magazine’s Woman of the Week. Seyi is Amnesty International’s Human Rights Defender and is part of the #ToxicTwitter campaign to end online abuse against women. She was elected as the youngest black female Councillor in East London at age 23.",
-        "During lockdown Glitch has been campaigning on a number of issues including demanding that social media companies show that Black Lives Matter by providing greater controls. Twitter also recently partnered with Glitch to provide advice on how to manage their twitter experience. Glitch is also providing free digital safety training sessions for politically active women."
+        "Vanessa was the first Fridays For Future climate activist in Uganda and founder of the Rise up Climate Movement, which aims to amplify the voices of activists from Africa, reshaping the climate change narrative to include those voices most at risk of being left behind.",
+        "Her work includes raising awareness to the danger of climate change, the causes and the impacts - particularly for those most at risk, and who did the least to contribute to the problem. She spearheaded the campaign to save Congo’s rainforest, which is facing massive deforestation. This campaign later spread to other countries from Africa to Europe. She is currently working on a project that involves installation of solar and institutional stoves in schools, and campaigning against the installation of an east African crude oil pipeline that would run through Uganda and Tanzania.",
+        "She holds a degree in Business Administration in Marketing from Makerere University Business School. Vanessa was one of the young climate activists who were chosen to speak at the COP25 gathering in Spain, and she was one of 20 climate activists who penned a letter addressed to the participants of the World Economic Forum in Davos, calling on them to stop subsidizing fossil fuels.",
+        "In 2020 Vanessa participated in a news conference at the World Economic Forum with four white activists, including the Swedish teenager Greta Thunberg but when The Associated Press released a picture of the five from the event, Ms. Nakate had been cropped out.",
+        "This photo reflected the silencing of diverse voices in climate action groups. Vanessa is now a leading voice in the campaign against the erasure of Black and African voices from conversations around climate activism, even as their communities and countries are disproportionately affected by the crisis."
       ]
     }, {
-      "value": "MASH Project Foundation",
-      "image": "mash_yzffx9.jpg",
+      "value": "Azeez Salawu",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290394/image-015_h3pqrg.jpg",
       "attributes": {
-        "Name": "Aashish Beergi",
+        "Name": "Azeez Salawu",
         "Age": "28",
-        "Location": "India"
+        "Gender": "Male",
+        "Issue": "Ag and Climate",
+        "Location": "Nigeria"
       },
       "body": [
-        "MASH Project Foundation is a social enterprise committed to building a global community of social change-makers. Their mission is to bridge the gap between Governments, Civil Society, Corporate Sector, Youth and Media to drive social impact through partnerships for Global Goals (SDG 17).",
-        "During COVID-19, The MASH Project Foundation realised that many young changemakers were facing a very difficult time trying to start new initiatives to support communities on areas like hunger relief, cash support, healthcare and sanitation and mental wellbeing, with most of these needing financial, technical and human resources. MASH Project Foundation started the COVID Action initiative which acts as a single platform for various stakeholders to list its resources and provide a single window for young changemakers to access these available resources. The platform is regularly updated to make sure changemakers can easily navigate and find useful information.",
-        "Under this initiative, MASH also introduced 'Expert Dialogues', a bi-weekly series of online conversations with leading experts from the development sectors to share their knowledge and experiences with young changemakers to deal with the current situation more effectively. They also started weekly capacity building workshops with UN Volunteers India to support youth with skills which will help them embrace change and become future-ready, some of the topics include ‘Future Skills‘, ‘Art therapy‘, leveraging the digital platform for better profile building and mentorship.  COVID Action has partnered with multiple stakeholders including government agencies, civil society organisations and corporates and brings the best of different stakeholders to create a bigger and better impact. The initiative has also been recognized by the COVID Response Alliance for Social Entrepreneurs of the Schwab Foundation for Social Entrepreneurship under World Economic Forum.",
-        "They work with an amalgamation of CSR, Corporate Volunteering and Policy Initiatives, the corporate sector at MASH is where they support their corporate partners to assess their HR requirements and align with their business objectives to drive employees, communities and the company together. They also work with Government Agencies and Policy Makers where they bridge the gap between young policymakers and policymaking process by bringing the youth together with relevant stakeholders like the government and work with them across various projects.",
-        "They also work with Civil Society and Non-Profit Organisations – the foundation has built a strong network of like-minded individuals, non-profits and civil society organisations to create a platform where people, ideas and actions can come together to make a better world. They work with various youth communities across diverse issues to deliver high social impact projects and they use diverse media platforms to create positive change. Their work reaches over 20 cities, they have 500+ partnerships, have enabled 300+ changemakers, 541 Facebook Followers, 2,006 Instagram Followers, 928 Twitter Followers, 18.7K Likes on TikTok and have impacted 150000+ people."
+        "Azeez Salawu a youth in agriculture advocate and climate activist and the founder of the Community Action on Food Security Initiative.",
+        "The Community Action on Food Security Initiative focuses on bridging the gap between farmers, rural dwellers, youths and policy makers through community engagement, research and practical approaches.",
+        "Azeez Salawu has a broad experience in mobilizing the youth for climate action, food and nutrition security and the Sustainable Development Goals from Nigeria.",
+        "He has participated in high-level discussion and negotiations both at the international and local levels on critical developmental issues on climate change, agriculture, and sustainable development.",
+        "He operates effectively at the governmental and policy levels as well as at citizens and community levels working with Small scale farmers by providing the tools needed to lift themselves out of hunger and poverty and create resources for their livelihood.",
+        "He is the Executive Director at Community Action on Food Security Initiative and also the Nigeria/West Africa Regional Coordinator at Climate Smart Agriculture Youth Network (CSAYN). He's the Convener, Food Security Future Summit, Nigeria; Innovator, UNDP Youth Climate Innovator; Member, Nigerian Civil Society Framework on Paris Agreement and SDGs; Member, FAO Global Forum on Food Security and Nutrition; Member, Agricultural Society of Nigeria."
       ]
     }, {
-      "value": "Youth Stop AIDS",
-      "image": "Youth-Stop-AIDS_wyh2nj.jpg",
+      "value": "Satta Sheriff",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290394/image-013_ozzf8s.jpg",
       "attributes": {
-        "Names": "Georige Wallis, Carla Home, Molly Pugh-Jones, Alex Causton-Ronaldson, Eli Fitzgerald, Shane Dooner, Rosie Oakley",
-        "Ages": "25",
-        "Location": "UK"
+        "Name": "Satta Sheriff",
+        "Age": "23",
+        "Gender": "Female",
+        "Issue": "Human Rights",
+        "Location": "Liberia"
       },
       "body": [
-        "Youth Stop AIDS is a UK based youth-led movement campaigning for a world without AIDS by 2030. The current 2018-2020 Steering Committee is a group of seven young campaigners leading the campaign and taking local and global action.",
-        "Over the past two years, they have led the Network to campaign successes including getting the UK Government to increase its pledge to the Global Fund to Fight AIDS, TB and Malaria, and influencing a Labour Party report around fair and equitable access to medication for all. They have influenced Parliamentary Candidates to champion the HIV response during the 2019 UK election and in calling on the UK government to support Universal Health Coverage and to reverse the DFID/FCO merger.",
-        "During COVID-19 they have been campaigning around the impact of the virus on young people living with HIV through a video stories collection project, hosting virtual speaker events and contributing to an All Party Parliamentary Group Inquiry on the impact of COVID-19 on the global HIV response. Their online engagements have raised awareness of the impact of COVID-19 on young people living with HIV, and increased pressure on governments to act."
+        "Satta is the Founder and Executive Director of Action for Justice and Human Rights (AJHR), a youth-led NGO founded to advocate and ensure access to justice and respect for Human Rights in Liberia, particularly for women and girls.",
+        "In 2020, as a result of the proliferation of rape cases during the pandemic in Liberia, Satta worked alongside the Affiliation of Child and Women Right Advocates to lobby the national government. Due to the tireless actions of the group, Liberia's President declared rape as a National Emergency, allocating a $4M budget and developing a national Sexual and Gender-Based Violence roadmap for Liberia. Satta and the campaigners will continue to follow-up and demand strong action until no child or women is a victim of sexual abuse.",
+        "In 2017, a 13-year-old was allegedly raped and impregnated by a lawmaker. Through Satta and others' advocacy, an investigation was conducted, the lawmaker was arrested and his case was sent to court. In 2016, Satta co-founded the Joint Action Committee on Children to advocate and protect children rights in Liberia. Through JACC; Satta promoted a national Campaign to convict the killers of two Liberian minors who were mysteriously killed in 2015. Since 2016, Satta has addressed the UN and the African Union to defend Children and Girls rights internationally. She's the former Speaker of the Liberian Children’s Parliament.",
+        "Satta was born during the Liberian Civil War in the mountainous Bong county, started primary education at 6 and is a first-generation college student. She's studying at Wittenberg University - it's amazing how much she has achieved in her young life, and how she's balanced all of her responsibilities.",
+        "Passionate about human rights and justice, Sheriff wants to be a civil rights lawyer and help females around the world and especially in her country, achieve justice."
       ]
     }, {
-      "value": "Teens Take charge",
-      "image": "Teens-Take-charge_qrp8pq.jpg",
+      "value": "Sikander Bizenjo",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--Hsca3ST---/c_crop,g_face:auto,h_800,w_1000/v1624290394/image-014_cd8ixs.jpg",
       "attributes": {
-        "Names": "Nelson Luna, Whitney Stephenson",
-        "Ages": "19",
-        "Location": "USA"
+        "Name": "Sikander Bizenjo",
+        "Age": "30",
+        "Gender": "Male",
+        "Issue": "Covid response",
+        "Location": "Pakistan"
       },
       "body": [
-        "Teens Take Charge is a student-led movement for education equity that began by using the arts to elevate important issues within the education system of New York City. Teens Take Charge was created when Nelson Luna and Whitney Stephenson began to think critically about the roles race and class played in their education — and it inspired them to want to make a change.",
-        "They say; “Too often, decisions about our schools are made without our voices. No longer. Our growing coalition of high school students from across the five boroughs will not rest until our public school system lives up to its promise of providing all of us an equitable education.”",
-        "Teens Take Charge provides a platform for school students to share their experiences of the school system on public stages across the city, at official hearings, in meetings with policy makers and on television broadcasts. As the movement has grown, their members now study present day educational inequity and its historical roots to develop policy proposals that address specific problems and lead advocacy campaigns targeting the city and school officials who have the ability to enact their solutions. Despite graduating college, the founders are still involved in advocacy and the organization, which is made up of 50 active members from more than 30 high schools in 5 boroughs, mirrors the public school system’s racial and socioeconomic diversity — and proves what’s possible when all students are educated together and is continuing to grow.",
-        "During COVID, the movement has continued to advocate for the rights of black students in New York, and in the wake of the killing of George Floyd have called for the end of the NYPD’s presence in NY schools."
+        "Sikander Bizenjo is the co-founder of Balochistan Youth Against Corona – a youth support system assisting vulnerable populations in remote parts of Pakistan.",
+        "Sikander Bizenjo is an economist and development practitioner working on socio-economic issues in Pakistan. He has worked within the Ministry of Planning as well as international donor organisations on advocacy and community mobilisation. Sikander is the co-founder of Balochistan Youth Against Corona – a youth support system assisting vulnerable populations in remote parts of Pakistan. To date, they have reached over 70,000 people providing food supplies, PPE equipment, and libraries.",
+        "As an activist, Sikander believes in the power of a multi-stakeholder approach, and as a result, designed the initiative to include local support and partnerships. Community members, primarily under the age of 30, were empowered to lead the effort in their respective villages, building local buy-in and a greater understanding of the cultural dynamics, language barriers, and religious sensitivities. The initiative has engaged over 200 volunteers and COVID-19 awareness materials were developed in seven ethnic languages. Sikander used the power of social media to garner support for the initiative and attracted the attention of author Paulo Coelho and Bill Gates who recognized him as one of the seven unsung heroes of the pandemic.",
+        "Sikander is the Curator of the Global Shapers Karachi Hub (chapter) and Co-Chair of the Davos Lab, a youth-driven COVID-19 recovery plan that will include insights and concerns from stakeholders in 150 countries. Sikander serves as a member of the Global Shapers Racial Equity and Inclusivity committee, representing South Asia and Muslim countries. He is a Climate Reality Leader, a global network of changemakers working to solve the climate crisis. As a Global Shaper, Sikander completed the Climate Reality Leadership Corps training with former US Vice President Al Gore, climate leaders, activists, and scientists."
+      ]
+    }, {
+      "value": "Dr Tasnim Jara",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624295771/image-012_sbzfog.jpg",
+      "attributes": {
+        "Name": "Dr Tasnim Jara",
+        "Age": "26",
+        "Gender": "Female",
+        "Issue": "Covid response",
+        "Location": "Bangladesh"
+      },
+      "body": [
+        "Alongside fighting the pandemic as a frontline clinician, Dr Tasnim Jara has been spearheading an online campaign that is a reliable source of information on Covid-19 and vaccines for millions of Bangla speaking people across the world - she makes short evidence-based videos to debunk fake news stories and explains difficult scientific facts in easy everyday language so that literacy does not hinder access to reliable information.",
+        "Through her videos Tasnim explains difficult scientific facts in easy everyday language so that literacy does not hinder access to reliable information. Her videos have been watched for more than 280 million minutes so far. She has gained over 1.5 million followers on YouTube and Facebook. She also makes videos on TikTok with the Vaccine Confidence Project.",
+        "To spread awareness offline and reach people in the rural areas, Tasnim has partnered with government institutions, NGOs and telecom operator. In partnership with government institutions, her videos are played on roadside billboards and at primary healthcare centres in rural parts of Bangladesh. With BRAC—the largest NGO in the world—she produced content that was used to train more than 20000 young volunteers who fight misinformation on the ground. Grameenphone—the largest telecom operator in Bangladesh—distributed her videos to its millions of users through apps and social media. Tasnim also worked with faith leaders to clear misinformed concerns over COVID-19 vaccine ingredients and drive up confidence.",
+        "Tasnim has a long-term vision for the healthcare system and is working to solve some of the most pressing problems with her health-tech start-up, Shohay. Since healthcare involves significant out-of-pocket expenditure in Bangladesh, people often delay accessing treatment which sometimes leads to worse outcomes. Shohay provides an easy-to-understand guide for people to decide when they should consult a doctor urgently. It’s also working to raise awareness on lifestyle changes and non-pharmacological measures for people who suffer from chronic illnesses."
       ]
     }]
   },
@@ -75,64 +104,82 @@
     "comment": "entry.1470366669",
     "id": "entry.1311314296",
     "choices": [{
-      "value": "Anju Verma",
-      "image": "Anju_fqrhlc.jpg",
+      "value": "Grace Gara",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290394/image-007_sfhfba.jpg",
       "attributes": {
-        "Name": "Anju Verma",
-        "Age": "17",
-        "Location": "India"
-      },
-      "body": [
-        "17 year old Anju Verma started her organization, Buland Udaan, nine years ago in a village in India called Daulatpur.",
-        "Anju’s journey began when, as a five-year-old, she was forced to perform chores for 15 people in her aunt’s house and she suffered mental and physical abuse if she made any mistakes. This experience fueled her determination to  change the lives of other children and victims of sexual and physical violence in India and rescue them from child labour.",
-        "Since its inception, Buland Udaan has now enrolled 700 students into schools, stopped 40 child marriages, and legally intervened in 15 sexual harassment cases, all involving children in the age group of 6-18 years.",
-        "Buland Udaan has 70 volunteers, who are mostly teenagers from neighbouring schools, all lead by Anju.",
-        "During the COVID-19 pandemic they have been supporting the same families with food kits and hygiene kits making sure they reach those that live on the streets and in temporary homes first.",
-        "Anju’s energy and drive has led her to become a TEDx speaker, a child champion working with Save the Children, an Ashoka Youth Venturer, and fundraise capital from donors for her organisation.",
-        "A teenager with her heart in the right place and a social consciousness of huge proportions, Anju Verma is destined to bring big change."
-      ]
-    }, {
-      "value": "Hajer Sharief",
-      "image": "Hajer_ka5ju0.jpg",
-      "attributes": {
-        "Name": "Hajer Sharief",
-        "Age": "27",
-        "Location": "Libya"
-      },
-      "body": [
-        "Hajer Sharief is a peace activist who saw her peaceful neighbourhood in Tripoli fall into bloody chaos within 24 hours. Having witnessed the horrors of the war, she launched her own non-profit organization, called Together We Build It, when she was 19 years old. Since its inception, the organization has been advocating for political participation and economic empowerment of women, raising awareness about gender discrimination, improvement of human rights, and capacity building for women and youth in Libya.",
-        "In 2013, she started the “1325 Network in Libya,” which is a network of civic groups and activists from across the country that promotes the role of women in peace-building and prevention of violence. While her activism emphasizes an active role for women in peace-making, she believes that standing up to extremism requires empowerment of the entire civil society. Her organization helped start a dialogue with national leaders about women’s role in peace and security.",
-        "She has also helped Libyan women launch their own initiatives and organizations, and has been ramping up these efforts throughout the COVID-19 period from where she’s quarantined in Oslo. She is part of One Young World and Kofi Annan Foundation’s initiative Extremely Together, a group of ten young leaders empowering young people around the world to prevent extremism through peer-to-peer engagement and learning.",
-        "She was nominated for the Nobel Peace Prize in 2019."
-      ]
-    }, {
-      "value": "Hauwa Ojeifo",
-      "image": "Hauwa_syotyd.jpg",
-      "attributes": {
-        "Name": "Hauwa Ojeifo",
-        "Age": "28",
+        "Name": "Grace Gara",
+        "Age": "30",
+        "Gender": "Female",
+        "Issue": "Gender",
         "Location": "Nigeria"
       },
       "body": [
-        "Born and raised in Nigeria, Hauwa Ojeifo was educated in the UK, receiving a masters in investment banking and Islamic Finance from Henley Business School, University of Reading and is now based back in Nigeria. She is the Founder of She Writes Woman,  a women-led movement tackling the stigma against mental health in Nigeria through education, awareness, advocacy and action.",
-        "Hauwa is a sexual and domestic abuse survivor and she says “My pursuit for gender equality came as a result of experiencing a mental health breakdown. Following my double diagnosis of bipolar and post-traumatic stress disorder, I experienced first hand the stigma associated with women's mental health. It was this, coupled with local realities of inaccessible and insufficient mental healthcare, that gave me a mission to give mental health a voice in Nigeria, Africa, and globally.”",
-        "Since the start of the pandemic, the 297% rise in reported GBV cases during lockdown in the nation’s most populous cities has brought increased urgency on their work. As a result, She Writes Woman is partnering with Women At Risk International to provide a 24/7 toll-free, crisis counselling helpline, serving as a first point of contact to ensure that survivors of GBV, as well as those living with mental health  conditions,  have  access  to  confidential  psychosocial   support  and counselling during the pandemic. The partnership aims to launch a virtual  support  group,  open  case files  with  mental  health   practitioners, and organise virtual counselling for survivors during the COVID-19 pandemic. Since April, their support services and awareness campaign has organically reached over 500,000 people in Nigeria.",
-        "On 17 February 2020, she became the first woman and person to testify before the Nigerian parliament on the rights of persons with mental health conditions and psychosocial disabilities in the country's bid to pass its first mental health law. She leads the voices and representation in her community in these proceedings."        
+        "Grace is a women's rights advocate who, at the peak Covid-19 pandemic in Nigeria, coordinated the Zero Violence Nigeria project which focused on ending violence against women and girls (VAWG) which had worsened during the pandemic.",
+        "On this project, Grace led civil society organizations in 4 states to hold community dialogues with women and girls, sensitization on the Violence Against Persons Prohibition Law, Collection of stories of survivors of sexual violence and art exhibitions at the state and national level. The art exhibitions shared stories of survivors and pictures of what survivors wore to demystify the understanding that women and girls are raped because of how they were dressed.",
+        "Presently, Grace works with Education as a Vaccine, a non-profit that works to advance young Nigerians' sexual health and rights through advocacy and peer-to-peer campaigns. As the Program Coordinator she coordinates and implements advocacy strategies to create an enabling policy environment for improved access to SRHR information and services for adolescents and young people.",
+        "From 2015 to 2020, Grace worked at the International Centre for Sexual Reproductive Rights (INCRESE) as the Coordinator for Psychosocial Support Services where she managed an average of 100 cases of gender-based violence every year including providing services such as needs assessment, counselling, legal support services and referrals.",
+        "Grace has over 6 years’ experience working in the development sector with focus on the Sexual Reproductive Health and Rights (SRHR) of women and girls."
       ]
     }, {
-      "value": "Nila Yasmin",
-      "image": "Nila_cyqyil.jpg",
+      "value": "Sebabatso Makafane",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290393/image-011_xte8ej.jpg",
       "attributes": {
-        "Name": "Nila Yasmin",
-        "Age": "29",
-        "Location": "Uganda"
+        "Name": "Sebabatso Makafane",
+        "Age": "28",
+        "Gender": "Female",
+        "Issue": "Gender and Sexual health",
+        "Location": "South Africa"
       },
       "body": [
-        "Nila worked as a news anchor for 7 years, anchoring English news on some of the most reputable radio stations in Uganda like Record Radio and HOT100. She retired from radio in December 2018, to start her own media company GLIM, a lifestyle women empowerment brand that celebrates and empowers women and  has over 24,000 monthly subscribers online.",
-        "Nila grew up in the slums of Kampala and suffered regular bouts of diarrhoea, cholera and UTIs, and struggled to find treatment. The slum was neither a happy nor a healthy place to live; rife with sickness, thick with dirt and with only one toilet for every 20 households; excrement and rubbish layered the streets.",
-        "Inspired by her own upbringing, GLIM is very much aimed at women living in slum communities, to empower them both economically and socially and to motivate them to reach their full potential. The magazine features expert advice and personal stories from women who have shared the same experiences but beaten the odds to a better future.",
-        "During the COVID-19 outbreak GLIM has continued to produce content, sharing self-care tips, reporting on initiatives to limit the spread of the virus, and giving advice on staying healthy, working from home and remaining positive during lockdown.",
-        "In 2019 Nila won the inaugural APO Group African Women in Media Award which recognises, celebrates and empowers African women journalists who support female entrepreneurship in Africa."        
+        "Sebabatso is the Founder and Chair of the Black Woman Arise Women’s Health Foundation, which provides quality sexual reproductive health information and services.",
+        "Sebabatso is passionate about maternal health and the promotion of women’s sexual reproductive health and rights. She is the founder and chairperson of a non-profit called Black Woman Arise Women’s Health Foundation and she is a practising midwife. The Foundation promotes women’s sexual and reproductive health,and bridges the gap between women in the community in need of sexual reproductive healthcare services and healthcare professionals, irrespective of their socioeconomic background. Sebabatso uses local radio and magazines to create awareness on sexual and reproductive health and rights. During covid, the organisation continued to emphasize the need for quality sexual reproductive health information and services, especially in disadvantaged communities."
+      ]
+    }, {
+      "value": "Ahmed Zoure",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290394/image-010_j25v9r.jpg",
+      "attributes": {
+        "Name": "Ahmed Zoure",
+        "Age": "30",
+        "Gender": "Male",
+        "Issue": "Covid response",
+        "Location": "Burkina Faso"
+      },
+      "body": [
+        "During the covid pandemic Ahmed distributed PPE to the poor and ran health and covid awareness sessions in Burkina Faso.",
+        "In March 2020, when the COVID-19 pandemic hit Burkina Faso, Ahmed joined with other young people in a movement called Lanceur d’Espoir (Hope Launcher). They proceeded to play their part in controlling the raging pandemic by walking the streets and outskirts of Ouagadougou, distributing equipment to the poor (masks, gloves, hygiene kits, etc) and running awareness-raising sessions. More than 500 vulnerable people and three public health centres were helped through their efforts. Blood donations were also organised to help people who were ill during the pandemic.",
+        "Ahmed also works for the \"Consortium for the Childhood Development\" which is an association aimed at providing a better career and social guidance for children living in the Street."
+      ]
+    }, {
+      "value": "Efe Osaren",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290394/image-008_mtrqfa.jpg",
+      "attributes": {
+        "Name": "Efe Osaren",
+        "Age": "29",
+        "Gender": "Female",
+        "Issue": "Black Maternal health",
+        "Location": "USA"
+      },
+      "body": [
+        "Efe Osaren is a Nigerian- American student midwife, doula and leading young voice on racism’s impact on black birth outcomes .",
+        "Efe Osaren is an organizer with Ancient Song Doula Services in Brooklyn and was featured in the documentary Death by Delivery. She is a leading young voice on racism’s impact on black birth outcomes in America’s largest metropolis, writing frequent blogs on reproductive health. In her work as a doula prior to covid-19, Efe's clients didn’t have to learn all the information, as Efe was there to support them. During the pandemic however, she wanted them to enter the hospital armed with even more knowledge as she could no longer accompany them physically, and was outspoken on empowering women to trust their instincts."
+      ]
+    }, {
+      "value": "Fairooz Faizah Beether",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290394/image-009_iphr2n.jpg",
+      "attributes": {
+        "Name": "Fairooz Faizah Beether",
+        "Age": "24",
+        "Gender": "Female",
+        "Issue": "Mental Health",
+        "Location": "Bangladesh"
+      },
+      "body": [
+        "Fairooz is the founder of Moner School, an online platform where people are able to reach out when in need of mental health support.",
+        "When Fairooz was studying for her Higher Secondary Certificate exams in Khulna, the pressures of getting good grades and a promise of a foreign education got her more and more into a depressive state of mind. Things became even more difficult after she found out that her father was murdered. Fairooz reached out to her mother about her mental state, and although she was very accomodating and took her to see a psychologist, her mother was visibly terrified of her daughter’s situation. The stigma attached to mental health in Bangladesh meant that her mother told Fairooz not to talk about her therapy with others including her friends and family.",
+        "Fairooz eventually got a scholarship to a university in Sydney, Australia, but after a couple of semesters there, she found out that her mother’s mental state was also in jeopardy. With the news of the father’s murder trial pending and because she lived alone, Fairooz’s mother was under a tremendous amount of stress. She was also too afraid to reach out for professional help. Fairooz then decided to end her scholarship and stay back to help her mother.",
+        "Fairooz then founded Moner School, one of the first youth-based mental health platforms in Bangladesh. They work to create awareness about mental health and connect youth with proper mental health services. They work with mental health issues such as depression, suicide, anxiety, relationship problems.",
+        "They provide 24/7 online mental health first aid service, creating an anonymous safe platform to share mental health issues and connect youth with mental health professionals.",
+        "During the COVID-19 pandemic, a lot of students faced mental health breakdowns. Moner School was heavily active during this time, getting many messages each day. Fairooz herself hosted many webinars, where the panelists would talk about looking after mental well being during the pandemic. She also volunteered with WITHSHE, an organization that provides sanitary napkins to different households during the lockdown. Apart from conducting webinars and voluntary work, Fairooz would also personally talk to other peers and juniors and if needed appoint them to mental health counsellors."
       ]
     }]
   },
@@ -145,58 +192,89 @@
     "comment": "entry.879636731",
     "id": "entry.298026157",
     "choices": [{
-      "value": "Bonita Sharma",
-      "image": "Bonita_kym1vi.jpg",
+      "value": "Kuldeep Bandhu Aryal",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290394/image-003_dpumcd.jpg",
       "attributes": {
-        "Name": "Bonita Sharma",
-        "Age": "28",
+        "Name": "Kuldeep Bandhu Aryal",
+        "Age": "27",
+        "Gender": "Male",
+        "Issue": "Covid response",
         "Location": "Nepal"
       },
       "body": [
-        "Bonita Sharma, born and educated in Nepal, is the co-founder and CEO of Social Changemakers and Innovators (SOCHAI) - a youth led non-profit organization in Nepal. Her organization works for improving health, hygiene and nutrition status of people, particularly women, children and girls in Nepal through innovation, education and entrepreneurship. The unique aspect of SOCHAI is the implementation of simple and affordable community- based interventions to promote Goal 3 Good Health and Well-being. Their award winning low-tech wearable innovative health educational tools – ‘Nutribeads bracelet’ and ‘Redcycle bracelet’ are the crucial part of their counselling and training programs that helps educate mothers and young girls about nutrition and menstruation. They are also incorporating social entrepreneurship into their project by involving local artisans in making and selling low tech products.",
-        "SOCHAI mobilized itself immediately at the start of the COVID-19 outbreak in March with helpful and factual information through digital platforms on nutrition and hygiene for families. SOCHAI also provided immediate relief to the people in need, primarily daily wage workers, pregnant, lactating women and was handing out food to the most vulnerable. SOCHAI has also been continuing the COVID-19 relief work by providing nutritious food packages along with a mass awareness campaign in collaboration with the local government to this day.",
-        "SOCHAI have reached 1000+ mothers/children, 300+ community health workers and Female Community Health Volunteers (FCHVs), 3000+ adolescents and more than 25 youth through their community based programs led by young people in eight districts across Nepal. They have also sold and distributed 1500+ Nutribeads and Redcycle bracelets free of cost to mothers, FCHVs and adolescent girls during their programs, which have helped their target users understand as well as communicate information on nutrition and menstruation effectively.",
-        "SOCHAI is the winner of the 3rd High Level Meeting Asia Pacific Youth Innovation Challenge organized by UNICEF, Tandemic and the Government of Malaysia, SOCHAI also won the Lead 2030 Challenge for Sustainable Development Goal 2 ‘Zero Hunger’ category initiated by One Young World. Bonita herself was listed by the BBC in the 100 most influential women of the world in 2019, she has also been recognized by UNESCO as a Female Champion for educating women and girls in Nepal."
+        "During COVID-19, Kuldeep engaged in building the capacity of makers in digital fabrication technology and within weeks was producing 1000s of PPE units a week. He also took responsibility in designing the BRAC's young responders troops aiming to mobilize and provide the opportunity to the Bangladeshi youth to act as frontline responders",
+        "Kuldeep is the current Technology for Development Specialist at the BRAC Social Innovation Lab. Kuldeep seeks to promote open-source innovations and whole-of-community approaches to make resource-constrained communities more resilient during times of crisis and disasters.",
+        "Kuldeep joined BRAC in 2019 as a Social Innovation Fellow; and the swift and decisive leadership Kuldeep demonstrated during the COVID-19 response as a frontliner, mobilizing inactive makerspaces and FabLabs in Bangladesh and Nepal and enabling them to manufacture critical protective equipment deserves appreciation. Instead of being discouraged by the massive shortage of critical healthcare items in these countries, Kuldeep was determined to design and utilize open-source hardware and software to manufacture infection control items locally.",
+        "He engaged in building the capacity of makers in digital fabrication technologies and within weeks, this small-scale initiative scaled up fourfold, shifting to mid-scale, and was producing 1000s of PPE units a week, capable of addressing the demand locally instead of relying on international imports. This innovation is currently being adapted by BRAC on a larger scale to distribute PPE among its frontline healthcare workers.",
+        "His commitment to building resilient communities continued as he also took on the responsibility in designing the BRAC’s Young Responders Troops, aiming to mobilize and provide the opportunity to the Bangladeshi youth, who were forced into pandemic-induced unemployment, to act as frontline responders, providing critical information to local communities on COVID as well as supporting infected patients who were in isolation. The platform was launched with no members and now operates with 1400+ members in 20+ districts, all possessing the capacity and motivation to respond to COVID-19 impacts in their local communities."
       ]
     }, {
-      "value": "Henrike Schlottmann",
-      "image": "Henrike_quwjup.jpg",
+      "value": "Abhishek Dubey",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290395/image-002_sii0px.jpg",
       "attributes": {
-        "Name": "Henrike Schlottmann",
-        "Age": "28",
-        "Location": "Germany"
-      },
-      "body": [
-        "As managing director of ProjectTogether, Henrike Schlottmann launched the #WirVsVirus Hackathon in March of this year with the aim to actively engage citizens in developing solutions for urgent challenges related to Covid-19. It started with a concept note on Monday, March 16th, which proposed to the German Chancellery to kick-off an open social innovation process. Only three days later, more than 1,900 challenges were submitted by citizens and institutions describing their pain points related to the crisis. On Friday, 28,000 citizens gathered online to participate in the biggest hackathon worldwide. 48 hours later, 1,500 prototyped solutions got submitted by the participants.",
-        "Building on the success of this open social innovation,  ProjectTogether - under the leadership of Henrike - set up a fast-track program with the German Chancellery to implement 130 most promising solutions against Covid-19. Together with co-organisers, Henrike managed to pull together an alliance of funders donating 2,2 million euros in order to provide basic funding for the program and selected teams. The program brings together federal ministries, state governments, businesses, academia and civil society to actively co-develop and implement the solutions. Henrike has built this community that focuses on the most pressing problems in this crisis - scaling her own impact. Henrike’s leadership is a cornerstone for the success of the program and she uses the current public momentum and political backing in discussions with the German Chancellery to implement this program long-term as a new open social innovation process in Germany.",
-        "Besides the #WirVsVirus program, Henrike currently leads the Farm-Food-Climate challenge - a similar program that supports 100+ solutions in tackling climate change in the agrifood-sector. Henrike leads the efforts to bring together a new alliance for this program including the German Government and the European Commission to create a Europe-wide movement."
-      ]
-    }, {
-      "value": "Priya Prakash",
-      "image": "Priya_ils3cx.jpg",
-      "attributes": {
-        "Name": "Priya Prakash",
-        "Age": "28",
+        "Name": "Abhishek Dubey",
+        "Age": "27",
+        "Gender": "Male",
+        "Issue": "Education",
         "Location": "India"
       },
       "body": [
-        "Priya Prakash was born and educated in India. Having battled with obesity as a child , Priya made it her life’s mission to change the status quo with regards to attitudes towards children's health in India. She is now a healthcare entrepreneur and the Founder and CEO of HealthSetGo.",
-        "HealthSetGo is India's largest healthcare organization for schools, it’s vision is to establish India's largest network of health promoting schools. HealthSetGo currently operates in over 77 cities across India with 250,000+ students and parents with it’s flagship program CARE which monitors the healthy growth of students at school and generates intelligent insights for Parents to empower them to take care of their child’s health as well as impart the right Health Education customised to the age of the child. Worldwide there are currently more than 1.2 billion children in 186 countries affected by school closures due to the pandemic. With the unique integration of technology in healthcare, HealthSetGo has been able to empower parents, doctors, schools, and governments to make data-driven decisions in real-time - ensuring early diagnosis and treatment for thousands of children.",
-        "HealthSetGo launched the ‘HealthSetGo Academy’ in April as soon as India went into lockdown and schools closed. They've got India's top wellness experts to do daily live sessions to make it easy for students to stay healthy under lockdown. With an engaging and interactive schedule, they've been conducting various online sessions - ranging from yoga, dance, and fitness to music, baking, storytelling, and arts & crafts - to keep children motivated. HealthSetGo has also undertaken informative sessions on mindfulness to help students cope with stress.",
-        "HealthSetGo has also launched ‘COVID SAFE’. Schools are set to re-open in India in less than 2 months. With an average of 800+ students in educational institutions in India, it is critical that institutions open safely and contain infection rates in children. ‘COVID SAFE' uses a blend of tech and global best practices to guide educational institutions in creating actionable guidelines and processes that should be implemented for safe re-opening.",
-        "Priya won the Global Citizen's Cisco Youth Leadership Award in December 2019."
+        "Abhishek is the co-founder of Muskaan Dreams, a non-profit organisation addressing the gaps in rural education in India by bridging the digital divide and connecting teachers with technology.",
+        "India currently does not have the necessary infrastructure to teach its students online. The digital divide in India is not only about accessibility but also about teachers' readiness to work on digital devices.",
+        "Abhishek's organisation Muskaan Dreams is a non-profit organisation that is tackling the huge digital gap in education which is a major obstacle to the development of students from marginalised backgrounds.",
+        "They are transforming the learning experiences of children in public schools by providing them access to digital learning to make learning enjoyable, reachable, and accessible to them. With the goal of reaching one million children by 2023, the organisation focuses on government and community partnership, leveraging existing resources and building the digital capacity for teachers in order to create engaging opportunities for government school children.",
+        "The journey of Muskaan Dreams began in 2017 with two teachers and 70 children from a government girls' school in rural Gwalior, and since then, investing towards the goal they have managed to establish more than 130 digital classrooms in 100 schools, covering 70 villages across three districts of Gwalior, Bhopal, and Indore. These interventions have impacted 500 teachers and 20,000 students in around 100 schools so far.",
+        "During COVID-19, they made sure the families of these children got immediate relief and made sure that the education continued through innovative measures and their plans for 2021 have been to digitise 1,000 schools that would impact 5,000 teachers and 2,00,000 students."
       ]
     }, {
-      "value": "Tito Ovia",
-      "image": "Tito_duufkh.jpg",
+      "value": "Rhea See",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290395/image-005_kxbbxi.jpg",
       "attributes": {
-        "Name": "Tito Ovia",
-        "Age": "26",
+        "Name": "Rhea See",
+        "Age": "30",
+        "Gender": "Female",
+        "Issue": "Gender and tech",
+        "Location": "Philippines"
+      },
+      "body": [
+        "Rhea See co-founded She Loves Tech a global platform committed to closing the funding gap for women, currently operating in over 40 countries.",
+        "She Loves Tech, founded in 2105, creates the environment necessary for start-ups to thrive. They are the world's largest start up competition for women and technology, seeking and accelerating the best entrepreneurs and technology for transformative impact. They champion the best entrepreneurs through education and mentorship, working closely with partners to create a global ecosystem for women in technology. They partner with government institutions and organizations such as Asian Development Bank, Microsoft, Amazon, AVPN and more.",
+        "In 2020, Rhea and her team organised a competition in 36 countries across 6 continents, receiving applications from over 3000 start-ups coming from 67 countries, as well as monthly Office Hours mentorship sessions between VCs and start-ups. Also in 2020, She Loves Tech announced its renewed mission to catalyse USD1B in capital for women-led and women impact entrepreneurs by 2030.",
+        "Since 2020, Rhea has co-led the Gender Equitable Investment in Tech (GEIT) which aims to bridge the disparity in entrepreneurial funding for women for the United Nations coalition of several hundred global government, private and non-profit organizations. She is also currently working on building the world's largest database for women entrepreneurs via an open-source digital platform to facilitate fundraising at scale.",
+        "Rhea is recognised as a Global Shaper by the World Economic Forum."
+      ]
+    }, {
+      "value": "Jenifer Colpas",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290394/image-006_oru8nl.jpg",
+      "attributes": {
+        "Name": "Jenifer Colpas",
+        "Age": "30",
+        "Gender": "Female",
+        "Issue": "WASH",
+        "Location": "Colombia"
+      },
+      "body": [
+        "Jenifer Colpas is the founder of Tierra Grata an organisation that develops low-cost, easy-to-install solutions that provide rural communities with a space for hygiene and sanitation- during the pandemic they have been distributing water filters, hygiene kits, hand washing stations, and toilets to isolated, vulnerable communities.",
+        "Jenifer co-founded Tierra Grata in 2016 with a simple mission in her sights: guarantee access to clean energy, water, and sanitation to rural communities in Colombia. This is a pressing issue for the country, where 4.9 million people lack access to a decent toilet, and 1.4 million people do not have access to clean water.",
+        "The organisation developed decentralised, low-cost, easy-to-install solutions that provide customers with a comfortable and dignified space for hygiene and sanitation. Each Tierra Grata installation can save up to 68,000 litres of water per year and avoids the contamination of surface and underground water sources. In addition, by receiving a controlled and accelerated treatment of organic waste, clients have a significantly improved quality of life. Since its founding 5 years ago, the team has already managed to install 891 of these solutions, providing tangible health and hygiene improvements to more than 9,200 people in under-resourced areas in Colombia.",
+        "Tierra Grata's work became even more important during the Covid-19 pandemic, due to increased urgency for sanitation and good hygiene to prevent the spread of the virus in vulnerable communities. One Young World awarded the organisation two grants totalling $20,000 as part of the Covid Young Leaders Fund. Jenifer and the team utilised this money to distribute water filters, hygiene kits, hand washing stations, and eco-toilets to isolated communities. They also delivered practical workshops to instruct beneficiaries on how to effectively use the solutions, and also to provide general Covid-19 awareness. With additional support from other donor organisations and individuals, Tierra Grata managed to impact 6,282 people in 2020, when they were at their most vulnerable.",
+        "Clearly driving forward Goals 3, 6, and 12."
+      ]
+    }, {
+      "value": "Uche Ndukwe",
+      "image": "https://res.cloudinary.com/dykmd8idd/image/upload/s--oqIgfx40--/v1624290395/image-004_upft8m.jpg",
+      "attributes": {
+        "Name": "Uche Ndukwe",
+        "Age": "30",
+        "Gender": "Male",
+        "Issue": "Maternal health",
         "Location": "Nigeria"
       },
       "body": [
-        "Tito Ovia was born in the USA, educated in the UK and is now based in Nigeria. She is one of the three Co-Founders and Head of Growth at Helium Health, a social enterprise dedicated to helping hospitals in Africa go digital. Goal 3 is the mission of Helium Health and they are using technology to help hospitals in West Africa make world-class health a reality. Tito is responsible for spear-heading Helium Health’s expansion and it’s rapid response to the COVID-19 crisis. Since the onset of COVID-19, Helium Health has raised $10 million to expand their services due to the increased demand for health services. Among a new suite of solutions for stakeholders across the field of healthcare, Helium Health will be providing digital and flexible loans to healthcare providers, greatly alleviating the financial burden of this increased demand for services.",
-        "Today, Helium Health is the #1 healthcare technology provider in West Africa, facilitating hundreds of thousands of encounters each month across the region. As of March 2020, they have 300+ facilities live, 5,000+ medical professionals and 165,000 patient encounters per month."
+        "Uche Kenneth Udekwe is a CEO and Founder of Natal Cares, a social enterprise focusing on providing health care, medical monitoring and emergency services to at risk pregnant women, reaching them in their hometowns and villages and advocating for better access to healthcare at primary healthcare centers",
+        "After losing his sister-in-law at childbirth due to complications of pregnancy and delivery, he has dedicated himself to take action to put an end to maternal and child deaths. His social enterprise focuses on providing health care, medical monitoring and emergency services to at-risk pregnant women, reaching them in their hometowns and villages and advocating for better access to healthcare at primary healthcare centres. It's mission is to harness the power of mobile technology/low cost innovation to provide this lifesaving health care information and services to pregnant women.",
+        "In the last three years, he has successfully dispersed 251,620 delivery kits to pregnant women which have helped to ensure safe births in 186 rural communities in Nigeria. Natal Cares Delivery kits contain essential supplies which help to ensure that pregnant women have safe and hygienic delivery. He has sent customized health care messages using USSD and Voice notes to around 22880 pregnant women and nursing mothers in SIX different languages about the symptoms of prenatal conditions. He has successfully reminded 11094 women of their antenatal and immunization schedule who are actively registered on The Natal Cares Mobile platform. He has also economically empowered more 23 women who act as agents across different communities in Nigeria.",
+        "During COVID-19, Natal Cares distributed COVID-19 prevention kit to around 120 beneficiaries in 5 rural communities in Akure Ondo State."
       ]
     }]
   }
