@@ -250,6 +250,11 @@ ul.Text--links a::after {
   border-radius: 1px;
 }
 
+.Text-embed--twitter {
+  padding: 0;
+  background: none;
+}
+
 .Text-embed::before {
   content: "";
   display: block;
@@ -267,7 +272,8 @@ ul.Text--links a::after {
  */
 
 .Text-embed--youtube::before,
-.Text-embed--vimeo::before {
+.Text-embed--vimeo::before,
+.Text-embed--twitter::before {
   content: none;
 }
 
