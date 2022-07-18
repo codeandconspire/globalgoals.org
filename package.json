@@ -50,7 +50,7 @@
     "choo-service-worker": "^2.4.0",
     "cloudinary": "^1.27.1",
     "dedent": "^0.7.0",
-    "got": "^7.1.0",
+    "got": "^11.8.5",
     "jsesc": "^3.0.2",
     "koa": "^2.13.4",
     "koa-body": "^2.5.0",
